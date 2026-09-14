@@ -97,5 +97,914 @@
       "en": "Parliament Hill in Ottawa is the seat of the federal Parliament and a widely recognized national symbol."
     },
     "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-004",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s official colours, from a 1921 royal proclamation, are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Red and white"
+      },
+      {
+        "id": "b",
+        "en": "Blue and gold only"
+      },
+      {
+        "id": "c",
+        "en": "Green and brown"
+      },
+      {
+        "id": "d",
+        "en": "Black and orange"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "King George V assigned red and white. They appear on the flag and in many other emblems."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-005",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Peace Tower is part of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Parliament Buildings in Ottawa"
+      },
+      {
+        "id": "b",
+        "en": "Casa Loma"
+      },
+      {
+        "id": "c",
+        "en": "The Halifax Citadel only"
+      },
+      {
+        "id": "d",
+        "en": "Rideau Cottage’s garage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It holds a memorial chamber for the dead of the world wars and later conflicts."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-006",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s national anthem is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "O Canada"
+      },
+      {
+        "id": "b",
+        "en": "The Star-Spangled Banner"
+      },
+      {
+        "id": "c",
+        "en": "God Save the King only"
+      },
+      {
+        "id": "d",
+        "en": "La Marseillaise"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "O Canada is the national anthem. God Save the King is the royal anthem."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-007",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "God Save the King is Canada’s royal anthem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It honours the Crown. It is not a replacement for O Canada at ordinary sports events."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-008",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Remembrance Day is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "November 11"
+      },
+      {
+        "id": "b",
+        "en": "July 1"
+      },
+      {
+        "id": "c",
+        "en": "April 17"
+      },
+      {
+        "id": "d",
+        "en": "December 25"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The eleventh hour of the eleventh day of the eleventh month marks the Armistice of 1918. Wear a poppy; keep a silence."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-009",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "“In Flanders Fields” was written by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "John McCrae"
+      },
+      {
+        "id": "b",
+        "en": "Sir John A. Macdonald"
+      },
+      {
+        "id": "c",
+        "en": "Calixa Lavallée"
+      },
+      {
+        "id": "d",
+        "en": "Emily Murphy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "McCrae, a Canadian medical officer in the First World War, wrote the poem that made the poppy a remembrance symbol."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-010",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Crown as a symbol stands for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The state and the constitutional monarchy"
+      },
+      {
+        "id": "b",
+        "en": "A hockey trophy only"
+      },
+      {
+        "id": "c",
+        "en": "The official opposition"
+      },
+      {
+        "id": "d",
+        "en": "A grocery chain"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It appears on police and military badges, some coins, and in legal language such as Crown land."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-011",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The fleur-de-lis is especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "French-Canadian heritage"
+      },
+      {
+        "id": "b",
+        "en": "Inuit drum dancing only"
+      },
+      {
+        "id": "c",
+        "en": "The Klondike stampede"
+      },
+      {
+        "id": "d",
+        "en": "NATO stars"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It appears on Quebec’s flag and in many French-Canadian emblems."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-012",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The RCMP (“Mounties”) are a national symbol as well as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A police service"
+      },
+      {
+        "id": "b",
+        "en": "A hockey team"
+      },
+      {
+        "id": "c",
+        "en": "A railway"
+      },
+      {
+        "id": "d",
+        "en": "A brand of maple syrup"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The red serge and Musical Ride are ceremonial; the force’s daily work is policing."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-013",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Order of Canada motto is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Desiderantes meliorem patriam (they desire a better country)"
+      },
+      {
+        "id": "b",
+        "en": "From sea to sea, in Latin only on hockey jerseys"
+      },
+      {
+        "id": "c",
+        "en": "Liberty, equality, fraternity"
+      },
+      {
+        "id": "d",
+        "en": "E pluribus unum"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Order honours outstanding contribution to Canada. The motto is taken from Hebrews 11:16."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-014",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Hockey is often identified as Canada’s national winter sport, and lacrosse as the national summer sport."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "That pairing is the one the study guide expects. You do not need to be a fan."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-015",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Victoria Day commemorates:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The official birthday of the Crown’s sovereign for ceremonial purposes"
+      },
+      {
+        "id": "b",
+        "en": "Confederation in 1867 only"
+      },
+      {
+        "id": "c",
+        "en": "D-Day"
+      },
+      {
+        "id": "d",
+        "en": "Nunavut Day"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a holiday tied to the monarchy (originally Queen Victoria)."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-016",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s coat of arms includes symbols of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "England, Scotland, Ireland, and France, among other elements"
+      },
+      {
+        "id": "b",
+        "en": "Only the United States"
+      },
+      {
+        "id": "c",
+        "en": "Only the Hudson’s Bay Company beaver with no shield"
+      },
+      {
+        "id": "d",
+        "en": "The UN wreath alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The arms record colonial heritage. They also include a maple leaf and other Canadian elements."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-017",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Library of Parliament is famous in part because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It survived the 1916 fire that destroyed the original Centre Block"
+      },
+      {
+        "id": "b",
+        "en": "It is in Vancouver"
+      },
+      {
+        "id": "c",
+        "en": "It is Canada’s only hockey rink"
+      },
+      {
+        "id": "d",
+        "en": "It stores all provincial flags only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The round library is an architectural and historic landmark on the Hill."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-018",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Calixa Lavallée is associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The music of O Canada"
+      },
+      {
+        "id": "b",
+        "en": "The Persons Case"
+      },
+      {
+        "id": "c",
+        "en": "Vimy Ridge command"
+      },
+      {
+        "id": "d",
+        "en": "The last spike"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Adolphe-Basile Routhier wrote the original French lyrics; Robert Stanley Weir wrote the English lyrics most people know."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-019",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Union Jack has no remaining official place in Canadian symbolism."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "The Royal Union Flag is still a symbol of membership in the Commonwealth and of allegiance to the Crown, even though it is not the national flag."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-020",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada Day is celebrated on:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "July 1"
+      },
+      {
+        "id": "b",
+        "en": "November 11"
+      },
+      {
+        "id": "c",
+        "en": "April 17"
+      },
+      {
+        "id": "d",
+        "en": "The first Monday in September only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It marks Confederation (1867). It was long called Dominion Day."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-021",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The maple leaf was used as a Canadian emblem:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Long before the 1965 flag, including by soldiers in the world wars"
+      },
+      {
+        "id": "b",
+        "en": "Only after 1999"
+      },
+      {
+        "id": "c",
+        "en": "Only in Quebec City in 1608"
+      },
+      {
+        "id": "d",
+        "en": "Never, until social media"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The flag standardized a symbol that was already in use."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-022",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Rideau Hall in Ottawa is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Governor General’s official residence"
+      },
+      {
+        "id": "b",
+        "en": "The Supreme Court’s only courtroom"
+      },
+      {
+        "id": "c",
+        "en": "A provincial legislature"
+      },
+      {
+        "id": "d",
+        "en": "The CN Tower’s lobby"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a working residence and ceremonial site for the Crown in Canada."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-023",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The loon on the one-dollar coin is an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Wildlife used as a popular national emblem"
+      },
+      {
+        "id": "b",
+        "en": "A British royal portrait requirement on all coins with no animals"
+      },
+      {
+        "id": "c",
+        "en": "A municipal mascot from PEI only"
+      },
+      {
+        "id": "d",
+        "en": "A Senate seating chart"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The “loonie” became an unofficial popular symbol. The monarch still appears on coins too."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-024",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The poppy is worn as a symbol of remembrance, especially in November."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It comes from McCrae’s poem and from the poppies of the Western Front."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-025",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which building’s silhouette is most often used as a postcard of federal Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Parliament Buildings"
+      },
+      {
+        "id": "b",
+        "en": "Toronto City Hall only"
+      },
+      {
+        "id": "c",
+        "en": "A grain elevator in Regina only"
+      },
+      {
+        "id": "d",
+        "en": "A lighthouse in PEI only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Centre Block and the Peace Tower are the visual shorthand for the capital."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-026",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Tartans, clan symbols, and Highland games in Canada mainly reflect:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Scottish heritage"
+      },
+      {
+        "id": "b",
+        "en": "Inuit law"
+      },
+      {
+        "id": "c",
+        "en": "Acadian deportation policy"
+      },
+      {
+        "id": "d",
+        "en": "The Auto Pact"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They are cultural symbols of one founding immigrant stream, not official national symbols on the same level as the flag."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-027",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The snowbirds of the Canadian Forces are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A demonstration aerobatic team and a public symbol of the military"
+      },
+      {
+        "id": "b",
+        "en": "A Senate committee"
+      },
+      {
+        "id": "c",
+        "en": "A type of beaver"
+      },
+      {
+        "id": "d",
+        "en": "A Quebec flag variant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Military symbols include the Forces themselves, not only historic red tunics."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-028",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which statement about the national flag is correct?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It should be treated with respect; there are customs for flying and disposing of it"
+      },
+      {
+        "id": "b",
+        "en": "It may be thrown on the ground as a joke with no social meaning"
+      },
+      {
+        "id": "c",
+        "en": "It is illegal to show it on a backpack"
+      },
+      {
+        "id": "d",
+        "en": "It replaced O Canada as the anthem"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Flag etiquette is taught as civic manners. The anthem is a song, not a piece of cloth."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-029",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The beaver was important to the fur-trade economy that shaped early Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "That is why it became an emblem, not because it is the largest animal."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-030",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Provincial flags and floral emblems are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Official symbols of each province and territory, used alongside national ones"
+      },
+      {
+        "id": "b",
+        "en": "Illegal under the Charter"
+      },
+      {
+        "id": "c",
+        "en": "Replacements for the maple leaf flag in Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "Only for sports teams"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Know national symbols first, then a couple from your own province."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-031",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Memorial Chamber in the Peace Tower honours:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canadians who died in military service"
+      },
+      {
+        "id": "b",
+        "en": "Only Fathers of Confederation"
+      },
+      {
+        "id": "c",
+        "en": "Only Olympic athletes"
+      },
+      {
+        "id": "d",
+        "en": "Only senators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Books of Remembrance name the dead. It is a sacred civic space, not a tourist gimmick."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-032",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "O Canada was composed in the 19th century and later became the official national anthem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The song is older than its official legal status (1980). Both the history and the official date can appear on tests."
+    },
+    "source": "Discover Canada — Canadian Symbols"
   }
 ]

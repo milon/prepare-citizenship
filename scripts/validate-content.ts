@@ -116,8 +116,8 @@ if (!currentParsed.success) {
   }
 }
 
-if (questions.length < 30) {
-  errors.push(`Expected at least 30 gold-standard questions, found ${questions.length}`);
+if (questions.length < 300 || questions.length > 400) {
+  errors.push(`Expected 300–400 unique v1 questions, found ${questions.length}`);
 }
 
 const types = questions.reduce(

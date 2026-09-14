@@ -64,5 +64,815 @@
       "en": "Canada has a resource-rich economy and also strong manufacturing and service industries. The United States is Canada’s largest trading partner."
     },
     "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-003",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s largest trading partner is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The United States"
+      },
+      {
+        "id": "b",
+        "en": "New Zealand"
+      },
+      {
+        "id": "c",
+        "en": "Chad"
+      },
+      {
+        "id": "d",
+        "en": "Iceland only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Geography and supply chains make the U.S. market dominant. Mexico also matters under North American trade rules."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-004",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A mixed economy means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Markets and private firms produce most goods, while governments tax, regulate, and provide public services"
+      },
+      {
+        "id": "b",
+        "en": "The army owns every shop"
+      },
+      {
+        "id": "c",
+        "en": "There is no private property"
+      },
+      {
+        "id": "d",
+        "en": "Only barter is legal"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada is capitalist with a substantial public sector—not a command economy, not a night-watchman state with no hospitals."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-005",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Most Canadians work in the service sector rather than in farming."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Services (health, education, retail, finance, government, technology) employ the majority. Resources still punch above their job count in exports."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-006",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Manufacturing, including vehicles and machinery, is especially concentrated in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario and Quebec"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut hamlets only"
+      },
+      {
+        "id": "c",
+        "en": "Prince Edward Island’s fishing villages only"
+      },
+      {
+        "id": "d",
+        "en": "Yukon gold creeks only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Central Canada’s industrial belt is a standard regional-economy fact. Other provinces manufacture too, but the share is largest here."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-007",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Prairie agriculture is famous for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Grain (including wheat) and other farm exports"
+      },
+      {
+        "id": "b",
+        "en": "Tropical fruit plantations"
+      },
+      {
+        "id": "c",
+        "en": "Coffee estates"
+      },
+      {
+        "id": "d",
+        "en": "Banana republics"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Prairies feed export markets. Potash and energy sit beside the grain story, especially in Saskatchewan and Alberta."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-008",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Alberta’s economy is closely associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Oil and gas"
+      },
+      {
+        "id": "b",
+        "en": "Cod stocks alone"
+      },
+      {
+        "id": "c",
+        "en": "Maple syrup alone"
+      },
+      {
+        "id": "d",
+        "en": "Automobile assembly in Windsor only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Energy wealth shapes Alberta’s politics and Canada’s export mix. Agriculture remains important as well."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-009",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "British Columbia’s historic staple export sector includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Forestry"
+      },
+      {
+        "id": "b",
+        "en": "Prairie wheat only"
+      },
+      {
+        "id": "c",
+        "en": "Nunavut diamonds only"
+      },
+      {
+        "id": "d",
+        "en": "PEI potatoes only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Wood, pulp, and paper—plus mining, ports, film, and Pacific trade—define much of B.C.’s economy."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-010",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Atlantic Canada’s traditional resource economy includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Fisheries"
+      },
+      {
+        "id": "b",
+        "en": "Desert oil only"
+      },
+      {
+        "id": "c",
+        "en": "Alpine watches"
+      },
+      {
+        "id": "d",
+        "en": "Prairie potash only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cod, lobster, and other fisheries sit beside energy, tourism, and public-sector jobs. The groundfish collapse is part of modern history."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-011",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Quebec is a major producer of hydroelectric power."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Hydro-Québec and northern rivers made electricity a provincial economic pillar and an export."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-012",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Bank of Canada is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The central bank that issues notes and conducts monetary policy"
+      },
+      {
+        "id": "b",
+        "en": "A private supermarket"
+      },
+      {
+        "id": "c",
+        "en": "A municipal credit union in Ottawa only"
+      },
+      {
+        "id": "d",
+        "en": "The Senate’s cashier"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is public and independent in its day-to-day policy. Commercial banks are separate, regulated companies."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-013",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Crown corporations are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Companies owned by government to provide a public service or strategic role"
+      },
+      {
+        "id": "b",
+        "en": "Always illegal"
+      },
+      {
+        "id": "c",
+        "en": "The same as Cabinet"
+      },
+      {
+        "id": "d",
+        "en": "Foreign embassies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Examples in the national story include railways, broadcasters, and energy utilities at various times."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-014",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Employment Insurance and public pensions exist because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Modern Canada built social programs to share risk"
+      },
+      {
+        "id": "b",
+        "en": "The Quebec Act required them in 1774"
+      },
+      {
+        "id": "c",
+        "en": "NATO dues include EI"
+      },
+      {
+        "id": "d",
+        "en": "Municipalities print money"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They are economic-citizenship facts as well as “modern Canada” facts: the market is not the only institution."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-015",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Income taxes help pay for public services such as health care, defence, and infrastructure."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Paying taxes lawfully is part of the civic bargain in a mixed economy."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-016",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Unions and collective bargaining in Canada are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Legal features of labour relations"
+      },
+      {
+        "id": "b",
+        "en": "Banned by the Charter"
+      },
+      {
+        "id": "c",
+        "en": "Available only to senators"
+      },
+      {
+        "id": "d",
+        "en": "A U.S. import with no Canadian history"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Minimum standards are mainly provincial. Unions are part of how wages and conditions are set in many workplaces."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-017",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Toronto is especially important to the Canadian economy as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A financial and business-services centre"
+      },
+      {
+        "id": "b",
+        "en": "The only port"
+      },
+      {
+        "id": "c",
+        "en": "The Arctic’s diamond capital"
+      },
+      {
+        "id": "d",
+        "en": "A territorial capital"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Banks, markets, and corporate head offices cluster there. Other cities have other specialties."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-018",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Ports such as Vancouver and Halifax matter because Canada:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Trades heavily by sea as well as across the U.S. land border"
+      },
+      {
+        "id": "b",
+        "en": "Is landlocked"
+      },
+      {
+        "id": "c",
+        "en": "Bans exports"
+      },
+      {
+        "id": "d",
+        "en": "Only ships by dogsled"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Pacific, Atlantic, and Great Lakes–St. Lawrence routes are geography as economic destiny."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-019",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Information technology and other advanced services are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Growing parts of a modern mixed economy, not a replacement for resources overnight"
+      },
+      {
+        "id": "b",
+        "en": "Illegal in Canada"
+      },
+      {
+        "id": "c",
+        "en": "The only sector in 1867"
+      },
+      {
+        "id": "d",
+        "en": "Run exclusively by the RCMP"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide still stresses resources and manufacturing. A serious citizen also sees the service and tech shift."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-020",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Prosperity is even across every region of Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "The study guide itself describes different regional economies and different challenges. That unevenness is a testable idea."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-021",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Potash is a mineral export especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Saskatchewan"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island beaches"
+      },
+      {
+        "id": "c",
+        "en": "Downtown Montreal fashion only"
+      },
+      {
+        "id": "d",
+        "en": "Yukon tourism only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Fertilizer minerals are a Prairie specialty. Energy and grain complete the picture."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-022",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian dollar:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Floats on foreign-exchange markets"
+      },
+      {
+        "id": "b",
+        "en": "Is printed by each province separately as legal tender"
+      },
+      {
+        "id": "c",
+        "en": "Is pegged to the yen by the Charter"
+      },
+      {
+        "id": "d",
+        "en": "Was replaced by the euro in 2002"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "A floating currency is part of how a trading economy adjusts. The Bank of Canada influences conditions, not a fixed peg."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-023",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Why does the citizenship test care about the economy at all?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Because geography, trade, and jobs shape the country you are joining"
+      },
+      {
+        "id": "b",
+        "en": "Because you must work in oil to become a citizen"
+      },
+      {
+        "id": "c",
+        "en": "Because the Charter lists stock tips"
+      },
+      {
+        "id": "d",
+        "en": "Because senators run factories"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "You are not asked to forecast GDP. You are asked to place Canada among trading democracies with regional specialties."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-024",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The federal government is the only government that spends money in the economy."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Provinces spend heavily on health and education. Municipalities spend on local services. All three tax in overlapping ways."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-025",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Mining is important in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Shield, the Cordillera, and the North, among other regions"
+      },
+      {
+        "id": "b",
+        "en": "Only downtown Toronto condominiums"
+      },
+      {
+        "id": "c",
+        "en": "Only the Senate"
+      },
+      {
+        "id": "d",
+        "en": "Only PEI potato fields"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Gold, iron, nickel, diamonds, and more are regional staples. Indigenous land rights often intersect with mines."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-026",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Tourism is an export in the economic sense when:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Visitors from abroad spend money in Canada"
+      },
+      {
+        "id": "b",
+        "en": "Canadians buy groceries"
+      },
+      {
+        "id": "c",
+        "en": "A city reprints a parking ticket"
+      },
+      {
+        "id": "d",
+        "en": "A court charges a filing fee to a resident"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Landscapes, cities, and cultural attractions are part of the service economy the guide groups with other industries."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-027",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "NAFTA-era (and successor) free-trade rules matter most for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Cross-border manufacturing and agriculture"
+      },
+      {
+        "id": "b",
+        "en": "Whether the Monarch can visit"
+      },
+      {
+        "id": "c",
+        "en": "How juries are selected"
+      },
+      {
+        "id": "d",
+        "en": "The lyrics of O Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The legal title of the agreement has changed. The citizenship-test idea is close economic integration in North America."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-028",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada has both large private banks and a public central bank."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Do not mix the Bank of Canada with the Royal Bank or other commercial banks. They play different roles."
+    },
+    "source": "Discover Canada — Canada's Economy"
   }
 ]

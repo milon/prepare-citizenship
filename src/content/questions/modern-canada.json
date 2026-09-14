@@ -89,5 +89,1013 @@
       "en": "The Official Languages Act confirmed bilingual federal institutions. The Charter later entrenched official language rights more firmly."
     },
     "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-004",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Publicly funded hospital and medical insurance in Canada was pioneered at the provincial level in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Saskatchewan, associated with Tommy Douglas"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island in 1864"
+      },
+      {
+        "id": "c",
+        "en": "Yukon during the gold rush"
+      },
+      {
+        "id": "d",
+        "en": "New France in 1608"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Saskatchewan’s medical-care plan led the way. A federal–provincial model then spread nationwide."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-005",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian Bill of Rights (1960) is associated with Prime Minister:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "John Diefenbaker"
+      },
+      {
+        "id": "b",
+        "en": "Sir John A. Macdonald"
+      },
+      {
+        "id": "c",
+        "en": "Robert Borden"
+      },
+      {
+        "id": "d",
+        "en": "Lester B. Pearson’s successor in 1867"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Diefenbaker’s Bill of Rights was a federal statute, not a constitutional charter. The 1982 Charter went further."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-006",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Lester B. Pearson is remembered internationally for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Helping create UN peacekeeping during the Suez Crisis (Nobel Peace Prize, 1957)"
+      },
+      {
+        "id": "b",
+        "en": "Founding Quebec City"
+      },
+      {
+        "id": "c",
+        "en": "Leading at Vimy Ridge"
+      },
+      {
+        "id": "d",
+        "en": "Writing Magna Carta"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Pearson’s Suez role made peacekeeping part of Canada’s modern story. At home he also oversaw the flag, the pension plan, and medicare negotiations."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-007",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federal multiculturalism became official policy in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1918"
+      },
+      {
+        "id": "c",
+        "en": "1971"
+      },
+      {
+        "id": "d",
+        "en": "1999"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Pierre Trudeau’s government announced multiculturalism within a bilingual framework in 1971."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-008",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The October Crisis of 1970 involved:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "FLQ kidnappings and the use of the War Measures Act"
+      },
+      {
+        "id": "b",
+        "en": "The last spike ceremony"
+      },
+      {
+        "id": "c",
+        "en": "The founding of NATO"
+      },
+      {
+        "id": "d",
+        "en": "The Persons Case"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Front de libération du Québec kidnapped officials. Ottawa invoked emergency powers—still a controversial moment."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-009",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Quebec sovereignty referendums were held in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1980 and 1995"
+      },
+      {
+        "id": "b",
+        "en": "1867 and 1870"
+      },
+      {
+        "id": "c",
+        "en": "1917 and 1944"
+      },
+      {
+        "id": "d",
+        "en": "1608 and 1759"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Both votes rejected sovereignty (the 1995 “No” was very close). Quebec remains a province of Canada."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-010",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada is a founding member of the United Nations."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Canada helped found the UN in 1945 and has been active in its work, including peacekeeping and later missions."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-011",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "NORAD is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A Canada–United States arrangement for aerospace warning and defence"
+      },
+      {
+        "id": "b",
+        "en": "A provincial health plan"
+      },
+      {
+        "id": "c",
+        "en": "The French name of the Senate"
+      },
+      {
+        "id": "d",
+        "en": "A railway company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The North American Aerospace Defence Command dates from the late 1950s. It is a core military partnership with the United States."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-012",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada belongs to the Commonwealth because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It shares history with other former British territories and recognizes the same monarch as Head of the Commonwealth"
+      },
+      {
+        "id": "b",
+        "en": "It is a U.S. state"
+      },
+      {
+        "id": "c",
+        "en": "It left the UN"
+      },
+      {
+        "id": "d",
+        "en": "It has no Constitution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Membership is voluntary. It is not a government that passes Canadian laws."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-013",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "La Francophonie is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "An international organization of French-speaking states and governments, which Canada joined"
+      },
+      {
+        "id": "b",
+        "en": "A Quebec-only political party"
+      },
+      {
+        "id": "c",
+        "en": "A type of maple syrup"
+      },
+      {
+        "id": "d",
+        "en": "The name of the RCMP cavalry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada, Quebec, and New Brunswick all have roles in La Francophonie. It reflects the French fact in Canadian foreign policy."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-014",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Old Age Security, the Canada Pension Plan, and Employment Insurance are examples of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Social programs built mainly in the decades after the Second World War"
+      },
+      {
+        "id": "b",
+        "en": "Confederation terms in 1867"
+      },
+      {
+        "id": "c",
+        "en": "Municipal parking rules"
+      },
+      {
+        "id": "d",
+        "en": "Senate seating plans"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The postwar welfare state is a “modern Canada” topic: pensions, unemployment insurance, and later medicare."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-015",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Health-care delivery is a provincial responsibility, with federal funding tied to national standards."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Provinces run hospitals and medical insurance. Ottawa contributes money and sets conditions under federal law."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-016",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "After 1945, Canadian immigration policy gradually:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Moved away from racial preferences toward more universal criteria"
+      },
+      {
+        "id": "b",
+        "en": "Banned all immigration"
+      },
+      {
+        "id": "c",
+        "en": "Allowed only French speakers"
+      },
+      {
+        "id": "d",
+        "en": "Returned to the Chinese head tax"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The points system and later reforms opened the door more widely to people from Asia, the Caribbean, Africa, and Latin America."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-017",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada fought in the Korean War:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "As part of a United Nations force in the early 1950s"
+      },
+      {
+        "id": "b",
+        "en": "In 1867"
+      },
+      {
+        "id": "c",
+        "en": "Instead of joining NATO"
+      },
+      {
+        "id": "d",
+        "en": "Only with the War Measures Act"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Thousands of Canadians served in Korea (1950–53). It was Canada’s first UN-era shooting war."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-018",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Free trade with the United States (and later Mexico) is a modern economic theme because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The U.S. is Canada’s largest trading partner and supply chains cross the border"
+      },
+      {
+        "id": "b",
+        "en": "Canada does not trade"
+      },
+      {
+        "id": "c",
+        "en": "Only the territories export"
+      },
+      {
+        "id": "d",
+        "en": "Trade is banned by the Charter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The study guide discusses North American free trade. The legal name of the agreement has changed; the integration has not."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-019",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The maple leaf flag was adopted in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1945"
+      },
+      {
+        "id": "c",
+        "en": "1965"
+      },
+      {
+        "id": "d",
+        "en": "1982"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Pearson’s government replaced the Canadian Red Ensign after a fierce flag debate. 1965 is a modern-Canada and symbols date."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-020",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Quebec did not sign the 1982 constitutional package, but it remains a province of Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Patriation went ahead without Quebec’s signature. Later amendment attempts (Meech Lake, Charlottetown) failed."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-021",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Meech Lake and Charlottetown were:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Failed attempts to amend the Constitution in 1990 and 1992"
+      },
+      {
+        "id": "b",
+        "en": "World War II battles"
+      },
+      {
+        "id": "c",
+        "en": "Gold rushes"
+      },
+      {
+        "id": "d",
+        "en": "UN peacekeeping missions in Egypt only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They tried, among other things, to address Quebec’s place in the Constitution. Both failed."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-022",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canada–U.S. Auto Pact (1965) mattered because it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Integrated the two countries’ auto industries"
+      },
+      {
+        "id": "b",
+        "en": "Banned car manufacturing"
+      },
+      {
+        "id": "c",
+        "en": "Created the Senate"
+      },
+      {
+        "id": "d",
+        "en": "Founded NATO"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a classic example of postwar economic integration in central Canada’s manufacturing belt."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-023",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which scientist’s team in Canada is credited with the discovery of insulin (1921)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Frederick Banting (with colleagues in Toronto)"
+      },
+      {
+        "id": "b",
+        "en": "Alexander Graham Bell only in 1867"
+      },
+      {
+        "id": "c",
+        "en": "Tommy Douglas"
+      },
+      {
+        "id": "d",
+        "en": "Wilfrid Laurier"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Insulin is a Canadian medical achievement the guide-era narrative still highlights."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-024",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Terry Fox is remembered for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Marathon of Hope, running across Canada to raise money for cancer research"
+      },
+      {
+        "id": "b",
+        "en": "Leading at Vimy"
+      },
+      {
+        "id": "c",
+        "en": "Patriating the Constitution"
+      },
+      {
+        "id": "d",
+        "en": "Founding the Hudson’s Bay Company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "His 1980 run, cut short by cancer, became a national memory and an annual fundraising tradition."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-025",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Japanese-Canadian internment was later recognized as a wrong, with a formal apology and redress."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Brian Mulroney’s government apologized in 1988. Knowing both the wartime injustice and the later redress is part of modern citizenship."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-026",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Chinese head tax and later exclusion laws were:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Racist immigration measures that Canada later apologized for"
+      },
+      {
+        "id": "b",
+        "en": "Ordinary municipal fees in 2000"
+      },
+      {
+        "id": "c",
+        "en": "Charter requirements"
+      },
+      {
+        "id": "d",
+        "en": "NATO contributions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They restricted Chinese immigration for decades. An apology came in 2006."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-027",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s mission in Afghanistan after 2001 is an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A 21st-century combat and reconstruction role, not only classic peacekeeping"
+      },
+      {
+        "id": "b",
+        "en": "The War of 1812"
+      },
+      {
+        "id": "c",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "d",
+        "en": "The Klondike"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Modern Canada still fights as well as peacekeeps. Kandahar was a hard combat mission."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-028",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canada Council for the Arts (1957) reflects a modern decision to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Fund literature, music, and the arts at the national level"
+      },
+      {
+        "id": "b",
+        "en": "Abolish French"
+      },
+      {
+        "id": "c",
+        "en": "Replace the Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Sell the Prairies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Postwar governments invested in culture as well as in pensions and hospitals."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-029",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which Prime Minister is most closely tied to the 1982 Charter?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Pierre Elliott Trudeau"
+      },
+      {
+        "id": "b",
+        "en": "Sir John A. Macdonald"
+      },
+      {
+        "id": "c",
+        "en": "R.B. Bennett"
+      },
+      {
+        "id": "d",
+        "en": "Alexander Mackenzie"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Trudeau made the Charter the centrepiece of patriation."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-030",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Quiet Revolution made Quebec more secular in its public institutions."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Education and social services shifted from church-centred systems toward the provincial state."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-031",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Refugee policy after the Second World War included a dark pre-history: in 1939 Canada famously:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Turned away the MS St. Louis, carrying Jewish refugees"
+      },
+      {
+        "id": "b",
+        "en": "Founded Israel"
+      },
+      {
+        "id": "c",
+        "en": "Banned all ocean travel"
+      },
+      {
+        "id": "d",
+        "en": "Opened Nunavut"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "“None is too many” is the phrase later used for that era’s anti-Jewish immigration practice. Modern Canada teaches it as a warning."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-032",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Official Languages Act requires federal institutions to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Serve the public in English and French, where numbers warrant"
+      },
+      {
+        "id": "b",
+        "en": "Use only English west of Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "Use only French in the Territories"
+      },
+      {
+        "id": "d",
+        "en": "Ban Indigenous languages"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is about federal services and the workplace of the public service—not about erasing other languages in private life."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-033",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a social program created or expanded in modern Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Canada Pension Plan"
+      },
+      {
+        "id": "b",
+        "en": "The Quebec Act of 1774"
+      },
+      {
+        "id": "c",
+        "en": "The Hudson’s Bay monopoly"
+      },
+      {
+        "id": "d",
+        "en": "The Fenian raids"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "CPP (and QPP in Quebec), OAS, EI, and medicare are the postwar package."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-034",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada is a member of La Francophonie and of the Commonwealth at the same time."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Those memberships reflect both British and French historical ties. They sit beside UN and NATO membership."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-035",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The 1960s “points system” for immigrants was designed to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Select newcomers by skills and other neutral criteria rather than by race"
+      },
+      {
+        "id": "b",
+        "en": "Admit only British farmers"
+      },
+      {
+        "id": "c",
+        "en": "End all immigration"
+      },
+      {
+        "id": "d",
+        "en": "Replace elections"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a landmark of modern immigration policy, even though discrimination did not vanish overnight."
+    },
+    "source": "Discover Canada — Modern Canada"
   }
 ]

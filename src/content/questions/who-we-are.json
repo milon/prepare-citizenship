@@ -89,5 +89,1005 @@
       "en": "Métis communities formed especially on the Prairies, with a distinct culture, including Michif in some communities, and a history tied to the fur trade."
     },
     "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-004",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Where do most Inuit communities lie?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "In the Arctic (Inuit Nunangat)"
+      },
+      {
+        "id": "b",
+        "en": "Only in southern Ontario"
+      },
+      {
+        "id": "c",
+        "en": "Only on Vancouver Island"
+      },
+      {
+        "id": "d",
+        "en": "Only in the Annapolis Valley"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Inuit are the Indigenous people of the Arctic. Their homeland is often called Inuit Nunangat, spanning land, water, and ice in the north."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-005",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "First Nations in Canada are best described as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A single nation with one language"
+      },
+      {
+        "id": "b",
+        "en": "Many distinct nations with their own languages and governments"
+      },
+      {
+        "id": "c",
+        "en": "A European settler group"
+      },
+      {
+        "id": "d",
+        "en": "Residents of Nunavut only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Hundreds of First Nations live in every region. They are not one people with one language or government."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-006",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Inuit are one of the First Nations."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Inuit are Indigenous but distinct from First Nations. The three recognized groups are First Nations, Inuit, and Métis."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-007",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who are the Acadians?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Descendants of early French settlers in the Maritimes"
+      },
+      {
+        "id": "b",
+        "en": "A First Nation of the Prairies"
+      },
+      {
+        "id": "c",
+        "en": "Loyalists from New York only"
+      },
+      {
+        "id": "d",
+        "en": "Inuit from Labrador only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Acadian communities descend from 17th- and 18th-century French settlement in what is now the Maritimes, especially New Brunswick, Nova Scotia, and PEI."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-008",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What happened to many Acadians in the 1750s?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "They were elected to the first House of Commons"
+      },
+      {
+        "id": "b",
+        "en": "They were deported from their lands by the British"
+      },
+      {
+        "id": "c",
+        "en": "They founded Vancouver"
+      },
+      {
+        "id": "d",
+        "en": "They wrote the Charter"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "During the Seven Years’ War, British authorities expelled thousands of Acadians. Many later returned; the deportation remains a central Acadian memory."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-009",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "United Empire Loyalists were people who:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Left the United States for British North America after the American Revolution"
+      },
+      {
+        "id": "b",
+        "en": "Founded New France in 1608"
+      },
+      {
+        "id": "c",
+        "en": "Signed Treaty 7 in Alberta only"
+      },
+      {
+        "id": "d",
+        "en": "Created Nunavut in 1999"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Loyalists who would not join the American republic moved north, strengthening English-speaking settlement in the Maritimes and in what became Ontario."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-010",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which province has a French-speaking majority?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Quebec"
+      },
+      {
+        "id": "c",
+        "en": "Alberta"
+      },
+      {
+        "id": "d",
+        "en": "Newfoundland and Labrador"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Quebec is the only province with a French-speaking majority. French is also important in New Brunswick and in communities elsewhere."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-011",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada is often described, in area, as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The smallest G7 country"
+      },
+      {
+        "id": "b",
+        "en": "The world’s second-largest country"
+      },
+      {
+        "id": "c",
+        "en": "Smaller than France"
+      },
+      {
+        "id": "d",
+        "en": "An island in the Caribbean"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Canada spans a huge landmass. Most people live in cities in a relatively narrow band near the U.S. border."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-012",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Most Canadians live in rural areas far from cities."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Canada is highly urban. A large majority live in towns and cities, especially in the south."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-013",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Chinese workers in the 19th century are especially remembered for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Building much of the Canadian Pacific Railway through the mountains"
+      },
+      {
+        "id": "b",
+        "en": "Founding Halifax"
+      },
+      {
+        "id": "c",
+        "en": "Writing the BNA Act"
+      },
+      {
+        "id": "d",
+        "en": "Discovering the Klondike before anyone else"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Chinese labour was essential to the western railway. Canada later imposed a head tax and exclusion laws, now recognized as racist injustice."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-014",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Ukrainian settlement is especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Prairies"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island only"
+      },
+      {
+        "id": "c",
+        "en": "Downtown Halifax in the 1600s"
+      },
+      {
+        "id": "d",
+        "en": "The Senate of 1867"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "From the 1890s on, many Ukrainians farmed on the Prairies and became a major cultural community in Manitoba, Saskatchewan, and Alberta."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-015",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Black Loyalists and later Black refugees are an important part of the history of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Nova Scotia"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut"
+      },
+      {
+        "id": "c",
+        "en": "Yukon only"
+      },
+      {
+        "id": "d",
+        "en": "Prince Edward Island’s capital buildings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "People of African descent who backed Britain, and others who escaped slavery, settled in Nova Scotia (and elsewhere). Their history is part of who Canada is."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-016",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A large Sikh and broader South Asian community has long been part of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "British Columbia, especially the Lower Mainland"
+      },
+      {
+        "id": "b",
+        "en": "Only Newfoundland outports"
+      },
+      {
+        "id": "c",
+        "en": "Only Nunavut hamlets"
+      },
+      {
+        "id": "d",
+        "en": "The 1867 Senate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Punjabi Sikh immigrants arrived in B.C. more than a century ago, faced exclusion, and are now a major community in Greater Vancouver and beyond."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-017",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Treaties between Indigenous nations and the Crown are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Historic and living agreements that still have legal force"
+      },
+      {
+        "id": "b",
+        "en": "Expired automatically in 1867"
+      },
+      {
+        "id": "c",
+        "en": "Tourism slogans with no legal meaning"
+      },
+      {
+        "id": "d",
+        "en": "Municipal bylaws"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Historic and modern treaties set out rights and relationships. They are part of Canada’s constitutional order, not museum pieces."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-018",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "English and French are the only languages spoken in Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "They are the official languages of the federal state. Indigenous languages and many immigrant languages are widely spoken."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-019",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The fur trade linked Indigenous nations with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "French and later British commercial empires, including the Hudson’s Bay Company"
+      },
+      {
+        "id": "b",
+        "en": "The World Bank in 1944"
+      },
+      {
+        "id": "c",
+        "en": "NATO headquarters"
+      },
+      {
+        "id": "d",
+        "en": "The Supreme Court registry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The fur trade shaped early contact, Métis communities, and the map of posts that later became towns."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-020",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Irish immigration in the 19th century grew sharply because of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Great Famine and other hardship"
+      },
+      {
+        "id": "b",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "c",
+        "en": "The Klondike gold rush only"
+      },
+      {
+        "id": "d",
+        "en": "Nunavut’s creation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Famine and poverty drove large Irish migration to British North American cities and to work on canals and railways."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-021",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Scottish settlement left a strong mark on:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Nova Scotia (literally “New Scotland”) and other regions"
+      },
+      {
+        "id": "b",
+        "en": "Only the Yukon gold fields"
+      },
+      {
+        "id": "c",
+        "en": "Only Nunavut hamlets"
+      },
+      {
+        "id": "d",
+        "en": "The 1982 Charter’s French text alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Highland and Lowland Scots settled in the Maritimes, Ontario, and the West. Nova Scotia’s name records that history."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-022",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s population today is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Drawn from Indigenous peoples and many waves of immigration"
+      },
+      {
+        "id": "b",
+        "en": "Unchanged since 1608"
+      },
+      {
+        "id": "c",
+        "en": "Made up only of English Loyalists"
+      },
+      {
+        "id": "d",
+        "en": "Forbidden to include newcomers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Indigenous nations were here first. French and British colonial societies followed, then immigration from around the world."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-023",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Quebec’s society is rooted in a French-speaking, historically Catholic culture that survived the British Conquest."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The Quebec Act and later constitutional arrangements allowed that society to keep its language, faith, and civil law."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-024",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which phrase best matches federal multiculturalism as taught for the test?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "People may keep cultural traditions while sharing Canada’s laws and civic values"
+      },
+      {
+        "id": "b",
+        "en": "Every province must have the same official church"
+      },
+      {
+        "id": "c",
+        "en": "Only two cultures are allowed"
+      },
+      {
+        "id": "d",
+        "en": "Immigrants must abandon all food and music from home"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Diversity is expected. It does not suspend the Criminal Code, equality of women and men, or democratic rules."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-025",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The largest city in Canada is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Toronto"
+      },
+      {
+        "id": "b",
+        "en": "Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "Quebec City"
+      },
+      {
+        "id": "d",
+        "en": "Charlottetown"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Toronto is the most populous city. Ottawa is the national capital. Do not mix the two on the test."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-026",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A “founding” colonial pair often named in the guide is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "French and British"
+      },
+      {
+        "id": "b",
+        "en": "Spanish and Portuguese"
+      },
+      {
+        "id": "c",
+        "en": "Dutch and Russian"
+      },
+      {
+        "id": "d",
+        "en": "American and Mexican"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "French and British institutions, languages, and legal traditions shaped the colonial state—on Indigenous lands that were already occupied."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-027",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Métis identity is simply “anyone with one Indigenous grandparent,” with no distinct culture."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Métis are a people with a historic culture and communities, not a casual mixed-ancestry label for the test’s purposes."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-028",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which city is Canada’s largest French-speaking metropolis?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Montreal"
+      },
+      {
+        "id": "b",
+        "en": "Calgary"
+      },
+      {
+        "id": "c",
+        "en": "Victoria"
+      },
+      {
+        "id": "d",
+        "en": "St. John’s"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Montreal is the principal French-speaking city of Canada (and a bilingual metropolis in daily life). Quebec City is the provincial capital."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-029",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Indigenous peoples were in what is now Canada:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "For thousands of years before European settlement"
+      },
+      {
+        "id": "b",
+        "en": "Only after Confederation"
+      },
+      {
+        "id": "c",
+        "en": "Only after the War of 1812"
+      },
+      {
+        "id": "d",
+        "en": "Only in the 20th century"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "That is the starting point of the “who we are” story: this is not an empty land that began in 1867."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-030",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Many Canadians today were born outside Canada, especially in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Large cities such as Toronto, Montreal, and Vancouver"
+      },
+      {
+        "id": "b",
+        "en": "Only fly-in Arctic hamlets"
+      },
+      {
+        "id": "c",
+        "en": "Only the Senate chamber"
+      },
+      {
+        "id": "d",
+        "en": "Only Prince Edward Island farms in 1864"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Immigration is concentrated in big metro areas, which is why those cities are so diverse."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-031",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "New Brunswick is the only officially bilingual province."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual in its own constitution."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-032",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The term “Québécois” most often refers to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The people of Quebec, especially the French-speaking majority and their culture"
+      },
+      {
+        "id": "b",
+        "en": "Only senators from Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "Inuit of the western Arctic"
+      },
+      {
+        "id": "d",
+        "en": "Acadians of Louisiana only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It names a national and cultural identity centred on Quebec. It is not a synonym for all Canadians."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-033",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Residential schools were:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A system that took Indigenous children from their families and attacked their languages and cultures"
+      },
+      {
+        "id": "b",
+        "en": "Ordinary public high schools in Toronto"
+      },
+      {
+        "id": "c",
+        "en": "Military colleges for Loyalists"
+      },
+      {
+        "id": "d",
+        "en": "French lycées in Paris"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The schools were a grave injustice. The guide is brief; an informed citizen should still know what they were."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-034",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Anglophone and Francophone communities both exist:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Across Canada, not only in one province"
+      },
+      {
+        "id": "b",
+        "en": "Only in Yukon"
+      },
+      {
+        "id": "c",
+        "en": "Only inside the Parliament Buildings"
+      },
+      {
+        "id": "d",
+        "en": "Only before 1763"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "English-speaking majorities live in most provinces; French-speaking communities exist from the Acadian regions through Quebec to the West."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-035",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Indigenous peoples all share one culture and one language."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact for the test."
+    },
+    "source": "Discover Canada — Who We Are"
   }
 ]

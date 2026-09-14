@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "generate:questions": "node scripts/write-question-bank.mjs",
     "validate:content": "node --experimental-strip-types --no-warnings scripts/validate-content.ts",
     "build": "npm run validate:content && astro check && astro build",
     "preview": "astro preview",

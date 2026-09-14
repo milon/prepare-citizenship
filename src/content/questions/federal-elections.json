@@ -89,5 +89,848 @@
       "en": "The secret ballot is a safeguard of democracy: no one should know how you voted, and you should not feel pressured to reveal it."
     },
     "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-004",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "To vote in a federal election you must be:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A Canadian citizen"
+      },
+      {
+        "id": "b",
+        "en": "A permanent resident who has lived here one year"
+      },
+      {
+        "id": "c",
+        "en": "A visitor with a tourist visa"
+      },
+      {
+        "id": "d",
+        "en": "A municipal taxpayer even if you are not a citizen"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizenship and age 18 are the basic federal voting rules. Residency rules affect where you vote, not the citizenship requirement."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-005",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federal elections are run by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Elections Canada, an independent agency"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister’s campaign office"
+      },
+      {
+        "id": "c",
+        "en": "The RCMP commissioner personally"
+      },
+      {
+        "id": "d",
+        "en": "City clerks in Ottawa only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Chief Electoral Officer and Elections Canada are independent of the government of the day."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-006",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s federal voting system is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Single-member plurality (first past the post)"
+      },
+      {
+        "id": "b",
+        "en": "A nationwide presidential college"
+      },
+      {
+        "id": "c",
+        "en": "Sortition of all adults"
+      },
+      {
+        "id": "d",
+        "en": "Appointment by the Senate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The candidate with the most votes in a riding wins, even without 50%. Seat totals can differ from the popular vote."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-007",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A by-election is held when:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A seat becomes vacant between general elections"
+      },
+      {
+        "id": "b",
+        "en": "The Supreme Court rewrites a statute"
+      },
+      {
+        "id": "c",
+        "en": "A municipality wants a new flag"
+      },
+      {
+        "id": "d",
+        "en": "NATO meets"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Death, resignation, or other vacancy in a riding triggers a by-election, not a full national vote."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-008",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You must belong to a political party to run for the House of Commons."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Independents may run. Most successful candidates still have a party, but it is not a legal requirement."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-009",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Intimidation, vote buying, and impersonation at the polls are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Crimes"
+      },
+      {
+        "id": "b",
+        "en": "Ordinary campaign tactics"
+      },
+      {
+        "id": "c",
+        "en": "Senate privileges"
+      },
+      {
+        "id": "d",
+        "en": "Municipal zoning tools"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Electoral fraud is a criminal matter. The secret ballot exists to reduce pressure and bribery."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-010",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "There is a legal maximum life of a House of Commons. In practice this means:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A general election must be held within that limit (governments often go sooner)"
+      },
+      {
+        "id": "b",
+        "en": "MPs keep their seats for life"
+      },
+      {
+        "id": "c",
+        "en": "There are never elections"
+      },
+      {
+        "id": "d",
+        "en": "Only the Senate is dissolved"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Parliament cannot sit forever. The government usually chooses an earlier date while it still has confidence."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-011",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "After the votes are counted, a government is formed when:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A leader can command the confidence of the House and is invited by the Governor General"
+      },
+      {
+        "id": "b",
+        "en": "The candidate with the most personal votes nationwide becomes president"
+      },
+      {
+        "id": "c",
+        "en": "The Chief Justice appoints Cabinet"
+      },
+      {
+        "id": "d",
+        "en": "Mayors of provincial capitals vote"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Election night seat counts matter because they predict confidence—not because they are a direct vote for Prime Minister."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-012",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Advance polls exist so that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "People who cannot vote easily on election day can vote earlier"
+      },
+      {
+        "id": "b",
+        "en": "Parties can see your ballot"
+      },
+      {
+        "id": "c",
+        "en": "Only senators vote"
+      },
+      {
+        "id": "d",
+        "en": "Tourists can elect MPs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Special ballots and advance voting are accessibility features of a modern election, still under Elections Canada rules."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-013",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Permanent residents may vote in federal elections."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Federal voting is for citizens. Permanent residents may later become citizens and then vote."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-014",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A riding elects how many MPs to the House of Commons?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "One"
+      },
+      {
+        "id": "b",
+        "en": "Two, always"
+      },
+      {
+        "id": "c",
+        "en": "Ten"
+      },
+      {
+        "id": "d",
+        "en": "None; ridings elect senators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "One MP per district is the first-past-the-post design."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-015",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Party platforms are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The promises and policies a party offers voters"
+      },
+      {
+        "id": "b",
+        "en": "The floor of the Senate"
+      },
+      {
+        "id": "c",
+        "en": "Police search warrants"
+      },
+      {
+        "id": "d",
+        "en": "Municipal bus routes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "You vote for a local candidate, but platforms tell you what a party would try to do in government."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-016",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Election advertising and spending are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Regulated by law"
+      },
+      {
+        "id": "b",
+        "en": "Unlimited and untraceable by design"
+      },
+      {
+        "id": "c",
+        "en": "Run by the U.S. Federal Election Commission"
+      },
+      {
+        "id": "d",
+        "en": "Secret even from Elections Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Limits and disclosure rules aim to keep money from buying the outcome outright."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-017",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You should not tell a stranger how you voted if you do not want to, because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The ballot is secret and pressure is improper"
+      },
+      {
+        "id": "b",
+        "en": "It is a Criminal Code offence to discuss politics at home"
+      },
+      {
+        "id": "c",
+        "en": "Only lawyers may know"
+      },
+      {
+        "id": "d",
+        "en": "The Governor General must be informed first"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Secrecy protects you. You may discuss politics freely; you must not be forced to show a marked ballot."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-018",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Prime Minister can legally cancel an election result because the party dislikes it."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Elections Canada counts ballots. Courts can hear legal challenges. The government does not get a veto on the people’s choice."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-019",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Voters lists exist to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Identify eligible electors, with ways to register if you are missing"
+      },
+      {
+        "id": "b",
+        "en": "Publish how you voted last time"
+      },
+      {
+        "id": "c",
+        "en": "Replace citizenship"
+      },
+      {
+        "id": "d",
+        "en": "Appoint senators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "If you are not on the list, you can usually register with proof of identity and address, including at the polling station in many cases."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-020",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Scrutineers at a polling place are typically:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Party or candidate representatives watching the count for fairness"
+      },
+      {
+        "id": "b",
+        "en": "Supreme Court judges"
+      },
+      {
+        "id": "c",
+        "en": "Foreign diplomats with votes"
+      },
+      {
+        "id": "d",
+        "en": "Municipal animal-control officers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They observe; they do not mark ballots. Transparency is part of trust in the count."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-021",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A minority government can still govern if it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Wins confidence votes with support from other parties or independents"
+      },
+      {
+        "id": "b",
+        "en": "Ignores the House entirely"
+      },
+      {
+        "id": "c",
+        "en": "Dissolves the Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Declares ridings abolished"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Minority parliaments are common. They require negotiation. They are still legitimate governments."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-022",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Winning the nationwide popular vote automatically makes a party the government."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Seats matter, not the popular-vote total alone. A party can win the most votes and still lose the seat race."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-023",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who may be a candidate for MP, in general terms?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A citizen who meets legal eligibility rules and is properly nominated"
+      },
+      {
+        "id": "b",
+        "en": "Any tourist"
+      },
+      {
+        "id": "c",
+        "en": "Only people born in Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "Only sitting senators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "There are rules on age, citizenship, deposits, and signatures. Criminal disqualifications exist. Birthplace in Ottawa is not one of them."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-024",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The writ of election is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The formal order that starts an election in a riding"
+      },
+      {
+        "id": "b",
+        "en": "A Supreme Court novel"
+      },
+      {
+        "id": "c",
+        "en": "A municipal parking ticket"
+      },
+      {
+        "id": "d",
+        "en": "The Speech from the Throne"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "When writs are issued, the campaign clock runs. Returning officers then administer the vote locally."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-025",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If you are away from home, you may still vote by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Special ballot or other Elections Canada procedures"
+      },
+      {
+        "id": "b",
+        "en": "Emailing the Prime Minister your choice"
+      },
+      {
+        "id": "c",
+        "en": "Asking a neighbour to mark your ballot for you as they wish"
+      },
+      {
+        "id": "d",
+        "en": "Voting in a U.S. presidential primary"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "There are lawful absentee methods. Giving someone else your vote to use as they please is not one of them."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-026",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "It is illegal to take a photo of your marked federal ballot to show others as a general practice; ballot secrecy rules apply."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The point of the secret ballot is that nobody can demand proof of your vote. Follow Elections Canada rules at the polling place."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-027",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Ridings are designed, in principle, to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Give each MP a roughly comparable number of people to represent, with northern and rural exceptions"
+      },
+      {
+        "id": "b",
+        "en": "Match NHL team markets"
+      },
+      {
+        "id": "c",
+        "en": "Equal the number of senators from each city"
+      },
+      {
+        "id": "d",
+        "en": "Follow subway lines only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Independent commissions redraw maps. Geography and communities of interest also matter, especially in the North."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-028",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A campaign “transfer of power” after a change of government includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Swearing in a new Prime Minister and Cabinet"
+      },
+      {
+        "id": "b",
+        "en": "Repealing the Constitution automatically"
+      },
+      {
+        "id": "c",
+        "en": "Firing all judges"
+      },
+      {
+        "id": "d",
+        "en": "Closing Elections Canada forever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The public service stays. Ministers change. That is how a parliamentary system rotates power without a revolution."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-029",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Why do some people say “vote splitting” matters in first past the post?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Similar parties can divide votes and let another candidate win the riding with less than half"
+      },
+      {
+        "id": "b",
+        "en": "Every vote is transferred until someone has 50%"
+      },
+      {
+        "id": "c",
+        "en": "Senators break ties in each poll"
+      },
+      {
+        "id": "d",
+        "en": "The Governor General picks the local winner"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Plurality means the top vote-getter wins. That is a feature of the system, not a glitch in the counting machines."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-030",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federal election day voting is open to anyone who shows a hydro bill, even if they are not a citizen."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "ID proves who you are and where you live. It does not replace citizenship."
+    },
+    "source": "Discover Canada — Federal Elections"
   }
 ]

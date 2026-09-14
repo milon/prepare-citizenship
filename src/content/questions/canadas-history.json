@@ -97,5 +97,1565 @@
       "en": "The Quebec Act protected the French language, Catholic faith, and French civil law in Quebec—an early example of accommodation that still shapes Canada."
     },
     "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-004",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who founded Quebec City in 1608?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Jacques Cartier"
+      },
+      {
+        "id": "b",
+        "en": "Samuel de Champlain"
+      },
+      {
+        "id": "c",
+        "en": "John Cabot"
+      },
+      {
+        "id": "d",
+        "en": "Lord Durham"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Champlain established a lasting French settlement at Quebec, a foundation of New France."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-005",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Jacques Cartier’s voyages in the 1530s are important because he:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Explored the St. Lawrence and claimed the area for France"
+      },
+      {
+        "id": "b",
+        "en": "Built the Canadian Pacific Railway"
+      },
+      {
+        "id": "c",
+        "en": "Patriated the Constitution"
+      },
+      {
+        "id": "d",
+        "en": "Won Vimy Ridge"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cartier’s expeditions opened the St. Lawrence to French claims. Permanent settlement came later."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-006",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "John Cabot’s 1497 voyage is associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "An English claim and the later Atlantic fishery off Newfoundland"
+      },
+      {
+        "id": "b",
+        "en": "The founding of Montreal"
+      },
+      {
+        "id": "c",
+        "en": "The Persons Case"
+      },
+      {
+        "id": "d",
+        "en": "D-Day"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cabot (Giovanni Caboto) sailed for England. The rich cod fishery drew Europeans to Newfoundland for centuries."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-007",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Norse visitors reached the Atlantic around the year 1000. A known site is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "L’Anse aux Meadows in Newfoundland"
+      },
+      {
+        "id": "b",
+        "en": "Vimy Ridge"
+      },
+      {
+        "id": "c",
+        "en": "Batoche"
+      },
+      {
+        "id": "d",
+        "en": "Juno Beach"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "L’Anse aux Meadows is evidence of Viking presence. It did not lead to lasting European settlement."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-008",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Hudson’s Bay Company was founded in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1608"
+      },
+      {
+        "id": "b",
+        "en": "1670"
+      },
+      {
+        "id": "c",
+        "en": "1867"
+      },
+      {
+        "id": "d",
+        "en": "1982"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "A royal charter in 1670 created a fur-trade empire over a huge drainage basin called Rupert’s Land."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-009",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Battle of the Plains of Abraham (1759) was fought at:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec"
+      },
+      {
+        "id": "b",
+        "en": "Vancouver"
+      },
+      {
+        "id": "c",
+        "en": "Winnipeg"
+      },
+      {
+        "id": "d",
+        "en": "Halifax Citadel only in 1917"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "British forces under Wolfe defeated the French under Montcalm. New France fell; 1763 confirmed British control."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-010",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Royal Proclamation of 1763 is important in Indigenous history because it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Set rules for Crown dealings with Indigenous lands"
+      },
+      {
+        "id": "b",
+        "en": "Created the Province of Alberta"
+      },
+      {
+        "id": "c",
+        "en": "Banned all treaties"
+      },
+      {
+        "id": "d",
+        "en": "Ended the fur trade"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It recognized Indigenous land interests and required Crown treaties before settlement in many areas. It is still cited in law."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-011",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Constitutional Act of 1791 created:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Upper Canada and Lower Canada"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut and Yukon"
+      },
+      {
+        "id": "c",
+        "en": "NATO and NORAD"
+      },
+      {
+        "id": "d",
+        "en": "The Senate and the Bank of Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Upper Canada (Ontario) was mainly English and Protestant; Lower Canada (Quebec) remained mainly French and Catholic."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-012",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A result of the War of 1812 in British North America was that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The colonies remained British rather than being absorbed by the United States"
+      },
+      {
+        "id": "b",
+        "en": "Canada joined the United States"
+      },
+      {
+        "id": "c",
+        "en": "Confederation happened immediately"
+      },
+      {
+        "id": "d",
+        "en": "The French language was banned"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "American invasions failed to take the colonies. The war became part of English-Canadian founding mythology, alongside Indigenous and Québécois stories."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-013",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Laura Secord is remembered for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Warning British forces of an American attack during the War of 1812"
+      },
+      {
+        "id": "b",
+        "en": "Founding the RCMP"
+      },
+      {
+        "id": "c",
+        "en": "Writing O Canada"
+      },
+      {
+        "id": "d",
+        "en": "Discovering gold in the Yukon"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Her walk to warn of a planned attack is a classic War of 1812 story taught in the guide."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-014",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Sir Isaac Brock is associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Defending Upper Canada in the War of 1812"
+      },
+      {
+        "id": "b",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "c",
+        "en": "The Charter of 1982"
+      },
+      {
+        "id": "d",
+        "en": "D-Day planning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Brock, with Indigenous allies including Tecumseh’s confederacy, was a key commander. He was killed at Queenston Heights."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-015",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Underground Railroad refers to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A network that helped enslaved people reach freedom in Canada"
+      },
+      {
+        "id": "b",
+        "en": "The first subway in Toronto"
+      },
+      {
+        "id": "c",
+        "en": "A CPR tunnel in the Rockies only"
+      },
+      {
+        "id": "d",
+        "en": "A World War II spy ring in Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "British North America, especially Canada West, became a destination after slavery was abolished in the British Empire."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-016",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Responsible government means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Cabinet must keep the confidence of the elected assembly"
+      },
+      {
+        "id": "b",
+        "en": "The Monarch writes all laws alone"
+      },
+      {
+        "id": "c",
+        "en": "Judges run elections"
+      },
+      {
+        "id": "d",
+        "en": "Municipalities control the army"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nova Scotia achieved it first (1847–48). The Province of Canada followed. It is still the core convention of Canadian democracy."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-017",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Reformers Robert Baldwin and Sir Louis-Hippolyte La Fontaine are associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Responsible government and French–English political partnership"
+      },
+      {
+        "id": "b",
+        "en": "Building NATO"
+      },
+      {
+        "id": "c",
+        "en": "The Persons Case"
+      },
+      {
+        "id": "d",
+        "en": "Creating Nunavut"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They showed that French- and English-speaking reformers could govern together in the 1840s."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-018",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which four provinces joined Confederation in 1867?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario, Quebec, Nova Scotia, and New Brunswick"
+      },
+      {
+        "id": "b",
+        "en": "Ontario, Quebec, Manitoba, and British Columbia"
+      },
+      {
+        "id": "c",
+        "en": "Nova Scotia, PEI, Newfoundland, and New Brunswick"
+      },
+      {
+        "id": "d",
+        "en": "Alberta, Saskatchewan, Manitoba, and Ontario"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Those four formed the Dominion. Other provinces joined later."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-019",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Sir George-Étienne Cartier is best known as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A leading Quebec Father of Confederation"
+      },
+      {
+        "id": "b",
+        "en": "Canada’s first woman MP"
+      },
+      {
+        "id": "c",
+        "en": "The designer of the maple leaf flag"
+      },
+      {
+        "id": "d",
+        "en": "Governor General in 1982"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cartier helped bring Canada East (Quebec) into Confederation and was Macdonald’s key partner."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-020",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Charlottetown Conference of 1864 is important because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It began the talks that led to Confederation"
+      },
+      {
+        "id": "b",
+        "en": "It created the Charter"
+      },
+      {
+        "id": "c",
+        "en": "It ended World War I"
+      },
+      {
+        "id": "d",
+        "en": "It founded the Hudson’s Bay Company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Maritime union talks widened into a federal project. Quebec and London conferences followed."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-021",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Manitoba entered Confederation in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1870"
+      },
+      {
+        "id": "c",
+        "en": "1905"
+      },
+      {
+        "id": "d",
+        "en": "1949"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "After the Red River Resistance, the Manitoba Act created a new province in 1870."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-022",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Louis Riel is a central figure in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Red River Resistance and the later North-West Resistance"
+      },
+      {
+        "id": "b",
+        "en": "The Dieppe raid"
+      },
+      {
+        "id": "c",
+        "en": "The Official Languages Act"
+      },
+      {
+        "id": "d",
+        "en": "The founding of Halifax"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Riel led Métis at Red River (1869–70) and in 1885. He remains a contested founder of Manitoba and a Métis hero."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-023",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "British Columbia joined Canada in 1871 after Ottawa promised:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A transcontinental railway"
+      },
+      {
+        "id": "b",
+        "en": "Immediate Senate abolition"
+      },
+      {
+        "id": "c",
+        "en": "Free oil"
+      },
+      {
+        "id": "d",
+        "en": "A new official language: Spanish"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The railway promise bound B.C. to the Dominion. The CPR was completed in 1885."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-024",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Prince Edward Island joined Confederation in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1873"
+      },
+      {
+        "id": "c",
+        "en": "1949"
+      },
+      {
+        "id": "d",
+        "en": "1999"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "PEI hosted the 1864 talks but joined later, in 1873, after financial and railway pressures."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-025",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The North-West Mounted Police (forerunner of the RCMP) were created in the 1870s to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Bring Canadian authority to the Plains and the North-West"
+      },
+      {
+        "id": "b",
+        "en": "Command NATO"
+      },
+      {
+        "id": "c",
+        "en": "Replace the Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Run federal elections"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ottawa wanted order, Canadian sovereignty, and a presence as settlement and treaties expanded westward."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-026",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The last spike of the Canadian Pacific Railway was driven in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1885"
+      },
+      {
+        "id": "c",
+        "en": "1917"
+      },
+      {
+        "id": "d",
+        "en": "1945"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Completion in 1885 linked British Columbia to the east by rail and is a standard test date."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-027",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The North-West Resistance of 1885 ended with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Defeat of the Métis and First Nations forces and the hanging of Louis Riel"
+      },
+      {
+        "id": "b",
+        "en": "Quebec independence"
+      },
+      {
+        "id": "c",
+        "en": "The Statute of Westminster"
+      },
+      {
+        "id": "d",
+        "en": "Victory at Vimy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The 1885 conflict and Riel’s execution deepened divides, especially in Quebec, and remain historically charged."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-028",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Klondike Gold Rush of the late 1890s took place mainly in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Yukon"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island"
+      },
+      {
+        "id": "c",
+        "en": "Nova Scotia’s Annapolis Valley"
+      },
+      {
+        "id": "d",
+        "en": "Downtown Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Dawson and the Yukon River basin drew tens of thousands. The rush is Yukon’s classic historic hook."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-029",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Newfoundland and Labrador joined Canada in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1871"
+      },
+      {
+        "id": "c",
+        "en": "1905"
+      },
+      {
+        "id": "d",
+        "en": "1949"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": {
+      "en": "After referendums, Newfoundland became the tenth province in 1949."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-030",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada entered the First World War in 1914 because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It was part of the British Empire, which was at war"
+      },
+      {
+        "id": "b",
+        "en": "NATO required it"
+      },
+      {
+        "id": "c",
+        "en": "The United Nations voted for it"
+      },
+      {
+        "id": "d",
+        "en": "Nunavut asked for it"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "In 1914 Canada did not make a separate declaration. Military contribution still became a national coming-of-age story."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-031",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian Corps’ capture of Vimy Ridge happened in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1917"
+      },
+      {
+        "id": "c",
+        "en": "1944"
+      },
+      {
+        "id": "d",
+        "en": "1982"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "April 1917 at Vimy became a symbol of Canadian skill and sacrifice in the First World War."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-032",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Most women gained the right to vote in federal elections in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1918"
+      },
+      {
+        "id": "c",
+        "en": "1982"
+      },
+      {
+        "id": "d",
+        "en": "1999"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Wartime measures in 1917 and a 1918 law extended the federal vote to many women. Status Indian women and some others waited longer."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-033",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Agnes Macphail is remembered as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The first woman elected to the House of Commons (1921)"
+      },
+      {
+        "id": "b",
+        "en": "Canada’s first Prime Minister"
+      },
+      {
+        "id": "c",
+        "en": "The designer of the beaver emblem"
+      },
+      {
+        "id": "d",
+        "en": "The founder of New France"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "She entered Parliament after women won the federal vote. She is a standard name on women’s political history."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-034",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Persons Case (1929) decided that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Women are “persons” who can be appointed to the Senate"
+      },
+      {
+        "id": "b",
+        "en": "Only men can be judges"
+      },
+      {
+        "id": "c",
+        "en": "Quebec is not a province"
+      },
+      {
+        "id": "d",
+        "en": "The Charter has no equality rights"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Famous Five took the case to the Judicial Committee of the Privy Council, which reversed a narrower Canadian ruling."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-035",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Statute of Westminster (1931) is important because it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Recognized Canada’s autonomy in making its own laws and treaties"
+      },
+      {
+        "id": "b",
+        "en": "Created Confederation"
+      },
+      {
+        "id": "c",
+        "en": "Adopted the maple leaf flag"
+      },
+      {
+        "id": "d",
+        "en": "Founded the RCMP"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a key step from Dominion status toward full sovereignty. Patriation in 1982 completed the constitutional story."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-036",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada entered the Second World War in 1939 by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A Canadian declaration of war, a week after Britain"
+      },
+      {
+        "id": "b",
+        "en": "Automatic imperial entry with no Canadian decision"
+      },
+      {
+        "id": "c",
+        "en": "A United Nations command"
+      },
+      {
+        "id": "d",
+        "en": "Joining the United States in 1941 only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Unlike 1914, Canada’s Parliament made its own declaration (10 September 1939). That showed growing independence."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-037",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Dieppe raid of 1942 was:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A costly Allied attack on the French coast with heavy Canadian losses"
+      },
+      {
+        "id": "b",
+        "en": "The liberation of the Netherlands"
+      },
+      {
+        "id": "c",
+        "en": "The capture of Vimy Ridge"
+      },
+      {
+        "id": "d",
+        "en": "A gold rush"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Dieppe failed with terrible casualties. It is still taught as a hard lesson before later invasions."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-038",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "On D-Day, 6 June 1944, Canadian forces landed at:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Juno Beach in Normandy"
+      },
+      {
+        "id": "b",
+        "en": "Pearl Harbor"
+      },
+      {
+        "id": "c",
+        "en": "Vimy Ridge"
+      },
+      {
+        "id": "d",
+        "en": "Dieppe only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Juno was the Canadian beach in the Normandy invasion, a turning point in the war in Europe."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-039",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canadian troops are especially remembered in 1944–45 for helping to liberate:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Netherlands"
+      },
+      {
+        "id": "b",
+        "en": "Mexico"
+      },
+      {
+        "id": "c",
+        "en": "Australia"
+      },
+      {
+        "id": "d",
+        "en": "Ethiopia in 1867"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Dutch–Canadian wartime bond, including the Hongerwinter relief, is a standard Second World War fact."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-040",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "During the Second World War, Japanese Canadians were:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Interned, dispossessed, and uprooted from the Pacific coast"
+      },
+      {
+        "id": "b",
+        "en": "Appointed to Cabinet as a group"
+      },
+      {
+        "id": "c",
+        "en": "Exempt from all wartime rules"
+      },
+      {
+        "id": "d",
+        "en": "Sent as ambassadors to Tokyo"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Internment was a grave injustice. Redress came much later. The test still expects you to know it happened."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-041",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s Constitution was patriated, with the Charter, in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1931"
+      },
+      {
+        "id": "c",
+        "en": "1982"
+      },
+      {
+        "id": "d",
+        "en": "1999"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "17 April 1982 in Ottawa, with Queen Elizabeth II and Prime Minister Pierre Trudeau. Quebec did not sign the package."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-042",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Lord Durham’s report after the 1837–38 rebellions recommended:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Responsible government and a union of Upper and Lower Canada"
+      },
+      {
+        "id": "b",
+        "en": "Immediate independence as a republic"
+      },
+      {
+        "id": "c",
+        "en": "Joining the United States"
+      },
+      {
+        "id": "d",
+        "en": "Abolishing French immediately with no assembly"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Durham also hoped French Canadians would assimilate—a goal that failed. The union and responsible government still reshaped politics."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-043",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The British North America Act of 1867 is now known as the Constitution Act, 1867."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The 1982 patriation renamed it. It still divides federal and provincial powers."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-044",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Sir Wilfrid Laurier, Prime Minister from 1896, is associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Immigration and western settlement at the turn of the 20th century"
+      },
+      {
+        "id": "b",
+        "en": "D-Day"
+      },
+      {
+        "id": "c",
+        "en": "The first transatlantic cable in 1608"
+      },
+      {
+        "id": "d",
+        "en": "Creating the Charter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Laurier’s era saw a wheat boom and a surge of settlers onto the Prairies."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-045",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Alberta and Saskatchewan became provinces in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1870"
+      },
+      {
+        "id": "c",
+        "en": "1905"
+      },
+      {
+        "id": "d",
+        "en": "1949"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "They were carved from the North-West Territories in 1905."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-046",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Conscription crises in 1917 and 1944 were especially bitter in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec, where many opposed compulsory overseas service"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut only"
+      },
+      {
+        "id": "c",
+        "en": "Prince Edward Island potato farms only"
+      },
+      {
+        "id": "d",
+        "en": "The Senate of 1867"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "English Canada and French Canada split over forcing men to fight overseas. It is a classic national-unity fact."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-047",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Indigenous nations had trade, diplomacy, and conflict among themselves long before Europeans arrived."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The history chapter does not begin with Cabot. The land was already a political world."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-048",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Thayendanegea (Joseph Brant) is remembered as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A Mohawk leader who allied with the British and later settled in what became Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Canada’s first Prime Minister"
+      },
+      {
+        "id": "c",
+        "en": "The founder of the Hudson’s Bay Company"
+      },
+      {
+        "id": "d",
+        "en": "A French governor at Louisbourg only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Brant and Loyalist Haudenosaunee communities are part of the post-Revolution story in Canada."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-049",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Halifax Explosion of 1917 was:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A wartime harbour disaster that devastated the city"
+      },
+      {
+        "id": "b",
+        "en": "A Quiet Revolution protest"
+      },
+      {
+        "id": "c",
+        "en": "The last spike ceremony"
+      },
+      {
+        "id": "d",
+        "en": "A gold-rush stampede"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Two ships collided, one carrying explosives. It is one of the worst disasters in Canadian history."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-050",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s soldiers in the First World War included a famous all-Black unit known as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "No. 2 Construction Battalion"
+      },
+      {
+        "id": "b",
+        "en": "The Famous Five"
+      },
+      {
+        "id": "c",
+        "en": "The North-West Mounted Police cavalry only"
+      },
+      {
+        "id": "d",
+        "en": "The Senate Guard"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Black volunteers were long kept out of combat roles; this construction battalion is the unit the guide-era story highlights."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-051",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Women were legally “persons” for Senate appointments before the Persons Case."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "The Canadian courts had said no. The 1929 decision reversed that and opened the Senate to women."
+    },
+    "source": "Discover Canada — Canada's History"
   }
 ]

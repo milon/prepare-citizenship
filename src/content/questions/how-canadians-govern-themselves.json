@@ -131,5 +131,1057 @@
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "primeMinister"
+  },
+  {
+    "id": "gov-005",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who currently represents the Monarch in Canada as Governor General?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governorGeneral}}"
+      },
+      {
+        "id": "b",
+        "en": "The Speaker of the Senate"
+      },
+      {
+        "id": "c",
+        "en": "The Premier of Ontario"
+      },
+      {
+        "id": "d",
+        "en": "The Mayor of Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Governor General is {{governorGeneral}}, last verified with the other current office-holders in this app."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves",
+    "currentFactKey": "governorGeneral"
+  },
+  {
+    "id": "gov-006",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is Canada’s current Head of State by name?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{headOfState}}"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister of France"
+      },
+      {
+        "id": "c",
+        "en": "The UN Secretary-General"
+      },
+      {
+        "id": "d",
+        "en": "The Premier of Quebec"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The office is the Monarch. The current person, last verified here, is {{headOfState}}."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves",
+    "currentFactKey": "headOfState"
+  },
+  {
+    "id": "gov-007",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which party is currently in power federally, according to this app’s dated file?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{partyInPower}}"
+      },
+      {
+        "id": "b",
+        "en": "The official opposition in every province at once"
+      },
+      {
+        "id": "c",
+        "en": "The Senate Liberal caucus of 1867"
+      },
+      {
+        "id": "d",
+        "en": "NATO headquarters"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The party that can command the House is {{partyInPower}}. Update current.json when that changes."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves",
+    "currentFactKey": "partyInPower"
+  },
+  {
+    "id": "gov-008",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The three parts of Parliament are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Crown, the Senate, and the House of Commons"
+      },
+      {
+        "id": "b",
+        "en": "The RCMP, the Bank of Canada, and NATO"
+      },
+      {
+        "id": "c",
+        "en": "Premiers, mayors, and school boards"
+      },
+      {
+        "id": "d",
+        "en": "The Supreme Court, juries, and police"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "A bill typically needs the Commons, the Senate, and Royal Assent (the Crown)."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-009",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Senators are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Appointed, on the Prime Minister’s advice"
+      },
+      {
+        "id": "b",
+        "en": "Elected in every riding like MPs"
+      },
+      {
+        "id": "c",
+        "en": "Chosen by a national lottery"
+      },
+      {
+        "id": "d",
+        "en": "Always the provincial premiers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Senate is appointed, not elected. It reviews legislation and represents regions in theory."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-010",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Members of Parliament in the House of Commons are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Elected by voters in ridings"
+      },
+      {
+        "id": "b",
+        "en": "Appointed for life by the Monarch personally"
+      },
+      {
+        "id": "c",
+        "en": "Hired by the RCMP"
+      },
+      {
+        "id": "d",
+        "en": "Selected by the Supreme Court"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each electoral district sends one MP. That is the democratic core of federal power."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-011",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Royal Assent is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Crown’s formal approval that turns a bill into law"
+      },
+      {
+        "id": "b",
+        "en": "A Supreme Court dissent"
+      },
+      {
+        "id": "c",
+        "en": "A municipal building permit"
+      },
+      {
+        "id": "d",
+        "en": "A NATO vote"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Governor General (or a deputy) grants Royal Assent. By convention it is not refused for a properly passed bill."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-012",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Cabinet is chosen by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Prime Minister"
+      },
+      {
+        "id": "b",
+        "en": "A random draw of all voters"
+      },
+      {
+        "id": "c",
+        "en": "The official opposition whip only"
+      },
+      {
+        "id": "d",
+        "en": "The mayor of Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ministers are usually MPs, sometimes senators. They are sworn of the Privy Council and bound by solidarity."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-013",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If a government loses a confidence vote in the House of Commons, it must resign or call an election."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "That is responsible government. Confidence is tested in the elected Commons, not in the Senate."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-014",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Leader of the Opposition is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The leader of the largest party that is not in government"
+      },
+      {
+        "id": "b",
+        "en": "The Governor General’s deputy"
+      },
+      {
+        "id": "c",
+        "en": "Always a senator from Quebec"
+      },
+      {
+        "id": "d",
+        "en": "The Chief Justice"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Official opposition status comes with funding, questions, and a recognized role in holding government to account."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-015",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Speaker of the House of Commons is expected to be:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Impartial in chairing debates"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister’s campaign manager during sittings"
+      },
+      {
+        "id": "c",
+        "en": "A provincial premier"
+      },
+      {
+        "id": "d",
+        "en": "The head of the RCMP"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Speaker keeps order and does not vote except in limited tie-breaking situations."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-016",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Defence, criminal law, money and banking, and foreign affairs are mainly:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Federal powers"
+      },
+      {
+        "id": "b",
+        "en": "Municipal powers"
+      },
+      {
+        "id": "c",
+        "en": "School-board powers"
+      },
+      {
+        "id": "d",
+        "en": "Powers of the official opposition only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Constitution Act, 1867 lists federal heads of power. Provinces have others, such as education and property and civil rights."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-017",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Education and health-care delivery are mainly:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Provincial responsibilities"
+      },
+      {
+        "id": "b",
+        "en": "Exclusive NATO duties"
+      },
+      {
+        "id": "c",
+        "en": "Senate internal rules"
+      },
+      {
+        "id": "d",
+        "en": "Municipal snow-clearing contracts only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ottawa still spends and sets some national standards, especially in health funding, but delivery is provincial."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-018",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Municipal governments get their powers from:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The province (or territory)"
+      },
+      {
+        "id": "b",
+        "en": "The United Nations"
+      },
+      {
+        "id": "c",
+        "en": "The Monarch acting alone without statute"
+      },
+      {
+        "id": "d",
+        "en": "NATO"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cities are “creatures of the province.” Local services such as transit, zoning, and snow clearing sit here."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-019",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A Lieutenant Governor represents the Crown in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A province"
+      },
+      {
+        "id": "b",
+        "en": "A municipality only"
+      },
+      {
+        "id": "c",
+        "en": "The Supreme Court locker room"
+      },
+      {
+        "id": "d",
+        "en": "Every embassy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor. Territories have commissioners, a different office."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-020",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Territories were created by federal statute and do not have the same constitutional status as provinces."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "They now run most day-to-day services, but their legal starting point is different from a province’s."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-021",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "After an election, the Governor General invites someone to form a government based on:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Who is most likely to hold the confidence of the House"
+      },
+      {
+        "id": "b",
+        "en": "Who won the popular vote in every province"
+      },
+      {
+        "id": "c",
+        "en": "Who is oldest"
+      },
+      {
+        "id": "d",
+        "en": "Who lives in Rideau Hall already"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Usually that is the leader of the party with the most seats, but the test is confidence, not a presidential-style popular vote."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-022",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A majority government is one that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Holds more than half the seats in the House of Commons"
+      },
+      {
+        "id": "b",
+        "en": "Wins every municipal election"
+      },
+      {
+        "id": "c",
+        "en": "Controls the Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Has the Governor General as party leader"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "A minority government has fewer than half the seats and needs support from others to survive confidence votes."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-023",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Premier of a province is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Head of the provincial government"
+      },
+      {
+        "id": "b",
+        "en": "Head of State of Canada"
+      },
+      {
+        "id": "c",
+        "en": "Always an appointed senator"
+      },
+      {
+        "id": "d",
+        "en": "The federal finance minister automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Do not confuse Premier (province/territory) with Prime Minister (Canada)."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-024",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Making a federal law usually requires:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Passage in the Commons and Senate and then Royal Assent"
+      },
+      {
+        "id": "b",
+        "en": "A tweet from a mayor"
+      },
+      {
+        "id": "c",
+        "en": "Approval by NATO"
+      },
+      {
+        "id": "d",
+        "en": "A Supreme Court first draft"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Money bills have extra Commons privileges, but the ordinary path is still both Houses plus the Crown."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-025",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Constitutional conventions are unwritten rules that still structure how government works."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Responsible government itself is mostly convention. Not every important rule is in a statute."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-026",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The written Constitution includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Constitution Act, 1867 and the Constitution Act, 1982 (including the Charter)"
+      },
+      {
+        "id": "b",
+        "en": "Only the Criminal Code"
+      },
+      {
+        "id": "c",
+        "en": "Only municipal zoning bylaws"
+      },
+      {
+        "id": "d",
+        "en": "The NATO treaty alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Those two Acts are the core texts. Other statutes and orders are also part of the Constitution of Canada."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-027",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Judges are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Independent of Cabinet and of Parliament once appointed"
+      },
+      {
+        "id": "b",
+        "en": "Elected on party lists like MPs"
+      },
+      {
+        "id": "c",
+        "en": "Allowed to sit in Cabinet while judging"
+      },
+      {
+        "id": "d",
+        "en": "Chosen each week by referendum"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Independence of the courts is a branch-of-government fact, not only a justice-chapter slogan."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-028",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which level of government is mainly responsible for citizenship and immigration?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Federal"
+      },
+      {
+        "id": "b",
+        "en": "Municipal"
+      },
+      {
+        "id": "c",
+        "en": "School boards"
+      },
+      {
+        "id": "d",
+        "en": "The official opposition research office"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizenship is a federal head of power. Provinces have roles in selection and settlement in practice, but the status is federal."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-029",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "“Crown land” and “Crown attorney” use “Crown” to mean:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The state as a continuing legal person"
+      },
+      {
+        "id": "b",
+        "en": "A jewellery store in Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "The official opposition"
+      },
+      {
+        "id": "d",
+        "en": "A municipal brand"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Crown is how Canadian law names the state. It is not the Prime Minister’s personal property."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-030",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Governor General normally acts on the advice of the Prime Minister and Cabinet."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Personal discretion is reserved for rare constitutional crises. Everyday powers are exercised on advice."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-031",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A Member of Parliament is elected to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The House of Commons in Ottawa"
+      },
+      {
+        "id": "b",
+        "en": "A city council only"
+      },
+      {
+        "id": "c",
+        "en": "The Supreme Court bench"
+      },
+      {
+        "id": "d",
+        "en": "The UN General Assembly automatically"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Provincial legislators have other titles (MPP, MLA, MNA, MHA). Do not mix them with MP."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-032",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federalism means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Power is divided between national and provincial governments"
+      },
+      {
+        "id": "b",
+        "en": "There is only one government in Ottawa for all local roads"
+      },
+      {
+        "id": "c",
+        "en": "The Monarch writes the Criminal Code alone"
+      },
+      {
+        "id": "d",
+        "en": "Cities can declare war"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Division of powers is the Canadian answer to governing a large, diverse country."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-033",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Indigenous governments in Canada:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Exercise jurisdiction under treaties, statutes, and self-government agreements"
+      },
+      {
+        "id": "b",
+        "en": "Were abolished in 1867"
+      },
+      {
+        "id": "c",
+        "en": "Exist only as social clubs"
+      },
+      {
+        "id": "d",
+        "en": "Replace the Governor General"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Self-government is part of the modern constitutional landscape, alongside federal and provincial power."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-034",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Prime Minister is chosen by a direct nationwide popular vote for that office, like a U.S. president."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Canadians vote for local MPs. The Prime Minister is the leader who can command the House."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-035",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Question Period is a daily Commons practice in which:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Opposition members question the government"
+      },
+      {
+        "id": "b",
+        "en": "Judges quiz Cabinet secretly"
+      },
+      {
+        "id": "c",
+        "en": "Mayors rewrite the Constitution"
+      },
+      {
+        "id": "d",
+        "en": "The Monarch vetoes bills by shouting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a visible accountability ritual, even when answers are political."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-036",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A caucus is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The group of MPs (and often senators) belonging to the same party"
+      },
+      {
+        "id": "b",
+        "en": "A type of court"
+      },
+      {
+        "id": "c",
+        "en": "A municipal utility"
+      },
+      {
+        "id": "d",
+        "en": "A military rank"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Caucus discipline is how parties stay united in the House."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-037",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which official reads the Speech from the Throne?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Governor General (or the Monarch if present)"
+      },
+      {
+        "id": "b",
+        "en": "The mayor of Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "The Chief Electoral Officer"
+      },
+      {
+        "id": "d",
+        "en": "The Leader of the Opposition only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The speech is written by the government. The Crown delivers it to open a session of Parliament."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
   }
 ]

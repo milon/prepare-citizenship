@@ -89,5 +89,914 @@
       "en": "Citizenship comes with duties as well as rights. Those duties include obeying the law, serving on a jury if summoned, voting in elections, and helping others in the community."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-004",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Habeas corpus means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Prime Minister can jail opponents without trial"
+      },
+      {
+        "id": "b",
+        "en": "You can ask a court to review whether you are being lawfully detained"
+      },
+      {
+        "id": "c",
+        "en": "Only the Senate can grant pardons"
+      },
+      {
+        "id": "d",
+        "en": "Police never need a reason to arrest someone"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Habeas corpus is a historic legal protection: detention must have a lawful basis, and a court can test it. Canada inherited this principle from English law."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-005",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a fundamental freedom in the Charter?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Freedom of conscience and religion"
+      },
+      {
+        "id": "b",
+        "en": "Freedom to ignore a jury summons"
+      },
+      {
+        "id": "c",
+        "en": "Freedom to set the Bank of Canada’s interest rate"
+      },
+      {
+        "id": "d",
+        "en": "Freedom to appoint Supreme Court judges"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Fundamental freedoms include conscience and religion; thought, belief, opinion, and expression; peaceful assembly; and association."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-006",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The right of citizens to vote and to run for office is an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Mobility rights"
+      },
+      {
+        "id": "b",
+        "en": "Democratic rights"
+      },
+      {
+        "id": "c",
+        "en": "Aboriginal rights"
+      },
+      {
+        "id": "d",
+        "en": "Property rights in the Charter"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Democratic rights include voting in elections for the House of Commons (and provincial legislatures) and being eligible to seek office, with limited exceptions in law."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-007",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Equality rights in the Charter are meant to protect people from:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Having to pay any taxes"
+      },
+      {
+        "id": "b",
+        "en": "Discrimination by government based on grounds such as race, sex, or religion"
+      },
+      {
+        "id": "c",
+        "en": "Losing a private lawsuit"
+      },
+      {
+        "id": "d",
+        "en": "Provincial sales tax"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Section 15 equality rights promise equal protection and benefit of the law without discrimination. They bind government, not every private disagreement."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-008",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Men and women are equal under Canadian law."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Equality of women and men is a core Canadian value and is protected by the Charter’s equality rights."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-009",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which statement about religion in Canada is correct?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canada has an official state church"
+      },
+      {
+        "id": "b",
+        "en": "Only Christian worship is legal"
+      },
+      {
+        "id": "c",
+        "en": "Freedom of religion is protected; there is no official state church"
+      },
+      {
+        "id": "d",
+        "en": "Religious schools are banned in every province"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "People may practise their faith—or none—within the limits of the law. Canada does not have an established church."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-010",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Aboriginal and treaty rights of the Indigenous peoples of Canada are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Abolished by the Charter"
+      },
+      {
+        "id": "b",
+        "en": "Recognized and not taken away by the Charter"
+      },
+      {
+        "id": "c",
+        "en": "Valid only in Yukon"
+      },
+      {
+        "id": "d",
+        "en": "Decided each year by referendum"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Constitution, including the Charter, affirms that it does not abrogate Aboriginal and treaty rights. Those rights have their own constitutional protection."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-011",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "English and French have equal status in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Every municipal council meeting in Canada"
+      },
+      {
+        "id": "b",
+        "en": "Parliament and the Government of Canada"
+      },
+      {
+        "id": "c",
+        "en": "The courts of Alberta only"
+      },
+      {
+        "id": "d",
+        "en": "Private workplaces nationwide by default"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Official-language rights apply to Parliament and federal institutions. Provinces have their own language rules; New Brunswick is officially bilingual as a province."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-012",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of the following is a responsibility of citizenship listed in the study guide?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Obeying the law"
+      },
+      {
+        "id": "b",
+        "en": "Joining a political party"
+      },
+      {
+        "id": "c",
+        "en": "Serving as a senator"
+      },
+      {
+        "id": "d",
+        "en": "Owning land"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Obeying the law is a basic duty. Other listed responsibilities include voting, jury service when called, and helping in the community."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-013",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Voting in elections is only a right, never described as a responsibility."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "The study guide treats voting as both a democratic right and a civic responsibility of citizens."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-014",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "In a time of war, Canadian law has historically provided that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Only senators must enlist"
+      },
+      {
+        "id": "b",
+        "en": "Military-age men may be required to serve in the armed forces"
+      },
+      {
+        "id": "c",
+        "en": "Children must serve on juries"
+      },
+      {
+        "id": "d",
+        "en": "The Governor General must command a regiment"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The guide notes that men may be subject to military service in wartime. Canada has not used conscription for many decades, but the historic duty is still taught."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-015",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Peaceful assembly and association are protected so that people may:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Form unions, parties, and protest groups within the law"
+      },
+      {
+        "id": "b",
+        "en": "Block hospitals by force with no limits"
+      },
+      {
+        "id": "c",
+        "en": "Ignore Criminal Code offences if they are in a crowd"
+      },
+      {
+        "id": "d",
+        "en": "Appoint judges by petition"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "You may gather and join groups peacefully. Violence, intimidation, and other crimes are still crimes."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-016",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A citizen’s mobility rights generally include the right to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Enter, remain in, and leave Canada"
+      },
+      {
+        "id": "b",
+        "en": "Demand a passport from another country"
+      },
+      {
+        "id": "c",
+        "en": "Set immigration quotas"
+      },
+      {
+        "id": "d",
+        "en": "Close a provincial border permanently"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizens have the right to enter, remain in, and leave Canada, and to live and seek work in any province, subject to limited legal exceptions."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-017",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Legal rights in the Charter include protection against:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Unreasonable search and seizure"
+      },
+      {
+        "id": "b",
+        "en": "Having to testify as a witness when subpoenaed in every civil case"
+      },
+      {
+        "id": "c",
+        "en": "Paying income tax"
+      },
+      {
+        "id": "d",
+        "en": "Jury duty"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Legal rights cover life, liberty, and security of the person; search and seizure; detention and arrest; and fair criminal process, among others."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-018",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Charter applies only to Canadian citizens in all of its sections."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Some rights, such as democratic rights, are for citizens. Many legal and equality rights protect “everyone” or “every individual,” including non-citizens, in Canada."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-019",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Helping others in the community is presented in the guide as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A legal requirement to join a church"
+      },
+      {
+        "id": "b",
+        "en": "A responsibility of citizenship"
+      },
+      {
+        "id": "c",
+        "en": "A duty only for mayors"
+      },
+      {
+        "id": "d",
+        "en": "A substitute for paying taxes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Volunteerism and looking out for neighbours are taught as civic responsibilities alongside formal legal duties."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-020",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is not a Charter “fundamental freedom”?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Freedom of expression"
+      },
+      {
+        "id": "b",
+        "en": "Freedom of peaceful assembly"
+      },
+      {
+        "id": "c",
+        "en": "Freedom from ever being taxed"
+      },
+      {
+        "id": "d",
+        "en": "Freedom of association"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Taxation is a lawful government power. Fundamental freedoms are conscience and religion, expression, peaceful assembly, and association."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-021",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Minority-language education rights generally protect:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "English or French minority communities educating their children in their language, where numbers warrant"
+      },
+      {
+        "id": "b",
+        "en": "Every language in the world in every school"
+      },
+      {
+        "id": "c",
+        "en": "Latin as a compulsory subject"
+      },
+      {
+        "id": "d",
+        "en": "Only Indigenous-language schools in Toronto"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Charter protects English or French minority-language education in specified circumstances, typically where numbers are sufficient."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-022",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Courts can strike down laws that unjustifiably violate the Charter."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Because the Charter is part of the Constitution, inconsistent laws can be declared of no force, subject to limited override rules in some cases."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-023",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Hate propaganda that wilfully promotes hatred against an identifiable group is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Fully protected as ordinary political speech with no limits"
+      },
+      {
+        "id": "b",
+        "en": "Restricted by criminal law because it attacks other people’s rights and safety"
+      },
+      {
+        "id": "c",
+        "en": "Required reading in Parliament"
+      },
+      {
+        "id": "d",
+        "en": "A municipal zoning issue only"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Expression has limits. Promoting genocide or wilfully promoting hatred is a crime; rights are balanced in a free and democratic society."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-024",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which English legal landmark is often cited as a root of the rule of law that Canada inherited?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Quebec Act"
+      },
+      {
+        "id": "b",
+        "en": "Magna Carta (1215)"
+      },
+      {
+        "id": "c",
+        "en": "The Official Languages Act"
+      },
+      {
+        "id": "d",
+        "en": "The Clarity Act"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Magna Carta is taught as an early limit on arbitrary royal power. Canadian law also draws on later English and French sources and Canadian statutes."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-025",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Protecting Canada’s heritage and environment is described as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A responsibility shared by citizens"
+      },
+      {
+        "id": "b",
+        "en": "The exclusive job of the Senate"
+      },
+      {
+        "id": "c",
+        "en": "Illegal for private persons"
+      },
+      {
+        "id": "d",
+        "en": "A municipal bylaw in Ottawa only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide asks citizens to help care for the natural and cultural heritage of the country, not only to claim rights."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-026",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You may legally refuse a jury summons whenever you are busy at work, with no process."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Jury service is a duty. There are limited legal excuses and a process; simply ignoring a summons is not a right."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-027",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If you are arrested or detained, a key legal right is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "To be told why, and to retain and instruct counsel without delay"
+      },
+      {
+        "id": "b",
+        "en": "To choose your trial judge by name"
+      },
+      {
+        "id": "c",
+        "en": "To have the Prime Minister attend"
+      },
+      {
+        "id": "d",
+        "en": "To skip the trial if you pay a fee"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "On arrest or detention you have the right to be informed of the reasons and to counsel. Use those rights; do not guess your way through an interrogation."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-028",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Forced or underage marriage, “honour” violence, and female genital mutilation are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Protected as religious freedoms with no limits"
+      },
+      {
+        "id": "b",
+        "en": "Crimes in Canada; culture or religion is not a defence"
+      },
+      {
+        "id": "c",
+        "en": "Civil matters only in Quebec"
+      },
+      {
+        "id": "d",
+        "en": "Legal if both families agree"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Equality and security of the person outweigh claims that violence or coercion is a cultural right. These acts are crimes."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-029",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is expected to work to eliminate discrimination and injustice?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Only the Governor General"
+      },
+      {
+        "id": "b",
+        "en": "Citizens and Canadian society as a whole"
+      },
+      {
+        "id": "c",
+        "en": "Only people born in Canada"
+      },
+      {
+        "id": "d",
+        "en": "Only the official opposition"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The guide frames fighting discrimination as a shared civic responsibility, not a task for one office."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-030",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Constitution is the supreme law of Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Ordinary statutes must be consistent with the Constitution, including the Charter. That is the legal meaning of a supreme law."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-031",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A reasonable limit on a Charter right must be:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Whatever a police officer prefers that day"
+      },
+      {
+        "id": "b",
+        "en": "Prescribed by law and demonstrably justified in a free and democratic society"
+      },
+      {
+        "id": "c",
+        "en": "Approved in a municipal tweet"
+      },
+      {
+        "id": "d",
+        "en": "Impossible; rights have no limits"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Section 1 of the Charter allows limits that are set out in law and can be justified. It does not allow arbitrary official action."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-032",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Filling out the census when required is best understood as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Optional trivia for hobbyists"
+      },
+      {
+        "id": "b",
+        "en": "A legal duty that helps governments plan services"
+      },
+      {
+        "id": "c",
+        "en": "A Senate privilege"
+      },
+      {
+        "id": "d",
+        "en": "Only for landowners"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The census is required by law. Accurate counts affect representation and public services. Completing it is part of obeying the law."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   }
 ]

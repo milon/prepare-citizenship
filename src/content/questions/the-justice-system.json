@@ -89,5 +89,848 @@
       "en": "Legal rights include protection against unreasonable search and seizure. In most cases police need lawful authority, often a warrant, before searching a home."
     },
     "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-004",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The rule of law means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Everyone, including government, is subject to the law"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister is above the Criminal Code"
+      },
+      {
+        "id": "c",
+        "en": "Police make the law as they go"
+      },
+      {
+        "id": "d",
+        "en": "Only citizens have to obey statutes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "No one is officially above the law. That is a foundation of Canadian justice."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-005",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Criminal law in Canada is mainly made by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Parliament (federal)"
+      },
+      {
+        "id": "b",
+        "en": "City councils"
+      },
+      {
+        "id": "c",
+        "en": "School boards"
+      },
+      {
+        "id": "d",
+        "en": "The official opposition research office"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Criminal Code is federal. Provinces run many of the courts and some prosecutions, but the offences are national."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-006",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Civil law (in the sense of private disputes) covers things like:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Contracts, family property, and personal injuries"
+      },
+      {
+        "id": "b",
+        "en": "Treason and murder only"
+      },
+      {
+        "id": "c",
+        "en": "Declaring war"
+      },
+      {
+        "id": "d",
+        "en": "Issuing passports"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Crown is not always a party. The standard of proof is the balance of probabilities, not reasonable doubt."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-007",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Quebec’s private law tradition is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Civil law inherited from France"
+      },
+      {
+        "id": "b",
+        "en": "Identical to Yukon custom only"
+      },
+      {
+        "id": "c",
+        "en": "Sharia as provincial statute"
+      },
+      {
+        "id": "d",
+        "en": "U.S. Supreme Court precedent as binding"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Quebec uses a civil code for private law. Other provinces use English-derived common law. Criminal law is statutory and common-law-based nationwide."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-008",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canadian courts are independent of Cabinet."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Judges are not the government’s lawyers. They can rule against the government. That independence is the point."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-009",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "How many judges sit on the Supreme Court of Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Nine, including the Chief Justice"
+      },
+      {
+        "id": "b",
+        "en": "One"
+      },
+      {
+        "id": "c",
+        "en": "One hundred"
+      },
+      {
+        "id": "d",
+        "en": "Three, all from Ontario"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nine is the number to remember. By statute, a set number come from Quebec because of its civil-law system."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-010",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The RCMP is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The federal police force, which also contracts as provincial police in much of Canada"
+      },
+      {
+        "id": "b",
+        "en": "The Supreme Court’s security contractor only in 1867"
+      },
+      {
+        "id": "c",
+        "en": "A municipal parking authority"
+      },
+      {
+        "id": "d",
+        "en": "The Senate fire brigade"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ontario and Quebec have their own provincial police. Elsewhere the RCMP often fills that role by contract."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-011",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If you are arrested, you should:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ask to speak to a lawyer and not guess your way through questioning"
+      },
+      {
+        "id": "b",
+        "en": "Invent a story to please the officer"
+      },
+      {
+        "id": "c",
+        "en": "Name the Prime Minister as your surety automatically"
+      },
+      {
+        "id": "d",
+        "en": "Refuse to give your name in every circumstance, even when legally required"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The right to counsel is practical, not theoretical. Use it."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-012",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A jury in a serious criminal trial is meant to be:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Impartial members of the public who hear the evidence"
+      },
+      {
+        "id": "b",
+        "en": "The accused’s relatives"
+      },
+      {
+        "id": "c",
+        "en": "Cabinet ministers"
+      },
+      {
+        "id": "d",
+        "en": "The arresting officers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Jury service is a citizenship duty. Jurors decide facts; the judge explains the law."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-013",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You can be forced to testify against yourself in a criminal trial as the accused."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "The right against self-incrimination and the right to silence are legal rights. The Crown must make its own case."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-014",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "“Beyond a reasonable doubt” is the standard of proof in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Criminal cases"
+      },
+      {
+        "id": "b",
+        "en": "Small-claims fights over a fence"
+      },
+      {
+        "id": "c",
+        "en": "Municipal dog-licence hearings only"
+      },
+      {
+        "id": "d",
+        "en": "Senate seating disputes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a high standard because a conviction can take away liberty."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-015",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Provincial and territorial courts typically handle:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Most everyday criminal charges and many family or youth matters"
+      },
+      {
+        "id": "b",
+        "en": "Only constitutional cases about the Monarch"
+      },
+      {
+        "id": "c",
+        "en": "NATO disputes"
+      },
+      {
+        "id": "d",
+        "en": "Federal elections recounts exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Superior courts take the most serious trials and large civil cases. Appeals go further up."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-016",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Judges in Canada are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Appointed, not elected"
+      },
+      {
+        "id": "b",
+        "en": "Elected on party slogans"
+      },
+      {
+        "id": "c",
+        "en": "Chosen by televised talent shows"
+      },
+      {
+        "id": "d",
+        "en": "Always sitting MPs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Appointment plus security of tenure is how Canada tries to keep judging off the campaign trail."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-017",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Legal aid exists because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Rights mean little if you cannot afford a lawyer in serious matters"
+      },
+      {
+        "id": "b",
+        "en": "Only corporations may have counsel"
+      },
+      {
+        "id": "c",
+        "en": "The Charter bans lawyers"
+      },
+      {
+        "id": "d",
+        "en": "Police must defend the accused"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Eligibility is limited, but the principle is access to justice, not justice only for the rich."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-018",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Police decide guilt or innocence."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Police investigate and may charge. Courts decide. That separation is basic."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-019",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Habeas corpus lets a detained person:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ask a court whether the detention is lawful"
+      },
+      {
+        "id": "b",
+        "en": "Rewrite the Criminal Code"
+      },
+      {
+        "id": "c",
+        "en": "Elect a new Chief Justice"
+      },
+      {
+        "id": "d",
+        "en": "Cancel a federal election"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is an old writ and a living Charter-era protection against arbitrary holding."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-020",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A “Crown attorney” or Crown prosecutor represents:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The state in a criminal case"
+      },
+      {
+        "id": "b",
+        "en": "The accused as a public defender always"
+      },
+      {
+        "id": "c",
+        "en": "The municipal parks board"
+      },
+      {
+        "id": "d",
+        "en": "NATO"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Crown is the state’s lawyer. Defence counsel represents the accused. They are not the same job."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-021",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Youth criminal justice in Canada is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A separate system with extra emphasis on rehabilitation, still with real consequences"
+      },
+      {
+        "id": "b",
+        "en": "Identical to adult court in every respect, including naming children in the media as a rule"
+      },
+      {
+        "id": "c",
+        "en": "Handled only by school principals"
+      },
+      {
+        "id": "d",
+        "en": "Abolished in 1867"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Young people have a distinct statute. It is not a free pass."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-022",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You have the right to a fair and public hearing before an independent court in criminal matters."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Open courts and impartial judges are legal rights. Some limits exist (youth, publication bans), but secrecy is the exception."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-023",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Common law, in the provinces that use it, develops through:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Court decisions as well as statutes"
+      },
+      {
+        "id": "b",
+        "en": "Only United Nations resolutions"
+      },
+      {
+        "id": "c",
+        "en": "Mayoral decrees"
+      },
+      {
+        "id": "d",
+        "en": "Hockey rulebooks"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Judges follow precedent. Legislatures can still change the law by statute."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-024",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a typical police service level in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Municipal, provincial, and federal"
+      },
+      {
+        "id": "b",
+        "en": "Only a single continental force run by Washington"
+      },
+      {
+        "id": "c",
+        "en": "Only railway police from 1670"
+      },
+      {
+        "id": "d",
+        "en": "Only Senate security"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Cities often have their own services. Provinces may have provincial police. The RCMP is federal."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-025",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A warrant is commonly required because the Charter protects you against:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Unreasonable search and seizure"
+      },
+      {
+        "id": "b",
+        "en": "Paying taxes"
+      },
+      {
+        "id": "c",
+        "en": "Jury duty"
+      },
+      {
+        "id": "d",
+        "en": "Being called as a witness in a civil trial ever"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Urgent exceptions exist. The default for a home search is prior judicial authorization."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-026",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Prime Minister can overturn a Supreme Court decision by memo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Parliament can try to pass a new law, sometimes using the notwithstanding clause in limited areas. It cannot quietly ignore a ruling by memo."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-027",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Restitution and sentencing circles are examples of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Efforts, in some cases, to include repairing harm—not a replacement for the whole criminal law"
+      },
+      {
+        "id": "b",
+        "en": "Abolishing courts"
+      },
+      {
+        "id": "c",
+        "en": "Senate procedure"
+      },
+      {
+        "id": "d",
+        "en": "Municipal compost rules"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide stresses fairness and the rule of law. Community processes can sit beside, not instead of, core rights."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-028",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Appeals exist so that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A higher court can review alleged legal errors"
+      },
+      {
+        "id": "b",
+        "en": "The accused can keep retrying until a friend is on the jury"
+      },
+      {
+        "id": "c",
+        "en": "Cabinet can pick a winner"
+      },
+      {
+        "id": "d",
+        "en": "Newspapers can veto verdicts"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "You do not get unlimited new trials for fun. You get review of law and, in some cases, of unreasonable verdicts."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-029",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which statement is correct?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Getting a lawyer is a right on arrest or detention; remaining silent is usually wise until you have advice"
+      },
+      {
+        "id": "b",
+        "en": "You must answer every police question or you automatically go to prison"
+      },
+      {
+        "id": "c",
+        "en": "Only citizens may call a lawyer"
+      },
+      {
+        "id": "d",
+        "en": "Judges must also be your defence counsel"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizenship is not required for basic legal rights on arrest in Canada."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-030",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "All Canadian private law is identical in every province, including Quebec."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Quebec’s civil-law tradition is a testable difference. Criminal law is the part that is mainly unified."
+    },
+    "source": "Discover Canada — The Justice System"
   }
 ]

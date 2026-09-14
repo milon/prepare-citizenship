@@ -38,7 +38,7 @@ loaded.
       verbatim Crown-copyright text from the guide)
 - [ ] Question bank as structured JSON under `src/content/questions/` (one file
       per chapter), not hardcoded in pages
-- [ ] **~300–400 unique questions.** Later: 500–600 via alternate phrasings of
+- [x] **~300–400 unique questions.** Later: 500–600 via alternate phrasings of
       the same facts. Do not pad with near-duplicates for a headline number.
 - [ ] Mix of **multiple-choice (4 options)** and **true/false**
 - [ ] Regional items tagged by province/territory (`ab`, `bc`, `mb`, `nb`, `nl`,
@@ -266,7 +266,7 @@ if stored, it must be rebuilt after import.
       chapter, source
 - [x] Write ~30 gold-standard questions across chapters (including T/F + one
       regional example)
-- [ ] Scale to ~300–400 unique items; extra flashcards only where needed
+- [x] Scale to ~300–400 unique items; extra flashcards only where needed
 - [x] Write original chapter summary pages (10 chapters + region subpages)
 - [x] Fill `current.json` and date-stamp it
 

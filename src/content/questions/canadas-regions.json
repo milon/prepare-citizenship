@@ -97,5 +97,1524 @@
       "en": "Prince Edward Island is the smallest province. It is known for agriculture, tourism, and being the birthplace of Confederation talks in 1864."
     },
     "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-004",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada has how many provinces and territories?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ten provinces and three territories"
+      },
+      {
+        "id": "b",
+        "en": "Thirteen provinces and no territories"
+      },
+      {
+        "id": "c",
+        "en": "Five provinces and five territories"
+      },
+      {
+        "id": "d",
+        "en": "Nine provinces and one territory"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ten provinces have constitutional status of their own. Three territories were created by federal statute."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-005",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "In the study guide’s grouping, Atlantic Canada includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick"
+      },
+      {
+        "id": "b",
+        "en": "Quebec and Ontario"
+      },
+      {
+        "id": "c",
+        "en": "Manitoba, Saskatchewan, and Alberta"
+      },
+      {
+        "id": "d",
+        "en": "Yukon, Northwest Territories, and Nunavut"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Those four provinces face the Atlantic. Quebec is Central Canada in the guide, not Atlantic."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-006",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Central Canada, in the official study-guide regions, means:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec and Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Manitoba and Saskatchewan"
+      },
+      {
+        "id": "c",
+        "en": "Only Toronto"
+      },
+      {
+        "id": "d",
+        "en": "The three territories"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a population and history grouping, not “the geographic centre of the map.”"
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-007",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Prairie provinces are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Manitoba, Saskatchewan, and Alberta"
+      },
+      {
+        "id": "b",
+        "en": "B.C., Yukon, and Alberta"
+      },
+      {
+        "id": "c",
+        "en": "Ontario, Quebec, and Manitoba"
+      },
+      {
+        "id": "d",
+        "en": "Nova Scotia, PEI, and New Brunswick"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They sit between the Shield and the Rockies. All three joined after 1867."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-008",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The West Coast region in the guide is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "British Columbia"
+      },
+      {
+        "id": "b",
+        "en": "Yukon"
+      },
+      {
+        "id": "c",
+        "en": "Alberta"
+      },
+      {
+        "id": "d",
+        "en": "Manitoba"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Yukon is grouped with the Northern Territories, not with the West Coast region."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-009",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Northern Territories are:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Yukon, Northwest Territories, and Nunavut"
+      },
+      {
+        "id": "b",
+        "en": "Labrador, Yukon, and PEI"
+      },
+      {
+        "id": "c",
+        "en": "NWT, Manitoba, and Nunavut"
+      },
+      {
+        "id": "d",
+        "en": "Yukon, B.C., and Alaska"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Three territories, vast land, small populations."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-010",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Most Canadians live within a few hundred kilometres of the United States border."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The populated belt is southern and thin. The North is huge and sparsely peopled."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-011",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The five Great Lakes include:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Superior, Michigan, Huron, Erie, and Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Winnipeg, Athabasca, Great Slave, Great Bear, and Ontario"
+      },
+      {
+        "id": "c",
+        "en": "Ontario, Erie, Champlain, Simcoe, and Nipissing"
+      },
+      {
+        "id": "d",
+        "en": "Michigan, Superior, Winnipeg, Erie, and Huron only four names"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They drain to the Atlantic via the St. Lawrence. Michigan is shared with the United States."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-012",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian Shield is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A vast rocky region rich in forests and minerals around Hudson Bay"
+      },
+      {
+        "id": "b",
+        "en": "A police badge"
+      },
+      {
+        "id": "c",
+        "en": "The roof of the Peace Tower"
+      },
+      {
+        "id": "d",
+        "en": "A prairie grassland only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It covers much of Quebec, Ontario, Manitoba, and the Territories. Mining and hydro are classic Shield economies."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-013",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Cordillera is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The western mountain system"
+      },
+      {
+        "id": "b",
+        "en": "A river in PEI"
+      },
+      {
+        "id": "c",
+        "en": "A Toronto neighbourhood"
+      },
+      {
+        "id": "d",
+        "en": "The Senate’s Latin name"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Rockies and Coast Mountains dominate British Columbia and stretch into Alberta and the Yukon."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-014",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Quebec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Montreal"
+      },
+      {
+        "id": "b",
+        "en": "Quebec City"
+      },
+      {
+        "id": "c",
+        "en": "Gatineau"
+      },
+      {
+        "id": "d",
+        "en": "Sherbrooke"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Quebec City is the capital. Montreal is the largest city. Mixing them is a classic test trap."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-015",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which city is Quebec’s metropolis and Canada’s largest French-speaking city?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Montreal"
+      },
+      {
+        "id": "b",
+        "en": "Quebec City"
+      },
+      {
+        "id": "c",
+        "en": "Trois-Rivières"
+      },
+      {
+        "id": "d",
+        "en": "Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Montreal is the economic and cultural giant. Quebec City is the political capital, founded in 1608."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-016",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of British Columbia?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Vancouver"
+      },
+      {
+        "id": "b",
+        "en": "Victoria"
+      },
+      {
+        "id": "c",
+        "en": "Kelowna"
+      },
+      {
+        "id": "d",
+        "en": "Prince George"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Victoria, on Vancouver Island, is the capital. Vancouver is the largest city and main port."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-017",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "British Columbia joined Confederation in 1871 after a promise of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A transcontinental railway"
+      },
+      {
+        "id": "b",
+        "en": "Immediate Senate seats for every village"
+      },
+      {
+        "id": "c",
+        "en": "Free ferries forever with no terms"
+      },
+      {
+        "id": "d",
+        "en": "Official status for Spanish"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The railway bound the Pacific province to Canada. Vancouver later became the great Pacific gateway."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-018",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Alberta?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Calgary"
+      },
+      {
+        "id": "b",
+        "en": "Edmonton"
+      },
+      {
+        "id": "c",
+        "en": "Red Deer"
+      },
+      {
+        "id": "d",
+        "en": "Lethbridge"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Edmonton is the capital. Calgary is the largest city. Energy and agriculture define much of the economy."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-019",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Alberta’s largest city is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Edmonton"
+      },
+      {
+        "id": "b",
+        "en": "Calgary"
+      },
+      {
+        "id": "c",
+        "en": "Banff"
+      },
+      {
+        "id": "d",
+        "en": "Fort McMurray"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Calgary is larger; Edmonton is the seat of government. The Rockies lie on the B.C. boundary."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-020",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Saskatchewan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Saskatoon"
+      },
+      {
+        "id": "b",
+        "en": "Regina"
+      },
+      {
+        "id": "c",
+        "en": "Moose Jaw"
+      },
+      {
+        "id": "d",
+        "en": "Prince Albert"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Regina is the capital. Saskatoon is the largest city. Wheat and potash are classic study-guide hooks."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-021",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Saskatchewan is especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Grain farming and potash"
+      },
+      {
+        "id": "b",
+        "en": "Pacific shipping"
+      },
+      {
+        "id": "c",
+        "en": "Cod stocks"
+      },
+      {
+        "id": "d",
+        "en": "The national capital"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is also the birthplace of a major strain of Canadian social democracy, including early public hospital insurance."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-022",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Manitoba?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Brandon"
+      },
+      {
+        "id": "b",
+        "en": "Winnipeg"
+      },
+      {
+        "id": "c",
+        "en": "Churchill"
+      },
+      {
+        "id": "d",
+        "en": "Thompson"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Winnipeg sits at the forks of the Red and Assiniboine. Red River Métis history is central to the province’s entry into Canada."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-023",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Manitoba entered Confederation in 1870 after:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Red River Resistance and the Manitoba Act"
+      },
+      {
+        "id": "b",
+        "en": "The Klondike gold rush"
+      },
+      {
+        "id": "c",
+        "en": "D-Day"
+      },
+      {
+        "id": "d",
+        "en": "The Quiet Revolution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Louis Riel and the Métis provisional government are part of that founding story."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-024",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Nova Scotia?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Halifax"
+      },
+      {
+        "id": "b",
+        "en": "Sydney"
+      },
+      {
+        "id": "c",
+        "en": "Yarmouth"
+      },
+      {
+        "id": "d",
+        "en": "Lunenburg"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Halifax is the largest Atlantic city and a major port, with a long military and naval history."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-025",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of New Brunswick?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Saint John"
+      },
+      {
+        "id": "b",
+        "en": "Moncton"
+      },
+      {
+        "id": "c",
+        "en": "Fredericton"
+      },
+      {
+        "id": "d",
+        "en": "Bathurst"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Fredericton is the capital. New Brunswick is the only officially bilingual province, with a large Acadian population."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-026",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which is the only officially bilingual province?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec"
+      },
+      {
+        "id": "b",
+        "en": "New Brunswick"
+      },
+      {
+        "id": "c",
+        "en": "Ontario"
+      },
+      {
+        "id": "d",
+        "en": "Manitoba"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Quebec’s official language is French. Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-027",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Prince Edward Island?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Summerside"
+      },
+      {
+        "id": "b",
+        "en": "Charlottetown"
+      },
+      {
+        "id": "c",
+        "en": "Cavendish"
+      },
+      {
+        "id": "d",
+        "en": "Georgetown"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Charlottetown hosted the 1864 conference that began Confederation talks. PEI joined Canada in 1873."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-028",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Newfoundland and Labrador?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Corner Brook"
+      },
+      {
+        "id": "b",
+        "en": "Happy Valley-Goose Bay"
+      },
+      {
+        "id": "c",
+        "en": "St. John's"
+      },
+      {
+        "id": "d",
+        "en": "Gander"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "St. John’s is one of the oldest European-founded cities in North America. The province joined Canada in 1949."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-029",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Newfoundland and Labrador consists of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "An island (Newfoundland) plus a mainland region (Labrador)"
+      },
+      {
+        "id": "b",
+        "en": "Only an Arctic archipelago"
+      },
+      {
+        "id": "c",
+        "en": "Only Prairie farmland"
+      },
+      {
+        "id": "d",
+        "en": "Only Vancouver Island"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Labrador is on the mainland next to Quebec. Newfoundland time is a half-hour ahead of Atlantic time."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-030",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Yukon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Dawson City"
+      },
+      {
+        "id": "b",
+        "en": "Whitehorse"
+      },
+      {
+        "id": "c",
+        "en": "Watson Lake"
+      },
+      {
+        "id": "d",
+        "en": "Yellowknife"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Whitehorse is the capital. Dawson is tied to the Klondike Gold Rush of the late 1890s."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-031",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Yukon’s classic historic event in the study guide is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Klondike Gold Rush"
+      },
+      {
+        "id": "b",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "c",
+        "en": "The Dieppe raid"
+      },
+      {
+        "id": "d",
+        "en": "The Charlottetown Conference"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The rush brought a stampede of prospectors and made the territory famous."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-032",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of the Northwest Territories?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Inuvik"
+      },
+      {
+        "id": "b",
+        "en": "Hay River"
+      },
+      {
+        "id": "c",
+        "en": "Yellowknife"
+      },
+      {
+        "id": "d",
+        "en": "Iqaluit"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Yellowknife sits on Great Slave Lake. Diamonds, gold, and public administration are economic pillars."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-033",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Nunavut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Rankin Inlet"
+      },
+      {
+        "id": "b",
+        "en": "Iqaluit"
+      },
+      {
+        "id": "c",
+        "en": "Cambridge Bay"
+      },
+      {
+        "id": "d",
+        "en": "Yellowknife"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Iqaluit is the capital. Nunavut was created in 1999 from the eastern Northwest Territories."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-034",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Nunavut was created in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "1867"
+      },
+      {
+        "id": "b",
+        "en": "1949"
+      },
+      {
+        "id": "c",
+        "en": "1999"
+      },
+      {
+        "id": "d",
+        "en": "1927"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "It is a majority-Inuit territory. Inuktut languages are central to public life. Many communities are fly-in."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-035",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Nunavut is a province."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "It is a territory. That legal distinction still matters, even as territorial governments run most daily services."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-036",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which province has the largest population?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec"
+      },
+      {
+        "id": "b",
+        "en": "Ontario"
+      },
+      {
+        "id": "c",
+        "en": "British Columbia"
+      },
+      {
+        "id": "d",
+        "en": "Alberta"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Ontario is the most populous. Quebec is second. Population, not land area, drives House of Commons seat counts."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-037",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which is the largest province by land area?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Quebec"
+      },
+      {
+        "id": "c",
+        "en": "British Columbia"
+      },
+      {
+        "id": "d",
+        "en": "Alberta"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Quebec is the largest province. Nunavut is larger still, but it is a territory."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-038",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The St. Lawrence River is historically important as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The highway from the Atlantic into the interior of the continent"
+      },
+      {
+        "id": "b",
+        "en": "A prairie creek"
+      },
+      {
+        "id": "c",
+        "en": "A Yukon gold stream only"
+      },
+      {
+        "id": "d",
+        "en": "A British Columbia fjord only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "New France, Montreal, Quebec City, and later the Seaway all sit on this system."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-039",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Niagara Falls lies on the border of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario and the United States"
+      },
+      {
+        "id": "b",
+        "en": "B.C. and Alaska"
+      },
+      {
+        "id": "c",
+        "en": "Manitoba and Nunavut"
+      },
+      {
+        "id": "d",
+        "en": "PEI and New Brunswick"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a hydroelectric and tourism landmark of the Great Lakes–St. Lawrence system."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-040",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Ottawa is in Ontario, but the National Capital Region also includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Gatineau, Quebec, across the river"
+      },
+      {
+        "id": "b",
+        "en": "Winnipeg"
+      },
+      {
+        "id": "c",
+        "en": "Halifax"
+      },
+      {
+        "id": "d",
+        "en": "Victoria"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Federal institutions sit on both sides of the Ottawa River. Do not call Gatineau the national capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-041",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Prince Edward Island is linked to the mainland by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Confederation Bridge (and also by ferry)"
+      },
+      {
+        "id": "b",
+        "en": "A subway to Montreal"
+      },
+      {
+        "id": "c",
+        "en": "A rail tunnel to Yukon"
+      },
+      {
+        "id": "d",
+        "en": "A dam across Hudson Bay"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The bridge is a modern fact; the 1864 talks are the historic one. Agriculture and tourism remain economic staples."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-042",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Nova Scotia’s name means:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "New Scotland"
+      },
+      {
+        "id": "b",
+        "en": "New France"
+      },
+      {
+        "id": "c",
+        "en": "New Ireland"
+      },
+      {
+        "id": "d",
+        "en": "New Wales"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Scottish settlement, the Halifax port, Acadian communities, and Black Loyalist history all mark the province."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-043",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which region is sparsely populated, strategically important in the Arctic, and home to Inuit and other northern peoples?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The North"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island’s interior cities"
+      },
+      {
+        "id": "c",
+        "en": "Downtown Toronto"
+      },
+      {
+        "id": "d",
+        "en": "The Niagara fruit belt only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Permafrost, fly-in communities, and sovereignty issues are part of the northern story."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-044",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Toronto is the capital of Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Toronto is Ontario’s capital and the largest city. Ottawa is the national capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-045",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Hudson Bay is bordered by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Several provinces and territories, with the Shield around much of it"
+      },
+      {
+        "id": "b",
+        "en": "Only British Columbia"
+      },
+      {
+        "id": "c",
+        "en": "Only Prince Edward Island"
+      },
+      {
+        "id": "d",
+        "en": "Only the island of Newfoundland"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a geographic centre of gravity for the Shield and for historic fur-trade routes."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-046",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Vancouver is important as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A major Pacific port and B.C.’s largest city"
+      },
+      {
+        "id": "b",
+        "en": "The provincial capital"
+      },
+      {
+        "id": "c",
+        "en": "The national capital"
+      },
+      {
+        "id": "d",
+        "en": "Nunavut’s seaport"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Victoria is the capital. Vancouver is the metropolis and a gateway to Asia-Pacific trade."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-047",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which province is an original 1867 member and remains the heart of French-speaking North America?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Quebec"
+      },
+      {
+        "id": "b",
+        "en": "Alberta"
+      },
+      {
+        "id": "c",
+        "en": "Saskatchewan"
+      },
+      {
+        "id": "d",
+        "en": "Newfoundland and Labrador"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Quebec was Canada East. Its civil law, language, and national capital (Quebec City) are core regional facts."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-048",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Southern Ontario’s economy has long included:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Manufacturing (including autos) and services"
+      },
+      {
+        "id": "b",
+        "en": "Only Arctic mining"
+      },
+      {
+        "id": "c",
+        "en": "Only offshore oil"
+      },
+      {
+        "id": "d",
+        "en": "Only potato farming"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Golden Horseshoe around Toronto is one of the country’s main industrial and service regions."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-049",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Territories have commissioners rather than lieutenant governors."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The Crown’s provincial representative is a Lieutenant Governor. Territorial commissioners are a different office."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-050",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If a citizenship question asks about “your region,” it often wants:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Your province or territory’s capital and a local geographic or historic hook"
+      },
+      {
+        "id": "b",
+        "en": "The name of your landlord"
+      },
+      {
+        "id": "c",
+        "en": "Your federal riding’s polling-station number only"
+      },
+      {
+        "id": "d",
+        "en": "The Mayor of Ottawa in every case"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "National facts first, then lock in your capital city and one distinctive fact. This app tags such items by province code."
+    },
+    "source": "Discover Canada — Canada's Regions"
   }
 ]

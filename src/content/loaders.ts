@@ -1,5 +1,6 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import type { Loader } from 'astro/loaders';
 
 async function loadJsonArray(
   relativeDir: string,
@@ -30,6 +31,33 @@ async function loadJsonArray(
   return entries;
 }
 
-export function jsonArrayLoader(relativeDir: string) {
-  return async () => loadJsonArray(relativeDir);
+export function jsonArrayLoader(relativeDir: string): Loader {
+  const dir = join(process.cwd(), relativeDir);
+
+  return {
+    name: 'json-array-loader',
+    load: async ({ store, parseData, generateDigest, watcher, logger }) => {
+      async function sync() {
+        store.clear();
+        const entries = await loadJsonArray(relativeDir);
+        for (const entry of entries) {
+          const data = await parseData({ id: entry.id, data: entry });
+          store.set({
+            id: entry.id,
+            data,
+            digest: generateDigest(data),
+          });
+        }
+      }
+
+      await sync();
+      watcher?.add(dir);
+      watcher?.on('change', async (changedPath) => {
+        if (changedPath.startsWith(dir) && changedPath.endsWith('.json')) {
+          logger.info(`Reloading ${relativeDir}`);
+          await sync();
+        }
+      });
+    },
+  };
 }
