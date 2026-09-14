@@ -140,9 +140,11 @@ const en: Dict = {
   'mock.eyebrow': 'Mock exam',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
-    'Pass is 15/20. Questions are balanced across chapters and include an item for your province. You can flag and jump around. The clock cannot be paused, and the exam submits itself at 0:00. Answers stay hidden until you submit.',
+    'Every attempt is generated from the question bank: two questions per chapter, including your region. It avoids earlier mock questions while each chapter has unused material and gives missed questions priority. Pass is 15/20; answers stay hidden until you submit.',
   'mock.luck': 'Good luck, {name}.',
   'mock.start': 'Start exam',
+  'mock.fresh': 'Start a fresh mock',
+  'mock.replay': 'Retry the same questions',
   'mock.warning': 'Five minutes remaining.',
   'mock.flagged': 'Flagged',
   'mock.flag': 'Flag for review',
@@ -320,6 +322,15 @@ const en: Dict = {
     'Read a chapter, drill the flashcards, then sit a timed mock exam. Progress stays on this device.',
   'home.questions': '{n} questions',
   'home.verified': 'Verified {date}',
+  'home.mockHowTitle': 'How mock exams work',
+  'home.mockHowLede':
+    'Mocks are generated when you start—not fixed papers. Each attempt draws 20 questions across all 10 chapters, includes your province or territory, and avoids earlier mock questions while fresh ones remain.',
+  'home.mockTime': '45 minutes',
+  'home.mockPass': '15/20 to pass',
+  'home.mockUnlimited': 'Unlimited fresh attempts',
+  'home.mockAdaptive':
+    'Questions you missed get priority without replacing the balanced chapter mix. After submitting, review every answer or retry the exact same paper.',
+  'home.mockCta': 'Start a mock exam',
   'faq.title': 'Frequently asked questions',
   'faq.lede':
     'Independent practice for the Canadian citizenship test — not the test itself, and not affiliated with IRCC.',
@@ -430,9 +441,11 @@ const fr: Dict = {
   'mock.eyebrow': 'Examen blanc',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
-    'La note de passage est 15/20. Les questions sont réparties entre les chapitres et incluent un item pour votre province. Vous pouvez marquer et naviguer. Le chronomètre ne se met pas en pause, et l’examen s’envoie à 0:00. Les réponses restent cachées jusqu’à l’envoi.',
+    'Chaque tentative est générée à partir de la banque : deux questions par chapitre, y compris votre région. Elle évite les questions des examens précédents tant que chaque chapitre contient des questions inédites et donne priorité aux questions manquées. La note de passage est 15/20; les réponses restent cachées jusqu’à l’envoi.',
   'mock.luck': 'Bonne chance, {name}.',
   'mock.start': 'Commencer l’examen',
+  'mock.fresh': 'Commencer un nouvel examen',
+  'mock.replay': 'Reprendre les mêmes questions',
   'mock.warning': 'Cinq minutes restantes.',
   'mock.flagged': 'Marquée',
   'mock.flag': 'Marquer pour révision',
@@ -613,6 +626,15 @@ const fr: Dict = {
     'Lisez un chapitre, révisez avec les cartes-éclair, puis passez un examen blanc chronométré. Votre progrès reste sur cet appareil.',
   'home.questions': '{n} questions',
   'home.verified': 'Vérifié le {date}',
+  'home.mockHowTitle': 'Fonctionnement des examens blancs',
+  'home.mockHowLede':
+    'Les examens sont générés au démarrage : ce ne sont pas des questionnaires fixes. Chaque tentative tire 20 questions des 10 chapitres, inclut votre province ou territoire et évite les questions déjà vues tant qu’il en reste de nouvelles.',
+  'home.mockTime': '45 minutes',
+  'home.mockPass': '15/20 pour réussir',
+  'home.mockUnlimited': 'Nouvelles tentatives illimitées',
+  'home.mockAdaptive':
+    'Les questions manquées ont priorité sans modifier l’équilibre entre les chapitres. Après l’envoi, révisez chaque réponse ou reprenez exactement le même questionnaire.',
+  'home.mockCta': 'Commencer un examen blanc',
   'faq.title': 'Foire aux questions',
   'faq.lede':
     'Exercices indépendants pour l’examen de citoyenneté canadienne — ce n’est pas l’examen officiel et le site n’est pas affilié à IRCC.',

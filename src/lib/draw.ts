@@ -1,117 +1,106 @@
 import { CHAPTER_IDS, type ChapterId, type RegionCode } from '../content/schema';
 import type { ClientQuestion } from './client-types';
-import { shuffle } from './shuffle';
+import { seededRandom, shuffle, type RandomSource } from './shuffle';
 
 const MOCK_SIZE = 20;
 
-function eligibleForProvince(
-  questions: ClientQuestion[],
-  province: RegionCode,
-): ClientQuestion[] {
+function eligibleForProvince(questions: ClientQuestion[], province: RegionCode): ClientQuestion[] {
   return questions.filter((question) => question.region === null || question.region === province);
 }
 
-function takeFromChapter(
-  pool: ClientQuestion[],
+function preferQuestions(
+  questions: ClientQuestion[],
+  preferredIds: Set<string>,
+  random: RandomSource,
+): ClientQuestion[] {
+  const randomized = shuffle(questions, random);
+  return [
+    ...randomized.filter((question) => preferredIds.has(question.id)),
+    ...randomized.filter((question) => !preferredIds.has(question.id)),
+  ];
+}
+
+function chapterCandidates(
+  eligible: ClientQuestion[],
   chapter: ChapterId,
-  count: number,
-  preferRegional: boolean,
+  avoidedIds: Set<string>,
+  preferredIds: Set<string>,
+  random: RandomSource,
+): ClientQuestion[] {
+  const chapterPool = eligible.filter((question) => question.chapter === chapter);
+  const fresh = chapterPool.filter((question) => !avoidedIds.has(question.id));
+  const recycled = chapterPool.filter((question) => avoidedIds.has(question.id));
+  return [
+    ...preferQuestions(fresh, preferredIds, random),
+    ...preferQuestions(recycled, preferredIds, random),
+  ];
+}
+
+function takeTwoFromChapter(
+  candidates: ClientQuestion[],
+  chapter: ChapterId,
   province: RegionCode,
 ): ClientQuestion[] {
-  const chapterPool = shuffle(pool.filter((question) => question.chapter === chapter));
-  if (chapterPool.length === 0 || count <= 0) {
-    return [];
+  if (candidates.length <= 2) {
+    return candidates;
   }
 
-  if (preferRegional) {
-    const regional = chapterPool.filter((question) => question.region === province);
-    const national = chapterPool.filter((question) => question.region === null);
-    const picked: ClientQuestion[] = [];
-    if (regional.length > 0) {
-      picked.push(regional[0]);
+  if (chapter === 'canadas-regions') {
+    const regional = candidates.find((question) => question.region === province);
+    if (regional) {
+      return [regional, candidates.find((question) => question.id !== regional.id)!];
     }
-    for (const question of [...national, ...regional]) {
-      if (picked.length >= count) {
-        break;
-      }
-      if (!picked.includes(question)) {
-        picked.push(question);
-      }
-    }
-    return picked.slice(0, count);
   }
 
-  const trueFalse = chapterPool.filter((question) => question.type === 'true_false');
-  const mcq = chapterPool.filter((question) => question.type === 'mcq');
-  const picked: ClientQuestion[] = [];
-  if (count >= 2 && trueFalse.length > 0 && mcq.length > 0) {
-    picked.push(trueFalse[0], mcq[0]);
-    return picked.slice(0, count);
-  }
-  return chapterPool.slice(0, count);
+  const first = candidates[0];
+  const otherType = candidates.find((question) => question.type !== first.type);
+  return [first, otherType ?? candidates[1]];
 }
 
-function fill(picked: ClientQuestion[], pool: ClientQuestion[], needed: number): ClientQuestion[] {
-  const have = new Set(picked.map((question) => question.id));
-  const extras = shuffle(pool.filter((question) => !have.has(question.id)));
-  return [...picked, ...extras.slice(0, Math.max(0, needed - picked.length))];
-}
-
-function ensureProvinceItem(
-  picked: ClientQuestion[],
-  pool: ClientQuestion[],
-  province: RegionCode,
-): ClientQuestion[] {
-  if (picked.some((question) => question.region === province)) {
-    return picked;
-  }
-  const regional = pool.filter((question) => question.region === province);
-  if (regional.length === 0) {
-    return picked;
-  }
-  const used = new Set(picked.map((question) => question.id));
-  const incoming = regional.find((question) => !used.has(question.id)) ?? regional[0];
-  const replaceAt = picked.findIndex(
-    (question) => question.chapter === 'canadas-regions' && question.region !== province,
-  );
-  const index = replaceAt >= 0 ? replaceAt : Math.max(0, picked.length - 1);
-  const next = [...picked];
-  next[index] = incoming;
-  return next;
-}
+export type MockDrawOptions = {
+  avoidedIds?: Set<string>;
+  preferredIds?: Set<string>;
+  seed?: string;
+};
 
 export function drawMockQuestions(
   questions: ClientQuestion[],
   province: RegionCode,
-  recentIds: Set<string>,
+  options: MockDrawOptions = {},
 ): ClientQuestion[] {
   const eligible = eligibleForProvince(questions, province);
-  const fresh = eligible.filter((question) => !recentIds.has(question.id));
-  const pools = fresh.length >= MOCK_SIZE ? [fresh, eligible] : [eligible];
+  const avoidedIds = options.avoidedIds ?? new Set<string>();
+  const preferredIds = options.preferredIds ?? new Set<string>();
+  const random = options.seed ? seededRandom(options.seed) : Math.random;
+  let picked: ClientQuestion[] = [];
 
-  for (const pool of pools) {
-    let picked: ClientQuestion[] = [];
-    for (const chapter of CHAPTER_IDS) {
-      picked = [
-        ...picked,
-        ...takeFromChapter(pool, chapter, 2, chapter === 'canadas-regions', province),
-      ];
-    }
-    picked = fill(picked, pool, MOCK_SIZE);
-    picked = ensureProvinceItem(picked, pool, province);
-    if (picked.length >= MOCK_SIZE) {
-      return shuffle(picked.slice(0, MOCK_SIZE)).map((question) => ({
-        ...question,
-        options: shuffle(question.options),
-      }));
-    }
+  for (const chapter of CHAPTER_IDS) {
+    const candidates = chapterCandidates(
+      eligible,
+      chapter,
+      avoidedIds,
+      preferredIds,
+      random,
+    );
+    picked = [...picked, ...takeTwoFromChapter(candidates, chapter, province)];
   }
 
-  return shuffle(eligible)
-    .slice(0, MOCK_SIZE)
+  if (picked.length < MOCK_SIZE) {
+    const selected = new Set(picked.map((question) => question.id));
+    const extras = preferQuestions(
+      eligible.filter((question) => !selected.has(question.id)),
+      preferredIds,
+      random,
+    );
+    picked = [...picked, ...extras.slice(0, MOCK_SIZE - picked.length)];
+  }
+
+  return shuffle(picked.slice(0, MOCK_SIZE), random)
     .map((question) => ({
       ...question,
-      options: shuffle(question.options),
+      // True/false choices stay in their authored order; randomizing them adds noise.
+      options:
+        question.type === 'true_false' ? [...question.options] : shuffle(question.options, random),
     }));
 }
 

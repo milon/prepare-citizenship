@@ -66,6 +66,34 @@ const officialPdfUrlFr =
     totalCards={cards.length}
   />
 
+  <section class="card mock-explainer" aria-labelledby="mock-how-heading">
+    <span class="sq"><Icon name="mock" /></span>
+    <div>
+      <div class="card-head">
+        <h2 id="mock-how-heading" data-i18n="home.mockHowTitle">How mock exams work</h2>
+        <p data-i18n="home.mockHowLede">
+          Mocks are generated when you start—not fixed papers. Each attempt draws 20
+          questions across all 10 chapters, includes your province or territory, and avoids
+          earlier mock questions while fresh ones remain.
+        </p>
+      </div>
+      <div class="chips">
+        <span class="chip" data-i18n="home.mockTime">45 minutes</span>
+        <span class="chip" data-i18n="home.mockPass">15/20 to pass</span>
+        <span class="chip" data-i18n="home.mockUnlimited">Unlimited fresh attempts</span>
+      </div>
+      <p class="mock-explainer-note" data-i18n="home.mockAdaptive">
+        Questions you missed get priority without replacing the balanced chapter mix. After
+        submitting, review every answer or retry the exact same paper.
+      </p>
+      <p class="button-row">
+        <a class="button button-primary" href={withBase('/mock/')} data-i18n="home.mockCta">
+          Start a mock exam
+        </a>
+      </p>
+    </div>
+  </section>
+
   <section class="card" style="margin-top:1rem" aria-labelledby="chapters-heading">
     <div class="card-head">
       <h2 id="chapters-heading" data-i18n="chapters.ten">The ten chapters</h2>
@@ -91,8 +119,8 @@ const officialPdfUrlFr =
     </ul>
   </section>
 
-  <section class="panel disclaimer" aria-labelledby="disclaimer-heading">
-    <Icon name="info" class="disclaimer-icon" />
+  <section class="card disclaimer" aria-labelledby="disclaimer-heading">
+    <span class="sq"><Icon name="info" /></span>
     <div>
       <h2 id="disclaimer-heading" data-i18n="home.disclaimer">Independent practice, not the official test</h2>
       <p class="lang-en">

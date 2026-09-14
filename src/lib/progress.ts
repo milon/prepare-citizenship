@@ -22,6 +22,8 @@ export type QuizAttempt = {
   score: number;
   total: number;
   questionIds: string[];
+  mockSeed?: string;
+  optionIdsByQuestion?: Record<string, string[]>;
   answers: AttemptAnswer[];
 };
 
@@ -281,6 +283,19 @@ export function weakestChapter(progress: Progress): ChapterId | null {
 export function lastMockQuestionIds(progress: Progress, count = 3): Set<string> {
   const mocks = progress.quizAttempts.filter((attempt) => attempt.mode === 'mock').slice(-count);
   return new Set(mocks.flatMap((attempt) => attempt.questionIds));
+}
+
+export function allMockQuestionIds(progress: Progress): Set<string> {
+  const mocks = progress.quizAttempts.filter((attempt) => attempt.mode === 'mock');
+  return new Set(mocks.flatMap((attempt) => attempt.questionIds));
+}
+
+export function lastMockAttempt(progress: Progress): QuizAttempt | null {
+  return (
+    progress.quizAttempts
+      .filter((attempt) => attempt.mode === 'mock')
+      .at(-1) ?? null
+  );
 }
 
 export function newAttemptId(now = new Date()): string {

@@ -45,7 +45,7 @@ export function faqItems(
         id: 'mock',
         question: 'Comment fonctionne l’examen blanc?',
         html: `<p>Chaque examen blanc compte 20 questions et dure 45 minutes; il faut 15 bonnes réponses pour réussir. La durée et la note de passage ne sont pas modifiables : elles correspondent au format de l’examen auquel vous vous préparez.</p>
-<p>Les questions couvrent tous les chapitres, comprennent des éléments régionaux pour la province ou le territoire choisi dans les Réglages et, lorsque la banque le permet, évitent les questions de vos trois derniers examens blancs.</p>`,
+<p>Les questions couvrent tous les chapitres, comprennent un élément régional pour la province ou le territoire choisi dans les Réglages et évitent les questions déjà vues tant que chaque chapitre contient des questions inédites. Les questions manquées ont priorité parmi les choix admissibles.</p>`,
       },
       {
         id: 'province',
@@ -124,7 +124,7 @@ export function faqItems(
       id: 'mock',
       question: 'How does the mock exam work?',
       html: `<p>Every mock is 20 questions, 45 minutes, with 15 correct to pass. Length and pass mark are not configurable — they match the real test format people study toward.</p>
-<p>Questions are drawn across chapters, include regional items for the province or territory you set in Settings, and avoid repeating anything from your last three mocks when the bank allows it.</p>`,
+<p>Questions are drawn across chapters, include a regional item for the province or territory you set in Settings, and avoid previously seen mock questions while each chapter has unused material. Missed questions get priority among eligible choices.</p>`,
     },
     {
       id: 'province',

@@ -31,6 +31,14 @@ const payload = { questions, chapters };
           <p class="verified" x-show="$store.learner.name" x-cloak x-text="$store.i18n.t('mock.luck', { name: $store.learner.name })"></p>
           <div class="button-row">
             <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('mock.start')">Start exam</button>
+            <button
+              class="button"
+              type="button"
+              x-show="lastMockQueue.length === 20"
+              x-cloak
+              @click="replayLast"
+              x-text="$store.i18n.t('mock.replay')"
+            >Retry the same questions</button>
           </div>
         </div>
       </template>
@@ -135,7 +143,8 @@ const payload = { questions, chapters };
             </template>
           </ol>
           <div class="button-row">
-            <button class="button button-primary" type="button" @click="phase = 'intro'" x-text="$store.i18n.t('mock.new')">New attempt</button>
+            <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('mock.fresh')">Start a fresh mock</button>
+            <button class="button" type="button" @click="replayLast" x-text="$store.i18n.t('mock.replay')">Retry the same questions</button>
           </div>
           <p class="banner" x-show="saveFailed" x-cloak x-text="$store.i18n.t('cards.saveFailed')">Progress won’t save in this browser.</p>
         </div>

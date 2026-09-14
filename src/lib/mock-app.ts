@@ -3,12 +3,14 @@ import type { ChapterOption, ClientQuestion } from './client-types';
 import { drawMockQuestions } from './draw';
 import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
 import {
-  lastMockQuestionIds,
+  allMockQuestionIds,
+  lastMockAttempt,
   loadProgress,
   newAttemptId,
   recordAttempt,
   saveProgress,
   type Progress,
+  type QuizAttempt,
 } from './progress';
 
 export const MOCK_LENGTH = 20;
@@ -19,6 +21,33 @@ export type MockPayload = {
   questions: ClientQuestion[];
   chapters: ChapterOption[];
 };
+
+function restoreMockQueue(questions: ClientQuestion[], attempt: QuizAttempt | null) {
+  if (!attempt) {
+    return [];
+  }
+  const byId = new Map(questions.map((question) => [question.id, question]));
+  return attempt.questionIds.flatMap((id) => {
+    const question = byId.get(id);
+    if (!question) {
+      return [];
+    }
+    const optionOrder = attempt.optionIdsByQuestion?.[id];
+    const optionById = new Map(question.options.map((option) => [option.id, option]));
+    const options = optionOrder
+      ? optionOrder.flatMap((optionId) => {
+          const option = optionById.get(optionId);
+          return option ? [option] : [];
+        })
+      : [...question.options];
+    return [
+      {
+        ...question,
+        options: options.length === question.options.length ? options : [...question.options],
+      },
+    ];
+  });
+}
 
 export function mockApp(payload: MockPayload) {
   return {
@@ -38,6 +67,8 @@ export function mockApp(payload: MockPayload) {
     autoSubmitted: false,
     progress: null as Progress | null,
     province: null as RegionCode | null,
+    mockSeed: '',
+    lastMockQueue: [] as ClientQuestion[],
 
     tx(key: string, vars?: Record<string, string | number>) {
       const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
@@ -55,14 +86,35 @@ export function mockApp(payload: MockPayload) {
       const loaded = loadProgress();
       this.progress = loaded.progress;
       this.province = loaded.progress.province;
+      const attempt = lastMockAttempt(loaded.progress);
+      this.mockSeed = attempt?.mockSeed ?? '';
+      this.lastMockQueue = restoreMockQueue(payload.questions, attempt);
     },
 
     start() {
       if (!this.province) {
         return;
       }
-      const recent = this.progress ? lastMockQuestionIds(this.progress) : new Set<string>();
-      this.queue = drawMockQuestions(payload.questions, this.province, recent);
+      const progress = this.progress ?? loadProgress().progress;
+      this.mockSeed = newAttemptId();
+      const queue = drawMockQuestions(payload.questions, this.province, {
+        avoidedIds: allMockQuestionIds(progress),
+        preferredIds: new Set(progress.missedQuestionIds),
+        seed: this.mockSeed,
+      });
+      this.begin(queue);
+    },
+
+    replayLast() {
+      const queue = this.phase === 'review' ? this.queue : this.lastMockQueue;
+      if (queue.length !== MOCK_LENGTH) {
+        return;
+      }
+      this.begin(queue.map((question) => ({ ...question, options: [...question.options] })));
+    },
+
+    begin(queue: ClientQuestion[]) {
+      this.queue = queue;
       this.index = 0;
       this.selected = {};
       this.flagged = {};
@@ -158,6 +210,13 @@ export function mockApp(payload: MockPayload) {
         score: this.score,
         total: MOCK_LENGTH,
         questionIds: this.queue.map((question) => question.id),
+        mockSeed: this.mockSeed,
+        optionIdsByQuestion: Object.fromEntries(
+          this.queue.map((question) => [
+            question.id,
+            question.options.map((option) => option.id),
+          ]),
+        ),
         answers: this.queue.map((question) => ({
           questionId: question.id,
           chapter: question.chapter,
@@ -167,6 +226,10 @@ export function mockApp(payload: MockPayload) {
       };
       this.progress = recordAttempt(loaded.progress, attempt);
       this.saveFailed = !saveProgress(this.progress);
+      this.lastMockQueue = this.queue.map((question) => ({
+        ...question,
+        options: [...question.options],
+      }));
       this.phase = 'review';
     },
 
