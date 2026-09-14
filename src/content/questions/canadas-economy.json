@@ -874,5 +874,443 @@
       "en": "Do not mix the Bank of Canada with the Royal Bank or other commercial banks. They play different roles."
     },
     "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-029",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Softwood lumber is a recurring Canada–U.S. trade issue because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canadian timber is a major export and the two countries dispute subsidies and duties"
+      },
+      {
+        "id": "b",
+        "en": "Canada has no forests"
+      },
+      {
+        "id": "c",
+        "en": "The Senate owns all trees"
+      },
+      {
+        "id": "d",
+        "en": "Lumber is banned by the Charter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a classic resource-and-trade file. Forestry jobs are regional; the dispute is bilateral."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-030",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Personal income tax in Canada is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Collected by the federal government, with provinces levying income tax as well in most cases"
+      },
+      {
+        "id": "b",
+        "en": "Paid only by senators"
+      },
+      {
+        "id": "c",
+        "en": "Illegal under the Charter"
+      },
+      {
+        "id": "d",
+        "en": "A municipal dog-licence fee only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Most people file one federal return that also handles provincial tax (Quebec is the exception with its own form)."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-031",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Hydroelectric power is a major Canadian energy source, especially in Quebec, British Columbia, Manitoba, and Newfoundland and Labrador."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Dams are a classic “geography plus economy” fact. Oil and gas are another energy story, concentrated elsewhere."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-032",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian Wheat Board’s historic role (now ended in its old form) was to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Market Prairie grain in a pooled system"
+      },
+      {
+        "id": "b",
+        "en": "Appoint the Governor General"
+      },
+      {
+        "id": "c",
+        "en": "Run the Senate"
+      },
+      {
+        "id": "d",
+        "en": "Print banknotes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Even if the institution changed, the testable idea is that Prairie grain was a staple export with special marketing rules."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-033",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Auto manufacturing in Canada has long depended on:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Integrated North American supply chains, especially in Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Only Arctic ice roads"
+      },
+      {
+        "id": "c",
+        "en": "Senate carpooling"
+      },
+      {
+        "id": "d",
+        "en": "A ban on trade with the United States"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Auto Pact story and later free-trade rules are why plants sit near the border, not why Ottawa writes parking tickets."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-034",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Diamond mining became an important northern industry especially in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Northwest Territories (and later other northern sites)"
+      },
+      {
+        "id": "b",
+        "en": "PEI potato farms"
+      },
+      {
+        "id": "c",
+        "en": "Downtown Toronto only"
+      },
+      {
+        "id": "d",
+        "en": "The Senate chamber"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Northern resources are not only gold rushes. Diamonds are a late-20th-century chapter."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-035",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Most working Canadians are employees or self-employed in services such as retail, health, education, and professional work."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Primary industries still matter for exports. They no longer employ most people."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-036",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A tariff is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A tax on imports"
+      },
+      {
+        "id": "b",
+        "en": "A type of provincial flower"
+      },
+      {
+        "id": "c",
+        "en": "The Speaker’s gavel"
+      },
+      {
+        "id": "d",
+        "en": "A municipal snow-clearing route"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Free-trade agreements lower many tariffs. The citizenship idea is that trade policy shapes jobs."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-037",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Why do governments regulate banks and securities in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "To protect depositors and markets while private firms still compete"
+      },
+      {
+        "id": "b",
+        "en": "Because there is no private banking"
+      },
+      {
+        "id": "c",
+        "en": "To elect the Prime Minister"
+      },
+      {
+        "id": "d",
+        "en": "To set hockey salaries"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "A mixed economy is not an unregulated one. The Bank of Canada is the central bank; OSFI and provincial regulators watch firms."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-038",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Seasonal industries such as fishing, farming, and tourism help explain why:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Employment Insurance and other supports matter in some regions"
+      },
+      {
+        "id": "b",
+        "en": "The Senate sits only in August"
+      },
+      {
+        "id": "c",
+        "en": "There is no service sector"
+      },
+      {
+        "id": "d",
+        "en": "Canada has no exports"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Regional economies are not identical. Social programs sit beside resource cycles."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-039",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Crown land and resource royalties are a major source of wealth for some provincial governments."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Oil, hydro, timber, and minerals sit on public land in much of the country. That is why resource policy is political."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-040",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The “staples” idea in Canadian economic history refers to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Exporting raw or lightly processed goods such as fur, timber, wheat, and minerals"
+      },
+      {
+        "id": "b",
+        "en": "Stapling bills in the Senate"
+      },
+      {
+        "id": "c",
+        "en": "A type of maple-leaf pin only"
+      },
+      {
+        "id": "d",
+        "en": "Municipal stapler by-laws"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The citizenship guide still walks through those classic exports before services took over employment."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-041",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Interprovincial trade barriers are a live issue because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Provinces can still regulate some goods and professions differently"
+      },
+      {
+        "id": "b",
+        "en": "The Charter bans all trucking"
+      },
+      {
+        "id": "c",
+        "en": "There is no Trans-Canada Highway"
+      },
+      {
+        "id": "d",
+        "en": "Only territories may sell food"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada is one country with internal frictions. That is an economy-and-federalism fact."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-042",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A balanced view of Canada’s economy for the test includes:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Resources, manufacturing, and a large service sector, with big regional differences"
+      },
+      {
+        "id": "b",
+        "en": "Only gold mining"
+      },
+      {
+        "id": "c",
+        "en": "Only Hollywood film lots"
+      },
+      {
+        "id": "d",
+        "en": "No trade with anyone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "If you remember only oil, or only banks, you will miss questions about fish, cars, or tourism."
+    },
+    "source": "Discover Canada — Canada's Economy"
   }
 ]

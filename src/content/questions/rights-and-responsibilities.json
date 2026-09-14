@@ -998,5 +998,435 @@
       "en": "The census is required by law. Accurate counts affect representation and public services. Completing it is part of obeying the law."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-033",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Charter right to life, liberty, and security of the person is an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A legal right"
+      },
+      {
+        "id": "b",
+        "en": "A municipal zoning power"
+      },
+      {
+        "id": "c",
+        "en": "A Senate privilege only"
+      },
+      {
+        "id": "d",
+        "en": "A sports eligibility rule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It sits with other legal rights such as a fair trial and protection against unreasonable search. It is not a municipal by-law topic."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-034",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Freedom of the press in Canada is protected as part of freedom of expression."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Thought, belief, opinion, and expression include a free press. Limits still exist, such as laws against hate propaganda and defamation."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-035",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A Canadian citizen who wants to leave the country to live abroad is generally protected by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Mobility rights"
+      },
+      {
+        "id": "b",
+        "en": "The right to appoint Cabinet"
+      },
+      {
+        "id": "c",
+        "en": "Municipal snow-clearing by-laws"
+      },
+      {
+        "id": "d",
+        "en": "The royal anthem"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizens may enter, remain in, and leave Canada. Living abroad does not, by itself, erase citizenship."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-036",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Taking the Oath of Citizenship means you promise, among other things, to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Be faithful to the King and observe the laws of Canada"
+      },
+      {
+        "id": "b",
+        "en": "Join a political party"
+      },
+      {
+        "id": "c",
+        "en": "Speak only English"
+      },
+      {
+        "id": "d",
+        "en": "Serve in Cabinet"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The oath is a public commitment to the Crown, the Constitution, and the laws. It is not a party membership form."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-037",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Paying legally required taxes is best classified as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Part of obeying the law"
+      },
+      {
+        "id": "b",
+        "en": "Optional if you dislike the government"
+      },
+      {
+        "id": "c",
+        "en": "A Senate-only duty"
+      },
+      {
+        "id": "d",
+        "en": "A municipal hobby"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide’s list of responsibilities starts with obeying the law. Taxes fund the services the rest of the guide describes."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-038",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Charter’s equality rights allow governments to run programs that help disadvantaged groups."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Equality is not a ban on every distinction. Ameliorative programs can be consistent with equality rights."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-039",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a democratic right of citizens?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "To run for office, subject to rules set by law"
+      },
+      {
+        "id": "b",
+        "en": "To sit as a Supreme Court judge automatically"
+      },
+      {
+        "id": "c",
+        "en": "To dissolve a provincial legislature by tweet"
+      },
+      {
+        "id": "d",
+        "en": "To skip jury duty without a process"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizens may vote and seek election. Qualifications (age, citizenship, and a few legal bars) still apply."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-040",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Freedom of association protects, among other things, the right to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Join a union or a peaceful group"
+      },
+      {
+        "id": "b",
+        "en": "Commit a crime with friends"
+      },
+      {
+        "id": "c",
+        "en": "Ignore a court order"
+      },
+      {
+        "id": "d",
+        "en": "Set the Bank of Canada rate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Association covers unions, parties, and civic groups. It does not legalize crime."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-041",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A person in Canada is presumed innocent until:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Proven guilty according to law in a fair trial"
+      },
+      {
+        "id": "b",
+        "en": "Named in a newspaper"
+      },
+      {
+        "id": "c",
+        "en": "Questioned by police"
+      },
+      {
+        "id": "d",
+        "en": "The Prime Minister comments"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Presumption of innocence is a core legal right. Media attention is not a verdict."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-042",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "English and French have equal status as official languages of the Parliament of Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "That is a constitutional language right, separate from which language a private person uses at home."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-043",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Working to protect Canada’s natural environment is presented as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A civic responsibility, not only a job for scientists"
+      },
+      {
+        "id": "b",
+        "en": "Illegal under the Charter"
+      },
+      {
+        "id": "c",
+        "en": "A duty of tourists only"
+      },
+      {
+        "id": "d",
+        "en": "A Senate monopoly"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide pairs heritage and environment as things citizens should enjoy and protect."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-044",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If a law is found to violate the Charter without justification, a court may:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Strike it down or limit how it applies"
+      },
+      {
+        "id": "b",
+        "en": "Appoint a new Prime Minister"
+      },
+      {
+        "id": "c",
+        "en": "Rewrite the national anthem"
+      },
+      {
+        "id": "d",
+        "en": "Close Elections Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Judicial review is how the supreme law is enforced. Courts do not take over elections."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-045",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Volunteering in your community is closest to which citizenship idea in the guide?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Helping others in the community"
+      },
+      {
+        "id": "b",
+        "en": "The federal spending power"
+      },
+      {
+        "id": "c",
+        "en": "Royal Assent"
+      },
+      {
+        "id": "d",
+        "en": "First past the post"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide lists helping others as a responsibility. Formal volunteering is one way to live that idea."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-046",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You can be a Canadian citizen and still be expected to obey Canadian law when you are in Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Citizenship does not create a personal exemption from the Criminal Code or tax law. Obeying the law is a listed duty."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   }
 ]

@@ -1657,5 +1657,443 @@
       "en": "The Canadian courts had said no. The 1929 decision reversed that and opened the Senate to women."
     },
     "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-052",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Responsible government in the 1840s meant that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Colonial cabinets had to keep the confidence of an elected assembly"
+      },
+      {
+        "id": "b",
+        "en": "The Monarch moved to Ottawa permanently"
+      },
+      {
+        "id": "c",
+        "en": "Canada joined NATO"
+      },
+      {
+        "id": "d",
+        "en": "The Senate elected the Prime Minister"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nova Scotia (1848) and the Province of Canada soon after are the usual examples. It is the root of today’s confidence convention."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-053",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Fenian raids of the 1860s are part of Confederation’s context because they:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Showed British North America needed better defence and political union"
+      },
+      {
+        "id": "b",
+        "en": "Created Nunavut"
+      },
+      {
+        "id": "c",
+        "en": "Ended the fur trade"
+      },
+      {
+        "id": "d",
+        "en": "Wrote the Charter of Rights"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Irish-American veterans attacked from the United States. The threat helped sell a stronger union."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-054",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canadian troops served in South Africa around 1900 in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The South African (Boer) War"
+      },
+      {
+        "id": "b",
+        "en": "The Korean War"
+      },
+      {
+        "id": "c",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "d",
+        "en": "The War of 1812"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It was an early overseas expedition of the new Dominion and a preview of later imperial wars."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-055",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canadian soldiers were captured at Hong Kong after Japan attacked in December 1941."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Two battalions sent to Hong Kong suffered terrible losses and long imprisonment. It is an early Second World War Canadian story."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-056",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Battle of the Atlantic was important to Canada because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Royal Canadian Navy and merchant sailors fought to keep supply convoys moving"
+      },
+      {
+        "id": "b",
+        "en": "It was a prairie land battle in 1885"
+      },
+      {
+        "id": "c",
+        "en": "It decided the Persons Case"
+      },
+      {
+        "id": "d",
+        "en": "It was a municipal election in Halifax"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "U-boats hunted ships in the North Atlantic. Canada’s navy grew from a tiny force into a major convoy escort."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-057",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canadian soldiers in Italy in 1943–44 are especially associated with hard fighting at places such as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ortona"
+      },
+      {
+        "id": "b",
+        "en": "Vimy Ridge in 1917 only"
+      },
+      {
+        "id": "c",
+        "en": "Batoche"
+      },
+      {
+        "id": "d",
+        "en": "Charlottetown in 1864"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Italian campaign is a Second World War chapter distinct from Normandy. Ortona became a symbol of that fighting."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-058",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The British Commonwealth Air Training Plan in Canada:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Trained Allied aircrew on Canadian airfields during the Second World War"
+      },
+      {
+        "id": "b",
+        "en": "Built the CPR"
+      },
+      {
+        "id": "c",
+        "en": "Created the Senate"
+      },
+      {
+        "id": "d",
+        "en": "Was a 19th-century fur-trade school"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada’s skies and space made it a training ground. It is a home-front contribution as well as a military one."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-059",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The seigneurial system in New France was:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A way of granting land along the St. Lawrence to seigneurs and tenant farmers"
+      },
+      {
+        "id": "b",
+        "en": "A type of Senate committee"
+      },
+      {
+        "id": "c",
+        "en": "The first past the post voting rule"
+      },
+      {
+        "id": "d",
+        "en": "A 1982 constitutional amendment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Long, narrow river lots are still visible from the air. British rule later phased the system out."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-060",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Slavery was abolished throughout the British Empire in the 1830s, including in what is now Canada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Enslavement had existed in New France and British colonies. Imperial abolition, plus later Underground Railroad arrivals, is the testable arc."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-061",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The conscription crisis of 1917 strained unity because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Many in Quebec opposed compulsory overseas service while English Canada largely supported it"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut refused to join NATO"
+      },
+      {
+        "id": "c",
+        "en": "The Senate banned wheat exports"
+      },
+      {
+        "id": "d",
+        "en": "Women were forbidden from factory work"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Borden’s Union government and the wartime election left scars. A similar fight returned in the Second World War."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-062",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Sir Robert Borden led Canada during:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The First World War"
+      },
+      {
+        "id": "b",
+        "en": "Confederation in 1867"
+      },
+      {
+        "id": "c",
+        "en": "The Quiet Revolution only"
+      },
+      {
+        "id": "d",
+        "en": "The Korean War as Prime Minister"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Borden’s wartime government also pushed for a stronger Canadian voice at the peace table."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-063",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Representation by population was a Confederation bargaining issue because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canada West wanted seats by population while Canada East feared being outvoted"
+      },
+      {
+        "id": "b",
+        "en": "Only the territories had people"
+      },
+      {
+        "id": "c",
+        "en": "Senators are elected by riding"
+      },
+      {
+        "id": "d",
+        "en": "Municipalities write the Constitution"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The compromise was an elected Commons by population and a Senate with regional balance."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-064",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "William Lyon Mackenzie King is associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Leading Canada through most of the Second World War as Prime Minister"
+      },
+      {
+        "id": "b",
+        "en": "Founding Quebec City in 1608"
+      },
+      {
+        "id": "c",
+        "en": "Driving the last CPR spike himself"
+      },
+      {
+        "id": "d",
+        "en": "Writing Magna Carta"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "King is Canada’s longest-serving Prime Minister. The wartime home front and later social programs sit in his era."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-065",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Fathers of Confederation included leaders from several colonies, not only Sir John A. Macdonald."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Cartier, Brown, Tupper, Tilley, and others were essential. Macdonald is first among them, not the only one."
+    },
+    "source": "Discover Canada — Canada's History"
   }
 ]

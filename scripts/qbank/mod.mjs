@@ -336,4 +336,152 @@ export default build('modern-canada', 'Discover Canada — Modern Canada', [
     a: 'a',
     e: 'It is a landmark of modern immigration policy, even though discrimination did not vanish overnight.',
   },
+  {
+    id: 'mod-036',
+    p: 'The Avro Arrow was:',
+    o: [
+      'A Canadian-designed interceptor jet cancelled in 1959',
+      'A Confederation railway engine',
+      'The first maple-leaf flag',
+      'A Senate reform bill',
+    ],
+    a: 'a',
+    e: 'Its cancellation is a modern-Canada industrial and political story, not a 19th-century one.',
+  },
+  {
+    id: 'mod-037',
+    p: 'Canada’s armed forces were unified in 1968 so that:',
+    o: [
+      'Navy, army, and air force were brought under one Canadian Forces structure',
+      'The RCMP replaced the military',
+      'NATO was dissolved',
+      'Conscription became permanent',
+    ],
+    a: 'a',
+    e: 'Unification is a Pearson/Trudeau-era defence reform. Distinct navy and air identities later returned in branding, but one force remains.',
+  },
+  {
+    id: 'mod-038',
+    t: 'tf',
+    p: 'Expo 67 in Montreal was a world’s fair that marked Canada’s centennial year.',
+    a: 'true',
+    e: 'Centennial celebrations in 1967, including Expo, are a modern-Canada cultural landmark.'
+  },
+  {
+    id: 'mod-039',
+    p: 'The Clarity Act (2000) is about:',
+    o: [
+      'Rules for any future secession referendum and negotiation',
+      'How to sing O Canada',
+      'Municipal snow clearing',
+      'The colour of the penny',
+    ],
+    a: 'a',
+    e: 'After the close 1995 Quebec vote, Parliament set conditions for a clear question and a clear majority before talks.',
+  },
+  {
+    id: 'mod-040',
+    p: 'Same-sex marriage became legal across Canada in the 2000s through:',
+    o: [
+      'Court decisions and then a federal civil-marriage law',
+      'The Quebec Act of 1774',
+      'A 1867 Confederation term',
+      'A municipal by-law in Whitehorse only',
+    ],
+    a: 'a',
+    e: 'It is a modern equality-rights story, not a colonial one.',
+  },
+  {
+    id: 'mod-041',
+    p: 'The Canada Health Act is meant to:',
+    o: [
+      'Set national principles for insured health services that provinces must meet to receive full federal funding',
+      'Put Ottawa in charge of every hospital’s daily staffing',
+      'Abolish provincial health ministries',
+      'Replace the Charter',
+    ],
+    a: 'a',
+    e: 'Public administration, comprehensiveness, universality, portability, and accessibility are the usual principles. Delivery stays provincial.'
+  },
+  {
+    id: 'mod-042',
+    t: 'tf',
+    p: 'The Canadian Broadcasting Corporation (CBC/Radio-Canada) is a public broadcaster created by Parliament.',
+    a: 'true',
+    e: 'It is a Crown corporation in culture and information, not a private cable shop and not a political party.'
+  },
+  {
+    id: 'mod-043',
+    p: 'The 1988 Winter Olympics in Calgary are an example of:',
+    o: [
+      'Modern Canada hosting the world and projecting a national image',
+      'A Fathers of Confederation meeting',
+      'The founding of New France',
+      'The Statute of Westminster signing ceremony',
+    ],
+    a: 'a',
+    e: 'Montreal 1976 (summer) and Calgary 1988 (winter) are the usual Olympic landmarks in the modern chapter.',
+  },
+  {
+    id: 'mod-044',
+    p: 'Residential-school survivors received a formal federal apology in:',
+    o: ['2008', '1867', '1917', '1670'],
+    a: 'a',
+    e: 'Stephen Harper’s 2008 apology, and the Truth and Reconciliation Commission that followed, are modern-Canada facts.',
+  },
+  {
+    id: 'mod-045',
+    p: 'The GST (Goods and Services Tax) is:',
+    o: [
+      'A federal value-added tax introduced in the Mulroney era',
+      'A type of Senate veto',
+      'A provincial flower',
+      'A NATO military rank',
+    ],
+    a: 'a',
+    e: 'It replaced the old manufacturers’ sales tax. Provinces later harmonized in some regions.',
+  },
+  {
+    id: 'mod-046',
+    t: 'tf',
+    p: 'Equalization is a federal program that transfers money so that provincial governments can offer reasonably comparable services.',
+    a: 'true',
+    e: 'It is in the Constitution’s commitment to comparable public services. It is not a municipal parking grant.',
+  },
+  {
+    id: 'mod-047',
+    p: 'Canada’s Constitution was “patriated” in 1982, which means:',
+    o: [
+      'Canada gained a domestic amending formula and no longer needed the British Parliament to change it',
+      'Ottawa moved to Montreal',
+      'The monarchy was abolished',
+      'Quebec became independent',
+    ],
+    a: 'a',
+    e: 'The Charter arrived in the same package. The Crown remained.',
+  },
+  {
+    id: 'mod-048',
+    p: 'The Group of Seven is best known for:',
+    o: [
+      'Paintings of the Canadian landscape in the early 20th century',
+      'Writing the British North America Act',
+      'Command at Vimy Ridge',
+      'Founding NATO',
+    ],
+    a: 'a',
+    e: 'They helped define a visual idea of Canada. Emily Carr is often taught alongside them, though she was not a member.'
+  },
+  {
+    id: 'mod-049',
+    p: 'The Emergencies Act replaced the old War Measures Act so that:',
+    o: [
+      'Emergency powers are narrower and more accountable to Parliament',
+      'The Prime Minister can cancel elections forever',
+      'Provinces disappear during a snowstorm',
+      'The Charter is suspended automatically every winter',
+    ],
+    a: 'a',
+    e: 'After the October Crisis, Canada redesigned emergency law. It is still exceptional, not a routine governing tool.'
+  },
 ]);

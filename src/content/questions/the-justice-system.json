@@ -932,5 +932,443 @@
       "en": "Quebec’s civil-law tradition is a testable difference. Criminal law is the part that is mainly unified."
     },
     "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-031",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Federal Court of Canada mainly hears:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Certain federal-law disputes, such as immigration and some government decisions—not the same caseload as the Supreme Court"
+      },
+      {
+        "id": "b",
+        "en": "Every murder trial in Canada"
+      },
+      {
+        "id": "c",
+        "en": "Only municipal parking tickets in Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "Senate privilege fights exclusively"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Supreme Court is the final appeal court. Trial and specialist federal work sits lower."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-032",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Solicitor-client privilege means that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Confidential legal advice to a client is generally protected"
+      },
+      {
+        "id": "b",
+        "en": "Lawyers must report every conversation to Cabinet"
+      },
+      {
+        "id": "c",
+        "en": "Only senators may hire lawyers"
+      },
+      {
+        "id": "d",
+        "en": "Police may sit in on all defence meetings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a pillar of a fair legal system. It is not a licence to commit new crimes."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-033",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Ontario and Quebec maintain provincial police services (the OPP and the Sûreté du Québec) in addition to municipal forces and the RCMP."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Policing is layered. The RCMP also contracts to serve as the provincial police in several other provinces."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-034",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Charter’s “notwithstanding clause” (section 33) allows:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Parliament or a legislature to temporarily override certain Charter rights in a statute"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister to jail opponents without a law"
+      },
+      {
+        "id": "c",
+        "en": "Cities to ban the Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Juries to ignore all evidence"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a controversial safety valve in the 1982 deal. It does not cover every right, and it must be written into a law."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-035",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Small-claims court is designed for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Lower-value private disputes without the full cost of a superior-court trial"
+      },
+      {
+        "id": "b",
+        "en": "Treason only"
+      },
+      {
+        "id": "c",
+        "en": "Choosing the Governor General"
+      },
+      {
+        "id": "d",
+        "en": "Federal election recounts only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is access to justice, not a second Supreme Court."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-036",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A justice of the peace or provincial court judge often handles:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Bail hearings, warrants, and many first-instance criminal matters"
+      },
+      {
+        "id": "b",
+        "en": "Amending the Constitution"
+      },
+      {
+        "id": "c",
+        "en": "Appointing Cabinet"
+      },
+      {
+        "id": "d",
+        "en": "Command of NORAD"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Most people’s contact with criminal court is not at the Supreme Court. It starts locally."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-037",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You may sue the government in Canada; the Crown is not above all private-law duties."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Crown liability is limited and technical, but the rule of law means officials are not personally a law unto themselves."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-038",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Perjury is a crime because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Courts depend on truthful evidence under oath"
+      },
+      {
+        "id": "b",
+        "en": "Newspapers dislike long trials"
+      },
+      {
+        "id": "c",
+        "en": "Senators prefer short speeches"
+      },
+      {
+        "id": "d",
+        "en": "It is a municipal zoning offence only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Lying in court attacks the trial itself. It is not a minor manners issue."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-039",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Legal rights such as the right to counsel apply:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "To everyone in Canada, not only citizens"
+      },
+      {
+        "id": "b",
+        "en": "Only to people born in Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "Only to MPs"
+      },
+      {
+        "id": "d",
+        "en": "Only after a conviction"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Citizenship matters for voting and mobility. Fair-trial rights are broader."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-040",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Family law (divorce, parenting) is an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Law that mixes federal and provincial rules and is handled in courts, not by a Cabinet vote on your case"
+      },
+      {
+        "id": "b",
+        "en": "A Senate sports league"
+      },
+      {
+        "id": "c",
+        "en": "Military conscription"
+      },
+      {
+        "id": "d",
+        "en": "The royal anthem"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Divorce is federal; many related matters are provincial. Politicians do not sit as your trial judges."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-041",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "An independent judiciary includes security of tenure: judges are not fired because the government dislikes a ruling."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Removal is a rare, formal process. That independence is how the Constitution stays more than a pamphlet."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-042",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Alternative dispute resolution (mediation, arbitration) exists to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Settle some civil disputes without a full trial"
+      },
+      {
+        "id": "b",
+        "en": "Replace the Criminal Code for murder"
+      },
+      {
+        "id": "c",
+        "en": "Elect the Prime Minister"
+      },
+      {
+        "id": "d",
+        "en": "Issue passports"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is common in private disputes. Serious crime still goes through the criminal courts."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-043",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Search warrants are issued by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A judge or justice of the peace, not by the investigating officer acting alone as a rule"
+      },
+      {
+        "id": "b",
+        "en": "The local MP"
+      },
+      {
+        "id": "c",
+        "en": "A newspaper editor"
+      },
+      {
+        "id": "d",
+        "en": "The Leader of the Opposition"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Prior authorization is the Charter’s usual bargain: police investigate; an independent official checks the grounds."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-044",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Correctional services (prisons) after a sentence are mainly about:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Carrying out the sentence imposed by the court, not retrying the trial"
+      },
+      {
+        "id": "b",
+        "en": "Letting Cabinet rewrite the verdict each month"
+      },
+      {
+        "id": "c",
+        "en": "Municipal snow clearing"
+      },
+      {
+        "id": "d",
+        "en": "Choosing senators"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Parole boards and prison rules are later stages. Guilt was supposed to be decided in court."
+    },
+    "source": "Discover Canada — The Justice System"
   }
 ]

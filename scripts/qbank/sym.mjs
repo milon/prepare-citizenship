@@ -285,4 +285,157 @@ export default build('canadian-symbols', 'Discover Canada — Canadian Symbols',
     a: 'true',
     e: 'The song is older than its official legal status (1980). Both the history and the official date can appear on tests.',
   },
+  {
+    id: 'sym-033',
+    p: 'Emily Carr is celebrated as:',
+    o: [
+      'A painter of West Coast landscapes and Indigenous village scenes',
+      'Canada’s first Prime Minister',
+      'The composer of God Save the King',
+      'The designer of the Peace Tower clock only',
+    ],
+    a: 'a',
+    e: 'She is a major Canadian artist often taught with the Group of Seven, even though she was not a member.',
+  },
+  {
+    id: 'sym-034',
+    p: 'The Bluenose is a Canadian symbol associated with:',
+    o: [
+      'A famous Nova Scotia schooner, also on the dime',
+      'A Prairie grain elevator only',
+      'The Senate mace in London',
+      'Yukon’s territorial flower',
+    ],
+    a: 'a',
+    e: 'It is both a maritime history story and everyday coinage.',
+  },
+  {
+    id: 'sym-035',
+    t: 'tf',
+    p: 'An inuksuk (inukshuk) is a stone landmark associated especially with Inuit culture and now widely used as a northern Canadian symbol.',
+    a: 'true',
+    e: 'It is not a replacement for the maple leaf. It is a recognizable northern emblem, including at some public events.'
+  },
+  {
+    id: 'sym-036',
+    p: 'Canada’s Latin motto, A mari usque ad mare, means:',
+    o: [
+      'From sea to sea',
+      'Peace, order, and good government',
+      'Ready aye ready',
+      'The true north strong and free only as a legal motto',
+    ],
+    a: 'a',
+    e: 'It appears with the coat of arms. The anthem line is related in spirit but is not the heraldic motto.'
+  },
+  {
+    id: 'sym-037',
+    p: 'The National War Memorial in Ottawa (the Response) commemorates:',
+    o: [
+      'Canadians who served, especially those who died, beginning with the First World War',
+      'Only Olympic gold medallists',
+      'Only Fathers of Confederation',
+      'Only the Group of Seven',
+    ],
+    a: 'a',
+    e: 'The November 11 ceremony there is a civic ritual, not a sports rally.',
+  },
+  {
+    id: 'sym-038',
+    p: 'The mace in the House of Commons is a symbol that:',
+    o: [
+      'Parliament is in session and the Crown’s authority is present',
+      'Hockey season has started',
+      'The Senate has been abolished',
+      'Municipal councils run Ottawa',
+    ],
+    a: 'a',
+    e: 'When the mace is on the table, the House can work. It is ceremony with a constitutional meaning.'
+  },
+  {
+    id: 'sym-039',
+    t: 'tf',
+    p: 'The RCMP Musical Ride is a ceremonial cavalry display that also functions as a national symbol.',
+    a: 'true',
+    e: 'The Force is a police service first. The Ride is how many people meet the Mountie image.',
+  },
+  {
+    id: 'sym-040',
+    p: 'Provincial floral emblems (for example the white trillium or fleur-de-lys as a cultural emblem) are:',
+    o: [
+      'Official or traditional symbols of provinces, used with the national maple leaf',
+      'Replacements for the Canadian flag in Ottawa',
+      'Illegal under official-languages law',
+      'Only for hockey jerseys',
+    ],
+    a: 'a',
+    e: 'Know the maple leaf first. A provincial flower is a bonus regional fact.',
+  },
+  {
+    id: 'sym-041',
+    p: 'The Centennial Flame on Parliament Hill marks:',
+    o: [
+      'Canada’s 100th anniversary in 1967',
+      'Confederation debates in 1864 only',
+      'The founding of NATO',
+      'The Persons Case',
+    ],
+    a: 'a',
+    e: 'It is a physical reminder of the centennial, in front of the buildings that symbolize federal Canada.',
+  },
+  {
+    id: 'sym-042',
+    p: 'The canoe is often treated as a Canadian symbol because it:',
+    o: [
+      'Was central to Indigenous travel and the fur-trade economy',
+      'Is the official bird of Canada',
+      'Replaced the maple leaf on the flag in 1965',
+      'Is banned on Crown land',
+    ],
+    a: 'a',
+    e: 'It is a historic working craft, not a coat-of-arms animal. The maple leaf remains the flag emblem.'
+  },
+  {
+    id: 'sym-043',
+    t: 'tf',
+    p: 'Victoria Cross recipients in Canadian history are honoured for extreme valour in combat.',
+    a: 'true',
+    e: 'The VC is the highest military decoration in the Canadian honours story taught with other symbols of service.'
+  },
+  {
+    id: 'sym-044',
+    p: 'The carillon in the Peace Tower is:',
+    o: [
+      'A set of bells that plays for ceremonies and remembrance',
+      'The Senate voting machine',
+      'A Prairie grain dryer',
+      'Ottawa’s subway signal',
+    ],
+    a: 'a',
+    e: 'It is part of why the Tower is more than a clock on a postcard.'
+  },
+  {
+    id: 'sym-045',
+    p: 'The Stanley Cup is a Canadian cultural symbol because it:',
+    o: [
+      'Is the championship trophy of the National Hockey League, donated by Lord Stanley when he was Governor General',
+      'Is the mace of the Senate',
+      'Replaced O Canada in 1980',
+      'Is awarded for wheat yields only',
+    ],
+    a: 'a',
+    e: 'Hockey’s trophy has a Crown-era origin story. It is culture, not a constitutional office.'
+  },
+  {
+    id: 'sym-046',
+    p: 'The Governor General’s flag (the blue flag with the viceregal lion) is used to:',
+    o: [
+      'Mark the presence of the Governor General',
+      'Replace the national flag forever',
+      'Signal a municipal snow day in Ottawa',
+      'Close the Supreme Court',
+    ],
+    a: 'a',
+    e: 'Personal and official flags of the Crown’s representatives are a protocol symbol, not a rival national flag.'
+  },
 ]);

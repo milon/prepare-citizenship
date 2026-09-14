@@ -932,5 +932,443 @@
       "en": "ID proves who you are and where you live. It does not replace citizenship."
     },
     "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-031",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "To vote on election day you generally need to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Prove your identity and address according to Elections Canada rules"
+      },
+      {
+        "id": "b",
+        "en": "Bring a letter from your MP"
+      },
+      {
+        "id": "c",
+        "en": "Speak both official languages fluently"
+      },
+      {
+        "id": "d",
+        "en": "Pay a poll tax"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Several ID combinations are accepted. Citizenship is still required; a hydro bill alone does not make a non-citizen a voter."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-032",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Enumeration historically meant:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Going door to door to build the voters list"
+      },
+      {
+        "id": "b",
+        "en": "Appointing senators"
+      },
+      {
+        "id": "c",
+        "en": "Counting Supreme Court votes"
+      },
+      {
+        "id": "d",
+        "en": "A type of municipal compost program"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada now relies more on a National Register of Electors. You should still check that you are on the list."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-033",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Third-party advertising in federal campaigns is regulated so that groups besides parties cannot spend without limits or disclosure."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The idea is a fairer fight, not a ban on all speech. Parties, candidates, and third parties all face rules."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-034",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A returning officer is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The local Elections Canada official who runs the vote in a riding"
+      },
+      {
+        "id": "b",
+        "en": "A Cabinet minister who counts ballots in secret"
+      },
+      {
+        "id": "c",
+        "en": "A senator who vetoes results"
+      },
+      {
+        "id": "d",
+        "en": "The Prime Minister’s campaign manager"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each electoral district has one. They are not the candidate."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-035",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Special (write-in or mail) ballots exist mainly so that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "People who cannot get to an ordinary poll can still vote"
+      },
+      {
+        "id": "b",
+        "en": "Non-citizens can elect the Speaker"
+      },
+      {
+        "id": "c",
+        "en": "The Senate can vote in House races"
+      },
+      {
+        "id": "d",
+        "en": "Tourists can pick the Prime Minister"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Students, travellers, some workers, and Canadians abroad may have special-ballot options. Rules are specific; guesswork is not."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-036",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "If you move to a new riding you should:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Update your voter registration so you are on the correct list"
+      },
+      {
+        "id": "b",
+        "en": "Keep voting in your old riding forever"
+      },
+      {
+        "id": "c",
+        "en": "Ask the Governor General to move the riding with you"
+      },
+      {
+        "id": "d",
+        "en": "Give up the right to vote"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "You vote where you reside (with some special rules). Lists go stale if you do not update."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-037",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federal election campaigns have a minimum length set by law once the writs are issued."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "There is also a maximum life of a House. Combined, that is why election timing is not a complete free-for-all."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-038",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "An independent candidate is someone who:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Runs without a party label"
+      },
+      {
+        "id": "b",
+        "en": "Is appointed by the Senate"
+      },
+      {
+        "id": "c",
+        "en": "Must be a judge"
+      },
+      {
+        "id": "d",
+        "en": "Is chosen by the Governor General as local MP without a vote"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Independents can win. Most MPs still sit as party members."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-039",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Why does the citizenship guide care that you know how to vote?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Voting is both a right and a listed responsibility of citizenship"
+      },
+      {
+        "id": "b",
+        "en": "Only public servants may vote"
+      },
+      {
+        "id": "c",
+        "en": "Ballots elect senators in every province"
+      },
+      {
+        "id": "d",
+        "en": "The test replaces the election"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Knowing the mechanics is how you use the right. Staying home is legal; it is not the civic ideal the guide teaches."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-040",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A coalition government, if one formed, would mean:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Two or more parties agree to govern together"
+      },
+      {
+        "id": "b",
+        "en": "The Supreme Court sits in Cabinet"
+      },
+      {
+        "id": "c",
+        "en": "Municipalities run foreign policy"
+      },
+      {
+        "id": "d",
+        "en": "The Monarch picks every deputy minister"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada more often uses minority governments with case-by-case support. Coalition is still a parliamentary possibility."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-041",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "You may volunteer on a campaign even if you are not a candidate."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Parties and candidates depend on volunteers. Foreign interference rules still apply; the civic activity itself is normal."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-042",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Poll clerks and deputy returning officers at a polling place are there to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Administer the vote fairly, not to campaign"
+      },
+      {
+        "id": "b",
+        "en": "Tell you which party to support"
+      },
+      {
+        "id": "c",
+        "en": "Open your marked ballot to the room"
+      },
+      {
+        "id": "d",
+        "en": "Swear in the Prime Minister"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They are election workers. Scrutineers watch for parties; they do not run the poll."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-043",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Reapportionment of seats among provinces happens because:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Population changes, and the Constitution plus statute adjust Commons seat counts"
+      },
+      {
+        "id": "b",
+        "en": "The Senate demands more MPs in Ottawa’s suburbs only"
+      },
+      {
+        "id": "c",
+        "en": "The Governor General picks a lucky province each decade"
+      },
+      {
+        "id": "d",
+        "en": "Ridings are banned in the West"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Representation by population is the principle. Senate regional seats are a different design."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-044",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A recount may be requested or required when:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The margin is very close or there are serious counting concerns"
+      },
+      {
+        "id": "b",
+        "en": "A party simply dislikes the winner"
+      },
+      {
+        "id": "c",
+        "en": "The weather is poor"
+      },
+      {
+        "id": "d",
+        "en": "The Speaker wants a different seating plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Close races have legal recount rules. Losing on a clear count is not grounds to rerun the election for fun."
+    },
+    "source": "Discover Canada — Federal Elections"
   }
 ]

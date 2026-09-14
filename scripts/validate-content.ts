@@ -116,8 +116,8 @@ if (!currentParsed.success) {
   }
 }
 
-if (questions.length < 300 || questions.length > 400) {
-  errors.push(`Expected 300–400 unique v1 questions, found ${questions.length}`);
+if (questions.length < 450 || questions.length > 560) {
+  errors.push(`Expected about 500 unique questions (450–560), found ${questions.length}`);
 }
 
 const types = questions.reduce(

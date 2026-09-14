@@ -1616,5 +1616,459 @@
       "en": "National facts first, then lock in your capital city and one distinctive fact. This app tags such items by province code."
     },
     "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-051",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Prince Edward Island is especially known for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Potato farming and a compact agricultural landscape"
+      },
+      {
+        "id": "b",
+        "en": "Oil sands only"
+      },
+      {
+        "id": "c",
+        "en": "Arctic diamond mines"
+      },
+      {
+        "id": "d",
+        "en": "Coastal rainforests of cedar only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is Canada’s smallest province. Potatoes, tourism, and Confederation history are the usual hooks."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-052",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "New Brunswick’s landscape and economy have long included:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Acadian communities, forests, and the Bay of Fundy tides"
+      },
+      {
+        "id": "b",
+        "en": "Only prairie wheat"
+      },
+      {
+        "id": "c",
+        "en": "Only Inuit hamlets"
+      },
+      {
+        "id": "d",
+        "en": "Only auto assembly in Windsor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is the only officially bilingual province. Forestry and the Fundy coast are classic geography."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-053",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Newfoundland and Labrador’s historic staple was:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Atlantic fishery (especially cod)"
+      },
+      {
+        "id": "b",
+        "en": "Prairie potash only"
+      },
+      {
+        "id": "c",
+        "en": "Ontario auto parts only"
+      },
+      {
+        "id": "d",
+        "en": "B.C. wine only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The fishery shaped settlement. Offshore oil is a later chapter; Labrador adds mines and hydro."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-054",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Halifax is important in Canadian geography as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A major Atlantic port and historic naval and immigration harbour"
+      },
+      {
+        "id": "b",
+        "en": "The capital of Canada"
+      },
+      {
+        "id": "c",
+        "en": "The capital of Alberta"
+      },
+      {
+        "id": "d",
+        "en": "A prairie railway town only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Citadel overlooks a year-round ice-free harbour. It is Nova Scotia’s capital and the Maritimes’ largest city."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-055",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Large hydroelectric projects in northern Quebec (including the James Bay area) matter because they:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Supply much of Quebec’s electricity and export power"
+      },
+      {
+        "id": "b",
+        "en": "Are Ontario’s only oil sands"
+      },
+      {
+        "id": "c",
+        "en": "Replaced the St. Lawrence River"
+      },
+      {
+        "id": "d",
+        "en": "Are Yukon’s territorial assembly"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Hydro is a Quebec economic signature. It also raised lasting Indigenous-rights issues."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-056",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Niagara fruit belt and wine region lie in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Southern Ontario, between the lakes"
+      },
+      {
+        "id": "b",
+        "en": "Nunavut"
+      },
+      {
+        "id": "c",
+        "en": "Northern Labrador"
+      },
+      {
+        "id": "d",
+        "en": "The Yukon gold fields"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Mild lakeshore climate is an Ontario geography fact beyond Toronto and Ottawa."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-057",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Winnipeg has historically been called a gateway because it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Sits where eastern rail and western Prairie routes meet"
+      },
+      {
+        "id": "b",
+        "en": "Is Canada’s Pacific port"
+      },
+      {
+        "id": "c",
+        "en": "Is the capital of Nova Scotia"
+      },
+      {
+        "id": "d",
+        "en": "Lies on the Alaska Highway start in Dawson only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Forks, the railway, and later air links made it a prairie hub. It is Manitoba’s capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-058",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Uranium mining is especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Northern Saskatchewan"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island beaches only"
+      },
+      {
+        "id": "c",
+        "en": "Downtown Halifax"
+      },
+      {
+        "id": "d",
+        "en": "The Ottawa River islands only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Canadian Shield in the north holds major mines. Grain remains the southern Prairie story."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-059",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Calgary Stampede is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A famous western festival and rodeo that has become an Alberta cultural emblem"
+      },
+      {
+        "id": "b",
+        "en": "The name of the Alberta legislature"
+      },
+      {
+        "id": "c",
+        "en": "A Confederation conference of 1864"
+      },
+      {
+        "id": "d",
+        "en": "Yukon’s capital"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Oil and cattle both shape Alberta’s image. The Stampede is the cultural postcard; Edmonton is the capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-060",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Pacific salmon and mountain forests are especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "British Columbia"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island only"
+      },
+      {
+        "id": "c",
+        "en": "Saskatchewan wheat pools only"
+      },
+      {
+        "id": "d",
+        "en": "Nunavut hamlets only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Cordillera plus a mild coast define B.C. Vancouver is the big port; Victoria is the capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-061",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Alaska Highway is a northern geography fact because it:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Links British Columbia and Yukon toward Alaska, built in the Second World War"
+      },
+      {
+        "id": "b",
+        "en": "Crosses PEI on the Confederation Bridge"
+      },
+      {
+        "id": "c",
+        "en": "Is Ottawa’s main street"
+      },
+      {
+        "id": "d",
+        "en": "Is a subway in Montreal"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Wartime building opened the northwest. Whitehorse is Yukon’s capital."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-062",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Yellowknife grew as a modern capital especially because of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Gold, and later diamond, mining plus government"
+      },
+      {
+        "id": "b",
+        "en": "Potato farming like PEI"
+      },
+      {
+        "id": "c",
+        "en": "The auto pact plants"
+      },
+      {
+        "id": "d",
+        "en": "The Halifax Citadel"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It sits on Great Slave Lake. The Northwest Territories’ legislature is there, not in Ottawa."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-063",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Iqaluit is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The capital of Nunavut, on Baffin Island"
+      },
+      {
+        "id": "b",
+        "en": "The capital of Ontario"
+      },
+      {
+        "id": "c",
+        "en": "A prairie wheat pool headquarters"
+      },
+      {
+        "id": "d",
+        "en": "New Brunswick’s only city"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nunavut is majority Inuit. Iqaluit is the political centre created when the territory was born in 1999."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-064",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Great Lakes–St. Lawrence system is a shared Ontario–Quebec (and U.S.) water highway for cities, industry, and shipping."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is the core of central Canada’s geography. The Seaway lets ocean ships reach inland ports."
+    },
+    "source": "Discover Canada — Canada's Regions"
   }
 ]

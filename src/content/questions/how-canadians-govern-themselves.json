@@ -1183,5 +1183,443 @@
       "en": "The speech is written by the government. The Crown delivers it to open a session of Parliament."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-038",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Money bills (taxes and borrowing) must originate in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The House of Commons"
+      },
+      {
+        "id": "b",
+        "en": "The Senate only"
+      },
+      {
+        "id": "c",
+        "en": "A municipal council in Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "The Supreme Court registry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The elected house controls the purse. The Senate may delay some bills but does not start tax measures."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-039",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Senators must retire at age:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "75"
+      },
+      {
+        "id": "b",
+        "en": "18"
+      },
+      {
+        "id": "c",
+        "en": "30 on their first day only"
+      },
+      {
+        "id": "d",
+        "en": "There is no age rule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Appointed until 75 (unless they resign). They are not elected in the federal model taught on the test."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-040",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A Cabinet minister is usually an MP (or sometimes a senator) who heads a department."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Ministers are chosen by the Prime Minister. Deputy ministers are public servants, not politicians."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-041",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The federal public service is expected to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Give professional advice and carry out the law under ministers of different parties"
+      },
+      {
+        "id": "b",
+        "en": "Campaign for the governing party at work"
+      },
+      {
+        "id": "c",
+        "en": "Sit as a second Senate"
+      },
+      {
+        "id": "d",
+        "en": "Appoint the Governor General each morning"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Non-partisan administration is how government survives a change of party. That is a convention worth knowing."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-042",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A Lieutenant Governor’s role in a province is most like:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Governor General’s role for Canada as a whole"
+      },
+      {
+        "id": "b",
+        "en": "The Speaker of the House of Commons"
+      },
+      {
+        "id": "c",
+        "en": "A municipal by-law officer"
+      },
+      {
+        "id": "d",
+        "en": "The Chief Electoral Officer"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Royal Assent, opening the legislature, and acting on the premier’s advice are the provincial parallel."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-043",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Territorial legislatures:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Make laws for the territory under federal statute, with a premier and cabinet in modern practice"
+      },
+      {
+        "id": "b",
+        "en": "Can amend the Constitution Act, 1867, alone"
+      },
+      {
+        "id": "c",
+        "en": "Replace Parliament in Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "Are appointed by city mayors in Toronto"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Yukon, the Northwest Territories, and Nunavut have assemblies. They are not provinces, but they are real governments."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-044",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Municipal governments can levy some local taxes and pass by-laws about things such as zoning, transit, and snow clearing."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Cities are creatures of the province. Their work is still the government most people meet every day."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-045",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The federal spending power refers to Ottawa’s ability to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Spend money in areas of provincial jurisdiction, often with conditions (for example health transfers)"
+      },
+      {
+        "id": "b",
+        "en": "Dissolve every city council"
+      },
+      {
+        "id": "c",
+        "en": "Appoint all mayors"
+      },
+      {
+        "id": "d",
+        "en": "Rewrite provincial constitutions by tweet"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is how national programs appear in fields the Constitution assigns mainly to provinces."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-046",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Opposition parties in the Commons exist to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Question the government and offer an alternative"
+      },
+      {
+        "id": "b",
+        "en": "Rubber-stamp every bill in secret"
+      },
+      {
+        "id": "c",
+        "en": "Appoint judges each Friday"
+      },
+      {
+        "id": "d",
+        "en": "Run Elections Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Official Opposition status goes to the largest party not in government. Smaller parties still have a role."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-047",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Royal commissions and public inquiries are tools to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Investigate a serious public issue and recommend action"
+      },
+      {
+        "id": "b",
+        "en": "Replace general elections"
+      },
+      {
+        "id": "c",
+        "en": "Choose the Monarch"
+      },
+      {
+        "id": "d",
+        "en": "Set hockey scores"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They are not courts, but they can shape later laws. The test cares that government can study a problem in public."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-048",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Prime Minister and Cabinet are part of the executive, not a fourth elected house of Parliament."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Parliament is Crown, Senate, and Commons. Cabinet directs the executive while remaining accountable to the Commons."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-049",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A portfolio in Cabinet is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The set of responsibilities given to a minister (for example Finance or Defence)"
+      },
+      {
+        "id": "b",
+        "en": "A senator’s travel bag"
+      },
+      {
+        "id": "c",
+        "en": "A municipal recycling bin"
+      },
+      {
+        "id": "d",
+        "en": "A type of court file only in Quebec"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Prime Minister assigns portfolios. Titles change; the idea of a responsible minister does not."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-050",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Constitutional monarchy in Canada means:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Monarch is Head of State, while elected ministers run the government under the Constitution"
+      },
+      {
+        "id": "b",
+        "en": "The King writes the budget alone"
+      },
+      {
+        "id": "c",
+        "en": "There is no Constitution"
+      },
+      {
+        "id": "d",
+        "en": "Mayors crown themselves"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Power is constrained by law and convention. The Crown is not a daily policy shop."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-051",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who usually summons, prorogues, or dissolves Parliament in practice?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Governor General, acting on the Prime Minister’s advice"
+      },
+      {
+        "id": "b",
+        "en": "The mayor of Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "The Chief Justice acting as campaign manager"
+      },
+      {
+        "id": "d",
+        "en": "A random jury in each riding"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Those are Crown powers. Convention says they follow ministerial advice except in rare controversies."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
   }
 ]

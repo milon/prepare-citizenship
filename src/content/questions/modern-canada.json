@@ -1097,5 +1097,443 @@
       "en": "It is a landmark of modern immigration policy, even though discrimination did not vanish overnight."
     },
     "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-036",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Avro Arrow was:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A Canadian-designed interceptor jet cancelled in 1959"
+      },
+      {
+        "id": "b",
+        "en": "A Confederation railway engine"
+      },
+      {
+        "id": "c",
+        "en": "The first maple-leaf flag"
+      },
+      {
+        "id": "d",
+        "en": "A Senate reform bill"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Its cancellation is a modern-Canada industrial and political story, not a 19th-century one."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-037",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s armed forces were unified in 1968 so that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Navy, army, and air force were brought under one Canadian Forces structure"
+      },
+      {
+        "id": "b",
+        "en": "The RCMP replaced the military"
+      },
+      {
+        "id": "c",
+        "en": "NATO was dissolved"
+      },
+      {
+        "id": "d",
+        "en": "Conscription became permanent"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Unification is a Pearson/Trudeau-era defence reform. Distinct navy and air identities later returned in branding, but one force remains."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-038",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Expo 67 in Montreal was a world’s fair that marked Canada’s centennial year."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Centennial celebrations in 1967, including Expo, are a modern-Canada cultural landmark."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-039",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Clarity Act (2000) is about:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Rules for any future secession referendum and negotiation"
+      },
+      {
+        "id": "b",
+        "en": "How to sing O Canada"
+      },
+      {
+        "id": "c",
+        "en": "Municipal snow clearing"
+      },
+      {
+        "id": "d",
+        "en": "The colour of the penny"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "After the close 1995 Quebec vote, Parliament set conditions for a clear question and a clear majority before talks."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-040",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Same-sex marriage became legal across Canada in the 2000s through:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Court decisions and then a federal civil-marriage law"
+      },
+      {
+        "id": "b",
+        "en": "The Quebec Act of 1774"
+      },
+      {
+        "id": "c",
+        "en": "A 1867 Confederation term"
+      },
+      {
+        "id": "d",
+        "en": "A municipal by-law in Whitehorse only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It is a modern equality-rights story, not a colonial one."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-041",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canada Health Act is meant to:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Set national principles for insured health services that provinces must meet to receive full federal funding"
+      },
+      {
+        "id": "b",
+        "en": "Put Ottawa in charge of every hospital’s daily staffing"
+      },
+      {
+        "id": "c",
+        "en": "Abolish provincial health ministries"
+      },
+      {
+        "id": "d",
+        "en": "Replace the Charter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Public administration, comprehensiveness, universality, portability, and accessibility are the usual principles. Delivery stays provincial."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-042",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Canadian Broadcasting Corporation (CBC/Radio-Canada) is a public broadcaster created by Parliament."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is a Crown corporation in culture and information, not a private cable shop and not a political party."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-043",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The 1988 Winter Olympics in Calgary are an example of:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Modern Canada hosting the world and projecting a national image"
+      },
+      {
+        "id": "b",
+        "en": "A Fathers of Confederation meeting"
+      },
+      {
+        "id": "c",
+        "en": "The founding of New France"
+      },
+      {
+        "id": "d",
+        "en": "The Statute of Westminster signing ceremony"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Montreal 1976 (summer) and Calgary 1988 (winter) are the usual Olympic landmarks in the modern chapter."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-044",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Residential-school survivors received a formal federal apology in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "2008"
+      },
+      {
+        "id": "b",
+        "en": "1867"
+      },
+      {
+        "id": "c",
+        "en": "1917"
+      },
+      {
+        "id": "d",
+        "en": "1670"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Stephen Harper’s 2008 apology, and the Truth and Reconciliation Commission that followed, are modern-Canada facts."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-045",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The GST (Goods and Services Tax) is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A federal value-added tax introduced in the Mulroney era"
+      },
+      {
+        "id": "b",
+        "en": "A type of Senate veto"
+      },
+      {
+        "id": "c",
+        "en": "A provincial flower"
+      },
+      {
+        "id": "d",
+        "en": "A NATO military rank"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "It replaced the old manufacturers’ sales tax. Provinces later harmonized in some regions."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-046",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Equalization is a federal program that transfers money so that provincial governments can offer reasonably comparable services."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is in the Constitution’s commitment to comparable public services. It is not a municipal parking grant."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-047",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada’s Constitution was “patriated” in 1982, which means:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canada gained a domestic amending formula and no longer needed the British Parliament to change it"
+      },
+      {
+        "id": "b",
+        "en": "Ottawa moved to Montreal"
+      },
+      {
+        "id": "c",
+        "en": "The monarchy was abolished"
+      },
+      {
+        "id": "d",
+        "en": "Quebec became independent"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Charter arrived in the same package. The Crown remained."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-048",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Group of Seven is best known for:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Paintings of the Canadian landscape in the early 20th century"
+      },
+      {
+        "id": "b",
+        "en": "Writing the British North America Act"
+      },
+      {
+        "id": "c",
+        "en": "Command at Vimy Ridge"
+      },
+      {
+        "id": "d",
+        "en": "Founding NATO"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "They helped define a visual idea of Canada. Emily Carr is often taught alongside them, though she was not a member."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-049",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Emergencies Act replaced the old War Measures Act so that:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Emergency powers are narrower and more accountable to Parliament"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister can cancel elections forever"
+      },
+      {
+        "id": "c",
+        "en": "Provinces disappear during a snowstorm"
+      },
+      {
+        "id": "d",
+        "en": "The Charter is suspended automatically every winter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "After the October Crisis, Canada redesigned emergency law. It is still exceptional, not a routine governing tool."
+    },
+    "source": "Discover Canada — Modern Canada"
   }
 ]

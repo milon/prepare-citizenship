@@ -1089,5 +1089,443 @@
       "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact for the test."
     },
     "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-036",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Inuktitut is best described as:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A language of the Inuit, still spoken in many northern communities"
+      },
+      {
+        "id": "b",
+        "en": "The official language of Alberta only"
+      },
+      {
+        "id": "c",
+        "en": "A type of prairie wheat"
+      },
+      {
+        "id": "d",
+        "en": "The original name of Ottawa"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Indigenous languages are living languages. English and French are official federally; they are not the only tongues in Canada."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-037",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Chinese head tax and later exclusion laws were:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Racist immigration barriers later recognized as wrong"
+      },
+      {
+        "id": "b",
+        "en": "A Confederation promise to B.C. in 1867"
+      },
+      {
+        "id": "c",
+        "en": "A Charter right"
+      },
+      {
+        "id": "d",
+        "en": "A municipal parking rule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Chinese labour built the railway, then faced discriminatory fees and a 1923 exclusion act. Redress came much later."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-038",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Komagata Maru incident involved South Asian passengers who were turned away from Vancouver in 1914."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is a landmark of exclusion in immigration history. Canada later apologized for the treatment of the passengers."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-039",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Many Mennonite, Doukhobor, and other European farm settlers were drawn to the Prairies by:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Offers of land and a chance to farm in community"
+      },
+      {
+        "id": "b",
+        "en": "A guarantee of Senate seats"
+      },
+      {
+        "id": "c",
+        "en": "The Quiet Revolution"
+      },
+      {
+        "id": "d",
+        "en": "NORAD membership"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The wheat boom mixed many European groups onto Prairie homesteads. Language and religion often stayed distinctive."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-040",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A large postwar Italian-Canadian community is especially associated with:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Cities such as Toronto and Montreal"
+      },
+      {
+        "id": "b",
+        "en": "Only Yukon gold camps"
+      },
+      {
+        "id": "c",
+        "en": "Only the Senate chamber"
+      },
+      {
+        "id": "d",
+        "en": "Only 17th-century New France"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Southern European immigration after 1945 reshaped Canada’s cities. That is part of “who we are” today."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-041",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Caribbean and African immigration to Canada grew especially after:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Racial barriers in immigration policy were reduced in the 1960s"
+      },
+      {
+        "id": "b",
+        "en": "Confederation in 1867"
+      },
+      {
+        "id": "c",
+        "en": "The War of 1812"
+      },
+      {
+        "id": "d",
+        "en": "The founding of the Hudson’s Bay Company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The points system and later reforms opened doors that earlier “preferred country” rules had closed."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-042",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Many First Nations people today live in cities as well as in First Nation communities."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Urban Indigenous populations are large. “Who we are” is not only a reserve or northern-village story."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-043",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Treaties are described as living agreements because they:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Continue to define relationships between Indigenous nations and the Crown"
+      },
+      {
+        "id": "b",
+        "en": "Expired automatically in 1867"
+      },
+      {
+        "id": "c",
+        "en": "Apply only to tourists"
+      },
+      {
+        "id": "d",
+        "en": "Are municipal parking permits"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Historic and modern treaties are constitutional facts, not folklore. Implementation remains contested in politics and courts."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-044",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Haitian and other Francophone newcomers have especially strengthened French-speaking life in:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Montreal and other parts of Quebec"
+      },
+      {
+        "id": "b",
+        "en": "Only Whitehorse"
+      },
+      {
+        "id": "c",
+        "en": "Only rural Saskatchewan wheat towns"
+      },
+      {
+        "id": "d",
+        "en": "Only the Peace Tower"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "French in Canada is not only “old stock” Quebec. Immigration also feeds Francophone communities."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-045",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "A heritage language (for example, Punjabi, Italian, or Mandarin) in Canada is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A language other than English or French that a community continues to use"
+      },
+      {
+        "id": "b",
+        "en": "Illegal under the Official Languages Act"
+      },
+      {
+        "id": "c",
+        "en": "The only language allowed in federal court"
+      },
+      {
+        "id": "d",
+        "en": "A type of maple product"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Official bilingualism does not ban other languages in homes, temples, newspapers, or businesses."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-046",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Inuit Nunangat refers to the Inuit homeland across the Arctic, including parts of the territories and northern Quebec and Labrador."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is a geographic and cultural idea, not a tenth province. Nunavut is one political expression of that homeland."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-047",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Jewish Canadians have been part of Canada for generations and include:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Communities in Montreal, Toronto, and other cities, including Holocaust survivors after 1945"
+      },
+      {
+        "id": "b",
+        "en": "Only a 21st-century arrival with no earlier history"
+      },
+      {
+        "id": "c",
+        "en": "A group banned from citizenship"
+      },
+      {
+        "id": "d",
+        "en": "A Senate-only religious order"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The community is both historic and renewed by refugees after the Second World War. Antisemitism is part of the harder history too."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-048",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which statement about official languages is most accurate for everyday life?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "You may speak any language privately; federal institutions must serve the public in English and French"
+      },
+      {
+        "id": "b",
+        "en": "Every shopkeeper must speak Inuktitut"
+      },
+      {
+        "id": "c",
+        "en": "English is banned in Quebec homes"
+      },
+      {
+        "id": "d",
+        "en": "French is banned west of Ontario"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The duty sits mainly on Parliament, federal institutions, and some courts—not on every private conversation."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-049",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Métis communities historically grew along:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Fur-trade routes of the Prairies and the West, with distinct language and culture"
+      },
+      {
+        "id": "b",
+        "en": "Only the Halifax waterfront in 1497"
+      },
+      {
+        "id": "c",
+        "en": "Only Parliament Hill offices"
+      },
+      {
+        "id": "d",
+        "en": "Only NATO bases in Europe"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Red River and later Prairie settlements are the classic Métis geography. Identity is not a blood-quantum worksheet on the test."
+    },
+    "source": "Discover Canada — Who We Are"
   }
 ]
