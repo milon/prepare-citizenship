@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
 ---
@@ -10,81 +11,205 @@ import { withBase } from '../lib/paths';
   descriptionFr="Définissez votre nom, votre province, le thème et la sauvegarde du progrès."
   contextFr="Réglages"
 >
-  <article class="panel quiz-shell" x-data="settingsPage">
-    <p class="eyebrow" data-i18n="settings.eyebrow">Settings</p>
-    <h1 data-i18n="settings.title">Your study place</h1>
-    <p class="lede" data-i18n="settings.lede">
-      Mock exams include regional questions for the province or territory you choose.
-      Your name is optional and stays on this device.
-    </p>
-    <form class="picker" @submit.prevent="save">
-      <label class="field">
-        <span data-i18n="settings.name">Your name</span>
-        <input
-          type="text"
-          x-model="displayName"
-          :maxlength="nameMax"
-          autocomplete="nickname"
-          spellcheck="false"
-          placeholder="Optional"
-          data-i18n-placeholder="settings.optional"
-          @blur="persistSettings"
-        />
-      </label>
-      <label class="field">
-        <span data-i18n="field.province">Province or territory</span>
-        <select x-model="selected" required>
-          <option value="" disabled data-i18n="field.select">Select one</option>
-          <template x-for="option in options" :key="option.code">
-            <option :value="option.code" x-text="option.label"></option>
-          </template>
-        </select>
-      </label>
-      <button class="button button-primary" type="submit" data-i18n="settings.save">Save</button>
-      <p class="verified" x-show="saved" x-cloak data-i18n="settings.saved">Saved.</p>
-    </form>
-
-    <section class="data-tools" aria-labelledby="display-heading">
-      <h2 id="display-heading" data-i18n="settings.display">Display</h2>
-      <p class="lede" data-i18n="settings.displayLede">
-        Theme and text size stay on this device with your other progress. The theme
-        button in the header switches between auto, light, and dark too.
+  <div class="page-head">
+    <div>
+      <p class="eyebrow" data-i18n="settings.eyebrow">Settings</p>
+      <h1 data-i18n="settings.title">Your study place</h1>
+      <p class="lede" data-i18n="settings.lede">
+        Everything here stays on this device. Change what you see, or back up your
+        progress.
       </p>
-      <div class="toolbar">
-      <label class="field">
-        <span data-i18n="settings.language">Language</span>
-        <select x-model="locale" @change="persistSettings">
-          <option value="en" data-i18n="settings.lang.en">English</option>
-          <option value="fr" data-i18n="settings.lang.fr">Français</option>
-        </select>
-      </label>
-      <label class="field">
-        <span data-i18n="settings.theme">Theme</span>
-          <select x-model="theme" @change="persistSettings">
-            <option value="system" data-i18n="settings.theme.system">Match device</option>
-            <option value="light" data-i18n="settings.theme.light">Light</option>
-            <option value="dark" data-i18n="settings.theme.dark">Dark</option>
-          </select>
+    </div>
+  </div>
+
+  <div class="settings-stack" x-data="settingsPage">
+    <section class="card" aria-labelledby="profile-heading">
+      <div class="card-head">
+        <h2 id="profile-heading" data-i18n="settings.profile">Your profile</h2>
+        <p data-i18n="settings.profileLede">
+          Your name greets you on the dashboard. Your province decides which regional
+          questions appear.
+        </p>
+      </div>
+      <form class="settings-form" @submit.prevent="save">
+        <label class="field">
+          <span data-i18n="settings.name">Your name</span>
+          <input
+            type="text"
+            x-model="displayName"
+            :maxlength="nameMax"
+            autocomplete="nickname"
+            spellcheck="false"
+            placeholder="Optional"
+            data-i18n-placeholder="settings.optional"
+            @blur="persistSettings"
+          />
         </label>
         <label class="field">
-          <span data-i18n="settings.font">Text size</span>
-          <select x-model="fontSize" @change="persistSettings">
-            <option value="md" data-i18n="settings.font.md">Default</option>
-            <option value="lg" data-i18n="settings.font.lg">Large</option>
-            <option value="xl" data-i18n="settings.font.xl">Extra large</option>
+          <span data-i18n="field.province">Province or territory</span>
+          <select x-model="selected" required>
+            <option value="" disabled data-i18n="field.select">Select one</option>
+            <template x-for="option in options" :key="option.code">
+              <option :value="option.code" x-text="option.label"></option>
+            </template>
           </select>
         </label>
+        <div class="settings-actions">
+          <button class="button button-primary" type="submit" data-i18n="settings.save">Save</button>
+          <p class="verified" x-show="saved" x-cloak data-i18n="settings.saved">Saved.</p>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" aria-labelledby="display-heading">
+      <div class="card-head">
+        <h2 id="display-heading" data-i18n="settings.display">Display</h2>
+        <p data-i18n="settings.displayLede">
+          Theme and text size stay on this device with your other progress. The theme
+          button in the header switches between auto, light, and dark too.
+        </p>
+      </div>
+
+      <div class="setting-row">
+        <span class="setting-label" id="setting-language" data-i18n="settings.language">Language</span>
+        <div class="segmented" role="group" aria-labelledby="setting-language">
+          <label class="segment">
+            <input
+              class="sr-only"
+              type="radio"
+              name="locale"
+              value="en"
+              x-model="locale"
+              @change="persistSettings"
+            />
+            <span class="segment-body" data-i18n="settings.lang.en">English</span>
+          </label>
+          <label class="segment">
+            <input
+              class="sr-only"
+              type="radio"
+              name="locale"
+              value="fr"
+              x-model="locale"
+              @change="persistSettings"
+            />
+            <span class="segment-body" data-i18n="settings.lang.fr">Français</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <span class="setting-label" id="setting-theme" data-i18n="settings.theme">Theme</span>
+        <div class="segmented" role="group" aria-labelledby="setting-theme">
+          <label class="segment" title="Match device" data-i18n-title="settings.theme.system">
+            <input
+              class="sr-only"
+              type="radio"
+              name="theme"
+              value="system"
+              x-model="theme"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <Icon name="auto" />
+              <span data-i18n="theme.system">Auto</span>
+            </span>
+          </label>
+          <label class="segment" title="Light" data-i18n-title="settings.theme.light">
+            <input
+              class="sr-only"
+              type="radio"
+              name="theme"
+              value="light"
+              x-model="theme"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <Icon name="sun" />
+              <span data-i18n="theme.light">Light</span>
+            </span>
+          </label>
+          <label class="segment" title="Dark" data-i18n-title="settings.theme.dark">
+            <input
+              class="sr-only"
+              type="radio"
+              name="theme"
+              value="dark"
+              x-model="theme"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <Icon name="moon" />
+              <span data-i18n="theme.dark">Dark</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <span>
+          <span class="setting-label" id="setting-font" data-i18n="settings.font">Text size</span>
+          <span class="setting-hint" data-i18n="settings.fontHint">
+            Scales every page, not just this one.
+          </span>
+        </span>
+        <div class="segmented segmented-type" role="group" aria-labelledby="setting-font">
+          <label class="segment" title="Default" data-i18n-title="settings.font.md">
+            <input
+              class="sr-only"
+              type="radio"
+              name="fontSize"
+              value="md"
+              x-model="fontSize"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <span class="aa aa-md" aria-hidden="true">Aa</span>
+              <span class="sr-only" data-i18n="settings.font.md">Default</span>
+            </span>
+          </label>
+          <label class="segment" title="Large" data-i18n-title="settings.font.lg">
+            <input
+              class="sr-only"
+              type="radio"
+              name="fontSize"
+              value="lg"
+              x-model="fontSize"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <span class="aa aa-lg" aria-hidden="true">Aa</span>
+              <span class="sr-only" data-i18n="settings.font.lg">Large</span>
+            </span>
+          </label>
+          <label class="segment" title="Extra large" data-i18n-title="settings.font.xl">
+            <input
+              class="sr-only"
+              type="radio"
+              name="fontSize"
+              value="xl"
+              x-model="fontSize"
+              @change="persistSettings"
+            />
+            <span class="segment-body">
+              <span class="aa aa-xl" aria-hidden="true">Aa</span>
+              <span class="sr-only" data-i18n="settings.font.xl">Extra large</span>
+            </span>
+          </label>
+        </div>
       </div>
     </section>
 
-    <section class="data-tools" aria-labelledby="data-heading">
-      <h2 id="data-heading" data-i18n="settings.data">Your data</h2>
-      <p class="lede" data-i18n="settings.dataLede">
-        Progress stays on this device. Export a JSON backup before you clear the
-        browser, or import one you saved earlier. Add this site to your home
-        screen so iOS is less likely to evict stored progress.
-      </p>
-      <div class="button-row">
+    <section class="card" aria-labelledby="data-heading">
+      <div class="card-head">
+        <h2 id="data-heading" data-i18n="settings.data">Your data</h2>
+        <p data-i18n="settings.dataLede">
+          Progress stays on this device. Export a JSON backup before you clear the
+          browser, or import one you saved earlier. Add this site to your home
+          screen so iOS is less likely to evict stored progress.
+        </p>
+      </div>
+      <div class="settings-actions">
         <button class="button button-primary" type="button" @click="exportProgress" data-i18n="settings.export">
           Export progress
         </button>
@@ -98,18 +223,21 @@ import { withBase } from '../lib/paths';
       <p class="banner" x-show="error" x-text="error" x-cloak></p>
     </section>
 
-    <section class="data-tools" aria-labelledby="about-heading">
-      <h2 id="about-heading" data-i18n="settings.about">About this site</h2>
-      <p class="lede lang-en">
-        Independent practice, not the official test. The <a href={withBase('/faq/')}>FAQ</a>{' '}
-        covers the mock format, where progress is stored, and how this bank differs from
-        IRCC’s questions.
-      </p>
-      <p class="lede lang-fr">
-        Exercices indépendants, pas l’examen officiel. La <a href={withBase('/faq/')}>FAQ</a>{' '}
-        explique le format de l’examen blanc, où le progrès est enregistré et en quoi cette
-        banque diffère des questions d’IRCC.
-      </p>
+    <section class="panel disclaimer" aria-labelledby="about-heading">
+      <Icon name="info" class="disclaimer-icon" />
+      <div>
+        <h2 id="about-heading" data-i18n="settings.about">About this site</h2>
+        <p class="lang-en">
+          Independent practice, not the official test. The <a href={withBase('/faq/')}>FAQ</a>{' '}
+          covers the mock format, where progress is stored, and how this bank differs from
+          IRCC’s questions.
+        </p>
+        <p class="lang-fr">
+          Exercices indépendants, pas l’examen officiel. La <a href={withBase('/faq/')}>FAQ</a>{' '}
+          explique le format de l’examen blanc, où le progrès est enregistré et en quoi cette
+          banque diffère des questions d’IRCC.
+        </p>
+      </div>
     </section>
-  </article>
+  </div>
 </BaseLayout>

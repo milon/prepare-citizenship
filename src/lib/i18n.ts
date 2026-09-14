@@ -168,7 +168,10 @@ const en: Dict = {
   'settings.eyebrow': 'Settings',
   'settings.title': 'Your study place',
   'settings.lede':
-    'Mock exams include regional questions for the province or territory you choose. Your name is optional and stays on this device.',
+    'Everything here stays on this device. Change what you see, or back up your progress.',
+  'settings.profile': 'Your profile',
+  'settings.profileLede':
+    'Your name greets you on the dashboard. Your province decides which regional questions appear.',
   'settings.name': 'Your name',
   'settings.optional': 'Optional',
   'settings.save': 'Save',
@@ -187,6 +190,7 @@ const en: Dict = {
   'settings.font.md': 'Default',
   'settings.font.lg': 'Large',
   'settings.font.xl': 'Extra large',
+  'settings.fontHint': 'Scales every page, not just this one.',
   'settings.data': 'Your data',
   'settings.dataLede':
     'Progress stays on this device. Export a JSON backup before you clear the browser, or import one you saved earlier. Add this site to your home screen so iOS is less likely to evict stored progress.',
@@ -454,7 +458,10 @@ const fr: Dict = {
   'settings.eyebrow': 'Réglages',
   'settings.title': 'Votre espace d’étude',
   'settings.lede':
-    'Les examens blancs incluent des questions régionales pour la province ou le territoire choisi. Votre nom est facultatif et reste sur cet appareil.',
+    'Tout reste sur cet appareil. Modifiez l’affichage ou sauvegardez votre progrès.',
+  'settings.profile': 'Votre profil',
+  'settings.profileLede':
+    'Votre nom vous accueille dans le tableau de bord. Votre province détermine les questions régionales affichées.',
   'settings.name': 'Votre nom',
   'settings.optional': 'Facultatif',
   'settings.save': 'Enregistrer',
@@ -473,6 +480,7 @@ const fr: Dict = {
   'settings.font.md': 'Par défaut',
   'settings.font.lg': 'Grande',
   'settings.font.xl': 'Très grande',
+  'settings.fontHint': 'S’applique à toutes les pages, pas seulement à celle-ci.',
   'settings.data': 'Vos données',
   'settings.dataLede':
     'Le progrès reste sur cet appareil. Exportez une copie JSON avant d’effacer le navigateur, ou importez une copie déjà enregistrée. Ajoutez le site à l’écran d’accueil pour qu’iOS soit moins susceptible d’effacer le progrès.',
