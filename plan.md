@@ -84,15 +84,15 @@ loaded.
 - [ ] End-of-exam review: correct/incorrect, explanations, chapter breakdown
 
 ### 2.5 Progress tracking
-- [ ] Persist quiz history, flashcard box/due state, mock scores, settings, and
+- [x] Persist quiz history, flashcard box/due state, mock scores, settings, and
       selected province in `localStorage` with `schemaVersion: 1`
-- [ ] Dashboard: overall accuracy, per-chapter accuracy, mock score trend,
+- [x] Dashboard: overall accuracy, per-chapter accuracy, mock score trend,
       streak, **readiness** (rule in §7)
-- [ ] Show `current.json` last-verified date ("officials last checked …")
-- [ ] Export / import progress as JSON; warn before import overwrites
-- [ ] Reset progress
-- [ ] After the PWA is installed, request `navigator.storage.persist()`
-- [ ] If `localStorage` is missing (private mode) or a write fails, show a
+- [x] Show `current.json` last-verified date ("officials last checked …")
+- [x] Export / import progress as JSON; warn before import overwrites
+- [x] Reset progress
+- [x] After the PWA is installed, request `navigator.storage.persist()`
+- [x] If `localStorage` is missing (private mode) or a write fails, show a
       clear “progress won’t save” banner — do not fail silently
 
 ### 2.6 Accessibility & UX
@@ -279,11 +279,11 @@ if stored, it must be rebuilt after import.
 - [x] Results/review + chapter breakdown
 
 ### Phase 3 — Progress and persistence
-- [ ] Versioned `localStorage` layer (province, attempts, Leitner, settings)
-- [ ] Quota / private-mode failure banner
-- [ ] Dashboard: accuracy, trend, streaks, readiness (§7)
-- [ ] Export / import / reset
-- [ ] `navigator.storage.persist()` after home-screen install
+- [x] Versioned `localStorage` layer (province, attempts, Leitner, settings)
+- [x] Quota / private-mode failure banner
+- [x] Dashboard: accuracy, trend, streaks, readiness (§7)
+- [x] Export / import / reset
+- [x] `navigator.storage.persist()` after home-screen install
 
 ### Phase 4 — Polish
 - [ ] Responsive/mobile pass

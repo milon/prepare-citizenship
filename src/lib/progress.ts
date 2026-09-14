@@ -29,12 +29,17 @@ export type FlashcardRecord = {
   lastSeen: string;
 };
 
+export type ProgressSettings = {
+  persistAsked: boolean;
+};
+
 export type Progress = {
   schemaVersion: 1;
   province: RegionCode | null;
   quizAttempts: QuizAttempt[];
   flashcardState: Record<string, FlashcardRecord>;
   missedQuestionIds: string[];
+  settings: ProgressSettings;
 };
 
 export const emptyProgress = (): Progress => ({
@@ -43,7 +48,42 @@ export const emptyProgress = (): Progress => ({
   quizAttempts: [],
   flashcardState: {},
   missedQuestionIds: [],
+  settings: { persistAsked: false },
 });
+
+type StorageNotice = {
+  available: boolean;
+  saveFailed: boolean;
+};
+
+const storageListeners = new Set<(notice: StorageNotice) => void>();
+
+export function subscribeStorage(listener: (notice: StorageNotice) => void): () => void {
+  storageListeners.add(listener);
+  return () => {
+    storageListeners.delete(listener);
+  };
+}
+
+function notifyStorage(notice: StorageNotice) {
+  for (const listener of storageListeners) {
+    listener(notice);
+  }
+}
+
+function storageWritable(): boolean {
+  if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+    return false;
+  }
+  try {
+    const probe = `${PROGRESS_KEY}:probe`;
+    localStorage.setItem(probe, '1');
+    localStorage.removeItem(probe);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function isRegionCode(value: unknown): value is RegionCode {
   return typeof value === 'string' && (REGION_CODES as readonly string[]).includes(value);
@@ -67,7 +107,23 @@ export function parseProgress(raw: unknown): Progress {
     flashcardState:
       data.flashcardState && typeof data.flashcardState === 'object' ? data.flashcardState : {},
     missedQuestionIds: Array.isArray(data.missedQuestionIds) ? data.missedQuestionIds : [],
+    settings: {
+      persistAsked: Boolean(data.settings?.persistAsked),
+    },
   };
+}
+
+export function parseImportedProgress(
+  raw: unknown,
+): { ok: true; progress: Progress } | { ok: false; message: string } {
+  if (raw === null || typeof raw !== 'object') {
+    return { ok: false, message: 'That file is not a progress export from this app.' };
+  }
+  const data = raw as { schemaVersion?: unknown };
+  if (data.schemaVersion !== 1) {
+    return { ok: false, message: 'This app can only import schemaVersion 1 progress files.' };
+  }
+  return { ok: true, progress: parseProgress(raw) };
 }
 
 export type LoadResult = {
@@ -77,7 +133,23 @@ export type LoadResult = {
 };
 
 export function loadProgress(): LoadResult {
-  if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+  if (!storageWritable()) {
+    notifyStorage({ available: false, saveFailed: false });
+    if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+      return { progress: emptyProgress(), saveFailed: false, storageAvailable: false };
+    }
+    try {
+      const raw = localStorage.getItem(PROGRESS_KEY);
+      if (raw) {
+        return {
+          progress: parseProgress(JSON.parse(raw)),
+          saveFailed: false,
+          storageAvailable: false,
+        };
+      }
+    } catch {
+      return { progress: emptyProgress(), saveFailed: false, storageAvailable: false };
+    }
     return { progress: emptyProgress(), saveFailed: false, storageAvailable: false };
   }
 
@@ -92,21 +164,35 @@ export function loadProgress(): LoadResult {
       storageAvailable: true,
     };
   } catch {
+    notifyStorage({ available: false, saveFailed: false });
     return { progress: emptyProgress(), saveFailed: false, storageAvailable: false };
   }
 }
 
 export function saveProgress(progress: Progress): boolean {
-  if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+  if (!storageWritable()) {
+    notifyStorage({ available: false, saveFailed: true });
     return false;
   }
 
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+    notifyStorage({ available: true, saveFailed: false });
     return true;
   } catch {
+    notifyStorage({ available: false, saveFailed: true });
     return false;
   }
+}
+
+export function resetProgress(keepProvince: boolean): Progress {
+  const current = loadProgress().progress;
+  const next = emptyProgress();
+  if (keepProvince) {
+    next.province = current.province;
+  }
+  saveProgress(next);
+  return next;
 }
 
 export function recordAttempt(progress: Progress, attempt: QuizAttempt): Progress {

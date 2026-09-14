@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import DashboardPanel from '../components/DashboardPanel.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const chapters = (await getCollection('chapters'))
@@ -28,6 +29,18 @@ const questions = await getCollection('questions');
       )
     }
   </article>
+
+  {
+    current ? (
+      <div style="margin-top: 1.25rem;">
+        <DashboardPanel lastVerified={current.lastVerified} compact />
+      </div>
+    ) : (
+      <div style="margin-top: 1.25rem;">
+        <DashboardPanel lastVerified="unknown" compact />
+      </div>
+    )
+  }
 
   <section class="panel" style="margin-top: 1.25rem;" aria-labelledby="tools-heading">
     <p class="eyebrow">Study tools</p>

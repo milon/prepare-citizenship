@@ -1,0 +1,10 @@
+<div
+  class="storage-banner"
+  x-data
+  x-show="!$store.storage.available || $store.storage.saveFailed"
+  x-cloak
+  role="status"
+>
+  Progress won’t save in this browser. Check that you are not in private mode and
+  that storage is not full.
+</div>

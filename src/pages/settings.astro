@@ -24,9 +24,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </label>
       <button class="button button-primary" type="submit">Save</button>
       <p class="verified" x-show="saved" x-cloak>Saved.</p>
-      <p class="banner" x-show="saveFailed" x-cloak>
-        Progress won’t save in this browser. Check that storage is not blocked.
-      </p>
     </form>
+
+    <section class="data-tools" aria-labelledby="data-heading">
+      <h2 id="data-heading">Your data</h2>
+      <p class="lede">
+        Progress stays on this device. Export a JSON backup before you clear the
+        browser, or import one you saved earlier.
+      </p>
+      <div class="button-row">
+        <button class="button button-primary" type="button" @click="exportProgress">
+          Export progress
+        </button>
+        <label class="button">
+          Import progress
+          <input class="sr-only" type="file" accept="application/json,.json" @change="importProgress" />
+        </label>
+        <button class="button" type="button" @click="reset">Reset progress</button>
+      </div>
+      <p class="verified" x-show="message" x-text="message" x-cloak></p>
+      <p class="banner" x-show="error" x-text="error" x-cloak></p>
+    </section>
   </article>
 </BaseLayout>

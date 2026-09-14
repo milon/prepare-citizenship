@@ -1,0 +1,109 @@
+---
+import { withBase } from '../lib/paths';
+
+interface Props {
+  lastVerified: string;
+  compact?: boolean;
+}
+
+const { lastVerified, compact = false } = Astro.props;
+const progressHref = withBase('/progress/');
+---
+
+<section class="panel dashboard" x-data="dashboardPage" aria-labelledby="dashboard-heading">
+  <p class="eyebrow">Progress</p>
+  <h2 id="dashboard-heading" class="dashboard-title">
+    {compact ? 'How you are doing' : 'Readiness dashboard'}
+  </h2>
+  <p class="verified">Officials last checked {lastVerified}.</p>
+  {
+    compact && (
+      <p class="lede">
+        <a href={progressHref}>Open the full dashboard</a>
+      </p>
+    )
+  }
+
+  <template x-if="stats">
+    <div>
+      <div class="stat-grid">
+        <p class="stat">
+          <strong x-text="stats.overallTotal ? percent(stats.overallRate) : '—'"></strong>
+          <span>Overall accuracy</span>
+          <span
+            class="stat-sub"
+            x-text="stats.overallTotal ? `${stats.overallCorrect} of ${stats.overallTotal}` : 'No quiz answers yet'"
+          ></span>
+        </p>
+        <p class="stat">
+          <strong x-text="stats.streak"></strong>
+          <span>Study streak</span>
+          <span class="stat-sub" x-text="stats.streak === 1 ? 'day' : 'days'"></span>
+        </p>
+        <p class="stat">
+          <strong x-text="stats.mockTrend.length"></strong>
+          <span>Mocks completed</span>
+        </p>
+      </div>
+
+      <div class="readiness" :data-status="stats.readiness.status">
+        <p class="readiness-label" x-show="stats.readiness.status === 'not-enough-data'">
+          Not enough data —
+          <span
+            x-text="`finish ${3 - stats.readiness.mocksCompleted} more mock${3 - stats.readiness.mocksCompleted === 1 ? '' : 's'} to see readiness.`"
+          ></span>
+        </p>
+        <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
+          Ready — last 3 mocks passed, and practiced chapters are at 70% or better.
+        </p>
+        <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
+          Not ready yet.
+        </p>
+        <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
+          <template x-for="reason in (stats.readiness.reasons || [])" :key="reason">
+            <li x-text="reason"></li>
+          </template>
+        </ul>
+        <p
+          class="stat-sub"
+          x-show="(stats.readiness.keepPracticing || []).length"
+        >
+          Keep practicing:
+          <span
+            x-text="(stats.readiness.keepPracticing || []).map((chapter) => chapter.title).join(', ')"
+          ></span>
+        </p>
+      </div>
+
+      <div class:list={[{ 'dashboard-detail': true, compact }]}>
+        <h3>Mock scores</h3>
+        <p class="stat-sub" x-show="!stats.mockTrend.length">No mocks yet.</p>
+        <ol class="trend" x-show="stats.mockTrend.length">
+          <template x-for="(item, index) in stats.mockTrend" :key="index">
+            <li>
+              <span x-text="item.date"></span>
+              <span x-text="`${item.score}/${item.total}`"></span>
+              <span x-text="item.passed ? 'Pass' : 'Below 15'"></span>
+            </li>
+          </template>
+        </ol>
+
+        <h3>By chapter</h3>
+        <ul class="breakdown">
+          <template x-for="chapter in stats.chapters" :key="chapter.id">
+            <li>
+              <strong x-text="chapter.title"></strong>
+              <span
+                x-text="chapter.total ? `${percent(chapter.rate)} (${chapter.correct}/${chapter.total})` : 'No answers yet'"
+              ></span>
+              <span
+                class="pill"
+                x-text="chapter.status === 'weak' ? 'Needs work' : chapter.status === 'on-track' ? 'On track' : 'Keep practicing'"
+              ></span>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+  </template>
+</section>

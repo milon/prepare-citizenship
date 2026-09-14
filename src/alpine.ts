@@ -1,9 +1,11 @@
 import type { Alpine } from 'alpinejs';
+import { dashboardApp } from './lib/dashboard-app';
 import { flashcardsApp, type FlashcardsPayload } from './lib/flashcards-app';
 import { mockApp, type MockPayload } from './lib/mock-app';
+import { watchForInstallAndPersist } from './lib/persist-storage';
 import { practiceApp, type PracticePayload } from './lib/practice-app';
 import { provincePickerApp, settingsApp } from './lib/province-app';
-import { loadProgress } from './lib/progress';
+import { loadProgress, subscribeStorage } from './lib/progress';
 
 function readJson<T>(id: string): T | null {
   const element = document.getElementById(id);
@@ -13,7 +15,32 @@ function readJson<T>(id: string): T | null {
   return JSON.parse(element.textContent) as T;
 }
 
+type StorageStore = {
+  available: boolean;
+  saveFailed: boolean;
+};
+
 export default (Alpine: Alpine) => {
+  Alpine.store('storage', {
+    available: true,
+    saveFailed: false,
+  } satisfies StorageStore);
+
+  subscribeStorage((notice) => {
+    const store = Alpine.store('storage') as StorageStore;
+    store.available = notice.available;
+    store.saveFailed = notice.saveFailed;
+  });
+
+  const loaded = loadProgress();
+  const store = Alpine.store('storage') as StorageStore;
+  store.available = loaded.storageAvailable;
+  store.saveFailed = loaded.saveFailed;
+
+  watchForInstallAndPersist();
+
+  Alpine.data('dashboardPage', () => dashboardApp());
+
   Alpine.data('provinceGate', () => ({
     needsPicker: true,
     redirect: '/',

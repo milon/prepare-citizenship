@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import DashboardPanel from '../components/DashboardPanel.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const current = (await getCollection('current'))[0]?.data;
+const lastVerified = current?.lastVerified ?? 'unknown';
+---
+
+<BaseLayout
+  title="Progress"
+  description="See accuracy, mock trend, streak, and citizenship test readiness."
+>
+  <DashboardPanel lastVerified={lastVerified} />
+</BaseLayout>

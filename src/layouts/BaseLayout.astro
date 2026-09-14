@@ -1,4 +1,5 @@
 ---
+import StorageBanner from '../components/StorageBanner.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -47,11 +48,15 @@ const officialGuideUrl =
         <a href={`${homeHref}mock/`} aria-current={path.includes('/mock') ? 'page' : undefined}>
           Mock
         </a>
+        <a href={`${homeHref}progress/`} aria-current={path.includes('/progress') ? 'page' : undefined}>
+          Progress
+        </a>
         <a href={`${homeHref}settings/`} aria-current={path.includes('/settings') ? 'page' : undefined}>
           Settings
         </a>
       </nav>
     </header>
+    <StorageBanner />
     <div class="site-main">
       <slot />
     </div>
