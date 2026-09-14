@@ -93,7 +93,9 @@ export function faqItems(opts: { questionCount: number; lastVerified: string }):
 
 export function faqPlainText(html: string): string {
   return html
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/<\/(p|li|h[1-6])>/gi, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]+>/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 }

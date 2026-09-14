@@ -26,7 +26,9 @@ const payload = { questions, chapters };
             submits itself at 0:00. Answers stay hidden until you submit.
           </p>
           <p class="verified" x-show="$store.learner.name" x-cloak x-text="`Good luck, ${$store.learner.name}.`"></p>
-          <button class="button button-primary" type="button" @click="start">Start exam</button>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="start">Start exam</button>
+          </div>
         </div>
       </template>
 
@@ -125,7 +127,9 @@ const payload = { questions, chapters };
               </li>
             </template>
           </ol>
-          <button class="button button-primary" type="button" @click="phase = 'intro'">New attempt</button>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="phase = 'intro'">New attempt</button>
+          </div>
           <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>
         </div>
       </template>

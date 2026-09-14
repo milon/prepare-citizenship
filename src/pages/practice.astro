@@ -101,7 +101,9 @@ const payload = {
               </li>
             </template>
           </ul>
-          <button class="button button-primary" type="button" @click="start">Practice again</button>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="start">Practice again</button>
+          </div>
         </div>
       </template>
       <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>

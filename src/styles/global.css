@@ -195,6 +195,7 @@ a {
     flex-direction: column;
     gap: 1.25rem;
     padding: 1.15rem 0.85rem 1.15rem 1.15rem;
+    overflow: hidden;
     background: var(--rail);
     color: var(--rail-ink);
   }
@@ -222,7 +223,13 @@ a {
 
 .rail-nav {
   display: grid;
+  min-height: 0;
+  flex: 1 1 auto;
+  align-content: start;
   gap: 0.15rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
 }
 
 .rail-nav a {
@@ -253,10 +260,30 @@ a {
 }
 
 .rail-widget {
-  margin-top: auto;
+  flex: none;
   padding: 0.85rem 0.9rem;
   border-radius: var(--r-md);
   background: var(--rail-hover);
+}
+
+/* The streak card yields first so the nav links and profile row always fit.
+   Larger text settings need the room sooner. */
+@media (max-height: 42rem) {
+  .rail-widget {
+    display: none;
+  }
+}
+
+@media (max-height: 52rem) {
+  html[data-font='lg'] .rail-widget {
+    display: none;
+  }
+}
+
+@media (max-height: 54rem) {
+  html[data-font='xl'] .rail-widget {
+    display: none;
+  }
 }
 
 .rail-widget .k {
@@ -276,6 +303,7 @@ a {
 .rail-user {
   position: relative;
   display: flex;
+  flex: none;
   align-items: center;
   gap: 0.6rem;
   margin-top: 0.95rem;
