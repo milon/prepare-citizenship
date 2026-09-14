@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { faqItems, faqPlainText } from '../lib/faq';
+import { loadStudyContent } from '../lib/study-content';
+import { withBase } from '../lib/paths';
+
+const { questions, current } = await loadStudyContent();
+const lastVerified = current?.lastVerified ?? 'unknown';
+const items = faqItems({ questionCount: questions.length, lastVerified });
+const faqJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faqPlainText(item.html),
+    },
+  })),
+});
+---
+
+<BaseLayout
+  title="FAQ"
+  description="Answers about this independent Canadian citizenship test study site: the mock exam, progress, and how it differs from the official IRCC test."
+  context="FAQ"
+>
+  <script is:inline type="application/ld+json" set:html={faqJson} />
+
+  <div class="page-head">
+    <div>
+      <h1>Frequently asked questions</h1>
+      <p class="lede">
+        Independent practice for the Canadian citizenship test — not the test itself, and
+        not affiliated with IRCC.
+      </p>
+    </div>
+    <div class="chips">
+      <span class="chip">{questions.length} questions</span>
+      <span class="chip">Verified {lastVerified}</span>
+    </div>
+  </div>
+
+  <div class="faq-list quiz-shell">
+    {
+      items.map((item) => (
+        <details class="faq-item" id={item.id}>
+          <summary>
+            {item.question}
+            <Icon name="chevron" />
+          </summary>
+          <div class="faq-a" set:html={item.html} />
+        </details>
+      ))
+    }
+  </div>
+
+  <p class="faq-foot">
+    Still stuck? Read a <a href={withBase('/chapters/')}>chapter</a>, try a{' '}
+    <a href={withBase('/practice/')}>practice quiz</a>, or adjust{' '}
+    <a href={withBase('/settings/')}>Settings</a>.
+  </p>
+  <script is:inline>
+    (function () {
+      var id = location.hash.replace('#', '');
+      if (!id) return;
+      var item = document.getElementById(id);
+      if (item && item.tagName === 'DETAILS') item.setAttribute('open', '');
+    })();
+  </script>
+</BaseLayout>

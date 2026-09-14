@@ -56,17 +56,25 @@ const nav = [
     label: 'Progress',
     icon: 'progress',
     current: path.includes('/progress'),
+    topbar: true,
+  },
+  {
+    href: `${homeHref}faq/`,
+    label: 'FAQ',
+    icon: 'help',
+    current: path.includes('/faq'),
   },
   {
     href: `${homeHref}settings/`,
     label: 'Settings',
     icon: 'settings',
     current: path.includes('/settings'),
+    topbar: true,
   },
 ] as const;
 
 const tabs = nav.filter((item) => 'tab' in item && item.tab);
-const railOnly = nav.filter((item) => !('tab' in item && item.tab));
+const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
 ---
 
 <!doctype html>
@@ -165,7 +173,7 @@ const railOnly = nav.filter((item) => !('tab' in item && item.tab));
           <p class="topbar-context">{context ?? title}</p>
           <div class="topbar-actions">
             {
-              railOnly.map((item) => (
+              topbarLinks.map((item) => (
                 <a
                   class="icon-button only-mobile"
                   href={item.href}

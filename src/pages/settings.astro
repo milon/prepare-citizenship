@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
 ---
 
 <BaseLayout
@@ -84,6 +85,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <p class="verified" x-show="message" x-text="message" x-cloak></p>
       <p class="banner" x-show="error" x-text="error" x-cloak></p>
+    </section>
+
+    <section class="data-tools" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this site</h2>
+      <p class="lede">
+        Independent practice, not the official test. The
+        <a href={withBase('/faq/')}>FAQ</a> covers the mock format, where progress is stored, and how
+        this bank differs from IRCC’s questions.
+      </p>
     </section>
   </article>
 </BaseLayout>
