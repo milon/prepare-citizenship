@@ -1,0 +1,135 @@
+[
+  {
+    "id": "gov-001",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Head of State in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Prime Minister"
+      },
+      {
+        "id": "b",
+        "en": "The Governor General"
+      },
+      {
+        "id": "c",
+        "en": "The Monarch"
+      },
+      {
+        "id": "d",
+        "en": "The Chief Justice of Canada"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Canada is a constitutional monarchy. The Monarch is Head of State and is represented in Canada by the Governor General."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-002",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Head of Government in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Governor General"
+      },
+      {
+        "id": "b",
+        "en": "The Prime Minister"
+      },
+      {
+        "id": "c",
+        "en": "The Speaker of the Senate"
+      },
+      {
+        "id": "d",
+        "en": "The Lieutenant Governor of Ontario"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Prime Minister is Head of Government, leads the party that can command the House of Commons, and chooses Cabinet."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-003",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which three levels of government operate in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Federal, provincial or territorial, and municipal"
+      },
+      {
+        "id": "b",
+        "en": "Royal, colonial, and county"
+      },
+      {
+        "id": "c",
+        "en": "Senate, Cabinet, and Supreme Court"
+      },
+      {
+        "id": "d",
+        "en": "Federal, NATO, and United Nations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Federal, provincial/territorial, and municipal governments share responsibilities such as defence, education, and local services."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-004",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is Canada’s current Prime Minister?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{primeMinister}}"
+      },
+      {
+        "id": "b",
+        "en": "The Governor General"
+      },
+      {
+        "id": "c",
+        "en": "The Chief Justice of Canada"
+      },
+      {
+        "id": "d",
+        "en": "The Speaker of the House of Commons"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Office-holders change. As of the last verification date in this app, the Prime Minister is {{primeMinister}}."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves",
+    "currentFactKey": "primeMinister"
+  }
+]

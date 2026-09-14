@@ -1,0 +1,101 @@
+[
+  {
+    "id": "his-001",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "When did Canada become a country through Confederation?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "July 1, 1867"
+      },
+      {
+        "id": "b",
+        "en": "July 1, 1812"
+      },
+      {
+        "id": "c",
+        "en": "April 17, 1982"
+      },
+      {
+        "id": "d",
+        "en": "November 11, 1918"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The British North America Act created the Dominion of Canada on July 1, 1867, uniting Ontario, Quebec, Nova Scotia, and New Brunswick."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-002",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who was Canada’s first Prime Minister?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Wilfrid Laurier"
+      },
+      {
+        "id": "b",
+        "en": "George-Étienne Cartier"
+      },
+      {
+        "id": "c",
+        "en": "Sir John A. Macdonald"
+      },
+      {
+        "id": "d",
+        "en": "Robert Borden"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Sir John A. Macdonald led the Conservative government after Confederation and is remembered as a principal architect of the new federation."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-003",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What did the Quebec Act of 1774 do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It banned the French language in courts"
+      },
+      {
+        "id": "b",
+        "en": "It allowed French Catholics to keep their religion and civil law"
+      },
+      {
+        "id": "c",
+        "en": "It created the Province of Manitoba"
+      },
+      {
+        "id": "d",
+        "en": "It ended the fur trade"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Quebec Act protected the French language, Catholic faith, and French civil law in Quebec—an early example of accommodation that still shapes Canada."
+    },
+    "source": "Discover Canada — Canada's History"
+  }
+]

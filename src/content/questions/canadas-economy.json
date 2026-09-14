@@ -1,0 +1,68 @@
+[
+  {
+    "id": "eco-001",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada is a member of which group of advanced economies?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The G7"
+      },
+      {
+        "id": "b",
+        "en": "OPEC"
+      },
+      {
+        "id": "c",
+        "en": "The African Union"
+      },
+      {
+        "id": "d",
+        "en": "The Warsaw Pact"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada is one of the G7 countries. Trade, natural resources, services, and manufacturing are all important parts of the economy."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-002",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a major Canadian export sector highlighted in the study guide?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Natural resources such as energy, minerals, and forest products"
+      },
+      {
+        "id": "b",
+        "en": "Domestic postage stamps"
+      },
+      {
+        "id": "c",
+        "en": "Municipal parking tickets"
+      },
+      {
+        "id": "d",
+        "en": "Provincial court transcripts"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada has a resource-rich economy and also strong manufacturing and service industries. The United States is Canada’s largest trading partner."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  }
+]

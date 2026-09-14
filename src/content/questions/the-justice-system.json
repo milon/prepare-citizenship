@@ -1,0 +1,93 @@
+[
+  {
+    "id": "jus-001",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is Canada’s highest court?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Federal Court of Appeal"
+      },
+      {
+        "id": "b",
+        "en": "The Supreme Court of Canada"
+      },
+      {
+        "id": "c",
+        "en": "The Provincial Court of Ontario"
+      },
+      {
+        "id": "d",
+        "en": "The Senate"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Supreme Court of Canada is the final court of appeal. It includes a Chief Justice and eight other judges."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-002",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "In Canadian criminal law, a person accused of a crime is:"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Assumed guilty until a lawyer is hired"
+      },
+      {
+        "id": "b",
+        "en": "Presumed innocent until proven guilty"
+      },
+      {
+        "id": "c",
+        "en": "Tried by the Prime Minister"
+      },
+      {
+        "id": "d",
+        "en": "Unable to remain silent"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The presumption of innocence is a core legal right. The Crown must prove guilt beyond a reasonable doubt."
+    },
+    "source": "Discover Canada — The Justice System"
+  },
+  {
+    "id": "jus-003",
+    "chapter": "the-justice-system",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Police in Canada always have the right to search a home without a warrant."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "false",
+    "explanation": {
+      "en": "Legal rights include protection against unreasonable search and seizure. In most cases police need lawful authority, often a warrant, before searching a home."
+    },
+    "source": "Discover Canada — The Justice System"
+  }
+]

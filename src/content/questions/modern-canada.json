@@ -1,0 +1,93 @@
+[
+  {
+    "id": "mod-001",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What was the Quiet Revolution in Quebec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A rapid period of social and government reform in the 1960s"
+      },
+      {
+        "id": "b",
+        "en": "The building of the Canadian Pacific Railway"
+      },
+      {
+        "id": "c",
+        "en": "The wartime internment of Japanese Canadians"
+      },
+      {
+        "id": "d",
+        "en": "The founding of the Hudson’s Bay Company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "In the 1960s, Quebec modernized education, health care, and the provincial state, and a stronger Québécois identity took hold in public life."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-002",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Canada is a founding member of the North Atlantic Treaty Organization (NATO)."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "After the Second World War, Canada helped found NATO and also belongs to NORAD with the United States, as well as the United Nations and the Commonwealth."
+    },
+    "source": "Discover Canada — Modern Canada"
+  },
+  {
+    "id": "mod-003",
+    "chapter": "modern-canada",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which law made English and French official languages of the Parliament and Government of Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The War Measures Act"
+      },
+      {
+        "id": "b",
+        "en": "The Official Languages Act (1969)"
+      },
+      {
+        "id": "c",
+        "en": "The Manitoba Act"
+      },
+      {
+        "id": "d",
+        "en": "The Indian Act"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Official Languages Act confirmed bilingual federal institutions. The Charter later entrenched official language rights more firmly."
+    },
+    "source": "Discover Canada — Modern Canada"
+  }
+]

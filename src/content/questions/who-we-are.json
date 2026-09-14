@@ -1,0 +1,93 @@
+[
+  {
+    "id": "wwa-001",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which three groups are recognized as Indigenous peoples in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "First Nations, Inuit, and Métis"
+      },
+      {
+        "id": "b",
+        "en": "Inuit, Acadians, and Loyalists"
+      },
+      {
+        "id": "c",
+        "en": "Métis, Voyageurs, and Acadians"
+      },
+      {
+        "id": "d",
+        "en": "First Nations, Ukrainians, and Inuit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada recognizes First Nations, Inuit, and Métis as the Indigenous peoples of this land, each with distinct histories, languages, and cultures."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-002",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What are Canada’s two official languages?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "English and Spanish"
+      },
+      {
+        "id": "b",
+        "en": "French and Cree"
+      },
+      {
+        "id": "c",
+        "en": "English and French"
+      },
+      {
+        "id": "d",
+        "en": "French and Inuktitut"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "English and French have equal status in Parliament and the Government of Canada. Many other languages are spoken, including Indigenous languages."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-003",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Métis are a people of mixed First Nations and European ancestry who developed their own culture and identity."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Métis communities formed especially on the Prairies, with a distinct culture, including Michif in some communities, and a history tied to the fur trade."
+    },
+    "source": "Discover Canada — Who We Are"
+  }
+]

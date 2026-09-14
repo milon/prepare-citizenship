@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ele-001",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the minimum age to vote in a Canadian federal election?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "16"
+      },
+      {
+        "id": "b",
+        "en": "18"
+      },
+      {
+        "id": "c",
+        "en": "19"
+      },
+      {
+        "id": "d",
+        "en": "21"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Canadian citizens who are at least 18 years old on election day may vote in federal elections."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-002",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is an electoral district also called?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A riding"
+      },
+      {
+        "id": "b",
+        "en": "A Cabinet"
+      },
+      {
+        "id": "c",
+        "en": "A caucus"
+      },
+      {
+        "id": "d",
+        "en": "A constituency court"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Voters in each electoral district, or riding, elect one Member of Parliament to the House of Commons."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-003",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Federal ballots in Canada are secret."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "The secret ballot is a safeguard of democracy: no one should know how you voted, and you should not feel pressured to reveal it."
+    },
+    "source": "Discover Canada — Federal Elections"
+  }
+]

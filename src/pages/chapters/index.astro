@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const chapters = (await getCollection('chapters'))
+  .filter((entry) => !entry.data.regionGroup)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const regions = (await getCollection('chapters'))
+  .filter((entry) => entry.data.regionGroup)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout
+  title="Study chapters"
+  description="Original summaries of every Discover Canada chapter, written for test prep."
+>
+  <article class="panel">
+    <p class="eyebrow">Discover Canada</p>
+    <h1>Chapter summaries</h1>
+    <p class="lede">
+      These pages are original study notes. They are not a copy of the official
+      guide. Use them to learn the shape of each topic, then drill with questions.
+    </p>
+    <ul class="chapter-grid">
+      {
+        chapters.map((chapter) => (
+          <li>
+            <a class="chapter-card" href={`${import.meta.env.BASE_URL}chapters/${chapter.id}/`}>
+              <strong>{chapter.data.title}</strong>
+              <span>{chapter.data.description}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2 id="regions" style="margin-top: 2.5rem; font-family: Georgia, serif; font-weight: 500;">
+      Region subpages
+    </h2>
+    <ul class="region-grid">
+      {
+        regions.map((region) => (
+          <li>
+            <a class="region-card" href={`${import.meta.env.BASE_URL}chapters/${region.id}/`}>
+              <strong>{region.data.title}</strong>
+              <span>{region.data.description}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+</BaseLayout>

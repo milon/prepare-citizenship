@@ -1,0 +1,93 @@
+[
+  {
+    "id": "rnr-001",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which of these is a mobility right of Canadian citizens?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The right to live and work in any province or territory"
+      },
+      {
+        "id": "b",
+        "en": "The right to set provincial tax rates"
+      },
+      {
+        "id": "c",
+        "en": "The right to appoint judges"
+      },
+      {
+        "id": "d",
+        "en": "The right to dissolve Parliament"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canadian citizens may take up residence and pursue a livelihood anywhere in Canada, with limited exceptions set out in law."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-002",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which document is the highest law protecting rights and freedoms in Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Criminal Code"
+      },
+      {
+        "id": "b",
+        "en": "The Canadian Charter of Rights and Freedoms"
+      },
+      {
+        "id": "c",
+        "en": "The British North America Act of 1931"
+      },
+      {
+        "id": "d",
+        "en": "The Official Languages Act"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The Charter, part of the Constitution, guarantees fundamental, democratic, mobility, legal, equality, and language rights."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-003",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Serving on a jury when called is a responsibility of Canadian citizenship."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True"
+      },
+      {
+        "id": "false",
+        "en": "False"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "Citizenship comes with duties as well as rights. Those duties include obeying the law, serving on a jury if summoned, voting in elections, and helping others in the community."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  }
+]

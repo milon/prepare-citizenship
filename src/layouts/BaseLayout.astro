@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const homeHref = base.endsWith('/') ? base : `${base}/`;
+const chaptersHref = `${homeHref}chapters/`;
+const path = Astro.url.pathname;
+const officialGuideUrl =
+  'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#8b1e2d" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href={homeHref}>Prepare Citizenship</a>
+      <nav class="nav" aria-label="Primary">
+        <a href={homeHref} aria-current={path === homeHref || path === base ? 'page' : undefined}>
+          Home
+        </a>
+        <a
+          href={chaptersHref}
+          aria-current={path.includes('/chapters') ? 'page' : undefined}
+        >
+          Chapters
+        </a>
+      </nav>
+    </header>
+    <div class="site-main">
+      <slot />
+    </div>
+    <footer class="site-footer">
+      Independent study tool—not affiliated with Immigration, Refugees and
+      Citizenship Canada. For authoritative material, use the
+      <a href={officialGuideUrl}>official study guide</a>. Practice questions
+      here are original paraphrases, not the real test bank.
+    </footer>
+  </body>
+</html>

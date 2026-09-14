@@ -1,0 +1,101 @@
+[
+  {
+    "id": "sym-001",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which plant appears on the Canadian flag?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A fleur-de-lis"
+      },
+      {
+        "id": "b",
+        "en": "A maple leaf"
+      },
+      {
+        "id": "c",
+        "en": "A shamrock"
+      },
+      {
+        "id": "d",
+        "en": "A rose"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The National Flag of Canada, adopted in 1965, is red and white with a red maple leaf at the centre."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-002",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is Canada’s national animal?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The moose"
+      },
+      {
+        "id": "b",
+        "en": "The beaver"
+      },
+      {
+        "id": "c",
+        "en": "The polar bear"
+      },
+      {
+        "id": "d",
+        "en": "The Canada goose"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "The beaver, long tied to the fur trade, is an official emblem of Canada."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "sym-003",
+    "chapter": "canadian-symbols",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Where do the Parliament Buildings stand?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Toronto"
+      },
+      {
+        "id": "b",
+        "en": "Montreal"
+      },
+      {
+        "id": "c",
+        "en": "Ottawa"
+      },
+      {
+        "id": "d",
+        "en": "Quebec City"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Parliament Hill in Ottawa is the seat of the federal Parliament and a widely recognized national symbol."
+    },
+    "source": "Discover Canada — Canadian Symbols"
+  }
+]

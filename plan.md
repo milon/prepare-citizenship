@@ -261,14 +261,14 @@ if stored, it must be rebuilt after import.
       to `milon/prepare-citizenship`.
 
 ### Phase 1 — Schema and gold-standard content
-- [ ] Define Zod / content-collection schema (questions, extra cards, `current.json`)
-- [ ] CI check: unique ids, MC vs T/F shape, `correctOptionId` exists, explanation,
+- [x] Define Zod / content-collection schema (questions, extra cards, `current.json`)
+- [x] CI check: unique ids, MC vs T/F shape, `correctOptionId` exists, explanation,
       chapter, source
-- [ ] Write ~30 gold-standard questions across chapters (including T/F + one
+- [x] Write ~30 gold-standard questions across chapters (including T/F + one
       regional example)
 - [ ] Scale to ~300–400 unique items; extra flashcards only where needed
-- [ ] Write original chapter summary pages (10 chapters + region subpages)
-- [ ] Fill `current.json` and date-stamp it
+- [x] Write original chapter summary pages (10 chapters + region subpages)
+- [x] Fill `current.json` and date-stamp it
 
 ### Phase 2 — Core features
 - [ ] Province picker (first run + settings)

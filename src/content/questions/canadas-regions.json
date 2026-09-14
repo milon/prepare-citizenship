@@ -1,0 +1,101 @@
+[
+  {
+    "id": "reg-001",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital city of Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Toronto"
+      },
+      {
+        "id": "b",
+        "en": "Ottawa"
+      },
+      {
+        "id": "c",
+        "en": "Vancouver"
+      },
+      {
+        "id": "d",
+        "en": "Montreal"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Ottawa, in Ontario, is the national capital and home to Parliament and many federal institutions."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-002",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the capital of Ontario?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ottawa"
+      },
+      {
+        "id": "b",
+        "en": "Hamilton"
+      },
+      {
+        "id": "c",
+        "en": "Toronto"
+      },
+      {
+        "id": "d",
+        "en": "London"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": {
+      "en": "Toronto is Ontario’s capital and Canada’s largest city. Ottawa is the national capital, also located in Ontario."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-003",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which is Canada’s smallest province by land area?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Nova Scotia"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island"
+      },
+      {
+        "id": "c",
+        "en": "New Brunswick"
+      },
+      {
+        "id": "d",
+        "en": "Manitoba"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": {
+      "en": "Prince Edward Island is the smallest province. It is known for agriculture, tourism, and being the birthplace of Confederation talks in 1864."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  }
+]

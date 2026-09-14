@@ -1,0 +1,46 @@
+[
+  {
+    "id": "lst-001",
+    "chapter": "canadas-history",
+    "front": {
+      "en": "Which four provinces joined Confederation in 1867?"
+    },
+    "back": {
+      "en": "Ontario, Quebec, Nova Scotia, and New Brunswick."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "lst-002",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the five Great Lakes."
+    },
+    "back": {
+      "en": "Superior, Michigan, Huron, Erie, and Ontario."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-003",
+    "chapter": "who-we-are",
+    "front": {
+      "en": "Name the three groups of Indigenous peoples recognized in Canada."
+    },
+    "back": {
+      "en": "First Nations, Inuit, and Métis."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "lst-004",
+    "chapter": "how-canadians-govern-themselves",
+    "front": {
+      "en": "Name the three levels of government in Canada."
+    },
+    "back": {
+      "en": "Federal, provincial or territorial, and municipal (local)."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves"
+  }
+]

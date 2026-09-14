@@ -1,0 +1,74 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const chapters = await getCollection('chapters');
+  return chapters.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const current = (await getCollection('current'))[0]?.data;
+const relatedRegions = (await getCollection('chapters'))
+  .filter(
+    (chapter) =>
+      entry.data.chapter === 'canadas-regions' &&
+      !entry.data.regionGroup &&
+      chapter.data.regionGroup,
+  )
+  .sort((a, b) => a.data.order - b.data.order);
+
+const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <article class="panel">
+    <p class="eyebrow">Chapter summary</p>
+    <h1>{entry.data.title}</h1>
+    <p class="lede">{entry.data.description}</p>
+
+    {
+      showOfficials && current && (
+        <>
+          <dl class="officials">
+            <dt>Head of State</dt>
+            <dd>{current.headOfState}</dd>
+            <dt>Governor General</dt>
+            <dd>{current.governorGeneral}</dd>
+            <dt>Prime Minister</dt>
+            <dd>{current.primeMinister}</dd>
+            <dt>Party in power</dt>
+            <dd>{current.partyInPower}</dd>
+          </dl>
+          <p class="verified">Officials last checked {current.lastVerified}.</p>
+        </>
+      )
+    }
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {
+      relatedRegions.length > 0 && (
+        <section aria-labelledby="region-pages">
+          <h2 id="region-pages">Region subpages</h2>
+          <ul class="region-grid">
+            {relatedRegions.map((region) => (
+              <li>
+                <a class="region-card" href={`${import.meta.env.BASE_URL}chapters/${region.id}/`}>
+                  <strong>{region.data.title}</strong>
+                  <span>{region.data.description}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</BaseLayout>
