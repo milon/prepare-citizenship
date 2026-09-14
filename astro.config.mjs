@@ -55,6 +55,8 @@ export default defineConfig({
       workbox: {
         navigateFallback: base,
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2}'],
+        // Only crawlers fetch the social card; keep it out of the offline bundle.
+        globIgnores: ['og.png'],
       },
       experimental: {
         directoryAndTrailingSlashHandler: true,

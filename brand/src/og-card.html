@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    background: #f1f4f8;
+    color: #0f1729;
+  }
+  .left {
+    flex: 1;
+    min-width: 0;
+    padding: 76px 64px 66px 92px;
+    display: flex;
+    flex-direction: column;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+  .brand svg { width: 38px; height: 38px; color: #c00f2b; }
+  h1 {
+    margin-top: 44px;
+    font-size: 84px;
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -0.037em;
+    max-width: 640px;
+  }
+  .sub {
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 1.42;
+    font-weight: 450;
+    color: #4d5769;
+    max-width: 600px;
+  }
+  .chips { margin-top: 34px; display: flex; gap: 12px; }
+  .chip {
+    padding: 12px 24px;
+    background: #fff;
+    border: 1px solid #dfe5ef;
+    border-radius: 999px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0f1729;
+  }
+  .url {
+    margin-top: auto;
+    padding-top: 38px;
+    font-size: 24px;
+    font-weight: 650;
+    color: #78829a;
+    letter-spacing: -0.005em;
+  }
+  .right {
+    width: 430px;
+    flex: none;
+    position: relative;
+    background: #c00f2b;
+  }
+  .right svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 302px;
+    height: 302px;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="brand"><span data-leaf></span> Prepare Citizenship</div>
+      <h1>Practice for the citizenship test</h1>
+      <p class="sub">Read a chapter, drill the flashcards, then sit a timed mock exam.</p>
+      <div class="chips">
+        <span class="chip">Free</span>
+        <span class="chip">No account</span>
+        <span class="chip">Works offline</span>
+      </div>
+      <div class="url">preparecitizenship.ca</div>
+    </div>
+    <div class="right"><span data-leaf></span></div>
+  </div>
+
+<script>
+  const LEAF = `<svg viewBox="0 0 100 100"><path fill="currentColor" d="M53 7.9C48.9 11.6 44.6 15.3 43.6 16.2 40.2 19.2 40.1 19.2 36.4 16.3 33.1 13.7 33.1 13.7 32.7 15.6 31.5 21.9 30.5 33.6 30.5 41.2 30.5 42.6 30.4 43.5 30.3 43.5 30.2 43.5 27.5 40.9 24.4 37.7 20.5 33.9 18.5 32.1 18.3 32.1 18 32.2 17.9 32.6 17.9 37.6 17.8 42.9 17.8 42.9 17.4 43.1 17.1 43.2 13.4 43.4 9.2 43.5 4.9 43.7 1.4 43.8 1.3 43.9 0.9 44.1 1.2 44.7 2.4 46.8 3.1 47.9 5.1 51.2 6.8 54.1 10.9 60.8 11 60.1 5.5 62.2 0.1 64.3 0 64.4 3.9 65.1 10.7 66.2 17.3 68.1 22.7 70.7 28.8 73.6 28.7 73.4 25.9 79.2 24.4 82.4 24.2 83 24.8 83 25.5 83 34.7 78.4 34.7 78.1 34.7 77.5 34 77.7 30.7 79.1 27.7 80.4 26.9 80.7 26.9 80.4 26.9 80.4 27.4 79.3 28.1 78 29.6 75.2 29.7 74.4 29 73.1 27.8 70.7 19.9 66.8 11.3 64.4 9.1 63.7 9.1 63.6 10.2 63.1 13.6 61.6 13.5 60.1 9.4 53 7.7 49.9 6.3 47.3 6.2 47.1 6.1 46.8 6.5 46.8 12.1 46.8 18.6 46.8 18.9 46.7 20.1 45.6 21.1 44.6 21.4 43.7 21.4 41.8 21.4 40.8 21.5 40.1 21.7 40.1 22 40.1 30.7 48.2 30.8 48.6 30.8 48.9 31 50.2 31.2 51.7 31.9 57 33.2 62 33.8 62 34.3 62 34.3 61.6 34 60.2 31.7 51.7 31.7 36.8 34.1 21.9 34.7 18 34.6 18.1 36.3 19.5 37.8 20.8 38.6 21.2 40 21.2 42.2 21.2 41.6 21.6 52.1 12.9 55.4 10.2 58.2 7.9 58.4 7.8 58.7 7.7 58.8 8 59.2 13.3 59.7 20.3 60.8 21.6 66.2 21.4 67.7 21.4 68.9 21.4 68.9 21.5 68.9 21.6 68.3 22.5 67.6 23.5 63.6 29 60 35.9 57.9 42.1L57.2 44.2 53.9 47.5C50.8 50.6 50.3 51.3 50.9 51.5 51.1 51.6 52.3 50.7 53.7 49.6 58.2 46.1 62.3 43.6 67.6 41 72.3 38.7 78 36.5 78 36.9 78 37 77.7 37.9 77.4 39.1 76.1 43.4 76.7 44.3 81.1 44.9 84.4 45.4 89.9 46.8 92.5 47.8 93.2 48.1 93 48.3 91.7 49.2 89.3 50.8 82.2 56.2 81.7 56.8 80.4 58.4 80.8 59.7 83.3 62.1 85.4 64.2 85.5 64.1 82 64.6 73.2 65.8 62.1 68.9 54.6 72.1 53.6 72.6 52.7 72.9 52.7 72.9 52.6 72.9 52.4 72.5 52.2 72 51.8 71.1 51.4 70.8 51.1 71.4 51.1 71.6 51.3 73 51.5 74.6 52.5 79.9 52.5 79.7 50.8 78.8 47.4 77.1 42.7 75.9 42.4 76.6 42 77.7 44.7 85.4 47.7 91.6 49.2 94.8 49.1 95.4 47.2 95.2 45.8 95.1 45.7 94.9 44.8 92.2 39 74.6 40 54 47.3 37.3 48.3 35.1 47.5 35 46.3 37.2 37.9 53.2 36.4 76.8 42.6 95.3 43.4 97.6 43.7 97.9 45.7 98.2 46.6 98.4 47.5 98.5 47.7 98.6 48.6 98.7 50.1 98.2 51 97.4 52.9 95.6 52.9 94.4 51 90.3 48.1 84.1 46.7 80.5 47.2 80.5 47.6 80.5 50.6 81.8 52 82.6 56.6 85 56.4 85.3 54.3 78.6 53.6 76.3 53 74.3 53.1 74 53.1 73.5 56.4 72.3 63.9 70.2 70.6 68.3 78.2 66.8 85 66.3 90.4 65.8 90.4 66 86.5 62.1 83.1 58.6 83.2 58.7 85 57.3 89.3 54.1 94.3 50.7 97.3 49.1 100 47.5 100 47.4 97 46.2 92 44.2 83.1 41.5 81.6 41.5 80.4 41.5 80.4 41.4 81.9 36.6 83.5 31 83.6 31.2 80.5 32.1 75.2 33.8 69.1 36.6 64.2 39.5 61.8 41 61.8 41 63 38.4 66.6 31.2 70.9 25.2 76.4 19.3 79.3 16.2 79.7 16.3 69.6 17.2 66.9 17.4 64.5 17.6 64.2 17.5 63.2 17.3 63.1 16.4 61.9 4.2 61.6 1.7 61.5 1.3 60.9 1.3 60.7 1.3 57.2 4.3 53 7.9Z"></path></svg>`;
+  document.querySelectorAll('[data-leaf]').forEach((el) => { el.innerHTML = LEAF; });
+  document.fonts.ready.then(() => { document.documentElement.dataset.fontsReady = '1'; });
+</script>
+</body>
+</html>
