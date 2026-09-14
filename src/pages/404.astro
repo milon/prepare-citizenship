@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page not found"
+  description="That page is not in Prepare Citizenship."
+  context="Not found"
+>
+  <script is:inline>
+    (function () {
+      var prefix = '/prepare-citizenship';
+      var path = location.pathname;
+      if (path === prefix || path.indexOf(prefix + '/') === 0) {
+        var next = path.slice(prefix.length) || '/';
+        location.replace(next + location.search + location.hash);
+      }
+    })();
+  </script>
+  <div class="page-head">
+    <div>
+      <h1>Page not found</h1>
+      <p class="lede">That address is not a study page. Head back to the dashboard and pick a chapter from there.</p>
+    </div>
+  </div>
+  <p class="button-row">
+    <a class="button" href="/">Back to today</a>
+  </p>
+</BaseLayout>

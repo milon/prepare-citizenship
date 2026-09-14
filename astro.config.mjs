@@ -3,12 +3,11 @@ import alpinejs from '@astrojs/alpinejs';
 import AstroPWA from '@vite-pwa/astro';
 import { defineConfig } from 'astro/config';
 
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-const isGitHubPagesBuild = process.env.GITHUB_ACTIONS === 'true';
-const base = isGitHubPagesBuild && repositoryName ? `/${repositoryName}/` : '/';
+const site = 'https://preparecitizenship.ca';
+const base = '/';
 
 export default defineConfig({
-  site: 'https://milon.github.io',
+  site,
   base,
   output: 'static',
   integrations: [
