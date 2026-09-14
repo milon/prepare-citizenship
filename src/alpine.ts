@@ -1,6 +1,7 @@
 import type { Alpine } from 'alpinejs';
 import { applyAppearance } from './lib/appearance';
 import { dashboardApp } from './lib/dashboard-app';
+import { siteHeaderApp } from './lib/header-app';
 import { flashcardsApp, type FlashcardsPayload } from './lib/flashcards-app';
 import { mockApp, type MockPayload } from './lib/mock-app';
 import { watchForInstallAndPersist } from './lib/persist-storage';
@@ -45,6 +46,8 @@ export default (Alpine: Alpine) => {
   });
 
   watchForInstallAndPersist();
+
+  Alpine.data('siteHeader', () => siteHeaderApp());
 
   Alpine.data('dashboardPage', () => dashboardApp());
 
