@@ -116,6 +116,8 @@ const en: Dict = {
   'cards.statusDone': 'Deck complete',
   'cards.flipPrompt': 'Flip card. Prompt is showing.',
   'cards.flipAnswer': 'Flip card. Answer is showing.',
+  'cards.tapHint': 'Tap to flip',
+  'cards.tapBack': 'Tap to go back',
   'practice.eyebrow': 'Practice',
   'practice.title': 'Chapter quiz',
   'practice.lede':
@@ -432,6 +434,8 @@ const fr: Dict = {
   'cards.statusDone': 'Paquet terminé',
   'cards.flipPrompt': 'Retourner la carte. La question est affichée.',
   'cards.flipAnswer': 'Retourner la carte. La réponse est affichée.',
+  'cards.tapHint': 'Touchez pour retourner',
+  'cards.tapBack': 'Touchez pour revenir',
   'practice.eyebrow': 'Exercices',
   'practice.title': 'Quiz de chapitre',
   'practice.lede':

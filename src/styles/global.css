@@ -1938,24 +1938,71 @@ h3 {
 .flip-card {
   display: grid;
   width: 100%;
-  min-height: 13rem;
-  gap: 0.65rem;
-  align-content: center;
+  min-height: 14rem;
   margin-top: 0.85rem;
-  padding: 1.35rem;
-  border: 1.5px solid var(--line);
-  border-radius: var(--r-lg);
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  padding: 0;
+  border: 0;
+  background: none;
   color: inherit;
   font: inherit;
   text-align: left;
   cursor: pointer;
-  white-space: pre-wrap;
+  perspective: 1200px;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.flip-card:hover {
+.flip-card:focus-visible {
+  outline: none;
+}
+
+/* Both faces share one grid cell, so the card is as tall as the longer side. */
+.flip-inner {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.flip-card.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card.is-instant .flip-inner {
+  transition: none;
+}
+
+.flip-card:active .flip-inner {
+  scale: 0.985;
+}
+
+.flip-face {
+  display: grid;
+  grid-area: 1 / 1;
+  grid-template-rows: auto 1fr auto;
+  gap: 0.65rem;
+  padding: 1.5rem;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  white-space: pre-wrap;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* The tint sits over an opaque surface so the other face cannot bleed through. */
+.flip-back {
+  background: linear-gradient(0deg, var(--brand-soft), var(--brand-soft)), var(--surface);
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-face,
+.flip-card:focus-visible .flip-face {
   border-color: var(--brand-line);
+}
+
+.flip-card:focus-visible .flip-face {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
 }
 
 .flip-label {
@@ -1967,9 +2014,19 @@ h3 {
 }
 
 .flip-body {
+  align-self: center;
   font-size: clamp(1.05rem, 2.8vw, 1.25rem);
   font-weight: 600;
   line-height: 1.5;
+}
+
+.flip-hint {
+  align-self: end;
+  color: var(--faint);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================

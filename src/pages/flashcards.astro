@@ -58,12 +58,24 @@ const payload = {
           <button
             class="flip-card"
             type="button"
+            x-ref="card"
+            :class="flipped && 'is-flipped'"
             @click="flip"
             :aria-pressed="flipped.toString()"
             :aria-label="flipped ? $store.i18n.t('cards.flipAnswer') : $store.i18n.t('cards.flipPrompt')"
           >
-            <span class="flip-label" x-text="flipped ? $store.i18n.t('cards.answer') : $store.i18n.t('cards.prompt')"></span>
-            <span class="flip-body" x-text="flipped ? $store.i18n.pick(current.back) : $store.i18n.pick(current.front)"></span>
+            <span class="flip-inner">
+              <span class="flip-face flip-front" :aria-hidden="flipped.toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.prompt')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(current.front)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapHint')"></span>
+              </span>
+              <span class="flip-face flip-back" :aria-hidden="(!flipped).toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.answer')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(current.back)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapBack')"></span>
+              </span>
+            </span>
           </button>
           <div class="button-row">
             <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>

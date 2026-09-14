@@ -121,11 +121,35 @@ export function flashcardsApp(payload: FlashcardsPayload) {
       this.status = this.flipped ? this.tx('cards.statusAnswer') : this.tx('cards.statusPrompt');
     },
 
+    /* The card element is reused across cards, so deal the next one in by hand. */
+    dealIn() {
+      const card = (this as { $refs?: Record<string, HTMLElement | undefined> }).$refs?.card;
+      if (!card) {
+        return;
+      }
+      // A rated card is already back on its prompt side, so snap rather than unflip.
+      card.classList.add('is-instant');
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => card.classList.remove('is-instant'));
+      });
+      if (!card.animate || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      card.animate(
+        [
+          { opacity: 0, transform: 'translateY(0.6rem) scale(0.97)' },
+          { opacity: 1, transform: 'none' },
+        ],
+        { duration: 240, easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)' },
+      );
+    },
+
     next() {
       if (this.index < this.deck.length - 1) {
         this.index += 1;
         this.flipped = false;
         this.status = this.tx('cards.statusPrompt');
+        this.dealIn();
         return;
       }
       this.rebuild();
@@ -143,6 +167,7 @@ export function flashcardsApp(payload: FlashcardsPayload) {
         this.index = Math.max(0, this.deck.length - 1);
       }
       this.status = this.deck.length === 0 ? this.tx('cards.statusDone') : this.tx('cards.statusPrompt');
+      this.dealIn();
     },
 
     gotIt() {
