@@ -335,6 +335,17 @@ a {
   font-weight: 750;
 }
 
+.avatar-leaf {
+  display: grid;
+  place-items: center;
+}
+
+.avatar-glyph {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #fff;
+}
+
 /* topbar */
 
 .topbar {

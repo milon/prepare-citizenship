@@ -138,7 +138,15 @@ const railOnly = nav.filter((item) => !('tab' in item && item.tab));
           </template>
         </div>
         <a class="rail-user" href={`${homeHref}settings/`} x-data>
-          <span class="avatar" aria-hidden="true" x-text="$store.learner.name ? $store.learner.name.slice(0, 1).toUpperCase() : '🍁'">🍁</span>
+          <span class="avatar" aria-hidden="true">
+            <span class="avatar-leaf" x-show="!$store.learner.name">
+              <MapleLeaf class="avatar-glyph" />
+            </span>
+            <span
+              x-show="$store.learner.name"
+              x-cloak
+              x-text="($store.learner.name || '').slice(0, 1).toUpperCase()"></span>
+          </span>
           <span class="rail-user-text">
             <strong x-text="$store.learner.name || 'Add your name'">Add your name</strong>
             <span>Settings</span>
