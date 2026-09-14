@@ -13,7 +13,22 @@ const progressHref = withBase('/progress/');
 <section class="panel dashboard" x-data="dashboardPage" aria-labelledby="dashboard-heading">
   <p class="eyebrow">Progress</p>
   <h2 id="dashboard-heading" class="dashboard-title">
-    {compact ? 'How you are doing' : 'Readiness dashboard'}
+    <span x-show="!$store.learner.name">{compact ? 'How you are doing' : 'Readiness dashboard'}</span>
+    {
+      compact ? (
+        <span
+          x-show="$store.learner.name"
+          x-cloak
+          x-text="`How ${$store.learner.name} is doing`"
+        ></span>
+      ) : (
+        <span
+          x-show="$store.learner.name"
+          x-cloak
+          x-text="`${$store.learner.possessive()} readiness`"
+        ></span>
+      )
+    }
   </h2>
   <p class="verified">Officials last checked {lastVerified}.</p>
   {
@@ -54,10 +69,20 @@ const progressHref = withBase('/progress/');
           ></span>
         </p>
         <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
-          Ready — last 3 mocks passed, and practiced chapters are at 70% or better.
+          <span x-show="!$store.learner.name">Ready — last 3 mocks passed, and practiced chapters are at 70% or better.</span>
+          <span
+            x-show="$store.learner.name"
+            x-cloak
+            x-text="`${$store.learner.name}, you are ready — last 3 mocks passed, and practiced chapters are at 70% or better.`"
+          ></span>
         </p>
         <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
-          Not ready yet.
+          <span x-show="!$store.learner.name">Not ready yet.</span>
+          <span
+            x-show="$store.learner.name"
+            x-cloak
+            x-text="`${$store.learner.name}, not ready yet.`"
+          ></span>
         </p>
         <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
           <template x-for="reason in (stats.readiness.reasons || [])" :key="reason">

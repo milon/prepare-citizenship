@@ -1,5 +1,6 @@
 import type { Alpine } from 'alpinejs';
 import { applyAppearance } from './lib/appearance';
+import { parseDisplayName, possessiveName } from './lib/display-name';
 import { dashboardApp } from './lib/dashboard-app';
 import { siteHeaderApp } from './lib/header-app';
 import { flashcardsApp, type FlashcardsPayload } from './lib/flashcards-app';
@@ -22,11 +23,23 @@ type StorageStore = {
   saveFailed: boolean;
 };
 
+type LearnerStore = {
+  name: string;
+  possessive(): string;
+};
+
 export default (Alpine: Alpine) => {
   Alpine.store('storage', {
     available: true,
     saveFailed: false,
   } satisfies StorageStore);
+
+  Alpine.store('learner', {
+    name: '',
+    possessive() {
+      return possessiveName(this.name);
+    },
+  } satisfies LearnerStore);
 
   subscribeStorage((notice) => {
     const store = Alpine.store('storage') as StorageStore;
@@ -38,6 +51,9 @@ export default (Alpine: Alpine) => {
   const store = Alpine.store('storage') as StorageStore;
   store.available = loaded.storageAvailable;
   store.saveFailed = loaded.saveFailed;
+  (Alpine.store('learner') as LearnerStore).name = parseDisplayName(
+    loaded.progress.settings.displayName,
+  );
 
   applyAppearance(loaded.progress.settings.theme, loaded.progress.settings.fontSize);
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {

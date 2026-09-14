@@ -4,15 +4,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Settings"
-  description="Change your province or territory for regional mock questions."
+  description="Set your name, province, theme, and progress backup."
 >
   <article class="panel" x-data="settingsPage">
     <p class="eyebrow">Settings</p>
     <h1>Your study place</h1>
     <p class="lede">
       Mock exams include regional questions for the province or territory you choose.
+      Your name is optional and stays on this device.
     </p>
     <form class="picker" @submit.prevent="save">
+      <label class="field">
+        <span>Your name</span>
+        <input
+          type="text"
+          x-model="displayName"
+          :maxlength="nameMax"
+          autocomplete="nickname"
+          spellcheck="false"
+          placeholder="Optional"
+          @blur="persistSettings"
+        />
+      </label>
       <label class="field">
         <span>Province or territory</span>
         <select x-model="selected" required>

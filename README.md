@@ -43,3 +43,4 @@ No accounts, no analytics, no backend. Progress never leaves the browser unless 
 ## License
 
 Site code is in this repository. *Discover Canada* remains Crown copyright; this project does not reproduce that text.
+

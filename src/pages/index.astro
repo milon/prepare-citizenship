@@ -20,7 +20,13 @@ const officialPdfUrl =
   description="Study for the Canadian citizenship test with original chapter lessons and a growing question bank."
 >
   <article class="hero">
-    <p class="eyebrow">Prepare with confidence</p>
+    <p
+      class="eyebrow"
+      x-data
+      x-text="$store.learner.name ? `Welcome back, ${$store.learner.name}` : 'Prepare with confidence'"
+    >
+      Prepare with confidence
+    </p>
     <h1>Your Canadian citizenship study companion.</h1>
     <p class="lede">
       Read a chapter, drill flashcards, take a practice quiz, then sit a 20-question mock exam.

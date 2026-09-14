@@ -77,7 +77,12 @@ const payload = {
       <template x-if="finished">
         <div>
           <h2>Results</h2>
-          <p class="lede" x-text="`You scored ${score}/${queue.length}.`"></p>
+          <p
+            class="lede"
+            x-text="$store.learner.name
+              ? `${$store.learner.name}, you scored ${score}/${queue.length}.`
+              : `You scored ${score}/${queue.length}.`"
+          ></p>
           <ul class="breakdown">
             <template x-for="row in currentBreakdown()" :key="row.title">
               <li>

@@ -25,6 +25,7 @@ const payload = { questions, chapters };
             province. You can flag and jump around. The clock cannot be paused, and the exam
             submits itself at 0:00. Answers stay hidden until you submit.
           </p>
+          <p class="verified" x-show="$store.learner.name" x-cloak x-text="`Good luck, ${$store.learner.name}.`"></p>
           <button class="button button-primary" type="button" @click="start">Start exam</button>
         </div>
       </template>
@@ -81,7 +82,12 @@ const payload = { questions, chapters };
 
       <template x-if="phase === 'review'">
         <div>
-          <p class="lede" x-text="passed ? `Pass: ${score}/20.` : `Not a pass: ${score}/20. You need 15.`"></p>
+          <p
+            class="lede"
+            x-text="passed
+              ? ($store.learner.name ? `Pass, ${$store.learner.name}: ${score}/20.` : `Pass: ${score}/20.`)
+              : ($store.learner.name ? `Not a pass, ${$store.learner.name}: ${score}/20. You need 15.` : `Not a pass: ${score}/20. You need 15.`)"
+          ></p>
           <p class="verified" x-show="autoSubmitted">Time expired — this attempt was submitted automatically.</p>
           <h2>Chapter breakdown</h2>
           <ul class="breakdown">

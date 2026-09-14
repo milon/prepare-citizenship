@@ -1,6 +1,7 @@
 import type { ChapterId, RegionCode } from '../content/schema';
 import { REGION_CODES } from '../content/schema';
 import { todayStamp } from './dates';
+import { parseDisplayName } from './display-name';
 
 export const PROGRESS_KEY = 'prepare-citizenship.progress.v1';
 
@@ -33,6 +34,7 @@ export type ProgressSettings = {
   persistAsked: boolean;
   theme: 'system' | 'light' | 'dark';
   fontSize: 'md' | 'lg' | 'xl';
+  displayName: string;
 };
 
 export type Progress = {
@@ -50,7 +52,7 @@ export const emptyProgress = (): Progress => ({
   quizAttempts: [],
   flashcardState: {},
   missedQuestionIds: [],
-  settings: { persistAsked: false, theme: 'system', fontSize: 'md' },
+  settings: { persistAsked: false, theme: 'system', fontSize: 'md', displayName: '' },
 });
 
 type StorageNotice = {
@@ -119,6 +121,7 @@ export function parseProgress(raw: unknown): Progress {
         data.settings?.fontSize === 'lg' || data.settings?.fontSize === 'xl'
           ? data.settings.fontSize
           : 'md',
+      displayName: parseDisplayName(data.settings?.displayName),
     },
   };
 }

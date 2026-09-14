@@ -2,6 +2,7 @@ import { applyAppearance, type FontSizePreference, type ThemePreference } from '
 import { REGION_CODES, type RegionCode } from '../content/schema';
 import { REGION_LABELS } from './chapters';
 import { todayStamp } from './dates';
+import { DISPLAY_NAME_MAX, nameFileSlug, parseDisplayName } from './display-name';
 import {
   loadProgress,
   parseImportedProgress,
@@ -49,6 +50,10 @@ export function provincePickerApp() {
   };
 }
 
+type LearnerStore = {
+  name: string;
+};
+
 export function settingsApp() {
   return {
     options: regionOptions,
@@ -59,6 +64,8 @@ export function settingsApp() {
     error: '',
     theme: 'system' as ThemePreference,
     fontSize: 'md' as FontSizePreference,
+    displayName: '',
+    nameMax: DISPLAY_NAME_MAX,
 
     init() {
       const loaded = loadProgress();
@@ -66,12 +73,20 @@ export function settingsApp() {
       this.saveFailed = !loaded.storageAvailable;
       this.theme = loaded.progress.settings.theme;
       this.fontSize = loaded.progress.settings.fontSize;
+      this.displayName = loaded.progress.settings.displayName;
+    },
+
+    learnerStore(): LearnerStore {
+      return (this as unknown as { $store: { learner: LearnerStore } }).$store.learner;
     },
 
     persistSettings() {
       const loaded = loadProgress();
+      this.displayName = parseDisplayName(this.displayName);
       loaded.progress.settings.theme = this.theme;
       loaded.progress.settings.fontSize = this.fontSize;
+      loaded.progress.settings.displayName = this.displayName;
+      this.learnerStore().name = this.displayName;
       applyAppearance(this.theme, this.fontSize);
       this.saveFailed = !saveProgress(loaded.progress);
     },
@@ -82,21 +97,25 @@ export function settingsApp() {
       }
       const loaded = loadProgress();
       loaded.progress.province = this.selected;
+      this.displayName = parseDisplayName(this.displayName);
+      loaded.progress.settings.displayName = this.displayName;
+      this.learnerStore().name = this.displayName;
       this.saveFailed = !saveProgress(loaded.progress);
       this.saved = !this.saveFailed;
-      this.message = this.saved ? 'Province saved.' : '';
+      this.message = this.saved ? 'Saved.' : '';
       this.error = '';
     },
 
     exportProgress() {
       const loaded = loadProgress();
+      const slug = nameFileSlug(loaded.progress.settings.displayName);
       const blob = new Blob([JSON.stringify(loaded.progress, null, 2)], {
         type: 'application/json',
       });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = `prepare-citizenship-progress-${todayStamp()}.json`;
+      link.download = `prepare-citizenship-progress${slug ? `-${slug}` : ''}-${todayStamp()}.json`;
       link.click();
       URL.revokeObjectURL(url);
       this.message = 'Progress file downloaded.';
@@ -133,6 +152,8 @@ export function settingsApp() {
         this.selected = parsed.progress.province ?? '';
         this.theme = parsed.progress.settings.theme;
         this.fontSize = parsed.progress.settings.fontSize;
+        this.displayName = parsed.progress.settings.displayName;
+        this.learnerStore().name = this.displayName;
         applyAppearance(this.theme, this.fontSize);
         this.message = 'Progress imported.';
         this.error = '';
@@ -146,7 +167,7 @@ export function settingsApp() {
     reset() {
       if (
         !window.confirm(
-          'Reset quiz history, flashcards, and missed questions? Your province and display settings will be kept.',
+          'Reset quiz history, flashcards, and missed questions? Your name, province, and display settings will be kept.',
         )
       ) {
         return;
@@ -155,6 +176,8 @@ export function settingsApp() {
       this.selected = next.province ?? '';
       this.theme = next.settings.theme;
       this.fontSize = next.settings.fontSize;
+      this.displayName = next.settings.displayName;
+      this.learnerStore().name = this.displayName;
       applyAppearance(this.theme, this.fontSize);
       this.message = 'Progress reset.';
       this.error = '';
