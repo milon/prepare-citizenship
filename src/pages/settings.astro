@@ -8,15 +8,15 @@ import { withBase } from '../lib/paths';
   description="Set your name, province, theme, and progress backup."
 >
   <article class="panel quiz-shell" x-data="settingsPage">
-    <p class="eyebrow">Settings</p>
-    <h1>Your study place</h1>
-    <p class="lede">
+    <p class="eyebrow" data-i18n="settings.eyebrow">Settings</p>
+    <h1 data-i18n="settings.title">Your study place</h1>
+    <p class="lede" data-i18n="settings.lede">
       Mock exams include regional questions for the province or territory you choose.
       Your name is optional and stays on this device.
     </p>
     <form class="picker" @submit.prevent="save">
       <label class="field">
-        <span>Your name</span>
+        <span data-i18n="settings.name">Your name</span>
         <input
           type="text"
           x-model="displayName"
@@ -28,27 +28,34 @@ import { withBase } from '../lib/paths';
         />
       </label>
       <label class="field">
-        <span>Province or territory</span>
+        <span data-i18n="field.province">Province or territory</span>
         <select x-model="selected" required>
-          <option value="" disabled>Select one</option>
+          <option value="" disabled data-i18n="field.select">Select one</option>
           <template x-for="option in options" :key="option.code">
             <option :value="option.code" x-text="option.label"></option>
           </template>
         </select>
       </label>
-      <button class="button button-primary" type="submit">Save</button>
-      <p class="verified" x-show="saved" x-cloak>Saved.</p>
+      <button class="button button-primary" type="submit" data-i18n="settings.save">Save</button>
+      <p class="verified" x-show="saved" x-cloak data-i18n="settings.saved">Saved.</p>
     </form>
 
     <section class="data-tools" aria-labelledby="display-heading">
-      <h2 id="display-heading">Display</h2>
-      <p class="lede">
+      <h2 id="display-heading" data-i18n="settings.display">Display</h2>
+      <p class="lede" data-i18n="settings.displayLede">
         Theme and text size stay on this device with your other progress. The theme
         button in the header switches between auto, light, and dark too.
       </p>
       <div class="toolbar">
-        <label class="field">
-          <span>Theme</span>
+      <label class="field">
+        <span data-i18n="settings.language">Language</span>
+        <select x-model="locale" @change="persistSettings">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+      </label>
+      <label class="field">
+        <span data-i18n="settings.theme">Theme</span>
           <select x-model="theme" @change="persistSettings">
             <option value="system">Match device</option>
             <option value="light">Light</option>
@@ -56,7 +63,7 @@ import { withBase } from '../lib/paths';
           </select>
         </label>
         <label class="field">
-          <span>Text size</span>
+          <span data-i18n="settings.font">Text size</span>
           <select x-model="fontSize" @change="persistSettings">
             <option value="md">Default</option>
             <option value="lg">Large</option>
@@ -67,28 +74,28 @@ import { withBase } from '../lib/paths';
     </section>
 
     <section class="data-tools" aria-labelledby="data-heading">
-      <h2 id="data-heading">Your data</h2>
-      <p class="lede">
+      <h2 id="data-heading" data-i18n="settings.data">Your data</h2>
+      <p class="lede" data-i18n="settings.dataLede">
         Progress stays on this device. Export a JSON backup before you clear the
         browser, or import one you saved earlier. Add this site to your home
         screen so iOS is less likely to evict stored progress.
       </p>
       <div class="button-row">
-        <button class="button button-primary" type="button" @click="exportProgress">
+        <button class="button button-primary" type="button" @click="exportProgress" data-i18n="settings.export">
           Export progress
         </button>
         <label class="button">
-          Import progress
+          <span data-i18n="settings.import">Import progress</span>
           <input class="sr-only" type="file" accept="application/json,.json" @change="importProgress" />
         </label>
-        <button class="button" type="button" @click="reset">Reset progress</button>
+        <button class="button" type="button" @click="reset" data-i18n="settings.reset">Reset progress</button>
       </div>
       <p class="verified" x-show="message" x-text="message" x-cloak></p>
       <p class="banner" x-show="error" x-text="error" x-cloak></p>
     </section>
 
     <section class="data-tools" aria-labelledby="about-heading">
-      <h2 id="about-heading">About this site</h2>
+      <h2 id="about-heading" data-i18n="settings.about">About this site</h2>
       <p class="lede">
         Independent practice, not the official test. The <a href={withBase('/faq/')}>FAQ</a>{' '}
         covers the mock format, where progress is stored, and how this bank differs from

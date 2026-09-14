@@ -1780,6 +1780,98 @@ h3 {
   margin-bottom: 0.25rem;
 }
 
+html[data-locale='fr'] .lang-en {
+  display: none !important;
+}
+
+html:not([data-locale='fr']) .lang-fr {
+  display: none !important;
+}
+
+.print-deck {
+  display: none;
+}
+
+.print-card {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.print-front {
+  font-weight: 700;
+}
+
+.print-back {
+  white-space: pre-wrap;
+  margin-top: 0.4rem;
+}
+
+.print-source {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.anthem {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.anthem-lyrics {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .anthem-lyrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.anthem-lyrics pre {
+  margin: 0.4rem 0 0;
+  font-family: inherit;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+@media print {
+  .rail,
+  .topbar,
+  .tabbar,
+  .skip-link,
+  .storage-banner,
+  .no-print,
+  .toolbar,
+  .button-row,
+  .flip-card,
+  .study-gate > .panel:first-child {
+    display: none !important;
+  }
+
+  .print-deck {
+    display: block;
+  }
+
+  .app,
+  .content,
+  .site-main,
+  .panel {
+    display: block;
+    background: #fff;
+    color: #000;
+    box-shadow: none;
+    border: 0;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

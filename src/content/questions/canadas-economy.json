@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada is a member of which group of advanced economies?"
+      "en": "Canada is a member of which group of advanced economies?",
+      "fr": "Le Canada fait partie de quel groupe d’économies avancées?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The G7"
+        "en": "The G7",
+        "fr": "Le G7"
       },
       {
         "id": "b",
-        "en": "OPEC"
+        "en": "OPEC",
+        "fr": "L’OPEP"
       },
       {
         "id": "c",
-        "en": "The African Union"
+        "en": "The African Union",
+        "fr": "L’Union africaine"
       },
       {
         "id": "d",
-        "en": "The Warsaw Pact"
+        "en": "The Warsaw Pact",
+        "fr": "Le pacte de Varsovie"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada is one of the G7 countries. Trade, natural resources, services, and manufacturing are all important parts of the economy."
+      "en": "Canada is one of the G7 countries. Trade, natural resources, services, and manufacturing are all important parts of the economy.",
+      "fr": "Le Canada compte parmi les pays du G7. Le commerce, les ressources naturelles, les services et la fabrication occupent tous une place importante dans l’économie."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a major Canadian export sector highlighted in the study guide?"
+      "en": "Which of these is a major Canadian export sector highlighted in the study guide?",
+      "fr": "Lequel de ces secteurs d’exportation canadiens est mis en évidence dans le guide d’étude?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Natural resources such as energy, minerals, and forest products"
+        "en": "Natural resources such as energy, minerals, and forest products",
+        "fr": "Les ressources naturelles comme l’énergie, les minéraux et les produits forestiers"
       },
       {
         "id": "b",
-        "en": "Domestic postage stamps"
+        "en": "Domestic postage stamps",
+        "fr": "Les timbres-poste vendus au pays"
       },
       {
         "id": "c",
-        "en": "Municipal parking tickets"
+        "en": "Municipal parking tickets",
+        "fr": "Les contraventions de stationnement municipales"
       },
       {
         "id": "d",
-        "en": "Provincial court transcripts"
+        "en": "Provincial court transcripts",
+        "fr": "Les transcriptions des tribunaux provinciaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada has a resource-rich economy and also strong manufacturing and service industries. The United States is Canada’s largest trading partner."
+      "en": "Canada has a resource-rich economy and also strong manufacturing and service industries. The United States is Canada’s largest trading partner.",
+      "fr": "Le Canada possède une économie riche en ressources, ainsi que de solides industries manufacturières et de services. Les États-Unis sont son principal partenaire commercial."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -72,29 +84,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s largest trading partner is:"
+      "en": "Canada’s largest trading partner is:",
+      "fr": "Le principal partenaire commercial du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The United States"
+        "en": "The United States",
+        "fr": "Les États-Unis"
       },
       {
         "id": "b",
-        "en": "New Zealand"
+        "en": "New Zealand",
+        "fr": "La Nouvelle-Zélande"
       },
       {
         "id": "c",
-        "en": "Chad"
+        "en": "Chad",
+        "fr": "Le Tchad"
       },
       {
         "id": "d",
-        "en": "Iceland only"
+        "en": "Iceland only",
+        "fr": "L’Islande seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Geography and supply chains make the U.S. market dominant. Mexico also matters under North American trade rules."
+      "en": "Geography and supply chains make the U.S. market dominant. Mexico also matters under North American trade rules.",
+      "fr": "La géographie et les chaînes d’approvisionnement rendent le marché américain dominant. Le Mexique compte aussi en vertu des règles commerciales nord-américaines."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -105,29 +123,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A mixed economy means that:"
+      "en": "A mixed economy means that:",
+      "fr": "Une économie mixte signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Markets and private firms produce most goods, while governments tax, regulate, and provide public services"
+        "en": "Markets and private firms produce most goods, while governments tax, regulate, and provide public services",
+        "fr": "Les marchés et les entreprises privées produisent la plupart des biens, tandis que les gouvernements imposent, réglementent et offrent des services publics"
       },
       {
         "id": "b",
-        "en": "The army owns every shop"
+        "en": "The army owns every shop",
+        "fr": "L’armée possède tous les commerces"
       },
       {
         "id": "c",
-        "en": "There is no private property"
+        "en": "There is no private property",
+        "fr": "La propriété privée n’existe pas"
       },
       {
         "id": "d",
-        "en": "Only barter is legal"
+        "en": "Only barter is legal",
+        "fr": "Seul le troc est légal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada is capitalist with a substantial public sector—not a command economy, not a night-watchman state with no hospitals."
+      "en": "Canada is capitalist with a substantial public sector—not a command economy, not a night-watchman state with no hospitals.",
+      "fr": "Le Canada est capitaliste, mais doté d’un secteur public important : ce n’est ni une économie planifiée, ni un État minimal sans hôpitaux."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -138,21 +162,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Most Canadians work in the service sector rather than in farming."
+      "en": "Most Canadians work in the service sector rather than in farming.",
+      "fr": "La majorité des Canadiens travaillent dans le secteur des services plutôt qu’en agriculture."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Services (health, education, retail, finance, government, technology) employ the majority. Resources still punch above their job count in exports."
+      "en": "Services (health, education, retail, finance, government, technology) employ the majority. Resources still punch above their job count in exports.",
+      "fr": "Les services (santé, éducation, commerce de détail, finance, fonction publique, technologie) emploient la majorité des travailleurs. Les ressources pèsent toutefois plus lourd dans les exportations que dans l’emploi."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -163,29 +191,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Manufacturing, including vehicles and machinery, is especially concentrated in:"
+      "en": "Manufacturing, including vehicles and machinery, is especially concentrated in:",
+      "fr": "La fabrication, notamment des véhicules et de la machinerie, est surtout concentrée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ontario and Quebec"
+        "en": "Ontario and Quebec",
+        "fr": "En Ontario et au Québec"
       },
       {
         "id": "b",
-        "en": "Nunavut hamlets only"
+        "en": "Nunavut hamlets only",
+        "fr": "Dans les hameaux du Nunavut seulement"
       },
       {
         "id": "c",
-        "en": "Prince Edward Island’s fishing villages only"
+        "en": "Prince Edward Island’s fishing villages only",
+        "fr": "Dans les villages de pêche de l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "d",
-        "en": "Yukon gold creeks only"
+        "en": "Yukon gold creeks only",
+        "fr": "Dans les ruisseaux aurifères du Yukon seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Central Canada’s industrial belt is a standard regional-economy fact. Other provinces manufacture too, but the share is largest here."
+      "en": "Central Canada’s industrial belt is a standard regional-economy fact. Other provinces manufacture too, but the share is largest here.",
+      "fr": "La ceinture industrielle du Canada central est un fait classique d’économie régionale. D’autres provinces fabriquent aussi des biens, mais la part la plus forte se trouve ici."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -196,29 +230,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Prairie agriculture is famous for:"
+      "en": "Prairie agriculture is famous for:",
+      "fr": "L’agriculture des Prairies est reconnue pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Grain (including wheat) and other farm exports"
+        "en": "Grain (including wheat) and other farm exports",
+        "fr": "Les céréales (dont le blé) et d’autres exportations agricoles"
       },
       {
         "id": "b",
-        "en": "Tropical fruit plantations"
+        "en": "Tropical fruit plantations",
+        "fr": "Les plantations de fruits tropicaux"
       },
       {
         "id": "c",
-        "en": "Coffee estates"
+        "en": "Coffee estates",
+        "fr": "Les domaines caféiers"
       },
       {
         "id": "d",
-        "en": "Banana republics"
+        "en": "Banana republics",
+        "fr": "Les républiques bananières"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Prairies feed export markets. Potash and energy sit beside the grain story, especially in Saskatchewan and Alberta."
+      "en": "The Prairies feed export markets. Potash and energy sit beside the grain story, especially in Saskatchewan and Alberta.",
+      "fr": "Les Prairies alimentent les marchés d’exportation. La potasse et l’énergie accompagnent les céréales, surtout en Saskatchewan et en Alberta."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -229,29 +269,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Alberta’s economy is closely associated with:"
+      "en": "Alberta’s economy is closely associated with:",
+      "fr": "L’économie de l’Alberta est étroitement associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Oil and gas"
+        "en": "Oil and gas",
+        "fr": "Au pétrole et au gaz"
       },
       {
         "id": "b",
-        "en": "Cod stocks alone"
+        "en": "Cod stocks alone",
+        "fr": "Aux stocks de morue seulement"
       },
       {
         "id": "c",
-        "en": "Maple syrup alone"
+        "en": "Maple syrup alone",
+        "fr": "Au sirop d’érable seulement"
       },
       {
         "id": "d",
-        "en": "Automobile assembly in Windsor only"
+        "en": "Automobile assembly in Windsor only",
+        "fr": "À l’assemblage automobile à Windsor seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Energy wealth shapes Alberta’s politics and Canada’s export mix. Agriculture remains important as well."
+      "en": "Energy wealth shapes Alberta’s politics and Canada’s export mix. Agriculture remains important as well.",
+      "fr": "La richesse énergétique façonne la politique albertaine et la composition des exportations canadiennes. L’agriculture demeure aussi importante."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -262,29 +308,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "British Columbia’s historic staple export sector includes:"
+      "en": "British Columbia’s historic staple export sector includes:",
+      "fr": "Le secteur d’exportation traditionnel de la Colombie-Britannique comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Forestry"
+        "en": "Forestry",
+        "fr": "La foresterie"
       },
       {
         "id": "b",
-        "en": "Prairie wheat only"
+        "en": "Prairie wheat only",
+        "fr": "Le blé des Prairies seulement"
       },
       {
         "id": "c",
-        "en": "Nunavut diamonds only"
+        "en": "Nunavut diamonds only",
+        "fr": "Les diamants du Nunavut seulement"
       },
       {
         "id": "d",
-        "en": "PEI potatoes only"
+        "en": "PEI potatoes only",
+        "fr": "Les pommes de terre de l’Île-du-Prince-Édouard seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Wood, pulp, and paper—plus mining, ports, film, and Pacific trade—define much of B.C.’s economy."
+      "en": "Wood, pulp, and paper—plus mining, ports, film, and Pacific trade—define much of B.C.’s economy.",
+      "fr": "Le bois, la pâte et le papier — ainsi que les mines, les ports, le cinéma et le commerce avec le Pacifique — définissent une grande part de l’économie de la Colombie-Britannique."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -295,29 +347,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Atlantic Canada’s traditional resource economy includes:"
+      "en": "Atlantic Canada’s traditional resource economy includes:",
+      "fr": "L’économie traditionnelle des ressources du Canada atlantique comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Fisheries"
+        "en": "Fisheries",
+        "fr": "Les pêches"
       },
       {
         "id": "b",
-        "en": "Desert oil only"
+        "en": "Desert oil only",
+        "fr": "Le pétrole du désert seulement"
       },
       {
         "id": "c",
-        "en": "Alpine watches"
+        "en": "Alpine watches",
+        "fr": "Les montres alpines"
       },
       {
         "id": "d",
-        "en": "Prairie potash only"
+        "en": "Prairie potash only",
+        "fr": "La potasse des Prairies seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cod, lobster, and other fisheries sit beside energy, tourism, and public-sector jobs. The groundfish collapse is part of modern history."
+      "en": "Cod, lobster, and other fisheries sit beside energy, tourism, and public-sector jobs. The groundfish collapse is part of modern history.",
+      "fr": "La morue, le homard et les autres pêches côtoient l’énergie, le tourisme et les emplois du secteur public. L’effondrement des stocks de poisson de fond fait partie de l’histoire récente."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -328,21 +386,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Quebec is a major producer of hydroelectric power."
+      "en": "Quebec is a major producer of hydroelectric power.",
+      "fr": "Le Québec est un grand producteur d’électricité d’origine hydraulique."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Hydro-Québec and northern rivers made electricity a provincial economic pillar and an export."
+      "en": "Hydro-Québec and northern rivers made electricity a provincial economic pillar and an export.",
+      "fr": "Hydro-Québec et les rivières du Nord ont fait de l’électricité un pilier de l’économie provinciale et un produit d’exportation."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -353,29 +415,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Bank of Canada is:"
+      "en": "The Bank of Canada is:",
+      "fr": "La Banque du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The central bank that issues notes and conducts monetary policy"
+        "en": "The central bank that issues notes and conducts monetary policy",
+        "fr": "La banque centrale qui émet les billets et mène la politique monétaire"
       },
       {
         "id": "b",
-        "en": "A private supermarket"
+        "en": "A private supermarket",
+        "fr": "Un supermarché privé"
       },
       {
         "id": "c",
-        "en": "A municipal credit union in Ottawa only"
+        "en": "A municipal credit union in Ottawa only",
+        "fr": "Une caisse populaire municipale d’Ottawa seulement"
       },
       {
         "id": "d",
-        "en": "The Senate’s cashier"
+        "en": "The Senate’s cashier",
+        "fr": "Le caissier du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is public and independent in its day-to-day policy. Commercial banks are separate, regulated companies."
+      "en": "It is public and independent in its day-to-day policy. Commercial banks are separate, regulated companies.",
+      "fr": "Elle est publique et indépendante dans sa conduite quotidienne de la politique monétaire. Les banques commerciales sont des sociétés distinctes et réglementées."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -386,29 +454,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Crown corporations are:"
+      "en": "Crown corporations are:",
+      "fr": "Les sociétés d’État sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Companies owned by government to provide a public service or strategic role"
+        "en": "Companies owned by government to provide a public service or strategic role",
+        "fr": "Des entreprises appartenant à l’État pour offrir un service public ou jouer un rôle stratégique"
       },
       {
         "id": "b",
-        "en": "Always illegal"
+        "en": "Always illegal",
+        "fr": "Toujours illégales"
       },
       {
         "id": "c",
-        "en": "The same as Cabinet"
+        "en": "The same as Cabinet",
+        "fr": "La même chose que le Cabinet"
       },
       {
         "id": "d",
-        "en": "Foreign embassies"
+        "en": "Foreign embassies",
+        "fr": "Des ambassades étrangères"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Examples in the national story include railways, broadcasters, and energy utilities at various times."
+      "en": "Examples in the national story include railways, broadcasters, and energy utilities at various times.",
+      "fr": "Dans l’histoire du pays, on en trouve des exemples parmi les chemins de fer, les radiodiffuseurs et les services publics d’énergie, selon les époques."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -419,29 +493,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Employment Insurance and public pensions exist because:"
+      "en": "Employment Insurance and public pensions exist because:",
+      "fr": "L’assurance-emploi et les régimes de retraite publics existent parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Modern Canada built social programs to share risk"
+        "en": "Modern Canada built social programs to share risk",
+        "fr": "Le Canada moderne a bâti des programmes sociaux pour partager les risques"
       },
       {
         "id": "b",
-        "en": "The Quebec Act required them in 1774"
+        "en": "The Quebec Act required them in 1774",
+        "fr": "L’Acte de Québec les exigeait en 1774"
       },
       {
         "id": "c",
-        "en": "NATO dues include EI"
+        "en": "NATO dues include EI",
+        "fr": "Les cotisations à l’OTAN comprennent l’assurance-emploi"
       },
       {
         "id": "d",
-        "en": "Municipalities print money"
+        "en": "Municipalities print money",
+        "fr": "Les municipalités impriment la monnaie"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They are economic-citizenship facts as well as “modern Canada” facts: the market is not the only institution."
+      "en": "They are economic-citizenship facts as well as “modern Canada” facts: the market is not the only institution.",
+      "fr": "Ce sont des faits de citoyenneté économique autant que des faits du « Canada moderne » : le marché n’est pas la seule institution."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -452,21 +532,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Income taxes help pay for public services such as health care, defence, and infrastructure."
+      "en": "Income taxes help pay for public services such as health care, defence, and infrastructure.",
+      "fr": "L’impôt sur le revenu contribue à financer des services publics comme les soins de santé, la défense et les infrastructures."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Paying taxes lawfully is part of the civic bargain in a mixed economy."
+      "en": "Paying taxes lawfully is part of the civic bargain in a mixed economy.",
+      "fr": "Payer ses impôts conformément à la loi fait partie du contrat civique dans une économie mixte."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Unions and collective bargaining in Canada are:"
+      "en": "Unions and collective bargaining in Canada are:",
+      "fr": "Les syndicats et la négociation collective au Canada sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Legal features of labour relations"
+        "en": "Legal features of labour relations",
+        "fr": "Des éléments légaux des relations de travail"
       },
       {
         "id": "b",
-        "en": "Banned by the Charter"
+        "en": "Banned by the Charter",
+        "fr": "Interdits par la Charte"
       },
       {
         "id": "c",
-        "en": "Available only to senators"
+        "en": "Available only to senators",
+        "fr": "Réservés aux sénateurs"
       },
       {
         "id": "d",
-        "en": "A U.S. import with no Canadian history"
+        "en": "A U.S. import with no Canadian history",
+        "fr": "Une importation américaine sans histoire au Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Minimum standards are mainly provincial. Unions are part of how wages and conditions are set in many workplaces."
+      "en": "Minimum standards are mainly provincial. Unions are part of how wages and conditions are set in many workplaces.",
+      "fr": "Les normes minimales du travail relèvent surtout des provinces. Dans de nombreux milieux de travail, les syndicats participent à la fixation des salaires et des conditions."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Toronto is especially important to the Canadian economy as:"
+      "en": "Toronto is especially important to the Canadian economy as:",
+      "fr": "Toronto occupe une place particulièrement importante dans l’économie canadienne à titre :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A financial and business-services centre"
+        "en": "A financial and business-services centre",
+        "fr": "De centre financier et de services aux entreprises"
       },
       {
         "id": "b",
-        "en": "The only port"
+        "en": "The only port",
+        "fr": "De seul port du pays"
       },
       {
         "id": "c",
-        "en": "The Arctic’s diamond capital"
+        "en": "The Arctic’s diamond capital",
+        "fr": "De capitale du diamant dans l’Arctique"
       },
       {
         "id": "d",
-        "en": "A territorial capital"
+        "en": "A territorial capital",
+        "fr": "De capitale territoriale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Banks, markets, and corporate head offices cluster there. Other cities have other specialties."
+      "en": "Banks, markets, and corporate head offices cluster there. Other cities have other specialties.",
+      "fr": "Les banques, les marchés et les sièges sociaux y sont concentrés. D’autres villes ont leurs propres spécialités."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -543,29 +639,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Ports such as Vancouver and Halifax matter because Canada:"
+      "en": "Ports such as Vancouver and Halifax matter because Canada:",
+      "fr": "Des ports comme Vancouver et Halifax sont importants parce que le Canada :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Trades heavily by sea as well as across the U.S. land border"
+        "en": "Trades heavily by sea as well as across the U.S. land border",
+        "fr": "Commerce beaucoup par voie maritime autant que par la frontière terrestre américaine"
       },
       {
         "id": "b",
-        "en": "Is landlocked"
+        "en": "Is landlocked",
+        "fr": "Est enclavé"
       },
       {
         "id": "c",
-        "en": "Bans exports"
+        "en": "Bans exports",
+        "fr": "Interdit les exportations"
       },
       {
         "id": "d",
-        "en": "Only ships by dogsled"
+        "en": "Only ships by dogsled",
+        "fr": "N’expédie ses marchandises qu’en traîneau à chiens"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Pacific, Atlantic, and Great Lakes–St. Lawrence routes are geography as economic destiny."
+      "en": "Pacific, Atlantic, and Great Lakes–St. Lawrence routes are geography as economic destiny.",
+      "fr": "Les routes du Pacifique, de l’Atlantique et du réseau Grands Lacs–Saint-Laurent illustrent la géographie comme destin économique."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -576,29 +678,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Information technology and other advanced services are:"
+      "en": "Information technology and other advanced services are:",
+      "fr": "Les technologies de l’information et les autres services de pointe sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Growing parts of a modern mixed economy, not a replacement for resources overnight"
+        "en": "Growing parts of a modern mixed economy, not a replacement for resources overnight",
+        "fr": "Des composantes en croissance d’une économie mixte moderne, sans remplacer les ressources du jour au lendemain"
       },
       {
         "id": "b",
-        "en": "Illegal in Canada"
+        "en": "Illegal in Canada",
+        "fr": "Illégaux au Canada"
       },
       {
         "id": "c",
-        "en": "The only sector in 1867"
+        "en": "The only sector in 1867",
+        "fr": "Le seul secteur existant en 1867"
       },
       {
         "id": "d",
-        "en": "Run exclusively by the RCMP"
+        "en": "Run exclusively by the RCMP",
+        "fr": "Gérés exclusivement par la GRC"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide still stresses resources and manufacturing. A serious citizen also sees the service and tech shift."
+      "en": "The guide still stresses resources and manufacturing. A serious citizen also sees the service and tech shift.",
+      "fr": "Le guide insiste toujours sur les ressources et la fabrication. Un citoyen attentif remarque aussi le virage vers les services et la technologie."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -609,21 +717,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Prosperity is even across every region of Canada."
+      "en": "Prosperity is even across every region of Canada.",
+      "fr": "La prospérité est répartie de façon égale dans toutes les régions du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The study guide itself describes different regional economies and different challenges. That unevenness is a testable idea."
+      "en": "The study guide itself describes different regional economies and different challenges. That unevenness is a testable idea.",
+      "fr": "Le guide d’étude décrit lui-même des économies régionales différentes et des défis différents. Cette inégalité peut faire l’objet d’une question à l’examen."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Potash is a mineral export especially associated with:"
+      "en": "Potash is a mineral export especially associated with:",
+      "fr": "La potasse est un minéral d’exportation surtout associé :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Saskatchewan"
+        "en": "Saskatchewan",
+        "fr": "À la Saskatchewan"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island beaches"
+        "en": "Prince Edward Island beaches",
+        "fr": "Aux plages de l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "Downtown Montreal fashion only"
+        "en": "Downtown Montreal fashion only",
+        "fr": "À la mode du centre-ville de Montréal seulement"
       },
       {
         "id": "d",
-        "en": "Yukon tourism only"
+        "en": "Yukon tourism only",
+        "fr": "Au tourisme au Yukon seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Fertilizer minerals are a Prairie specialty. Energy and grain complete the picture."
+      "en": "Fertilizer minerals are a Prairie specialty. Energy and grain complete the picture.",
+      "fr": "Les minéraux servant aux engrais sont une spécialité des Prairies. L’énergie et les céréales complètent le tableau."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -667,29 +785,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian dollar:"
+      "en": "The Canadian dollar:",
+      "fr": "Le dollar canadien :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Floats on foreign-exchange markets"
+        "en": "Floats on foreign-exchange markets",
+        "fr": "Flotte sur les marchés des changes"
       },
       {
         "id": "b",
-        "en": "Is printed by each province separately as legal tender"
+        "en": "Is printed by each province separately as legal tender",
+        "fr": "Est imprimé séparément par chaque province comme monnaie légale"
       },
       {
         "id": "c",
-        "en": "Is pegged to the yen by the Charter"
+        "en": "Is pegged to the yen by the Charter",
+        "fr": "Est arrimé au yen par la Charte"
       },
       {
         "id": "d",
-        "en": "Was replaced by the euro in 2002"
+        "en": "Was replaced by the euro in 2002",
+        "fr": "A été remplacé par l’euro en 2002"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "A floating currency is part of how a trading economy adjusts. The Bank of Canada influences conditions, not a fixed peg."
+      "en": "A floating currency is part of how a trading economy adjusts. The Bank of Canada influences conditions, not a fixed peg.",
+      "fr": "Une monnaie flottante aide une économie commerçante à s’ajuster. La Banque du Canada influence les conditions financières; elle ne maintient pas de taux fixe."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -700,29 +824,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Why does the citizenship test care about the economy at all?"
+      "en": "Why does the citizenship test care about the economy at all?",
+      "fr": "Pourquoi l’examen de citoyenneté s’intéresse-t-il à l’économie?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Because geography, trade, and jobs shape the country you are joining"
+        "en": "Because geography, trade, and jobs shape the country you are joining",
+        "fr": "Parce que la géographie, le commerce et l’emploi façonnent le pays que vous rejoignez"
       },
       {
         "id": "b",
-        "en": "Because you must work in oil to become a citizen"
+        "en": "Because you must work in oil to become a citizen",
+        "fr": "Parce qu’il faut travailler dans le pétrole pour devenir citoyen"
       },
       {
         "id": "c",
-        "en": "Because the Charter lists stock tips"
+        "en": "Because the Charter lists stock tips",
+        "fr": "Parce que la Charte contient des conseils boursiers"
       },
       {
         "id": "d",
-        "en": "Because senators run factories"
+        "en": "Because senators run factories",
+        "fr": "Parce que les sénateurs dirigent les usines"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "You are not asked to forecast GDP. You are asked to place Canada among trading democracies with regional specialties."
+      "en": "You are not asked to forecast GDP. You are asked to place Canada among trading democracies with regional specialties.",
+      "fr": "On ne vous demande pas de prévoir le PIB, mais de situer le Canada parmi les démocraties commerçantes dotées de spécialités régionales."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -733,21 +863,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The federal government is the only government that spends money in the economy."
+      "en": "The federal government is the only government that spends money in the economy.",
+      "fr": "Le gouvernement fédéral est le seul gouvernement à dépenser de l’argent dans l’économie."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Provinces spend heavily on health and education. Municipalities spend on local services. All three tax in overlapping ways."
+      "en": "Provinces spend heavily on health and education. Municipalities spend on local services. All three tax in overlapping ways.",
+      "fr": "Les provinces dépensent beaucoup en santé et en éducation. Les municipalités financent les services locaux. Les trois ordres de gouvernement perçoivent des taxes et impôts qui se chevauchent."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -758,29 +892,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Mining is important in:"
+      "en": "Mining is important in:",
+      "fr": "L’exploitation minière est importante :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Shield, the Cordillera, and the North, among other regions"
+        "en": "The Shield, the Cordillera, and the North, among other regions",
+        "fr": "Dans le Bouclier, la Cordillère et le Nord, entre autres régions"
       },
       {
         "id": "b",
-        "en": "Only downtown Toronto condominiums"
+        "en": "Only downtown Toronto condominiums",
+        "fr": "Dans les condominiums du centre-ville de Toronto seulement"
       },
       {
         "id": "c",
-        "en": "Only the Senate"
+        "en": "Only the Senate",
+        "fr": "Au Sénat seulement"
       },
       {
         "id": "d",
-        "en": "Only PEI potato fields"
+        "en": "Only PEI potato fields",
+        "fr": "Dans les champs de pommes de terre de l’Île-du-Prince-Édouard seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Gold, iron, nickel, diamonds, and more are regional staples. Indigenous land rights often intersect with mines."
+      "en": "Gold, iron, nickel, diamonds, and more are regional staples. Indigenous land rights often intersect with mines.",
+      "fr": "L’or, le fer, le nickel et le diamant, entre autres, sont des produits de base régionaux. Les droits territoriaux autochtones recoupent souvent les projets miniers."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -791,29 +931,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Tourism is an export in the economic sense when:"
+      "en": "Tourism is an export in the economic sense when:",
+      "fr": "Au sens économique, le tourisme constitue une exportation lorsque :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Visitors from abroad spend money in Canada"
+        "en": "Visitors from abroad spend money in Canada",
+        "fr": "Des visiteurs de l’étranger dépensent de l’argent au Canada"
       },
       {
         "id": "b",
-        "en": "Canadians buy groceries"
+        "en": "Canadians buy groceries",
+        "fr": "Des Canadiens font leur épicerie"
       },
       {
         "id": "c",
-        "en": "A city reprints a parking ticket"
+        "en": "A city reprints a parking ticket",
+        "fr": "Une ville réimprime une contravention de stationnement"
       },
       {
         "id": "d",
-        "en": "A court charges a filing fee to a resident"
+        "en": "A court charges a filing fee to a resident",
+        "fr": "Un tribunal facture des frais de dépôt à un résident"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Landscapes, cities, and cultural attractions are part of the service economy the guide groups with other industries."
+      "en": "Landscapes, cities, and cultural attractions are part of the service economy the guide groups with other industries.",
+      "fr": "Les paysages, les villes et les attractions culturelles font partie de l’économie de services que le guide regroupe avec les autres industries."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -824,29 +970,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "NAFTA-era (and successor) free-trade rules matter most for:"
+      "en": "NAFTA-era (and successor) free-trade rules matter most for:",
+      "fr": "Les règles de libre-échange de l’époque de l’ALENA (et de ses successeurs) comptent surtout pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Cross-border manufacturing and agriculture"
+        "en": "Cross-border manufacturing and agriculture",
+        "fr": "La fabrication et l’agriculture transfrontalières"
       },
       {
         "id": "b",
-        "en": "Whether the Monarch can visit"
+        "en": "Whether the Monarch can visit",
+        "fr": "La possibilité pour le monarque de venir en visite"
       },
       {
         "id": "c",
-        "en": "How juries are selected"
+        "en": "How juries are selected",
+        "fr": "La façon de choisir les jurys"
       },
       {
         "id": "d",
-        "en": "The lyrics of O Canada"
+        "en": "The lyrics of O Canada",
+        "fr": "Les paroles de l’Ô Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The legal title of the agreement has changed. The citizenship-test idea is close economic integration in North America."
+      "en": "The legal title of the agreement has changed. The citizenship-test idea is close economic integration in North America.",
+      "fr": "Le titre officiel de l’accord a changé. Ce qu’il faut retenir pour l’examen, c’est l’étroite intégration économique en Amérique du Nord."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -857,21 +1009,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada has both large private banks and a public central bank."
+      "en": "Canada has both large private banks and a public central bank.",
+      "fr": "Le Canada compte à la fois de grandes banques privées et une banque centrale publique."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Do not mix the Bank of Canada with the Royal Bank or other commercial banks. They play different roles."
+      "en": "Do not mix the Bank of Canada with the Royal Bank or other commercial banks. They play different roles.",
+      "fr": "Ne confondez pas la Banque du Canada avec la Banque Royale ou les autres banques commerciales : leurs rôles diffèrent."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -882,29 +1038,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Softwood lumber is a recurring Canada–U.S. trade issue because:"
+      "en": "Softwood lumber is a recurring Canada–U.S. trade issue because:",
+      "fr": "Le bois d’œuvre revient constamment dans les différends commerciaux entre le Canada et les États-Unis parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canadian timber is a major export and the two countries dispute subsidies and duties"
+        "en": "Canadian timber is a major export and the two countries dispute subsidies and duties",
+        "fr": "Le bois canadien est une exportation majeure et les deux pays s’opposent sur les subventions et les droits de douane"
       },
       {
         "id": "b",
-        "en": "Canada has no forests"
+        "en": "Canada has no forests",
+        "fr": "Le Canada n’a pas de forêts"
       },
       {
         "id": "c",
-        "en": "The Senate owns all trees"
+        "en": "The Senate owns all trees",
+        "fr": "Le Sénat est propriétaire de tous les arbres"
       },
       {
         "id": "d",
-        "en": "Lumber is banned by the Charter"
+        "en": "Lumber is banned by the Charter",
+        "fr": "Le bois d’œuvre est interdit par la Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a classic resource-and-trade file. Forestry jobs are regional; the dispute is bilateral."
+      "en": "It is a classic resource-and-trade file. Forestry jobs are regional; the dispute is bilateral.",
+      "fr": "C’est un dossier classique de ressources et de commerce. Les emplois forestiers sont régionaux, alors que le différend est bilatéral."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -915,29 +1077,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Personal income tax in Canada is:"
+      "en": "Personal income tax in Canada is:",
+      "fr": "Au Canada, l’impôt sur le revenu des particuliers est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Collected by the federal government, with provinces levying income tax as well in most cases"
+        "en": "Collected by the federal government, with provinces levying income tax as well in most cases",
+        "fr": "Perçu par le gouvernement fédéral, les provinces prélevant elles aussi un impôt sur le revenu dans la plupart des cas"
       },
       {
         "id": "b",
-        "en": "Paid only by senators"
+        "en": "Paid only by senators",
+        "fr": "Payé uniquement par les sénateurs"
       },
       {
         "id": "c",
-        "en": "Illegal under the Charter"
+        "en": "Illegal under the Charter",
+        "fr": "Illégal en vertu de la Charte"
       },
       {
         "id": "d",
-        "en": "A municipal dog-licence fee only"
+        "en": "A municipal dog-licence fee only",
+        "fr": "Un simple droit municipal de licence pour chien"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Most people file one federal return that also handles provincial tax (Quebec is the exception with its own form)."
+      "en": "Most people file one federal return that also handles provincial tax (Quebec is the exception with its own form).",
+      "fr": "La plupart des gens produisent une seule déclaration fédérale qui règle aussi l’impôt provincial (le Québec fait exception avec sa propre déclaration)."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -948,21 +1116,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Hydroelectric power is a major Canadian energy source, especially in Quebec, British Columbia, Manitoba, and Newfoundland and Labrador."
+      "en": "Hydroelectric power is a major Canadian energy source, especially in Quebec, British Columbia, Manitoba, and Newfoundland and Labrador.",
+      "fr": "L’hydroélectricité est une grande source d’énergie au Canada, surtout au Québec, en Colombie-Britannique, au Manitoba et à Terre-Neuve-et-Labrador."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Dams are a classic “geography plus economy” fact. Oil and gas are another energy story, concentrated elsewhere."
+      "en": "Dams are a classic “geography plus economy” fact. Oil and gas are another energy story, concentrated elsewhere.",
+      "fr": "Les barrages illustrent bien le lien entre géographie et économie. Le pétrole et le gaz forment une autre filière énergétique, concentrée ailleurs."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -973,29 +1145,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian Wheat Board’s historic role (now ended in its old form) was to:"
+      "en": "The Canadian Wheat Board’s historic role (now ended in its old form) was to:",
+      "fr": "Le rôle historique de la Commission canadienne du blé (qui n’existe plus sous sa forme d’origine) était de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Market Prairie grain in a pooled system"
+        "en": "Market Prairie grain in a pooled system",
+        "fr": "Commercialiser les céréales des Prairies dans un système de mise en commun"
       },
       {
         "id": "b",
-        "en": "Appoint the Governor General"
+        "en": "Appoint the Governor General",
+        "fr": "Nommer le gouverneur général"
       },
       {
         "id": "c",
-        "en": "Run the Senate"
+        "en": "Run the Senate",
+        "fr": "Diriger le Sénat"
       },
       {
         "id": "d",
-        "en": "Print banknotes"
+        "en": "Print banknotes",
+        "fr": "Imprimer les billets de banque"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Even if the institution changed, the testable idea is that Prairie grain was a staple export with special marketing rules."
+      "en": "Even if the institution changed, the testable idea is that Prairie grain was a staple export with special marketing rules.",
+      "fr": "Même si l’institution a changé, l’idée à retenir est que les céréales des Prairies constituaient une exportation de base assortie de règles de commercialisation particulières."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1006,29 +1184,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Auto manufacturing in Canada has long depended on:"
+      "en": "Auto manufacturing in Canada has long depended on:",
+      "fr": "Au Canada, la construction automobile dépend depuis longtemps :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Integrated North American supply chains, especially in Ontario"
+        "en": "Integrated North American supply chains, especially in Ontario",
+        "fr": "De chaînes d’approvisionnement nord-américaines intégrées, surtout en Ontario"
       },
       {
         "id": "b",
-        "en": "Only Arctic ice roads"
+        "en": "Only Arctic ice roads",
+        "fr": "Des routes de glace de l’Arctique seulement"
       },
       {
         "id": "c",
-        "en": "Senate carpooling"
+        "en": "Senate carpooling",
+        "fr": "Du covoiturage au Sénat"
       },
       {
         "id": "d",
-        "en": "A ban on trade with the United States"
+        "en": "A ban on trade with the United States",
+        "fr": "D’une interdiction de commercer avec les États-Unis"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Auto Pact story and later free-trade rules are why plants sit near the border, not why Ottawa writes parking tickets."
+      "en": "The Auto Pact story and later free-trade rules are why plants sit near the border, not why Ottawa writes parking tickets.",
+      "fr": "Le Pacte de l’automobile et les règles de libre-échange qui ont suivi expliquent pourquoi les usines se trouvent près de la frontière."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1039,29 +1223,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Diamond mining became an important northern industry especially in:"
+      "en": "Diamond mining became an important northern industry especially in:",
+      "fr": "L’extraction du diamant est devenue une industrie nordique importante surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Northwest Territories (and later other northern sites)"
+        "en": "The Northwest Territories (and later other northern sites)",
+        "fr": "Aux Territoires du Nord-Ouest (puis dans d’autres sites nordiques)"
       },
       {
         "id": "b",
-        "en": "PEI potato farms"
+        "en": "PEI potato farms",
+        "fr": "Dans les fermes de pommes de terre de l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "Downtown Toronto only"
+        "en": "Downtown Toronto only",
+        "fr": "Au centre-ville de Toronto seulement"
       },
       {
         "id": "d",
-        "en": "The Senate chamber"
+        "en": "The Senate chamber",
+        "fr": "Dans la chambre du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Northern resources are not only gold rushes. Diamonds are a late-20th-century chapter."
+      "en": "Northern resources are not only gold rushes. Diamonds are a late-20th-century chapter.",
+      "fr": "Les ressources du Nord ne se limitent pas aux ruées vers l’or. Le diamant est un chapitre de la fin du XXe siècle."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1072,21 +1262,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Most working Canadians are employees or self-employed in services such as retail, health, education, and professional work."
+      "en": "Most working Canadians are employees or self-employed in services such as retail, health, education, and professional work.",
+      "fr": "La plupart des Canadiens en emploi sont salariés ou travailleurs autonomes dans les services, comme le commerce de détail, la santé, l’éducation et les professions libérales."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Primary industries still matter for exports. They no longer employ most people."
+      "en": "Primary industries still matter for exports. They no longer employ most people.",
+      "fr": "Les industries primaires comptent encore pour les exportations, mais elles n’emploient plus la majorité de la population."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1097,29 +1291,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A tariff is:"
+      "en": "A tariff is:",
+      "fr": "Un tarif douanier est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A tax on imports"
+        "en": "A tax on imports",
+        "fr": "Une taxe sur les importations"
       },
       {
         "id": "b",
-        "en": "A type of provincial flower"
+        "en": "A type of provincial flower",
+        "fr": "Une sorte de fleur provinciale"
       },
       {
         "id": "c",
-        "en": "The Speaker’s gavel"
+        "en": "The Speaker’s gavel",
+        "fr": "Le marteau du président de la Chambre"
       },
       {
         "id": "d",
-        "en": "A municipal snow-clearing route"
+        "en": "A municipal snow-clearing route",
+        "fr": "Un circuit municipal de déneigement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Free-trade agreements lower many tariffs. The citizenship idea is that trade policy shapes jobs."
+      "en": "Free-trade agreements lower many tariffs. The citizenship idea is that trade policy shapes jobs.",
+      "fr": "Les accords de libre-échange réduisent de nombreux tarifs. L’idée à retenir est que la politique commerciale influe sur l’emploi."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1130,29 +1330,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Why do governments regulate banks and securities in Canada?"
+      "en": "Why do governments regulate banks and securities in Canada?",
+      "fr": "Pourquoi les gouvernements réglementent-ils les banques et les valeurs mobilières au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "To protect depositors and markets while private firms still compete"
+        "en": "To protect depositors and markets while private firms still compete",
+        "fr": "Pour protéger les déposants et les marchés, tout en laissant les entreprises privées se faire concurrence"
       },
       {
         "id": "b",
-        "en": "Because there is no private banking"
+        "en": "Because there is no private banking",
+        "fr": "Parce qu’il n’existe pas de banques privées"
       },
       {
         "id": "c",
-        "en": "To elect the Prime Minister"
+        "en": "To elect the Prime Minister",
+        "fr": "Pour élire le premier ministre"
       },
       {
         "id": "d",
-        "en": "To set hockey salaries"
+        "en": "To set hockey salaries",
+        "fr": "Pour fixer les salaires au hockey"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "A mixed economy is not an unregulated one. The Bank of Canada is the central bank; OSFI and provincial regulators watch firms."
+      "en": "A mixed economy is not an unregulated one. The Bank of Canada is the central bank; OSFI and provincial regulators watch firms.",
+      "fr": "Une économie mixte n’est pas une économie sans règles. La Banque du Canada est la banque centrale; le BSIF et les organismes provinciaux surveillent les entreprises."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1163,29 +1369,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Seasonal industries such as fishing, farming, and tourism help explain why:"
+      "en": "Seasonal industries such as fishing, farming, and tourism help explain why:",
+      "fr": "Les industries saisonnières comme la pêche, l’agriculture et le tourisme expliquent en partie pourquoi :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Employment Insurance and other supports matter in some regions"
+        "en": "Employment Insurance and other supports matter in some regions",
+        "fr": "L’assurance-emploi et d’autres mesures de soutien comptent beaucoup dans certaines régions"
       },
       {
         "id": "b",
-        "en": "The Senate sits only in August"
+        "en": "The Senate sits only in August",
+        "fr": "Le Sénat ne siège qu’en août"
       },
       {
         "id": "c",
-        "en": "There is no service sector"
+        "en": "There is no service sector",
+        "fr": "Il n’existe pas de secteur des services"
       },
       {
         "id": "d",
-        "en": "Canada has no exports"
+        "en": "Canada has no exports",
+        "fr": "Le Canada n’a aucune exportation"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Regional economies are not identical. Social programs sit beside resource cycles."
+      "en": "Regional economies are not identical. Social programs sit beside resource cycles.",
+      "fr": "Les économies régionales ne sont pas identiques. Les programmes sociaux accompagnent les cycles des ressources."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1196,21 +1408,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Crown land and resource royalties are a major source of wealth for some provincial governments."
+      "en": "Crown land and resource royalties are a major source of wealth for some provincial governments.",
+      "fr": "Les terres de la Couronne et les redevances sur les ressources constituent une source importante de richesse pour certains gouvernements provinciaux."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Oil, hydro, timber, and minerals sit on public land in much of the country. That is why resource policy is political."
+      "en": "Oil, hydro, timber, and minerals sit on public land in much of the country. That is why resource policy is political.",
+      "fr": "Dans une grande partie du pays, le pétrole, l’hydroélectricité, le bois et les minéraux se trouvent sur des terres publiques. C’est pourquoi la politique des ressources est un enjeu politique."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1221,29 +1437,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The “staples” idea in Canadian economic history refers to:"
+      "en": "The “staples” idea in Canadian economic history refers to:",
+      "fr": "Dans l’histoire économique du Canada, la thèse des « produits de base » désigne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Exporting raw or lightly processed goods such as fur, timber, wheat, and minerals"
+        "en": "Exporting raw or lightly processed goods such as fur, timber, wheat, and minerals",
+        "fr": "L’exportation de biens bruts ou peu transformés comme la fourrure, le bois, le blé et les minéraux"
       },
       {
         "id": "b",
-        "en": "Stapling bills in the Senate"
+        "en": "Stapling bills in the Senate",
+        "fr": "L’agrafage des projets de loi au Sénat"
       },
       {
         "id": "c",
-        "en": "A type of maple-leaf pin only"
+        "en": "A type of maple-leaf pin only",
+        "fr": "Un type d’épinglette à feuille d’érable seulement"
       },
       {
         "id": "d",
-        "en": "Municipal stapler by-laws"
+        "en": "Municipal stapler by-laws",
+        "fr": "Des règlements municipaux sur les agrafeuses"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The citizenship guide still walks through those classic exports before services took over employment."
+      "en": "The citizenship guide still walks through those classic exports before services took over employment.",
+      "fr": "Le guide de citoyenneté passe encore en revue ces exportations classiques, antérieures à la domination des services dans l’emploi."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1254,29 +1476,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Interprovincial trade barriers are a live issue because:"
+      "en": "Interprovincial trade barriers are a live issue because:",
+      "fr": "Les obstacles au commerce interprovincial demeurent un enjeu actuel parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Provinces can still regulate some goods and professions differently"
+        "en": "Provinces can still regulate some goods and professions differently",
+        "fr": "Les provinces peuvent encore réglementer différemment certains biens et certaines professions"
       },
       {
         "id": "b",
-        "en": "The Charter bans all trucking"
+        "en": "The Charter bans all trucking",
+        "fr": "La Charte interdit tout camionnage"
       },
       {
         "id": "c",
-        "en": "There is no Trans-Canada Highway"
+        "en": "There is no Trans-Canada Highway",
+        "fr": "La route Transcanadienne n’existe pas"
       },
       {
         "id": "d",
-        "en": "Only territories may sell food"
+        "en": "Only territories may sell food",
+        "fr": "Seuls les territoires peuvent vendre des aliments"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada is one country with internal frictions. That is an economy-and-federalism fact."
+      "en": "Canada is one country with internal frictions. That is an economy-and-federalism fact.",
+      "fr": "Le Canada est un seul pays, mais avec des frictions internes. C’est un fait qui relève à la fois de l’économie et du fédéralisme."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1287,29 +1515,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A balanced view of Canada’s economy for the test includes:"
+      "en": "A balanced view of Canada’s economy for the test includes:",
+      "fr": "Pour l’examen, une vision équilibrée de l’économie canadienne comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Resources, manufacturing, and a large service sector, with big regional differences"
+        "en": "Resources, manufacturing, and a large service sector, with big regional differences",
+        "fr": "Les ressources, la fabrication et un vaste secteur des services, avec de grandes différences régionales"
       },
       {
         "id": "b",
-        "en": "Only gold mining"
+        "en": "Only gold mining",
+        "fr": "L’extraction de l’or seulement"
       },
       {
         "id": "c",
-        "en": "Only Hollywood film lots"
+        "en": "Only Hollywood film lots",
+        "fr": "Les studios de cinéma hollywoodiens seulement"
       },
       {
         "id": "d",
-        "en": "No trade with anyone"
+        "en": "No trade with anyone",
+        "fr": "Aucun commerce avec qui que ce soit"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "If you remember only oil, or only banks, you will miss questions about fish, cars, or tourism."
+      "en": "If you remember only oil, or only banks, you will miss questions about fish, cars, or tourism.",
+      "fr": "Si vous ne retenez que le pétrole ou que les banques, vous raterez les questions sur le poisson, l’automobile ou le tourisme."
     },
     "source": "Discover Canada — Canada's Economy"
   }

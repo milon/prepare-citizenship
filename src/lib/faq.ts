@@ -3,6 +3,12 @@ export const OFFICIAL_GUIDE_URL =
 export const OFFICIAL_PDF_URL =
   'https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf';
 export const GITHUB_ISSUES_URL = 'https://github.com/milon/prepare-citizenship/issues';
+export const GITHUB_CONTENT_ISSUE_URL =
+  'https://github.com/milon/prepare-citizenship/issues/new?template=content-mistake.yml';
+export const OFFICIAL_GUIDE_URL_FR =
+  'https://www.canada.ca/fr/immigration-refugies-citoyennete/services/citoyennete-canadienne/examen/etudier.html';
+export const OFFICIAL_PDF_URL_FR =
+  'https://www.canada.ca/content/dam/ircc/migration/ircc/francais/pdf/pub/decouvrir.pdf';
 
 export type FaqItem = {
   id: string;
@@ -81,12 +87,13 @@ export function faqItems(opts: { questionCount: number; lastVerified: string }):
     {
       id: 'french',
       question: 'Is there a French version?',
-      html: `<p>Not yet. The question files can hold French strings, but the interface and content you see today are English only.</p>`,
+      html: `<p>Yes. Settings has a language toggle. The interface, flashcards, practice, and mock follow English or French. Chapter notes are still English. If a question has no French yet, the English wording is shown.</p>
+<p>The official study material is also in French: the <a href="${OFFICIAL_GUIDE_URL_FR}">guide</a> and the <a href="${OFFICIAL_PDF_URL_FR}">Découvrir le Canada PDF</a>.</p>`,
     },
     {
       id: 'mistake',
       question: 'I think a question is wrong. What should I do?',
-      html: `<p>Check the <a href="${OFFICIAL_GUIDE_URL}">official study guide</a> first. If this site still looks wrong, open a <a href="${GITHUB_ISSUES_URL}">GitHub issue</a> with the question wording and what you expected.</p>`,
+      html: `<p>Check the <a href="${OFFICIAL_GUIDE_URL}">official study guide</a> first. If this site still looks wrong, open a <a href="${GITHUB_CONTENT_ISSUE_URL}">content mistake report</a> with the question id and what you expected.</p>`,
     },
   ];
 }

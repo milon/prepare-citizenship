@@ -1,6 +1,7 @@
 import type { ChapterId } from '../content/schema';
 import type { ChapterOption, ClientQuestion } from './client-types';
 import { shufflePractice } from './draw';
+import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
 import {
   loadProgress,
   newAttemptId,
@@ -32,6 +33,18 @@ export function practiceApp(payload: PracticePayload) {
     warning: '',
     progress: null as Progress | null,
 
+    tx(key: string, vars?: Record<string, string | number>) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return t(key, locale, vars);
+    },
+
+    pick(value: LocalizedText | string) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return pickLocalized(value, locale);
+    },
+
     init() {
       const params = new URLSearchParams(window.location.search);
       const requested = params.get('chapter');
@@ -57,10 +70,10 @@ export function practiceApp(payload: PracticePayload) {
       if (this.chapter === 'weakest') {
         const weakest = this.progress ? weakestChapter(this.progress) : null;
         if (!weakest) {
-          this.warning = 'Not enough quiz data yet for a weakest-chapter set. Showing a mixed practice instead.';
+          this.warning = this.tx('practice.weakWarn');
         } else {
           pool = payload.questions.filter((question) => question.chapter === weakest);
-          this.warning = `Practicing your weakest chapter so far.`;
+          this.warning = this.tx('practice.weakOk');
         }
       } else if (this.chapter !== 'all') {
         pool = payload.questions.filter((question) => question.chapter === this.chapter);
@@ -75,9 +88,9 @@ export function practiceApp(payload: PracticePayload) {
 
     get position(): string {
       if (this.queue.length === 0) {
-        return 'No questions';
+        return this.tx('practice.none');
       }
-      return `Question ${this.index + 1} of ${this.queue.length}`;
+      return this.tx('practice.position', { n: this.index + 1, total: this.queue.length });
     },
 
     choose(optionId: string) {
@@ -171,7 +184,7 @@ export function practiceApp(payload: PracticePayload) {
         .filter((chapter) => counts.has(chapter.id))
         .map((chapter) => {
           const row = counts.get(chapter.id);
-          return { title: chapter.title, text: `${row?.correct ?? 0}/${row?.total ?? 0}` };
+          return { id: chapter.id, title: this.pick(chapter.title), text: `${row?.correct ?? 0}/${row?.total ?? 0}` };
         });
     },
   };

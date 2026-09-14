@@ -33,9 +33,15 @@ const chapters = defineCollection({
   schema: chapterSummarySchema,
 });
 
+const chaptersFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/chapters-fr' }),
+  schema: chapterSummarySchema,
+});
+
 export const collections = {
   questions,
   extraFlashcards,
   current,
   chapters,
+  chaptersFr,
 };

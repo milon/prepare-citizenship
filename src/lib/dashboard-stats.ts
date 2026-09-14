@@ -1,5 +1,5 @@
 import type { ChapterId } from '../content/schema';
-import { CHAPTERS, chapterTitle } from './chapters';
+import { CHAPTERS } from './chapters';
 import { addDays, todayStamp } from './dates';
 import { chapterAccuracy, type Progress, type QuizAttempt } from './progress';
 
@@ -22,7 +22,10 @@ export type Readiness =
   | { status: 'ready'; keepPracticing: ChapterStat[] }
   | {
       status: 'not-ready';
-      reasons: string[];
+      reasons: Array<
+        | { id: 'mock' }
+        | { id: 'chapter'; chapterId: ChapterId; rate: number; total: number }
+      >;
       keepPracticing: ChapterStat[];
       weakChapters: ChapterStat[];
     };
@@ -110,14 +113,17 @@ export function readinessFor(progress: Progress): Readiness {
   const recent = completed.slice(-MOCKS_FOR_READINESS);
   const weakChapters = chapterStats(progress).filter((chapter) => chapter.status === 'weak');
   const failedRecent = recent.some((attempt) => attempt.score < MOCK_PASS_SCORE);
-  const reasons: string[] = [];
+  const reasons: Extract<Readiness, { status: 'not-ready' }>['reasons'] = [];
   if (failedRecent) {
-    reasons.push('A recent mock scored below 15/20.');
+    reasons.push({ id: 'mock' });
   }
   for (const chapter of weakChapters) {
-    reasons.push(
-      `${chapterTitle(chapter.id)} is at ${Math.round(chapter.rate * 100)}% after ${chapter.total} answers (need 70%).`,
-    );
+    reasons.push({
+      id: 'chapter',
+      chapterId: chapter.id,
+      rate: Math.round(chapter.rate * 100),
+      total: chapter.total,
+    });
   }
 
   if (!failedRecent && weakChapters.length === 0) {

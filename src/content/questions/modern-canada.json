@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What was the Quiet Revolution in Quebec?"
+      "en": "What was the Quiet Revolution in Quebec?",
+      "fr": "Qu’a été la Révolution tranquille au Québec ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "A rapid period of social and government reform in the 1960s"
+        "en": "A rapid period of social and government reform in the 1960s",
+        "fr": "Une période de réformes sociales et gouvernementales rapides, dans les années 1960"
       },
       {
         "id": "b",
-        "en": "The building of the Canadian Pacific Railway"
+        "en": "The building of the Canadian Pacific Railway",
+        "fr": "La construction du chemin de fer Canadien Pacifique"
       },
       {
         "id": "c",
-        "en": "The wartime internment of Japanese Canadians"
+        "en": "The wartime internment of Japanese Canadians",
+        "fr": "L’internement des Canadiens d’origine japonaise pendant la guerre"
       },
       {
         "id": "d",
-        "en": "The founding of the Hudson’s Bay Company"
+        "en": "The founding of the Hudson’s Bay Company",
+        "fr": "La fondation de la Compagnie de la Baie d’Hudson"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "In the 1960s, Quebec modernized education, health care, and the provincial state, and a stronger Québécois identity took hold in public life."
+      "en": "In the 1960s, Quebec modernized education, health care, and the provincial state, and a stronger Québécois identity took hold in public life.",
+      "fr": "Dans les années 1960, le Québec a modernisé l’éducation, la santé et l’État provincial, et une identité québécoise plus affirmée s’est imposée dans la vie publique."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -39,21 +45,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada is a founding member of the North Atlantic Treaty Organization (NATO)."
+      "en": "Canada is a founding member of the North Atlantic Treaty Organization (NATO).",
+      "fr": "Le Canada est un membre fondateur de l’Organisation du Traité de l’Atlantique Nord (OTAN)."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "After the Second World War, Canada helped found NATO and also belongs to NORAD with the United States, as well as the United Nations and the Commonwealth."
+      "en": "After the Second World War, Canada helped found NATO and also belongs to NORAD with the United States, as well as the United Nations and the Commonwealth.",
+      "fr": "Après la Seconde Guerre mondiale, le Canada a contribué à fonder l’OTAN. Il fait aussi partie de NORAD avec les États-Unis, ainsi que des Nations Unies et du Commonwealth."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -64,29 +74,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which law made English and French official languages of the Parliament and Government of Canada?"
+      "en": "Which law made English and French official languages of the Parliament and Government of Canada?",
+      "fr": "Quelle loi a fait de l’anglais et du français les langues officielles du Parlement et du gouvernement du Canada ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The War Measures Act"
+        "en": "The War Measures Act",
+        "fr": "La Loi sur les mesures de guerre"
       },
       {
         "id": "b",
-        "en": "The Official Languages Act (1969)"
+        "en": "The Official Languages Act (1969)",
+        "fr": "La Loi sur les langues officielles (1969)"
       },
       {
         "id": "c",
-        "en": "The Manitoba Act"
+        "en": "The Manitoba Act",
+        "fr": "La Loi sur le Manitoba"
       },
       {
         "id": "d",
-        "en": "The Indian Act"
+        "en": "The Indian Act",
+        "fr": "La Loi sur les Indiens"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Official Languages Act confirmed bilingual federal institutions. The Charter later entrenched official language rights more firmly."
+      "en": "The Official Languages Act confirmed bilingual federal institutions. The Charter later entrenched official language rights more firmly.",
+      "fr": "La Loi sur les langues officielles a confirmé le caractère bilingue des institutions fédérales. La Charte a ensuite enchâssé plus solidement les droits linguistiques."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -97,29 +113,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Publicly funded hospital and medical insurance in Canada was pioneered at the provincial level in:"
+      "en": "Publicly funded hospital and medical insurance in Canada was pioneered at the provincial level in:",
+      "fr": "L’assurance hospitalisation et l’assurance maladie financées par l’État ont d’abord vu le jour, à l’échelle provinciale :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Saskatchewan, associated with Tommy Douglas"
+        "en": "Saskatchewan, associated with Tommy Douglas",
+        "fr": "En Saskatchewan, sous l’impulsion de Tommy Douglas"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island in 1864"
+        "en": "Prince Edward Island in 1864",
+        "fr": "À l’Île-du-Prince-Édouard, en 1864"
       },
       {
         "id": "c",
-        "en": "Yukon during the gold rush"
+        "en": "Yukon during the gold rush",
+        "fr": "Au Yukon, pendant la ruée vers l’or"
       },
       {
         "id": "d",
-        "en": "New France in 1608"
+        "en": "New France in 1608",
+        "fr": "En Nouvelle-France, en 1608"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Saskatchewan’s medical-care plan led the way. A federal–provincial model then spread nationwide."
+      "en": "Saskatchewan’s medical-care plan led the way. A federal–provincial model then spread nationwide.",
+      "fr": "Le régime de soins médicaux de la Saskatchewan a ouvert la voie. Un modèle fédéral-provincial s’est ensuite étendu à tout le pays."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -130,29 +152,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian Bill of Rights (1960) is associated with Prime Minister:"
+      "en": "The Canadian Bill of Rights (1960) is associated with Prime Minister:",
+      "fr": "La Déclaration canadienne des droits (1960) est associée au premier ministre :"
     },
     "options": [
       {
         "id": "a",
-        "en": "John Diefenbaker"
+        "en": "John Diefenbaker",
+        "fr": "John Diefenbaker"
       },
       {
         "id": "b",
-        "en": "Sir John A. Macdonald"
+        "en": "Sir John A. Macdonald",
+        "fr": "Sir John A. Macdonald"
       },
       {
         "id": "c",
-        "en": "Robert Borden"
+        "en": "Robert Borden",
+        "fr": "Robert Borden"
       },
       {
         "id": "d",
-        "en": "Lester B. Pearson’s successor in 1867"
+        "en": "Lester B. Pearson’s successor in 1867",
+        "fr": "Le successeur de Lester B. Pearson en 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Diefenbaker’s Bill of Rights was a federal statute, not a constitutional charter. The 1982 Charter went further."
+      "en": "Diefenbaker’s Bill of Rights was a federal statute, not a constitutional charter. The 1982 Charter went further.",
+      "fr": "La Déclaration des droits de Diefenbaker était une loi fédérale et non une charte constitutionnelle. La Charte de 1982 est allée beaucoup plus loin."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -163,29 +191,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Lester B. Pearson is remembered internationally for:"
+      "en": "Lester B. Pearson is remembered internationally for:",
+      "fr": "Sur la scène internationale, on se souvient de Lester B. Pearson pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Helping create UN peacekeeping during the Suez Crisis (Nobel Peace Prize, 1957)"
+        "en": "Helping create UN peacekeeping during the Suez Crisis (Nobel Peace Prize, 1957)",
+        "fr": "Avoir contribué à créer le maintien de la paix de l’ONU lors de la crise de Suez (prix Nobel de la paix, 1957)"
       },
       {
         "id": "b",
-        "en": "Founding Quebec City"
+        "en": "Founding Quebec City",
+        "fr": "Avoir fondé la ville de Québec"
       },
       {
         "id": "c",
-        "en": "Leading at Vimy Ridge"
+        "en": "Leading at Vimy Ridge",
+        "fr": "Avoir commandé les troupes à la crête de Vimy"
       },
       {
         "id": "d",
-        "en": "Writing Magna Carta"
+        "en": "Writing Magna Carta",
+        "fr": "Avoir rédigé la Grande Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Pearson’s Suez role made peacekeeping part of Canada’s modern story. At home he also oversaw the flag, the pension plan, and medicare negotiations."
+      "en": "Pearson’s Suez role made peacekeeping part of Canada’s modern story. At home he also oversaw the flag, the pension plan, and medicare negotiations.",
+      "fr": "Le rôle de Pearson à Suez a fait du maintien de la paix un élément du récit canadien moderne. Au pays, il a aussi présidé à l’adoption du drapeau, à la création du régime de pensions et aux négociations sur l’assurance maladie."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -196,29 +230,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Federal multiculturalism became official policy in:"
+      "en": "Federal multiculturalism became official policy in:",
+      "fr": "Le multiculturalisme est devenu une politique officielle du gouvernement fédéral en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1918"
+        "en": "1918",
+        "fr": "1918"
       },
       {
         "id": "c",
-        "en": "1971"
+        "en": "1971",
+        "fr": "1971"
       },
       {
         "id": "d",
-        "en": "1999"
+        "en": "1999",
+        "fr": "1999"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Pierre Trudeau’s government announced multiculturalism within a bilingual framework in 1971."
+      "en": "Pierre Trudeau’s government announced multiculturalism within a bilingual framework in 1971.",
+      "fr": "Le gouvernement de Pierre Trudeau a annoncé le multiculturalisme dans un cadre bilingue en 1971."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -229,29 +269,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The October Crisis of 1970 involved:"
+      "en": "The October Crisis of 1970 involved:",
+      "fr": "La crise d’Octobre de 1970 a mis en cause :"
     },
     "options": [
       {
         "id": "a",
-        "en": "FLQ kidnappings and the use of the War Measures Act"
+        "en": "FLQ kidnappings and the use of the War Measures Act",
+        "fr": "Des enlèvements commis par le FLQ et le recours à la Loi sur les mesures de guerre"
       },
       {
         "id": "b",
-        "en": "The last spike ceremony"
+        "en": "The last spike ceremony",
+        "fr": "La cérémonie du dernier crampon"
       },
       {
         "id": "c",
-        "en": "The founding of NATO"
+        "en": "The founding of NATO",
+        "fr": "La fondation de l’OTAN"
       },
       {
         "id": "d",
-        "en": "The Persons Case"
+        "en": "The Persons Case",
+        "fr": "L’affaire des « personnes »"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Front de libération du Québec kidnapped officials. Ottawa invoked emergency powers—still a controversial moment."
+      "en": "The Front de libération du Québec kidnapped officials. Ottawa invoked emergency powers—still a controversial moment.",
+      "fr": "Le Front de libération du Québec a enlevé des personnalités publiques. Ottawa a invoqué des pouvoirs d’urgence, un geste encore controversé aujourd’hui."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -262,29 +308,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Quebec sovereignty referendums were held in:"
+      "en": "Quebec sovereignty referendums were held in:",
+      "fr": "Les référendums sur la souveraineté du Québec ont eu lieu en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1980 and 1995"
+        "en": "1980 and 1995",
+        "fr": "1980 et 1995"
       },
       {
         "id": "b",
-        "en": "1867 and 1870"
+        "en": "1867 and 1870",
+        "fr": "1867 et 1870"
       },
       {
         "id": "c",
-        "en": "1917 and 1944"
+        "en": "1917 and 1944",
+        "fr": "1917 et 1944"
       },
       {
         "id": "d",
-        "en": "1608 and 1759"
+        "en": "1608 and 1759",
+        "fr": "1608 et 1759"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Both votes rejected sovereignty (the 1995 “No” was very close). Quebec remains a province of Canada."
+      "en": "Both votes rejected sovereignty (the 1995 “No” was very close). Quebec remains a province of Canada.",
+      "fr": "Les deux votes ont rejeté la souveraineté (le « Non » de 1995 a été très serré). Le Québec demeure une province du Canada."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -295,21 +347,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada is a founding member of the United Nations."
+      "en": "Canada is a founding member of the United Nations.",
+      "fr": "Le Canada est un membre fondateur des Nations Unies."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Canada helped found the UN in 1945 and has been active in its work, including peacekeeping and later missions."
+      "en": "Canada helped found the UN in 1945 and has been active in its work, including peacekeeping and later missions.",
+      "fr": "Le Canada a contribué à fonder l’ONU en 1945 et participe activement à ses travaux, y compris au maintien de la paix et aux missions plus récentes."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -320,29 +376,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "NORAD is:"
+      "en": "NORAD is:",
+      "fr": "NORAD est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A Canada–United States arrangement for aerospace warning and defence"
+        "en": "A Canada–United States arrangement for aerospace warning and defence",
+        "fr": "Une entente entre le Canada et les États-Unis pour l’alerte et la défense aérospatiales"
       },
       {
         "id": "b",
-        "en": "A provincial health plan"
+        "en": "A provincial health plan",
+        "fr": "Un régime provincial d’assurance maladie"
       },
       {
         "id": "c",
-        "en": "The French name of the Senate"
+        "en": "The French name of the Senate",
+        "fr": "Le nom français du Sénat"
       },
       {
         "id": "d",
-        "en": "A railway company"
+        "en": "A railway company",
+        "fr": "Une compagnie de chemin de fer"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The North American Aerospace Defence Command dates from the late 1950s. It is a core military partnership with the United States."
+      "en": "The North American Aerospace Defence Command dates from the late 1950s. It is a core military partnership with the United States.",
+      "fr": "Le Commandement de la défense aérospatiale de l’Amérique du Nord date de la fin des années 1950. C’est un partenariat militaire central avec les États-Unis."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -353,29 +415,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada belongs to the Commonwealth because:"
+      "en": "Canada belongs to the Commonwealth because:",
+      "fr": "Le Canada fait partie du Commonwealth parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "It shares history with other former British territories and recognizes the same monarch as Head of the Commonwealth"
+        "en": "It shares history with other former British territories and recognizes the same monarch as Head of the Commonwealth",
+        "fr": "Il partage une histoire avec d’autres anciens territoires britanniques et reconnaît le même monarque comme chef du Commonwealth"
       },
       {
         "id": "b",
-        "en": "It is a U.S. state"
+        "en": "It is a U.S. state",
+        "fr": "C’est un État américain"
       },
       {
         "id": "c",
-        "en": "It left the UN"
+        "en": "It left the UN",
+        "fr": "Il a quitté l’ONU"
       },
       {
         "id": "d",
-        "en": "It has no Constitution"
+        "en": "It has no Constitution",
+        "fr": "Il n’a pas de Constitution"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Membership is voluntary. It is not a government that passes Canadian laws."
+      "en": "Membership is voluntary. It is not a government that passes Canadian laws.",
+      "fr": "L’adhésion est volontaire. Ce n’est pas un gouvernement qui adopte des lois canadiennes."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -386,29 +454,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "La Francophonie is:"
+      "en": "La Francophonie is:",
+      "fr": "La Francophonie est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "An international organization of French-speaking states and governments, which Canada joined"
+        "en": "An international organization of French-speaking states and governments, which Canada joined",
+        "fr": "Une organisation internationale d’États et de gouvernements de langue française, à laquelle le Canada a adhéré"
       },
       {
         "id": "b",
-        "en": "A Quebec-only political party"
+        "en": "A Quebec-only political party",
+        "fr": "Un parti politique présent seulement au Québec"
       },
       {
         "id": "c",
-        "en": "A type of maple syrup"
+        "en": "A type of maple syrup",
+        "fr": "Une sorte de sirop d’érable"
       },
       {
         "id": "d",
-        "en": "The name of the RCMP cavalry"
+        "en": "The name of the RCMP cavalry",
+        "fr": "Le nom de la cavalerie de la GRC"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada, Quebec, and New Brunswick all have roles in La Francophonie. It reflects the French fact in Canadian foreign policy."
+      "en": "Canada, Quebec, and New Brunswick all have roles in La Francophonie. It reflects the French fact in Canadian foreign policy.",
+      "fr": "Le Canada, le Québec et le Nouveau-Brunswick y jouent tous un rôle. Elle traduit le fait français dans la politique étrangère canadienne."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -419,29 +493,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Old Age Security, the Canada Pension Plan, and Employment Insurance are examples of:"
+      "en": "Old Age Security, the Canada Pension Plan, and Employment Insurance are examples of:",
+      "fr": "La Sécurité de la vieillesse, le Régime de pensions du Canada et l’assurance-emploi sont des exemples :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Social programs built mainly in the decades after the Second World War"
+        "en": "Social programs built mainly in the decades after the Second World War",
+        "fr": "De programmes sociaux bâtis surtout dans les décennies qui ont suivi la Seconde Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Confederation terms in 1867"
+        "en": "Confederation terms in 1867",
+        "fr": "De conditions de la Confédération de 1867"
       },
       {
         "id": "c",
-        "en": "Municipal parking rules"
+        "en": "Municipal parking rules",
+        "fr": "De règles municipales de stationnement"
       },
       {
         "id": "d",
-        "en": "Senate seating plans"
+        "en": "Senate seating plans",
+        "fr": "De plans de sièges au Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The postwar welfare state is a “modern Canada” topic: pensions, unemployment insurance, and later medicare."
+      "en": "The postwar welfare state is a “modern Canada” topic: pensions, unemployment insurance, and later medicare.",
+      "fr": "L’État-providence d’après-guerre est un sujet du « Canada moderne » : pensions, assurance-chômage et, plus tard, assurance maladie."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -452,21 +532,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Health-care delivery is a provincial responsibility, with federal funding tied to national standards."
+      "en": "Health-care delivery is a provincial responsibility, with federal funding tied to national standards.",
+      "fr": "La prestation des soins de santé relève des provinces, et le financement fédéral est assorti de normes nationales."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Provinces run hospitals and medical insurance. Ottawa contributes money and sets conditions under federal law."
+      "en": "Provinces run hospitals and medical insurance. Ottawa contributes money and sets conditions under federal law.",
+      "fr": "Les provinces gèrent les hôpitaux et l’assurance maladie. Ottawa verse des fonds et fixe des conditions en vertu d’une loi fédérale."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "After 1945, Canadian immigration policy gradually:"
+      "en": "After 1945, Canadian immigration policy gradually:",
+      "fr": "Après 1945, la politique canadienne d’immigration s’est peu à peu :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Moved away from racial preferences toward more universal criteria"
+        "en": "Moved away from racial preferences toward more universal criteria",
+        "fr": "Éloignée des préférences raciales pour adopter des critères plus universels"
       },
       {
         "id": "b",
-        "en": "Banned all immigration"
+        "en": "Banned all immigration",
+        "fr": "Fermée à toute immigration"
       },
       {
         "id": "c",
-        "en": "Allowed only French speakers"
+        "en": "Allowed only French speakers",
+        "fr": "Limitée aux seuls francophones"
       },
       {
         "id": "d",
-        "en": "Returned to the Chinese head tax"
+        "en": "Returned to the Chinese head tax",
+        "fr": "Ramenée à la taxe d’entrée imposée aux immigrants chinois"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The points system and later reforms opened the door more widely to people from Asia, the Caribbean, Africa, and Latin America."
+      "en": "The points system and later reforms opened the door more widely to people from Asia, the Caribbean, Africa, and Latin America.",
+      "fr": "Le système de points et les réformes suivantes ont ouvert la porte plus largement aux personnes venues d’Asie, des Caraïbes, d’Afrique et d’Amérique latine."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada fought in the Korean War:"
+      "en": "Canada fought in the Korean War:",
+      "fr": "Le Canada a combattu dans la guerre de Corée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "As part of a United Nations force in the early 1950s"
+        "en": "As part of a United Nations force in the early 1950s",
+        "fr": "Au sein d’une force des Nations Unies, au début des années 1950"
       },
       {
         "id": "b",
-        "en": "In 1867"
+        "en": "In 1867",
+        "fr": "En 1867"
       },
       {
         "id": "c",
-        "en": "Instead of joining NATO"
+        "en": "Instead of joining NATO",
+        "fr": "Au lieu de se joindre à l’OTAN"
       },
       {
         "id": "d",
-        "en": "Only with the War Measures Act"
+        "en": "Only with the War Measures Act",
+        "fr": "Uniquement en vertu de la Loi sur les mesures de guerre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Thousands of Canadians served in Korea (1950–53). It was Canada’s first UN-era shooting war."
+      "en": "Thousands of Canadians served in Korea (1950–53). It was Canada’s first UN-era shooting war.",
+      "fr": "Des milliers de Canadiens ont servi en Corée (1950-1953). C’était le premier conflit armé auquel le Canada a participé à l’époque de l’ONU."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -543,29 +639,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Free trade with the United States (and later Mexico) is a modern economic theme because:"
+      "en": "Free trade with the United States (and later Mexico) is a modern economic theme because:",
+      "fr": "Le libre-échange avec les États-Unis (puis avec le Mexique) est un thème économique moderne parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The U.S. is Canada’s largest trading partner and supply chains cross the border"
+        "en": "The U.S. is Canada’s largest trading partner and supply chains cross the border",
+        "fr": "Les États-Unis sont le principal partenaire commercial du Canada et les chaînes d’approvisionnement traversent la frontière"
       },
       {
         "id": "b",
-        "en": "Canada does not trade"
+        "en": "Canada does not trade",
+        "fr": "Le Canada ne fait pas de commerce"
       },
       {
         "id": "c",
-        "en": "Only the territories export"
+        "en": "Only the territories export",
+        "fr": "Seuls les territoires exportent"
       },
       {
         "id": "d",
-        "en": "Trade is banned by the Charter"
+        "en": "Trade is banned by the Charter",
+        "fr": "Le commerce est interdit par la Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The study guide discusses North American free trade. The legal name of the agreement has changed; the integration has not."
+      "en": "The study guide discusses North American free trade. The legal name of the agreement has changed; the integration has not.",
+      "fr": "Le guide d’étude traite du libre-échange nord-américain. Le nom officiel de l’accord a changé; l’intégration économique, non."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -576,29 +678,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The maple leaf flag was adopted in:"
+      "en": "The maple leaf flag was adopted in:",
+      "fr": "Le drapeau à la feuille d’érable a été adopté en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1945"
+        "en": "1945",
+        "fr": "1945"
       },
       {
         "id": "c",
-        "en": "1965"
+        "en": "1965",
+        "fr": "1965"
       },
       {
         "id": "d",
-        "en": "1982"
+        "en": "1982",
+        "fr": "1982"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Pearson’s government replaced the Canadian Red Ensign after a fierce flag debate. 1965 is a modern-Canada and symbols date."
+      "en": "Pearson’s government replaced the Canadian Red Ensign after a fierce flag debate. 1965 is a modern-Canada and symbols date.",
+      "fr": "Le gouvernement de Pearson a remplacé le Red Ensign canadien après un débat féroce sur le drapeau. 1965 est une date qui touche à la fois le Canada moderne et les symboles."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -609,21 +717,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Quebec did not sign the 1982 constitutional package, but it remains a province of Canada."
+      "en": "Quebec did not sign the 1982 constitutional package, but it remains a province of Canada.",
+      "fr": "Le Québec n’a pas signé l’entente constitutionnelle de 1982, mais il demeure une province du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Patriation went ahead without Quebec’s signature. Later amendment attempts (Meech Lake, Charlottetown) failed."
+      "en": "Patriation went ahead without Quebec’s signature. Later amendment attempts (Meech Lake, Charlottetown) failed.",
+      "fr": "Le rapatriement a eu lieu sans la signature du Québec. Les tentatives de modification qui ont suivi (lac Meech, Charlottetown) ont échoué."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Meech Lake and Charlottetown were:"
+      "en": "Meech Lake and Charlottetown were:",
+      "fr": "L’accord du lac Meech et celui de Charlottetown ont été :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Failed attempts to amend the Constitution in 1990 and 1992"
+        "en": "Failed attempts to amend the Constitution in 1990 and 1992",
+        "fr": "Des tentatives ratées de modifier la Constitution, en 1990 et en 1992"
       },
       {
         "id": "b",
-        "en": "World War II battles"
+        "en": "World War II battles",
+        "fr": "Des batailles de la Seconde Guerre mondiale"
       },
       {
         "id": "c",
-        "en": "Gold rushes"
+        "en": "Gold rushes",
+        "fr": "Des ruées vers l’or"
       },
       {
         "id": "d",
-        "en": "UN peacekeeping missions in Egypt only"
+        "en": "UN peacekeeping missions in Egypt only",
+        "fr": "Des missions de maintien de la paix de l’ONU, en Égypte seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They tried, among other things, to address Quebec’s place in the Constitution. Both failed."
+      "en": "They tried, among other things, to address Quebec’s place in the Constitution. Both failed.",
+      "fr": "Ils cherchaient notamment à régler la place du Québec dans la Constitution. Les deux ont échoué."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -667,29 +785,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canada–U.S. Auto Pact (1965) mattered because it:"
+      "en": "The Canada–U.S. Auto Pact (1965) mattered because it:",
+      "fr": "Le Pacte de l’automobile entre le Canada et les États-Unis (1965) a compté parce qu’il a :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Integrated the two countries’ auto industries"
+        "en": "Integrated the two countries’ auto industries",
+        "fr": "Intégré les industries automobiles des deux pays"
       },
       {
         "id": "b",
-        "en": "Banned car manufacturing"
+        "en": "Banned car manufacturing",
+        "fr": "Interdit la fabrication d’automobiles"
       },
       {
         "id": "c",
-        "en": "Created the Senate"
+        "en": "Created the Senate",
+        "fr": "Créé le Sénat"
       },
       {
         "id": "d",
-        "en": "Founded NATO"
+        "en": "Founded NATO",
+        "fr": "Fondé l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a classic example of postwar economic integration in central Canada’s manufacturing belt."
+      "en": "It is a classic example of postwar economic integration in central Canada’s manufacturing belt.",
+      "fr": "C’est un exemple classique de l’intégration économique d’après-guerre dans la ceinture manufacturière du centre du Canada."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -700,29 +824,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which scientist’s team in Canada is credited with the discovery of insulin (1921)?"
+      "en": "Which scientist’s team in Canada is credited with the discovery of insulin (1921)?",
+      "fr": "Au Canada, l’équipe de quel scientifique est créditée de la découverte de l’insuline (1921) ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Frederick Banting (with colleagues in Toronto)"
+        "en": "Frederick Banting (with colleagues in Toronto)",
+        "fr": "Frederick Banting (avec des collègues à Toronto)"
       },
       {
         "id": "b",
-        "en": "Alexander Graham Bell only in 1867"
+        "en": "Alexander Graham Bell only in 1867",
+        "fr": "Alexander Graham Bell, seulement en 1867"
       },
       {
         "id": "c",
-        "en": "Tommy Douglas"
+        "en": "Tommy Douglas",
+        "fr": "Tommy Douglas"
       },
       {
         "id": "d",
-        "en": "Wilfrid Laurier"
+        "en": "Wilfrid Laurier",
+        "fr": "Wilfrid Laurier"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Insulin is a Canadian medical achievement the guide-era narrative still highlights."
+      "en": "Insulin is a Canadian medical achievement the guide-era narrative still highlights.",
+      "fr": "L’insuline est une réussite médicale canadienne que le récit de l’époque du guide met encore en valeur."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -733,29 +863,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Terry Fox is remembered for:"
+      "en": "Terry Fox is remembered for:",
+      "fr": "On se souvient de Terry Fox pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Marathon of Hope, running across Canada to raise money for cancer research"
+        "en": "The Marathon of Hope, running across Canada to raise money for cancer research",
+        "fr": "Le Marathon de l’espoir, sa course à travers le Canada afin de recueillir des fonds pour la recherche sur le cancer"
       },
       {
         "id": "b",
-        "en": "Leading at Vimy"
+        "en": "Leading at Vimy",
+        "fr": "Avoir commandé les troupes à Vimy"
       },
       {
         "id": "c",
-        "en": "Patriating the Constitution"
+        "en": "Patriating the Constitution",
+        "fr": "Avoir rapatrié la Constitution"
       },
       {
         "id": "d",
-        "en": "Founding the Hudson’s Bay Company"
+        "en": "Founding the Hudson’s Bay Company",
+        "fr": "Avoir fondé la Compagnie de la Baie d’Hudson"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "His 1980 run, cut short by cancer, became a national memory and an annual fundraising tradition."
+      "en": "His 1980 run, cut short by cancer, became a national memory and an annual fundraising tradition.",
+      "fr": "Sa course de 1980, interrompue par le cancer, est devenue un souvenir national et une tradition annuelle de collecte de fonds."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -766,21 +902,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Japanese-Canadian internment was later recognized as a wrong, with a formal apology and redress."
+      "en": "Japanese-Canadian internment was later recognized as a wrong, with a formal apology and redress.",
+      "fr": "L’internement des Canadiens d’origine japonaise a plus tard été reconnu comme une injustice, avec des excuses officielles et des réparations."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Brian Mulroney’s government apologized in 1988. Knowing both the wartime injustice and the later redress is part of modern citizenship."
+      "en": "Brian Mulroney’s government apologized in 1988. Knowing both the wartime injustice and the later redress is part of modern citizenship.",
+      "fr": "Le gouvernement de Brian Mulroney a présenté des excuses en 1988. Connaître à la fois l’injustice commise en temps de guerre et les réparations qui ont suivi fait partie de la citoyenneté moderne."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -791,29 +931,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Chinese head tax and later exclusion laws were:"
+      "en": "The Chinese head tax and later exclusion laws were:",
+      "fr": "La taxe d’entrée imposée aux immigrants chinois et les lois d’exclusion qui ont suivi étaient :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Racist immigration measures that Canada later apologized for"
+        "en": "Racist immigration measures that Canada later apologized for",
+        "fr": "Des mesures d’immigration racistes pour lesquelles le Canada s’est plus tard excusé"
       },
       {
         "id": "b",
-        "en": "Ordinary municipal fees in 2000"
+        "en": "Ordinary municipal fees in 2000",
+        "fr": "De simples frais municipaux, en 2000"
       },
       {
         "id": "c",
-        "en": "Charter requirements"
+        "en": "Charter requirements",
+        "fr": "Des exigences de la Charte"
       },
       {
         "id": "d",
-        "en": "NATO contributions"
+        "en": "NATO contributions",
+        "fr": "Des contributions à l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They restricted Chinese immigration for decades. An apology came in 2006."
+      "en": "They restricted Chinese immigration for decades. An apology came in 2006.",
+      "fr": "Elles ont restreint l’immigration chinoise pendant des décennies. Des excuses ont été présentées en 2006."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -824,29 +970,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s mission in Afghanistan after 2001 is an example of:"
+      "en": "Canada’s mission in Afghanistan after 2001 is an example of:",
+      "fr": "La mission du Canada en Afghanistan après 2001 est un exemple :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A 21st-century combat and reconstruction role, not only classic peacekeeping"
+        "en": "A 21st-century combat and reconstruction role, not only classic peacekeeping",
+        "fr": "D’un rôle de combat et de reconstruction du XXIe siècle, et non seulement de maintien de la paix classique"
       },
       {
         "id": "b",
-        "en": "The War of 1812"
+        "en": "The War of 1812",
+        "fr": "De la guerre de 1812"
       },
       {
         "id": "c",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "De la Révolution tranquille"
       },
       {
         "id": "d",
-        "en": "The Klondike"
+        "en": "The Klondike",
+        "fr": "Du Klondike"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Modern Canada still fights as well as peacekeeps. Kandahar was a hard combat mission."
+      "en": "Modern Canada still fights as well as peacekeeps. Kandahar was a hard combat mission.",
+      "fr": "Le Canada moderne combat encore, en plus de maintenir la paix. Kandahar a été une dure mission de combat."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -857,29 +1009,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canada Council for the Arts (1957) reflects a modern decision to:"
+      "en": "The Canada Council for the Arts (1957) reflects a modern decision to:",
+      "fr": "Le Conseil des arts du Canada (1957) témoigne d’une décision moderne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Fund literature, music, and the arts at the national level"
+        "en": "Fund literature, music, and the arts at the national level",
+        "fr": "De financer la littérature, la musique et les arts à l’échelle nationale"
       },
       {
         "id": "b",
-        "en": "Abolish French"
+        "en": "Abolish French",
+        "fr": "D’abolir le français"
       },
       {
         "id": "c",
-        "en": "Replace the Supreme Court"
+        "en": "Replace the Supreme Court",
+        "fr": "De remplacer la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Sell the Prairies"
+        "en": "Sell the Prairies",
+        "fr": "De vendre les Prairies"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Postwar governments invested in culture as well as in pensions and hospitals."
+      "en": "Postwar governments invested in culture as well as in pensions and hospitals.",
+      "fr": "Les gouvernements d’après-guerre ont investi dans la culture autant que dans les pensions et les hôpitaux."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -890,29 +1048,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which Prime Minister is most closely tied to the 1982 Charter?"
+      "en": "Which Prime Minister is most closely tied to the 1982 Charter?",
+      "fr": "Quel premier ministre est le plus étroitement associé à la Charte de 1982 ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Pierre Elliott Trudeau"
+        "en": "Pierre Elliott Trudeau",
+        "fr": "Pierre Elliott Trudeau"
       },
       {
         "id": "b",
-        "en": "Sir John A. Macdonald"
+        "en": "Sir John A. Macdonald",
+        "fr": "Sir John A. Macdonald"
       },
       {
         "id": "c",
-        "en": "R.B. Bennett"
+        "en": "R.B. Bennett",
+        "fr": "R.B. Bennett"
       },
       {
         "id": "d",
-        "en": "Alexander Mackenzie"
+        "en": "Alexander Mackenzie",
+        "fr": "Alexander Mackenzie"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Trudeau made the Charter the centrepiece of patriation."
+      "en": "Trudeau made the Charter the centrepiece of patriation.",
+      "fr": "Trudeau a fait de la Charte la pièce maîtresse du rapatriement."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -923,21 +1087,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Quiet Revolution made Quebec more secular in its public institutions."
+      "en": "The Quiet Revolution made Quebec more secular in its public institutions.",
+      "fr": "La Révolution tranquille a rendu les institutions publiques du Québec plus laïques."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Education and social services shifted from church-centred systems toward the provincial state."
+      "en": "Education and social services shifted from church-centred systems toward the provincial state.",
+      "fr": "L’éducation et les services sociaux sont passés de réseaux dirigés par l’Église à l’État provincial."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -948,29 +1116,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Refugee policy after the Second World War included a dark pre-history: in 1939 Canada famously:"
+      "en": "Refugee policy after the Second World War included a dark pre-history: in 1939 Canada famously:",
+      "fr": "La politique d’accueil des réfugiés d’après-guerre a une sombre préhistoire : en 1939, le Canada a notamment :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Turned away the MS St. Louis, carrying Jewish refugees"
+        "en": "Turned away the MS St. Louis, carrying Jewish refugees",
+        "fr": "Refusé le MS St. Louis, qui transportait des réfugiés juifs"
       },
       {
         "id": "b",
-        "en": "Founded Israel"
+        "en": "Founded Israel",
+        "fr": "Fondé Israël"
       },
       {
         "id": "c",
-        "en": "Banned all ocean travel"
+        "en": "Banned all ocean travel",
+        "fr": "Interdit tout voyage en mer"
       },
       {
         "id": "d",
-        "en": "Opened Nunavut"
+        "en": "Opened Nunavut",
+        "fr": "Ouvert le Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "“None is too many” is the phrase later used for that era’s anti-Jewish immigration practice. Modern Canada teaches it as a warning."
+      "en": "“None is too many” is the phrase later used for that era’s anti-Jewish immigration practice. Modern Canada teaches it as a warning.",
+      "fr": "« Aucun, c’est encore trop » est la formule employée plus tard pour décrire la pratique d’immigration antijuive de cette époque. Le Canada moderne l’enseigne comme un avertissement."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -981,29 +1155,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Official Languages Act requires federal institutions to:"
+      "en": "The Official Languages Act requires federal institutions to:",
+      "fr": "La Loi sur les langues officielles oblige les institutions fédérales à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Serve the public in English and French, where numbers warrant"
+        "en": "Serve the public in English and French, where numbers warrant",
+        "fr": "Servir le public en anglais et en français là où la demande est importante"
       },
       {
         "id": "b",
-        "en": "Use only English west of Ottawa"
+        "en": "Use only English west of Ottawa",
+        "fr": "N’utiliser que l’anglais à l’ouest d’Ottawa"
       },
       {
         "id": "c",
-        "en": "Use only French in the Territories"
+        "en": "Use only French in the Territories",
+        "fr": "N’utiliser que le français dans les territoires"
       },
       {
         "id": "d",
-        "en": "Ban Indigenous languages"
+        "en": "Ban Indigenous languages",
+        "fr": "Interdire les langues autochtones"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is about federal services and the workplace of the public service—not about erasing other languages in private life."
+      "en": "It is about federal services and the workplace of the public service—not about erasing other languages in private life.",
+      "fr": "Elle porte sur les services fédéraux et la langue de travail de la fonction publique, et non sur l’effacement des autres langues dans la vie privée."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1014,29 +1194,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a social program created or expanded in modern Canada?"
+      "en": "Which of these is a social program created or expanded in modern Canada?",
+      "fr": "Lequel des éléments suivants est un programme social créé ou élargi dans le Canada moderne ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Canada Pension Plan"
+        "en": "The Canada Pension Plan",
+        "fr": "Le Régime de pensions du Canada"
       },
       {
         "id": "b",
-        "en": "The Quebec Act of 1774"
+        "en": "The Quebec Act of 1774",
+        "fr": "L’Acte de Québec de 1774"
       },
       {
         "id": "c",
-        "en": "The Hudson’s Bay monopoly"
+        "en": "The Hudson’s Bay monopoly",
+        "fr": "Le monopole de la Compagnie de la Baie d’Hudson"
       },
       {
         "id": "d",
-        "en": "The Fenian raids"
+        "en": "The Fenian raids",
+        "fr": "Les raids des Fenians"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "CPP (and QPP in Quebec), OAS, EI, and medicare are the postwar package."
+      "en": "CPP (and QPP in Quebec), OAS, EI, and medicare are the postwar package.",
+      "fr": "Le RPC (et le RRQ au Québec), la Sécurité de la vieillesse, l’assurance-emploi et l’assurance maladie forment l’ensemble d’après-guerre."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1047,21 +1233,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada is a member of La Francophonie and of the Commonwealth at the same time."
+      "en": "Canada is a member of La Francophonie and of the Commonwealth at the same time.",
+      "fr": "Le Canada est à la fois membre de la Francophonie et du Commonwealth."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Those memberships reflect both British and French historical ties. They sit beside UN and NATO membership."
+      "en": "Those memberships reflect both British and French historical ties. They sit beside UN and NATO membership.",
+      "fr": "Ces adhésions reflètent les liens historiques tant britanniques que français. Elles s’ajoutent à l’appartenance à l’ONU et à l’OTAN."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1072,29 +1262,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The 1960s “points system” for immigrants was designed to:"
+      "en": "The 1960s “points system” for immigrants was designed to:",
+      "fr": "Le « système de points » pour les immigrants, dans les années 1960, visait à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Select newcomers by skills and other neutral criteria rather than by race"
+        "en": "Select newcomers by skills and other neutral criteria rather than by race",
+        "fr": "Sélectionner les nouveaux arrivants selon leurs compétences et d’autres critères neutres plutôt que selon la race"
       },
       {
         "id": "b",
-        "en": "Admit only British farmers"
+        "en": "Admit only British farmers",
+        "fr": "N’admettre que des agriculteurs britanniques"
       },
       {
         "id": "c",
-        "en": "End all immigration"
+        "en": "End all immigration",
+        "fr": "Mettre fin à toute immigration"
       },
       {
         "id": "d",
-        "en": "Replace elections"
+        "en": "Replace elections",
+        "fr": "Remplacer les élections"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a landmark of modern immigration policy, even though discrimination did not vanish overnight."
+      "en": "It is a landmark of modern immigration policy, even though discrimination did not vanish overnight.",
+      "fr": "C’est un jalon de la politique d’immigration moderne, même si la discrimination n’a pas disparu du jour au lendemain."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1105,29 +1301,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Avro Arrow was:"
+      "en": "The Avro Arrow was:",
+      "fr": "L’Avro Arrow était :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A Canadian-designed interceptor jet cancelled in 1959"
+        "en": "A Canadian-designed interceptor jet cancelled in 1959",
+        "fr": "Un avion intercepteur de conception canadienne, dont le projet a été annulé en 1959"
       },
       {
         "id": "b",
-        "en": "A Confederation railway engine"
+        "en": "A Confederation railway engine",
+        "fr": "Une locomotive du chemin de fer de la Confédération"
       },
       {
         "id": "c",
-        "en": "The first maple-leaf flag"
+        "en": "The first maple-leaf flag",
+        "fr": "Le premier drapeau à la feuille d’érable"
       },
       {
         "id": "d",
-        "en": "A Senate reform bill"
+        "en": "A Senate reform bill",
+        "fr": "Un projet de loi sur la réforme du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Its cancellation is a modern-Canada industrial and political story, not a 19th-century one."
+      "en": "Its cancellation is a modern-Canada industrial and political story, not a 19th-century one.",
+      "fr": "Son annulation est une histoire industrielle et politique du Canada moderne, et non du XIXe siècle."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1138,29 +1340,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s armed forces were unified in 1968 so that:"
+      "en": "Canada’s armed forces were unified in 1968 so that:",
+      "fr": "Les forces armées du Canada ont été unifiées en 1968, de sorte que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Navy, army, and air force were brought under one Canadian Forces structure"
+        "en": "Navy, army, and air force were brought under one Canadian Forces structure",
+        "fr": "La marine, l’armée de terre et l’aviation ont été regroupées dans une seule structure, les Forces canadiennes"
       },
       {
         "id": "b",
-        "en": "The RCMP replaced the military"
+        "en": "The RCMP replaced the military",
+        "fr": "La GRC a remplacé les militaires"
       },
       {
         "id": "c",
-        "en": "NATO was dissolved"
+        "en": "NATO was dissolved",
+        "fr": "L’OTAN a été dissoute"
       },
       {
         "id": "d",
-        "en": "Conscription became permanent"
+        "en": "Conscription became permanent",
+        "fr": "La conscription est devenue permanente"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Unification is a Pearson/Trudeau-era defence reform. Distinct navy and air identities later returned in branding, but one force remains."
+      "en": "Unification is a Pearson/Trudeau-era defence reform. Distinct navy and air identities later returned in branding, but one force remains.",
+      "fr": "L’unification est une réforme de la défense de l’ère Pearson-Trudeau. Des identités distinctes pour la marine et l’aviation sont revenues plus tard dans l’image de marque, mais la force demeure unique."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1171,21 +1379,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Expo 67 in Montreal was a world’s fair that marked Canada’s centennial year."
+      "en": "Expo 67 in Montreal was a world’s fair that marked Canada’s centennial year.",
+      "fr": "Expo 67, à Montréal, était une exposition universelle qui a marqué l’année du centenaire du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Centennial celebrations in 1967, including Expo, are a modern-Canada cultural landmark."
+      "en": "Centennial celebrations in 1967, including Expo, are a modern-Canada cultural landmark.",
+      "fr": "Les fêtes du centenaire de 1967, dont Expo, sont un repère culturel du Canada moderne."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1196,29 +1408,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Clarity Act (2000) is about:"
+      "en": "The Clarity Act (2000) is about:",
+      "fr": "La Loi sur la clarté référendaire (2000) porte sur :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Rules for any future secession referendum and negotiation"
+        "en": "Rules for any future secession referendum and negotiation",
+        "fr": "Les règles encadrant tout futur référendum sur la sécession et les négociations qui suivraient"
       },
       {
         "id": "b",
-        "en": "How to sing O Canada"
+        "en": "How to sing O Canada",
+        "fr": "La façon de chanter Ô Canada"
       },
       {
         "id": "c",
-        "en": "Municipal snow clearing"
+        "en": "Municipal snow clearing",
+        "fr": "Le déneigement municipal"
       },
       {
         "id": "d",
-        "en": "The colour of the penny"
+        "en": "The colour of the penny",
+        "fr": "La couleur de la pièce de un cent"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "After the close 1995 Quebec vote, Parliament set conditions for a clear question and a clear majority before talks."
+      "en": "After the close 1995 Quebec vote, Parliament set conditions for a clear question and a clear majority before talks.",
+      "fr": "Après le vote serré de 1995 au Québec, le Parlement a fixé des conditions : une question claire et une majorité claire avant toute négociation."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1229,29 +1447,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Same-sex marriage became legal across Canada in the 2000s through:"
+      "en": "Same-sex marriage became legal across Canada in the 2000s through:",
+      "fr": "Le mariage entre personnes de même sexe est devenu légal partout au Canada dans les années 2000 :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Court decisions and then a federal civil-marriage law"
+        "en": "Court decisions and then a federal civil-marriage law",
+        "fr": "Par des décisions des tribunaux, puis par une loi fédérale sur le mariage civil"
       },
       {
         "id": "b",
-        "en": "The Quebec Act of 1774"
+        "en": "The Quebec Act of 1774",
+        "fr": "Par l’Acte de Québec de 1774"
       },
       {
         "id": "c",
-        "en": "A 1867 Confederation term"
+        "en": "A 1867 Confederation term",
+        "fr": "Par une condition de la Confédération de 1867"
       },
       {
         "id": "d",
-        "en": "A municipal by-law in Whitehorse only"
+        "en": "A municipal by-law in Whitehorse only",
+        "fr": "Par un règlement municipal de Whitehorse seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a modern equality-rights story, not a colonial one."
+      "en": "It is a modern equality-rights story, not a colonial one.",
+      "fr": "C’est une histoire moderne de droits à l’égalité, et non une histoire de l’époque coloniale."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1262,29 +1486,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canada Health Act is meant to:"
+      "en": "The Canada Health Act is meant to:",
+      "fr": "La Loi canadienne sur la santé vise à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Set national principles for insured health services that provinces must meet to receive full federal funding"
+        "en": "Set national principles for insured health services that provinces must meet to receive full federal funding",
+        "fr": "Fixer des principes nationaux pour les services de santé assurés, que les provinces doivent respecter pour recevoir la pleine contribution fédérale"
       },
       {
         "id": "b",
-        "en": "Put Ottawa in charge of every hospital’s daily staffing"
+        "en": "Put Ottawa in charge of every hospital’s daily staffing",
+        "fr": "Confier à Ottawa la gestion quotidienne du personnel de chaque hôpital"
       },
       {
         "id": "c",
-        "en": "Abolish provincial health ministries"
+        "en": "Abolish provincial health ministries",
+        "fr": "Abolir les ministères provinciaux de la Santé"
       },
       {
         "id": "d",
-        "en": "Replace the Charter"
+        "en": "Replace the Charter",
+        "fr": "Remplacer la Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Public administration, comprehensiveness, universality, portability, and accessibility are the usual principles. Delivery stays provincial."
+      "en": "Public administration, comprehensiveness, universality, portability, and accessibility are the usual principles. Delivery stays provincial.",
+      "fr": "Gestion publique, intégralité, universalité, transférabilité et accessibilité sont les principes habituels. La prestation des services demeure provinciale."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1295,21 +1525,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian Broadcasting Corporation (CBC/Radio-Canada) is a public broadcaster created by Parliament."
+      "en": "The Canadian Broadcasting Corporation (CBC/Radio-Canada) is a public broadcaster created by Parliament.",
+      "fr": "La Société Radio-Canada (CBC/Radio-Canada) est un radiodiffuseur public créé par le Parlement."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is a Crown corporation in culture and information, not a private cable shop and not a political party."
+      "en": "It is a Crown corporation in culture and information, not a private cable shop and not a political party.",
+      "fr": "C’est une société d’État dans le domaine de la culture et de l’information, et non un câblodistributeur privé ni un parti politique."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1320,29 +1554,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The 1988 Winter Olympics in Calgary are an example of:"
+      "en": "The 1988 Winter Olympics in Calgary are an example of:",
+      "fr": "Les Jeux olympiques d’hiver de 1988, à Calgary, sont un exemple :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Modern Canada hosting the world and projecting a national image"
+        "en": "Modern Canada hosting the world and projecting a national image",
+        "fr": "Du Canada moderne qui accueille le monde et projette une image nationale"
       },
       {
         "id": "b",
-        "en": "A Fathers of Confederation meeting"
+        "en": "A Fathers of Confederation meeting",
+        "fr": "D’une rencontre des Pères de la Confédération"
       },
       {
         "id": "c",
-        "en": "The founding of New France"
+        "en": "The founding of New France",
+        "fr": "De la fondation de la Nouvelle-France"
       },
       {
         "id": "d",
-        "en": "The Statute of Westminster signing ceremony"
+        "en": "The Statute of Westminster signing ceremony",
+        "fr": "De la cérémonie de signature du Statut de Westminster"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Montreal 1976 (summer) and Calgary 1988 (winter) are the usual Olympic landmarks in the modern chapter."
+      "en": "Montreal 1976 (summer) and Calgary 1988 (winter) are the usual Olympic landmarks in the modern chapter.",
+      "fr": "Montréal 1976 (été) et Calgary 1988 (hiver) sont les repères olympiques habituels du chapitre moderne."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1353,29 +1593,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Residential-school survivors received a formal federal apology in:"
+      "en": "Residential-school survivors received a formal federal apology in:",
+      "fr": "Les survivants des pensionnats ont reçu des excuses officielles du gouvernement fédéral en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "2008"
+        "en": "2008",
+        "fr": "2008"
       },
       {
         "id": "b",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "c",
-        "en": "1917"
+        "en": "1917",
+        "fr": "1917"
       },
       {
         "id": "d",
-        "en": "1670"
+        "en": "1670",
+        "fr": "1670"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Stephen Harper’s 2008 apology, and the Truth and Reconciliation Commission that followed, are modern-Canada facts."
+      "en": "Stephen Harper’s 2008 apology, and the Truth and Reconciliation Commission that followed, are modern-Canada facts.",
+      "fr": "Les excuses présentées par Stephen Harper en 2008, puis la Commission de vérité et réconciliation qui a suivi, sont des faits du Canada moderne."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1386,29 +1632,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The GST (Goods and Services Tax) is:"
+      "en": "The GST (Goods and Services Tax) is:",
+      "fr": "La TPS (taxe sur les produits et services) est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A federal value-added tax introduced in the Mulroney era"
+        "en": "A federal value-added tax introduced in the Mulroney era",
+        "fr": "Une taxe fédérale sur la valeur ajoutée instaurée à l’époque de Mulroney"
       },
       {
         "id": "b",
-        "en": "A type of Senate veto"
+        "en": "A type of Senate veto",
+        "fr": "Un type de veto du Sénat"
       },
       {
         "id": "c",
-        "en": "A provincial flower"
+        "en": "A provincial flower",
+        "fr": "Une fleur provinciale"
       },
       {
         "id": "d",
-        "en": "A NATO military rank"
+        "en": "A NATO military rank",
+        "fr": "Un grade militaire de l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It replaced the old manufacturers’ sales tax. Provinces later harmonized in some regions."
+      "en": "It replaced the old manufacturers’ sales tax. Provinces later harmonized in some regions.",
+      "fr": "Elle a remplacé l’ancienne taxe de vente des fabricants. Certaines provinces l’ont ensuite harmonisée avec leur propre taxe."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1419,21 +1671,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Equalization is a federal program that transfers money so that provincial governments can offer reasonably comparable services."
+      "en": "Equalization is a federal program that transfers money so that provincial governments can offer reasonably comparable services.",
+      "fr": "La péréquation est un programme fédéral qui transfère des fonds afin que les gouvernements provinciaux puissent offrir des services sensiblement comparables."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is in the Constitution’s commitment to comparable public services. It is not a municipal parking grant."
+      "en": "It is in the Constitution’s commitment to comparable public services. It is not a municipal parking grant.",
+      "fr": "Elle découle de l’engagement constitutionnel envers des services publics comparables. Ce n’est pas une subvention municipale de stationnement."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1444,29 +1700,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s Constitution was “patriated” in 1982, which means:"
+      "en": "Canada’s Constitution was “patriated” in 1982, which means:",
+      "fr": "La Constitution du Canada a été « rapatriée » en 1982, ce qui signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canada gained a domestic amending formula and no longer needed the British Parliament to change it"
+        "en": "Canada gained a domestic amending formula and no longer needed the British Parliament to change it",
+        "fr": "Le Canada s’est doté d’une formule de modification interne et n’avait plus besoin du Parlement britannique pour la modifier"
       },
       {
         "id": "b",
-        "en": "Ottawa moved to Montreal"
+        "en": "Ottawa moved to Montreal",
+        "fr": "Ottawa a déménagé à Montréal"
       },
       {
         "id": "c",
-        "en": "The monarchy was abolished"
+        "en": "The monarchy was abolished",
+        "fr": "La monarchie a été abolie"
       },
       {
         "id": "d",
-        "en": "Quebec became independent"
+        "en": "Quebec became independent",
+        "fr": "Le Québec est devenu indépendant"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Charter arrived in the same package. The Crown remained."
+      "en": "The Charter arrived in the same package. The Crown remained.",
+      "fr": "La Charte est arrivée dans la même entente. La Couronne est demeurée."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1477,29 +1739,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Group of Seven is best known for:"
+      "en": "The Group of Seven is best known for:",
+      "fr": "Le Groupe des Sept est surtout connu pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Paintings of the Canadian landscape in the early 20th century"
+        "en": "Paintings of the Canadian landscape in the early 20th century",
+        "fr": "Ses tableaux du paysage canadien, au début du XXe siècle"
       },
       {
         "id": "b",
-        "en": "Writing the British North America Act"
+        "en": "Writing the British North America Act",
+        "fr": "Avoir rédigé l’Acte de l’Amérique du Nord britannique"
       },
       {
         "id": "c",
-        "en": "Command at Vimy Ridge"
+        "en": "Command at Vimy Ridge",
+        "fr": "Le commandement à la crête de Vimy"
       },
       {
         "id": "d",
-        "en": "Founding NATO"
+        "en": "Founding NATO",
+        "fr": "Avoir fondé l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They helped define a visual idea of Canada. Emily Carr is often taught alongside them, though she was not a member."
+      "en": "They helped define a visual idea of Canada. Emily Carr is often taught alongside them, though she was not a member.",
+      "fr": "Ils ont aidé à définir une représentation visuelle du Canada. On enseigne souvent Emily Carr à leurs côtés, même si elle n’était pas membre du groupe."
     },
     "source": "Discover Canada — Modern Canada"
   },
@@ -1510,29 +1778,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Emergencies Act replaced the old War Measures Act so that:"
+      "en": "The Emergencies Act replaced the old War Measures Act so that:",
+      "fr": "La Loi sur les mesures d’urgence a remplacé l’ancienne Loi sur les mesures de guerre afin que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Emergency powers are narrower and more accountable to Parliament"
+        "en": "Emergency powers are narrower and more accountable to Parliament",
+        "fr": "Les pouvoirs d’urgence soient plus restreints et davantage redevables au Parlement"
       },
       {
         "id": "b",
-        "en": "The Prime Minister can cancel elections forever"
+        "en": "The Prime Minister can cancel elections forever",
+        "fr": "Le premier ministre puisse annuler les élections à jamais"
       },
       {
         "id": "c",
-        "en": "Provinces disappear during a snowstorm"
+        "en": "Provinces disappear during a snowstorm",
+        "fr": "Les provinces disparaissent pendant une tempête de neige"
       },
       {
         "id": "d",
-        "en": "The Charter is suspended automatically every winter"
+        "en": "The Charter is suspended automatically every winter",
+        "fr": "La Charte soit suspendue automatiquement chaque hiver"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "After the October Crisis, Canada redesigned emergency law. It is still exceptional, not a routine governing tool."
+      "en": "After the October Crisis, Canada redesigned emergency law. It is still exceptional, not a routine governing tool.",
+      "fr": "Après la crise d’Octobre, le Canada a repensé son droit d’urgence. Il demeure exceptionnel et n’est pas un outil de gouvernance courant."
     },
     "source": "Discover Canada — Modern Canada"
   }

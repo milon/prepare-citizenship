@@ -1,0 +1,580 @@
+import type { ChapterId, RegionCode } from '../content/schema';
+import { CHAPTERS, REGION_LABELS } from './chapters';
+
+export type Locale = 'en' | 'fr';
+
+export type LocalizedText = {
+  en: string;
+  fr?: string | null;
+};
+
+const CHAPTER_TITLE_FR: Record<ChapterId, string> = {
+  'rights-and-responsibilities': 'Droits et responsabilités',
+  'who-we-are': 'Qui nous sommes',
+  'canadas-history': 'L’histoire du Canada',
+  'modern-canada': 'Le Canada moderne',
+  'how-canadians-govern-themselves': 'Comment les Canadiens se gouvernent',
+  'federal-elections': 'Les élections fédérales',
+  'the-justice-system': 'Le système judiciaire',
+  'canadian-symbols': 'Les symboles canadiens',
+  'canadas-economy': 'L’économie du Canada',
+  'canadas-regions': 'Les régions du Canada',
+};
+
+const SOURCE_HEADING_FR: Record<ChapterId, string> = {
+  'rights-and-responsibilities': 'Droits et responsabilités de la citoyenneté',
+  'who-we-are': 'Qui nous sommes',
+  'canadas-history': 'L’histoire du Canada',
+  'modern-canada': 'Le Canada moderne',
+  'how-canadians-govern-themselves': 'Comment les Canadiens se gouvernent',
+  'federal-elections': 'Les élections fédérales',
+  'the-justice-system': 'Le système judiciaire',
+  'canadian-symbols': 'Les symboles canadiens',
+  'canadas-economy': 'L’économie du Canada',
+  'canadas-regions': 'Les régions du Canada',
+};
+
+export const REGION_LABELS_FR: Record<RegionCode, string> = {
+  ab: 'Alberta',
+  bc: 'Colombie-Britannique',
+  mb: 'Manitoba',
+  nb: 'Nouveau-Brunswick',
+  nl: 'Terre-Neuve-et-Labrador',
+  ns: 'Nouvelle-Écosse',
+  nt: 'Territoires du Nord-Ouest',
+  nu: 'Nunavut',
+  on: 'Ontario',
+  pe: 'Île-du-Prince-Édouard',
+  qc: 'Québec',
+  sk: 'Saskatchewan',
+  yt: 'Yukon',
+};
+
+type Dict = Record<string, string>;
+
+const en: Dict = {
+  'nav.today': 'Today',
+  'nav.chapters': 'Chapters',
+  'nav.flashcards': 'Flashcards',
+  'nav.cards': 'Cards',
+  'nav.practice': 'Practice',
+  'nav.mock': 'Mock exam',
+  'nav.mockShort': 'Mock',
+  'nav.progress': 'Progress',
+  'nav.faq': 'FAQ',
+  'nav.settings': 'Settings',
+  'nav.primary': 'Primary',
+  'nav.sections': 'Sections',
+  'skip': 'Skip to content',
+  'brand.addName': 'Add your name',
+  'rail.streak': 'Study streak',
+  'rail.accuracy': 'Accuracy',
+  'rail.noAnswers': 'No answers yet',
+  'rail.days': '{n} days',
+  'rail.day': '{n} day',
+  'rail.of': '{pct}% of {total}',
+  'theme.system': 'Auto',
+  'theme.light': 'Light',
+  'theme.dark': 'Dark',
+  'theme.switch': 'Theme: {current}. Switch to {next}.',
+  'storage.banner':
+    'Progress won’t save in this browser. Check that you are not in private mode and that storage is not full.',
+  'gate.eyebrow': 'First step',
+  'gate.title': 'Choose your province or territory',
+  'gate.lede':
+    'Mock exams include questions about the place you live. You can change this later in Settings.',
+  'gate.continue': 'Continue',
+  'gate.storage':
+    'Progress won’t save in this browser. Check that you are not in private mode with storage blocked.',
+  'field.province': 'Province or territory',
+  'field.select': 'Select one',
+  'cards.eyebrow': 'Recall',
+  'cards.title': 'Flashcards',
+  'cards.lede':
+    'Flip the card, then mark whether you knew it. New cards are due today; known cards come back in three days, then a week.',
+  'cards.chapter': 'Chapter',
+  'cards.all': 'All chapters',
+  'cards.deck': 'Deck',
+  'cards.due': 'Due now',
+  'cards.shuffle': 'Shuffle all',
+  'cards.mistakes': 'Review mistakes',
+  'cards.none': 'No cards in this deck. Try another chapter or shuffle all.',
+  'cards.saveFailed': 'Progress won’t save in this browser.',
+  'cards.prompt': 'Prompt',
+  'cards.answer': 'Answer',
+  'cards.still': 'Still learning',
+  'cards.gotIt': 'Got it',
+  'cards.known': 'Mark as known',
+  'cards.print': 'Print this deck',
+  'cards.box1': 'Learning',
+  'cards.box2': 'Reviewing',
+  'cards.box3': 'Known',
+  'cards.noCards': 'No cards',
+  'cards.of': '{n} of {total}',
+  'cards.statusPrompt': 'Prompt showing',
+  'cards.statusAnswer': 'Answer showing',
+  'cards.statusDone': 'Deck complete',
+  'cards.flipPrompt': 'Flip card. Prompt is showing.',
+  'cards.flipAnswer': 'Flip card. Answer is showing.',
+  'practice.eyebrow': 'Practice',
+  'practice.title': 'Chapter quiz',
+  'practice.lede':
+    'Ten questions, untimed. You’ll see the answer and a short explanation after each choice.',
+  'practice.set': 'Set',
+  'practice.weakest': 'My weakest chapter',
+  'practice.none': 'No questions',
+  'practice.position': 'Question {n} of {total}',
+  'practice.tf': 'True or false',
+  'practice.mcq': 'Multiple choice',
+  'practice.keys': 'Number keys 1 to 4 select an answer.',
+  'practice.correct': 'Correct',
+  'practice.incorrect': 'Incorrect',
+  'practice.next': 'Next question',
+  'practice.results': 'See results',
+  'practice.score': 'You scored {score} / {total}.',
+  'practice.again': 'Practice again',
+  'practice.weakWarn':
+    'Not enough quiz data yet for a weakest-chapter set. Showing a mixed practice instead.',
+  'practice.weakOk': 'Practicing your weakest chapter so far.',
+  'mock.eyebrow': 'Mock exam',
+  'mock.title': '20 questions, 45 minutes',
+  'mock.lede':
+    'Pass is 15/20. Questions are balanced across chapters and include an item for your province. You can flag and jump around. The clock cannot be paused, and the exam submits itself at 0:00. Answers stay hidden until you submit.',
+  'mock.luck': 'Good luck, {name}.',
+  'mock.start': 'Start exam',
+  'mock.warning': 'Five minutes remaining.',
+  'mock.flagged': 'Flagged',
+  'mock.flag': 'Flag for review',
+  'mock.unflag': 'Remove flag',
+  'mock.prev': 'Previous',
+  'mock.next': 'Next',
+  'mock.submit': 'Submit exam',
+  'mock.time': 'Time remaining {clock}',
+  'mock.passed': 'Passed',
+  'mock.failed': 'Below 15',
+  'mock.reviewTitle': 'Your result',
+  'mock.autosubmit': 'Time expired — this attempt was submitted automatically.',
+  'mock.breakdown': 'Chapter breakdown',
+  'mock.new': 'New attempt',
+  'mock.yourAnswer': 'Your answer',
+  'mock.correctAnswer': 'Correct answer:',
+  'mock.unanswered': 'Unanswered',
+  'settings.eyebrow': 'Settings',
+  'settings.title': 'Your study place',
+  'settings.lede':
+    'Mock exams include regional questions for the province or territory you choose. Your name is optional and stays on this device.',
+  'settings.name': 'Your name',
+  'settings.optional': 'Optional',
+  'settings.save': 'Save',
+  'settings.saved': 'Saved.',
+  'settings.display': 'Display',
+  'settings.displayLede':
+    'Language, theme, and text size stay on this device with your other progress. The theme button in the header switches between auto, light, and dark too.',
+  'settings.language': 'Language',
+  'settings.lang.en': 'English',
+  'settings.lang.fr': 'Français',
+  'settings.theme': 'Theme',
+  'settings.font': 'Text size',
+  'settings.font.md': 'Default',
+  'settings.font.lg': 'Large',
+  'settings.font.xl': 'Extra large',
+  'settings.data': 'Your data',
+  'settings.dataLede':
+    'Progress stays on this device. Export a JSON backup before you clear the browser, or import one you saved earlier. Add this site to your home screen so iOS is less likely to evict stored progress.',
+  'settings.export': 'Export progress',
+  'settings.import': 'Import progress',
+  'settings.reset': 'Reset progress',
+  'settings.about': 'About this site',
+  'settings.aboutLede':
+    'Independent practice, not the official test. The FAQ covers the mock format, where progress is stored, and how this bank differs from IRCC’s questions.',
+  'settings.exported': 'Progress file downloaded.',
+  'settings.imported': 'Progress imported.',
+  'settings.resetOk': 'Progress reset.',
+  'settings.importConfirm':
+    'Importing will replace the progress saved on this device. Continue?',
+  'settings.resetConfirm':
+    'Reset quiz history, flashcards, and missed questions? Your name, province, language, and display settings will be kept.',
+  'settings.importFail': 'Could not save imported progress in this browser.',
+  'settings.importJson': 'That file could not be read as JSON.',
+  'dash.progress': 'Progress',
+  'dash.readinessHeading': 'Readiness dashboard',
+  'dash.possessive': '{name} readiness',
+  'dash.officials': 'Officials last checked {date}.',
+  'dash.next': 'Recommended next',
+  'dash.readiness': 'Readiness',
+  'dash.seen': 'Questions seen',
+  'dash.accuracy': 'Accuracy',
+  'dash.streak': 'Study streak',
+  'dash.due': 'Cards due',
+  'dash.mocks': 'Mocks passed',
+  'dash.answers': '{correct} of {total} answers',
+  'dash.noQuiz': 'No quiz answers yet',
+  'dash.ofQuestions': 'of {total}',
+  'dash.unique': 'unique questions answered',
+  'dash.notStarted': 'Not started',
+  'dash.gettingStarted': 'Getting started',
+  'dash.unlock': 'Finish {n} more mock to unlock a readiness call.',
+  'dash.unlocks': 'Finish {n} more mocks to unlock a readiness call.',
+  'dash.testReady': 'Test ready',
+  'dash.readyNote': 'Last three mocks passed and practiced chapters are at 70% or better.',
+  'dash.notReady': 'Not ready yet',
+  'dash.fixOne': '1 thing to fix before the test.',
+  'dash.fixMany': '{n} things to fix before the test.',
+  'dash.keep': 'Keep studying',
+  'rec.read.title': 'Start with chapter one',
+  'rec.read.blurb':
+    'Read Rights and Responsibilities, then drill the same material as flashcards. Ten minutes is enough for a first session.',
+  'rec.read.cta': 'Read the chapter',
+  'rec.read.alt': 'Try a practice quiz',
+  'rec.mock.first': 'Sit your first mock exam',
+  'rec.mock.next': 'Sit mock exam #{n}',
+  'rec.mock.blurb':
+    '20 questions, 45 minutes, 15 to pass — the same shape as the real test. Readiness needs 3 passes.',
+  'rec.mock.cta': 'Start mock exam',
+  'rec.mock.alt': 'Practice 10 instead',
+  'rec.drill.title': 'Drill {chapter}',
+  'rec.drill.blurb':
+    'It is at {rate} after {total} answers, below the 70% you want before the test.',
+  'rec.drill.cta': 'Practice this chapter',
+  'rec.drill.alt': 'Flashcards for it',
+  'rec.cards.one': '1 flashcard due',
+  'rec.cards.many': '{n} flashcards due',
+  'rec.cards.blurb': 'Clear today’s box to keep the spaced schedule honest, then take a quiz.',
+  'rec.cards.cta': 'Review cards',
+  'rec.cards.alt': 'Practice quiz',
+  'rec.maintain.title': 'You are tracking well',
+  'rec.maintain.blurb':
+    'Nothing is overdue. Keep the streak alive with a short set, or sit another mock to confirm.',
+  'rec.maintain.cta': 'Practice quiz',
+  'rec.maintain.alt': 'Mock exam',
+  'reason.mock': 'A recent mock scored below 15/20.',
+  'reason.chapter': '{chapter} is at {rate}% after {total} answers (need 70%).',
+  'chapter.eyebrow': 'Chapter summary',
+  'chapter.headOfState': 'Head of State',
+  'chapter.gg': 'Governor General',
+  'chapter.pm': 'Prime Minister',
+  'chapter.party': 'Party in power',
+  'chapter.regions': 'Region subpages',
+  'chapters.eyebrow': 'Discover Canada',
+  'chapters.title': 'Chapter summaries',
+  'chapters.lede':
+    'These pages are original study notes, not a copy of the official guide. Learn the shape of each topic, then drill it with flashcards and a quiz.',
+  'chapters.ten': 'The ten chapters',
+  'chapters.tenBlurb': 'Each one ends with links to its flashcards and chapter quiz.',
+  'chapters.regionsBlurb': 'Mock exams include questions about the province or territory you choose.',
+  'home.chaptersBlurb': 'Original study notes, then flashcards and a quiz for each one.',
+  'anthem.title': 'O Canada',
+  'anthem.lede':
+    'The national anthem is on the test and at the citizenship ceremony. Lyrics below are the official English and French versions. Recordings live on Canada.ca (Toronto Symphony Orchestra — credit the artists if you reuse them).',
+  'anthem.listen': 'Listen on Canada.ca',
+  'anthem.hear': 'Hear the title',
+  'anthem.english': 'English lyrics',
+  'anthem.french': 'French lyrics',
+  'home.disclaimer': 'Independent practice, not the official test',
+};
+
+const fr: Dict = {
+  'nav.today': 'Aujourd’hui',
+  'nav.chapters': 'Chapitres',
+  'nav.flashcards': 'Cartes',
+  'nav.cards': 'Cartes',
+  'nav.practice': 'Exercices',
+  'nav.mock': 'Examen blanc',
+  'nav.mockShort': 'Examen',
+  'nav.progress': 'Progrès',
+  'nav.faq': 'FAQ',
+  'nav.settings': 'Réglages',
+  'nav.primary': 'Principal',
+  'nav.sections': 'Sections',
+  'skip': 'Aller au contenu',
+  'brand.addName': 'Ajouter votre nom',
+  'rail.streak': 'Série d’étude',
+  'rail.accuracy': 'Précision',
+  'rail.noAnswers': 'Pas encore de réponses',
+  'rail.days': '{n} jours',
+  'rail.day': '{n} jour',
+  'rail.of': '{pct} % de {total}',
+  'theme.system': 'Auto',
+  'theme.light': 'Clair',
+  'theme.dark': 'Sombre',
+  'theme.switch': 'Thème : {current}. Passer à {next}.',
+  'storage.banner':
+    'Le progrès ne sera pas enregistré dans ce navigateur. Vérifiez que vous n’êtes pas en navigation privée et que le stockage n’est pas plein.',
+  'gate.eyebrow': 'Première étape',
+  'gate.title': 'Choisissez votre province ou territoire',
+  'gate.lede':
+    'Les examens blancs incluent des questions sur l’endroit où vous vivez. Vous pourrez changer ce choix plus tard dans les Réglages.',
+  'gate.continue': 'Continuer',
+  'gate.storage':
+    'Le progrès ne sera pas enregistré dans ce navigateur. Vérifiez que vous n’êtes pas en navigation privée avec le stockage bloqué.',
+  'field.province': 'Province ou territoire',
+  'field.select': 'Choisissez',
+  'cards.eyebrow': 'Mémorisation',
+  'cards.title': 'Cartes-éclair',
+  'cards.lede':
+    'Retournez la carte, puis indiquez si vous saviez la réponse. Les nouvelles cartes reviennent aujourd’hui; les cartes connues, dans trois jours, puis une semaine.',
+  'cards.chapter': 'Chapitre',
+  'cards.all': 'Tous les chapitres',
+  'cards.deck': 'Paquet',
+  'cards.due': 'À revoir',
+  'cards.shuffle': 'Tout mélanger',
+  'cards.mistakes': 'Revoir les erreurs',
+  'cards.none': 'Aucune carte dans ce paquet. Essayez un autre chapitre ou mélangez tout.',
+  'cards.saveFailed': 'Le progrès ne sera pas enregistré dans ce navigateur.',
+  'cards.prompt': 'Question',
+  'cards.answer': 'Réponse',
+  'cards.still': 'À revoir',
+  'cards.gotIt': 'Je savais',
+  'cards.known': 'Marquer comme connue',
+  'cards.print': 'Imprimer ce paquet',
+  'cards.box1': 'Apprentissage',
+  'cards.box2': 'Révision',
+  'cards.box3': 'Connue',
+  'cards.noCards': 'Aucune carte',
+  'cards.of': '{n} sur {total}',
+  'cards.statusPrompt': 'Question affichée',
+  'cards.statusAnswer': 'Réponse affichée',
+  'cards.statusDone': 'Paquet terminé',
+  'cards.flipPrompt': 'Retourner la carte. La question est affichée.',
+  'cards.flipAnswer': 'Retourner la carte. La réponse est affichée.',
+  'practice.eyebrow': 'Exercices',
+  'practice.title': 'Quiz de chapitre',
+  'practice.lede':
+    'Dix questions, sans limite de temps. La réponse et une courte explication s’affichent après chaque choix.',
+  'practice.set': 'Ensemble',
+  'practice.weakest': 'Mon chapitre le plus faible',
+  'practice.none': 'Aucune question',
+  'practice.position': 'Question {n} sur {total}',
+  'practice.tf': 'Vrai ou faux',
+  'practice.mcq': 'Choix multiple',
+  'practice.keys': 'Les touches 1 à 4 choisissent une réponse.',
+  'practice.correct': 'Bonne réponse',
+  'practice.incorrect': 'Mauvaise réponse',
+  'practice.next': 'Question suivante',
+  'practice.results': 'Voir les résultats',
+  'practice.score': 'Résultat : {score} / {total}.',
+  'practice.again': 'Recommencer',
+  'practice.weakWarn':
+    'Pas assez de données pour un ensemble « chapitre faible ». Voici un mélange à la place.',
+  'practice.weakOk': 'Vous pratiquez votre chapitre le plus faible pour l’instant.',
+  'mock.eyebrow': 'Examen blanc',
+  'mock.title': '20 questions, 45 minutes',
+  'mock.lede':
+    'La note de passage est 15/20. Les questions sont réparties entre les chapitres et incluent un item pour votre province. Vous pouvez marquer et naviguer. Le chronomètre ne se met pas en pause, et l’examen s’envoie à 0:00. Les réponses restent cachées jusqu’à l’envoi.',
+  'mock.luck': 'Bonne chance, {name}.',
+  'mock.start': 'Commencer l’examen',
+  'mock.warning': 'Cinq minutes restantes.',
+  'mock.flagged': 'Marquée',
+  'mock.flag': 'Marquer pour révision',
+  'mock.unflag': 'Retirer le marqueur',
+  'mock.prev': 'Précédente',
+  'mock.next': 'Suivante',
+  'mock.submit': 'Envoyer l’examen',
+  'mock.time': 'Temps restant {clock}',
+  'mock.passed': 'Réussi',
+  'mock.failed': 'Sous 15',
+  'mock.reviewTitle': 'Votre résultat',
+  'mock.autosubmit': 'Temps écoulé — cette tentative a été envoyée automatiquement.',
+  'mock.breakdown': 'Répartition par chapitre',
+  'mock.new': 'Nouvelle tentative',
+  'mock.yourAnswer': 'Votre réponse',
+  'mock.correctAnswer': 'Bonne réponse :',
+  'mock.unanswered': 'Sans réponse',
+  'settings.eyebrow': 'Réglages',
+  'settings.title': 'Votre espace d’étude',
+  'settings.lede':
+    'Les examens blancs incluent des questions régionales pour la province ou le territoire choisi. Votre nom est facultatif et reste sur cet appareil.',
+  'settings.name': 'Votre nom',
+  'settings.optional': 'Facultatif',
+  'settings.save': 'Enregistrer',
+  'settings.saved': 'Enregistré.',
+  'settings.display': 'Affichage',
+  'settings.displayLede':
+    'La langue, le thème et la taille du texte restent sur cet appareil avec le reste du progrès. Le bouton de thème dans l’en-tête permute aussi auto, clair et sombre.',
+  'settings.language': 'Langue',
+  'settings.lang.en': 'English',
+  'settings.lang.fr': 'Français',
+  'settings.theme': 'Thème',
+  'settings.font': 'Taille du texte',
+  'settings.font.md': 'Par défaut',
+  'settings.font.lg': 'Grande',
+  'settings.font.xl': 'Très grande',
+  'settings.data': 'Vos données',
+  'settings.dataLede':
+    'Le progrès reste sur cet appareil. Exportez une copie JSON avant d’effacer le navigateur, ou importez une copie déjà enregistrée. Ajoutez le site à l’écran d’accueil pour qu’iOS soit moins susceptible d’effacer le progrès.',
+  'settings.export': 'Exporter le progrès',
+  'settings.import': 'Importer le progrès',
+  'settings.reset': 'Réinitialiser le progrès',
+  'settings.about': 'À propos',
+  'settings.aboutLede':
+    'Exercice indépendant, pas l’examen officiel. La FAQ explique le format de l’examen blanc, le stockage du progrès, et en quoi cette banque diffère des questions d’IRCC.',
+  'settings.exported': 'Fichier de progrès téléchargé.',
+  'settings.imported': 'Progrès importé.',
+  'settings.resetOk': 'Progrès réinitialisé.',
+  'settings.importConfirm':
+    'L’importation remplacera le progrès enregistré sur cet appareil. Continuer?',
+  'settings.resetConfirm':
+    'Réinitialiser l’historique, les cartes et les erreurs? Votre nom, province, langue et affichage seront conservés.',
+  'settings.importFail': 'Impossible d’enregistrer le progrès importé dans ce navigateur.',
+  'settings.importJson': 'Ce fichier n’a pas pu être lu comme JSON.',
+  'dash.progress': 'Progrès',
+  'dash.readinessHeading': 'Tableau de préparation',
+  'dash.possessive': 'Préparation de {name}',
+  'dash.officials': 'Titulaires vérifiés le {date}.',
+  'dash.next': 'Prochaine étape',
+  'dash.readiness': 'Préparation',
+  'dash.seen': 'Questions vues',
+  'dash.accuracy': 'Précision',
+  'dash.streak': 'Série d’étude',
+  'dash.due': 'Cartes à revoir',
+  'dash.mocks': 'Examens réussis',
+  'dash.answers': '{correct} sur {total} réponses',
+  'dash.noQuiz': 'Pas encore de quiz',
+  'dash.ofQuestions': 'sur {total}',
+  'dash.unique': 'questions uniques répondues',
+  'dash.notStarted': 'Pas commencé',
+  'dash.gettingStarted': 'En cours',
+  'dash.unlock': 'Terminez encore {n} examen blanc pour débloquer un verdict.',
+  'dash.unlocks': 'Terminez encore {n} examens blancs pour débloquer un verdict.',
+  'dash.testReady': 'Prêt pour l’examen',
+  'dash.readyNote':
+    'Les trois derniers examens blancs sont réussis et les chapitres pratiqués sont à 70 % ou plus.',
+  'dash.notReady': 'Pas encore prêt',
+  'dash.fixOne': '1 point à corriger avant l’examen.',
+  'dash.fixMany': '{n} points à corriger avant l’examen.',
+  'dash.keep': 'Continuer',
+  'rec.read.title': 'Commencez par le premier chapitre',
+  'rec.read.blurb':
+    'Lisez Droits et responsabilités, puis les mêmes faits en cartes-éclair. Dix minutes suffisent pour une première séance.',
+  'rec.read.cta': 'Lire le chapitre',
+  'rec.read.alt': 'Faire un quiz',
+  'rec.mock.first': 'Passez votre premier examen blanc',
+  'rec.mock.next': 'Passez l’examen blanc n° {n}',
+  'rec.mock.blurb':
+    '20 questions, 45 minutes, 15 pour réussir — le même format que l’examen. La préparation exige 3 réussites.',
+  'rec.mock.cta': 'Commencer l’examen blanc',
+  'rec.mock.alt': '10 questions d’exercice',
+  'rec.drill.title': 'Travailler {chapter}',
+  'rec.drill.blurb':
+    'Ce chapitre est à {rate} après {total} réponses, sous les 70 % visés avant l’examen.',
+  'rec.drill.cta': 'Quiz de ce chapitre',
+  'rec.drill.alt': 'Cartes de ce chapitre',
+  'rec.cards.one': '1 carte à revoir',
+  'rec.cards.many': '{n} cartes à revoir',
+  'rec.cards.blurb': 'Videz la boîte du jour pour respecter l’espacement, puis faites un quiz.',
+  'rec.cards.cta': 'Revoir les cartes',
+  'rec.cards.alt': 'Quiz',
+  'rec.maintain.title': 'Vous tenez le rythme',
+  'rec.maintain.blurb':
+    'Rien n’est en retard. Gardez la série avec un court ensemble, ou confirmez avec un autre examen blanc.',
+  'rec.maintain.cta': 'Quiz',
+  'rec.maintain.alt': 'Examen blanc',
+  'reason.mock': 'Un examen blanc récent a moins de 15/20.',
+  'reason.chapter': '{chapter} est à {rate} % après {total} réponses (il faut 70 %).',
+  'chapter.eyebrow': 'Résumé de chapitre',
+  'chapter.headOfState': 'Chef de l’État',
+  'chapter.gg': 'Gouverneur général',
+  'chapter.pm': 'Premier ministre',
+  'chapter.party': 'Parti au pouvoir',
+  'chapter.regions': 'Sous-pages régionales',
+  'chapters.eyebrow': 'Découvrir le Canada',
+  'chapters.title': 'Résumés de chapitres',
+  'chapters.lede':
+    'Ces pages sont des notes d’étude originales, pas une copie du guide officiel. Apprenez la forme de chaque sujet, puis entraînez-vous avec les cartes et un quiz.',
+  'chapters.ten': 'Les dix chapitres',
+  'chapters.tenBlurb': 'Chacun se termine par des liens vers ses cartes et son quiz.',
+  'chapters.regionsBlurb':
+    'Les examens blancs comprennent des questions sur la province ou le territoire que vous choisissez.',
+  'home.chaptersBlurb': 'Notes d’étude originales, puis cartes et quiz pour chacun.',
+  'anthem.title': 'Ô Canada',
+  'anthem.lede':
+    'L’hymne national est à l’examen et à la cérémonie de citoyenneté. Les paroles ci-dessous sont les versions officielles. Les enregistrements sont sur Canada.ca (Orchestre symphonique de Toronto — créditez les artistes si vous les réutilisez).',
+  'anthem.listen': 'Écouter sur Canada.ca',
+  'anthem.hear': 'Entendre le titre',
+  'anthem.english': 'Paroles anglaises',
+  'anthem.french': 'Paroles françaises',
+  'home.disclaimer': 'Exercice indépendant, pas l’examen officiel',
+};
+
+const dictionaries: Record<Locale, Dict> = { en, fr };
+
+export function isLocale(value: unknown): value is Locale {
+  return value === 'en' || value === 'fr';
+}
+
+export function t(key: string, locale: Locale, vars?: Record<string, string | number>): string {
+  const table = dictionaries[locale] ?? en;
+  let value = table[key] ?? en[key] ?? key;
+  if (vars) {
+    for (const [name, replacement] of Object.entries(vars)) {
+      value = value.replaceAll(`{${name}}`, String(replacement));
+    }
+  }
+  return value;
+}
+
+export function pickLocalized(text: LocalizedText | string, locale: Locale): string {
+  if (typeof text === 'string') {
+    return text;
+  }
+  if (locale === 'fr' && text.fr) {
+    return text.fr;
+  }
+  return text.en;
+}
+
+export function localizedChapterTitle(id: ChapterId, locale: Locale): string {
+  if (locale === 'fr') {
+    return CHAPTER_TITLE_FR[id];
+  }
+  const match = CHAPTERS.find((chapter) => chapter.id === id);
+  return match?.title ?? id;
+}
+
+export function localizedRegionLabel(code: RegionCode, locale: Locale): string {
+  return locale === 'fr' ? REGION_LABELS_FR[code] : REGION_LABELS[code];
+}
+
+export function localizedSource(id: ChapterId, locale: Locale): string {
+  if (locale === 'fr') {
+    return `Découvrir le Canada — ${SOURCE_HEADING_FR[id]}`;
+  }
+  const match = CHAPTERS.find((chapter) => chapter.id === id);
+  return `Discover Canada — ${match?.sourceHeading ?? id}`;
+}
+
+export function applyDocumentLocale(locale: Locale) {
+  if (typeof document === 'undefined') {
+    return;
+  }
+  document.documentElement.lang = locale;
+  document.documentElement.dataset.locale = locale;
+  document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
+    const key = el.dataset.i18n;
+    if (key) {
+      el.textContent = t(key, locale);
+    }
+  });
+  document.querySelectorAll<HTMLElement>('[data-i18n-aria]').forEach((el) => {
+    const key = el.dataset.i18nAria;
+    if (key) {
+      el.setAttribute('aria-label', t(key, locale));
+    }
+  });
+  document.querySelectorAll<HTMLElement>('[data-i18n-title]').forEach((el) => {
+    const key = el.dataset.i18nTitle;
+    if (key) {
+      el.setAttribute('title', t(key, locale));
+    }
+  });
+}
+
+export function speakText(text: string, locale: Locale) {
+  if (typeof window === 'undefined' || !window.speechSynthesis) {
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = locale === 'fr' ? 'fr-CA' : 'en-CA';
+  window.speechSynthesis.speak(utterance);
+}

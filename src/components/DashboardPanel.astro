@@ -39,7 +39,8 @@ const progressHref = withBase('/progress/');
             <span x-show="!$store.learner.name">Readiness dashboard</span>
             <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.possessive()} readiness`" />
           </h1>
-          <p class="verified">Officials last checked {lastVerified}.</p>
+          <p class="verified lang-en">Officials last checked {lastVerified}.</p>
+          <p class="verified lang-fr">Titulaires vérifiés le {lastVerified}.</p>
         </div>
       </div>
     )
@@ -111,13 +112,13 @@ const progressHref = withBase('/progress/');
           <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.name}, not ready yet.`"></span>
         </p>
         <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
-          <template x-for="reason in (stats.readiness.reasons || [])" :key="reason">
-            <li x-text="reason"></li>
+          <template x-for="reason in (stats.readiness.reasons || [])" :key="(reason.id || '') + (reason.chapterId || '')">
+            <li x-text="reasonText(reason)"></li>
           </template>
         </ul>
         <p class="stat-sub" x-show="(stats.readiness.keepPracticing || []).length">
           Keep practicing:
-          <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => chapter.title).join(', ')"></span>
+          <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => $store.i18n.chapter(chapter.id)).join(', ')"></span>
         </p>
       </div>
 
@@ -133,7 +134,7 @@ const progressHref = withBase('/progress/');
           <ul class:list={[{ breakdown: true, compact }]} x-show="stats.overallTotal" x-cloak>
             <template x-for="chapter in stats.chapters" :key="chapter.id">
               <li>
-                <strong x-text="chapter.title"></strong>
+                <strong x-text="$store.i18n.chapter(chapter.id)"></strong>
                 <span
                   class="rate"
                   x-text="chapter.total ? percent(chapter.rate) : '—'"

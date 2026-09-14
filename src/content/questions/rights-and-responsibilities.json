@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a mobility right of Canadian citizens?"
+      "en": "Which of these is a mobility right of Canadian citizens?",
+      "fr": "Lequel de ces éléments est un droit de circulation et d’établissement des citoyens canadiens?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The right to live and work in any province or territory"
+        "en": "The right to live and work in any province or territory",
+        "fr": "Le droit de vivre et de travailler dans n’importe quelle province ou n’importe quel territoire"
       },
       {
         "id": "b",
-        "en": "The right to set provincial tax rates"
+        "en": "The right to set provincial tax rates",
+        "fr": "Le droit de fixer les taux d’imposition provinciaux"
       },
       {
         "id": "c",
-        "en": "The right to appoint judges"
+        "en": "The right to appoint judges",
+        "fr": "Le droit de nommer les juges"
       },
       {
         "id": "d",
-        "en": "The right to dissolve Parliament"
+        "en": "The right to dissolve Parliament",
+        "fr": "Le droit de dissoudre le Parlement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canadian citizens may take up residence and pursue a livelihood anywhere in Canada, with limited exceptions set out in law."
+      "en": "Canadian citizens may take up residence and pursue a livelihood anywhere in Canada, with limited exceptions set out in law.",
+      "fr": "Les citoyens canadiens peuvent s’établir et gagner leur vie partout au Canada, sous réserve de quelques exceptions prévues par la loi."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which document is the highest law protecting rights and freedoms in Canada?"
+      "en": "Which document is the highest law protecting rights and freedoms in Canada?",
+      "fr": "Quel document est la loi suprême qui protège les droits et libertés au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Criminal Code"
+        "en": "The Criminal Code",
+        "fr": "Le Code criminel"
       },
       {
         "id": "b",
-        "en": "The Canadian Charter of Rights and Freedoms"
+        "en": "The Canadian Charter of Rights and Freedoms",
+        "fr": "La Charte canadienne des droits et libertés"
       },
       {
         "id": "c",
-        "en": "The British North America Act of 1931"
+        "en": "The British North America Act of 1931",
+        "fr": "L’Acte de l’Amérique du Nord britannique de 1931"
       },
       {
         "id": "d",
-        "en": "The Official Languages Act"
+        "en": "The Official Languages Act",
+        "fr": "La Loi sur les langues officielles"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Charter, part of the Constitution, guarantees fundamental, democratic, mobility, legal, equality, and language rights."
+      "en": "The Charter, part of the Constitution, guarantees fundamental, democratic, mobility, legal, equality, and language rights.",
+      "fr": "La Charte, qui fait partie de la Constitution, garantit les libertés fondamentales ainsi que les droits démocratiques, les droits de circulation, les droits juridiques, les droits à l’égalité et les droits linguistiques."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -72,21 +84,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Serving on a jury when called is a responsibility of Canadian citizenship."
+      "en": "Serving on a jury when called is a responsibility of Canadian citizenship.",
+      "fr": "Faire partie d’un jury lorsqu’on est convoqué est une responsabilité de la citoyenneté canadienne."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Citizenship comes with duties as well as rights. Those duties include obeying the law, serving on a jury if summoned, voting in elections, and helping others in the community."
+      "en": "Citizenship comes with duties as well as rights. Those duties include obeying the law, serving on a jury if summoned, voting in elections, and helping others in the community.",
+      "fr": "La citoyenneté comporte des devoirs autant que des droits. Ces devoirs comprennent respecter la loi, faire partie d’un jury sur convocation, voter aux élections et aider les autres dans la collectivité."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -97,29 +113,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Habeas corpus means that:"
+      "en": "Habeas corpus means that:",
+      "fr": "L’habeas corpus signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Prime Minister can jail opponents without trial"
+        "en": "The Prime Minister can jail opponents without trial",
+        "fr": "Le premier ministre peut emprisonner ses adversaires sans procès"
       },
       {
         "id": "b",
-        "en": "You can ask a court to review whether you are being lawfully detained"
+        "en": "You can ask a court to review whether you are being lawfully detained",
+        "fr": "Vous pouvez demander à un tribunal de vérifier si votre détention est légale"
       },
       {
         "id": "c",
-        "en": "Only the Senate can grant pardons"
+        "en": "Only the Senate can grant pardons",
+        "fr": "Seul le Sénat peut accorder un pardon"
       },
       {
         "id": "d",
-        "en": "Police never need a reason to arrest someone"
+        "en": "Police never need a reason to arrest someone",
+        "fr": "Les policiers n’ont jamais besoin d’un motif pour arrêter quelqu’un"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Habeas corpus is a historic legal protection: detention must have a lawful basis, and a court can test it. Canada inherited this principle from English law."
+      "en": "Habeas corpus is a historic legal protection: detention must have a lawful basis, and a court can test it. Canada inherited this principle from English law.",
+      "fr": "L’habeas corpus est une protection juridique historique : la détention doit avoir un fondement légal, et un tribunal peut en vérifier la validité. Le Canada a hérité ce principe du droit anglais."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -130,29 +152,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a fundamental freedom in the Charter?"
+      "en": "Which of these is a fundamental freedom in the Charter?",
+      "fr": "Laquelle de ces libertés est une liberté fondamentale garantie par la Charte?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Freedom of conscience and religion"
+        "en": "Freedom of conscience and religion",
+        "fr": "La liberté de conscience et de religion"
       },
       {
         "id": "b",
-        "en": "Freedom to ignore a jury summons"
+        "en": "Freedom to ignore a jury summons",
+        "fr": "La liberté d’ignorer une convocation à un jury"
       },
       {
         "id": "c",
-        "en": "Freedom to set the Bank of Canada’s interest rate"
+        "en": "Freedom to set the Bank of Canada’s interest rate",
+        "fr": "La liberté de fixer le taux d’intérêt de la Banque du Canada"
       },
       {
         "id": "d",
-        "en": "Freedom to appoint Supreme Court judges"
+        "en": "Freedom to appoint Supreme Court judges",
+        "fr": "La liberté de nommer les juges de la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Fundamental freedoms include conscience and religion; thought, belief, opinion, and expression; peaceful assembly; and association."
+      "en": "Fundamental freedoms include conscience and religion; thought, belief, opinion, and expression; peaceful assembly; and association.",
+      "fr": "Les libertés fondamentales comprennent la conscience et la religion; la pensée, la croyance, l’opinion et l’expression; la réunion pacifique; et l’association."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -163,29 +191,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The right of citizens to vote and to run for office is an example of:"
+      "en": "The right of citizens to vote and to run for office is an example of:",
+      "fr": "Le droit des citoyens de voter et de se porter candidat est un exemple de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Mobility rights"
+        "en": "Mobility rights",
+        "fr": "Droits de circulation et d’établissement"
       },
       {
         "id": "b",
-        "en": "Democratic rights"
+        "en": "Democratic rights",
+        "fr": "Droits démocratiques"
       },
       {
         "id": "c",
-        "en": "Aboriginal rights"
+        "en": "Aboriginal rights",
+        "fr": "Droits ancestraux"
       },
       {
         "id": "d",
-        "en": "Property rights in the Charter"
+        "en": "Property rights in the Charter",
+        "fr": "Droits de propriété dans la Charte"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Democratic rights include voting in elections for the House of Commons (and provincial legislatures) and being eligible to seek office, with limited exceptions in law."
+      "en": "Democratic rights include voting in elections for the House of Commons (and provincial legislatures) and being eligible to seek office, with limited exceptions in law.",
+      "fr": "Les droits démocratiques comprennent le vote aux élections à la Chambre des communes (et aux assemblées législatives provinciales) ainsi que l’admissibilité à se porter candidat, sous réserve de quelques exceptions prévues par la loi."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -196,29 +230,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Equality rights in the Charter are meant to protect people from:"
+      "en": "Equality rights in the Charter are meant to protect people from:",
+      "fr": "Les droits à l’égalité garantis par la Charte visent à protéger les personnes contre :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Having to pay any taxes"
+        "en": "Having to pay any taxes",
+        "fr": "L’obligation de payer quelque impôt que ce soit"
       },
       {
         "id": "b",
-        "en": "Discrimination by government based on grounds such as race, sex, or religion"
+        "en": "Discrimination by government based on grounds such as race, sex, or religion",
+        "fr": "La discrimination par l’État fondée sur des motifs comme la race, le sexe ou la religion"
       },
       {
         "id": "c",
-        "en": "Losing a private lawsuit"
+        "en": "Losing a private lawsuit",
+        "fr": "La perte d’une poursuite privée"
       },
       {
         "id": "d",
-        "en": "Provincial sales tax"
+        "en": "Provincial sales tax",
+        "fr": "La taxe de vente provinciale"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Section 15 equality rights promise equal protection and benefit of the law without discrimination. They bind government, not every private disagreement."
+      "en": "Section 15 equality rights promise equal protection and benefit of the law without discrimination. They bind government, not every private disagreement.",
+      "fr": "L’article 15 sur les droits à l’égalité promet la même protection et le même bénéfice de la loi, sans discrimination. Ces droits lient l’État, et non chaque désaccord entre particuliers."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -229,21 +269,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Men and women are equal under Canadian law."
+      "en": "Men and women are equal under Canadian law.",
+      "fr": "Les hommes et les femmes sont égaux devant la loi canadienne."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Equality of women and men is a core Canadian value and is protected by the Charter’s equality rights."
+      "en": "Equality of women and men is a core Canadian value and is protected by the Charter’s equality rights.",
+      "fr": "L’égalité des femmes et des hommes est une valeur canadienne fondamentale, protégée par les droits à l’égalité de la Charte."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -254,29 +298,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about religion in Canada is correct?"
+      "en": "Which statement about religion in Canada is correct?",
+      "fr": "Quel énoncé au sujet de la religion au Canada est exact?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canada has an official state church"
+        "en": "Canada has an official state church",
+        "fr": "Le Canada a une Église d’État officielle"
       },
       {
         "id": "b",
-        "en": "Only Christian worship is legal"
+        "en": "Only Christian worship is legal",
+        "fr": "Seul le culte chrétien est légal"
       },
       {
         "id": "c",
-        "en": "Freedom of religion is protected; there is no official state church"
+        "en": "Freedom of religion is protected; there is no official state church",
+        "fr": "La liberté de religion est protégée; il n’y a pas d’Église d’État officielle"
       },
       {
         "id": "d",
-        "en": "Religious schools are banned in every province"
+        "en": "Religious schools are banned in every province",
+        "fr": "Les écoles religieuses sont interdites dans toutes les provinces"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "People may practise their faith—or none—within the limits of the law. Canada does not have an established church."
+      "en": "People may practise their faith—or none—within the limits of the law. Canada does not have an established church.",
+      "fr": "Chacun peut pratiquer sa foi — ou n’en pratiquer aucune — dans les limites de la loi. Le Canada n’a pas d’Église établie."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -287,29 +337,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Aboriginal and treaty rights of the Indigenous peoples of Canada are:"
+      "en": "Aboriginal and treaty rights of the Indigenous peoples of Canada are:",
+      "fr": "Les droits ancestraux et issus de traités des peuples autochtones du Canada sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Abolished by the Charter"
+        "en": "Abolished by the Charter",
+        "fr": "Abolis par la Charte"
       },
       {
         "id": "b",
-        "en": "Recognized and not taken away by the Charter"
+        "en": "Recognized and not taken away by the Charter",
+        "fr": "Reconnus et maintenus par la Charte"
       },
       {
         "id": "c",
-        "en": "Valid only in Yukon"
+        "en": "Valid only in Yukon",
+        "fr": "Valides au Yukon seulement"
       },
       {
         "id": "d",
-        "en": "Decided each year by referendum"
+        "en": "Decided each year by referendum",
+        "fr": "Décidés chaque année par référendum"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Constitution, including the Charter, affirms that it does not abrogate Aboriginal and treaty rights. Those rights have their own constitutional protection."
+      "en": "The Constitution, including the Charter, affirms that it does not abrogate Aboriginal and treaty rights. Those rights have their own constitutional protection.",
+      "fr": "La Constitution, y compris la Charte, confirme qu’elle ne porte pas atteinte aux droits ancestraux et issus de traités. Ces droits bénéficient de leur propre protection constitutionnelle."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -320,29 +376,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "English and French have equal status in:"
+      "en": "English and French have equal status in:",
+      "fr": "L’anglais et le français ont un statut égal :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Every municipal council meeting in Canada"
+        "en": "Every municipal council meeting in Canada",
+        "fr": "À toutes les séances des conseils municipaux du Canada"
       },
       {
         "id": "b",
-        "en": "Parliament and the Government of Canada"
+        "en": "Parliament and the Government of Canada",
+        "fr": "Au Parlement et au gouvernement du Canada"
       },
       {
         "id": "c",
-        "en": "The courts of Alberta only"
+        "en": "The courts of Alberta only",
+        "fr": "Devant les tribunaux de l’Alberta seulement"
       },
       {
         "id": "d",
-        "en": "Private workplaces nationwide by default"
+        "en": "Private workplaces nationwide by default",
+        "fr": "Dans tous les milieux de travail privés du pays, par défaut"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Official-language rights apply to Parliament and federal institutions. Provinces have their own language rules; New Brunswick is officially bilingual as a province."
+      "en": "Official-language rights apply to Parliament and federal institutions. Provinces have their own language rules; New Brunswick is officially bilingual as a province.",
+      "fr": "Les droits linguistiques officiels s’appliquent au Parlement et aux institutions fédérales. Les provinces ont leurs propres règles linguistiques; le Nouveau-Brunswick est officiellement bilingue en tant que province."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -353,29 +415,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of the following is a responsibility of citizenship listed in the study guide?"
+      "en": "Which of the following is a responsibility of citizenship listed in the study guide?",
+      "fr": "Laquelle des options suivantes est une responsabilité de la citoyenneté énumérée dans le guide d’étude?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Obeying the law"
+        "en": "Obeying the law",
+        "fr": "Respecter la loi"
       },
       {
         "id": "b",
-        "en": "Joining a political party"
+        "en": "Joining a political party",
+        "fr": "Adhérer à un parti politique"
       },
       {
         "id": "c",
-        "en": "Serving as a senator"
+        "en": "Serving as a senator",
+        "fr": "Siéger comme sénateur"
       },
       {
         "id": "d",
-        "en": "Owning land"
+        "en": "Owning land",
+        "fr": "Posséder une terre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Obeying the law is a basic duty. Other listed responsibilities include voting, jury service when called, and helping in the community."
+      "en": "Obeying the law is a basic duty. Other listed responsibilities include voting, jury service when called, and helping in the community.",
+      "fr": "Respecter la loi est un devoir de base. Les autres responsabilités énumérées comprennent voter, faire partie d’un jury sur convocation et aider dans la collectivité."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -386,21 +454,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Voting in elections is only a right, never described as a responsibility."
+      "en": "Voting in elections is only a right, never described as a responsibility.",
+      "fr": "Voter aux élections est uniquement un droit et n’est jamais présenté comme une responsabilité."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The study guide treats voting as both a democratic right and a civic responsibility of citizens."
+      "en": "The study guide treats voting as both a democratic right and a civic responsibility of citizens.",
+      "fr": "Le guide d’étude présente le vote à la fois comme un droit démocratique et comme une responsabilité civique des citoyens."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -411,29 +483,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "In a time of war, Canadian law has historically provided that:"
+      "en": "In a time of war, Canadian law has historically provided that:",
+      "fr": "En temps de guerre, le droit canadien a historiquement prévu que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Only senators must enlist"
+        "en": "Only senators must enlist",
+        "fr": "Seuls les sénateurs doivent s’enrôler"
       },
       {
         "id": "b",
-        "en": "Military-age men may be required to serve in the armed forces"
+        "en": "Military-age men may be required to serve in the armed forces",
+        "fr": "Les hommes en âge de servir peuvent être tenus de servir dans les forces armées"
       },
       {
         "id": "c",
-        "en": "Children must serve on juries"
+        "en": "Children must serve on juries",
+        "fr": "Les enfants doivent faire partie des jurys"
       },
       {
         "id": "d",
-        "en": "The Governor General must command a regiment"
+        "en": "The Governor General must command a regiment",
+        "fr": "Le gouverneur général doit commander un régiment"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The guide notes that men may be subject to military service in wartime. Canada has not used conscription for many decades, but the historic duty is still taught."
+      "en": "The guide notes that men may be subject to military service in wartime. Canada has not used conscription for many decades, but the historic duty is still taught.",
+      "fr": "Le guide signale que les hommes peuvent être assujettis au service militaire en temps de guerre. Le Canada n’a pas eu recours à la conscription depuis des décennies, mais ce devoir historique est toujours enseigné."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -444,29 +522,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Peaceful assembly and association are protected so that people may:"
+      "en": "Peaceful assembly and association are protected so that people may:",
+      "fr": "La réunion pacifique et l’association sont protégées afin que les personnes puissent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Form unions, parties, and protest groups within the law"
+        "en": "Form unions, parties, and protest groups within the law",
+        "fr": "Former des syndicats, des partis et des groupes de protestation dans le respect de la loi"
       },
       {
         "id": "b",
-        "en": "Block hospitals by force with no limits"
+        "en": "Block hospitals by force with no limits",
+        "fr": "Bloquer des hôpitaux par la force, sans aucune limite"
       },
       {
         "id": "c",
-        "en": "Ignore Criminal Code offences if they are in a crowd"
+        "en": "Ignore Criminal Code offences if they are in a crowd",
+        "fr": "Ignorer les infractions au Code criminel lorsqu’elles se trouvent dans une foule"
       },
       {
         "id": "d",
-        "en": "Appoint judges by petition"
+        "en": "Appoint judges by petition",
+        "fr": "Nommer des juges par pétition"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "You may gather and join groups peacefully. Violence, intimidation, and other crimes are still crimes."
+      "en": "You may gather and join groups peacefully. Violence, intimidation, and other crimes are still crimes.",
+      "fr": "Vous pouvez vous rassembler et adhérer à des groupes de façon pacifique. La violence, l’intimidation et les autres crimes demeurent des crimes."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A citizen’s mobility rights generally include the right to:"
+      "en": "A citizen’s mobility rights generally include the right to:",
+      "fr": "Les droits de circulation et d’établissement d’un citoyen comprennent généralement le droit :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Enter, remain in, and leave Canada"
+        "en": "Enter, remain in, and leave Canada",
+        "fr": "D’entrer au Canada, d’y demeurer et d’en sortir"
       },
       {
         "id": "b",
-        "en": "Demand a passport from another country"
+        "en": "Demand a passport from another country",
+        "fr": "D’exiger un passeport d’un autre pays"
       },
       {
         "id": "c",
-        "en": "Set immigration quotas"
+        "en": "Set immigration quotas",
+        "fr": "De fixer les quotas d’immigration"
       },
       {
         "id": "d",
-        "en": "Close a provincial border permanently"
+        "en": "Close a provincial border permanently",
+        "fr": "De fermer une frontière provinciale de façon permanente"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizens have the right to enter, remain in, and leave Canada, and to live and seek work in any province, subject to limited legal exceptions."
+      "en": "Citizens have the right to enter, remain in, and leave Canada, and to live and seek work in any province, subject to limited legal exceptions.",
+      "fr": "Les citoyens ont le droit d’entrer au Canada, d’y demeurer et d’en sortir, ainsi que de vivre et de chercher du travail dans toute province, sous réserve de quelques exceptions prévues par la loi."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Legal rights in the Charter include protection against:"
+      "en": "Legal rights in the Charter include protection against:",
+      "fr": "Les droits juridiques garantis par la Charte comprennent la protection contre :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Unreasonable search and seizure"
+        "en": "Unreasonable search and seizure",
+        "fr": "Les fouilles, les perquisitions et les saisies abusives"
       },
       {
         "id": "b",
-        "en": "Having to testify as a witness when subpoenaed in every civil case"
+        "en": "Having to testify as a witness when subpoenaed in every civil case",
+        "fr": "L’obligation de témoigner lorsqu’on est assigné dans toute affaire civile"
       },
       {
         "id": "c",
-        "en": "Paying income tax"
+        "en": "Paying income tax",
+        "fr": "Le paiement de l’impôt sur le revenu"
       },
       {
         "id": "d",
-        "en": "Jury duty"
+        "en": "Jury duty",
+        "fr": "Le devoir de juré"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Legal rights cover life, liberty, and security of the person; search and seizure; detention and arrest; and fair criminal process, among others."
+      "en": "Legal rights cover life, liberty, and security of the person; search and seizure; detention and arrest; and fair criminal process, among others.",
+      "fr": "Les droits juridiques visent notamment la vie, la liberté et la sécurité de la personne; les fouilles et les saisies; la détention et l’arrestation; et l’équité du processus criminel."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -543,21 +639,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Charter applies only to Canadian citizens in all of its sections."
+      "en": "The Charter applies only to Canadian citizens in all of its sections.",
+      "fr": "Tous les articles de la Charte s’appliquent uniquement aux citoyens canadiens."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Some rights, such as democratic rights, are for citizens. Many legal and equality rights protect “everyone” or “every individual,” including non-citizens, in Canada."
+      "en": "Some rights, such as democratic rights, are for citizens. Many legal and equality rights protect “everyone” or “every individual,” including non-citizens, in Canada.",
+      "fr": "Certains droits, comme les droits démocratiques, sont réservés aux citoyens. Beaucoup de droits juridiques et de droits à l’égalité protègent « chacun » ou « toute personne » au Canada, y compris les non-citoyens."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -568,29 +668,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Helping others in the community is presented in the guide as:"
+      "en": "Helping others in the community is presented in the guide as:",
+      "fr": "Aider les autres dans la collectivité est présenté dans le guide comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A legal requirement to join a church"
+        "en": "A legal requirement to join a church",
+        "fr": "Une obligation légale d’adhérer à une église"
       },
       {
         "id": "b",
-        "en": "A responsibility of citizenship"
+        "en": "A responsibility of citizenship",
+        "fr": "Une responsabilité de la citoyenneté"
       },
       {
         "id": "c",
-        "en": "A duty only for mayors"
+        "en": "A duty only for mayors",
+        "fr": "Un devoir réservé aux maires"
       },
       {
         "id": "d",
-        "en": "A substitute for paying taxes"
+        "en": "A substitute for paying taxes",
+        "fr": "Un substitut au paiement des impôts"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Volunteerism and looking out for neighbours are taught as civic responsibilities alongside formal legal duties."
+      "en": "Volunteerism and looking out for neighbours are taught as civic responsibilities alongside formal legal duties.",
+      "fr": "Le bénévolat et l’entraide entre voisins sont enseignés comme des responsabilités civiques, au même titre que les devoirs juridiques officiels."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -601,29 +707,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is not a Charter “fundamental freedom”?"
+      "en": "Which of these is not a Charter “fundamental freedom”?",
+      "fr": "Laquelle de ces libertés n’est pas une « liberté fondamentale » de la Charte?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Freedom of expression"
+        "en": "Freedom of expression",
+        "fr": "La liberté d’expression"
       },
       {
         "id": "b",
-        "en": "Freedom of peaceful assembly"
+        "en": "Freedom of peaceful assembly",
+        "fr": "La liberté de réunion pacifique"
       },
       {
         "id": "c",
-        "en": "Freedom from ever being taxed"
+        "en": "Freedom from ever being taxed",
+        "fr": "La liberté de ne jamais être imposé"
       },
       {
         "id": "d",
-        "en": "Freedom of association"
+        "en": "Freedom of association",
+        "fr": "La liberté d’association"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Taxation is a lawful government power. Fundamental freedoms are conscience and religion, expression, peaceful assembly, and association."
+      "en": "Taxation is a lawful government power. Fundamental freedoms are conscience and religion, expression, peaceful assembly, and association.",
+      "fr": "L’imposition est un pouvoir légitime de l’État. Les libertés fondamentales sont la conscience et la religion, l’expression, la réunion pacifique et l’association."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Minority-language education rights generally protect:"
+      "en": "Minority-language education rights generally protect:",
+      "fr": "Les droits à l’instruction dans la langue de la minorité protègent généralement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "English or French minority communities educating their children in their language, where numbers warrant"
+        "en": "English or French minority communities educating their children in their language, where numbers warrant",
+        "fr": "Le droit des communautés minoritaires anglophones ou francophones de faire instruire leurs enfants dans leur langue, là où le nombre le justifie"
       },
       {
         "id": "b",
-        "en": "Every language in the world in every school"
+        "en": "Every language in the world in every school",
+        "fr": "Toutes les langues du monde dans toutes les écoles"
       },
       {
         "id": "c",
-        "en": "Latin as a compulsory subject"
+        "en": "Latin as a compulsory subject",
+        "fr": "Le latin comme matière obligatoire"
       },
       {
         "id": "d",
-        "en": "Only Indigenous-language schools in Toronto"
+        "en": "Only Indigenous-language schools in Toronto",
+        "fr": "Uniquement les écoles de langues autochtones à Toronto"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Charter protects English or French minority-language education in specified circumstances, typically where numbers are sufficient."
+      "en": "The Charter protects English or French minority-language education in specified circumstances, typically where numbers are sufficient.",
+      "fr": "La Charte protège l’instruction en anglais ou en français pour la minorité dans certaines circonstances, généralement là où le nombre le justifie."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -667,21 +785,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Courts can strike down laws that unjustifiably violate the Charter."
+      "en": "Courts can strike down laws that unjustifiably violate the Charter.",
+      "fr": "Les tribunaux peuvent invalider les lois qui violent la Charte sans justification."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Because the Charter is part of the Constitution, inconsistent laws can be declared of no force, subject to limited override rules in some cases."
+      "en": "Because the Charter is part of the Constitution, inconsistent laws can be declared of no force, subject to limited override rules in some cases.",
+      "fr": "Comme la Charte fait partie de la Constitution, les lois incompatibles peuvent être déclarées inopérantes, sous réserve de règles de dérogation limitées dans certains cas."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -692,29 +814,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Hate propaganda that wilfully promotes hatred against an identifiable group is:"
+      "en": "Hate propaganda that wilfully promotes hatred against an identifiable group is:",
+      "fr": "La propagande haineuse qui fomente volontairement la haine contre un groupe identifiable est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Fully protected as ordinary political speech with no limits"
+        "en": "Fully protected as ordinary political speech with no limits",
+        "fr": "Entièrement protégée comme un discours politique ordinaire, sans limites"
       },
       {
         "id": "b",
-        "en": "Restricted by criminal law because it attacks other people’s rights and safety"
+        "en": "Restricted by criminal law because it attacks other people’s rights and safety",
+        "fr": "Restreinte par le droit criminel parce qu’elle porte atteinte aux droits et à la sécurité d’autrui"
       },
       {
         "id": "c",
-        "en": "Required reading in Parliament"
+        "en": "Required reading in Parliament",
+        "fr": "Une lecture obligatoire au Parlement"
       },
       {
         "id": "d",
-        "en": "A municipal zoning issue only"
+        "en": "A municipal zoning issue only",
+        "fr": "Une simple question de zonage municipal"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Expression has limits. Promoting genocide or wilfully promoting hatred is a crime; rights are balanced in a free and democratic society."
+      "en": "Expression has limits. Promoting genocide or wilfully promoting hatred is a crime; rights are balanced in a free and democratic society.",
+      "fr": "L’expression a des limites. Encourager le génocide ou fomenter volontairement la haine est un crime; les droits s’équilibrent dans une société libre et démocratique."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -725,29 +853,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which English legal landmark is often cited as a root of the rule of law that Canada inherited?"
+      "en": "Which English legal landmark is often cited as a root of the rule of law that Canada inherited?",
+      "fr": "Quel jalon du droit anglais est souvent cité comme une racine de la primauté du droit dont le Canada a hérité?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Quebec Act"
+        "en": "The Quebec Act",
+        "fr": "L’Acte de Québec"
       },
       {
         "id": "b",
-        "en": "Magna Carta (1215)"
+        "en": "Magna Carta (1215)",
+        "fr": "La Magna Carta (1215)"
       },
       {
         "id": "c",
-        "en": "The Official Languages Act"
+        "en": "The Official Languages Act",
+        "fr": "La Loi sur les langues officielles"
       },
       {
         "id": "d",
-        "en": "The Clarity Act"
+        "en": "The Clarity Act",
+        "fr": "La Loi sur la clarté"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Magna Carta is taught as an early limit on arbitrary royal power. Canadian law also draws on later English and French sources and Canadian statutes."
+      "en": "Magna Carta is taught as an early limit on arbitrary royal power. Canadian law also draws on later English and French sources and Canadian statutes.",
+      "fr": "La Magna Carta est enseignée comme une première limite au pouvoir royal arbitraire. Le droit canadien puise aussi dans des sources anglaises et françaises plus récentes et dans les lois canadiennes."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -758,29 +892,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Protecting Canada’s heritage and environment is described as:"
+      "en": "Protecting Canada’s heritage and environment is described as:",
+      "fr": "La protection du patrimoine et de l’environnement du Canada est décrite comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A responsibility shared by citizens"
+        "en": "A responsibility shared by citizens",
+        "fr": "Une responsabilité partagée par les citoyens"
       },
       {
         "id": "b",
-        "en": "The exclusive job of the Senate"
+        "en": "The exclusive job of the Senate",
+        "fr": "La tâche exclusive du Sénat"
       },
       {
         "id": "c",
-        "en": "Illegal for private persons"
+        "en": "Illegal for private persons",
+        "fr": "Une activité illégale pour les particuliers"
       },
       {
         "id": "d",
-        "en": "A municipal bylaw in Ottawa only"
+        "en": "A municipal bylaw in Ottawa only",
+        "fr": "Un règlement municipal d’Ottawa seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide asks citizens to help care for the natural and cultural heritage of the country, not only to claim rights."
+      "en": "The guide asks citizens to help care for the natural and cultural heritage of the country, not only to claim rights.",
+      "fr": "Le guide demande aux citoyens de contribuer à protéger le patrimoine naturel et culturel du pays, et pas seulement de revendiquer des droits."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -791,21 +931,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You may legally refuse a jury summons whenever you are busy at work, with no process."
+      "en": "You may legally refuse a jury summons whenever you are busy at work, with no process.",
+      "fr": "Vous pouvez légalement refuser une convocation à un jury chaque fois que vous êtes occupé au travail, sans aucune démarche."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Jury service is a duty. There are limited legal excuses and a process; simply ignoring a summons is not a right."
+      "en": "Jury service is a duty. There are limited legal excuses and a process; simply ignoring a summons is not a right.",
+      "fr": "Le service de juré est un devoir. Il existe des motifs d’exemption limités et une procédure à suivre; simplement ignorer une convocation n’est pas un droit."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -816,29 +960,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If you are arrested or detained, a key legal right is:"
+      "en": "If you are arrested or detained, a key legal right is:",
+      "fr": "Si vous êtes arrêté ou détenu, un droit juridique essentiel est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "To be told why, and to retain and instruct counsel without delay"
+        "en": "To be told why, and to retain and instruct counsel without delay",
+        "fr": "D’être informé des motifs et d’avoir recours sans délai à l’assistance d’un avocat"
       },
       {
         "id": "b",
-        "en": "To choose your trial judge by name"
+        "en": "To choose your trial judge by name",
+        "fr": "De choisir votre juge par son nom"
       },
       {
         "id": "c",
-        "en": "To have the Prime Minister attend"
+        "en": "To have the Prime Minister attend",
+        "fr": "D’exiger la présence du premier ministre"
       },
       {
         "id": "d",
-        "en": "To skip the trial if you pay a fee"
+        "en": "To skip the trial if you pay a fee",
+        "fr": "D’éviter le procès en payant des frais"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "On arrest or detention you have the right to be informed of the reasons and to counsel. Use those rights; do not guess your way through an interrogation."
+      "en": "On arrest or detention you have the right to be informed of the reasons and to counsel. Use those rights; do not guess your way through an interrogation.",
+      "fr": "Lors d’une arrestation ou d’une détention, vous avez le droit d’être informé des motifs et d’être assisté d’un avocat. Exercez ces droits; n’improvisez pas pendant un interrogatoire."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -849,29 +999,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Forced or underage marriage, “honour” violence, and female genital mutilation are:"
+      "en": "Forced or underage marriage, “honour” violence, and female genital mutilation are:",
+      "fr": "Le mariage forcé ou de mineurs, la violence dite « d’honneur » et la mutilation génitale féminine sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Protected as religious freedoms with no limits"
+        "en": "Protected as religious freedoms with no limits",
+        "fr": "Protégés comme des libertés religieuses, sans limites"
       },
       {
         "id": "b",
-        "en": "Crimes in Canada; culture or religion is not a defence"
+        "en": "Crimes in Canada; culture or religion is not a defence",
+        "fr": "Des crimes au Canada; la culture ou la religion n’est pas une défense"
       },
       {
         "id": "c",
-        "en": "Civil matters only in Quebec"
+        "en": "Civil matters only in Quebec",
+        "fr": "Des questions civiles, au Québec seulement"
       },
       {
         "id": "d",
-        "en": "Legal if both families agree"
+        "en": "Legal if both families agree",
+        "fr": "Légaux si les deux familles y consentent"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Equality and security of the person outweigh claims that violence or coercion is a cultural right. These acts are crimes."
+      "en": "Equality and security of the person outweigh claims that violence or coercion is a cultural right. These acts are crimes.",
+      "fr": "L’égalité et la sécurité de la personne priment sur toute prétention voulant que la violence ou la contrainte soit un droit culturel. Ces actes sont des crimes."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -882,29 +1038,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is expected to work to eliminate discrimination and injustice?"
+      "en": "Who is expected to work to eliminate discrimination and injustice?",
+      "fr": "Qui doit travailler à éliminer la discrimination et l’injustice?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Only the Governor General"
+        "en": "Only the Governor General",
+        "fr": "Le gouverneur général seulement"
       },
       {
         "id": "b",
-        "en": "Citizens and Canadian society as a whole"
+        "en": "Citizens and Canadian society as a whole",
+        "fr": "Les citoyens et l’ensemble de la société canadienne"
       },
       {
         "id": "c",
-        "en": "Only people born in Canada"
+        "en": "Only people born in Canada",
+        "fr": "Les personnes nées au Canada seulement"
       },
       {
         "id": "d",
-        "en": "Only the official opposition"
+        "en": "Only the official opposition",
+        "fr": "L’opposition officielle seulement"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The guide frames fighting discrimination as a shared civic responsibility, not a task for one office."
+      "en": "The guide frames fighting discrimination as a shared civic responsibility, not a task for one office.",
+      "fr": "Le guide présente la lutte contre la discrimination comme une responsabilité civique partagée, et non comme la tâche d’une seule charge publique."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -915,21 +1077,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Constitution is the supreme law of Canada."
+      "en": "The Constitution is the supreme law of Canada.",
+      "fr": "La Constitution est la loi suprême du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Ordinary statutes must be consistent with the Constitution, including the Charter. That is the legal meaning of a supreme law."
+      "en": "Ordinary statutes must be consistent with the Constitution, including the Charter. That is the legal meaning of a supreme law.",
+      "fr": "Les lois ordinaires doivent être compatibles avec la Constitution, y compris la Charte. C’est le sens juridique d’une loi suprême."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -940,29 +1106,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A reasonable limit on a Charter right must be:"
+      "en": "A reasonable limit on a Charter right must be:",
+      "fr": "Une limite raisonnable à un droit garanti par la Charte doit être :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Whatever a police officer prefers that day"
+        "en": "Whatever a police officer prefers that day",
+        "fr": "Ce qu’un policier préfère ce jour-là"
       },
       {
         "id": "b",
-        "en": "Prescribed by law and demonstrably justified in a free and democratic society"
+        "en": "Prescribed by law and demonstrably justified in a free and democratic society",
+        "fr": "Prescrite par une règle de droit et justifiée dans le cadre d’une société libre et démocratique"
       },
       {
         "id": "c",
-        "en": "Approved in a municipal tweet"
+        "en": "Approved in a municipal tweet",
+        "fr": "Approuvée dans une publication municipale sur les réseaux sociaux"
       },
       {
         "id": "d",
-        "en": "Impossible; rights have no limits"
+        "en": "Impossible; rights have no limits",
+        "fr": "Impossible; les droits n’ont aucune limite"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Section 1 of the Charter allows limits that are set out in law and can be justified. It does not allow arbitrary official action."
+      "en": "Section 1 of the Charter allows limits that are set out in law and can be justified. It does not allow arbitrary official action.",
+      "fr": "L’article 1 de la Charte permet des limites prévues par une règle de droit et dont la justification peut se démontrer. Il n’autorise pas l’action arbitraire des autorités."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -973,29 +1145,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Filling out the census when required is best understood as:"
+      "en": "Filling out the census when required is best understood as:",
+      "fr": "Remplir le recensement lorsque la loi l’exige se comprend le mieux comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Optional trivia for hobbyists"
+        "en": "Optional trivia for hobbyists",
+        "fr": "Un jeu-questionnaire facultatif pour amateurs"
       },
       {
         "id": "b",
-        "en": "A legal duty that helps governments plan services"
+        "en": "A legal duty that helps governments plan services",
+        "fr": "Un devoir légal qui aide les gouvernements à planifier les services"
       },
       {
         "id": "c",
-        "en": "A Senate privilege"
+        "en": "A Senate privilege",
+        "fr": "Un privilège du Sénat"
       },
       {
         "id": "d",
-        "en": "Only for landowners"
+        "en": "Only for landowners",
+        "fr": "Une obligation réservée aux propriétaires fonciers"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The census is required by law. Accurate counts affect representation and public services. Completing it is part of obeying the law."
+      "en": "The census is required by law. Accurate counts affect representation and public services. Completing it is part of obeying the law.",
+      "fr": "Le recensement est exigé par la loi. Des données exactes influent sur la représentation et les services publics. Le remplir fait partie du respect de la loi."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1006,29 +1184,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Charter right to life, liberty, and security of the person is an example of:"
+      "en": "The Charter right to life, liberty, and security of the person is an example of:",
+      "fr": "Le droit à la vie, à la liberté et à la sécurité de la personne garanti par la Charte est un exemple de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A legal right"
+        "en": "A legal right",
+        "fr": "Un droit juridique"
       },
       {
         "id": "b",
-        "en": "A municipal zoning power"
+        "en": "A municipal zoning power",
+        "fr": "Un pouvoir municipal de zonage"
       },
       {
         "id": "c",
-        "en": "A Senate privilege only"
+        "en": "A Senate privilege only",
+        "fr": "Un privilège du Sénat seulement"
       },
       {
         "id": "d",
-        "en": "A sports eligibility rule"
+        "en": "A sports eligibility rule",
+        "fr": "Une règle d’admissibilité sportive"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It sits with other legal rights such as a fair trial and protection against unreasonable search. It is not a municipal by-law topic."
+      "en": "It sits with other legal rights such as a fair trial and protection against unreasonable search. It is not a municipal by-law topic.",
+      "fr": "Il figure parmi les autres droits juridiques, comme le procès équitable et la protection contre les fouilles abusives. Ce n’est pas une question de règlement municipal."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1039,21 +1223,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Freedom of the press in Canada is protected as part of freedom of expression."
+      "en": "Freedom of the press in Canada is protected as part of freedom of expression.",
+      "fr": "Au Canada, la liberté de la presse est protégée dans le cadre de la liberté d’expression."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Thought, belief, opinion, and expression include a free press. Limits still exist, such as laws against hate propaganda and defamation."
+      "en": "Thought, belief, opinion, and expression include a free press. Limits still exist, such as laws against hate propaganda and defamation.",
+      "fr": "La pensée, la croyance, l’opinion et l’expression englobent une presse libre. Des limites subsistent, comme les lois contre la propagande haineuse et la diffamation."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1064,29 +1252,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A Canadian citizen who wants to leave the country to live abroad is generally protected by:"
+      "en": "A Canadian citizen who wants to leave the country to live abroad is generally protected by:",
+      "fr": "Un citoyen canadien qui souhaite quitter le pays pour vivre à l’étranger est généralement protégé par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Mobility rights"
+        "en": "Mobility rights",
+        "fr": "Les droits de circulation et d’établissement"
       },
       {
         "id": "b",
-        "en": "The right to appoint Cabinet"
+        "en": "The right to appoint Cabinet",
+        "fr": "Le droit de nommer le Cabinet"
       },
       {
         "id": "c",
-        "en": "Municipal snow-clearing by-laws"
+        "en": "Municipal snow-clearing by-laws",
+        "fr": "Les règlements municipaux de déneigement"
       },
       {
         "id": "d",
-        "en": "The royal anthem"
+        "en": "The royal anthem",
+        "fr": "L’hymne royal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizens may enter, remain in, and leave Canada. Living abroad does not, by itself, erase citizenship."
+      "en": "Citizens may enter, remain in, and leave Canada. Living abroad does not, by itself, erase citizenship.",
+      "fr": "Les citoyens peuvent entrer au Canada, y demeurer et en sortir. Vivre à l’étranger n’efface pas en soi la citoyenneté."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1097,29 +1291,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Taking the Oath of Citizenship means you promise, among other things, to:"
+      "en": "Taking the Oath of Citizenship means you promise, among other things, to:",
+      "fr": "Prêter le serment de citoyenneté signifie que vous promettez, entre autres :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Be faithful to the King and observe the laws of Canada"
+        "en": "Be faithful to the King and observe the laws of Canada",
+        "fr": "D’être fidèle au Roi et d’observer les lois du Canada"
       },
       {
         "id": "b",
-        "en": "Join a political party"
+        "en": "Join a political party",
+        "fr": "D’adhérer à un parti politique"
       },
       {
         "id": "c",
-        "en": "Speak only English"
+        "en": "Speak only English",
+        "fr": "De parler uniquement l’anglais"
       },
       {
         "id": "d",
-        "en": "Serve in Cabinet"
+        "en": "Serve in Cabinet",
+        "fr": "De siéger au Cabinet"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The oath is a public commitment to the Crown, the Constitution, and the laws. It is not a party membership form."
+      "en": "The oath is a public commitment to the Crown, the Constitution, and the laws. It is not a party membership form.",
+      "fr": "Le serment est un engagement public envers la Couronne, la Constitution et les lois. Ce n’est pas un formulaire d’adhésion à un parti."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1130,29 +1330,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Paying legally required taxes is best classified as:"
+      "en": "Paying legally required taxes is best classified as:",
+      "fr": "Payer les impôts exigés par la loi se classe le mieux comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Part of obeying the law"
+        "en": "Part of obeying the law",
+        "fr": "Une composante du respect de la loi"
       },
       {
         "id": "b",
-        "en": "Optional if you dislike the government"
+        "en": "Optional if you dislike the government",
+        "fr": "Une option si le gouvernement vous déplaît"
       },
       {
         "id": "c",
-        "en": "A Senate-only duty"
+        "en": "A Senate-only duty",
+        "fr": "Un devoir réservé au Sénat"
       },
       {
         "id": "d",
-        "en": "A municipal hobby"
+        "en": "A municipal hobby",
+        "fr": "Un passe-temps municipal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide’s list of responsibilities starts with obeying the law. Taxes fund the services the rest of the guide describes."
+      "en": "The guide’s list of responsibilities starts with obeying the law. Taxes fund the services the rest of the guide describes.",
+      "fr": "La liste des responsabilités du guide commence par le respect de la loi. Les impôts financent les services décrits dans le reste du guide."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1163,21 +1369,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Charter’s equality rights allow governments to run programs that help disadvantaged groups."
+      "en": "The Charter’s equality rights allow governments to run programs that help disadvantaged groups.",
+      "fr": "Les droits à l’égalité de la Charte permettent aux gouvernements de mener des programmes qui aident les groupes défavorisés."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Equality is not a ban on every distinction. Ameliorative programs can be consistent with equality rights."
+      "en": "Equality is not a ban on every distinction. Ameliorative programs can be consistent with equality rights.",
+      "fr": "L’égalité n’interdit pas toute distinction. Les programmes d’amélioration peuvent être compatibles avec les droits à l’égalité."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1188,29 +1398,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a democratic right of citizens?"
+      "en": "Which of these is a democratic right of citizens?",
+      "fr": "Lequel de ces éléments est un droit démocratique des citoyens?"
     },
     "options": [
       {
         "id": "a",
-        "en": "To run for office, subject to rules set by law"
+        "en": "To run for office, subject to rules set by law",
+        "fr": "Se porter candidat à une charge publique, sous réserve des règles prévues par la loi"
       },
       {
         "id": "b",
-        "en": "To sit as a Supreme Court judge automatically"
+        "en": "To sit as a Supreme Court judge automatically",
+        "fr": "Siéger automatiquement comme juge de la Cour suprême"
       },
       {
         "id": "c",
-        "en": "To dissolve a provincial legislature by tweet"
+        "en": "To dissolve a provincial legislature by tweet",
+        "fr": "Dissoudre une assemblée législative provinciale par une publication sur les réseaux sociaux"
       },
       {
         "id": "d",
-        "en": "To skip jury duty without a process"
+        "en": "To skip jury duty without a process",
+        "fr": "Se soustraire au devoir de juré sans aucune démarche"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizens may vote and seek election. Qualifications (age, citizenship, and a few legal bars) still apply."
+      "en": "Citizens may vote and seek election. Qualifications (age, citizenship, and a few legal bars) still apply.",
+      "fr": "Les citoyens peuvent voter et briguer un siège. Des conditions (âge, citoyenneté et quelques empêchements légaux) s’appliquent toujours."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1221,29 +1437,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Freedom of association protects, among other things, the right to:"
+      "en": "Freedom of association protects, among other things, the right to:",
+      "fr": "La liberté d’association protège notamment le droit :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Join a union or a peaceful group"
+        "en": "Join a union or a peaceful group",
+        "fr": "D’adhérer à un syndicat ou à un groupe pacifique"
       },
       {
         "id": "b",
-        "en": "Commit a crime with friends"
+        "en": "Commit a crime with friends",
+        "fr": "De commettre un crime entre amis"
       },
       {
         "id": "c",
-        "en": "Ignore a court order"
+        "en": "Ignore a court order",
+        "fr": "D’ignorer une ordonnance judiciaire"
       },
       {
         "id": "d",
-        "en": "Set the Bank of Canada rate"
+        "en": "Set the Bank of Canada rate",
+        "fr": "De fixer le taux de la Banque du Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Association covers unions, parties, and civic groups. It does not legalize crime."
+      "en": "Association covers unions, parties, and civic groups. It does not legalize crime.",
+      "fr": "L’association vise les syndicats, les partis et les groupes civiques. Elle ne légalise pas le crime."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1254,29 +1476,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A person in Canada is presumed innocent until:"
+      "en": "A person in Canada is presumed innocent until:",
+      "fr": "Au Canada, une personne est présumée innocente jusqu’à ce qu’elle soit :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Proven guilty according to law in a fair trial"
+        "en": "Proven guilty according to law in a fair trial",
+        "fr": "Déclarée coupable conformément à la loi, à l’issue d’un procès équitable"
       },
       {
         "id": "b",
-        "en": "Named in a newspaper"
+        "en": "Named in a newspaper",
+        "fr": "Nommée dans un journal"
       },
       {
         "id": "c",
-        "en": "Questioned by police"
+        "en": "Questioned by police",
+        "fr": "Interrogée par la police"
       },
       {
         "id": "d",
-        "en": "The Prime Minister comments"
+        "en": "The Prime Minister comments",
+        "fr": "Visée par un commentaire du premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Presumption of innocence is a core legal right. Media attention is not a verdict."
+      "en": "Presumption of innocence is a core legal right. Media attention is not a verdict.",
+      "fr": "La présomption d’innocence est un droit juridique fondamental. L’attention médiatique n’est pas un verdict."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1287,21 +1515,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "English and French have equal status as official languages of the Parliament of Canada."
+      "en": "English and French have equal status as official languages of the Parliament of Canada.",
+      "fr": "L’anglais et le français ont un statut égal comme langues officielles du Parlement du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "That is a constitutional language right, separate from which language a private person uses at home."
+      "en": "That is a constitutional language right, separate from which language a private person uses at home.",
+      "fr": "Il s’agit d’un droit linguistique constitutionnel, distinct de la langue qu’une personne utilise chez elle."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1312,29 +1544,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Working to protect Canada’s natural environment is presented as:"
+      "en": "Working to protect Canada’s natural environment is presented as:",
+      "fr": "Travailler à protéger l’environnement naturel du Canada est présenté comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A civic responsibility, not only a job for scientists"
+        "en": "A civic responsibility, not only a job for scientists",
+        "fr": "Une responsabilité civique, et non l’affaire des seuls scientifiques"
       },
       {
         "id": "b",
-        "en": "Illegal under the Charter"
+        "en": "Illegal under the Charter",
+        "fr": "Une activité illégale selon la Charte"
       },
       {
         "id": "c",
-        "en": "A duty of tourists only"
+        "en": "A duty of tourists only",
+        "fr": "Un devoir réservé aux touristes"
       },
       {
         "id": "d",
-        "en": "A Senate monopoly"
+        "en": "A Senate monopoly",
+        "fr": "Un monopole du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide pairs heritage and environment as things citizens should enjoy and protect."
+      "en": "The guide pairs heritage and environment as things citizens should enjoy and protect.",
+      "fr": "Le guide associe le patrimoine et l’environnement comme des biens que les citoyens doivent apprécier et protéger."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1345,29 +1583,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If a law is found to violate the Charter without justification, a court may:"
+      "en": "If a law is found to violate the Charter without justification, a court may:",
+      "fr": "Si une loi est jugée contraire à la Charte sans justification, un tribunal peut :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Strike it down or limit how it applies"
+        "en": "Strike it down or limit how it applies",
+        "fr": "L’invalider ou en restreindre l’application"
       },
       {
         "id": "b",
-        "en": "Appoint a new Prime Minister"
+        "en": "Appoint a new Prime Minister",
+        "fr": "Nommer un nouveau premier ministre"
       },
       {
         "id": "c",
-        "en": "Rewrite the national anthem"
+        "en": "Rewrite the national anthem",
+        "fr": "Réécrire l’hymne national"
       },
       {
         "id": "d",
-        "en": "Close Elections Canada"
+        "en": "Close Elections Canada",
+        "fr": "Fermer Élections Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Judicial review is how the supreme law is enforced. Courts do not take over elections."
+      "en": "Judicial review is how the supreme law is enforced. Courts do not take over elections.",
+      "fr": "Le contrôle judiciaire est le moyen de faire respecter la loi suprême. Les tribunaux ne prennent pas en charge les élections."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1378,29 +1622,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Volunteering in your community is closest to which citizenship idea in the guide?"
+      "en": "Volunteering in your community is closest to which citizenship idea in the guide?",
+      "fr": "Le bénévolat dans votre collectivité correspond le mieux à quelle idée de la citoyenneté dans le guide?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Helping others in the community"
+        "en": "Helping others in the community",
+        "fr": "Aider les autres dans la collectivité"
       },
       {
         "id": "b",
-        "en": "The federal spending power"
+        "en": "The federal spending power",
+        "fr": "Le pouvoir fédéral de dépenser"
       },
       {
         "id": "c",
-        "en": "Royal Assent"
+        "en": "Royal Assent",
+        "fr": "La sanction royale"
       },
       {
         "id": "d",
-        "en": "First past the post"
+        "en": "First past the post",
+        "fr": "Le scrutin majoritaire uninominal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide lists helping others as a responsibility. Formal volunteering is one way to live that idea."
+      "en": "The guide lists helping others as a responsibility. Formal volunteering is one way to live that idea.",
+      "fr": "Le guide énumère l’entraide comme une responsabilité. Le bénévolat encadré est une façon de vivre cette idée."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1411,21 +1661,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You can be a Canadian citizen and still be expected to obey Canadian law when you are in Canada."
+      "en": "You can be a Canadian citizen and still be expected to obey Canadian law when you are in Canada.",
+      "fr": "On peut être citoyen canadien et devoir tout de même respecter la loi canadienne lorsqu’on se trouve au Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Citizenship does not create a personal exemption from the Criminal Code or tax law. Obeying the law is a listed duty."
+      "en": "Citizenship does not create a personal exemption from the Criminal Code or tax law. Obeying the law is a listed duty.",
+      "fr": "La citoyenneté ne crée aucune exemption personnelle au Code criminel ni aux lois fiscales. Respecter la loi est un devoir énuméré."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   }

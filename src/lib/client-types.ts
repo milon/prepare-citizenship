@@ -1,8 +1,9 @@
 import type { ChapterId, RegionCode } from '../content/schema';
+import type { LocalizedText } from './i18n';
 
 export type ClientOption = {
   id: string;
-  text: string;
+  text: LocalizedText;
 };
 
 export type ClientQuestion = {
@@ -10,22 +11,22 @@ export type ClientQuestion = {
   chapter: ChapterId;
   region: RegionCode | null;
   type: 'mcq' | 'true_false';
-  prompt: string;
+  prompt: LocalizedText;
   options: ClientOption[];
   correctOptionId: string;
-  explanation: string;
-  source: string;
+  explanation: LocalizedText;
+  source: LocalizedText;
 };
 
 export type ClientCard = {
   id: string;
   chapter: ChapterId;
-  front: string;
-  back: string;
-  source: string;
+  front: LocalizedText;
+  back: LocalizedText;
+  source: LocalizedText;
 };
 
 export type ChapterOption = {
   id: ChapterId;
-  title: string;
+  title: LocalizedText;
 };

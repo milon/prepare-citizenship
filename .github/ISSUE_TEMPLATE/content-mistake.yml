@@ -1,0 +1,32 @@
+name: Content mistake
+description: Report an error in a question, flashcard, or chapter summary
+title: '[content] '
+labels: [content]
+body:
+  - type: input
+    id: question-id
+    attributes:
+      label: Question or card id
+      description: For example gov-014, or the chapter slug if this is about a summary page.
+      placeholder: gov-014
+    validations:
+      required: true
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What is wrong?
+      description: Quote the prompt or paragraph and say what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Official source
+      description: Where in Discover Canada or another official page should we look?
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Language you were using
+      options:
+        - English
+        - Français

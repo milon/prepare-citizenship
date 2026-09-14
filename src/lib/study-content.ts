@@ -3,6 +3,7 @@ import { CHAPTERS } from './chapters';
 import type { ChapterId } from '../content/schema';
 import { cardFromQuestion, toClientCard, toClientQuestion } from './serialize';
 import type { ClientCard, ClientQuestion } from './client-types';
+import { localizedChapterTitle } from './i18n';
 
 export async function loadStudyContent() {
   const [questionEntries, cardEntries, currentEntries] = await Promise.all([
@@ -18,7 +19,10 @@ export async function loadStudyContent() {
   const questionCards = questions.map(cardFromQuestion);
   const extraIds = new Set(extraCards.map((card) => card.id));
   const cards = [...questionCards.filter((card) => !extraIds.has(card.id)), ...extraCards];
-  const chapters = CHAPTERS.map((chapter) => ({ id: chapter.id, title: chapter.title }));
+  const chapters = CHAPTERS.map((chapter) => ({
+    id: chapter.id,
+    title: { en: chapter.title, fr: localizedChapterTitle(chapter.id, 'fr') },
+  }));
   return { questions, cards, chapters, current };
 }
 

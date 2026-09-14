@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which three groups are recognized as Indigenous peoples in Canada?"
+      "en": "Which three groups are recognized as Indigenous peoples in Canada?",
+      "fr": "Quels sont les trois groupes reconnus comme peuples autochtones au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "First Nations, Inuit, and Métis"
+        "en": "First Nations, Inuit, and Métis",
+        "fr": "Les Premières Nations, les Inuit et les Métis"
       },
       {
         "id": "b",
-        "en": "Inuit, Acadians, and Loyalists"
+        "en": "Inuit, Acadians, and Loyalists",
+        "fr": "Les Inuit, les Acadiens et les Loyalistes"
       },
       {
         "id": "c",
-        "en": "Métis, Voyageurs, and Acadians"
+        "en": "Métis, Voyageurs, and Acadians",
+        "fr": "Les Métis, les voyageurs et les Acadiens"
       },
       {
         "id": "d",
-        "en": "First Nations, Ukrainians, and Inuit"
+        "en": "First Nations, Ukrainians, and Inuit",
+        "fr": "Les Premières Nations, les Ukrainiens et les Inuit"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada recognizes First Nations, Inuit, and Métis as the Indigenous peoples of this land, each with distinct histories, languages, and cultures."
+      "en": "Canada recognizes First Nations, Inuit, and Métis as the Indigenous peoples of this land, each with distinct histories, languages, and cultures.",
+      "fr": "Le Canada reconnaît les Premières Nations, les Inuit et les Métis comme les peuples autochtones de ce territoire, chacun ayant ses propres histoires, langues et cultures."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What are Canada’s two official languages?"
+      "en": "What are Canada’s two official languages?",
+      "fr": "Quelles sont les deux langues officielles du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "English and Spanish"
+        "en": "English and Spanish",
+        "fr": "L’anglais et l’espagnol"
       },
       {
         "id": "b",
-        "en": "French and Cree"
+        "en": "French and Cree",
+        "fr": "Le français et le cri"
       },
       {
         "id": "c",
-        "en": "English and French"
+        "en": "English and French",
+        "fr": "L’anglais et le français"
       },
       {
         "id": "d",
-        "en": "French and Inuktitut"
+        "en": "French and Inuktitut",
+        "fr": "Le français et l’inuktitut"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "English and French have equal status in Parliament and the Government of Canada. Many other languages are spoken, including Indigenous languages."
+      "en": "English and French have equal status in Parliament and the Government of Canada. Many other languages are spoken, including Indigenous languages.",
+      "fr": "L’anglais et le français ont un statut égal au Parlement et au gouvernement du Canada. De nombreuses autres langues sont parlées, dont des langues autochtones."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -72,21 +84,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Métis are a people of mixed First Nations and European ancestry who developed their own culture and identity."
+      "en": "The Métis are a people of mixed First Nations and European ancestry who developed their own culture and identity.",
+      "fr": "Les Métis sont un peuple d’ascendance mixte, à la fois des Premières Nations et européenne, qui a développé sa propre culture et sa propre identité."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Métis communities formed especially on the Prairies, with a distinct culture, including Michif in some communities, and a history tied to the fur trade."
+      "en": "Métis communities formed especially on the Prairies, with a distinct culture, including Michif in some communities, and a history tied to the fur trade.",
+      "fr": "Les communautés métisses se sont formées surtout dans les Prairies, avec une culture distincte, dont le michif dans certaines communautés, et une histoire liée à la traite des fourrures."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -97,29 +113,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Where do most Inuit communities lie?"
+      "en": "Where do most Inuit communities lie?",
+      "fr": "Où se trouvent la plupart des communautés inuites?"
     },
     "options": [
       {
         "id": "a",
-        "en": "In the Arctic (Inuit Nunangat)"
+        "en": "In the Arctic (Inuit Nunangat)",
+        "fr": "Dans l’Arctique (l’Inuit Nunangat)"
       },
       {
         "id": "b",
-        "en": "Only in southern Ontario"
+        "en": "Only in southern Ontario",
+        "fr": "Dans le sud de l’Ontario seulement"
       },
       {
         "id": "c",
-        "en": "Only on Vancouver Island"
+        "en": "Only on Vancouver Island",
+        "fr": "Sur l’île de Vancouver seulement"
       },
       {
         "id": "d",
-        "en": "Only in the Annapolis Valley"
+        "en": "Only in the Annapolis Valley",
+        "fr": "Dans la vallée de l’Annapolis seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Inuit are the Indigenous people of the Arctic. Their homeland is often called Inuit Nunangat, spanning land, water, and ice in the north."
+      "en": "Inuit are the Indigenous people of the Arctic. Their homeland is often called Inuit Nunangat, spanning land, water, and ice in the north.",
+      "fr": "Les Inuit sont le peuple autochtone de l’Arctique. Leur patrie est souvent appelée Inuit Nunangat et englobe la terre, l’eau et la glace du Nord."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -130,29 +152,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "First Nations in Canada are best described as:"
+      "en": "First Nations in Canada are best described as:",
+      "fr": "Les Premières Nations du Canada se décrivent le mieux comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A single nation with one language"
+        "en": "A single nation with one language",
+        "fr": "Une seule nation parlant une seule langue"
       },
       {
         "id": "b",
-        "en": "Many distinct nations with their own languages and governments"
+        "en": "Many distinct nations with their own languages and governments",
+        "fr": "De nombreuses nations distinctes ayant leurs propres langues et gouvernements"
       },
       {
         "id": "c",
-        "en": "A European settler group"
+        "en": "A European settler group",
+        "fr": "Un groupe de colons européens"
       },
       {
         "id": "d",
-        "en": "Residents of Nunavut only"
+        "en": "Residents of Nunavut only",
+        "fr": "Des résidents du Nunavut seulement"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Hundreds of First Nations live in every region. They are not one people with one language or government."
+      "en": "Hundreds of First Nations live in every region. They are not one people with one language or government.",
+      "fr": "Des centaines de Premières Nations vivent dans toutes les régions. Elles ne forment pas un seul peuple avec une seule langue ou un seul gouvernement."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -163,21 +191,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Inuit are one of the First Nations."
+      "en": "The Inuit are one of the First Nations.",
+      "fr": "Les Inuit sont l’une des Premières Nations."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Inuit are Indigenous but distinct from First Nations. The three recognized groups are First Nations, Inuit, and Métis."
+      "en": "Inuit are Indigenous but distinct from First Nations. The three recognized groups are First Nations, Inuit, and Métis.",
+      "fr": "Les Inuit sont autochtones, mais distincts des Premières Nations. Les trois groupes reconnus sont les Premières Nations, les Inuit et les Métis."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -188,29 +220,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who are the Acadians?"
+      "en": "Who are the Acadians?",
+      "fr": "Qui sont les Acadiens?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Descendants of early French settlers in the Maritimes"
+        "en": "Descendants of early French settlers in the Maritimes",
+        "fr": "Les descendants des premiers colons français des Maritimes"
       },
       {
         "id": "b",
-        "en": "A First Nation of the Prairies"
+        "en": "A First Nation of the Prairies",
+        "fr": "Une Première Nation des Prairies"
       },
       {
         "id": "c",
-        "en": "Loyalists from New York only"
+        "en": "Loyalists from New York only",
+        "fr": "Des Loyalistes venus de New York seulement"
       },
       {
         "id": "d",
-        "en": "Inuit from Labrador only"
+        "en": "Inuit from Labrador only",
+        "fr": "Des Inuit du Labrador seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Acadian communities descend from 17th- and 18th-century French settlement in what is now the Maritimes, especially New Brunswick, Nova Scotia, and PEI."
+      "en": "Acadian communities descend from 17th- and 18th-century French settlement in what is now the Maritimes, especially New Brunswick, Nova Scotia, and PEI.",
+      "fr": "Les communautés acadiennes descendent de la colonisation française des 17e et 18e siècles dans ce qui est aujourd’hui les Maritimes, surtout au Nouveau-Brunswick, en Nouvelle-Écosse et à l’Île-du-Prince-Édouard."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -221,29 +259,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What happened to many Acadians in the 1750s?"
+      "en": "What happened to many Acadians in the 1750s?",
+      "fr": "Qu’est-il arrivé à de nombreux Acadiens dans les années 1750?"
     },
     "options": [
       {
         "id": "a",
-        "en": "They were elected to the first House of Commons"
+        "en": "They were elected to the first House of Commons",
+        "fr": "Ils ont été élus à la première Chambre des communes"
       },
       {
         "id": "b",
-        "en": "They were deported from their lands by the British"
+        "en": "They were deported from their lands by the British",
+        "fr": "Ils ont été déportés de leurs terres par les Britanniques"
       },
       {
         "id": "c",
-        "en": "They founded Vancouver"
+        "en": "They founded Vancouver",
+        "fr": "Ils ont fondé Vancouver"
       },
       {
         "id": "d",
-        "en": "They wrote the Charter"
+        "en": "They wrote the Charter",
+        "fr": "Ils ont rédigé la Charte"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "During the Seven Years’ War, British authorities expelled thousands of Acadians. Many later returned; the deportation remains a central Acadian memory."
+      "en": "During the Seven Years’ War, British authorities expelled thousands of Acadians. Many later returned; the deportation remains a central Acadian memory.",
+      "fr": "Pendant la guerre de Sept Ans, les autorités britanniques ont expulsé des milliers d’Acadiens. Beaucoup sont revenus par la suite; la déportation demeure un souvenir central de l’Acadie."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -254,29 +298,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "United Empire Loyalists were people who:"
+      "en": "United Empire Loyalists were people who:",
+      "fr": "Les Loyalistes de l’Empire-Uni étaient des personnes qui :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Left the United States for British North America after the American Revolution"
+        "en": "Left the United States for British North America after the American Revolution",
+        "fr": "Ont quitté les États-Unis pour l’Amérique du Nord britannique après la Révolution américaine"
       },
       {
         "id": "b",
-        "en": "Founded New France in 1608"
+        "en": "Founded New France in 1608",
+        "fr": "Ont fondé la Nouvelle-France en 1608"
       },
       {
         "id": "c",
-        "en": "Signed Treaty 7 in Alberta only"
+        "en": "Signed Treaty 7 in Alberta only",
+        "fr": "Ont signé le Traité no 7 en Alberta seulement"
       },
       {
         "id": "d",
-        "en": "Created Nunavut in 1999"
+        "en": "Created Nunavut in 1999",
+        "fr": "Ont créé le Nunavut en 1999"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Loyalists who would not join the American republic moved north, strengthening English-speaking settlement in the Maritimes and in what became Ontario."
+      "en": "Loyalists who would not join the American republic moved north, strengthening English-speaking settlement in the Maritimes and in what became Ontario.",
+      "fr": "Les Loyalistes qui refusaient de se joindre à la république américaine sont montés vers le nord, renforçant la colonisation anglophone dans les Maritimes et dans ce qui allait devenir l’Ontario."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -287,29 +337,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which province has a French-speaking majority?"
+      "en": "Which province has a French-speaking majority?",
+      "fr": "Quelle province compte une majorité francophone?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ontario"
+        "en": "Ontario",
+        "fr": "L’Ontario"
       },
       {
         "id": "b",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "Le Québec"
       },
       {
         "id": "c",
-        "en": "Alberta"
+        "en": "Alberta",
+        "fr": "L’Alberta"
       },
       {
         "id": "d",
-        "en": "Newfoundland and Labrador"
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Quebec is the only province with a French-speaking majority. French is also important in New Brunswick and in communities elsewhere."
+      "en": "Quebec is the only province with a French-speaking majority. French is also important in New Brunswick and in communities elsewhere.",
+      "fr": "Le Québec est la seule province à majorité francophone. Le français est aussi important au Nouveau-Brunswick et dans des communautés ailleurs au pays."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -320,29 +376,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada is often described, in area, as:"
+      "en": "Canada is often described, in area, as:",
+      "fr": "Par sa superficie, le Canada est souvent décrit comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The smallest G7 country"
+        "en": "The smallest G7 country",
+        "fr": "Le plus petit pays du G7"
       },
       {
         "id": "b",
-        "en": "The world’s second-largest country"
+        "en": "The world’s second-largest country",
+        "fr": "Le deuxième plus grand pays du monde"
       },
       {
         "id": "c",
-        "en": "Smaller than France"
+        "en": "Smaller than France",
+        "fr": "Un pays plus petit que la France"
       },
       {
         "id": "d",
-        "en": "An island in the Caribbean"
+        "en": "An island in the Caribbean",
+        "fr": "Une île des Caraïbes"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Canada spans a huge landmass. Most people live in cities in a relatively narrow band near the U.S. border."
+      "en": "Canada spans a huge landmass. Most people live in cities in a relatively narrow band near the U.S. border.",
+      "fr": "Le Canada s’étend sur un immense territoire. La plupart des gens vivent dans des villes situées dans une bande relativement étroite près de la frontière américaine."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -353,21 +415,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Most Canadians live in rural areas far from cities."
+      "en": "Most Canadians live in rural areas far from cities.",
+      "fr": "La plupart des Canadiens vivent en milieu rural, loin des villes."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Canada is highly urban. A large majority live in towns and cities, especially in the south."
+      "en": "Canada is highly urban. A large majority live in towns and cities, especially in the south.",
+      "fr": "Le Canada est très urbanisé. Une forte majorité vit dans des villes et des villages, surtout dans le sud."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -378,29 +444,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Chinese workers in the 19th century are especially remembered for:"
+      "en": "Chinese workers in the 19th century are especially remembered for:",
+      "fr": "Au 19e siècle, les travailleurs chinois sont surtout reconnus pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Building much of the Canadian Pacific Railway through the mountains"
+        "en": "Building much of the Canadian Pacific Railway through the mountains",
+        "fr": "Avoir construit une grande partie du chemin de fer Canadien Pacifique à travers les montagnes"
       },
       {
         "id": "b",
-        "en": "Founding Halifax"
+        "en": "Founding Halifax",
+        "fr": "Avoir fondé Halifax"
       },
       {
         "id": "c",
-        "en": "Writing the BNA Act"
+        "en": "Writing the BNA Act",
+        "fr": "Avoir rédigé l’Acte de l’Amérique du Nord britannique"
       },
       {
         "id": "d",
-        "en": "Discovering the Klondike before anyone else"
+        "en": "Discovering the Klondike before anyone else",
+        "fr": "Avoir découvert le Klondike avant tout le monde"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Chinese labour was essential to the western railway. Canada later imposed a head tax and exclusion laws, now recognized as racist injustice."
+      "en": "Chinese labour was essential to the western railway. Canada later imposed a head tax and exclusion laws, now recognized as racist injustice.",
+      "fr": "La main-d’œuvre chinoise a été essentielle au chemin de fer de l’Ouest. Le Canada a ensuite imposé une taxe d’entrée et des lois d’exclusion, aujourd’hui reconnues comme une injustice raciste."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -411,29 +483,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Ukrainian settlement is especially associated with:"
+      "en": "Ukrainian settlement is especially associated with:",
+      "fr": "La colonisation ukrainienne est surtout associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Prairies"
+        "en": "The Prairies",
+        "fr": "Aux Prairies"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island only"
+        "en": "Prince Edward Island only",
+        "fr": "À l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "c",
-        "en": "Downtown Halifax in the 1600s"
+        "en": "Downtown Halifax in the 1600s",
+        "fr": "Au centre-ville de Halifax au 17e siècle"
       },
       {
         "id": "d",
-        "en": "The Senate of 1867"
+        "en": "The Senate of 1867",
+        "fr": "Au Sénat de 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "From the 1890s on, many Ukrainians farmed on the Prairies and became a major cultural community in Manitoba, Saskatchewan, and Alberta."
+      "en": "From the 1890s on, many Ukrainians farmed on the Prairies and became a major cultural community in Manitoba, Saskatchewan, and Alberta.",
+      "fr": "À partir des années 1890, de nombreux Ukrainiens ont cultivé la terre dans les Prairies et sont devenus une communauté culturelle majeure au Manitoba, en Saskatchewan et en Alberta."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -444,29 +522,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Black Loyalists and later Black refugees are an important part of the history of:"
+      "en": "Black Loyalists and later Black refugees are an important part of the history of:",
+      "fr": "Les Loyalistes noirs et, plus tard, les réfugiés noirs occupent une place importante dans l’histoire :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Nova Scotia"
+        "en": "Nova Scotia",
+        "fr": "De la Nouvelle-Écosse"
       },
       {
         "id": "b",
-        "en": "Nunavut"
+        "en": "Nunavut",
+        "fr": "Du Nunavut"
       },
       {
         "id": "c",
-        "en": "Yukon only"
+        "en": "Yukon only",
+        "fr": "Du Yukon seulement"
       },
       {
         "id": "d",
-        "en": "Prince Edward Island’s capital buildings"
+        "en": "Prince Edward Island’s capital buildings",
+        "fr": "Des édifices de la capitale de l’Île-du-Prince-Édouard"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "People of African descent who backed Britain, and others who escaped slavery, settled in Nova Scotia (and elsewhere). Their history is part of who Canada is."
+      "en": "People of African descent who backed Britain, and others who escaped slavery, settled in Nova Scotia (and elsewhere). Their history is part of who Canada is.",
+      "fr": "Des personnes d’ascendance africaine qui ont appuyé la Grande-Bretagne, et d’autres qui ont fui l’esclavage, se sont établies en Nouvelle-Écosse (et ailleurs). Leur histoire fait partie de ce qu’est le Canada."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A large Sikh and broader South Asian community has long been part of:"
+      "en": "A large Sikh and broader South Asian community has long been part of:",
+      "fr": "Une importante communauté sikhe, et plus largement sud-asiatique, fait partie depuis longtemps :"
     },
     "options": [
       {
         "id": "a",
-        "en": "British Columbia, especially the Lower Mainland"
+        "en": "British Columbia, especially the Lower Mainland",
+        "fr": "De la Colombie-Britannique, surtout du Lower Mainland"
       },
       {
         "id": "b",
-        "en": "Only Newfoundland outports"
+        "en": "Only Newfoundland outports",
+        "fr": "Des villages côtiers de Terre-Neuve seulement"
       },
       {
         "id": "c",
-        "en": "Only Nunavut hamlets"
+        "en": "Only Nunavut hamlets",
+        "fr": "Des hameaux du Nunavut seulement"
       },
       {
         "id": "d",
-        "en": "The 1867 Senate"
+        "en": "The 1867 Senate",
+        "fr": "Du Sénat de 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Punjabi Sikh immigrants arrived in B.C. more than a century ago, faced exclusion, and are now a major community in Greater Vancouver and beyond."
+      "en": "Punjabi Sikh immigrants arrived in B.C. more than a century ago, faced exclusion, and are now a major community in Greater Vancouver and beyond.",
+      "fr": "Des immigrants sikhs du Pendjab sont arrivés en Colombie-Britannique il y a plus d’un siècle, ont subi l’exclusion et forment aujourd’hui une communauté majeure dans le Grand Vancouver et ailleurs."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Treaties between Indigenous nations and the Crown are:"
+      "en": "Treaties between Indigenous nations and the Crown are:",
+      "fr": "Les traités conclus entre les nations autochtones et la Couronne sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Historic and living agreements that still have legal force"
+        "en": "Historic and living agreements that still have legal force",
+        "fr": "Des ententes historiques et vivantes qui ont toujours force de loi"
       },
       {
         "id": "b",
-        "en": "Expired automatically in 1867"
+        "en": "Expired automatically in 1867",
+        "fr": "Des ententes expirées automatiquement en 1867"
       },
       {
         "id": "c",
-        "en": "Tourism slogans with no legal meaning"
+        "en": "Tourism slogans with no legal meaning",
+        "fr": "Des slogans touristiques sans portée juridique"
       },
       {
         "id": "d",
-        "en": "Municipal bylaws"
+        "en": "Municipal bylaws",
+        "fr": "Des règlements municipaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Historic and modern treaties set out rights and relationships. They are part of Canada’s constitutional order, not museum pieces."
+      "en": "Historic and modern treaties set out rights and relationships. They are part of Canada’s constitutional order, not museum pieces.",
+      "fr": "Les traités historiques et modernes établissent des droits et des relations. Ils font partie de l’ordre constitutionnel du Canada et ne sont pas des pièces de musée."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -543,21 +639,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "English and French are the only languages spoken in Canada."
+      "en": "English and French are the only languages spoken in Canada.",
+      "fr": "L’anglais et le français sont les seules langues parlées au Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "They are the official languages of the federal state. Indigenous languages and many immigrant languages are widely spoken."
+      "en": "They are the official languages of the federal state. Indigenous languages and many immigrant languages are widely spoken.",
+      "fr": "Ce sont les langues officielles de l’État fédéral. Les langues autochtones et de nombreuses langues d’immigration sont largement parlées."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -568,29 +668,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The fur trade linked Indigenous nations with:"
+      "en": "The fur trade linked Indigenous nations with:",
+      "fr": "La traite des fourrures a relié les nations autochtones :"
     },
     "options": [
       {
         "id": "a",
-        "en": "French and later British commercial empires, including the Hudson’s Bay Company"
+        "en": "French and later British commercial empires, including the Hudson’s Bay Company",
+        "fr": "Aux empires commerciaux français, puis britanniques, dont la Compagnie de la Baie d’Hudson"
       },
       {
         "id": "b",
-        "en": "The World Bank in 1944"
+        "en": "The World Bank in 1944",
+        "fr": "À la Banque mondiale en 1944"
       },
       {
         "id": "c",
-        "en": "NATO headquarters"
+        "en": "NATO headquarters",
+        "fr": "Au quartier général de l’OTAN"
       },
       {
         "id": "d",
-        "en": "The Supreme Court registry"
+        "en": "The Supreme Court registry",
+        "fr": "Au greffe de la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The fur trade shaped early contact, Métis communities, and the map of posts that later became towns."
+      "en": "The fur trade shaped early contact, Métis communities, and the map of posts that later became towns.",
+      "fr": "La traite des fourrures a façonné les premiers contacts, les communautés métisses et la carte des postes devenus plus tard des villes."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -601,29 +707,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Irish immigration in the 19th century grew sharply because of:"
+      "en": "Irish immigration in the 19th century grew sharply because of:",
+      "fr": "Au 19e siècle, l’immigration irlandaise a fortement augmenté en raison :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Great Famine and other hardship"
+        "en": "The Great Famine and other hardship",
+        "fr": "De la Grande Famine et d’autres épreuves"
       },
       {
         "id": "b",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "De la Révolution tranquille"
       },
       {
         "id": "c",
-        "en": "The Klondike gold rush only"
+        "en": "The Klondike gold rush only",
+        "fr": "De la ruée vers l’or du Klondike seulement"
       },
       {
         "id": "d",
-        "en": "Nunavut’s creation"
+        "en": "Nunavut’s creation",
+        "fr": "De la création du Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Famine and poverty drove large Irish migration to British North American cities and to work on canals and railways."
+      "en": "Famine and poverty drove large Irish migration to British North American cities and to work on canals and railways.",
+      "fr": "La famine et la pauvreté ont provoqué une forte migration irlandaise vers les villes de l’Amérique du Nord britannique et vers les chantiers de canaux et de chemins de fer."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Scottish settlement left a strong mark on:"
+      "en": "Scottish settlement left a strong mark on:",
+      "fr": "La colonisation écossaise a laissé une forte empreinte :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Nova Scotia (literally “New Scotland”) and other regions"
+        "en": "Nova Scotia (literally “New Scotland”) and other regions",
+        "fr": "Sur la Nouvelle-Écosse (littéralement « nouvelle Écosse ») et d’autres régions"
       },
       {
         "id": "b",
-        "en": "Only the Yukon gold fields"
+        "en": "Only the Yukon gold fields",
+        "fr": "Sur les champs aurifères du Yukon seulement"
       },
       {
         "id": "c",
-        "en": "Only Nunavut hamlets"
+        "en": "Only Nunavut hamlets",
+        "fr": "Sur les hameaux du Nunavut seulement"
       },
       {
         "id": "d",
-        "en": "The 1982 Charter’s French text alone"
+        "en": "The 1982 Charter’s French text alone",
+        "fr": "Sur le texte français de la Charte de 1982 uniquement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Highland and Lowland Scots settled in the Maritimes, Ontario, and the West. Nova Scotia’s name records that history."
+      "en": "Highland and Lowland Scots settled in the Maritimes, Ontario, and the West. Nova Scotia’s name records that history.",
+      "fr": "Des Écossais des Highlands et des Lowlands se sont établis dans les Maritimes, en Ontario et dans l’Ouest. Le nom de la Nouvelle-Écosse rappelle cette histoire."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -667,29 +785,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s population today is:"
+      "en": "Canada’s population today is:",
+      "fr": "La population du Canada aujourd’hui est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Drawn from Indigenous peoples and many waves of immigration"
+        "en": "Drawn from Indigenous peoples and many waves of immigration",
+        "fr": "Issue des peuples autochtones et de nombreuses vagues d’immigration"
       },
       {
         "id": "b",
-        "en": "Unchanged since 1608"
+        "en": "Unchanged since 1608",
+        "fr": "Inchangée depuis 1608"
       },
       {
         "id": "c",
-        "en": "Made up only of English Loyalists"
+        "en": "Made up only of English Loyalists",
+        "fr": "Composée uniquement de Loyalistes anglais"
       },
       {
         "id": "d",
-        "en": "Forbidden to include newcomers"
+        "en": "Forbidden to include newcomers",
+        "fr": "Interdite d’accueillir de nouveaux arrivants"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Indigenous nations were here first. French and British colonial societies followed, then immigration from around the world."
+      "en": "Indigenous nations were here first. French and British colonial societies followed, then immigration from around the world.",
+      "fr": "Les nations autochtones étaient ici les premières. Les sociétés coloniales française et britannique ont suivi, puis l’immigration venue du monde entier."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -700,21 +824,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Quebec’s society is rooted in a French-speaking, historically Catholic culture that survived the British Conquest."
+      "en": "Quebec’s society is rooted in a French-speaking, historically Catholic culture that survived the British Conquest.",
+      "fr": "La société québécoise est enracinée dans une culture francophone, historiquement catholique, qui a survécu à la Conquête britannique."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The Quebec Act and later constitutional arrangements allowed that society to keep its language, faith, and civil law."
+      "en": "The Quebec Act and later constitutional arrangements allowed that society to keep its language, faith, and civil law.",
+      "fr": "L’Acte de Québec et les arrangements constitutionnels ultérieurs ont permis à cette société de conserver sa langue, sa foi et son droit civil."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -725,29 +853,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which phrase best matches federal multiculturalism as taught for the test?"
+      "en": "Which phrase best matches federal multiculturalism as taught for the test?",
+      "fr": "Quel énoncé correspond le mieux au multiculturalisme fédéral tel qu’il est enseigné pour l’examen?"
     },
     "options": [
       {
         "id": "a",
-        "en": "People may keep cultural traditions while sharing Canada’s laws and civic values"
+        "en": "People may keep cultural traditions while sharing Canada’s laws and civic values",
+        "fr": "Les gens peuvent conserver leurs traditions culturelles tout en partageant les lois et les valeurs civiques du Canada"
       },
       {
         "id": "b",
-        "en": "Every province must have the same official church"
+        "en": "Every province must have the same official church",
+        "fr": "Chaque province doit avoir la même Église officielle"
       },
       {
         "id": "c",
-        "en": "Only two cultures are allowed"
+        "en": "Only two cultures are allowed",
+        "fr": "Seules deux cultures sont permises"
       },
       {
         "id": "d",
-        "en": "Immigrants must abandon all food and music from home"
+        "en": "Immigrants must abandon all food and music from home",
+        "fr": "Les immigrants doivent abandonner toute la cuisine et la musique de leur pays d’origine"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Diversity is expected. It does not suspend the Criminal Code, equality of women and men, or democratic rules."
+      "en": "Diversity is expected. It does not suspend the Criminal Code, equality of women and men, or democratic rules.",
+      "fr": "La diversité est attendue. Elle ne suspend ni le Code criminel, ni l’égalité des femmes et des hommes, ni les règles démocratiques."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -758,29 +892,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The largest city in Canada is:"
+      "en": "The largest city in Canada is:",
+      "fr": "La plus grande ville du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Toronto"
+        "en": "Toronto",
+        "fr": "Toronto"
       },
       {
         "id": "b",
-        "en": "Ottawa"
+        "en": "Ottawa",
+        "fr": "Ottawa"
       },
       {
         "id": "c",
-        "en": "Quebec City"
+        "en": "Quebec City",
+        "fr": "Québec"
       },
       {
         "id": "d",
-        "en": "Charlottetown"
+        "en": "Charlottetown",
+        "fr": "Charlottetown"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Toronto is the most populous city. Ottawa is the national capital. Do not mix the two on the test."
+      "en": "Toronto is the most populous city. Ottawa is the national capital. Do not mix the two on the test.",
+      "fr": "Toronto est la ville la plus peuplée. Ottawa est la capitale nationale. Ne confondez pas les deux à l’examen."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -791,29 +931,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A “founding” colonial pair often named in the guide is:"
+      "en": "A “founding” colonial pair often named in the guide is:",
+      "fr": "Le duo colonial « fondateur » souvent nommé dans le guide est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "French and British"
+        "en": "French and British",
+        "fr": "Les Français et les Britanniques"
       },
       {
         "id": "b",
-        "en": "Spanish and Portuguese"
+        "en": "Spanish and Portuguese",
+        "fr": "Les Espagnols et les Portugais"
       },
       {
         "id": "c",
-        "en": "Dutch and Russian"
+        "en": "Dutch and Russian",
+        "fr": "Les Néerlandais et les Russes"
       },
       {
         "id": "d",
-        "en": "American and Mexican"
+        "en": "American and Mexican",
+        "fr": "Les Américains et les Mexicains"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "French and British institutions, languages, and legal traditions shaped the colonial state—on Indigenous lands that were already occupied."
+      "en": "French and British institutions, languages, and legal traditions shaped the colonial state—on Indigenous lands that were already occupied.",
+      "fr": "Les institutions, les langues et les traditions juridiques françaises et britanniques ont façonné l’État colonial — sur des terres autochtones déjà occupées."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -824,21 +970,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Métis identity is simply “anyone with one Indigenous grandparent,” with no distinct culture."
+      "en": "Métis identity is simply “anyone with one Indigenous grandparent,” with no distinct culture.",
+      "fr": "L’identité métisse se résume à « toute personne ayant un grand-parent autochtone », sans culture distincte."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Métis are a people with a historic culture and communities, not a casual mixed-ancestry label for the test’s purposes."
+      "en": "Métis are a people with a historic culture and communities, not a casual mixed-ancestry label for the test’s purposes.",
+      "fr": "Les Métis sont un peuple doté d’une culture et de communautés historiques, et non une simple étiquette d’ascendance mixte aux fins de l’examen."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -849,29 +999,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which city is Canada’s largest French-speaking metropolis?"
+      "en": "Which city is Canada’s largest French-speaking metropolis?",
+      "fr": "Quelle ville est la plus grande métropole francophone du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Montreal"
+        "en": "Montreal",
+        "fr": "Montréal"
       },
       {
         "id": "b",
-        "en": "Calgary"
+        "en": "Calgary",
+        "fr": "Calgary"
       },
       {
         "id": "c",
-        "en": "Victoria"
+        "en": "Victoria",
+        "fr": "Victoria"
       },
       {
         "id": "d",
-        "en": "St. John’s"
+        "en": "St. John’s",
+        "fr": "St. John’s"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Montreal is the principal French-speaking city of Canada (and a bilingual metropolis in daily life). Quebec City is the provincial capital."
+      "en": "Montreal is the principal French-speaking city of Canada (and a bilingual metropolis in daily life). Quebec City is the provincial capital.",
+      "fr": "Montréal est la principale ville francophone du Canada (et une métropole bilingue au quotidien). Québec est la capitale provinciale."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -882,29 +1038,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Indigenous peoples were in what is now Canada:"
+      "en": "Indigenous peoples were in what is now Canada:",
+      "fr": "Les peuples autochtones se trouvaient sur le territoire actuel du Canada :"
     },
     "options": [
       {
         "id": "a",
-        "en": "For thousands of years before European settlement"
+        "en": "For thousands of years before European settlement",
+        "fr": "Depuis des milliers d’années avant la colonisation européenne"
       },
       {
         "id": "b",
-        "en": "Only after Confederation"
+        "en": "Only after Confederation",
+        "fr": "Seulement après la Confédération"
       },
       {
         "id": "c",
-        "en": "Only after the War of 1812"
+        "en": "Only after the War of 1812",
+        "fr": "Seulement après la guerre de 1812"
       },
       {
         "id": "d",
-        "en": "Only in the 20th century"
+        "en": "Only in the 20th century",
+        "fr": "Seulement au 20e siècle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "That is the starting point of the “who we are” story: this is not an empty land that began in 1867."
+      "en": "That is the starting point of the “who we are” story: this is not an empty land that began in 1867.",
+      "fr": "C’est le point de départ du récit « qui nous sommes » : ce n’est pas une terre vide dont l’histoire commence en 1867."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -915,29 +1077,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Many Canadians today were born outside Canada, especially in:"
+      "en": "Many Canadians today were born outside Canada, especially in:",
+      "fr": "Beaucoup de Canadiens d’aujourd’hui sont nés à l’étranger et vivent surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Large cities such as Toronto, Montreal, and Vancouver"
+        "en": "Large cities such as Toronto, Montreal, and Vancouver",
+        "fr": "Dans de grandes villes comme Toronto, Montréal et Vancouver"
       },
       {
         "id": "b",
-        "en": "Only fly-in Arctic hamlets"
+        "en": "Only fly-in Arctic hamlets",
+        "fr": "Dans des hameaux arctiques accessibles par avion seulement"
       },
       {
         "id": "c",
-        "en": "Only the Senate chamber"
+        "en": "Only the Senate chamber",
+        "fr": "Dans la chambre du Sénat seulement"
       },
       {
         "id": "d",
-        "en": "Only Prince Edward Island farms in 1864"
+        "en": "Only Prince Edward Island farms in 1864",
+        "fr": "Dans les fermes de l’Île-du-Prince-Édouard en 1864 seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Immigration is concentrated in big metro areas, which is why those cities are so diverse."
+      "en": "Immigration is concentrated in big metro areas, which is why those cities are so diverse.",
+      "fr": "L’immigration se concentre dans les grandes régions métropolitaines, ce qui explique la grande diversité de ces villes."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -948,21 +1116,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "New Brunswick is the only officially bilingual province."
+      "en": "New Brunswick is the only officially bilingual province.",
+      "fr": "Le Nouveau-Brunswick est la seule province officiellement bilingue."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual in its own constitution."
+      "en": "Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual in its own constitution.",
+      "fr": "Au fédéral, le Canada est bilingue. Parmi les provinces, seul le Nouveau-Brunswick est officiellement bilingue dans sa propre constitution."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -973,29 +1145,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The term “Québécois” most often refers to:"
+      "en": "The term “Québécois” most often refers to:",
+      "fr": "Le terme « Québécois » désigne le plus souvent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The people of Quebec, especially the French-speaking majority and their culture"
+        "en": "The people of Quebec, especially the French-speaking majority and their culture",
+        "fr": "La population du Québec, surtout la majorité francophone et sa culture"
       },
       {
         "id": "b",
-        "en": "Only senators from Ottawa"
+        "en": "Only senators from Ottawa",
+        "fr": "Les sénateurs d’Ottawa seulement"
       },
       {
         "id": "c",
-        "en": "Inuit of the western Arctic"
+        "en": "Inuit of the western Arctic",
+        "fr": "Les Inuit de l’Arctique de l’Ouest"
       },
       {
         "id": "d",
-        "en": "Acadians of Louisiana only"
+        "en": "Acadians of Louisiana only",
+        "fr": "Les Acadiens de la Louisiane seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It names a national and cultural identity centred on Quebec. It is not a synonym for all Canadians."
+      "en": "It names a national and cultural identity centred on Quebec. It is not a synonym for all Canadians.",
+      "fr": "Il nomme une identité nationale et culturelle centrée sur le Québec. Ce n’est pas un synonyme de l’ensemble des Canadiens."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1006,29 +1184,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Residential schools were:"
+      "en": "Residential schools were:",
+      "fr": "Les pensionnats étaient :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A system that took Indigenous children from their families and attacked their languages and cultures"
+        "en": "A system that took Indigenous children from their families and attacked their languages and cultures",
+        "fr": "Un système qui arrachait les enfants autochtones à leur famille et s’attaquait à leurs langues et à leurs cultures"
       },
       {
         "id": "b",
-        "en": "Ordinary public high schools in Toronto"
+        "en": "Ordinary public high schools in Toronto",
+        "fr": "Des écoles secondaires publiques ordinaires de Toronto"
       },
       {
         "id": "c",
-        "en": "Military colleges for Loyalists"
+        "en": "Military colleges for Loyalists",
+        "fr": "Des collèges militaires pour les Loyalistes"
       },
       {
         "id": "d",
-        "en": "French lycées in Paris"
+        "en": "French lycées in Paris",
+        "fr": "Des lycées français à Paris"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The schools were a grave injustice. The guide is brief; an informed citizen should still know what they were."
+      "en": "The schools were a grave injustice. The guide is brief; an informed citizen should still know what they were.",
+      "fr": "Les pensionnats ont constitué une grave injustice. Le guide est bref; un citoyen informé devrait tout de même savoir ce qu’ils étaient."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1039,29 +1223,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Anglophone and Francophone communities both exist:"
+      "en": "Anglophone and Francophone communities both exist:",
+      "fr": "Les communautés anglophones et francophones existent toutes deux :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Across Canada, not only in one province"
+        "en": "Across Canada, not only in one province",
+        "fr": "Partout au Canada, et pas seulement dans une seule province"
       },
       {
         "id": "b",
-        "en": "Only in Yukon"
+        "en": "Only in Yukon",
+        "fr": "Au Yukon seulement"
       },
       {
         "id": "c",
-        "en": "Only inside the Parliament Buildings"
+        "en": "Only inside the Parliament Buildings",
+        "fr": "À l’intérieur des édifices du Parlement seulement"
       },
       {
         "id": "d",
-        "en": "Only before 1763"
+        "en": "Only before 1763",
+        "fr": "Avant 1763 seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "English-speaking majorities live in most provinces; French-speaking communities exist from the Acadian regions through Quebec to the West."
+      "en": "English-speaking majorities live in most provinces; French-speaking communities exist from the Acadian regions through Quebec to the West.",
+      "fr": "Des majorités anglophones vivent dans la plupart des provinces; des communautés francophones existent des régions acadiennes jusqu’au Québec et à l’Ouest."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1072,21 +1262,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Indigenous peoples all share one culture and one language."
+      "en": "Indigenous peoples all share one culture and one language.",
+      "fr": "Les peuples autochtones partagent tous une seule culture et une seule langue."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact for the test."
+      "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact for the test.",
+      "fr": "La diversité entre les Premières Nations, les Inuit et les Métis — et entre les Premières Nations elles-mêmes — est un fait de base pour l’examen."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1097,29 +1291,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Inuktitut is best described as:"
+      "en": "Inuktitut is best described as:",
+      "fr": "L’inuktitut se décrit le mieux comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A language of the Inuit, still spoken in many northern communities"
+        "en": "A language of the Inuit, still spoken in many northern communities",
+        "fr": "Une langue des Inuit, encore parlée dans de nombreuses communautés nordiques"
       },
       {
         "id": "b",
-        "en": "The official language of Alberta only"
+        "en": "The official language of Alberta only",
+        "fr": "La langue officielle de l’Alberta seulement"
       },
       {
         "id": "c",
-        "en": "A type of prairie wheat"
+        "en": "A type of prairie wheat",
+        "fr": "Une variété de blé des Prairies"
       },
       {
         "id": "d",
-        "en": "The original name of Ottawa"
+        "en": "The original name of Ottawa",
+        "fr": "Le nom d’origine d’Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Indigenous languages are living languages. English and French are official federally; they are not the only tongues in Canada."
+      "en": "Indigenous languages are living languages. English and French are official federally; they are not the only tongues in Canada.",
+      "fr": "Les langues autochtones sont des langues vivantes. L’anglais et le français sont officiels au fédéral; ce ne sont pas les seules langues parlées au Canada."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1130,29 +1330,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Chinese head tax and later exclusion laws were:"
+      "en": "The Chinese head tax and later exclusion laws were:",
+      "fr": "La taxe d’entrée imposée aux Chinois et les lois d’exclusion qui ont suivi étaient :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Racist immigration barriers later recognized as wrong"
+        "en": "Racist immigration barriers later recognized as wrong",
+        "fr": "Des obstacles racistes à l’immigration, reconnus plus tard comme injustes"
       },
       {
         "id": "b",
-        "en": "A Confederation promise to B.C. in 1867"
+        "en": "A Confederation promise to B.C. in 1867",
+        "fr": "Une promesse de la Confédération faite à la Colombie-Britannique en 1867"
       },
       {
         "id": "c",
-        "en": "A Charter right"
+        "en": "A Charter right",
+        "fr": "Un droit garanti par la Charte"
       },
       {
         "id": "d",
-        "en": "A municipal parking rule"
+        "en": "A municipal parking rule",
+        "fr": "Un règlement municipal de stationnement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Chinese labour built the railway, then faced discriminatory fees and a 1923 exclusion act. Redress came much later."
+      "en": "Chinese labour built the railway, then faced discriminatory fees and a 1923 exclusion act. Redress came much later.",
+      "fr": "La main-d’œuvre chinoise a construit le chemin de fer, puis a subi des droits discriminatoires et une loi d’exclusion en 1923. La réparation est venue bien plus tard."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1163,21 +1369,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Komagata Maru incident involved South Asian passengers who were turned away from Vancouver in 1914."
+      "en": "The Komagata Maru incident involved South Asian passengers who were turned away from Vancouver in 1914.",
+      "fr": "L’incident du Komagata Maru a touché des passagers sud-asiatiques refoulés de Vancouver en 1914."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is a landmark of exclusion in immigration history. Canada later apologized for the treatment of the passengers."
+      "en": "It is a landmark of exclusion in immigration history. Canada later apologized for the treatment of the passengers.",
+      "fr": "C’est un jalon de l’exclusion dans l’histoire de l’immigration. Le Canada s’est plus tard excusé du traitement réservé aux passagers."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1188,29 +1398,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Many Mennonite, Doukhobor, and other European farm settlers were drawn to the Prairies by:"
+      "en": "Many Mennonite, Doukhobor, and other European farm settlers were drawn to the Prairies by:",
+      "fr": "De nombreux colons agricoles mennonites, doukhobors et autres Européens ont été attirés vers les Prairies par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Offers of land and a chance to farm in community"
+        "en": "Offers of land and a chance to farm in community",
+        "fr": "Des offres de terres et la possibilité de cultiver en communauté"
       },
       {
         "id": "b",
-        "en": "A guarantee of Senate seats"
+        "en": "A guarantee of Senate seats",
+        "fr": "Une garantie de sièges au Sénat"
       },
       {
         "id": "c",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "La Révolution tranquille"
       },
       {
         "id": "d",
-        "en": "NORAD membership"
+        "en": "NORAD membership",
+        "fr": "L’adhésion au NORAD"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The wheat boom mixed many European groups onto Prairie homesteads. Language and religion often stayed distinctive."
+      "en": "The wheat boom mixed many European groups onto Prairie homesteads. Language and religion often stayed distinctive.",
+      "fr": "L’essor du blé a réuni de nombreux groupes européens sur les fermes des Prairies. La langue et la religion sont souvent demeurées distinctes."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1221,29 +1437,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A large postwar Italian-Canadian community is especially associated with:"
+      "en": "A large postwar Italian-Canadian community is especially associated with:",
+      "fr": "L’importante communauté italo-canadienne d’après-guerre est surtout associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Cities such as Toronto and Montreal"
+        "en": "Cities such as Toronto and Montreal",
+        "fr": "À des villes comme Toronto et Montréal"
       },
       {
         "id": "b",
-        "en": "Only Yukon gold camps"
+        "en": "Only Yukon gold camps",
+        "fr": "Aux camps aurifères du Yukon seulement"
       },
       {
         "id": "c",
-        "en": "Only the Senate chamber"
+        "en": "Only the Senate chamber",
+        "fr": "À la chambre du Sénat seulement"
       },
       {
         "id": "d",
-        "en": "Only 17th-century New France"
+        "en": "Only 17th-century New France",
+        "fr": "À la Nouvelle-France du 17e siècle seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Southern European immigration after 1945 reshaped Canada’s cities. That is part of “who we are” today."
+      "en": "Southern European immigration after 1945 reshaped Canada’s cities. That is part of “who we are” today.",
+      "fr": "L’immigration sud-européenne après 1945 a transformé les villes du Canada. Cela fait partie de « qui nous sommes » aujourd’hui."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1254,29 +1476,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Caribbean and African immigration to Canada grew especially after:"
+      "en": "Caribbean and African immigration to Canada grew especially after:",
+      "fr": "L’immigration caribéenne et africaine au Canada a surtout augmenté après :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Racial barriers in immigration policy were reduced in the 1960s"
+        "en": "Racial barriers in immigration policy were reduced in the 1960s",
+        "fr": "La réduction des barrières raciales dans la politique d’immigration au cours des années 1960"
       },
       {
         "id": "b",
-        "en": "Confederation in 1867"
+        "en": "Confederation in 1867",
+        "fr": "La Confédération de 1867"
       },
       {
         "id": "c",
-        "en": "The War of 1812"
+        "en": "The War of 1812",
+        "fr": "La guerre de 1812"
       },
       {
         "id": "d",
-        "en": "The founding of the Hudson’s Bay Company"
+        "en": "The founding of the Hudson’s Bay Company",
+        "fr": "La fondation de la Compagnie de la Baie d’Hudson"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The points system and later reforms opened doors that earlier “preferred country” rules had closed."
+      "en": "The points system and later reforms opened doors that earlier “preferred country” rules had closed.",
+      "fr": "Le système de points et les réformes ultérieures ont ouvert des portes que les anciennes règles de « pays de prédilection » avaient fermées."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1287,21 +1515,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Many First Nations people today live in cities as well as in First Nation communities."
+      "en": "Many First Nations people today live in cities as well as in First Nation communities.",
+      "fr": "Aujourd’hui, de nombreux membres des Premières Nations vivent en ville autant que dans les communautés des Premières Nations."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Urban Indigenous populations are large. “Who we are” is not only a reserve or northern-village story."
+      "en": "Urban Indigenous populations are large. “Who we are” is not only a reserve or northern-village story.",
+      "fr": "Les populations autochtones urbaines sont nombreuses. « Qui nous sommes » n’est pas seulement une histoire de réserve ou de village nordique."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1312,29 +1544,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Treaties are described as living agreements because they:"
+      "en": "Treaties are described as living agreements because they:",
+      "fr": "Les traités sont décrits comme des ententes vivantes parce qu’ils :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Continue to define relationships between Indigenous nations and the Crown"
+        "en": "Continue to define relationships between Indigenous nations and the Crown",
+        "fr": "Continuent de définir les relations entre les nations autochtones et la Couronne"
       },
       {
         "id": "b",
-        "en": "Expired automatically in 1867"
+        "en": "Expired automatically in 1867",
+        "fr": "Ont expiré automatiquement en 1867"
       },
       {
         "id": "c",
-        "en": "Apply only to tourists"
+        "en": "Apply only to tourists",
+        "fr": "Ne s’appliquent qu’aux touristes"
       },
       {
         "id": "d",
-        "en": "Are municipal parking permits"
+        "en": "Are municipal parking permits",
+        "fr": "Sont des permis de stationnement municipaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Historic and modern treaties are constitutional facts, not folklore. Implementation remains contested in politics and courts."
+      "en": "Historic and modern treaties are constitutional facts, not folklore. Implementation remains contested in politics and courts.",
+      "fr": "Les traités historiques et modernes sont des réalités constitutionnelles, et non du folklore. Leur mise en œuvre demeure contestée en politique et devant les tribunaux."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1345,29 +1583,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Haitian and other Francophone newcomers have especially strengthened French-speaking life in:"
+      "en": "Haitian and other Francophone newcomers have especially strengthened French-speaking life in:",
+      "fr": "Les nouveaux arrivants haïtiens et d’autres francophones ont surtout renforcé la vie en français :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Montreal and other parts of Quebec"
+        "en": "Montreal and other parts of Quebec",
+        "fr": "À Montréal et ailleurs au Québec"
       },
       {
         "id": "b",
-        "en": "Only Whitehorse"
+        "en": "Only Whitehorse",
+        "fr": "À Whitehorse seulement"
       },
       {
         "id": "c",
-        "en": "Only rural Saskatchewan wheat towns"
+        "en": "Only rural Saskatchewan wheat towns",
+        "fr": "Dans les villages céréaliers ruraux de la Saskatchewan seulement"
       },
       {
         "id": "d",
-        "en": "Only the Peace Tower"
+        "en": "Only the Peace Tower",
+        "fr": "À la Tour de la Paix seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "French in Canada is not only “old stock” Quebec. Immigration also feeds Francophone communities."
+      "en": "French in Canada is not only “old stock” Quebec. Immigration also feeds Francophone communities.",
+      "fr": "Le français au Canada n’est pas seulement celui du Québec « de souche ». L’immigration alimente aussi les communautés francophones."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1378,29 +1622,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A heritage language (for example, Punjabi, Italian, or Mandarin) in Canada is:"
+      "en": "A heritage language (for example, Punjabi, Italian, or Mandarin) in Canada is:",
+      "fr": "Au Canada, une langue patrimoniale (par exemple le pendjabi, l’italien ou le mandarin) est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A language other than English or French that a community continues to use"
+        "en": "A language other than English or French that a community continues to use",
+        "fr": "Une langue autre que l’anglais ou le français qu’une communauté continue d’utiliser"
       },
       {
         "id": "b",
-        "en": "Illegal under the Official Languages Act"
+        "en": "Illegal under the Official Languages Act",
+        "fr": "Une langue illégale selon la Loi sur les langues officielles"
       },
       {
         "id": "c",
-        "en": "The only language allowed in federal court"
+        "en": "The only language allowed in federal court",
+        "fr": "La seule langue permise devant les tribunaux fédéraux"
       },
       {
         "id": "d",
-        "en": "A type of maple product"
+        "en": "A type of maple product",
+        "fr": "Un type de produit de l’érable"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Official bilingualism does not ban other languages in homes, temples, newspapers, or businesses."
+      "en": "Official bilingualism does not ban other languages in homes, temples, newspapers, or businesses.",
+      "fr": "Le bilinguisme officiel n’interdit pas les autres langues à la maison, dans les lieux de culte, les journaux ou les commerces."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1411,21 +1661,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Inuit Nunangat refers to the Inuit homeland across the Arctic, including parts of the territories and northern Quebec and Labrador."
+      "en": "Inuit Nunangat refers to the Inuit homeland across the Arctic, including parts of the territories and northern Quebec and Labrador.",
+      "fr": "L’Inuit Nunangat désigne la patrie des Inuit dans l’Arctique, y compris des parties des territoires ainsi que le Nord du Québec et le Labrador."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is a geographic and cultural idea, not a tenth province. Nunavut is one political expression of that homeland."
+      "en": "It is a geographic and cultural idea, not a tenth province. Nunavut is one political expression of that homeland.",
+      "fr": "C’est une notion géographique et culturelle, et non une dixième province. Le Nunavut est une expression politique de cette patrie."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1436,29 +1690,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Jewish Canadians have been part of Canada for generations and include:"
+      "en": "Jewish Canadians have been part of Canada for generations and include:",
+      "fr": "Les Canadiens juifs font partie du Canada depuis des générations et comprennent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Communities in Montreal, Toronto, and other cities, including Holocaust survivors after 1945"
+        "en": "Communities in Montreal, Toronto, and other cities, including Holocaust survivors after 1945",
+        "fr": "Des communautés à Montréal, à Toronto et dans d’autres villes, dont des survivants de la Shoah arrivés après 1945"
       },
       {
         "id": "b",
-        "en": "Only a 21st-century arrival with no earlier history"
+        "en": "Only a 21st-century arrival with no earlier history",
+        "fr": "Uniquement une arrivée du 21e siècle, sans histoire antérieure"
       },
       {
         "id": "c",
-        "en": "A group banned from citizenship"
+        "en": "A group banned from citizenship",
+        "fr": "Un groupe exclu de la citoyenneté"
       },
       {
         "id": "d",
-        "en": "A Senate-only religious order"
+        "en": "A Senate-only religious order",
+        "fr": "Un ordre religieux réservé au Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The community is both historic and renewed by refugees after the Second World War. Antisemitism is part of the harder history too."
+      "en": "The community is both historic and renewed by refugees after the Second World War. Antisemitism is part of the harder history too.",
+      "fr": "La communauté est à la fois historique et renouvelée par les réfugiés arrivés après la Seconde Guerre mondiale. L’antisémitisme fait aussi partie de cette histoire plus difficile."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1469,29 +1729,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about official languages is most accurate for everyday life?"
+      "en": "Which statement about official languages is most accurate for everyday life?",
+      "fr": "Quel énoncé sur les langues officielles est le plus exact dans la vie de tous les jours?"
     },
     "options": [
       {
         "id": "a",
-        "en": "You may speak any language privately; federal institutions must serve the public in English and French"
+        "en": "You may speak any language privately; federal institutions must serve the public in English and French",
+        "fr": "Vous pouvez parler la langue de votre choix en privé; les institutions fédérales doivent servir le public en anglais et en français"
       },
       {
         "id": "b",
-        "en": "Every shopkeeper must speak Inuktitut"
+        "en": "Every shopkeeper must speak Inuktitut",
+        "fr": "Chaque commerçant doit parler l’inuktitut"
       },
       {
         "id": "c",
-        "en": "English is banned in Quebec homes"
+        "en": "English is banned in Quebec homes",
+        "fr": "L’anglais est interdit dans les foyers québécois"
       },
       {
         "id": "d",
-        "en": "French is banned west of Ontario"
+        "en": "French is banned west of Ontario",
+        "fr": "Le français est interdit à l’ouest de l’Ontario"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The duty sits mainly on Parliament, federal institutions, and some courts—not on every private conversation."
+      "en": "The duty sits mainly on Parliament, federal institutions, and some courts—not on every private conversation.",
+      "fr": "L’obligation repose surtout sur le Parlement, les institutions fédérales et certains tribunaux — et non sur chaque conversation privée."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1502,29 +1768,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Métis communities historically grew along:"
+      "en": "Métis communities historically grew along:",
+      "fr": "Historiquement, les communautés métisses se sont développées le long :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Fur-trade routes of the Prairies and the West, with distinct language and culture"
+        "en": "Fur-trade routes of the Prairies and the West, with distinct language and culture",
+        "fr": "Des routes de la traite des fourrures des Prairies et de l’Ouest, avec une langue et une culture distinctes"
       },
       {
         "id": "b",
-        "en": "Only the Halifax waterfront in 1497"
+        "en": "Only the Halifax waterfront in 1497",
+        "fr": "Du front de mer de Halifax en 1497 seulement"
       },
       {
         "id": "c",
-        "en": "Only Parliament Hill offices"
+        "en": "Only Parliament Hill offices",
+        "fr": "Des bureaux de la Colline du Parlement seulement"
       },
       {
         "id": "d",
-        "en": "Only NATO bases in Europe"
+        "en": "Only NATO bases in Europe",
+        "fr": "Des bases de l’OTAN en Europe seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Red River and later Prairie settlements are the classic Métis geography. Identity is not a blood-quantum worksheet on the test."
+      "en": "Red River and later Prairie settlements are the classic Métis geography. Identity is not a blood-quantum worksheet on the test.",
+      "fr": "La rivière Rouge et les établissements ultérieurs des Prairies forment la géographie métisse classique. L’identité n’est pas une question de quantum de sang aux fins de l’examen."
     },
     "source": "Discover Canada — Who We Are"
   }

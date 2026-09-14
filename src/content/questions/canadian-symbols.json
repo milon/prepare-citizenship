@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which plant appears on the Canadian flag?"
+      "en": "Which plant appears on the Canadian flag?",
+      "fr": "Quelle plante figure sur le drapeau du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "A fleur-de-lis"
+        "en": "A fleur-de-lis",
+        "fr": "Une fleur de lys"
       },
       {
         "id": "b",
-        "en": "A maple leaf"
+        "en": "A maple leaf",
+        "fr": "Une feuille d’érable"
       },
       {
         "id": "c",
-        "en": "A shamrock"
+        "en": "A shamrock",
+        "fr": "Un trèfle"
       },
       {
         "id": "d",
-        "en": "A rose"
+        "en": "A rose",
+        "fr": "Une rose"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The National Flag of Canada, adopted in 1965, is red and white with a red maple leaf at the centre."
+      "en": "The National Flag of Canada, adopted in 1965, is red and white with a red maple leaf at the centre.",
+      "fr": "Le drapeau national du Canada, adopté en 1965, est rouge et blanc et porte une feuille d’érable rouge en son centre."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is Canada’s national animal?"
+      "en": "What is Canada’s national animal?",
+      "fr": "Quel est l’animal national du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The moose"
+        "en": "The moose",
+        "fr": "L’orignal"
       },
       {
         "id": "b",
-        "en": "The beaver"
+        "en": "The beaver",
+        "fr": "Le castor"
       },
       {
         "id": "c",
-        "en": "The polar bear"
+        "en": "The polar bear",
+        "fr": "L’ours polaire"
       },
       {
         "id": "d",
-        "en": "The Canada goose"
+        "en": "The Canada goose",
+        "fr": "La bernache du Canada"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The beaver, long tied to the fur trade, is an official emblem of Canada."
+      "en": "The beaver, long tied to the fur trade, is an official emblem of Canada.",
+      "fr": "Le castor, longtemps lié à la traite des fourrures, est un emblème officiel du Canada."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -72,29 +84,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Where do the Parliament Buildings stand?"
+      "en": "Where do the Parliament Buildings stand?",
+      "fr": "Où se trouvent les édifices du Parlement?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Toronto"
+        "en": "Toronto",
+        "fr": "Toronto"
       },
       {
         "id": "b",
-        "en": "Montreal"
+        "en": "Montreal",
+        "fr": "Montréal"
       },
       {
         "id": "c",
-        "en": "Ottawa"
+        "en": "Ottawa",
+        "fr": "Ottawa"
       },
       {
         "id": "d",
-        "en": "Quebec City"
+        "en": "Quebec City",
+        "fr": "Québec"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Parliament Hill in Ottawa is the seat of the federal Parliament and a widely recognized national symbol."
+      "en": "Parliament Hill in Ottawa is the seat of the federal Parliament and a widely recognized national symbol.",
+      "fr": "La colline du Parlement, à Ottawa, est le siège du Parlement fédéral et un symbole national largement reconnu."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -105,29 +123,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s official colours, from a 1921 royal proclamation, are:"
+      "en": "Canada’s official colours, from a 1921 royal proclamation, are:",
+      "fr": "Les couleurs officielles du Canada, issues d’une proclamation royale de 1921, sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Red and white"
+        "en": "Red and white",
+        "fr": "Le rouge et le blanc"
       },
       {
         "id": "b",
-        "en": "Blue and gold only"
+        "en": "Blue and gold only",
+        "fr": "Le bleu et l’or seulement"
       },
       {
         "id": "c",
-        "en": "Green and brown"
+        "en": "Green and brown",
+        "fr": "Le vert et le brun"
       },
       {
         "id": "d",
-        "en": "Black and orange"
+        "en": "Black and orange",
+        "fr": "Le noir et l’orange"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "King George V assigned red and white. They appear on the flag and in many other emblems."
+      "en": "King George V assigned red and white. They appear on the flag and in many other emblems.",
+      "fr": "Le roi George V a attribué le rouge et le blanc au Canada. On les retrouve sur le drapeau et dans bien d’autres emblèmes."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -138,29 +162,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Peace Tower is part of:"
+      "en": "The Peace Tower is part of:",
+      "fr": "La Tour de la Paix fait partie :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Parliament Buildings in Ottawa"
+        "en": "The Parliament Buildings in Ottawa",
+        "fr": "Des édifices du Parlement, à Ottawa"
       },
       {
         "id": "b",
-        "en": "Casa Loma"
+        "en": "Casa Loma",
+        "fr": "De Casa Loma"
       },
       {
         "id": "c",
-        "en": "The Halifax Citadel only"
+        "en": "The Halifax Citadel only",
+        "fr": "De la seule Citadelle d’Halifax"
       },
       {
         "id": "d",
-        "en": "Rideau Cottage’s garage"
+        "en": "Rideau Cottage’s garage",
+        "fr": "Du garage du chalet Rideau"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It holds a memorial chamber for the dead of the world wars and later conflicts."
+      "en": "It holds a memorial chamber for the dead of the world wars and later conflicts.",
+      "fr": "Elle abrite une chapelle du Souvenir consacrée aux morts des guerres mondiales et des conflits ultérieurs."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -171,29 +201,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s national anthem is:"
+      "en": "Canada’s national anthem is:",
+      "fr": "L’hymne national du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "O Canada"
+        "en": "O Canada",
+        "fr": "Ô Canada"
       },
       {
         "id": "b",
-        "en": "The Star-Spangled Banner"
+        "en": "The Star-Spangled Banner",
+        "fr": "The Star-Spangled Banner"
       },
       {
         "id": "c",
-        "en": "God Save the King only"
+        "en": "God Save the King only",
+        "fr": "God Save the King seulement"
       },
       {
         "id": "d",
-        "en": "La Marseillaise"
+        "en": "La Marseillaise",
+        "fr": "La Marseillaise"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "O Canada is the national anthem. God Save the King is the royal anthem."
+      "en": "O Canada is the national anthem. God Save the King is the royal anthem.",
+      "fr": "Ô Canada est l’hymne national. God Save the King est l’hymne royal."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -204,21 +240,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "God Save the King is Canada’s royal anthem."
+      "en": "God Save the King is Canada’s royal anthem.",
+      "fr": "God Save the King est l’hymne royal du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It honours the Crown. It is not a replacement for O Canada at ordinary sports events."
+      "en": "It honours the Crown. It is not a replacement for O Canada at ordinary sports events.",
+      "fr": "Il rend hommage à la Couronne. Il ne remplace pas l’Ô Canada lors des événements sportifs ordinaires."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -229,29 +269,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Remembrance Day is:"
+      "en": "Remembrance Day is:",
+      "fr": "Le jour du Souvenir a lieu :"
     },
     "options": [
       {
         "id": "a",
-        "en": "November 11"
+        "en": "November 11",
+        "fr": "Le 11 novembre"
       },
       {
         "id": "b",
-        "en": "July 1"
+        "en": "July 1",
+        "fr": "Le 1er juillet"
       },
       {
         "id": "c",
-        "en": "April 17"
+        "en": "April 17",
+        "fr": "Le 17 avril"
       },
       {
         "id": "d",
-        "en": "December 25"
+        "en": "December 25",
+        "fr": "Le 25 décembre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The eleventh hour of the eleventh day of the eleventh month marks the Armistice of 1918. Wear a poppy; keep a silence."
+      "en": "The eleventh hour of the eleventh day of the eleventh month marks the Armistice of 1918. Wear a poppy; keep a silence.",
+      "fr": "La onzième heure du onzième jour du onzième mois rappelle l’armistice de 1918. Portez le coquelicot; observez la minute de silence."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -262,29 +308,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "“In Flanders Fields” was written by:"
+      "en": "“In Flanders Fields” was written by:",
+      "fr": "Le poème « In Flanders Fields » (Au champ d’honneur) a été écrit par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "John McCrae"
+        "en": "John McCrae",
+        "fr": "John McCrae"
       },
       {
         "id": "b",
-        "en": "Sir John A. Macdonald"
+        "en": "Sir John A. Macdonald",
+        "fr": "Sir John A. Macdonald"
       },
       {
         "id": "c",
-        "en": "Calixa Lavallée"
+        "en": "Calixa Lavallée",
+        "fr": "Calixa Lavallée"
       },
       {
         "id": "d",
-        "en": "Emily Murphy"
+        "en": "Emily Murphy",
+        "fr": "Emily Murphy"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "McCrae, a Canadian medical officer in the First World War, wrote the poem that made the poppy a remembrance symbol."
+      "en": "McCrae, a Canadian medical officer in the First World War, wrote the poem that made the poppy a remembrance symbol.",
+      "fr": "McCrae, médecin militaire canadien pendant la Première Guerre mondiale, a écrit le poème qui a fait du coquelicot un symbole du souvenir."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -295,29 +347,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Crown as a symbol stands for:"
+      "en": "The Crown as a symbol stands for:",
+      "fr": "Comme symbole, la Couronne représente :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The state and the constitutional monarchy"
+        "en": "The state and the constitutional monarchy",
+        "fr": "L’État et la monarchie constitutionnelle"
       },
       {
         "id": "b",
-        "en": "A hockey trophy only"
+        "en": "A hockey trophy only",
+        "fr": "Un trophée de hockey seulement"
       },
       {
         "id": "c",
-        "en": "The official opposition"
+        "en": "The official opposition",
+        "fr": "L’opposition officielle"
       },
       {
         "id": "d",
-        "en": "A grocery chain"
+        "en": "A grocery chain",
+        "fr": "Une chaîne d’alimentation"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It appears on police and military badges, some coins, and in legal language such as Crown land."
+      "en": "It appears on police and military badges, some coins, and in legal language such as Crown land.",
+      "fr": "Elle figure sur les insignes des policiers et des militaires, sur certaines pièces de monnaie et dans le vocabulaire juridique, comme les terres de la Couronne."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -328,29 +386,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The fleur-de-lis is especially associated with:"
+      "en": "The fleur-de-lis is especially associated with:",
+      "fr": "La fleur de lys est surtout associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "French-Canadian heritage"
+        "en": "French-Canadian heritage",
+        "fr": "À l’héritage canadien-français"
       },
       {
         "id": "b",
-        "en": "Inuit drum dancing only"
+        "en": "Inuit drum dancing only",
+        "fr": "À la seule danse du tambour chez les Inuits"
       },
       {
         "id": "c",
-        "en": "The Klondike stampede"
+        "en": "The Klondike stampede",
+        "fr": "À la ruée vers le Klondike"
       },
       {
         "id": "d",
-        "en": "NATO stars"
+        "en": "NATO stars",
+        "fr": "Aux étoiles de l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It appears on Quebec’s flag and in many French-Canadian emblems."
+      "en": "It appears on Quebec’s flag and in many French-Canadian emblems.",
+      "fr": "Elle figure sur le drapeau du Québec et dans de nombreux emblèmes canadiens-français."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -361,29 +425,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The RCMP (“Mounties”) are a national symbol as well as:"
+      "en": "The RCMP (“Mounties”) are a national symbol as well as:",
+      "fr": "La Gendarmerie royale du Canada est un symbole national, mais aussi :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A police service"
+        "en": "A police service",
+        "fr": "Un service de police"
       },
       {
         "id": "b",
-        "en": "A hockey team"
+        "en": "A hockey team",
+        "fr": "Une équipe de hockey"
       },
       {
         "id": "c",
-        "en": "A railway"
+        "en": "A railway",
+        "fr": "Un chemin de fer"
       },
       {
         "id": "d",
-        "en": "A brand of maple syrup"
+        "en": "A brand of maple syrup",
+        "fr": "Une marque de sirop d’érable"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The red serge and Musical Ride are ceremonial; the force’s daily work is policing."
+      "en": "The red serge and Musical Ride are ceremonial; the force’s daily work is policing.",
+      "fr": "La tunique rouge et le Carrousel relèvent du cérémonial; le travail quotidien de la Gendarmerie, c’est le maintien de l’ordre."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -394,29 +464,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Order of Canada motto is:"
+      "en": "The Order of Canada motto is:",
+      "fr": "La devise de l’Ordre du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Desiderantes meliorem patriam (they desire a better country)"
+        "en": "Desiderantes meliorem patriam (they desire a better country)",
+        "fr": "Desiderantes meliorem patriam (ils désirent une patrie meilleure)"
       },
       {
         "id": "b",
-        "en": "From sea to sea, in Latin only on hockey jerseys"
+        "en": "From sea to sea, in Latin only on hockey jerseys",
+        "fr": "D’un océan à l’autre, en latin uniquement sur les chandails de hockey"
       },
       {
         "id": "c",
-        "en": "Liberty, equality, fraternity"
+        "en": "Liberty, equality, fraternity",
+        "fr": "Liberté, égalité, fraternité"
       },
       {
         "id": "d",
-        "en": "E pluribus unum"
+        "en": "E pluribus unum",
+        "fr": "E pluribus unum"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Order honours outstanding contribution to Canada. The motto is taken from Hebrews 11:16."
+      "en": "The Order honours outstanding contribution to Canada. The motto is taken from Hebrews 11:16.",
+      "fr": "L’Ordre souligne une contribution exceptionnelle au Canada. La devise est tirée de l’Épître aux Hébreux, chapitre 11, verset 16."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -427,21 +503,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Hockey is often identified as Canada’s national winter sport, and lacrosse as the national summer sport."
+      "en": "Hockey is often identified as Canada’s national winter sport, and lacrosse as the national summer sport.",
+      "fr": "Le hockey est souvent désigné comme le sport national d’hiver du Canada, et la crosse comme le sport national d’été."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "That pairing is the one the study guide expects. You do not need to be a fan."
+      "en": "That pairing is the one the study guide expects. You do not need to be a fan.",
+      "fr": "C’est le couple que le guide d’étude attend. Nul besoin d’être un amateur de sport."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -452,29 +532,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Victoria Day commemorates:"
+      "en": "Victoria Day commemorates:",
+      "fr": "La fête de Victoria souligne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The official birthday of the Crown’s sovereign for ceremonial purposes"
+        "en": "The official birthday of the Crown’s sovereign for ceremonial purposes",
+        "fr": "L’anniversaire officiel du souverain de la Couronne, à des fins cérémonielles"
       },
       {
         "id": "b",
-        "en": "Confederation in 1867 only"
+        "en": "Confederation in 1867 only",
+        "fr": "La seule Confédération de 1867"
       },
       {
         "id": "c",
-        "en": "D-Day"
+        "en": "D-Day",
+        "fr": "Le jour J"
       },
       {
         "id": "d",
-        "en": "Nunavut Day"
+        "en": "Nunavut Day",
+        "fr": "La Journée du Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a holiday tied to the monarchy (originally Queen Victoria)."
+      "en": "It is a holiday tied to the monarchy (originally Queen Victoria).",
+      "fr": "C’est un congé lié à la monarchie, rattaché à l’origine à la reine Victoria."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -485,29 +571,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s coat of arms includes symbols of:"
+      "en": "Canada’s coat of arms includes symbols of:",
+      "fr": "Les armoiries du Canada comprennent des symboles :"
     },
     "options": [
       {
         "id": "a",
-        "en": "England, Scotland, Ireland, and France, among other elements"
+        "en": "England, Scotland, Ireland, and France, among other elements",
+        "fr": "De l’Angleterre, de l’Écosse, de l’Irlande et de la France, parmi d’autres éléments"
       },
       {
         "id": "b",
-        "en": "Only the United States"
+        "en": "Only the United States",
+        "fr": "Des États-Unis seulement"
       },
       {
         "id": "c",
-        "en": "Only the Hudson’s Bay Company beaver with no shield"
+        "en": "Only the Hudson’s Bay Company beaver with no shield",
+        "fr": "Du seul castor de la Compagnie de la Baie d’Hudson, sans écu"
       },
       {
         "id": "d",
-        "en": "The UN wreath alone"
+        "en": "The UN wreath alone",
+        "fr": "De la seule couronne de feuillage de l’ONU"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The arms record colonial heritage. They also include a maple leaf and other Canadian elements."
+      "en": "The arms record colonial heritage. They also include a maple leaf and other Canadian elements.",
+      "fr": "Les armoiries rappellent l’héritage colonial. Elles comportent aussi une feuille d’érable et d’autres éléments canadiens."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -518,29 +610,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Library of Parliament is famous in part because:"
+      "en": "The Library of Parliament is famous in part because:",
+      "fr": "La Bibliothèque du Parlement est célèbre en partie parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "It survived the 1916 fire that destroyed the original Centre Block"
+        "en": "It survived the 1916 fire that destroyed the original Centre Block",
+        "fr": "Elle a survécu à l’incendie de 1916 qui a détruit l’édifice du Centre d’origine"
       },
       {
         "id": "b",
-        "en": "It is in Vancouver"
+        "en": "It is in Vancouver",
+        "fr": "Elle se trouve à Vancouver"
       },
       {
         "id": "c",
-        "en": "It is Canada’s only hockey rink"
+        "en": "It is Canada’s only hockey rink",
+        "fr": "C’est la seule patinoire de hockey du Canada"
       },
       {
         "id": "d",
-        "en": "It stores all provincial flags only"
+        "en": "It stores all provincial flags only",
+        "fr": "Elle ne conserve que les drapeaux provinciaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The round library is an architectural and historic landmark on the Hill."
+      "en": "The round library is an architectural and historic landmark on the Hill.",
+      "fr": "La bibliothèque circulaire est un monument architectural et historique de la colline du Parlement."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -551,29 +649,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Calixa Lavallée is associated with:"
+      "en": "Calixa Lavallée is associated with:",
+      "fr": "Calixa Lavallée est associé :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The music of O Canada"
+        "en": "The music of O Canada",
+        "fr": "À la musique de l’Ô Canada"
       },
       {
         "id": "b",
-        "en": "The Persons Case"
+        "en": "The Persons Case",
+        "fr": "À l’affaire « personne »"
       },
       {
         "id": "c",
-        "en": "Vimy Ridge command"
+        "en": "Vimy Ridge command",
+        "fr": "Au commandement à la crête de Vimy"
       },
       {
         "id": "d",
-        "en": "The last spike"
+        "en": "The last spike",
+        "fr": "Au dernier crampon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Adolphe-Basile Routhier wrote the original French lyrics; Robert Stanley Weir wrote the English lyrics most people know."
+      "en": "Adolphe-Basile Routhier wrote the original French lyrics; Robert Stanley Weir wrote the English lyrics most people know.",
+      "fr": "Adolphe-Basile Routhier a signé les paroles françaises d’origine; Robert Stanley Weir a écrit les paroles anglaises que la plupart des gens connaissent."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -584,21 +688,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Union Jack has no remaining official place in Canadian symbolism."
+      "en": "The Union Jack has no remaining official place in Canadian symbolism.",
+      "fr": "L’Union Jack n’a plus aucune place officielle dans la symbolique canadienne."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The Royal Union Flag is still a symbol of membership in the Commonwealth and of allegiance to the Crown, even though it is not the national flag."
+      "en": "The Royal Union Flag is still a symbol of membership in the Commonwealth and of allegiance to the Crown, even though it is not the national flag.",
+      "fr": "Le drapeau royal de l’Union demeure un symbole de l’appartenance au Commonwealth et de l’allégeance à la Couronne, même s’il n’est pas le drapeau national."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -609,29 +717,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada Day is celebrated on:"
+      "en": "Canada Day is celebrated on:",
+      "fr": "La fête du Canada est célébrée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "July 1"
+        "en": "July 1",
+        "fr": "Le 1er juillet"
       },
       {
         "id": "b",
-        "en": "November 11"
+        "en": "November 11",
+        "fr": "Le 11 novembre"
       },
       {
         "id": "c",
-        "en": "April 17"
+        "en": "April 17",
+        "fr": "Le 17 avril"
       },
       {
         "id": "d",
-        "en": "The first Monday in September only"
+        "en": "The first Monday in September only",
+        "fr": "Le premier lundi de septembre seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It marks Confederation (1867). It was long called Dominion Day."
+      "en": "It marks Confederation (1867). It was long called Dominion Day.",
+      "fr": "Elle souligne la Confédération de 1867. On l’a longtemps appelée la fête du Dominion."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -642,29 +756,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The maple leaf was used as a Canadian emblem:"
+      "en": "The maple leaf was used as a Canadian emblem:",
+      "fr": "La feuille d’érable a servi d’emblème canadien :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Long before the 1965 flag, including by soldiers in the world wars"
+        "en": "Long before the 1965 flag, including by soldiers in the world wars",
+        "fr": "Bien avant le drapeau de 1965, notamment chez les soldats des guerres mondiales"
       },
       {
         "id": "b",
-        "en": "Only after 1999"
+        "en": "Only after 1999",
+        "fr": "Seulement après 1999"
       },
       {
         "id": "c",
-        "en": "Only in Quebec City in 1608"
+        "en": "Only in Quebec City in 1608",
+        "fr": "Seulement à Québec, en 1608"
       },
       {
         "id": "d",
-        "en": "Never, until social media"
+        "en": "Never, until social media",
+        "fr": "Jamais, avant les médias sociaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The flag standardized a symbol that was already in use."
+      "en": "The flag standardized a symbol that was already in use.",
+      "fr": "Le drapeau a officialisé un symbole qui était déjà en usage."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -675,29 +795,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Rideau Hall in Ottawa is:"
+      "en": "Rideau Hall in Ottawa is:",
+      "fr": "Rideau Hall, à Ottawa, est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Governor General’s official residence"
+        "en": "The Governor General’s official residence",
+        "fr": "La résidence officielle du gouverneur général"
       },
       {
         "id": "b",
-        "en": "The Supreme Court’s only courtroom"
+        "en": "The Supreme Court’s only courtroom",
+        "fr": "La seule salle d’audience de la Cour suprême"
       },
       {
         "id": "c",
-        "en": "A provincial legislature"
+        "en": "A provincial legislature",
+        "fr": "Une législature provinciale"
       },
       {
         "id": "d",
-        "en": "The CN Tower’s lobby"
+        "en": "The CN Tower’s lobby",
+        "fr": "Le hall d’entrée de la Tour CN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a working residence and ceremonial site for the Crown in Canada."
+      "en": "It is a working residence and ceremonial site for the Crown in Canada.",
+      "fr": "C’est à la fois une résidence en activité et un lieu cérémoniel de la Couronne au Canada."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -708,29 +834,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The loon on the one-dollar coin is an example of:"
+      "en": "The loon on the one-dollar coin is an example of:",
+      "fr": "Le plongeon huard sur la pièce de un dollar est un exemple :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Wildlife used as a popular national emblem"
+        "en": "Wildlife used as a popular national emblem",
+        "fr": "D’un animal sauvage devenu un emblème national populaire"
       },
       {
         "id": "b",
-        "en": "A British royal portrait requirement on all coins with no animals"
+        "en": "A British royal portrait requirement on all coins with no animals",
+        "fr": "D’une obligation de faire figurer un portrait royal britannique sur toutes les pièces, sans aucun animal"
       },
       {
         "id": "c",
-        "en": "A municipal mascot from PEI only"
+        "en": "A municipal mascot from PEI only",
+        "fr": "D’une mascotte municipale de l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "d",
-        "en": "A Senate seating chart"
+        "en": "A Senate seating chart",
+        "fr": "D’un plan de sièges du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The “loonie” became an unofficial popular symbol. The monarch still appears on coins too."
+      "en": "The “loonie” became an unofficial popular symbol. The monarch still appears on coins too.",
+      "fr": "Le « huard » est devenu un symbole populaire non officiel. Le monarque figure encore lui aussi sur les pièces."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -741,21 +873,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The poppy is worn as a symbol of remembrance, especially in November."
+      "en": "The poppy is worn as a symbol of remembrance, especially in November.",
+      "fr": "On porte le coquelicot comme symbole du souvenir, surtout en novembre."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It comes from McCrae’s poem and from the poppies of the Western Front."
+      "en": "It comes from McCrae’s poem and from the poppies of the Western Front.",
+      "fr": "Il vient du poème de McCrae et des coquelicots du front de l’Ouest."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -766,29 +902,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which building’s silhouette is most often used as a postcard of federal Canada?"
+      "en": "Which building’s silhouette is most often used as a postcard of federal Canada?",
+      "fr": "Quelle silhouette d’édifice sert le plus souvent de carte postale du Canada fédéral?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Parliament Buildings"
+        "en": "The Parliament Buildings",
+        "fr": "Les édifices du Parlement"
       },
       {
         "id": "b",
-        "en": "Toronto City Hall only"
+        "en": "Toronto City Hall only",
+        "fr": "L’hôtel de ville de Toronto seulement"
       },
       {
         "id": "c",
-        "en": "A grain elevator in Regina only"
+        "en": "A grain elevator in Regina only",
+        "fr": "Un silo à grains de Regina seulement"
       },
       {
         "id": "d",
-        "en": "A lighthouse in PEI only"
+        "en": "A lighthouse in PEI only",
+        "fr": "Un phare de l’Île-du-Prince-Édouard seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Centre Block and the Peace Tower are the visual shorthand for the capital."
+      "en": "Centre Block and the Peace Tower are the visual shorthand for the capital.",
+      "fr": "L’édifice du Centre et la Tour de la Paix sont le raccourci visuel de la capitale."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -799,29 +941,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Tartans, clan symbols, and Highland games in Canada mainly reflect:"
+      "en": "Tartans, clan symbols, and Highland games in Canada mainly reflect:",
+      "fr": "Au Canada, les tartans, les symboles de clans et les jeux des Highlands reflètent surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Scottish heritage"
+        "en": "Scottish heritage",
+        "fr": "L’héritage écossais"
       },
       {
         "id": "b",
-        "en": "Inuit law"
+        "en": "Inuit law",
+        "fr": "Le droit inuit"
       },
       {
         "id": "c",
-        "en": "Acadian deportation policy"
+        "en": "Acadian deportation policy",
+        "fr": "La politique de déportation des Acadiens"
       },
       {
         "id": "d",
-        "en": "The Auto Pact"
+        "en": "The Auto Pact",
+        "fr": "Le Pacte de l’automobile"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They are cultural symbols of one founding immigrant stream, not official national symbols on the same level as the flag."
+      "en": "They are cultural symbols of one founding immigrant stream, not official national symbols on the same level as the flag.",
+      "fr": "Ce sont des symboles culturels de l’un des grands courants d’immigration fondateurs, et non des symboles nationaux officiels du même rang que le drapeau."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -832,29 +980,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The snowbirds of the Canadian Forces are:"
+      "en": "The snowbirds of the Canadian Forces are:",
+      "fr": "Les Snowbirds des Forces canadiennes sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A demonstration aerobatic team and a public symbol of the military"
+        "en": "A demonstration aerobatic team and a public symbol of the military",
+        "fr": "Une équipe de démonstration de voltige aérienne et un symbole public des forces armées"
       },
       {
         "id": "b",
-        "en": "A Senate committee"
+        "en": "A Senate committee",
+        "fr": "Un comité du Sénat"
       },
       {
         "id": "c",
-        "en": "A type of beaver"
+        "en": "A type of beaver",
+        "fr": "Une espèce de castor"
       },
       {
         "id": "d",
-        "en": "A Quebec flag variant"
+        "en": "A Quebec flag variant",
+        "fr": "Une variante du drapeau du Québec"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Military symbols include the Forces themselves, not only historic red tunics."
+      "en": "Military symbols include the Forces themselves, not only historic red tunics.",
+      "fr": "Les symboles militaires comprennent les forces armées elles-mêmes, et pas seulement les tuniques rouges d’autrefois."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -865,29 +1019,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about the national flag is correct?"
+      "en": "Which statement about the national flag is correct?",
+      "fr": "Quel énoncé au sujet du drapeau national est exact?"
     },
     "options": [
       {
         "id": "a",
-        "en": "It should be treated with respect; there are customs for flying and disposing of it"
+        "en": "It should be treated with respect; there are customs for flying and disposing of it",
+        "fr": "Il faut le traiter avec respect; des usages encadrent la façon de le hisser et de s’en départir"
       },
       {
         "id": "b",
-        "en": "It may be thrown on the ground as a joke with no social meaning"
+        "en": "It may be thrown on the ground as a joke with no social meaning",
+        "fr": "On peut le jeter par terre pour blaguer, sans que cela ait la moindre portée sociale"
       },
       {
         "id": "c",
-        "en": "It is illegal to show it on a backpack"
+        "en": "It is illegal to show it on a backpack",
+        "fr": "Il est illégal de l’afficher sur un sac à dos"
       },
       {
         "id": "d",
-        "en": "It replaced O Canada as the anthem"
+        "en": "It replaced O Canada as the anthem",
+        "fr": "Il a remplacé l’Ô Canada comme hymne"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Flag etiquette is taught as civic manners. The anthem is a song, not a piece of cloth."
+      "en": "Flag etiquette is taught as civic manners. The anthem is a song, not a piece of cloth.",
+      "fr": "L’étiquette du drapeau s’enseigne comme une règle de savoir-vivre civique. L’hymne est un chant, non un morceau de tissu."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -898,21 +1058,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The beaver was important to the fur-trade economy that shaped early Canada."
+      "en": "The beaver was important to the fur-trade economy that shaped early Canada.",
+      "fr": "Le castor a joué un rôle important dans l’économie de la traite des fourrures qui a façonné les débuts du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "That is why it became an emblem, not because it is the largest animal."
+      "en": "That is why it became an emblem, not because it is the largest animal.",
+      "fr": "C’est pour cette raison qu’il est devenu un emblème, et non parce qu’il serait le plus gros animal."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -923,29 +1087,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Provincial flags and floral emblems are:"
+      "en": "Provincial flags and floral emblems are:",
+      "fr": "Les drapeaux et les emblèmes floraux des provinces sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Official symbols of each province and territory, used alongside national ones"
+        "en": "Official symbols of each province and territory, used alongside national ones",
+        "fr": "Des symboles officiels de chaque province et territoire, utilisés en parallèle avec les symboles nationaux"
       },
       {
         "id": "b",
-        "en": "Illegal under the Charter"
+        "en": "Illegal under the Charter",
+        "fr": "Illégaux en vertu de la Charte"
       },
       {
         "id": "c",
-        "en": "Replacements for the maple leaf flag in Ottawa"
+        "en": "Replacements for the maple leaf flag in Ottawa",
+        "fr": "Des remplacements du drapeau à la feuille d’érable à Ottawa"
       },
       {
         "id": "d",
-        "en": "Only for sports teams"
+        "en": "Only for sports teams",
+        "fr": "Réservés aux équipes sportives"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Know national symbols first, then a couple from your own province."
+      "en": "Know national symbols first, then a couple from your own province.",
+      "fr": "Apprenez d’abord les symboles nationaux, puis quelques-uns de votre province."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -956,29 +1126,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Memorial Chamber in the Peace Tower honours:"
+      "en": "The Memorial Chamber in the Peace Tower honours:",
+      "fr": "La Chapelle du Souvenir, dans la Tour de la Paix, honore :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canadians who died in military service"
+        "en": "Canadians who died in military service",
+        "fr": "Les Canadiens morts au service militaire"
       },
       {
         "id": "b",
-        "en": "Only Fathers of Confederation"
+        "en": "Only Fathers of Confederation",
+        "fr": "Seulement les Pères de la Confédération"
       },
       {
         "id": "c",
-        "en": "Only Olympic athletes"
+        "en": "Only Olympic athletes",
+        "fr": "Seulement les athlètes olympiques"
       },
       {
         "id": "d",
-        "en": "Only senators"
+        "en": "Only senators",
+        "fr": "Seulement les sénateurs"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Books of Remembrance name the dead. It is a sacred civic space, not a tourist gimmick."
+      "en": "Books of Remembrance name the dead. It is a sacred civic space, not a tourist gimmick.",
+      "fr": "Les Livres du Souvenir nomment les morts. C’est un lieu civique sacré, et non une attraction touristique."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -989,21 +1165,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "O Canada was composed in the 19th century and later became the official national anthem."
+      "en": "O Canada was composed in the 19th century and later became the official national anthem.",
+      "fr": "L’Ô Canada a été composé au XIXe siècle et est devenu plus tard l’hymne national officiel."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The song is older than its official legal status (1980). Both the history and the official date can appear on tests."
+      "en": "The song is older than its official legal status (1980). Both the history and the official date can appear on tests.",
+      "fr": "Le chant est plus ancien que son statut juridique officiel (1980). L’histoire comme la date officielle peuvent faire l’objet d’une question à l’examen."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1014,29 +1194,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Emily Carr is celebrated as:"
+      "en": "Emily Carr is celebrated as:",
+      "fr": "Emily Carr est célébrée comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A painter of West Coast landscapes and Indigenous village scenes"
+        "en": "A painter of West Coast landscapes and Indigenous village scenes",
+        "fr": "Une peintre des paysages de la côte Ouest et de scènes de villages autochtones"
       },
       {
         "id": "b",
-        "en": "Canada’s first Prime Minister"
+        "en": "Canada’s first Prime Minister",
+        "fr": "La première personne à diriger le Canada comme premier ministre"
       },
       {
         "id": "c",
-        "en": "The composer of God Save the King"
+        "en": "The composer of God Save the King",
+        "fr": "La compositrice de God Save the King"
       },
       {
         "id": "d",
-        "en": "The designer of the Peace Tower clock only"
+        "en": "The designer of the Peace Tower clock only",
+        "fr": "La conceptrice de la seule horloge de la Tour de la Paix"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "She is a major Canadian artist often taught with the Group of Seven, even though she was not a member."
+      "en": "She is a major Canadian artist often taught with the Group of Seven, even though she was not a member.",
+      "fr": "C’est une artiste canadienne majeure, souvent enseignée avec le Groupe des Sept, même si elle n’en faisait pas partie."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1047,29 +1233,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Bluenose is a Canadian symbol associated with:"
+      "en": "The Bluenose is a Canadian symbol associated with:",
+      "fr": "Le Bluenose est un symbole canadien associé :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A famous Nova Scotia schooner, also on the dime"
+        "en": "A famous Nova Scotia schooner, also on the dime",
+        "fr": "À une célèbre goélette de la Nouvelle-Écosse, qui figure aussi sur la pièce de dix cents"
       },
       {
         "id": "b",
-        "en": "A Prairie grain elevator only"
+        "en": "A Prairie grain elevator only",
+        "fr": "À un seul silo à grains des Prairies"
       },
       {
         "id": "c",
-        "en": "The Senate mace in London"
+        "en": "The Senate mace in London",
+        "fr": "À la masse du Sénat, à Londres"
       },
       {
         "id": "d",
-        "en": "Yukon’s territorial flower"
+        "en": "Yukon’s territorial flower",
+        "fr": "À la fleur emblème du Yukon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is both a maritime history story and everyday coinage."
+      "en": "It is both a maritime history story and everyday coinage.",
+      "fr": "C’est à la fois une histoire maritime et une image de la monnaie de tous les jours."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1080,21 +1272,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "An inuksuk (inukshuk) is a stone landmark associated especially with Inuit culture and now widely used as a northern Canadian symbol."
+      "en": "An inuksuk (inukshuk) is a stone landmark associated especially with Inuit culture and now widely used as a northern Canadian symbol.",
+      "fr": "Un inuksuk (inukshuk) est un repère de pierre associé tout particulièrement à la culture inuite et largement utilisé aujourd’hui comme symbole du Nord canadien."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is not a replacement for the maple leaf. It is a recognizable northern emblem, including at some public events."
+      "en": "It is not a replacement for the maple leaf. It is a recognizable northern emblem, including at some public events.",
+      "fr": "Il ne remplace pas la feuille d’érable. C’est un emblème nordique facile à reconnaître, présent notamment lors de certains événements publics."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1105,29 +1301,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s Latin motto, A mari usque ad mare, means:"
+      "en": "Canada’s Latin motto, A mari usque ad mare, means:",
+      "fr": "La devise latine du Canada, A mari usque ad mare, signifie :"
     },
     "options": [
       {
         "id": "a",
-        "en": "From sea to sea"
+        "en": "From sea to sea",
+        "fr": "D’un océan à l’autre"
       },
       {
         "id": "b",
-        "en": "Peace, order, and good government"
+        "en": "Peace, order, and good government",
+        "fr": "Paix, ordre et bon gouvernement"
       },
       {
         "id": "c",
-        "en": "Ready aye ready"
+        "en": "Ready aye ready",
+        "fr": "Toujours prêt"
       },
       {
         "id": "d",
-        "en": "The true north strong and free only as a legal motto"
+        "en": "The true north strong and free only as a legal motto",
+        "fr": "Le vrai Nord fort et libre, uniquement à titre de devise juridique"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It appears with the coat of arms. The anthem line is related in spirit but is not the heraldic motto."
+      "en": "It appears with the coat of arms. The anthem line is related in spirit but is not the heraldic motto.",
+      "fr": "Elle accompagne les armoiries. Le vers de l’hymne s’en rapproche par l’esprit, mais ce n’est pas la devise héraldique."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1138,29 +1340,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The National War Memorial in Ottawa (the Response) commemorates:"
+      "en": "The National War Memorial in Ottawa (the Response) commemorates:",
+      "fr": "Le Monument commémoratif de guerre du Canada, à Ottawa (La Réponse), commémore :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canadians who served, especially those who died, beginning with the First World War"
+        "en": "Canadians who served, especially those who died, beginning with the First World War",
+        "fr": "Les Canadiens qui ont servi, surtout ceux qui sont morts, depuis la Première Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Only Olympic gold medallists"
+        "en": "Only Olympic gold medallists",
+        "fr": "Seulement les médaillés d’or olympiques"
       },
       {
         "id": "c",
-        "en": "Only Fathers of Confederation"
+        "en": "Only Fathers of Confederation",
+        "fr": "Seulement les Pères de la Confédération"
       },
       {
         "id": "d",
-        "en": "Only the Group of Seven"
+        "en": "Only the Group of Seven",
+        "fr": "Seulement le Groupe des Sept"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The November 11 ceremony there is a civic ritual, not a sports rally."
+      "en": "The November 11 ceremony there is a civic ritual, not a sports rally.",
+      "fr": "La cérémonie du 11 novembre qui s’y déroule est un rituel civique, et non un rassemblement sportif."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1171,29 +1379,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The mace in the House of Commons is a symbol that:"
+      "en": "The mace in the House of Commons is a symbol that:",
+      "fr": "À la Chambre des communes, la masse est un symbole qui indique :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Parliament is in session and the Crown’s authority is present"
+        "en": "Parliament is in session and the Crown’s authority is present",
+        "fr": "Que le Parlement siège et que l’autorité de la Couronne est présente"
       },
       {
         "id": "b",
-        "en": "Hockey season has started"
+        "en": "Hockey season has started",
+        "fr": "Que la saison de hockey est commencée"
       },
       {
         "id": "c",
-        "en": "The Senate has been abolished"
+        "en": "The Senate has been abolished",
+        "fr": "Que le Sénat a été aboli"
       },
       {
         "id": "d",
-        "en": "Municipal councils run Ottawa"
+        "en": "Municipal councils run Ottawa",
+        "fr": "Que les conseils municipaux dirigent Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "When the mace is on the table, the House can work. It is ceremony with a constitutional meaning."
+      "en": "When the mace is on the table, the House can work. It is ceremony with a constitutional meaning.",
+      "fr": "Quand la masse repose sur la table, la Chambre peut siéger. C’est un cérémonial à portée constitutionnelle."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1204,21 +1418,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The RCMP Musical Ride is a ceremonial cavalry display that also functions as a national symbol."
+      "en": "The RCMP Musical Ride is a ceremonial cavalry display that also functions as a national symbol.",
+      "fr": "Le Carrousel de la Gendarmerie royale du Canada est une démonstration équestre cérémonielle qui fait aussi office de symbole national."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The Force is a police service first. The Ride is how many people meet the Mountie image."
+      "en": "The Force is a police service first. The Ride is how many people meet the Mountie image.",
+      "fr": "La Gendarmerie est d’abord un service de police. Le Carrousel est la façon dont bien des gens découvrent l’image du policier à cheval."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1229,29 +1447,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Provincial floral emblems (for example the white trillium or fleur-de-lys as a cultural emblem) are:"
+      "en": "Provincial floral emblems (for example the white trillium or fleur-de-lys as a cultural emblem) are:",
+      "fr": "Les emblèmes floraux des provinces (par exemple le trille blanc, ou la fleur de lys comme emblème culturel) sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Official or traditional symbols of provinces, used with the national maple leaf"
+        "en": "Official or traditional symbols of provinces, used with the national maple leaf",
+        "fr": "Des symboles officiels ou traditionnels des provinces, utilisés avec la feuille d’érable nationale"
       },
       {
         "id": "b",
-        "en": "Replacements for the Canadian flag in Ottawa"
+        "en": "Replacements for the Canadian flag in Ottawa",
+        "fr": "Des remplacements du drapeau canadien à Ottawa"
       },
       {
         "id": "c",
-        "en": "Illegal under official-languages law"
+        "en": "Illegal under official-languages law",
+        "fr": "Illégaux en vertu de la loi sur les langues officielles"
       },
       {
         "id": "d",
-        "en": "Only for hockey jerseys"
+        "en": "Only for hockey jerseys",
+        "fr": "Réservés aux chandails de hockey"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Know the maple leaf first. A provincial flower is a bonus regional fact."
+      "en": "Know the maple leaf first. A provincial flower is a bonus regional fact.",
+      "fr": "Apprenez d’abord la feuille d’érable. La fleur d’une province est un fait régional en prime."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1262,29 +1486,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Centennial Flame on Parliament Hill marks:"
+      "en": "The Centennial Flame on Parliament Hill marks:",
+      "fr": "La Flamme du centenaire, sur la colline du Parlement, souligne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canada’s 100th anniversary in 1967"
+        "en": "Canada’s 100th anniversary in 1967",
+        "fr": "Le 100e anniversaire du Canada, en 1967"
       },
       {
         "id": "b",
-        "en": "Confederation debates in 1864 only"
+        "en": "Confederation debates in 1864 only",
+        "fr": "Seulement les débats sur la Confédération, en 1864"
       },
       {
         "id": "c",
-        "en": "The founding of NATO"
+        "en": "The founding of NATO",
+        "fr": "La fondation de l’OTAN"
       },
       {
         "id": "d",
-        "en": "The Persons Case"
+        "en": "The Persons Case",
+        "fr": "L’affaire « personne »"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a physical reminder of the centennial, in front of the buildings that symbolize federal Canada."
+      "en": "It is a physical reminder of the centennial, in front of the buildings that symbolize federal Canada.",
+      "fr": "C’est un rappel concret du centenaire, devant les édifices qui symbolisent le Canada fédéral."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1295,29 +1525,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The canoe is often treated as a Canadian symbol because it:"
+      "en": "The canoe is often treated as a Canadian symbol because it:",
+      "fr": "Le canot est souvent considéré comme un symbole canadien parce qu’il :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Was central to Indigenous travel and the fur-trade economy"
+        "en": "Was central to Indigenous travel and the fur-trade economy",
+        "fr": "A été au cœur des déplacements autochtones et de l’économie de la traite des fourrures"
       },
       {
         "id": "b",
-        "en": "Is the official bird of Canada"
+        "en": "Is the official bird of Canada",
+        "fr": "Est l’oiseau officiel du Canada"
       },
       {
         "id": "c",
-        "en": "Replaced the maple leaf on the flag in 1965"
+        "en": "Replaced the maple leaf on the flag in 1965",
+        "fr": "A remplacé la feuille d’érable sur le drapeau en 1965"
       },
       {
         "id": "d",
-        "en": "Is banned on Crown land"
+        "en": "Is banned on Crown land",
+        "fr": "Est interdit sur les terres de la Couronne"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a historic working craft, not a coat-of-arms animal. The maple leaf remains the flag emblem."
+      "en": "It is a historic working craft, not a coat-of-arms animal. The maple leaf remains the flag emblem.",
+      "fr": "C’est une embarcation de travail historique, et non un animal des armoiries. La feuille d’érable demeure l’emblème du drapeau."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1328,21 +1564,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Victoria Cross recipients in Canadian history are honoured for extreme valour in combat."
+      "en": "Victoria Cross recipients in Canadian history are honoured for extreme valour in combat.",
+      "fr": "Dans l’histoire canadienne, les récipiendaires de la Croix de Victoria sont honorés pour leur bravoure exceptionnelle au combat."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The VC is the highest military decoration in the Canadian honours story taught with other symbols of service."
+      "en": "The VC is the highest military decoration in the Canadian honours story taught with other symbols of service.",
+      "fr": "La Croix de Victoria est la plus haute distinction militaire du régime canadien des honneurs, enseignée avec les autres symboles du service."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1353,29 +1593,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The carillon in the Peace Tower is:"
+      "en": "The carillon in the Peace Tower is:",
+      "fr": "Le carillon de la Tour de la Paix est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A set of bells that plays for ceremonies and remembrance"
+        "en": "A set of bells that plays for ceremonies and remembrance",
+        "fr": "Un ensemble de cloches qui sonne pour les cérémonies et le souvenir"
       },
       {
         "id": "b",
-        "en": "The Senate voting machine"
+        "en": "The Senate voting machine",
+        "fr": "La machine à voter du Sénat"
       },
       {
         "id": "c",
-        "en": "A Prairie grain dryer"
+        "en": "A Prairie grain dryer",
+        "fr": "Un séchoir à grain des Prairies"
       },
       {
         "id": "d",
-        "en": "Ottawa’s subway signal"
+        "en": "Ottawa’s subway signal",
+        "fr": "Le signal du métro d’Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is part of why the Tower is more than a clock on a postcard."
+      "en": "It is part of why the Tower is more than a clock on a postcard.",
+      "fr": "C’est une des raisons pour lesquelles la Tour est plus qu’une horloge sur une carte postale."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1386,29 +1632,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Stanley Cup is a Canadian cultural symbol because it:"
+      "en": "The Stanley Cup is a Canadian cultural symbol because it:",
+      "fr": "La Coupe Stanley est un symbole culturel canadien parce qu’elle :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Is the championship trophy of the National Hockey League, donated by Lord Stanley when he was Governor General"
+        "en": "Is the championship trophy of the National Hockey League, donated by Lord Stanley when he was Governor General",
+        "fr": "Est le trophée des champions de la Ligue nationale de hockey, offert par lord Stanley alors qu’il était gouverneur général"
       },
       {
         "id": "b",
-        "en": "Is the mace of the Senate"
+        "en": "Is the mace of the Senate",
+        "fr": "Est la masse du Sénat"
       },
       {
         "id": "c",
-        "en": "Replaced O Canada in 1980"
+        "en": "Replaced O Canada in 1980",
+        "fr": "A remplacé l’Ô Canada en 1980"
       },
       {
         "id": "d",
-        "en": "Is awarded for wheat yields only"
+        "en": "Is awarded for wheat yields only",
+        "fr": "Est décernée uniquement pour les rendements de blé"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Hockey’s trophy has a Crown-era origin story. It is culture, not a constitutional office."
+      "en": "Hockey’s trophy has a Crown-era origin story. It is culture, not a constitutional office.",
+      "fr": "Le trophée du hockey doit son origine à un représentant de la Couronne. C’est de la culture, et non une charge constitutionnelle."
     },
     "source": "Discover Canada — Canadian Symbols"
   },
@@ -1419,29 +1671,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Governor General’s flag (the blue flag with the viceregal lion) is used to:"
+      "en": "The Governor General’s flag (the blue flag with the viceregal lion) is used to:",
+      "fr": "Le drapeau du gouverneur général (le drapeau bleu au lion vice-royal) sert :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Mark the presence of the Governor General"
+        "en": "Mark the presence of the Governor General",
+        "fr": "À marquer la présence du gouverneur général"
       },
       {
         "id": "b",
-        "en": "Replace the national flag forever"
+        "en": "Replace the national flag forever",
+        "fr": "À remplacer le drapeau national pour toujours"
       },
       {
         "id": "c",
-        "en": "Signal a municipal snow day in Ottawa"
+        "en": "Signal a municipal snow day in Ottawa",
+        "fr": "À annoncer une journée de neige municipale à Ottawa"
       },
       {
         "id": "d",
-        "en": "Close the Supreme Court"
+        "en": "Close the Supreme Court",
+        "fr": "À fermer la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Personal and official flags of the Crown’s representatives are a protocol symbol, not a rival national flag."
+      "en": "Personal and official flags of the Crown’s representatives are a protocol symbol, not a rival national flag.",
+      "fr": "Les drapeaux personnels et officiels des représentants de la Couronne sont un symbole protocolaire, et non un drapeau national concurrent."
     },
     "source": "Discover Canada — Canadian Symbols"
   }

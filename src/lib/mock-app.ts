@@ -1,6 +1,7 @@
 import type { RegionCode } from '../content/schema';
 import type { ChapterOption, ClientQuestion } from './client-types';
 import { drawMockQuestions } from './draw';
+import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
 import {
   lastMockQuestionIds,
   loadProgress,
@@ -37,6 +38,18 @@ export function mockApp(payload: MockPayload) {
     autoSubmitted: false,
     progress: null as Progress | null,
     province: null as RegionCode | null,
+
+    tx(key: string, vars?: Record<string, string | number>) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return t(key, locale, vars);
+    },
+
+    pick(value: LocalizedText | string) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return pickLocalized(value, locale);
+    },
 
     init() {
       const loaded = loadProgress();
@@ -107,18 +120,8 @@ export function mockApp(payload: MockPayload) {
       }
     },
 
-    jumpLabel(question: ClientQuestion, itemIndex: number): string {
-      const parts = [`Question ${itemIndex + 1}`];
-      if (this.selected[question.id]) {
-        parts.push('answered');
-      }
-      if (this.flagged[question.id]) {
-        parts.push('flagged');
-      }
-      if (itemIndex === this.index) {
-        parts.push('current');
-      }
-      return parts.join(', ');
+    jumpLabel(_question: ClientQuestion, itemIndex: number): string {
+      return this.tx('practice.position', { n: itemIndex + 1, total: this.queue.length });
     },
 
     toggleFlag() {
@@ -174,7 +177,7 @@ export function mockApp(payload: MockPayload) {
           (question) => this.selected[question.id] === question.correctOptionId,
         ).length;
         return {
-          title: chapter.title,
+          title: this.pick(chapter.title),
           text: items.length === 0 ? '—' : `${correct}/${items.length}`,
         };
       });
@@ -184,9 +187,9 @@ export function mockApp(payload: MockPayload) {
     resultLabel(question: ClientQuestion): string {
       const picked = this.selected[question.id];
       if (!picked) {
-        return 'Unanswered';
+        return this.tx('mock.unanswered');
       }
-      return picked === question.correctOptionId ? 'Correct' : 'Incorrect';
+      return picked === question.correctOptionId ? this.tx('practice.correct') : this.tx('practice.incorrect');
     },
   };
 }

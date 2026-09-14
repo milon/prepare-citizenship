@@ -1,0 +1,46 @@
+---
+const ANTHEM_PAGE =
+  'https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html';
+const ANTHEM_PAGE_FR =
+  'https://www.canada.ca/fr/patrimoine-canadien/services/hymne-canada.html';
+---
+
+<section class="anthem" x-data="speech" aria-labelledby="anthem-heading">
+  <h2 id="anthem-heading" data-i18n="anthem.title">O Canada</h2>
+  <p class="lede" data-i18n="anthem.lede">
+    The national anthem is on the test and at the citizenship ceremony. Lyrics below are the official English and French versions. Recordings live on Canada.ca (Toronto Symphony Orchestra — credit the artists if you reuse them).
+  </p>
+  <div class="button-row">
+    <a class="button button-primary lang-en" href={ANTHEM_PAGE} data-i18n="anthem.listen">Listen on Canada.ca</a>
+    <a class="button button-primary lang-fr" href={ANTHEM_PAGE_FR} data-i18n="anthem.listen">Listen on Canada.ca</a>
+    <button class="button" type="button" @click="speak('O Canada')" data-i18n="anthem.hear">Hear the title</button>
+  </div>
+  <div class="anthem-lyrics">
+    <div>
+      <h3 data-i18n="anthem.english">English lyrics</h3>
+      <pre>O Canada!
+Our home and native land!
+True patriot love in all of us command.
+With glowing hearts we see thee rise,
+The True North strong and free!
+From far and wide, O Canada,
+We stand on guard for thee.
+God keep our land glorious and free!
+O Canada, we stand on guard for thee.
+O Canada, we stand on guard for thee.</pre>
+    </div>
+    <div>
+      <h3 data-i18n="anthem.french">French lyrics</h3>
+      <pre>Ô Canada!
+Terre de nos aïeux,
+Ton front est ceint de fleurons glorieux!
+Car ton bras sait porter l’épée,
+Il sait porter la croix!
+Ton histoire est une épopée
+Des plus brillants exploits.
+Et ta valeur, de foi trempée,
+Protégera nos foyers et nos droits.
+Protégera nos foyers et nos droits.</pre>
+    </div>
+  </div>
+</section>

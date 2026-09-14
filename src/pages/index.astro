@@ -9,6 +9,7 @@ import { withBase } from '../lib/paths';
 const chapters = (await getCollection('chapters'))
   .filter((entry) => !entry.data.regionGroup)
   .sort((a, b) => a.data.order - b.data.order);
+const frenchById = new Map((await getCollection('chaptersFr')).map((entry) => [entry.id, entry]));
 
 const { questions, cards, current } = await loadStudyContent();
 const lastVerified = current?.lastVerified ?? 'unknown';
@@ -52,20 +53,25 @@ const officialPdfUrl =
 
   <section class="card" style="margin-top:1rem" aria-labelledby="chapters-heading">
     <div class="card-head">
-      <h2 id="chapters-heading">The ten chapters</h2>
-      <p>Original study notes, then flashcards and a quiz for each one.</p>
+      <h2 id="chapters-heading" data-i18n="chapters.ten">The ten chapters</h2>
+      <p data-i18n="home.chaptersBlurb">Original study notes, then flashcards and a quiz for each one.</p>
     </div>
     <ul class="chapter-grid">
       {
-        chapters.map((chapter, index) => (
-          <li>
-            <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
-              <span class="num">{String(index + 1).padStart(2, '0')}</span>
-              <strong>{chapter.data.title}</strong>
-              <span>{chapter.data.description}</span>
-            </a>
-          </li>
-        ))
+        chapters.map((chapter, index) => {
+          const french = frenchById.get(chapter.id);
+          return (
+            <li>
+              <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
+                <span class="num">{String(index + 1).padStart(2, '0')}</span>
+                <strong class="lang-en">{chapter.data.title}</strong>
+                <strong class="lang-fr">{french?.data.title ?? chapter.data.title}</strong>
+                <span class="lang-en">{chapter.data.description}</span>
+                <span class="lang-fr">{french?.data.description ?? chapter.data.description}</span>
+              </a>
+            </li>
+          );
+        })
       }
     </ul>
   </section>

@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital city of Canada?"
+      "en": "What is the capital city of Canada?",
+      "fr": "Quelle est la capitale du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Toronto"
+        "en": "Toronto",
+        "fr": "Toronto"
       },
       {
         "id": "b",
-        "en": "Ottawa"
+        "en": "Ottawa",
+        "fr": "Ottawa"
       },
       {
         "id": "c",
-        "en": "Vancouver"
+        "en": "Vancouver",
+        "fr": "Vancouver"
       },
       {
         "id": "d",
-        "en": "Montreal"
+        "en": "Montreal",
+        "fr": "Montréal"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Ottawa, in Ontario, is the national capital and home to Parliament and many federal institutions."
+      "en": "Ottawa, in Ontario, is the national capital and home to Parliament and many federal institutions.",
+      "fr": "Ottawa, en Ontario, est la capitale nationale : on y trouve le Parlement et de nombreuses institutions fédérales."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Ontario?"
+      "en": "What is the capital of Ontario?",
+      "fr": "Quelle est la capitale de l’Ontario?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ottawa"
+        "en": "Ottawa",
+        "fr": "Ottawa"
       },
       {
         "id": "b",
-        "en": "Hamilton"
+        "en": "Hamilton",
+        "fr": "Hamilton"
       },
       {
         "id": "c",
-        "en": "Toronto"
+        "en": "Toronto",
+        "fr": "Toronto"
       },
       {
         "id": "d",
-        "en": "London"
+        "en": "London",
+        "fr": "London"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Toronto is Ontario’s capital and Canada’s largest city. Ottawa is the national capital, also located in Ontario."
+      "en": "Toronto is Ontario’s capital and Canada’s largest city. Ottawa is the national capital, also located in Ontario.",
+      "fr": "Toronto est la capitale de l’Ontario et la plus grande ville du Canada. Ottawa, la capitale nationale, se trouve aussi en Ontario."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -72,29 +84,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which is Canada’s smallest province by land area?"
+      "en": "Which is Canada’s smallest province by land area?",
+      "fr": "Quelle est la plus petite province du Canada par sa superficie?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Nova Scotia"
+        "en": "Nova Scotia",
+        "fr": "La Nouvelle-Écosse"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island"
+        "en": "Prince Edward Island",
+        "fr": "L’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "New Brunswick"
+        "en": "New Brunswick",
+        "fr": "Le Nouveau-Brunswick"
       },
       {
         "id": "d",
-        "en": "Manitoba"
+        "en": "Manitoba",
+        "fr": "Le Manitoba"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Prince Edward Island is the smallest province. It is known for agriculture, tourism, and being the birthplace of Confederation talks in 1864."
+      "en": "Prince Edward Island is the smallest province. It is known for agriculture, tourism, and being the birthplace of Confederation talks in 1864.",
+      "fr": "L’Île-du-Prince-Édouard est la plus petite province. Elle est connue pour son agriculture, son tourisme et pour avoir accueilli les premiers pourparlers de la Confédération en 1864."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -105,29 +123,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada has how many provinces and territories?"
+      "en": "Canada has how many provinces and territories?",
+      "fr": "Combien de provinces et de territoires compte le Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ten provinces and three territories"
+        "en": "Ten provinces and three territories",
+        "fr": "Dix provinces et trois territoires"
       },
       {
         "id": "b",
-        "en": "Thirteen provinces and no territories"
+        "en": "Thirteen provinces and no territories",
+        "fr": "Treize provinces et aucun territoire"
       },
       {
         "id": "c",
-        "en": "Five provinces and five territories"
+        "en": "Five provinces and five territories",
+        "fr": "Cinq provinces et cinq territoires"
       },
       {
         "id": "d",
-        "en": "Nine provinces and one territory"
+        "en": "Nine provinces and one territory",
+        "fr": "Neuf provinces et un territoire"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Ten provinces have constitutional status of their own. Three territories were created by federal statute."
+      "en": "Ten provinces have constitutional status of their own. Three territories were created by federal statute.",
+      "fr": "Les dix provinces possèdent leur propre statut constitutionnel. Les trois territoires ont été créés par une loi fédérale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -138,29 +162,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "In the study guide’s grouping, Atlantic Canada includes:"
+      "en": "In the study guide’s grouping, Atlantic Canada includes:",
+      "fr": "Selon le regroupement du guide d’étude, le Canada atlantique comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick"
+        "en": "Newfoundland and Labrador, Prince Edward Island, Nova Scotia, and New Brunswick",
+        "fr": "Terre-Neuve-et-Labrador, l’Île-du-Prince-Édouard, la Nouvelle-Écosse et le Nouveau-Brunswick"
       },
       {
         "id": "b",
-        "en": "Quebec and Ontario"
+        "en": "Quebec and Ontario",
+        "fr": "Le Québec et l’Ontario"
       },
       {
         "id": "c",
-        "en": "Manitoba, Saskatchewan, and Alberta"
+        "en": "Manitoba, Saskatchewan, and Alberta",
+        "fr": "Le Manitoba, la Saskatchewan et l’Alberta"
       },
       {
         "id": "d",
-        "en": "Yukon, Northwest Territories, and Nunavut"
+        "en": "Yukon, Northwest Territories, and Nunavut",
+        "fr": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Those four provinces face the Atlantic. Quebec is Central Canada in the guide, not Atlantic."
+      "en": "Those four provinces face the Atlantic. Quebec is Central Canada in the guide, not Atlantic.",
+      "fr": "Ces quatre provinces bordent l’Atlantique. Dans le guide, le Québec fait partie du Canada central et non de la région atlantique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -171,29 +201,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Central Canada, in the official study-guide regions, means:"
+      "en": "Central Canada, in the official study-guide regions, means:",
+      "fr": "Dans les régions du guide d’étude officiel, le Canada central désigne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec and Ontario"
+        "en": "Quebec and Ontario",
+        "fr": "Le Québec et l’Ontario"
       },
       {
         "id": "b",
-        "en": "Manitoba and Saskatchewan"
+        "en": "Manitoba and Saskatchewan",
+        "fr": "Le Manitoba et la Saskatchewan"
       },
       {
         "id": "c",
-        "en": "Only Toronto"
+        "en": "Only Toronto",
+        "fr": "Toronto seulement"
       },
       {
         "id": "d",
-        "en": "The three territories"
+        "en": "The three territories",
+        "fr": "Les trois territoires"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a population and history grouping, not “the geographic centre of the map.”"
+      "en": "It is a population and history grouping, not “the geographic centre of the map.”",
+      "fr": "Il s’agit d’un regroupement fondé sur la population et l’histoire, et non du « centre géographique de la carte »."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -204,29 +240,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prairie provinces are:"
+      "en": "The Prairie provinces are:",
+      "fr": "Les provinces des Prairies sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Manitoba, Saskatchewan, and Alberta"
+        "en": "Manitoba, Saskatchewan, and Alberta",
+        "fr": "Le Manitoba, la Saskatchewan et l’Alberta"
       },
       {
         "id": "b",
-        "en": "B.C., Yukon, and Alberta"
+        "en": "B.C., Yukon, and Alberta",
+        "fr": "La Colombie-Britannique, le Yukon et l’Alberta"
       },
       {
         "id": "c",
-        "en": "Ontario, Quebec, and Manitoba"
+        "en": "Ontario, Quebec, and Manitoba",
+        "fr": "L’Ontario, le Québec et le Manitoba"
       },
       {
         "id": "d",
-        "en": "Nova Scotia, PEI, and New Brunswick"
+        "en": "Nova Scotia, PEI, and New Brunswick",
+        "fr": "La Nouvelle-Écosse, l’Île-du-Prince-Édouard et le Nouveau-Brunswick"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They sit between the Shield and the Rockies. All three joined after 1867."
+      "en": "They sit between the Shield and the Rockies. All three joined after 1867.",
+      "fr": "Elles se situent entre le Bouclier canadien et les Rocheuses. Les trois se sont jointes au Canada après 1867."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -237,29 +279,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The West Coast region in the guide is:"
+      "en": "The West Coast region in the guide is:",
+      "fr": "Dans le guide, la région de la côte du Pacifique correspond :"
     },
     "options": [
       {
         "id": "a",
-        "en": "British Columbia"
+        "en": "British Columbia",
+        "fr": "À la Colombie-Britannique"
       },
       {
         "id": "b",
-        "en": "Yukon"
+        "en": "Yukon",
+        "fr": "Au Yukon"
       },
       {
         "id": "c",
-        "en": "Alberta"
+        "en": "Alberta",
+        "fr": "À l’Alberta"
       },
       {
         "id": "d",
-        "en": "Manitoba"
+        "en": "Manitoba",
+        "fr": "Au Manitoba"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Yukon is grouped with the Northern Territories, not with the West Coast region."
+      "en": "Yukon is grouped with the Northern Territories, not with the West Coast region.",
+      "fr": "Le Yukon est regroupé avec les territoires du Nord, et non avec la région de la côte du Pacifique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -270,29 +318,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Northern Territories are:"
+      "en": "The Northern Territories are:",
+      "fr": "Les territoires du Nord sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Yukon, Northwest Territories, and Nunavut"
+        "en": "Yukon, Northwest Territories, and Nunavut",
+        "fr": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut"
       },
       {
         "id": "b",
-        "en": "Labrador, Yukon, and PEI"
+        "en": "Labrador, Yukon, and PEI",
+        "fr": "Le Labrador, le Yukon et l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "NWT, Manitoba, and Nunavut"
+        "en": "NWT, Manitoba, and Nunavut",
+        "fr": "Les Territoires du Nord-Ouest, le Manitoba et le Nunavut"
       },
       {
         "id": "d",
-        "en": "Yukon, B.C., and Alaska"
+        "en": "Yukon, B.C., and Alaska",
+        "fr": "Le Yukon, la Colombie-Britannique et l’Alaska"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Three territories, vast land, small populations."
+      "en": "Three territories, vast land, small populations.",
+      "fr": "Trois territoires, un immense espace et de faibles populations."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -303,21 +357,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Most Canadians live within a few hundred kilometres of the United States border."
+      "en": "Most Canadians live within a few hundred kilometres of the United States border.",
+      "fr": "La majorité des Canadiens vivent à quelques centaines de kilomètres de la frontière américaine."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The populated belt is southern and thin. The North is huge and sparsely peopled."
+      "en": "The populated belt is southern and thin. The North is huge and sparsely peopled.",
+      "fr": "La bande peuplée du pays est étroite et située au sud. Le Nord est immense et très peu peuplé."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -328,29 +386,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The five Great Lakes include:"
+      "en": "The five Great Lakes include:",
+      "fr": "Les cinq Grands Lacs sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Superior, Michigan, Huron, Erie, and Ontario"
+        "en": "Superior, Michigan, Huron, Erie, and Ontario",
+        "fr": "Supérieur, Michigan, Huron, Érié et Ontario"
       },
       {
         "id": "b",
-        "en": "Winnipeg, Athabasca, Great Slave, Great Bear, and Ontario"
+        "en": "Winnipeg, Athabasca, Great Slave, Great Bear, and Ontario",
+        "fr": "Winnipeg, Athabasca, Grand Lac des Esclaves, Grand Lac de l’Ours et Ontario"
       },
       {
         "id": "c",
-        "en": "Ontario, Erie, Champlain, Simcoe, and Nipissing"
+        "en": "Ontario, Erie, Champlain, Simcoe, and Nipissing",
+        "fr": "Ontario, Érié, Champlain, Simcoe et Nipissing"
       },
       {
         "id": "d",
-        "en": "Michigan, Superior, Winnipeg, Erie, and Huron only four names"
+        "en": "Michigan, Superior, Winnipeg, Erie, and Huron only four names",
+        "fr": "Michigan, Supérieur, Winnipeg, Érié et Huron, soit quatre noms seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They drain to the Atlantic via the St. Lawrence. Michigan is shared with the United States."
+      "en": "They drain to the Atlantic via the St. Lawrence. Michigan is shared with the United States.",
+      "fr": "Ils se déversent dans l’Atlantique par le Saint-Laurent. Le lac Michigan est partagé avec les États-Unis."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -361,29 +425,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian Shield is:"
+      "en": "The Canadian Shield is:",
+      "fr": "Le Bouclier canadien est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A vast rocky region rich in forests and minerals around Hudson Bay"
+        "en": "A vast rocky region rich in forests and minerals around Hudson Bay",
+        "fr": "Une vaste région rocheuse riche en forêts et en minéraux qui entoure la baie d’Hudson"
       },
       {
         "id": "b",
-        "en": "A police badge"
+        "en": "A police badge",
+        "fr": "Un insigne de police"
       },
       {
         "id": "c",
-        "en": "The roof of the Peace Tower"
+        "en": "The roof of the Peace Tower",
+        "fr": "Le toit de la Tour de la Paix"
       },
       {
         "id": "d",
-        "en": "A prairie grassland only"
+        "en": "A prairie grassland only",
+        "fr": "Une prairie herbeuse seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It covers much of Quebec, Ontario, Manitoba, and the Territories. Mining and hydro are classic Shield economies."
+      "en": "It covers much of Quebec, Ontario, Manitoba, and the Territories. Mining and hydro are classic Shield economies.",
+      "fr": "Il couvre une grande partie du Québec, de l’Ontario, du Manitoba et des territoires. Les mines et l’hydroélectricité sont les activités économiques typiques du Bouclier."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -394,29 +464,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Cordillera is:"
+      "en": "The Cordillera is:",
+      "fr": "La Cordillère est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The western mountain system"
+        "en": "The western mountain system",
+        "fr": "Le système montagneux de l’Ouest"
       },
       {
         "id": "b",
-        "en": "A river in PEI"
+        "en": "A river in PEI",
+        "fr": "Une rivière de l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "A Toronto neighbourhood"
+        "en": "A Toronto neighbourhood",
+        "fr": "Un quartier de Toronto"
       },
       {
         "id": "d",
-        "en": "The Senate’s Latin name"
+        "en": "The Senate’s Latin name",
+        "fr": "Le nom latin du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Rockies and Coast Mountains dominate British Columbia and stretch into Alberta and the Yukon."
+      "en": "The Rockies and Coast Mountains dominate British Columbia and stretch into Alberta and the Yukon.",
+      "fr": "Les Rocheuses et la chaîne Côtière dominent la Colombie-Britannique et se prolongent en Alberta et au Yukon."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -427,29 +503,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Quebec?"
+      "en": "What is the capital of Quebec?",
+      "fr": "Quelle est la capitale du Québec?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Montreal"
+        "en": "Montreal",
+        "fr": "Montréal"
       },
       {
         "id": "b",
-        "en": "Quebec City"
+        "en": "Quebec City",
+        "fr": "Québec"
       },
       {
         "id": "c",
-        "en": "Gatineau"
+        "en": "Gatineau",
+        "fr": "Gatineau"
       },
       {
         "id": "d",
-        "en": "Sherbrooke"
+        "en": "Sherbrooke",
+        "fr": "Sherbrooke"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Quebec City is the capital. Montreal is the largest city. Mixing them is a classic test trap."
+      "en": "Quebec City is the capital. Montreal is the largest city. Mixing them is a classic test trap.",
+      "fr": "La ville de Québec est la capitale; Montréal est la plus grande ville. Les confondre est un piège classique à l’examen."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -460,29 +542,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which city is Quebec’s metropolis and Canada’s largest French-speaking city?"
+      "en": "Which city is Quebec’s metropolis and Canada’s largest French-speaking city?",
+      "fr": "Quelle ville est la métropole du Québec et la plus grande ville francophone du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Montreal"
+        "en": "Montreal",
+        "fr": "Montréal"
       },
       {
         "id": "b",
-        "en": "Quebec City"
+        "en": "Quebec City",
+        "fr": "Québec"
       },
       {
         "id": "c",
-        "en": "Trois-Rivières"
+        "en": "Trois-Rivières",
+        "fr": "Trois-Rivières"
       },
       {
         "id": "d",
-        "en": "Ottawa"
+        "en": "Ottawa",
+        "fr": "Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Montreal is the economic and cultural giant. Quebec City is the political capital, founded in 1608."
+      "en": "Montreal is the economic and cultural giant. Quebec City is the political capital, founded in 1608.",
+      "fr": "Montréal est le géant économique et culturel. La ville de Québec, fondée en 1608, est la capitale politique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -493,29 +581,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of British Columbia?"
+      "en": "What is the capital of British Columbia?",
+      "fr": "Quelle est la capitale de la Colombie-Britannique?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Vancouver"
+        "en": "Vancouver",
+        "fr": "Vancouver"
       },
       {
         "id": "b",
-        "en": "Victoria"
+        "en": "Victoria",
+        "fr": "Victoria"
       },
       {
         "id": "c",
-        "en": "Kelowna"
+        "en": "Kelowna",
+        "fr": "Kelowna"
       },
       {
         "id": "d",
-        "en": "Prince George"
+        "en": "Prince George",
+        "fr": "Prince George"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Victoria, on Vancouver Island, is the capital. Vancouver is the largest city and main port."
+      "en": "Victoria, on Vancouver Island, is the capital. Vancouver is the largest city and main port.",
+      "fr": "Victoria, sur l’île de Vancouver, est la capitale. Vancouver est la plus grande ville et le principal port."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -526,29 +620,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "British Columbia joined Confederation in 1871 after a promise of:"
+      "en": "British Columbia joined Confederation in 1871 after a promise of:",
+      "fr": "La Colombie-Britannique s’est joint à la Confédération en 1871 après la promesse :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A transcontinental railway"
+        "en": "A transcontinental railway",
+        "fr": "D’un chemin de fer transcontinental"
       },
       {
         "id": "b",
-        "en": "Immediate Senate seats for every village"
+        "en": "Immediate Senate seats for every village",
+        "fr": "De sièges immédiats au Sénat pour chaque village"
       },
       {
         "id": "c",
-        "en": "Free ferries forever with no terms"
+        "en": "Free ferries forever with no terms",
+        "fr": "De traversiers gratuits à perpétuité et sans conditions"
       },
       {
         "id": "d",
-        "en": "Official status for Spanish"
+        "en": "Official status for Spanish",
+        "fr": "Du statut de langue officielle pour l’espagnol"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The railway bound the Pacific province to Canada. Vancouver later became the great Pacific gateway."
+      "en": "The railway bound the Pacific province to Canada. Vancouver later became the great Pacific gateway.",
+      "fr": "Le chemin de fer a rattaché la province du Pacifique au Canada. Vancouver est ensuite devenue la grande porte d’entrée du Pacifique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -559,29 +659,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Alberta?"
+      "en": "What is the capital of Alberta?",
+      "fr": "Quelle est la capitale de l’Alberta?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Calgary"
+        "en": "Calgary",
+        "fr": "Calgary"
       },
       {
         "id": "b",
-        "en": "Edmonton"
+        "en": "Edmonton",
+        "fr": "Edmonton"
       },
       {
         "id": "c",
-        "en": "Red Deer"
+        "en": "Red Deer",
+        "fr": "Red Deer"
       },
       {
         "id": "d",
-        "en": "Lethbridge"
+        "en": "Lethbridge",
+        "fr": "Lethbridge"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Edmonton is the capital. Calgary is the largest city. Energy and agriculture define much of the economy."
+      "en": "Edmonton is the capital. Calgary is the largest city. Energy and agriculture define much of the economy.",
+      "fr": "Edmonton est la capitale; Calgary est la plus grande ville. L’énergie et l’agriculture façonnent une bonne part de l’économie."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -592,29 +698,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Alberta’s largest city is:"
+      "en": "Alberta’s largest city is:",
+      "fr": "La plus grande ville de l’Alberta est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Edmonton"
+        "en": "Edmonton",
+        "fr": "Edmonton"
       },
       {
         "id": "b",
-        "en": "Calgary"
+        "en": "Calgary",
+        "fr": "Calgary"
       },
       {
         "id": "c",
-        "en": "Banff"
+        "en": "Banff",
+        "fr": "Banff"
       },
       {
         "id": "d",
-        "en": "Fort McMurray"
+        "en": "Fort McMurray",
+        "fr": "Fort McMurray"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Calgary is larger; Edmonton is the seat of government. The Rockies lie on the B.C. boundary."
+      "en": "Calgary is larger; Edmonton is the seat of government. The Rockies lie on the B.C. boundary.",
+      "fr": "Calgary est plus grande, tandis qu’Edmonton est le siège du gouvernement. Les Rocheuses longent la frontière avec la Colombie-Britannique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -625,29 +737,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Saskatchewan?"
+      "en": "What is the capital of Saskatchewan?",
+      "fr": "Quelle est la capitale de la Saskatchewan?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Saskatoon"
+        "en": "Saskatoon",
+        "fr": "Saskatoon"
       },
       {
         "id": "b",
-        "en": "Regina"
+        "en": "Regina",
+        "fr": "Regina"
       },
       {
         "id": "c",
-        "en": "Moose Jaw"
+        "en": "Moose Jaw",
+        "fr": "Moose Jaw"
       },
       {
         "id": "d",
-        "en": "Prince Albert"
+        "en": "Prince Albert",
+        "fr": "Prince Albert"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Regina is the capital. Saskatoon is the largest city. Wheat and potash are classic study-guide hooks."
+      "en": "Regina is the capital. Saskatoon is the largest city. Wheat and potash are classic study-guide hooks.",
+      "fr": "Regina est la capitale; Saskatoon est la plus grande ville. Le blé et la potasse sont les repères classiques du guide d’étude."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -658,29 +776,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Saskatchewan is especially associated with:"
+      "en": "Saskatchewan is especially associated with:",
+      "fr": "La Saskatchewan est surtout associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Grain farming and potash"
+        "en": "Grain farming and potash",
+        "fr": "À la culture des céréales et à la potasse"
       },
       {
         "id": "b",
-        "en": "Pacific shipping"
+        "en": "Pacific shipping",
+        "fr": "Au transport maritime du Pacifique"
       },
       {
         "id": "c",
-        "en": "Cod stocks"
+        "en": "Cod stocks",
+        "fr": "Aux stocks de morue"
       },
       {
         "id": "d",
-        "en": "The national capital"
+        "en": "The national capital",
+        "fr": "À la capitale nationale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is also the birthplace of a major strain of Canadian social democracy, including early public hospital insurance."
+      "en": "It is also the birthplace of a major strain of Canadian social democracy, including early public hospital insurance.",
+      "fr": "Elle est aussi le berceau d’un important courant social-démocrate canadien, dont les premiers régimes publics d’assurance hospitalisation."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -691,29 +815,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Manitoba?"
+      "en": "What is the capital of Manitoba?",
+      "fr": "Quelle est la capitale du Manitoba?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Brandon"
+        "en": "Brandon",
+        "fr": "Brandon"
       },
       {
         "id": "b",
-        "en": "Winnipeg"
+        "en": "Winnipeg",
+        "fr": "Winnipeg"
       },
       {
         "id": "c",
-        "en": "Churchill"
+        "en": "Churchill",
+        "fr": "Churchill"
       },
       {
         "id": "d",
-        "en": "Thompson"
+        "en": "Thompson",
+        "fr": "Thompson"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Winnipeg sits at the forks of the Red and Assiniboine. Red River Métis history is central to the province’s entry into Canada."
+      "en": "Winnipeg sits at the forks of the Red and Assiniboine. Red River Métis history is central to the province’s entry into Canada.",
+      "fr": "Winnipeg se trouve à la fourche des rivières Rouge et Assiniboine. L’histoire des Métis de la rivière Rouge est au cœur de l’entrée de la province dans le Canada."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -724,29 +854,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Manitoba entered Confederation in 1870 after:"
+      "en": "Manitoba entered Confederation in 1870 after:",
+      "fr": "Le Manitoba est entré dans la Confédération en 1870 à la suite :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Red River Resistance and the Manitoba Act"
+        "en": "The Red River Resistance and the Manitoba Act",
+        "fr": "De la résistance de la rivière Rouge et de la Loi sur le Manitoba"
       },
       {
         "id": "b",
-        "en": "The Klondike gold rush"
+        "en": "The Klondike gold rush",
+        "fr": "De la ruée vers l’or du Klondike"
       },
       {
         "id": "c",
-        "en": "D-Day"
+        "en": "D-Day",
+        "fr": "Du jour J"
       },
       {
         "id": "d",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "De la Révolution tranquille"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Louis Riel and the Métis provisional government are part of that founding story."
+      "en": "Louis Riel and the Métis provisional government are part of that founding story.",
+      "fr": "Louis Riel et le gouvernement provisoire des Métis font partie de ce récit de fondation."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -757,29 +893,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Nova Scotia?"
+      "en": "What is the capital of Nova Scotia?",
+      "fr": "Quelle est la capitale de la Nouvelle-Écosse?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Halifax"
+        "en": "Halifax",
+        "fr": "Halifax"
       },
       {
         "id": "b",
-        "en": "Sydney"
+        "en": "Sydney",
+        "fr": "Sydney"
       },
       {
         "id": "c",
-        "en": "Yarmouth"
+        "en": "Yarmouth",
+        "fr": "Yarmouth"
       },
       {
         "id": "d",
-        "en": "Lunenburg"
+        "en": "Lunenburg",
+        "fr": "Lunenburg"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Halifax is the largest Atlantic city and a major port, with a long military and naval history."
+      "en": "Halifax is the largest Atlantic city and a major port, with a long military and naval history.",
+      "fr": "Halifax est la plus grande ville de l’Atlantique et un port important, doté d’une longue histoire militaire et navale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -790,29 +932,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of New Brunswick?"
+      "en": "What is the capital of New Brunswick?",
+      "fr": "Quelle est la capitale du Nouveau-Brunswick?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Saint John"
+        "en": "Saint John",
+        "fr": "Saint-Jean"
       },
       {
         "id": "b",
-        "en": "Moncton"
+        "en": "Moncton",
+        "fr": "Moncton"
       },
       {
         "id": "c",
-        "en": "Fredericton"
+        "en": "Fredericton",
+        "fr": "Fredericton"
       },
       {
         "id": "d",
-        "en": "Bathurst"
+        "en": "Bathurst",
+        "fr": "Bathurst"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Fredericton is the capital. New Brunswick is the only officially bilingual province, with a large Acadian population."
+      "en": "Fredericton is the capital. New Brunswick is the only officially bilingual province, with a large Acadian population.",
+      "fr": "Fredericton est la capitale. Le Nouveau-Brunswick est la seule province officiellement bilingue et compte une importante population acadienne."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -823,29 +971,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which is the only officially bilingual province?"
+      "en": "Which is the only officially bilingual province?",
+      "fr": "Quelle est la seule province officiellement bilingue?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "Le Québec"
       },
       {
         "id": "b",
-        "en": "New Brunswick"
+        "en": "New Brunswick",
+        "fr": "Le Nouveau-Brunswick"
       },
       {
         "id": "c",
-        "en": "Ontario"
+        "en": "Ontario",
+        "fr": "L’Ontario"
       },
       {
         "id": "d",
-        "en": "Manitoba"
+        "en": "Manitoba",
+        "fr": "Le Manitoba"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Quebec’s official language is French. Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual."
+      "en": "Quebec’s official language is French. Federally, Canada is bilingual. Among provinces, only New Brunswick is officially bilingual.",
+      "fr": "La langue officielle du Québec est le français. Sur le plan fédéral, le Canada est bilingue. Parmi les provinces, seul le Nouveau-Brunswick est officiellement bilingue."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -856,29 +1010,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Prince Edward Island?"
+      "en": "What is the capital of Prince Edward Island?",
+      "fr": "Quelle est la capitale de l’Île-du-Prince-Édouard?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Summerside"
+        "en": "Summerside",
+        "fr": "Summerside"
       },
       {
         "id": "b",
-        "en": "Charlottetown"
+        "en": "Charlottetown",
+        "fr": "Charlottetown"
       },
       {
         "id": "c",
-        "en": "Cavendish"
+        "en": "Cavendish",
+        "fr": "Cavendish"
       },
       {
         "id": "d",
-        "en": "Georgetown"
+        "en": "Georgetown",
+        "fr": "Georgetown"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Charlottetown hosted the 1864 conference that began Confederation talks. PEI joined Canada in 1873."
+      "en": "Charlottetown hosted the 1864 conference that began Confederation talks. PEI joined Canada in 1873.",
+      "fr": "Charlottetown a accueilli la conférence de 1864 qui a lancé les pourparlers de la Confédération. L’Île-du-Prince-Édouard s’est joint au Canada en 1873."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -889,29 +1049,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Newfoundland and Labrador?"
+      "en": "What is the capital of Newfoundland and Labrador?",
+      "fr": "Quelle est la capitale de Terre-Neuve-et-Labrador?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Corner Brook"
+        "en": "Corner Brook",
+        "fr": "Corner Brook"
       },
       {
         "id": "b",
-        "en": "Happy Valley-Goose Bay"
+        "en": "Happy Valley-Goose Bay",
+        "fr": "Happy Valley-Goose Bay"
       },
       {
         "id": "c",
-        "en": "St. John's"
+        "en": "St. John's",
+        "fr": "St. John’s"
       },
       {
         "id": "d",
-        "en": "Gander"
+        "en": "Gander",
+        "fr": "Gander"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "St. John’s is one of the oldest European-founded cities in North America. The province joined Canada in 1949."
+      "en": "St. John’s is one of the oldest European-founded cities in North America. The province joined Canada in 1949.",
+      "fr": "St. John’s est l’une des plus anciennes villes fondées par des Européens en Amérique du Nord. La province est entrée dans le Canada en 1949."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -922,29 +1088,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Newfoundland and Labrador consists of:"
+      "en": "Newfoundland and Labrador consists of:",
+      "fr": "Terre-Neuve-et-Labrador se compose :"
     },
     "options": [
       {
         "id": "a",
-        "en": "An island (Newfoundland) plus a mainland region (Labrador)"
+        "en": "An island (Newfoundland) plus a mainland region (Labrador)",
+        "fr": "D’une île (Terre-Neuve) et d’une région continentale (le Labrador)"
       },
       {
         "id": "b",
-        "en": "Only an Arctic archipelago"
+        "en": "Only an Arctic archipelago",
+        "fr": "D’un archipel arctique seulement"
       },
       {
         "id": "c",
-        "en": "Only Prairie farmland"
+        "en": "Only Prairie farmland",
+        "fr": "De terres agricoles des Prairies seulement"
       },
       {
         "id": "d",
-        "en": "Only Vancouver Island"
+        "en": "Only Vancouver Island",
+        "fr": "De l’île de Vancouver seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Labrador is on the mainland next to Quebec. Newfoundland time is a half-hour ahead of Atlantic time."
+      "en": "Labrador is on the mainland next to Quebec. Newfoundland time is a half-hour ahead of Atlantic time.",
+      "fr": "Le Labrador se trouve sur le continent, voisin du Québec. L’heure de Terre-Neuve est en avance d’une demi-heure sur l’heure de l’Atlantique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -955,29 +1127,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Yukon?"
+      "en": "What is the capital of Yukon?",
+      "fr": "Quelle est la capitale du Yukon?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Dawson City"
+        "en": "Dawson City",
+        "fr": "Dawson"
       },
       {
         "id": "b",
-        "en": "Whitehorse"
+        "en": "Whitehorse",
+        "fr": "Whitehorse"
       },
       {
         "id": "c",
-        "en": "Watson Lake"
+        "en": "Watson Lake",
+        "fr": "Watson Lake"
       },
       {
         "id": "d",
-        "en": "Yellowknife"
+        "en": "Yellowknife",
+        "fr": "Yellowknife"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Whitehorse is the capital. Dawson is tied to the Klondike Gold Rush of the late 1890s."
+      "en": "Whitehorse is the capital. Dawson is tied to the Klondike Gold Rush of the late 1890s.",
+      "fr": "Whitehorse est la capitale. Dawson est liée à la ruée vers l’or du Klondike, à la fin des années 1890."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -988,29 +1166,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Yukon’s classic historic event in the study guide is:"
+      "en": "Yukon’s classic historic event in the study guide is:",
+      "fr": "Dans le guide d’étude, l’événement historique classique du Yukon est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Klondike Gold Rush"
+        "en": "The Klondike Gold Rush",
+        "fr": "La ruée vers l’or du Klondike"
       },
       {
         "id": "b",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "La Révolution tranquille"
       },
       {
         "id": "c",
-        "en": "The Dieppe raid"
+        "en": "The Dieppe raid",
+        "fr": "Le raid de Dieppe"
       },
       {
         "id": "d",
-        "en": "The Charlottetown Conference"
+        "en": "The Charlottetown Conference",
+        "fr": "La Conférence de Charlottetown"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The rush brought a stampede of prospectors and made the territory famous."
+      "en": "The rush brought a stampede of prospectors and made the territory famous.",
+      "fr": "Cette ruée a attiré une foule de prospecteurs et rendu le territoire célèbre."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1021,29 +1205,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of the Northwest Territories?"
+      "en": "What is the capital of the Northwest Territories?",
+      "fr": "Quelle est la capitale des Territoires du Nord-Ouest?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Inuvik"
+        "en": "Inuvik",
+        "fr": "Inuvik"
       },
       {
         "id": "b",
-        "en": "Hay River"
+        "en": "Hay River",
+        "fr": "Hay River"
       },
       {
         "id": "c",
-        "en": "Yellowknife"
+        "en": "Yellowknife",
+        "fr": "Yellowknife"
       },
       {
         "id": "d",
-        "en": "Iqaluit"
+        "en": "Iqaluit",
+        "fr": "Iqaluit"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Yellowknife sits on Great Slave Lake. Diamonds, gold, and public administration are economic pillars."
+      "en": "Yellowknife sits on Great Slave Lake. Diamonds, gold, and public administration are economic pillars.",
+      "fr": "Yellowknife est située sur le Grand Lac des Esclaves. Le diamant, l’or et l’administration publique sont les piliers de son économie."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1054,29 +1244,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the capital of Nunavut?"
+      "en": "What is the capital of Nunavut?",
+      "fr": "Quelle est la capitale du Nunavut?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Rankin Inlet"
+        "en": "Rankin Inlet",
+        "fr": "Rankin Inlet"
       },
       {
         "id": "b",
-        "en": "Iqaluit"
+        "en": "Iqaluit",
+        "fr": "Iqaluit"
       },
       {
         "id": "c",
-        "en": "Cambridge Bay"
+        "en": "Cambridge Bay",
+        "fr": "Cambridge Bay"
       },
       {
         "id": "d",
-        "en": "Yellowknife"
+        "en": "Yellowknife",
+        "fr": "Yellowknife"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Iqaluit is the capital. Nunavut was created in 1999 from the eastern Northwest Territories."
+      "en": "Iqaluit is the capital. Nunavut was created in 1999 from the eastern Northwest Territories.",
+      "fr": "Iqaluit est la capitale. Le Nunavut a été créé en 1999 à partir de la partie est des Territoires du Nord-Ouest."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1087,29 +1283,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Nunavut was created in:"
+      "en": "Nunavut was created in:",
+      "fr": "Le Nunavut a été créé en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1949"
+        "en": "1949",
+        "fr": "1949"
       },
       {
         "id": "c",
-        "en": "1999"
+        "en": "1999",
+        "fr": "1999"
       },
       {
         "id": "d",
-        "en": "1927"
+        "en": "1927",
+        "fr": "1927"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "It is a majority-Inuit territory. Inuktut languages are central to public life. Many communities are fly-in."
+      "en": "It is a majority-Inuit territory. Inuktut languages are central to public life. Many communities are fly-in.",
+      "fr": "C’est un territoire à majorité inuite. Les langues inuites occupent une place centrale dans la vie publique. De nombreuses communautés ne sont accessibles que par avion."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1120,21 +1322,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Nunavut is a province."
+      "en": "Nunavut is a province.",
+      "fr": "Le Nunavut est une province."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "It is a territory. That legal distinction still matters, even as territorial governments run most daily services."
+      "en": "It is a territory. That legal distinction still matters, even as territorial governments run most daily services.",
+      "fr": "C’est un territoire. Cette distinction juridique compte encore, même si les gouvernements territoriaux administrent la plupart des services quotidiens."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1145,29 +1351,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which province has the largest population?"
+      "en": "Which province has the largest population?",
+      "fr": "Quelle province est la plus peuplée?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "Le Québec"
       },
       {
         "id": "b",
-        "en": "Ontario"
+        "en": "Ontario",
+        "fr": "L’Ontario"
       },
       {
         "id": "c",
-        "en": "British Columbia"
+        "en": "British Columbia",
+        "fr": "La Colombie-Britannique"
       },
       {
         "id": "d",
-        "en": "Alberta"
+        "en": "Alberta",
+        "fr": "L’Alberta"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Ontario is the most populous. Quebec is second. Population, not land area, drives House of Commons seat counts."
+      "en": "Ontario is the most populous. Quebec is second. Population, not land area, drives House of Commons seat counts.",
+      "fr": "L’Ontario est la province la plus peuplée, suivie du Québec. C’est la population, et non la superficie, qui détermine le nombre de sièges à la Chambre des communes."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1178,29 +1390,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which is the largest province by land area?"
+      "en": "Which is the largest province by land area?",
+      "fr": "Quelle est la plus grande province par sa superficie?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ontario"
+        "en": "Ontario",
+        "fr": "L’Ontario"
       },
       {
         "id": "b",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "Le Québec"
       },
       {
         "id": "c",
-        "en": "British Columbia"
+        "en": "British Columbia",
+        "fr": "La Colombie-Britannique"
       },
       {
         "id": "d",
-        "en": "Alberta"
+        "en": "Alberta",
+        "fr": "L’Alberta"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Quebec is the largest province. Nunavut is larger still, but it is a territory."
+      "en": "Quebec is the largest province. Nunavut is larger still, but it is a territory.",
+      "fr": "Le Québec est la plus grande province. Le Nunavut est encore plus vaste, mais c’est un territoire."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1211,29 +1429,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The St. Lawrence River is historically important as:"
+      "en": "The St. Lawrence River is historically important as:",
+      "fr": "Le fleuve Saint-Laurent revêt une importance historique en tant que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The highway from the Atlantic into the interior of the continent"
+        "en": "The highway from the Atlantic into the interior of the continent",
+        "fr": "Voie de passage de l’Atlantique vers l’intérieur du continent"
       },
       {
         "id": "b",
-        "en": "A prairie creek"
+        "en": "A prairie creek",
+        "fr": "Ruisseau des Prairies"
       },
       {
         "id": "c",
-        "en": "A Yukon gold stream only"
+        "en": "A Yukon gold stream only",
+        "fr": "Ruisseau aurifère du Yukon seulement"
       },
       {
         "id": "d",
-        "en": "A British Columbia fjord only"
+        "en": "A British Columbia fjord only",
+        "fr": "Fjord de la Colombie-Britannique seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "New France, Montreal, Quebec City, and later the Seaway all sit on this system."
+      "en": "New France, Montreal, Quebec City, and later the Seaway all sit on this system.",
+      "fr": "La Nouvelle-France, Montréal, la ville de Québec et, plus tard, la Voie maritime s’inscrivent tous dans ce réseau."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1244,29 +1468,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Niagara Falls lies on the border of:"
+      "en": "Niagara Falls lies on the border of:",
+      "fr": "Les chutes Niagara se trouvent à la frontière :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ontario and the United States"
+        "en": "Ontario and the United States",
+        "fr": "De l’Ontario et des États-Unis"
       },
       {
         "id": "b",
-        "en": "B.C. and Alaska"
+        "en": "B.C. and Alaska",
+        "fr": "De la Colombie-Britannique et de l’Alaska"
       },
       {
         "id": "c",
-        "en": "Manitoba and Nunavut"
+        "en": "Manitoba and Nunavut",
+        "fr": "Du Manitoba et du Nunavut"
       },
       {
         "id": "d",
-        "en": "PEI and New Brunswick"
+        "en": "PEI and New Brunswick",
+        "fr": "De l’Île-du-Prince-Édouard et du Nouveau-Brunswick"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a hydroelectric and tourism landmark of the Great Lakes–St. Lawrence system."
+      "en": "It is a hydroelectric and tourism landmark of the Great Lakes–St. Lawrence system.",
+      "fr": "C’est un haut lieu de l’hydroélectricité et du tourisme dans le réseau des Grands Lacs et du Saint-Laurent."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1277,29 +1507,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Ottawa is in Ontario, but the National Capital Region also includes:"
+      "en": "Ottawa is in Ontario, but the National Capital Region also includes:",
+      "fr": "Ottawa est en Ontario, mais la région de la capitale nationale comprend aussi :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Gatineau, Quebec, across the river"
+        "en": "Gatineau, Quebec, across the river",
+        "fr": "Gatineau, au Québec, de l’autre côté de la rivière"
       },
       {
         "id": "b",
-        "en": "Winnipeg"
+        "en": "Winnipeg",
+        "fr": "Winnipeg"
       },
       {
         "id": "c",
-        "en": "Halifax"
+        "en": "Halifax",
+        "fr": "Halifax"
       },
       {
         "id": "d",
-        "en": "Victoria"
+        "en": "Victoria",
+        "fr": "Victoria"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Federal institutions sit on both sides of the Ottawa River. Do not call Gatineau the national capital."
+      "en": "Federal institutions sit on both sides of the Ottawa River. Do not call Gatineau the national capital.",
+      "fr": "Des institutions fédérales se trouvent des deux côtés de la rivière des Outaouais. Attention : Gatineau n’est pas la capitale nationale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1310,29 +1546,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Prince Edward Island is linked to the mainland by:"
+      "en": "Prince Edward Island is linked to the mainland by:",
+      "fr": "L’Île-du-Prince-Édouard est reliée au continent par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Confederation Bridge (and also by ferry)"
+        "en": "The Confederation Bridge (and also by ferry)",
+        "fr": "Le pont de la Confédération (ainsi que par traversier)"
       },
       {
         "id": "b",
-        "en": "A subway to Montreal"
+        "en": "A subway to Montreal",
+        "fr": "Un métro jusqu’à Montréal"
       },
       {
         "id": "c",
-        "en": "A rail tunnel to Yukon"
+        "en": "A rail tunnel to Yukon",
+        "fr": "Un tunnel ferroviaire jusqu’au Yukon"
       },
       {
         "id": "d",
-        "en": "A dam across Hudson Bay"
+        "en": "A dam across Hudson Bay",
+        "fr": "Un barrage traversant la baie d’Hudson"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The bridge is a modern fact; the 1864 talks are the historic one. Agriculture and tourism remain economic staples."
+      "en": "The bridge is a modern fact; the 1864 talks are the historic one. Agriculture and tourism remain economic staples.",
+      "fr": "Le pont est un fait moderne; les pourparlers de 1864 constituent le fait historique. L’agriculture et le tourisme demeurent les bases de l’économie."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1343,29 +1585,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Nova Scotia’s name means:"
+      "en": "Nova Scotia’s name means:",
+      "fr": "Le nom « Nouvelle-Écosse » signifie :"
     },
     "options": [
       {
         "id": "a",
-        "en": "New Scotland"
+        "en": "New Scotland",
+        "fr": "Nouvelle-Écosse"
       },
       {
         "id": "b",
-        "en": "New France"
+        "en": "New France",
+        "fr": "Nouvelle-France"
       },
       {
         "id": "c",
-        "en": "New Ireland"
+        "en": "New Ireland",
+        "fr": "Nouvelle-Irlande"
       },
       {
         "id": "d",
-        "en": "New Wales"
+        "en": "New Wales",
+        "fr": "Nouveau-Pays de Galles"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Scottish settlement, the Halifax port, Acadian communities, and Black Loyalist history all mark the province."
+      "en": "Scottish settlement, the Halifax port, Acadian communities, and Black Loyalist history all mark the province.",
+      "fr": "Le peuplement écossais, le port d’Halifax, les communautés acadiennes et l’histoire des loyalistes noirs marquent tous la province."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1376,29 +1624,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which region is sparsely populated, strategically important in the Arctic, and home to Inuit and other northern peoples?"
+      "en": "Which region is sparsely populated, strategically important in the Arctic, and home to Inuit and other northern peoples?",
+      "fr": "Quelle région est peu peuplée, stratégiquement importante dans l’Arctique et habitée par les Inuits et d’autres peuples du Nord?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The North"
+        "en": "The North",
+        "fr": "Le Nord"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island’s interior cities"
+        "en": "Prince Edward Island’s interior cities",
+        "fr": "Les villes de l’intérieur de l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "Downtown Toronto"
+        "en": "Downtown Toronto",
+        "fr": "Le centre-ville de Toronto"
       },
       {
         "id": "d",
-        "en": "The Niagara fruit belt only"
+        "en": "The Niagara fruit belt only",
+        "fr": "La ceinture fruitière du Niagara seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Permafrost, fly-in communities, and sovereignty issues are part of the northern story."
+      "en": "Permafrost, fly-in communities, and sovereignty issues are part of the northern story.",
+      "fr": "Le pergélisol, les communautés accessibles par avion et les questions de souveraineté font partie de la réalité du Nord."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1409,21 +1663,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Toronto is the capital of Canada."
+      "en": "Toronto is the capital of Canada.",
+      "fr": "Toronto est la capitale du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Toronto is Ontario’s capital and the largest city. Ottawa is the national capital."
+      "en": "Toronto is Ontario’s capital and the largest city. Ottawa is the national capital.",
+      "fr": "Toronto est la capitale de l’Ontario et la plus grande ville du pays. Ottawa est la capitale nationale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1434,29 +1692,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Hudson Bay is bordered by:"
+      "en": "Hudson Bay is bordered by:",
+      "fr": "La baie d’Hudson est bordée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Several provinces and territories, with the Shield around much of it"
+        "en": "Several provinces and territories, with the Shield around much of it",
+        "fr": "Par plusieurs provinces et territoires, le Bouclier canadien en entourant une bonne partie"
       },
       {
         "id": "b",
-        "en": "Only British Columbia"
+        "en": "Only British Columbia",
+        "fr": "Par la Colombie-Britannique seulement"
       },
       {
         "id": "c",
-        "en": "Only Prince Edward Island"
+        "en": "Only Prince Edward Island",
+        "fr": "Par l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "d",
-        "en": "Only the island of Newfoundland"
+        "en": "Only the island of Newfoundland",
+        "fr": "Par l’île de Terre-Neuve seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a geographic centre of gravity for the Shield and for historic fur-trade routes."
+      "en": "It is a geographic centre of gravity for the Shield and for historic fur-trade routes.",
+      "fr": "Elle constitue un centre de gravité géographique pour le Bouclier canadien et pour les anciennes routes de la traite des fourrures."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1467,29 +1731,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Vancouver is important as:"
+      "en": "Vancouver is important as:",
+      "fr": "Vancouver est importante en tant que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A major Pacific port and B.C.’s largest city"
+        "en": "A major Pacific port and B.C.’s largest city",
+        "fr": "Grand port du Pacifique et plus grande ville de la Colombie-Britannique"
       },
       {
         "id": "b",
-        "en": "The provincial capital"
+        "en": "The provincial capital",
+        "fr": "Capitale provinciale"
       },
       {
         "id": "c",
-        "en": "The national capital"
+        "en": "The national capital",
+        "fr": "Capitale nationale"
       },
       {
         "id": "d",
-        "en": "Nunavut’s seaport"
+        "en": "Nunavut’s seaport",
+        "fr": "Port maritime du Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Victoria is the capital. Vancouver is the metropolis and a gateway to Asia-Pacific trade."
+      "en": "Victoria is the capital. Vancouver is the metropolis and a gateway to Asia-Pacific trade.",
+      "fr": "Victoria est la capitale. Vancouver est la métropole et une porte d’entrée du commerce avec l’Asie-Pacifique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1500,29 +1770,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which province is an original 1867 member and remains the heart of French-speaking North America?"
+      "en": "Which province is an original 1867 member and remains the heart of French-speaking North America?",
+      "fr": "Quelle province fait partie des membres fondateurs de 1867 et demeure le cœur de l’Amérique du Nord francophone?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "Le Québec"
       },
       {
         "id": "b",
-        "en": "Alberta"
+        "en": "Alberta",
+        "fr": "L’Alberta"
       },
       {
         "id": "c",
-        "en": "Saskatchewan"
+        "en": "Saskatchewan",
+        "fr": "La Saskatchewan"
       },
       {
         "id": "d",
-        "en": "Newfoundland and Labrador"
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Quebec was Canada East. Its civil law, language, and national capital (Quebec City) are core regional facts."
+      "en": "Quebec was Canada East. Its civil law, language, and national capital (Quebec City) are core regional facts.",
+      "fr": "Le Québec était le Canada-Est. Son droit civil, sa langue et sa capitale (la ville de Québec) sont des faits régionaux essentiels."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1533,29 +1809,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Southern Ontario’s economy has long included:"
+      "en": "Southern Ontario’s economy has long included:",
+      "fr": "L’économie du sud de l’Ontario comprend depuis longtemps :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Manufacturing (including autos) and services"
+        "en": "Manufacturing (including autos) and services",
+        "fr": "La fabrication (dont l’automobile) et les services"
       },
       {
         "id": "b",
-        "en": "Only Arctic mining"
+        "en": "Only Arctic mining",
+        "fr": "L’exploitation minière arctique seulement"
       },
       {
         "id": "c",
-        "en": "Only offshore oil"
+        "en": "Only offshore oil",
+        "fr": "Le pétrole extracôtier seulement"
       },
       {
         "id": "d",
-        "en": "Only potato farming"
+        "en": "Only potato farming",
+        "fr": "La culture de la pomme de terre seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Golden Horseshoe around Toronto is one of the country’s main industrial and service regions."
+      "en": "The Golden Horseshoe around Toronto is one of the country’s main industrial and service regions.",
+      "fr": "Le Golden Horseshoe, autour de Toronto, est l’une des principales régions industrielles et de services du pays."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1566,21 +1848,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Territories have commissioners rather than lieutenant governors."
+      "en": "Territories have commissioners rather than lieutenant governors.",
+      "fr": "Les territoires ont des commissaires plutôt que des lieutenants-gouverneurs."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The Crown’s provincial representative is a Lieutenant Governor. Territorial commissioners are a different office."
+      "en": "The Crown’s provincial representative is a Lieutenant Governor. Territorial commissioners are a different office.",
+      "fr": "Le représentant de la Couronne dans une province est le lieutenant-gouverneur. Le commissaire d’un territoire occupe une fonction différente."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1591,29 +1877,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If a citizenship question asks about “your region,” it often wants:"
+      "en": "If a citizenship question asks about “your region,” it often wants:",
+      "fr": "Si une question de l’examen porte sur « votre région », on attend souvent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Your province or territory’s capital and a local geographic or historic hook"
+        "en": "Your province or territory’s capital and a local geographic or historic hook",
+        "fr": "La capitale de votre province ou territoire et un repère géographique ou historique local"
       },
       {
         "id": "b",
-        "en": "The name of your landlord"
+        "en": "The name of your landlord",
+        "fr": "Le nom de votre propriétaire"
       },
       {
         "id": "c",
-        "en": "Your federal riding’s polling-station number only"
+        "en": "Your federal riding’s polling-station number only",
+        "fr": "Le numéro du bureau de scrutin de votre circonscription fédérale seulement"
       },
       {
         "id": "d",
-        "en": "The Mayor of Ottawa in every case"
+        "en": "The Mayor of Ottawa in every case",
+        "fr": "Le nom du maire d’Ottawa dans tous les cas"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "National facts first, then lock in your capital city and one distinctive fact. This app tags such items by province code."
+      "en": "National facts first, then lock in your capital city and one distinctive fact. This app tags such items by province code.",
+      "fr": "Retenez d’abord les faits nationaux, puis mémorisez votre capitale et un fait distinctif. L’application classe ces questions selon le code de la province."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1624,29 +1916,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Prince Edward Island is especially known for:"
+      "en": "Prince Edward Island is especially known for:",
+      "fr": "L’Île-du-Prince-Édouard est surtout connue pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Potato farming and a compact agricultural landscape"
+        "en": "Potato farming and a compact agricultural landscape",
+        "fr": "La culture de la pomme de terre et un paysage agricole compact"
       },
       {
         "id": "b",
-        "en": "Oil sands only"
+        "en": "Oil sands only",
+        "fr": "Les sables bitumineux seulement"
       },
       {
         "id": "c",
-        "en": "Arctic diamond mines"
+        "en": "Arctic diamond mines",
+        "fr": "Les mines de diamants de l’Arctique"
       },
       {
         "id": "d",
-        "en": "Coastal rainforests of cedar only"
+        "en": "Coastal rainforests of cedar only",
+        "fr": "Les forêts pluviales côtières de cèdres seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is Canada’s smallest province. Potatoes, tourism, and Confederation history are the usual hooks."
+      "en": "It is Canada’s smallest province. Potatoes, tourism, and Confederation history are the usual hooks.",
+      "fr": "C’est la plus petite province du Canada. La pomme de terre, le tourisme et l’histoire de la Confédération en sont les repères habituels."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1657,29 +1955,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "New Brunswick’s landscape and economy have long included:"
+      "en": "New Brunswick’s landscape and economy have long included:",
+      "fr": "Le paysage et l’économie du Nouveau-Brunswick comprennent depuis longtemps :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Acadian communities, forests, and the Bay of Fundy tides"
+        "en": "Acadian communities, forests, and the Bay of Fundy tides",
+        "fr": "Des communautés acadiennes, des forêts et les marées de la baie de Fundy"
       },
       {
         "id": "b",
-        "en": "Only prairie wheat"
+        "en": "Only prairie wheat",
+        "fr": "Le blé des Prairies seulement"
       },
       {
         "id": "c",
-        "en": "Only Inuit hamlets"
+        "en": "Only Inuit hamlets",
+        "fr": "Des hameaux inuits seulement"
       },
       {
         "id": "d",
-        "en": "Only auto assembly in Windsor"
+        "en": "Only auto assembly in Windsor",
+        "fr": "L’assemblage automobile à Windsor seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is the only officially bilingual province. Forestry and the Fundy coast are classic geography."
+      "en": "It is the only officially bilingual province. Forestry and the Fundy coast are classic geography.",
+      "fr": "C’est la seule province officiellement bilingue. La foresterie et le littoral de la baie de Fundy sont des éléments géographiques classiques."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1690,29 +1994,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Newfoundland and Labrador’s historic staple was:"
+      "en": "Newfoundland and Labrador’s historic staple was:",
+      "fr": "Le produit de base historique de Terre-Neuve-et-Labrador était :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Atlantic fishery (especially cod)"
+        "en": "The Atlantic fishery (especially cod)",
+        "fr": "La pêche atlantique (surtout la morue)"
       },
       {
         "id": "b",
-        "en": "Prairie potash only"
+        "en": "Prairie potash only",
+        "fr": "La potasse des Prairies seulement"
       },
       {
         "id": "c",
-        "en": "Ontario auto parts only"
+        "en": "Ontario auto parts only",
+        "fr": "Les pièces automobiles de l’Ontario seulement"
       },
       {
         "id": "d",
-        "en": "B.C. wine only"
+        "en": "B.C. wine only",
+        "fr": "Le vin de la Colombie-Britannique seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The fishery shaped settlement. Offshore oil is a later chapter; Labrador adds mines and hydro."
+      "en": "The fishery shaped settlement. Offshore oil is a later chapter; Labrador adds mines and hydro.",
+      "fr": "La pêche a façonné le peuplement. Le pétrole extracôtier est un chapitre plus récent, tandis que le Labrador ajoute les mines et l’hydroélectricité."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1723,29 +2033,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Halifax is important in Canadian geography as:"
+      "en": "Halifax is important in Canadian geography as:",
+      "fr": "Dans la géographie canadienne, Halifax est importante en tant que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A major Atlantic port and historic naval and immigration harbour"
+        "en": "A major Atlantic port and historic naval and immigration harbour",
+        "fr": "Grand port de l’Atlantique et havre historique de la marine et de l’immigration"
       },
       {
         "id": "b",
-        "en": "The capital of Canada"
+        "en": "The capital of Canada",
+        "fr": "Capitale du Canada"
       },
       {
         "id": "c",
-        "en": "The capital of Alberta"
+        "en": "The capital of Alberta",
+        "fr": "Capitale de l’Alberta"
       },
       {
         "id": "d",
-        "en": "A prairie railway town only"
+        "en": "A prairie railway town only",
+        "fr": "Simple ville ferroviaire des Prairies"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Citadel overlooks a year-round ice-free harbour. It is Nova Scotia’s capital and the Maritimes’ largest city."
+      "en": "The Citadel overlooks a year-round ice-free harbour. It is Nova Scotia’s capital and the Maritimes’ largest city.",
+      "fr": "La Citadelle surplombe un port libre de glace toute l’année. Halifax est la capitale de la Nouvelle-Écosse et la plus grande ville des Maritimes."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1756,29 +2072,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Large hydroelectric projects in northern Quebec (including the James Bay area) matter because they:"
+      "en": "Large hydroelectric projects in northern Quebec (including the James Bay area) matter because they:",
+      "fr": "Les grands projets hydroélectriques du nord du Québec (dont ceux de la Baie-James) sont importants parce qu’ils :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Supply much of Quebec’s electricity and export power"
+        "en": "Supply much of Quebec’s electricity and export power",
+        "fr": "Fournissent une grande part de l’électricité du Québec et permettent d’en exporter"
       },
       {
         "id": "b",
-        "en": "Are Ontario’s only oil sands"
+        "en": "Are Ontario’s only oil sands",
+        "fr": "Constituent les seuls sables bitumineux de l’Ontario"
       },
       {
         "id": "c",
-        "en": "Replaced the St. Lawrence River"
+        "en": "Replaced the St. Lawrence River",
+        "fr": "Ont remplacé le fleuve Saint-Laurent"
       },
       {
         "id": "d",
-        "en": "Are Yukon’s territorial assembly"
+        "en": "Are Yukon’s territorial assembly",
+        "fr": "Forment l’assemblée territoriale du Yukon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Hydro is a Quebec economic signature. It also raised lasting Indigenous-rights issues."
+      "en": "Hydro is a Quebec economic signature. It also raised lasting Indigenous-rights issues.",
+      "fr": "L’hydroélectricité est une signature économique du Québec. Elle a aussi soulevé des questions durables sur les droits des Autochtones."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1789,29 +2111,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Niagara fruit belt and wine region lie in:"
+      "en": "The Niagara fruit belt and wine region lie in:",
+      "fr": "La ceinture fruitière et la région viticole du Niagara se trouvent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Southern Ontario, between the lakes"
+        "en": "Southern Ontario, between the lakes",
+        "fr": "Dans le sud de l’Ontario, entre les lacs"
       },
       {
         "id": "b",
-        "en": "Nunavut"
+        "en": "Nunavut",
+        "fr": "Au Nunavut"
       },
       {
         "id": "c",
-        "en": "Northern Labrador"
+        "en": "Northern Labrador",
+        "fr": "Dans le nord du Labrador"
       },
       {
         "id": "d",
-        "en": "The Yukon gold fields"
+        "en": "The Yukon gold fields",
+        "fr": "Dans les champs aurifères du Yukon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Mild lakeshore climate is an Ontario geography fact beyond Toronto and Ottawa."
+      "en": "Mild lakeshore climate is an Ontario geography fact beyond Toronto and Ottawa.",
+      "fr": "Le climat doux des rives des lacs est un fait géographique ontarien qui dépasse Toronto et Ottawa."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1822,29 +2150,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Winnipeg has historically been called a gateway because it:"
+      "en": "Winnipeg has historically been called a gateway because it:",
+      "fr": "Winnipeg a longtemps été appelée une porte d’entrée parce qu’elle :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Sits where eastern rail and western Prairie routes meet"
+        "en": "Sits where eastern rail and western Prairie routes meet",
+        "fr": "Se trouve au point de rencontre des chemins de fer de l’Est et des routes des Prairies de l’Ouest"
       },
       {
         "id": "b",
-        "en": "Is Canada’s Pacific port"
+        "en": "Is Canada’s Pacific port",
+        "fr": "Est le port canadien du Pacifique"
       },
       {
         "id": "c",
-        "en": "Is the capital of Nova Scotia"
+        "en": "Is the capital of Nova Scotia",
+        "fr": "Est la capitale de la Nouvelle-Écosse"
       },
       {
         "id": "d",
-        "en": "Lies on the Alaska Highway start in Dawson only"
+        "en": "Lies on the Alaska Highway start in Dawson only",
+        "fr": "Se situe au départ de la route de l’Alaska, à Dawson seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Forks, the railway, and later air links made it a prairie hub. It is Manitoba’s capital."
+      "en": "The Forks, the railway, and later air links made it a prairie hub. It is Manitoba’s capital.",
+      "fr": "La Fourche, le chemin de fer et, plus tard, les liaisons aériennes en ont fait une plaque tournante des Prairies. C’est la capitale du Manitoba."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1855,29 +2189,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Uranium mining is especially associated with:"
+      "en": "Uranium mining is especially associated with:",
+      "fr": "L’extraction de l’uranium est surtout associée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Northern Saskatchewan"
+        "en": "Northern Saskatchewan",
+        "fr": "Au nord de la Saskatchewan"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island beaches only"
+        "en": "Prince Edward Island beaches only",
+        "fr": "Aux plages de l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "c",
-        "en": "Downtown Halifax"
+        "en": "Downtown Halifax",
+        "fr": "Au centre-ville d’Halifax"
       },
       {
         "id": "d",
-        "en": "The Ottawa River islands only"
+        "en": "The Ottawa River islands only",
+        "fr": "Aux îles de la rivière des Outaouais seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Canadian Shield in the north holds major mines. Grain remains the southern Prairie story."
+      "en": "The Canadian Shield in the north holds major mines. Grain remains the southern Prairie story.",
+      "fr": "Le Bouclier canadien, dans le nord, abrite d’importantes mines. Les céréales demeurent l’histoire du sud des Prairies."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1888,29 +2228,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Calgary Stampede is:"
+      "en": "The Calgary Stampede is:",
+      "fr": "Le Stampede de Calgary est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A famous western festival and rodeo that has become an Alberta cultural emblem"
+        "en": "A famous western festival and rodeo that has become an Alberta cultural emblem",
+        "fr": "Un célèbre festival et rodéo de l’Ouest devenu un emblème culturel de l’Alberta"
       },
       {
         "id": "b",
-        "en": "The name of the Alberta legislature"
+        "en": "The name of the Alberta legislature",
+        "fr": "Le nom de l’assemblée législative de l’Alberta"
       },
       {
         "id": "c",
-        "en": "A Confederation conference of 1864"
+        "en": "A Confederation conference of 1864",
+        "fr": "Une conférence de la Confédération tenue en 1864"
       },
       {
         "id": "d",
-        "en": "Yukon’s capital"
+        "en": "Yukon’s capital",
+        "fr": "La capitale du Yukon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Oil and cattle both shape Alberta’s image. The Stampede is the cultural postcard; Edmonton is the capital."
+      "en": "Oil and cattle both shape Alberta’s image. The Stampede is the cultural postcard; Edmonton is the capital.",
+      "fr": "Le pétrole et l’élevage bovin façonnent tous deux l’image de l’Alberta. Le Stampede en est la carte postale culturelle; Edmonton est la capitale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1921,29 +2267,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Pacific salmon and mountain forests are especially associated with:"
+      "en": "Pacific salmon and mountain forests are especially associated with:",
+      "fr": "Le saumon du Pacifique et les forêts de montagne sont surtout associés :"
     },
     "options": [
       {
         "id": "a",
-        "en": "British Columbia"
+        "en": "British Columbia",
+        "fr": "À la Colombie-Britannique"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island only"
+        "en": "Prince Edward Island only",
+        "fr": "À l’Île-du-Prince-Édouard seulement"
       },
       {
         "id": "c",
-        "en": "Saskatchewan wheat pools only"
+        "en": "Saskatchewan wheat pools only",
+        "fr": "Aux coopératives de blé de la Saskatchewan seulement"
       },
       {
         "id": "d",
-        "en": "Nunavut hamlets only"
+        "en": "Nunavut hamlets only",
+        "fr": "Aux hameaux du Nunavut seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Cordillera plus a mild coast define B.C. Vancouver is the big port; Victoria is the capital."
+      "en": "The Cordillera plus a mild coast define B.C. Vancouver is the big port; Victoria is the capital.",
+      "fr": "La Cordillère et un littoral au climat doux définissent la Colombie-Britannique. Vancouver est le grand port; Victoria est la capitale."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1954,29 +2306,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Alaska Highway is a northern geography fact because it:"
+      "en": "The Alaska Highway is a northern geography fact because it:",
+      "fr": "La route de l’Alaska est un fait géographique du Nord parce qu’elle :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Links British Columbia and Yukon toward Alaska, built in the Second World War"
+        "en": "Links British Columbia and Yukon toward Alaska, built in the Second World War",
+        "fr": "Relie la Colombie-Britannique et le Yukon vers l’Alaska et a été construite pendant la Seconde Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Crosses PEI on the Confederation Bridge"
+        "en": "Crosses PEI on the Confederation Bridge",
+        "fr": "Traverse l’Île-du-Prince-Édouard par le pont de la Confédération"
       },
       {
         "id": "c",
-        "en": "Is Ottawa’s main street"
+        "en": "Is Ottawa’s main street",
+        "fr": "Est la rue principale d’Ottawa"
       },
       {
         "id": "d",
-        "en": "Is a subway in Montreal"
+        "en": "Is a subway in Montreal",
+        "fr": "Est une ligne de métro à Montréal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Wartime building opened the northwest. Whitehorse is Yukon’s capital."
+      "en": "Wartime building opened the northwest. Whitehorse is Yukon’s capital.",
+      "fr": "Sa construction en temps de guerre a ouvert le Nord-Ouest. Whitehorse est la capitale du Yukon."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -1987,29 +2345,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Yellowknife grew as a modern capital especially because of:"
+      "en": "Yellowknife grew as a modern capital especially because of:",
+      "fr": "Yellowknife s’est développée comme capitale moderne surtout grâce :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Gold, and later diamond, mining plus government"
+        "en": "Gold, and later diamond, mining plus government",
+        "fr": "À l’extraction de l’or, puis du diamant, et à l’administration publique"
       },
       {
         "id": "b",
-        "en": "Potato farming like PEI"
+        "en": "Potato farming like PEI",
+        "fr": "À la culture de la pomme de terre, comme à l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "The auto pact plants"
+        "en": "The auto pact plants",
+        "fr": "Aux usines du Pacte de l’automobile"
       },
       {
         "id": "d",
-        "en": "The Halifax Citadel"
+        "en": "The Halifax Citadel",
+        "fr": "À la Citadelle d’Halifax"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It sits on Great Slave Lake. The Northwest Territories’ legislature is there, not in Ottawa."
+      "en": "It sits on Great Slave Lake. The Northwest Territories’ legislature is there, not in Ottawa.",
+      "fr": "Elle est située sur le Grand Lac des Esclaves. L’assemblée législative des Territoires du Nord-Ouest s’y trouve, et non à Ottawa."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -2020,29 +2384,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Iqaluit is:"
+      "en": "Iqaluit is:",
+      "fr": "Iqaluit est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The capital of Nunavut, on Baffin Island"
+        "en": "The capital of Nunavut, on Baffin Island",
+        "fr": "La capitale du Nunavut, sur l’île de Baffin"
       },
       {
         "id": "b",
-        "en": "The capital of Ontario"
+        "en": "The capital of Ontario",
+        "fr": "La capitale de l’Ontario"
       },
       {
         "id": "c",
-        "en": "A prairie wheat pool headquarters"
+        "en": "A prairie wheat pool headquarters",
+        "fr": "Le siège d’une coopérative de blé des Prairies"
       },
       {
         "id": "d",
-        "en": "New Brunswick’s only city"
+        "en": "New Brunswick’s only city",
+        "fr": "La seule ville du Nouveau-Brunswick"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Nunavut is majority Inuit. Iqaluit is the political centre created when the territory was born in 1999."
+      "en": "Nunavut is majority Inuit. Iqaluit is the political centre created when the territory was born in 1999.",
+      "fr": "Le Nunavut est majoritairement inuit. Iqaluit est le centre politique établi à la création du territoire, en 1999."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -2053,21 +2423,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Great Lakes–St. Lawrence system is a shared Ontario–Quebec (and U.S.) water highway for cities, industry, and shipping."
+      "en": "The Great Lakes–St. Lawrence system is a shared Ontario–Quebec (and U.S.) water highway for cities, industry, and shipping.",
+      "fr": "Le réseau des Grands Lacs et du Saint-Laurent est une voie navigable partagée entre l’Ontario, le Québec et les États-Unis, au service des villes, de l’industrie et du transport maritime."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "It is the core of central Canada’s geography. The Seaway lets ocean ships reach inland ports."
+      "en": "It is the core of central Canada’s geography. The Seaway lets ocean ships reach inland ports.",
+      "fr": "C’est le cœur de la géographie du Canada central. La Voie maritime permet aux navires océaniques d’atteindre des ports intérieurs."
     },
     "source": "Discover Canada — Canada's Regions"
   }

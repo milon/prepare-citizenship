@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is the Head of State in Canada?"
+      "en": "Who is the Head of State in Canada?",
+      "fr": "Qui est le chef de l’État au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Prime Minister"
+        "en": "The Prime Minister",
+        "fr": "Le premier ministre"
       },
       {
         "id": "b",
-        "en": "The Governor General"
+        "en": "The Governor General",
+        "fr": "Le gouverneur général"
       },
       {
         "id": "c",
-        "en": "The Monarch"
+        "en": "The Monarch",
+        "fr": "Le souverain"
       },
       {
         "id": "d",
-        "en": "The Chief Justice of Canada"
+        "en": "The Chief Justice of Canada",
+        "fr": "Le juge en chef du Canada"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Canada is a constitutional monarchy. The Monarch is Head of State and is represented in Canada by the Governor General."
+      "en": "Canada is a constitutional monarchy. The Monarch is Head of State and is represented in Canada by the Governor General.",
+      "fr": "Le Canada est une monarchie constitutionnelle. Le souverain est chef de l’État et le gouverneur général le représente au Canada."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is the Head of Government in Canada?"
+      "en": "Who is the Head of Government in Canada?",
+      "fr": "Qui est le chef du gouvernement au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Governor General"
+        "en": "The Governor General",
+        "fr": "Le gouverneur général"
       },
       {
         "id": "b",
-        "en": "The Prime Minister"
+        "en": "The Prime Minister",
+        "fr": "Le premier ministre"
       },
       {
         "id": "c",
-        "en": "The Speaker of the Senate"
+        "en": "The Speaker of the Senate",
+        "fr": "Le président du Sénat"
       },
       {
         "id": "d",
-        "en": "The Lieutenant Governor of Ontario"
+        "en": "The Lieutenant Governor of Ontario",
+        "fr": "Le lieutenant-gouverneur de l’Ontario"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Prime Minister is Head of Government, leads the party that can command the House of Commons, and chooses Cabinet."
+      "en": "The Prime Minister is Head of Government, leads the party that can command the House of Commons, and chooses Cabinet.",
+      "fr": "Le premier ministre est chef du gouvernement, dirige le parti qui obtient l’appui de la Chambre des communes et choisit le Cabinet."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -72,29 +84,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which three levels of government operate in Canada?"
+      "en": "Which three levels of government operate in Canada?",
+      "fr": "Quels sont les trois ordres de gouvernement au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Federal, provincial or territorial, and municipal"
+        "en": "Federal, provincial or territorial, and municipal",
+        "fr": "Fédéral, provincial ou territorial, et municipal"
       },
       {
         "id": "b",
-        "en": "Royal, colonial, and county"
+        "en": "Royal, colonial, and county",
+        "fr": "Royal, colonial et comtal"
       },
       {
         "id": "c",
-        "en": "Senate, Cabinet, and Supreme Court"
+        "en": "Senate, Cabinet, and Supreme Court",
+        "fr": "Le Sénat, le Cabinet et la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Federal, NATO, and United Nations"
+        "en": "Federal, NATO, and United Nations",
+        "fr": "Fédéral, l’OTAN et les Nations Unies"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Federal, provincial/territorial, and municipal governments share responsibilities such as defence, education, and local services."
+      "en": "Federal, provincial/territorial, and municipal governments share responsibilities such as defence, education, and local services.",
+      "fr": "Les gouvernements fédéral, provinciaux ou territoriaux et municipaux se partagent des responsabilités comme la défense, l’éducation et les services locaux."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -105,29 +123,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is Canada’s current Prime Minister?"
+      "en": "Who is Canada’s current Prime Minister?",
+      "fr": "Qui est l’actuel premier ministre du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{primeMinister}}"
+        "en": "{{primeMinister}}",
+        "fr": "{{primeMinister}}"
       },
       {
         "id": "b",
-        "en": "The Governor General"
+        "en": "The Governor General",
+        "fr": "Le gouverneur général"
       },
       {
         "id": "c",
-        "en": "The Chief Justice of Canada"
+        "en": "The Chief Justice of Canada",
+        "fr": "Le juge en chef du Canada"
       },
       {
         "id": "d",
-        "en": "The Speaker of the House of Commons"
+        "en": "The Speaker of the House of Commons",
+        "fr": "Le président de la Chambre des communes"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Office-holders change. As of the last verification date in this app, the Prime Minister is {{primeMinister}}."
+      "en": "Office-holders change. As of the last verification date in this app, the Prime Minister is {{primeMinister}}.",
+      "fr": "Les titulaires de charge changent. À la dernière date de vérification dans cette application, le premier ministre est {{primeMinister}}."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "primeMinister"
@@ -139,29 +163,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who currently represents the Monarch in Canada as Governor General?"
+      "en": "Who currently represents the Monarch in Canada as Governor General?",
+      "fr": "Qui représente actuellement le souverain au Canada à titre de gouverneur général?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{governorGeneral}}"
+        "en": "{{governorGeneral}}",
+        "fr": "{{governorGeneral}}"
       },
       {
         "id": "b",
-        "en": "The Speaker of the Senate"
+        "en": "The Speaker of the Senate",
+        "fr": "Le président du Sénat"
       },
       {
         "id": "c",
-        "en": "The Premier of Ontario"
+        "en": "The Premier of Ontario",
+        "fr": "Le premier ministre de l’Ontario"
       },
       {
         "id": "d",
-        "en": "The Mayor of Ottawa"
+        "en": "The Mayor of Ottawa",
+        "fr": "Le maire d’Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Governor General is {{governorGeneral}}, last verified with the other current office-holders in this app."
+      "en": "The Governor General is {{governorGeneral}}, last verified with the other current office-holders in this app.",
+      "fr": "Le gouverneur général est {{governorGeneral}}, selon la dernière vérification des titulaires de charge dans cette application."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "governorGeneral"
@@ -173,29 +203,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is Canada’s current Head of State by name?"
+      "en": "Who is Canada’s current Head of State by name?",
+      "fr": "Qui est, nommément, l’actuel chef de l’État du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{headOfState}}"
+        "en": "{{headOfState}}",
+        "fr": "{{headOfState}}"
       },
       {
         "id": "b",
-        "en": "The Prime Minister of France"
+        "en": "The Prime Minister of France",
+        "fr": "Le premier ministre de la France"
       },
       {
         "id": "c",
-        "en": "The UN Secretary-General"
+        "en": "The UN Secretary-General",
+        "fr": "Le secrétaire général de l’ONU"
       },
       {
         "id": "d",
-        "en": "The Premier of Quebec"
+        "en": "The Premier of Quebec",
+        "fr": "Le premier ministre du Québec"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The office is the Monarch. The current person, last verified here, is {{headOfState}}."
+      "en": "The office is the Monarch. The current person, last verified here, is {{headOfState}}.",
+      "fr": "La charge est celle de souverain. La personne en poste, selon la dernière vérification ici, est {{headOfState}}."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "headOfState"
@@ -207,29 +243,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which party is currently in power federally, according to this app’s dated file?"
+      "en": "Which party is currently in power federally, according to this app’s dated file?",
+      "fr": "Quel parti est actuellement au pouvoir au fédéral, selon le fichier daté de cette application?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{partyInPower}}"
+        "en": "{{partyInPower}}",
+        "fr": "{{partyInPower}}"
       },
       {
         "id": "b",
-        "en": "The official opposition in every province at once"
+        "en": "The official opposition in every province at once",
+        "fr": "L’opposition officielle dans toutes les provinces à la fois"
       },
       {
         "id": "c",
-        "en": "The Senate Liberal caucus of 1867"
+        "en": "The Senate Liberal caucus of 1867",
+        "fr": "Le caucus libéral du Sénat de 1867"
       },
       {
         "id": "d",
-        "en": "NATO headquarters"
+        "en": "NATO headquarters",
+        "fr": "Le quartier général de l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The party that can command the House is {{partyInPower}}. Update current.json when that changes."
+      "en": "The party that can command the House is {{partyInPower}}. Update current.json when that changes.",
+      "fr": "Le parti qui obtient l’appui de la Chambre est {{partyInPower}}. Mettez current.json à jour quand cela change."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "partyInPower"
@@ -241,29 +283,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The three parts of Parliament are:"
+      "en": "The three parts of Parliament are:",
+      "fr": "Les trois éléments du Parlement sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Crown, the Senate, and the House of Commons"
+        "en": "The Crown, the Senate, and the House of Commons",
+        "fr": "La Couronne, le Sénat et la Chambre des communes"
       },
       {
         "id": "b",
-        "en": "The RCMP, the Bank of Canada, and NATO"
+        "en": "The RCMP, the Bank of Canada, and NATO",
+        "fr": "La GRC, la Banque du Canada et l’OTAN"
       },
       {
         "id": "c",
-        "en": "Premiers, mayors, and school boards"
+        "en": "Premiers, mayors, and school boards",
+        "fr": "Les premiers ministres provinciaux, les maires et les conseils scolaires"
       },
       {
         "id": "d",
-        "en": "The Supreme Court, juries, and police"
+        "en": "The Supreme Court, juries, and police",
+        "fr": "La Cour suprême, les jurys et la police"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "A bill typically needs the Commons, the Senate, and Royal Assent (the Crown)."
+      "en": "A bill typically needs the Commons, the Senate, and Royal Assent (the Crown).",
+      "fr": "Un projet de loi doit normalement franchir la Chambre des communes, le Sénat, puis la sanction royale (la Couronne)."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -274,29 +322,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Senators are:"
+      "en": "Senators are:",
+      "fr": "Les sénateurs sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Appointed, on the Prime Minister’s advice"
+        "en": "Appointed, on the Prime Minister’s advice",
+        "fr": "Nommés, sur l’avis du premier ministre"
       },
       {
         "id": "b",
-        "en": "Elected in every riding like MPs"
+        "en": "Elected in every riding like MPs",
+        "fr": "Élus dans chaque circonscription, comme les députés"
       },
       {
         "id": "c",
-        "en": "Chosen by a national lottery"
+        "en": "Chosen by a national lottery",
+        "fr": "Choisis par une loterie nationale"
       },
       {
         "id": "d",
-        "en": "Always the provincial premiers"
+        "en": "Always the provincial premiers",
+        "fr": "Toujours les premiers ministres provinciaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Senate is appointed, not elected. It reviews legislation and represents regions in theory."
+      "en": "The Senate is appointed, not elected. It reviews legislation and represents regions in theory.",
+      "fr": "Le Sénat est nommé et non élu. Il révise les projets de loi et représente en principe les régions."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -307,29 +361,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Members of Parliament in the House of Commons are:"
+      "en": "Members of Parliament in the House of Commons are:",
+      "fr": "Les députés de la Chambre des communes sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Elected by voters in ridings"
+        "en": "Elected by voters in ridings",
+        "fr": "Élus par les électeurs des circonscriptions"
       },
       {
         "id": "b",
-        "en": "Appointed for life by the Monarch personally"
+        "en": "Appointed for life by the Monarch personally",
+        "fr": "Nommés à vie par le souverain en personne"
       },
       {
         "id": "c",
-        "en": "Hired by the RCMP"
+        "en": "Hired by the RCMP",
+        "fr": "Embauchés par la GRC"
       },
       {
         "id": "d",
-        "en": "Selected by the Supreme Court"
+        "en": "Selected by the Supreme Court",
+        "fr": "Choisis par la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Each electoral district sends one MP. That is the democratic core of federal power."
+      "en": "Each electoral district sends one MP. That is the democratic core of federal power.",
+      "fr": "Chaque circonscription électorale envoie un député. C’est le cœur démocratique du pouvoir fédéral."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -340,29 +400,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Royal Assent is:"
+      "en": "Royal Assent is:",
+      "fr": "La sanction royale est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Crown’s formal approval that turns a bill into law"
+        "en": "The Crown’s formal approval that turns a bill into law",
+        "fr": "L’approbation officielle de la Couronne qui transforme un projet de loi en loi"
       },
       {
         "id": "b",
-        "en": "A Supreme Court dissent"
+        "en": "A Supreme Court dissent",
+        "fr": "Une dissidence de la Cour suprême"
       },
       {
         "id": "c",
-        "en": "A municipal building permit"
+        "en": "A municipal building permit",
+        "fr": "Un permis de construire municipal"
       },
       {
         "id": "d",
-        "en": "A NATO vote"
+        "en": "A NATO vote",
+        "fr": "Un vote de l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Governor General (or a deputy) grants Royal Assent. By convention it is not refused for a properly passed bill."
+      "en": "The Governor General (or a deputy) grants Royal Assent. By convention it is not refused for a properly passed bill.",
+      "fr": "Le gouverneur général (ou son suppléant) accorde la sanction royale. Par convention, elle n’est pas refusée à un projet de loi régulièrement adopté."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -373,29 +439,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Cabinet is chosen by:"
+      "en": "Cabinet is chosen by:",
+      "fr": "Le Cabinet est choisi par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Prime Minister"
+        "en": "The Prime Minister",
+        "fr": "Le premier ministre"
       },
       {
         "id": "b",
-        "en": "A random draw of all voters"
+        "en": "A random draw of all voters",
+        "fr": "Un tirage au sort parmi tous les électeurs"
       },
       {
         "id": "c",
-        "en": "The official opposition whip only"
+        "en": "The official opposition whip only",
+        "fr": "Le whip de l’opposition officielle seulement"
       },
       {
         "id": "d",
-        "en": "The mayor of Ottawa"
+        "en": "The mayor of Ottawa",
+        "fr": "Le maire d’Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Ministers are usually MPs, sometimes senators. They are sworn of the Privy Council and bound by solidarity."
+      "en": "Ministers are usually MPs, sometimes senators. They are sworn of the Privy Council and bound by solidarity.",
+      "fr": "Les ministres sont habituellement des députés, parfois des sénateurs. Ils sont assermentés au Conseil privé et tenus à la solidarité ministérielle."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -406,21 +478,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "If a government loses a confidence vote in the House of Commons, it must resign or call an election."
+      "en": "If a government loses a confidence vote in the House of Commons, it must resign or call an election.",
+      "fr": "Si un gouvernement perd un vote de confiance à la Chambre des communes, il doit démissionner ou déclencher des élections."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "That is responsible government. Confidence is tested in the elected Commons, not in the Senate."
+      "en": "That is responsible government. Confidence is tested in the elected Commons, not in the Senate.",
+      "fr": "C’est le principe du gouvernement responsable. La confiance se mesure à la Chambre des communes élue, et non au Sénat."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -431,29 +507,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Leader of the Opposition is:"
+      "en": "The Leader of the Opposition is:",
+      "fr": "Le chef de l’opposition est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The leader of the largest party that is not in government"
+        "en": "The leader of the largest party that is not in government",
+        "fr": "Le chef du plus grand parti qui ne forme pas le gouvernement"
       },
       {
         "id": "b",
-        "en": "The Governor General’s deputy"
+        "en": "The Governor General’s deputy",
+        "fr": "Le suppléant du gouverneur général"
       },
       {
         "id": "c",
-        "en": "Always a senator from Quebec"
+        "en": "Always a senator from Quebec",
+        "fr": "Toujours un sénateur du Québec"
       },
       {
         "id": "d",
-        "en": "The Chief Justice"
+        "en": "The Chief Justice",
+        "fr": "Le juge en chef"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Official opposition status comes with funding, questions, and a recognized role in holding government to account."
+      "en": "Official opposition status comes with funding, questions, and a recognized role in holding government to account.",
+      "fr": "Le statut d’opposition officielle donne droit à un financement, à des questions et à un rôle reconnu pour exiger des comptes du gouvernement."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -464,29 +546,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Speaker of the House of Commons is expected to be:"
+      "en": "The Speaker of the House of Commons is expected to be:",
+      "fr": "Le président de la Chambre des communes doit être :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Impartial in chairing debates"
+        "en": "Impartial in chairing debates",
+        "fr": "Impartial dans la conduite des débats"
       },
       {
         "id": "b",
-        "en": "The Prime Minister’s campaign manager during sittings"
+        "en": "The Prime Minister’s campaign manager during sittings",
+        "fr": "Le directeur de campagne du premier ministre pendant les séances"
       },
       {
         "id": "c",
-        "en": "A provincial premier"
+        "en": "A provincial premier",
+        "fr": "Un premier ministre provincial"
       },
       {
         "id": "d",
-        "en": "The head of the RCMP"
+        "en": "The head of the RCMP",
+        "fr": "Le chef de la GRC"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Speaker keeps order and does not vote except in limited tie-breaking situations."
+      "en": "The Speaker keeps order and does not vote except in limited tie-breaking situations.",
+      "fr": "Le président maintient l’ordre et ne vote pas, sauf pour briser l’égalité dans des cas limités."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -497,29 +585,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Defence, criminal law, money and banking, and foreign affairs are mainly:"
+      "en": "Defence, criminal law, money and banking, and foreign affairs are mainly:",
+      "fr": "La défense, le droit criminel, la monnaie et les banques ainsi que les affaires étrangères relèvent surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Federal powers"
+        "en": "Federal powers",
+        "fr": "De compétences fédérales"
       },
       {
         "id": "b",
-        "en": "Municipal powers"
+        "en": "Municipal powers",
+        "fr": "De compétences municipales"
       },
       {
         "id": "c",
-        "en": "School-board powers"
+        "en": "School-board powers",
+        "fr": "De compétences des conseils scolaires"
       },
       {
         "id": "d",
-        "en": "Powers of the official opposition only"
+        "en": "Powers of the official opposition only",
+        "fr": "De compétences de la seule opposition officielle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Constitution Act, 1867 lists federal heads of power. Provinces have others, such as education and property and civil rights."
+      "en": "The Constitution Act, 1867 lists federal heads of power. Provinces have others, such as education and property and civil rights.",
+      "fr": "La Loi constitutionnelle de 1867 énumère les compétences fédérales. Les provinces en ont d’autres, comme l’éducation ainsi que la propriété et les droits civils."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -530,29 +624,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Education and health-care delivery are mainly:"
+      "en": "Education and health-care delivery are mainly:",
+      "fr": "L’éducation et la prestation des soins de santé relèvent surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Provincial responsibilities"
+        "en": "Provincial responsibilities",
+        "fr": "De responsabilités provinciales"
       },
       {
         "id": "b",
-        "en": "Exclusive NATO duties"
+        "en": "Exclusive NATO duties",
+        "fr": "De fonctions exclusives de l’OTAN"
       },
       {
         "id": "c",
-        "en": "Senate internal rules"
+        "en": "Senate internal rules",
+        "fr": "Du règlement interne du Sénat"
       },
       {
         "id": "d",
-        "en": "Municipal snow-clearing contracts only"
+        "en": "Municipal snow-clearing contracts only",
+        "fr": "Des seuls contrats municipaux de déneigement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Ottawa still spends and sets some national standards, especially in health funding, but delivery is provincial."
+      "en": "Ottawa still spends and sets some national standards, especially in health funding, but delivery is provincial.",
+      "fr": "Ottawa dépense encore et fixe certaines normes nationales, surtout par le financement de la santé, mais la prestation est provinciale."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -563,29 +663,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Municipal governments get their powers from:"
+      "en": "Municipal governments get their powers from:",
+      "fr": "Les gouvernements municipaux tirent leurs pouvoirs :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The province (or territory)"
+        "en": "The province (or territory)",
+        "fr": "De la province (ou du territoire)"
       },
       {
         "id": "b",
-        "en": "The United Nations"
+        "en": "The United Nations",
+        "fr": "Des Nations Unies"
       },
       {
         "id": "c",
-        "en": "The Monarch acting alone without statute"
+        "en": "The Monarch acting alone without statute",
+        "fr": "Du souverain agissant seul, sans loi"
       },
       {
         "id": "d",
-        "en": "NATO"
+        "en": "NATO",
+        "fr": "De l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cities are “creatures of the province.” Local services such as transit, zoning, and snow clearing sit here."
+      "en": "Cities are “creatures of the province.” Local services such as transit, zoning, and snow clearing sit here.",
+      "fr": "Les villes sont des « créatures de la province ». Les services locaux comme le transport en commun, le zonage et le déneigement relèvent d’elles."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -596,29 +702,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A Lieutenant Governor represents the Crown in:"
+      "en": "A Lieutenant Governor represents the Crown in:",
+      "fr": "Un lieutenant-gouverneur représente la Couronne dans :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A province"
+        "en": "A province",
+        "fr": "Une province"
       },
       {
         "id": "b",
-        "en": "A municipality only"
+        "en": "A municipality only",
+        "fr": "Une municipalité seulement"
       },
       {
         "id": "c",
-        "en": "The Supreme Court locker room"
+        "en": "The Supreme Court locker room",
+        "fr": "Le vestiaire de la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Every embassy"
+        "en": "Every embassy",
+        "fr": "Chaque ambassade"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Each province has a Lieutenant Governor. Territories have commissioners, a different office."
+      "en": "Each province has a Lieutenant Governor. Territories have commissioners, a different office.",
+      "fr": "Chaque province a un lieutenant-gouverneur. Les territoires ont des commissaires, une charge différente."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -629,21 +741,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Territories were created by federal statute and do not have the same constitutional status as provinces."
+      "en": "Territories were created by federal statute and do not have the same constitutional status as provinces.",
+      "fr": "Les territoires ont été créés par une loi fédérale et n’ont pas le même statut constitutionnel que les provinces."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "They now run most day-to-day services, but their legal starting point is different from a province’s."
+      "en": "They now run most day-to-day services, but their legal starting point is different from a province’s.",
+      "fr": "Ils gèrent aujourd’hui la plupart des services courants, mais leur fondement juridique diffère de celui d’une province."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -654,29 +770,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "After an election, the Governor General invites someone to form a government based on:"
+      "en": "After an election, the Governor General invites someone to form a government based on:",
+      "fr": "Après une élection, le gouverneur général invite une personne à former le gouvernement selon :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Who is most likely to hold the confidence of the House"
+        "en": "Who is most likely to hold the confidence of the House",
+        "fr": "Qui est le plus susceptible d’avoir la confiance de la Chambre"
       },
       {
         "id": "b",
-        "en": "Who won the popular vote in every province"
+        "en": "Who won the popular vote in every province",
+        "fr": "Qui a remporté le vote populaire dans chaque province"
       },
       {
         "id": "c",
-        "en": "Who is oldest"
+        "en": "Who is oldest",
+        "fr": "Qui est le plus âgé"
       },
       {
         "id": "d",
-        "en": "Who lives in Rideau Hall already"
+        "en": "Who lives in Rideau Hall already",
+        "fr": "Qui habite déjà à Rideau Hall"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Usually that is the leader of the party with the most seats, but the test is confidence, not a presidential-style popular vote."
+      "en": "Usually that is the leader of the party with the most seats, but the test is confidence, not a presidential-style popular vote.",
+      "fr": "C’est habituellement le chef du parti ayant le plus de sièges, mais le critère est la confiance, non un vote populaire de type présidentiel."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -687,29 +809,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A majority government is one that:"
+      "en": "A majority government is one that:",
+      "fr": "Un gouvernement majoritaire est celui qui :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Holds more than half the seats in the House of Commons"
+        "en": "Holds more than half the seats in the House of Commons",
+        "fr": "Détient plus de la moitié des sièges à la Chambre des communes"
       },
       {
         "id": "b",
-        "en": "Wins every municipal election"
+        "en": "Wins every municipal election",
+        "fr": "Remporte toutes les élections municipales"
       },
       {
         "id": "c",
-        "en": "Controls the Supreme Court"
+        "en": "Controls the Supreme Court",
+        "fr": "Contrôle la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Has the Governor General as party leader"
+        "en": "Has the Governor General as party leader",
+        "fr": "A le gouverneur général comme chef de parti"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "A minority government has fewer than half the seats and needs support from others to survive confidence votes."
+      "en": "A minority government has fewer than half the seats and needs support from others to survive confidence votes.",
+      "fr": "Un gouvernement minoritaire détient moins de la moitié des sièges et a besoin de l’appui d’autres élus pour survivre aux votes de confiance."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -720,29 +848,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Premier of a province is:"
+      "en": "The Premier of a province is:",
+      "fr": "Le premier ministre d’une province est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Head of the provincial government"
+        "en": "Head of the provincial government",
+        "fr": "Le chef du gouvernement provincial"
       },
       {
         "id": "b",
-        "en": "Head of State of Canada"
+        "en": "Head of State of Canada",
+        "fr": "Le chef de l’État du Canada"
       },
       {
         "id": "c",
-        "en": "Always an appointed senator"
+        "en": "Always an appointed senator",
+        "fr": "Toujours un sénateur nommé"
       },
       {
         "id": "d",
-        "en": "The federal finance minister automatically"
+        "en": "The federal finance minister automatically",
+        "fr": "Automatiquement le ministre fédéral des Finances"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Do not confuse Premier (province/territory) with Prime Minister (Canada)."
+      "en": "Do not confuse Premier (province/territory) with Prime Minister (Canada).",
+      "fr": "Ne confondez pas le premier ministre d’une province ou d’un territoire avec le premier ministre du Canada."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -753,29 +887,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Making a federal law usually requires:"
+      "en": "Making a federal law usually requires:",
+      "fr": "L’adoption d’une loi fédérale exige habituellement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Passage in the Commons and Senate and then Royal Assent"
+        "en": "Passage in the Commons and Senate and then Royal Assent",
+        "fr": "L’adoption par la Chambre des communes et le Sénat, puis la sanction royale"
       },
       {
         "id": "b",
-        "en": "A tweet from a mayor"
+        "en": "A tweet from a mayor",
+        "fr": "Un message d’un maire sur les réseaux sociaux"
       },
       {
         "id": "c",
-        "en": "Approval by NATO"
+        "en": "Approval by NATO",
+        "fr": "L’approbation de l’OTAN"
       },
       {
         "id": "d",
-        "en": "A Supreme Court first draft"
+        "en": "A Supreme Court first draft",
+        "fr": "Une première version rédigée par la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Money bills have extra Commons privileges, but the ordinary path is still both Houses plus the Crown."
+      "en": "Money bills have extra Commons privileges, but the ordinary path is still both Houses plus the Crown.",
+      "fr": "Les projets de loi de finances donnent des privilèges supplémentaires aux Communes, mais le parcours ordinaire passe quand même par les deux chambres et la Couronne."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -786,21 +926,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Constitutional conventions are unwritten rules that still structure how government works."
+      "en": "Constitutional conventions are unwritten rules that still structure how government works.",
+      "fr": "Les conventions constitutionnelles sont des règles non écrites qui structurent quand même le fonctionnement du gouvernement."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Responsible government itself is mostly convention. Not every important rule is in a statute."
+      "en": "Responsible government itself is mostly convention. Not every important rule is in a statute.",
+      "fr": "Le gouvernement responsable lui-même relève surtout de la convention. Toutes les règles importantes ne se trouvent pas dans une loi."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -811,29 +955,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The written Constitution includes:"
+      "en": "The written Constitution includes:",
+      "fr": "La Constitution écrite comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Constitution Act, 1867 and the Constitution Act, 1982 (including the Charter)"
+        "en": "The Constitution Act, 1867 and the Constitution Act, 1982 (including the Charter)",
+        "fr": "La Loi constitutionnelle de 1867 et la Loi constitutionnelle de 1982 (y compris la Charte)"
       },
       {
         "id": "b",
-        "en": "Only the Criminal Code"
+        "en": "Only the Criminal Code",
+        "fr": "Seulement le Code criminel"
       },
       {
         "id": "c",
-        "en": "Only municipal zoning bylaws"
+        "en": "Only municipal zoning bylaws",
+        "fr": "Seulement les règlements municipaux de zonage"
       },
       {
         "id": "d",
-        "en": "The NATO treaty alone"
+        "en": "The NATO treaty alone",
+        "fr": "Le seul traité de l’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Those two Acts are the core texts. Other statutes and orders are also part of the Constitution of Canada."
+      "en": "Those two Acts are the core texts. Other statutes and orders are also part of the Constitution of Canada.",
+      "fr": "Ces deux lois sont les textes centraux. D’autres lois et décrets font aussi partie de la Constitution du Canada."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -844,29 +994,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Judges are:"
+      "en": "Judges are:",
+      "fr": "Les juges sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Independent of Cabinet and of Parliament once appointed"
+        "en": "Independent of Cabinet and of Parliament once appointed",
+        "fr": "Indépendants du Cabinet et du Parlement une fois nommés"
       },
       {
         "id": "b",
-        "en": "Elected on party lists like MPs"
+        "en": "Elected on party lists like MPs",
+        "fr": "Élus sur des listes de parti, comme les députés"
       },
       {
         "id": "c",
-        "en": "Allowed to sit in Cabinet while judging"
+        "en": "Allowed to sit in Cabinet while judging",
+        "fr": "Autorisés à siéger au Cabinet tout en jugeant"
       },
       {
         "id": "d",
-        "en": "Chosen each week by referendum"
+        "en": "Chosen each week by referendum",
+        "fr": "Choisis chaque semaine par référendum"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Independence of the courts is a branch-of-government fact, not only a justice-chapter slogan."
+      "en": "Independence of the courts is a branch-of-government fact, not only a justice-chapter slogan.",
+      "fr": "L’indépendance des tribunaux relève de la séparation des pouvoirs; ce n’est pas seulement un slogan du chapitre sur la justice."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -877,29 +1033,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which level of government is mainly responsible for citizenship and immigration?"
+      "en": "Which level of government is mainly responsible for citizenship and immigration?",
+      "fr": "Quel ordre de gouvernement est principalement responsable de la citoyenneté et de l’immigration?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Federal"
+        "en": "Federal",
+        "fr": "Le fédéral"
       },
       {
         "id": "b",
-        "en": "Municipal"
+        "en": "Municipal",
+        "fr": "Le municipal"
       },
       {
         "id": "c",
-        "en": "School boards"
+        "en": "School boards",
+        "fr": "Les conseils scolaires"
       },
       {
         "id": "d",
-        "en": "The official opposition research office"
+        "en": "The official opposition research office",
+        "fr": "Le bureau de recherche de l’opposition officielle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizenship is a federal head of power. Provinces have roles in selection and settlement in practice, but the status is federal."
+      "en": "Citizenship is a federal head of power. Provinces have roles in selection and settlement in practice, but the status is federal.",
+      "fr": "La citoyenneté est une compétence fédérale. En pratique, les provinces ont un rôle dans la sélection et l’établissement, mais le statut est fédéral."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -910,29 +1072,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "“Crown land” and “Crown attorney” use “Crown” to mean:"
+      "en": "“Crown land” and “Crown attorney” use “Crown” to mean:",
+      "fr": "Dans « terres de la Couronne » et « procureur de la Couronne », le mot « Couronne » désigne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The state as a continuing legal person"
+        "en": "The state as a continuing legal person",
+        "fr": "L’État en tant que personne juridique permanente"
       },
       {
         "id": "b",
-        "en": "A jewellery store in Ottawa"
+        "en": "A jewellery store in Ottawa",
+        "fr": "Une bijouterie d’Ottawa"
       },
       {
         "id": "c",
-        "en": "The official opposition"
+        "en": "The official opposition",
+        "fr": "L’opposition officielle"
       },
       {
         "id": "d",
-        "en": "A municipal brand"
+        "en": "A municipal brand",
+        "fr": "Une marque municipale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Crown is how Canadian law names the state. It is not the Prime Minister’s personal property."
+      "en": "The Crown is how Canadian law names the state. It is not the Prime Minister’s personal property.",
+      "fr": "La Couronne est le nom que le droit canadien donne à l’État. Ce n’est pas la propriété personnelle du premier ministre."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -943,21 +1111,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Governor General normally acts on the advice of the Prime Minister and Cabinet."
+      "en": "The Governor General normally acts on the advice of the Prime Minister and Cabinet.",
+      "fr": "Le gouverneur général agit normalement sur l’avis du premier ministre et du Cabinet."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Personal discretion is reserved for rare constitutional crises. Everyday powers are exercised on advice."
+      "en": "Personal discretion is reserved for rare constitutional crises. Everyday powers are exercised on advice.",
+      "fr": "Le pouvoir discrétionnaire personnel est réservé à de rares crises constitutionnelles. Les pouvoirs courants s’exercent sur avis."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -968,29 +1140,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A Member of Parliament is elected to:"
+      "en": "A Member of Parliament is elected to:",
+      "fr": "Un député fédéral est élu :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The House of Commons in Ottawa"
+        "en": "The House of Commons in Ottawa",
+        "fr": "À la Chambre des communes, à Ottawa"
       },
       {
         "id": "b",
-        "en": "A city council only"
+        "en": "A city council only",
+        "fr": "À un conseil municipal seulement"
       },
       {
         "id": "c",
-        "en": "The Supreme Court bench"
+        "en": "The Supreme Court bench",
+        "fr": "À la magistrature de la Cour suprême"
       },
       {
         "id": "d",
-        "en": "The UN General Assembly automatically"
+        "en": "The UN General Assembly automatically",
+        "fr": "Automatiquement à l’Assemblée générale des Nations Unies"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Provincial legislators have other titles (MPP, MLA, MNA, MHA). Do not mix them with MP."
+      "en": "Provincial legislators have other titles (MPP, MLA, MNA, MHA). Do not mix them with MP.",
+      "fr": "Les élus provinciaux portent d’autres titres (député provincial, député de l’Assemblée nationale au Québec). Ne les confondez pas avec un député fédéral."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1001,29 +1179,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Federalism means that:"
+      "en": "Federalism means that:",
+      "fr": "Le fédéralisme signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Power is divided between national and provincial governments"
+        "en": "Power is divided between national and provincial governments",
+        "fr": "Le pouvoir est partagé entre le gouvernement national et les gouvernements provinciaux"
       },
       {
         "id": "b",
-        "en": "There is only one government in Ottawa for all local roads"
+        "en": "There is only one government in Ottawa for all local roads",
+        "fr": "Il n’y a qu’un seul gouvernement, à Ottawa, pour toutes les routes locales"
       },
       {
         "id": "c",
-        "en": "The Monarch writes the Criminal Code alone"
+        "en": "The Monarch writes the Criminal Code alone",
+        "fr": "Le souverain rédige seul le Code criminel"
       },
       {
         "id": "d",
-        "en": "Cities can declare war"
+        "en": "Cities can declare war",
+        "fr": "Les villes peuvent déclarer la guerre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Division of powers is the Canadian answer to governing a large, diverse country."
+      "en": "Division of powers is the Canadian answer to governing a large, diverse country.",
+      "fr": "Le partage des compétences est la réponse canadienne à la gouvernance d’un pays vaste et diversifié."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1034,29 +1218,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Indigenous governments in Canada:"
+      "en": "Indigenous governments in Canada:",
+      "fr": "Les gouvernements autochtones au Canada :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Exercise jurisdiction under treaties, statutes, and self-government agreements"
+        "en": "Exercise jurisdiction under treaties, statutes, and self-government agreements",
+        "fr": "Exercent des compétences en vertu de traités, de lois et d’accords d’autonomie gouvernementale"
       },
       {
         "id": "b",
-        "en": "Were abolished in 1867"
+        "en": "Were abolished in 1867",
+        "fr": "Ont été abolis en 1867"
       },
       {
         "id": "c",
-        "en": "Exist only as social clubs"
+        "en": "Exist only as social clubs",
+        "fr": "N’existent que comme clubs sociaux"
       },
       {
         "id": "d",
-        "en": "Replace the Governor General"
+        "en": "Replace the Governor General",
+        "fr": "Remplacent le gouverneur général"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Self-government is part of the modern constitutional landscape, alongside federal and provincial power."
+      "en": "Self-government is part of the modern constitutional landscape, alongside federal and provincial power.",
+      "fr": "L’autonomie gouvernementale fait partie du paysage constitutionnel moderne, aux côtés des pouvoirs fédéraux et provinciaux."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1067,21 +1257,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prime Minister is chosen by a direct nationwide popular vote for that office, like a U.S. president."
+      "en": "The Prime Minister is chosen by a direct nationwide popular vote for that office, like a U.S. president.",
+      "fr": "Le premier ministre est choisi par un vote populaire direct à l’échelle du pays pour cette charge, comme un président américain."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Canadians vote for local MPs. The Prime Minister is the leader who can command the House."
+      "en": "Canadians vote for local MPs. The Prime Minister is the leader who can command the House.",
+      "fr": "Les Canadiens votent pour un député local. Le premier ministre est le chef qui obtient l’appui de la Chambre des communes."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1092,29 +1286,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Question Period is a daily Commons practice in which:"
+      "en": "Question Period is a daily Commons practice in which:",
+      "fr": "La période des questions est une pratique quotidienne aux Communes pendant laquelle :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Opposition members question the government"
+        "en": "Opposition members question the government",
+        "fr": "Les députés de l’opposition interrogent le gouvernement"
       },
       {
         "id": "b",
-        "en": "Judges quiz Cabinet secretly"
+        "en": "Judges quiz Cabinet secretly",
+        "fr": "Des juges interrogent le Cabinet en secret"
       },
       {
         "id": "c",
-        "en": "Mayors rewrite the Constitution"
+        "en": "Mayors rewrite the Constitution",
+        "fr": "Les maires réécrivent la Constitution"
       },
       {
         "id": "d",
-        "en": "The Monarch vetoes bills by shouting"
+        "en": "The Monarch vetoes bills by shouting",
+        "fr": "Le souverain bloque des projets de loi en criant"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a visible accountability ritual, even when answers are political."
+      "en": "It is a visible accountability ritual, even when answers are political.",
+      "fr": "C’est un rituel de reddition de comptes bien visible, même quand les réponses sont politiques."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1125,29 +1325,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A caucus is:"
+      "en": "A caucus is:",
+      "fr": "Un caucus est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The group of MPs (and often senators) belonging to the same party"
+        "en": "The group of MPs (and often senators) belonging to the same party",
+        "fr": "Le groupe des députés (et souvent des sénateurs) d’un même parti"
       },
       {
         "id": "b",
-        "en": "A type of court"
+        "en": "A type of court",
+        "fr": "Un type de tribunal"
       },
       {
         "id": "c",
-        "en": "A municipal utility"
+        "en": "A municipal utility",
+        "fr": "Un service public municipal"
       },
       {
         "id": "d",
-        "en": "A military rank"
+        "en": "A military rank",
+        "fr": "Un grade militaire"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Caucus discipline is how parties stay united in the House."
+      "en": "Caucus discipline is how parties stay united in the House.",
+      "fr": "La discipline de caucus est la façon dont les partis restent unis à la Chambre."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1158,29 +1364,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which official reads the Speech from the Throne?"
+      "en": "Which official reads the Speech from the Throne?",
+      "fr": "Quel titulaire de charge lit le discours du Trône?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Governor General (or the Monarch if present)"
+        "en": "The Governor General (or the Monarch if present)",
+        "fr": "Le gouverneur général (ou le souverain s’il est présent)"
       },
       {
         "id": "b",
-        "en": "The mayor of Ottawa"
+        "en": "The mayor of Ottawa",
+        "fr": "Le maire d’Ottawa"
       },
       {
         "id": "c",
-        "en": "The Chief Electoral Officer"
+        "en": "The Chief Electoral Officer",
+        "fr": "Le directeur général des élections"
       },
       {
         "id": "d",
-        "en": "The Leader of the Opposition only"
+        "en": "The Leader of the Opposition only",
+        "fr": "Le chef de l’opposition seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The speech is written by the government. The Crown delivers it to open a session of Parliament."
+      "en": "The speech is written by the government. The Crown delivers it to open a session of Parliament.",
+      "fr": "Le discours est rédigé par le gouvernement. La Couronne le prononce pour ouvrir une session du Parlement."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1191,29 +1403,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Money bills (taxes and borrowing) must originate in:"
+      "en": "Money bills (taxes and borrowing) must originate in:",
+      "fr": "Les projets de loi de finances (impôts et emprunts) doivent émaner :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The House of Commons"
+        "en": "The House of Commons",
+        "fr": "De la Chambre des communes"
       },
       {
         "id": "b",
-        "en": "The Senate only"
+        "en": "The Senate only",
+        "fr": "Du Sénat seulement"
       },
       {
         "id": "c",
-        "en": "A municipal council in Ottawa"
+        "en": "A municipal council in Ottawa",
+        "fr": "D’un conseil municipal à Ottawa"
       },
       {
         "id": "d",
-        "en": "The Supreme Court registry"
+        "en": "The Supreme Court registry",
+        "fr": "Du greffe de la Cour suprême"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The elected house controls the purse. The Senate may delay some bills but does not start tax measures."
+      "en": "The elected house controls the purse. The Senate may delay some bills but does not start tax measures.",
+      "fr": "La chambre élue contrôle les fonds publics. Le Sénat peut retarder certains projets de loi, mais il n’amorce pas les mesures fiscales."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1224,29 +1442,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Senators must retire at age:"
+      "en": "Senators must retire at age:",
+      "fr": "Les sénateurs doivent prendre leur retraite à l’âge de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "75"
+        "en": "75",
+        "fr": "75 ans"
       },
       {
         "id": "b",
-        "en": "18"
+        "en": "18",
+        "fr": "18 ans"
       },
       {
         "id": "c",
-        "en": "30 on their first day only"
+        "en": "30 on their first day only",
+        "fr": "30 ans, mais seulement le premier jour"
       },
       {
         "id": "d",
-        "en": "There is no age rule"
+        "en": "There is no age rule",
+        "fr": "Il n’y a aucune règle d’âge"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Appointed until 75 (unless they resign). They are not elected in the federal model taught on the test."
+      "en": "Appointed until 75 (unless they resign). They are not elected in the federal model taught on the test.",
+      "fr": "Ils sont nommés jusqu’à 75 ans (sauf s’ils démissionnent). Ils ne sont pas élus dans le modèle fédéral enseigné pour l’examen."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1257,21 +1481,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "A Cabinet minister is usually an MP (or sometimes a senator) who heads a department."
+      "en": "A Cabinet minister is usually an MP (or sometimes a senator) who heads a department.",
+      "fr": "Un ministre du Cabinet est habituellement un député (parfois un sénateur) qui dirige un ministère."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Ministers are chosen by the Prime Minister. Deputy ministers are public servants, not politicians."
+      "en": "Ministers are chosen by the Prime Minister. Deputy ministers are public servants, not politicians.",
+      "fr": "Les ministres sont choisis par le premier ministre. Les sous-ministres sont des fonctionnaires, non des politiciens."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1282,29 +1510,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The federal public service is expected to:"
+      "en": "The federal public service is expected to:",
+      "fr": "La fonction publique fédérale doit :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Give professional advice and carry out the law under ministers of different parties"
+        "en": "Give professional advice and carry out the law under ministers of different parties",
+        "fr": "Donner des conseils professionnels et appliquer la loi sous des ministres de partis différents"
       },
       {
         "id": "b",
-        "en": "Campaign for the governing party at work"
+        "en": "Campaign for the governing party at work",
+        "fr": "Faire campagne pour le parti au pouvoir pendant les heures de travail"
       },
       {
         "id": "c",
-        "en": "Sit as a second Senate"
+        "en": "Sit as a second Senate",
+        "fr": "Siéger comme un second Sénat"
       },
       {
         "id": "d",
-        "en": "Appoint the Governor General each morning"
+        "en": "Appoint the Governor General each morning",
+        "fr": "Nommer le gouverneur général chaque matin"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Non-partisan administration is how government survives a change of party. That is a convention worth knowing."
+      "en": "Non-partisan administration is how government survives a change of party. That is a convention worth knowing.",
+      "fr": "Une administration non partisane permet à l’État de survivre à un changement de parti. C’est une convention à connaître."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1315,29 +1549,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A Lieutenant Governor’s role in a province is most like:"
+      "en": "A Lieutenant Governor’s role in a province is most like:",
+      "fr": "Le rôle d’un lieutenant-gouverneur dans une province ressemble le plus :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Governor General’s role for Canada as a whole"
+        "en": "The Governor General’s role for Canada as a whole",
+        "fr": "À celui du gouverneur général pour l’ensemble du Canada"
       },
       {
         "id": "b",
-        "en": "The Speaker of the House of Commons"
+        "en": "The Speaker of the House of Commons",
+        "fr": "À celui du président de la Chambre des communes"
       },
       {
         "id": "c",
-        "en": "A municipal by-law officer"
+        "en": "A municipal by-law officer",
+        "fr": "À celui d’un agent municipal des règlements"
       },
       {
         "id": "d",
-        "en": "The Chief Electoral Officer"
+        "en": "The Chief Electoral Officer",
+        "fr": "À celui du directeur général des élections"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Royal Assent, opening the legislature, and acting on the premier’s advice are the provincial parallel."
+      "en": "Royal Assent, opening the legislature, and acting on the premier’s advice are the provincial parallel.",
+      "fr": "La sanction royale, l’ouverture de la législature et l’action sur l’avis du premier ministre provincial en sont le parallèle provincial."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1348,29 +1588,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Territorial legislatures:"
+      "en": "Territorial legislatures:",
+      "fr": "Les assemblées législatives territoriales :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Make laws for the territory under federal statute, with a premier and cabinet in modern practice"
+        "en": "Make laws for the territory under federal statute, with a premier and cabinet in modern practice",
+        "fr": "Adoptent des lois pour le territoire en vertu d’une loi fédérale, avec un premier ministre et un cabinet dans la pratique moderne"
       },
       {
         "id": "b",
-        "en": "Can amend the Constitution Act, 1867, alone"
+        "en": "Can amend the Constitution Act, 1867, alone",
+        "fr": "Peuvent modifier seules la Loi constitutionnelle de 1867"
       },
       {
         "id": "c",
-        "en": "Replace Parliament in Ottawa"
+        "en": "Replace Parliament in Ottawa",
+        "fr": "Remplacent le Parlement à Ottawa"
       },
       {
         "id": "d",
-        "en": "Are appointed by city mayors in Toronto"
+        "en": "Are appointed by city mayors in Toronto",
+        "fr": "Sont nommées par les maires de Toronto"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Yukon, the Northwest Territories, and Nunavut have assemblies. They are not provinces, but they are real governments."
+      "en": "Yukon, the Northwest Territories, and Nunavut have assemblies. They are not provinces, but they are real governments.",
+      "fr": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut ont des assemblées. Ce ne sont pas des provinces, mais ce sont de véritables gouvernements."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1381,21 +1627,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Municipal governments can levy some local taxes and pass by-laws about things such as zoning, transit, and snow clearing."
+      "en": "Municipal governments can levy some local taxes and pass by-laws about things such as zoning, transit, and snow clearing.",
+      "fr": "Les gouvernements municipaux peuvent lever certaines taxes locales et adopter des règlements sur des sujets comme le zonage, le transport en commun et le déneigement."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Cities are creatures of the province. Their work is still the government most people meet every day."
+      "en": "Cities are creatures of the province. Their work is still the government most people meet every day.",
+      "fr": "Les villes sont des créatures de la province. Leur travail demeure celui du gouvernement que la plupart des gens côtoient chaque jour."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1406,29 +1656,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The federal spending power refers to Ottawa’s ability to:"
+      "en": "The federal spending power refers to Ottawa’s ability to:",
+      "fr": "Le pouvoir fédéral de dépenser désigne la capacité d’Ottawa :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Spend money in areas of provincial jurisdiction, often with conditions (for example health transfers)"
+        "en": "Spend money in areas of provincial jurisdiction, often with conditions (for example health transfers)",
+        "fr": "De dépenser dans des champs de compétence provinciale, souvent avec des conditions (par exemple les transferts en santé)"
       },
       {
         "id": "b",
-        "en": "Dissolve every city council"
+        "en": "Dissolve every city council",
+        "fr": "De dissoudre tous les conseils municipaux"
       },
       {
         "id": "c",
-        "en": "Appoint all mayors"
+        "en": "Appoint all mayors",
+        "fr": "De nommer tous les maires"
       },
       {
         "id": "d",
-        "en": "Rewrite provincial constitutions by tweet"
+        "en": "Rewrite provincial constitutions by tweet",
+        "fr": "De réécrire les constitutions provinciales par un simple message en ligne"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is how national programs appear in fields the Constitution assigns mainly to provinces."
+      "en": "It is how national programs appear in fields the Constitution assigns mainly to provinces.",
+      "fr": "C’est ainsi que des programmes nationaux apparaissent dans des domaines que la Constitution attribue surtout aux provinces."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1439,29 +1695,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Opposition parties in the Commons exist to:"
+      "en": "Opposition parties in the Commons exist to:",
+      "fr": "Les partis de l’opposition aux Communes servent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Question the government and offer an alternative"
+        "en": "Question the government and offer an alternative",
+        "fr": "À interroger le gouvernement et à proposer une solution de rechange"
       },
       {
         "id": "b",
-        "en": "Rubber-stamp every bill in secret"
+        "en": "Rubber-stamp every bill in secret",
+        "fr": "À approuver sans discuter chaque projet de loi, en secret"
       },
       {
         "id": "c",
-        "en": "Appoint judges each Friday"
+        "en": "Appoint judges each Friday",
+        "fr": "À nommer les juges chaque vendredi"
       },
       {
         "id": "d",
-        "en": "Run Elections Canada"
+        "en": "Run Elections Canada",
+        "fr": "À diriger Élections Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Official Opposition status goes to the largest party not in government. Smaller parties still have a role."
+      "en": "Official Opposition status goes to the largest party not in government. Smaller parties still have a role.",
+      "fr": "Le statut d’opposition officielle va au plus grand parti qui ne forme pas le gouvernement. Les partis plus petits ont quand même un rôle."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1472,29 +1734,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Royal commissions and public inquiries are tools to:"
+      "en": "Royal commissions and public inquiries are tools to:",
+      "fr": "Les commissions royales et les enquêtes publiques servent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Investigate a serious public issue and recommend action"
+        "en": "Investigate a serious public issue and recommend action",
+        "fr": "À examiner un enjeu public important et à recommander des mesures"
       },
       {
         "id": "b",
-        "en": "Replace general elections"
+        "en": "Replace general elections",
+        "fr": "À remplacer les élections générales"
       },
       {
         "id": "c",
-        "en": "Choose the Monarch"
+        "en": "Choose the Monarch",
+        "fr": "À choisir le souverain"
       },
       {
         "id": "d",
-        "en": "Set hockey scores"
+        "en": "Set hockey scores",
+        "fr": "À fixer les scores de hockey"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They are not courts, but they can shape later laws. The test cares that government can study a problem in public."
+      "en": "They are not courts, but they can shape later laws. The test cares that government can study a problem in public.",
+      "fr": "Ce ne sont pas des tribunaux, mais elles peuvent façonner des lois futures. Ce qui compte pour l’examen, c’est que l’État puisse étudier un problème publiquement."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1505,21 +1773,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prime Minister and Cabinet are part of the executive, not a fourth elected house of Parliament."
+      "en": "The Prime Minister and Cabinet are part of the executive, not a fourth elected house of Parliament.",
+      "fr": "Le premier ministre et le Cabinet font partie du pouvoir exécutif et ne forment pas une quatrième chambre élue du Parlement."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Parliament is Crown, Senate, and Commons. Cabinet directs the executive while remaining accountable to the Commons."
+      "en": "Parliament is Crown, Senate, and Commons. Cabinet directs the executive while remaining accountable to the Commons.",
+      "fr": "Le Parlement, ce sont la Couronne, le Sénat et la Chambre des communes. Le Cabinet dirige l’exécutif tout en demeurant responsable devant les Communes."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1530,29 +1802,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A portfolio in Cabinet is:"
+      "en": "A portfolio in Cabinet is:",
+      "fr": "Un portefeuille au Cabinet est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The set of responsibilities given to a minister (for example Finance or Defence)"
+        "en": "The set of responsibilities given to a minister (for example Finance or Defence)",
+        "fr": "L’ensemble des responsabilités confiées à un ministre (par exemple les Finances ou la Défense)"
       },
       {
         "id": "b",
-        "en": "A senator’s travel bag"
+        "en": "A senator’s travel bag",
+        "fr": "Le sac de voyage d’un sénateur"
       },
       {
         "id": "c",
-        "en": "A municipal recycling bin"
+        "en": "A municipal recycling bin",
+        "fr": "Un bac de recyclage municipal"
       },
       {
         "id": "d",
-        "en": "A type of court file only in Quebec"
+        "en": "A type of court file only in Quebec",
+        "fr": "Un type de dossier judiciaire propre au Québec"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Prime Minister assigns portfolios. Titles change; the idea of a responsible minister does not."
+      "en": "The Prime Minister assigns portfolios. Titles change; the idea of a responsible minister does not.",
+      "fr": "Le premier ministre attribue les portefeuilles. Les titres changent; l’idée d’un ministre responsable demeure."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1563,29 +1841,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Constitutional monarchy in Canada means:"
+      "en": "Constitutional monarchy in Canada means:",
+      "fr": "La monarchie constitutionnelle au Canada signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Monarch is Head of State, while elected ministers run the government under the Constitution"
+        "en": "The Monarch is Head of State, while elected ministers run the government under the Constitution",
+        "fr": "Le souverain est chef de l’État, tandis que des ministres élus dirigent le gouvernement dans le respect de la Constitution"
       },
       {
         "id": "b",
-        "en": "The King writes the budget alone"
+        "en": "The King writes the budget alone",
+        "fr": "Le roi rédige seul le budget"
       },
       {
         "id": "c",
-        "en": "There is no Constitution"
+        "en": "There is no Constitution",
+        "fr": "Il n’existe aucune Constitution"
       },
       {
         "id": "d",
-        "en": "Mayors crown themselves"
+        "en": "Mayors crown themselves",
+        "fr": "Les maires se couronnent eux-mêmes"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Power is constrained by law and convention. The Crown is not a daily policy shop."
+      "en": "Power is constrained by law and convention. The Crown is not a daily policy shop.",
+      "fr": "Le pouvoir est encadré par le droit et la convention. La Couronne n’est pas un atelier de politiques au quotidien."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1596,29 +1880,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who usually summons, prorogues, or dissolves Parliament in practice?"
+      "en": "Who usually summons, prorogues, or dissolves Parliament in practice?",
+      "fr": "En pratique, qui convoque, proroge ou dissout habituellement le Parlement?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Governor General, acting on the Prime Minister’s advice"
+        "en": "The Governor General, acting on the Prime Minister’s advice",
+        "fr": "Le gouverneur général, sur l’avis du premier ministre"
       },
       {
         "id": "b",
-        "en": "The mayor of Ottawa"
+        "en": "The mayor of Ottawa",
+        "fr": "Le maire d’Ottawa"
       },
       {
         "id": "c",
-        "en": "The Chief Justice acting as campaign manager"
+        "en": "The Chief Justice acting as campaign manager",
+        "fr": "Le juge en chef agissant comme directeur de campagne"
       },
       {
         "id": "d",
-        "en": "A random jury in each riding"
+        "en": "A random jury in each riding",
+        "fr": "Un jury tiré au sort dans chaque circonscription"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Those are Crown powers. Convention says they follow ministerial advice except in rare controversies."
+      "en": "Those are Crown powers. Convention says they follow ministerial advice except in rare controversies.",
+      "fr": "Ce sont des pouvoirs de la Couronne. La convention veut qu’ils suivent l’avis ministériel, sauf dans de rares controverses."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   }

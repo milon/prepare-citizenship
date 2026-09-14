@@ -24,10 +24,11 @@ const isHome = path === homeHref || path === base;
 const ogTitle = isHome ? title : `${title} · Prepare Citizenship`;
 
 const nav = [
-  { href: homeHref, label: 'Today', icon: 'today', current: isHome, tab: true },
+  { href: homeHref, label: 'Today', i18n: 'nav.today', icon: 'today', current: isHome, tab: true },
   {
     href: `${homeHref}chapters/`,
     label: 'Chapters',
+    i18n: 'nav.chapters',
     icon: 'chapters',
     current: path.includes('/chapters'),
     tab: true,
@@ -35,6 +36,8 @@ const nav = [
   {
     href: `${homeHref}flashcards/`,
     label: 'Flashcards',
+    i18n: 'nav.flashcards',
+    tabI18n: 'nav.cards',
     icon: 'cards',
     current: path.includes('/flashcards'),
     tab: true,
@@ -43,6 +46,7 @@ const nav = [
   {
     href: `${homeHref}practice/`,
     label: 'Practice',
+    i18n: 'nav.practice',
     icon: 'practice',
     current: path.includes('/practice'),
     tab: true,
@@ -50,6 +54,8 @@ const nav = [
   {
     href: `${homeHref}mock/`,
     label: 'Mock exam',
+    i18n: 'nav.mock',
+    tabI18n: 'nav.mockShort',
     icon: 'mock',
     current: path.includes('/mock'),
     tab: true,
@@ -58,6 +64,7 @@ const nav = [
   {
     href: `${homeHref}progress/`,
     label: 'Progress',
+    i18n: 'nav.progress',
     icon: 'progress',
     current: path.includes('/progress'),
     topbar: true,
@@ -65,12 +72,14 @@ const nav = [
   {
     href: `${homeHref}faq/`,
     label: 'FAQ',
+    i18n: 'nav.faq',
     icon: 'help',
     current: path.includes('/faq'),
   },
   {
     href: `${homeHref}settings/`,
     label: 'Settings',
+    i18n: 'nav.settings',
     icon: 'settings',
     current: path.includes('/settings'),
     topbar: true,
@@ -122,11 +131,14 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
         try {
           var raw = localStorage.getItem('prepare-citizenship.progress.v1');
           var settings = raw ? JSON.parse(raw).settings || {} : {};
+          var locale = settings.locale === 'fr' ? 'fr' : 'en';
           var theme = settings.theme === 'light' || settings.theme === 'dark' ? settings.theme : 'system';
           var font = settings.fontSize === 'lg' || settings.fontSize === 'xl' ? settings.fontSize : 'md';
           var dark =
             theme === 'dark' ||
             (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.lang = locale;
+          document.documentElement.dataset.locale = locale;
           document.documentElement.dataset.theme = theme;
           document.documentElement.dataset.resolved = dark ? 'dark' : 'light';
           document.documentElement.dataset.font = font;
@@ -137,19 +149,19 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <div class="app">
       <aside class="rail">
         <a class="rail-brand" href={homeHref}>
           <MapleLeaf />
           Prepare Citizenship
         </a>
-        <nav class="rail-nav" aria-label="Primary">
+        <nav class="rail-nav" aria-label="Primary" data-i18n-aria="nav.primary">
           {
             nav.map((item) => (
               <a href={item.href} aria-current={item.current ? 'page' : undefined}>
                 <Icon name={item.icon} />
-                {item.label}
+                <span data-i18n={item.i18n}>{item.label}</span>
               </a>
             ))
           }
@@ -157,12 +169,12 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
         <div class="rail-widget" x-data="dashboardPage">
           <template x-if="stats">
             <div>
-              <p class="k">Study streak</p>
-              <p class="v" x-text="`${stats.streak} day${stats.streak === 1 ? '' : 's'}`"></p>
-              <p class="k" style="margin-top:0.8rem">Accuracy</p>
+              <p class="k" data-i18n="rail.streak">Study streak</p>
+              <p class="v" x-text="$store.i18n.t(stats.streak === 1 ? 'rail.day' : 'rail.days', { n: stats.streak })"></p>
+              <p class="k" style="margin-top:0.8rem" data-i18n="rail.accuracy">Accuracy</p>
               <p
                 class="v"
-                x-text="stats.overallTotal ? `${Math.round(stats.overallRate * 100)}% of ${stats.overallTotal}` : 'No answers yet'"
+                x-text="stats.overallTotal ? $store.i18n.t('rail.of', { pct: Math.round(stats.overallRate * 100), total: stats.overallTotal }) : $store.i18n.t('rail.noAnswers')"
               ></p>
             </div>
           </template>
@@ -178,8 +190,8 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
               x-text="($store.learner.name || '').slice(0, 1).toUpperCase()"></span>
           </span>
           <span class="rail-user-text">
-            <strong x-text="$store.learner.name || 'Add your name'">Add your name</strong>
-            <span>Settings</span>
+            <strong x-text="$store.learner.name || $store.i18n.t('brand.addName')">Add your name</strong>
+            <span data-i18n="nav.settings">Settings</span>
           </span>
           <Icon name="chevron" />
         </a>
@@ -201,6 +213,8 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
                   href={item.href}
                   aria-label={item.label}
                   title={item.label}
+                  data-i18n-aria={item.i18n}
+                  data-i18n-title={item.i18n}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   <Icon name={item.icon} />
@@ -211,8 +225,8 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
               class="icon-button"
               type="button"
               @click="cycleTheme"
-              :aria-label="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
-              :title="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
+              :aria-label="$store.i18n.t('theme.switch', { current: themeLabel, next: nextThemeLabel })"
+              :title="$store.i18n.t('theme.switch', { current: themeLabel, next: nextThemeLabel })"
             >
               <span x-show="theme === 'system'"><Icon name="auto" /></span>
               <span x-show="theme === 'light'" x-cloak><Icon name="sun" /></span>
@@ -230,12 +244,14 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
       </div>
     </div>
 
-    <nav class="tabbar" aria-label="Sections">
+    <nav class="tabbar" aria-label="Sections" data-i18n-aria="nav.sections">
       {
         tabs.map((item) => (
           <a href={item.href} aria-current={item.current ? 'page' : undefined}>
             <Icon name={item.icon} />
-            {'tabLabel' in item ? item.tabLabel : item.label}
+            <span data-i18n={'tabI18n' in item ? item.tabI18n : item.i18n}>
+              {'tabLabel' in item ? item.tabLabel : item.label}
+            </span>
           </a>
         ))
       }

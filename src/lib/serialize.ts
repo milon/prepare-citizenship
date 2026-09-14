@@ -2,6 +2,15 @@ import type { CollectionEntry } from 'astro:content';
 import { interpolateCurrent } from './interpolate';
 import type { ClientCard, ClientQuestion } from './client-types';
 import type { CurrentFacts } from '../content/schema';
+import type { LocalizedText } from './i18n';
+import { localizedSource } from './i18n';
+
+function loc(en: string, fr: string | null | undefined, current: CurrentFacts): LocalizedText {
+  return {
+    en: interpolateCurrent(en, current),
+    fr: fr ? interpolateCurrent(fr, current) : null,
+  };
+}
 
 export function toClientQuestion(
   question: CollectionEntry<'questions'>['data'],
@@ -12,25 +21,35 @@ export function toClientQuestion(
     chapter: question.chapter,
     region: question.region,
     type: question.type,
-    prompt: interpolateCurrent(question.prompt.en, current),
+    prompt: loc(question.prompt.en, question.prompt.fr, current),
     options: question.options.map((option) => ({
       id: option.id,
-      text: interpolateCurrent(option.en, current),
+      text: loc(option.en, option.fr, current),
     })),
     correctOptionId: question.correctOptionId,
-    explanation: interpolateCurrent(question.explanation.en, current),
-    source: question.source,
+    explanation: loc(question.explanation.en, question.explanation.fr, current),
+    source: {
+      en: question.source,
+      fr: localizedSource(question.chapter, 'fr'),
+    },
   };
 }
 
 export function cardFromQuestion(question: ClientQuestion): ClientCard {
-  const answer =
-    question.options.find((option) => option.id === question.correctOptionId)?.text ?? '';
+  const answerEn =
+    question.options.find((option) => option.id === question.correctOptionId)?.text.en ?? '';
+  const answerFr =
+    question.options.find((option) => option.id === question.correctOptionId)?.text.fr ?? '';
   return {
     id: question.id,
     chapter: question.chapter,
     front: question.prompt,
-    back: `${answer}\n\n${question.explanation}`,
+    back: {
+      en: `${answerEn}\n\n${question.explanation.en}`,
+      fr: question.prompt.fr
+        ? `${answerFr || answerEn}\n\n${question.explanation.fr ?? question.explanation.en}`
+        : null,
+    },
     source: question.source,
   };
 }
@@ -42,8 +61,11 @@ export function toClientCard(
   return {
     id: card.id,
     chapter: card.chapter,
-    front: interpolateCurrent(card.front.en, current),
-    back: interpolateCurrent(card.back.en, current),
-    source: card.source,
+    front: loc(card.front.en, card.front.fr, current),
+    back: loc(card.back.en, card.back.fr, current),
+    source: {
+      en: card.source,
+      fr: localizedSource(card.chapter, 'fr'),
+    },
   };
 }

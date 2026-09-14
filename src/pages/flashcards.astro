@@ -20,57 +20,70 @@ const payload = {
   <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/flashcards/')}>
     <article class="panel quiz-shell" x-data="flashcardsPage">
-      <p class="eyebrow">Recall</p>
-      <h1>Flashcards</h1>
-      <p class="lede">
+      <p class="eyebrow" data-i18n="cards.eyebrow">Recall</p>
+      <h1 data-i18n="cards.title">Flashcards</h1>
+      <p class="lede" data-i18n="cards.lede">
         Flip the card, then mark whether you knew it. Due cards come back tomorrow, in three days, or in a week.
       </p>
 
-      <div class="toolbar">
+      <div class="toolbar no-print">
         <label class="field">
-          <span>Chapter</span>
+          <span data-i18n="cards.chapter">Chapter</span>
           <select x-model="chapter" @change="rebuild()">
-            <option value="all">All chapters</option>
+            <option value="all" data-i18n="cards.all">All chapters</option>
             <template x-for="item in chapters" :key="item.id">
-              <option :value="item.id" x-text="item.title"></option>
+              <option :value="item.id" x-text="$store.i18n.pick(item.title)"></option>
             </template>
           </select>
         </label>
         <label class="field">
-          <span>Deck</span>
+          <span data-i18n="cards.deck">Deck</span>
           <select x-model="mode" @change="rebuild()">
-            <option value="due">Due now</option>
-            <option value="shuffle">Shuffle all</option>
-            <option value="mistakes">Review mistakes</option>
+            <option value="due" data-i18n="cards.due">Due now</option>
+            <option value="shuffle" data-i18n="cards.shuffle">Shuffle all</option>
+            <option value="mistakes" data-i18n="cards.mistakes">Review mistakes</option>
           </select>
         </label>
       </div>
 
-      <p class="verified" x-text="position"></p>
+      <p class="verified no-print" x-text="position"></p>
       <p class="sr-only" aria-live="polite" x-text="status"></p>
 
       <template x-if="current">
-        <div>
+        <div class="no-print">
           <p class="pill" x-text="boxText"></p>
           <button
             class="flip-card"
             type="button"
             @click="flip"
             :aria-pressed="flipped.toString()"
-            :aria-label="flipped ? 'Flip card. Answer is showing.' : 'Flip card. Prompt is showing.'"
+            :aria-label="flipped ? $store.i18n.t('cards.flipAnswer') : $store.i18n.t('cards.flipPrompt')"
           >
-            <span class="flip-label" x-text="flipped ? 'Answer' : 'Prompt'"></span>
-            <span class="flip-body" x-text="flipped ? current.back : current.front"></span>
+            <span class="flip-label" x-text="flipped ? $store.i18n.t('cards.answer') : $store.i18n.t('cards.prompt')"></span>
+            <span class="flip-body" x-text="flipped ? $store.i18n.pick(current.back) : $store.i18n.pick(current.front)"></span>
           </button>
           <div class="button-row">
-            <button class="button" type="button" @click="stillLearning">Still learning</button>
-            <button class="button button-primary" type="button" @click="gotIt">Got it</button>
-            <button class="button button-quiet" type="button" @click="markAsKnown">Mark as known</button>
+            <button class="button" type="button" @click="stillLearning" data-i18n="cards.still">Still learning</button>
+            <button class="button button-primary" type="button" @click="gotIt" data-i18n="cards.gotIt">Got it</button>
+            <button class="button button-quiet" type="button" @click="markAsKnown" data-i18n="cards.known">Mark as known</button>
           </div>
         </div>
       </template>
-      <p class="lede" x-show="!current">No cards in this deck. Try another chapter or shuffle all.</p>
-      <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>
+      <p class="lede no-print" x-show="!current" data-i18n="cards.none">No cards in this deck. Try another chapter or shuffle all.</p>
+      <p class="banner no-print" x-show="saveFailed" x-cloak data-i18n="cards.saveFailed">Progress won’t save in this browser.</p>
+      <div class="button-row no-print">
+        <button class="button" type="button" @click="window.print()" data-i18n="cards.print">Print this deck</button>
+      </div>
+      <div class="print-deck" aria-hidden="true">
+        <h1 data-i18n="cards.title">Flashcards</h1>
+        <template x-for="card in printCards" :key="card.id">
+          <article class="print-card">
+            <p class="print-front" x-text="$store.i18n.pick(card.front)"></p>
+            <p class="print-back" x-text="$store.i18n.pick(card.back)"></p>
+            <p class="print-source" x-text="$store.i18n.pick(card.source)"></p>
+          </article>
+        </template>
+      </div>
     </article>
   </StudyGate>
 </BaseLayout>

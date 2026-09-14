@@ -1,13 +1,8 @@
 import { applyAppearance, type ThemePreference } from './appearance';
+import { t, type Locale } from './i18n';
 import { loadProgress, saveProgress } from './progress';
 
 const THEME_ORDER: ThemePreference[] = ['system', 'light', 'dark'];
-
-const THEME_LABELS: Record<ThemePreference, string> = {
-  system: 'Auto',
-  light: 'Light',
-  dark: 'Dark',
-};
 
 export function siteHeaderApp() {
   return {
@@ -17,13 +12,19 @@ export function siteHeaderApp() {
       this.theme = loadProgress().progress.settings.theme;
     },
 
+    tx(key: string) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return t(key, locale);
+    },
+
     get themeLabel(): string {
-      return THEME_LABELS[this.theme];
+      return this.tx(`theme.${this.theme}`);
     },
 
     get nextThemeLabel(): string {
       const next = THEME_ORDER[(THEME_ORDER.indexOf(this.theme) + 1) % THEME_ORDER.length];
-      return THEME_LABELS[next];
+      return this.tx(`theme.${next}`);
     },
 
     cycleTheme() {

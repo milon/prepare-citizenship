@@ -1,6 +1,6 @@
 import { applyAppearance, type FontSizePreference, type ThemePreference } from './appearance';
 import { REGION_CODES, type RegionCode } from '../content/schema';
-import { REGION_LABELS } from './chapters';
+import { localizedRegionLabel, t, type Locale } from './i18n';
 import { todayStamp } from './dates';
 import { DISPLAY_NAME_MAX, nameFileSlug, parseDisplayName } from './display-name';
 import {
@@ -10,10 +10,14 @@ import {
   saveProgress,
 } from './progress';
 
-export const regionOptions = REGION_CODES.map((code) => ({
-  code,
-  label: REGION_LABELS[code],
-}));
+export function regionOptionsFor(locale: Locale = 'en') {
+  return REGION_CODES.map((code) => ({
+    code,
+    label: localizedRegionLabel(code, locale),
+  }));
+}
+
+export const regionOptions = regionOptionsFor('en');
 
 export function provincePickerApp() {
   return {
@@ -27,6 +31,7 @@ export function provincePickerApp() {
       const loaded = loadProgress();
       this.storageAvailable = loaded.storageAvailable;
       this.selected = loaded.progress.province ?? '';
+      this.options = regionOptionsFor(loaded.progress.settings.locale);
       const root = document.querySelector('[data-province-redirect]') as HTMLElement | null;
       this.redirect = root?.dataset.provinceRedirect ?? '/';
     },
@@ -66,6 +71,11 @@ export function settingsApp() {
     fontSize: 'md' as FontSizePreference,
     displayName: '',
     nameMax: DISPLAY_NAME_MAX,
+    locale: 'en' as Locale,
+
+    tx(key: string, vars?: Record<string, string | number>) {
+      return t(key, this.locale, vars);
+    },
 
     init() {
       const loaded = loadProgress();
@@ -74,6 +84,8 @@ export function settingsApp() {
       this.theme = loaded.progress.settings.theme;
       this.fontSize = loaded.progress.settings.fontSize;
       this.displayName = loaded.progress.settings.displayName;
+      this.locale = loaded.progress.settings.locale;
+      this.options = regionOptionsFor(this.locale);
     },
 
     learnerStore(): LearnerStore {
@@ -86,9 +98,15 @@ export function settingsApp() {
       loaded.progress.settings.theme = this.theme;
       loaded.progress.settings.fontSize = this.fontSize;
       loaded.progress.settings.displayName = this.displayName;
+      loaded.progress.settings.locale = this.locale;
       this.learnerStore().name = this.displayName;
       applyAppearance(this.theme, this.fontSize);
       this.saveFailed = !saveProgress(loaded.progress);
+      const i18n = (this as unknown as { $store: { i18n: { locale: Locale } } }).$store.i18n;
+      if (i18n.locale !== this.locale) {
+        i18n.locale = this.locale;
+        window.location.reload();
+      }
     },
 
     save() {
@@ -99,10 +117,11 @@ export function settingsApp() {
       loaded.progress.province = this.selected;
       this.displayName = parseDisplayName(this.displayName);
       loaded.progress.settings.displayName = this.displayName;
+      loaded.progress.settings.locale = this.locale;
       this.learnerStore().name = this.displayName;
       this.saveFailed = !saveProgress(loaded.progress);
       this.saved = !this.saveFailed;
-      this.message = this.saved ? 'Saved.' : '';
+      this.message = this.saved ? this.tx('settings.saved') : '';
       this.error = '';
     },
 
@@ -118,7 +137,7 @@ export function settingsApp() {
       link.download = `prepare-citizenship-progress${slug ? `-${slug}` : ''}-${todayStamp()}.json`;
       link.click();
       URL.revokeObjectURL(url);
-      this.message = 'Progress file downloaded.';
+      this.message = this.tx('settings.exported');
       this.error = '';
     },
 
@@ -130,9 +149,7 @@ export function settingsApp() {
         return;
       }
       if (
-        !window.confirm(
-          'Importing will replace the progress saved on this device. Continue?',
-        )
+        !window.confirm(this.tx('settings.importConfirm'))
       ) {
         return;
       }
@@ -145,7 +162,7 @@ export function settingsApp() {
         }
         this.saveFailed = !saveProgress(parsed.progress);
         if (this.saveFailed) {
-          this.error = 'Could not save imported progress in this browser.';
+          this.error = this.tx('settings.importFail');
           this.message = '';
           return;
         }
@@ -153,22 +170,22 @@ export function settingsApp() {
         this.theme = parsed.progress.settings.theme;
         this.fontSize = parsed.progress.settings.fontSize;
         this.displayName = parsed.progress.settings.displayName;
+        this.locale = parsed.progress.settings.locale;
+        this.options = regionOptionsFor(this.locale);
         this.learnerStore().name = this.displayName;
         applyAppearance(this.theme, this.fontSize);
-        this.message = 'Progress imported.';
+        this.message = this.tx('settings.imported');
         this.error = '';
         this.saved = false;
       } catch {
-        this.error = 'That file could not be read as JSON.';
+        this.error = this.tx('settings.importJson');
         this.message = '';
       }
     },
 
     reset() {
       if (
-        !window.confirm(
-          'Reset quiz history, flashcards, and missed questions? Your name, province, and display settings will be kept.',
-        )
+        !window.confirm(this.tx('settings.resetConfirm'))
       ) {
         return;
       }
@@ -177,9 +194,10 @@ export function settingsApp() {
       this.theme = next.settings.theme;
       this.fontSize = next.settings.fontSize;
       this.displayName = next.settings.displayName;
+      this.locale = next.settings.locale;
       this.learnerStore().name = this.displayName;
       applyAppearance(this.theme, this.fontSize);
-      this.message = 'Progress reset.';
+      this.message = this.tx('settings.resetOk');
       this.error = '';
       this.saved = false;
     },

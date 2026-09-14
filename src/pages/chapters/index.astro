@@ -3,11 +3,14 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { withBase } from '../../lib/paths';
 
-const chapters = (await getCollection('chapters'))
+const all = await getCollection('chapters');
+const frenchById = new Map((await getCollection('chaptersFr')).map((entry) => [entry.id, entry]));
+
+const chapters = all
   .filter((entry) => !entry.data.regionGroup)
   .sort((a, b) => a.data.order - b.data.order);
 
-const regions = (await getCollection('chapters'))
+const regions = all
   .filter((entry) => entry.data.regionGroup)
   .sort((a, b) => a.data.order - b.data.order);
 ---
@@ -19,54 +22,66 @@ const regions = (await getCollection('chapters'))
 >
   <div class="page-head">
     <div>
-      <p class="eyebrow">Discover Canada</p>
-      <h1>Chapter summaries</h1>
-      <p class="lede">
+      <p class="eyebrow" data-i18n="chapters.eyebrow">Discover Canada</p>
+      <h1 data-i18n="chapters.title">Chapter summaries</h1>
+      <p class="lede" data-i18n="chapters.lede">
         These pages are original study notes, not a copy of the official guide. Learn the
         shape of each topic, then drill it with flashcards and a quiz.
       </p>
     </div>
     <div class="chips">
-      <span class="chip">{chapters.length} chapters</span>
-      <span class="chip">{regions.length} region pages</span>
+      <span class="chip lang-en">{chapters.length} chapters</span>
+      <span class="chip lang-fr">{chapters.length} chapitres</span>
+      <span class="chip lang-en">{regions.length} region pages</span>
+      <span class="chip lang-fr">{regions.length} pages régionales</span>
     </div>
   </div>
 
   <section class="card" aria-labelledby="chapter-list">
     <div class="card-head">
-      <h2 id="chapter-list">The ten chapters</h2>
-      <p>Each one ends with links to its flashcards and chapter quiz.</p>
+      <h2 id="chapter-list" data-i18n="chapters.ten">The ten chapters</h2>
+      <p data-i18n="chapters.tenBlurb">Each one ends with links to its flashcards and chapter quiz.</p>
     </div>
     <ul class="chapter-grid">
       {
-        chapters.map((chapter, index) => (
-          <li>
-            <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
-              <span class="num">{String(index + 1).padStart(2, '0')}</span>
-              <strong>{chapter.data.title}</strong>
-              <span>{chapter.data.description}</span>
-            </a>
-          </li>
-        ))
+        chapters.map((chapter, index) => {
+          const french = frenchById.get(chapter.id);
+          return (
+            <li>
+              <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
+                <span class="num">{String(index + 1).padStart(2, '0')}</span>
+                <strong class="lang-en">{chapter.data.title}</strong>
+                <strong class="lang-fr">{french?.data.title ?? chapter.data.title}</strong>
+                <span class="lang-en">{chapter.data.description}</span>
+                <span class="lang-fr">{french?.data.description ?? chapter.data.description}</span>
+              </a>
+            </li>
+          );
+        })
       }
     </ul>
   </section>
 
   <section class="card" style="margin-top:1rem" aria-labelledby="regions">
     <div class="card-head">
-      <h2 id="regions">Region subpages</h2>
-      <p>Mock exams include questions about the province or territory you choose.</p>
+      <h2 id="regions" data-i18n="chapter.regions">Region subpages</h2>
+      <p data-i18n="chapters.regionsBlurb">Mock exams include questions about the province or territory you choose.</p>
     </div>
     <ul class="region-grid">
       {
-        regions.map((region) => (
-          <li>
-            <a class="region-card" href={`${withBase('/chapters/')}${region.id}/`}>
-              <strong>{region.data.title}</strong>
-              <span>{region.data.description}</span>
-            </a>
-          </li>
-        ))
+        regions.map((region) => {
+          const french = frenchById.get(region.id);
+          return (
+            <li>
+              <a class="region-card" href={`${withBase('/chapters/')}${region.id}/`}>
+                <strong class="lang-en">{region.data.title}</strong>
+                <strong class="lang-fr">{french?.data.title ?? region.data.title}</strong>
+                <span class="lang-en">{region.data.description}</span>
+                <span class="lang-fr">{french?.data.description ?? region.data.description}</span>
+              </a>
+            </li>
+          );
+        })
       }
     </ul>
   </section>

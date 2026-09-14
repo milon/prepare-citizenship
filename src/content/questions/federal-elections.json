@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the minimum age to vote in a Canadian federal election?"
+      "en": "What is the minimum age to vote in a Canadian federal election?",
+      "fr": "Quel est l’âge minimal pour voter à une élection fédérale canadienne?"
     },
     "options": [
       {
         "id": "a",
-        "en": "16"
+        "en": "16",
+        "fr": "16 ans"
       },
       {
         "id": "b",
-        "en": "18"
+        "en": "18",
+        "fr": "18 ans"
       },
       {
         "id": "c",
-        "en": "19"
+        "en": "19",
+        "fr": "19 ans"
       },
       {
         "id": "d",
-        "en": "21"
+        "en": "21",
+        "fr": "21 ans"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Canadian citizens who are at least 18 years old on election day may vote in federal elections."
+      "en": "Canadian citizens who are at least 18 years old on election day may vote in federal elections.",
+      "fr": "Les citoyens canadiens âgés d’au moins 18 ans le jour du scrutin peuvent voter aux élections fédérales."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is an electoral district also called?"
+      "en": "What is an electoral district also called?",
+      "fr": "Comment appelle-t-on aussi une circonscription électorale?"
     },
     "options": [
       {
         "id": "a",
-        "en": "A riding"
+        "en": "A riding",
+        "fr": "Un comté"
       },
       {
         "id": "b",
-        "en": "A Cabinet"
+        "en": "A Cabinet",
+        "fr": "Un cabinet"
       },
       {
         "id": "c",
-        "en": "A caucus"
+        "en": "A caucus",
+        "fr": "Un caucus"
       },
       {
         "id": "d",
-        "en": "A constituency court"
+        "en": "A constituency court",
+        "fr": "Un tribunal de circonscription"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Voters in each electoral district, or riding, elect one Member of Parliament to the House of Commons."
+      "en": "Voters in each electoral district, or riding, elect one Member of Parliament to the House of Commons.",
+      "fr": "Les électeurs de chaque circonscription électorale, ou comté, élisent un député à la Chambre des communes."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -72,21 +84,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Federal ballots in Canada are secret."
+      "en": "Federal ballots in Canada are secret.",
+      "fr": "Au Canada, le vote aux élections fédérales est secret."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The secret ballot is a safeguard of democracy: no one should know how you voted, and you should not feel pressured to reveal it."
+      "en": "The secret ballot is a safeguard of democracy: no one should know how you voted, and you should not feel pressured to reveal it.",
+      "fr": "Le scrutin secret protège la démocratie : personne ne doit savoir pour qui vous avez voté et vous ne devez subir aucune pression pour le révéler."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -97,29 +113,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "To vote in a federal election you must be:"
+      "en": "To vote in a federal election you must be:",
+      "fr": "Pour voter à une élection fédérale, vous devez être :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A Canadian citizen"
+        "en": "A Canadian citizen",
+        "fr": "Citoyen canadien"
       },
       {
         "id": "b",
-        "en": "A permanent resident who has lived here one year"
+        "en": "A permanent resident who has lived here one year",
+        "fr": "Résident permanent qui vit ici depuis un an"
       },
       {
         "id": "c",
-        "en": "A visitor with a tourist visa"
+        "en": "A visitor with a tourist visa",
+        "fr": "Visiteur muni d’un visa de touriste"
       },
       {
         "id": "d",
-        "en": "A municipal taxpayer even if you are not a citizen"
+        "en": "A municipal taxpayer even if you are not a citizen",
+        "fr": "Contribuable municipal, même sans être citoyen"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizenship and age 18 are the basic federal voting rules. Residency rules affect where you vote, not the citizenship requirement."
+      "en": "Citizenship and age 18 are the basic federal voting rules. Residency rules affect where you vote, not the citizenship requirement.",
+      "fr": "La citoyenneté et l’âge de 18 ans sont les règles de base du vote fédéral. Les règles de résidence déterminent où vous votez, et non l’exigence de citoyenneté."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -130,29 +152,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Federal elections are run by:"
+      "en": "Federal elections are run by:",
+      "fr": "Les élections fédérales sont administrées par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Elections Canada, an independent agency"
+        "en": "Elections Canada, an independent agency",
+        "fr": "Élections Canada, un organisme indépendant"
       },
       {
         "id": "b",
-        "en": "The Prime Minister’s campaign office"
+        "en": "The Prime Minister’s campaign office",
+        "fr": "Le bureau de campagne du premier ministre"
       },
       {
         "id": "c",
-        "en": "The RCMP commissioner personally"
+        "en": "The RCMP commissioner personally",
+        "fr": "Le commissaire de la GRC en personne"
       },
       {
         "id": "d",
-        "en": "City clerks in Ottawa only"
+        "en": "City clerks in Ottawa only",
+        "fr": "Les greffiers municipaux d’Ottawa seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Chief Electoral Officer and Elections Canada are independent of the government of the day."
+      "en": "The Chief Electoral Officer and Elections Canada are independent of the government of the day.",
+      "fr": "Le directeur général des élections et Élections Canada sont indépendants du gouvernement en place."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -163,29 +191,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s federal voting system is:"
+      "en": "Canada’s federal voting system is:",
+      "fr": "Le système électoral fédéral du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Single-member plurality (first past the post)"
+        "en": "Single-member plurality (first past the post)",
+        "fr": "Le scrutin uninominal majoritaire à un tour"
       },
       {
         "id": "b",
-        "en": "A nationwide presidential college"
+        "en": "A nationwide presidential college",
+        "fr": "Un collège présidentiel national"
       },
       {
         "id": "c",
-        "en": "Sortition of all adults"
+        "en": "Sortition of all adults",
+        "fr": "Le tirage au sort parmi tous les adultes"
       },
       {
         "id": "d",
-        "en": "Appointment by the Senate"
+        "en": "Appointment by the Senate",
+        "fr": "La nomination par le Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The candidate with the most votes in a riding wins, even without 50%. Seat totals can differ from the popular vote."
+      "en": "The candidate with the most votes in a riding wins, even without 50%. Seat totals can differ from the popular vote.",
+      "fr": "Le candidat qui obtient le plus de voix dans une circonscription gagne, même sans atteindre 50 %. Le nombre de sièges peut différer du vote populaire."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -196,29 +230,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A by-election is held when:"
+      "en": "A by-election is held when:",
+      "fr": "Une élection partielle a lieu lorsque :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A seat becomes vacant between general elections"
+        "en": "A seat becomes vacant between general elections",
+        "fr": "Un siège devient vacant entre deux élections générales"
       },
       {
         "id": "b",
-        "en": "The Supreme Court rewrites a statute"
+        "en": "The Supreme Court rewrites a statute",
+        "fr": "La Cour suprême réécrit une loi"
       },
       {
         "id": "c",
-        "en": "A municipality wants a new flag"
+        "en": "A municipality wants a new flag",
+        "fr": "Une municipalité veut un nouveau drapeau"
       },
       {
         "id": "d",
-        "en": "NATO meets"
+        "en": "NATO meets",
+        "fr": "L’OTAN se réunit"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Death, resignation, or other vacancy in a riding triggers a by-election, not a full national vote."
+      "en": "Death, resignation, or other vacancy in a riding triggers a by-election, not a full national vote.",
+      "fr": "Un décès, une démission ou une autre vacance dans une circonscription déclenche une élection partielle, et non un scrutin national complet."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -229,21 +269,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You must belong to a political party to run for the House of Commons."
+      "en": "You must belong to a political party to run for the House of Commons.",
+      "fr": "Il faut appartenir à un parti politique pour se présenter à la Chambre des communes."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Independents may run. Most successful candidates still have a party, but it is not a legal requirement."
+      "en": "Independents may run. Most successful candidates still have a party, but it is not a legal requirement.",
+      "fr": "Des candidats indépendants peuvent se présenter. La plupart des candidats élus ont un parti, mais ce n’est pas une exigence légale."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -254,29 +298,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Intimidation, vote buying, and impersonation at the polls are:"
+      "en": "Intimidation, vote buying, and impersonation at the polls are:",
+      "fr": "L’intimidation, l’achat de votes et l’usurpation d’identité au bureau de scrutin sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Crimes"
+        "en": "Crimes",
+        "fr": "Des crimes"
       },
       {
         "id": "b",
-        "en": "Ordinary campaign tactics"
+        "en": "Ordinary campaign tactics",
+        "fr": "Des tactiques de campagne ordinaires"
       },
       {
         "id": "c",
-        "en": "Senate privileges"
+        "en": "Senate privileges",
+        "fr": "Des privilèges du Sénat"
       },
       {
         "id": "d",
-        "en": "Municipal zoning tools"
+        "en": "Municipal zoning tools",
+        "fr": "Des outils de zonage municipal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Electoral fraud is a criminal matter. The secret ballot exists to reduce pressure and bribery."
+      "en": "Electoral fraud is a criminal matter. The secret ballot exists to reduce pressure and bribery.",
+      "fr": "La fraude électorale est une affaire criminelle. Le scrutin secret existe pour réduire la pression et la corruption."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -287,29 +337,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "There is a legal maximum life of a House of Commons. In practice this means:"
+      "en": "There is a legal maximum life of a House of Commons. In practice this means:",
+      "fr": "La loi fixe une durée maximale à une législature. En pratique, cela veut dire que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A general election must be held within that limit (governments often go sooner)"
+        "en": "A general election must be held within that limit (governments often go sooner)",
+        "fr": "Une élection générale doit avoir lieu dans ce délai (les gouvernements y vont souvent plus tôt)"
       },
       {
         "id": "b",
-        "en": "MPs keep their seats for life"
+        "en": "MPs keep their seats for life",
+        "fr": "Les députés gardent leur siège à vie"
       },
       {
         "id": "c",
-        "en": "There are never elections"
+        "en": "There are never elections",
+        "fr": "Il n’y a jamais d’élections"
       },
       {
         "id": "d",
-        "en": "Only the Senate is dissolved"
+        "en": "Only the Senate is dissolved",
+        "fr": "Seul le Sénat est dissous"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Parliament cannot sit forever. The government usually chooses an earlier date while it still has confidence."
+      "en": "Parliament cannot sit forever. The government usually chooses an earlier date while it still has confidence.",
+      "fr": "Le Parlement ne peut pas siéger indéfiniment. Le gouvernement choisit habituellement une date plus rapprochée pendant qu’il a encore la confiance de la Chambre."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -320,29 +376,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "After the votes are counted, a government is formed when:"
+      "en": "After the votes are counted, a government is formed when:",
+      "fr": "Après le dépouillement des votes, un gouvernement se forme lorsque :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A leader can command the confidence of the House and is invited by the Governor General"
+        "en": "A leader can command the confidence of the House and is invited by the Governor General",
+        "fr": "Un chef peut obtenir la confiance de la Chambre des communes et est invité par le gouverneur général"
       },
       {
         "id": "b",
-        "en": "The candidate with the most personal votes nationwide becomes president"
+        "en": "The candidate with the most personal votes nationwide becomes president",
+        "fr": "Le candidat ayant le plus de voix personnelles au pays devient président"
       },
       {
         "id": "c",
-        "en": "The Chief Justice appoints Cabinet"
+        "en": "The Chief Justice appoints Cabinet",
+        "fr": "Le juge en chef nomme le Cabinet"
       },
       {
         "id": "d",
-        "en": "Mayors of provincial capitals vote"
+        "en": "Mayors of provincial capitals vote",
+        "fr": "Les maires des capitales provinciales votent"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Election night seat counts matter because they predict confidence—not because they are a direct vote for Prime Minister."
+      "en": "Election night seat counts matter because they predict confidence—not because they are a direct vote for Prime Minister.",
+      "fr": "Le nombre de sièges compte le soir du scrutin parce qu’il annonce la confiance de la Chambre, et non parce qu’il s’agit d’un vote direct pour le premier ministre."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -353,29 +415,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Advance polls exist so that:"
+      "en": "Advance polls exist so that:",
+      "fr": "Les bureaux de vote par anticipation existent pour que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "People who cannot vote easily on election day can vote earlier"
+        "en": "People who cannot vote easily on election day can vote earlier",
+        "fr": "Les personnes qui ne peuvent pas voter facilement le jour du scrutin puissent voter plus tôt"
       },
       {
         "id": "b",
-        "en": "Parties can see your ballot"
+        "en": "Parties can see your ballot",
+        "fr": "Les partis puissent voir votre bulletin"
       },
       {
         "id": "c",
-        "en": "Only senators vote"
+        "en": "Only senators vote",
+        "fr": "Seuls les sénateurs votent"
       },
       {
         "id": "d",
-        "en": "Tourists can elect MPs"
+        "en": "Tourists can elect MPs",
+        "fr": "Les touristes puissent élire des députés"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Special ballots and advance voting are accessibility features of a modern election, still under Elections Canada rules."
+      "en": "Special ballots and advance voting are accessibility features of a modern election, still under Elections Canada rules.",
+      "fr": "Le bulletin spécial et le vote par anticipation sont des mesures d’accessibilité d’une élection moderne, toujours régies par les règles d’Élections Canada."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -386,21 +454,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Permanent residents may vote in federal elections."
+      "en": "Permanent residents may vote in federal elections.",
+      "fr": "Les résidents permanents peuvent voter aux élections fédérales."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Federal voting is for citizens. Permanent residents may later become citizens and then vote."
+      "en": "Federal voting is for citizens. Permanent residents may later become citizens and then vote.",
+      "fr": "Le vote fédéral est réservé aux citoyens. Les résidents permanents pourront voter une fois devenus citoyens."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -411,29 +483,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A riding elects how many MPs to the House of Commons?"
+      "en": "A riding elects how many MPs to the House of Commons?",
+      "fr": "Combien de députés une circonscription élit-elle à la Chambre des communes?"
     },
     "options": [
       {
         "id": "a",
-        "en": "One"
+        "en": "One",
+        "fr": "Un"
       },
       {
         "id": "b",
-        "en": "Two, always"
+        "en": "Two, always",
+        "fr": "Deux, toujours"
       },
       {
         "id": "c",
-        "en": "Ten"
+        "en": "Ten",
+        "fr": "Dix"
       },
       {
         "id": "d",
-        "en": "None; ridings elect senators"
+        "en": "None; ridings elect senators",
+        "fr": "Aucun; les circonscriptions élisent des sénateurs"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "One MP per district is the first-past-the-post design."
+      "en": "One MP per district is the first-past-the-post design.",
+      "fr": "Un député par circonscription : c’est la logique du scrutin uninominal majoritaire à un tour."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -444,29 +522,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Party platforms are:"
+      "en": "Party platforms are:",
+      "fr": "Les plateformes de parti sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The promises and policies a party offers voters"
+        "en": "The promises and policies a party offers voters",
+        "fr": "Les promesses et les politiques qu’un parti propose aux électeurs"
       },
       {
         "id": "b",
-        "en": "The floor of the Senate"
+        "en": "The floor of the Senate",
+        "fr": "Le parquet du Sénat"
       },
       {
         "id": "c",
-        "en": "Police search warrants"
+        "en": "Police search warrants",
+        "fr": "Des mandats de perquisition policiers"
       },
       {
         "id": "d",
-        "en": "Municipal bus routes"
+        "en": "Municipal bus routes",
+        "fr": "Des circuits d’autobus municipaux"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "You vote for a local candidate, but platforms tell you what a party would try to do in government."
+      "en": "You vote for a local candidate, but platforms tell you what a party would try to do in government.",
+      "fr": "Vous votez pour un candidat local, mais les plateformes indiquent ce qu’un parti tenterait de faire au gouvernement."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Election advertising and spending are:"
+      "en": "Election advertising and spending are:",
+      "fr": "La publicité et les dépenses électorales sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Regulated by law"
+        "en": "Regulated by law",
+        "fr": "Encadrées par la loi"
       },
       {
         "id": "b",
-        "en": "Unlimited and untraceable by design"
+        "en": "Unlimited and untraceable by design",
+        "fr": "Illimitées et intraçables par conception"
       },
       {
         "id": "c",
-        "en": "Run by the U.S. Federal Election Commission"
+        "en": "Run by the U.S. Federal Election Commission",
+        "fr": "Gérées par la commission électorale fédérale des États-Unis"
       },
       {
         "id": "d",
-        "en": "Secret even from Elections Canada"
+        "en": "Secret even from Elections Canada",
+        "fr": "Secrètes, même pour Élections Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Limits and disclosure rules aim to keep money from buying the outcome outright."
+      "en": "Limits and disclosure rules aim to keep money from buying the outcome outright.",
+      "fr": "Les plafonds et les règles de divulgation visent à empêcher que l’argent achète carrément le résultat."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "You should not tell a stranger how you voted if you do not want to, because:"
+      "en": "You should not tell a stranger how you voted if you do not want to, because:",
+      "fr": "Vous n’avez pas à dire à un inconnu pour qui vous avez voté, parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The ballot is secret and pressure is improper"
+        "en": "The ballot is secret and pressure is improper",
+        "fr": "Le bulletin est secret et toute pression est inacceptable"
       },
       {
         "id": "b",
-        "en": "It is a Criminal Code offence to discuss politics at home"
+        "en": "It is a Criminal Code offence to discuss politics at home",
+        "fr": "Discuter de politique à la maison est une infraction au Code criminel"
       },
       {
         "id": "c",
-        "en": "Only lawyers may know"
+        "en": "Only lawyers may know",
+        "fr": "Seuls les avocats peuvent le savoir"
       },
       {
         "id": "d",
-        "en": "The Governor General must be informed first"
+        "en": "The Governor General must be informed first",
+        "fr": "Le gouverneur général doit en être informé d’abord"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Secrecy protects you. You may discuss politics freely; you must not be forced to show a marked ballot."
+      "en": "Secrecy protects you. You may discuss politics freely; you must not be forced to show a marked ballot.",
+      "fr": "Le secret vous protège. Vous pouvez discuter librement de politique; on ne peut pas vous forcer à montrer un bulletin marqué."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -543,21 +639,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prime Minister can legally cancel an election result because the party dislikes it."
+      "en": "The Prime Minister can legally cancel an election result because the party dislikes it.",
+      "fr": "Le premier ministre peut légalement annuler un résultat électoral parce que son parti ne l’aime pas."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Elections Canada counts ballots. Courts can hear legal challenges. The government does not get a veto on the people’s choice."
+      "en": "Elections Canada counts ballots. Courts can hear legal challenges. The government does not get a veto on the people’s choice.",
+      "fr": "Élections Canada compte les bulletins. Les tribunaux peuvent entendre les contestations. Le gouvernement n’a aucun droit de veto sur le choix de la population."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -568,29 +668,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Voters lists exist to:"
+      "en": "Voters lists exist to:",
+      "fr": "Les listes électorales servent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Identify eligible electors, with ways to register if you are missing"
+        "en": "Identify eligible electors, with ways to register if you are missing",
+        "fr": "À recenser les électeurs admissibles, avec des moyens de s’inscrire si vous n’y figurez pas"
       },
       {
         "id": "b",
-        "en": "Publish how you voted last time"
+        "en": "Publish how you voted last time",
+        "fr": "À publier pour qui vous avez voté la dernière fois"
       },
       {
         "id": "c",
-        "en": "Replace citizenship"
+        "en": "Replace citizenship",
+        "fr": "À remplacer la citoyenneté"
       },
       {
         "id": "d",
-        "en": "Appoint senators"
+        "en": "Appoint senators",
+        "fr": "À nommer les sénateurs"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "If you are not on the list, you can usually register with proof of identity and address, including at the polling station in many cases."
+      "en": "If you are not on the list, you can usually register with proof of identity and address, including at the polling station in many cases.",
+      "fr": "Si vous ne figurez pas sur la liste, vous pouvez habituellement vous inscrire avec une preuve d’identité et d’adresse, souvent même au bureau de scrutin."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -601,29 +707,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Scrutineers at a polling place are typically:"
+      "en": "Scrutineers at a polling place are typically:",
+      "fr": "Les représentants présents à un bureau de scrutin sont généralement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Party or candidate representatives watching the count for fairness"
+        "en": "Party or candidate representatives watching the count for fairness",
+        "fr": "Des représentants d’un parti ou d’un candidat qui surveillent le dépouillement pour en assurer l’équité"
       },
       {
         "id": "b",
-        "en": "Supreme Court judges"
+        "en": "Supreme Court judges",
+        "fr": "Des juges de la Cour suprême"
       },
       {
         "id": "c",
-        "en": "Foreign diplomats with votes"
+        "en": "Foreign diplomats with votes",
+        "fr": "Des diplomates étrangers ayant droit de vote"
       },
       {
         "id": "d",
-        "en": "Municipal animal-control officers"
+        "en": "Municipal animal-control officers",
+        "fr": "Des agents municipaux du contrôle animalier"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They observe; they do not mark ballots. Transparency is part of trust in the count."
+      "en": "They observe; they do not mark ballots. Transparency is part of trust in the count.",
+      "fr": "Ils observent; ils ne marquent pas les bulletins. La transparence fait partie de la confiance envers le dépouillement."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A minority government can still govern if it:"
+      "en": "A minority government can still govern if it:",
+      "fr": "Un gouvernement minoritaire peut quand même gouverner s’il :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Wins confidence votes with support from other parties or independents"
+        "en": "Wins confidence votes with support from other parties or independents",
+        "fr": "Remporte les votes de confiance grâce à l’appui d’autres partis ou de députés indépendants"
       },
       {
         "id": "b",
-        "en": "Ignores the House entirely"
+        "en": "Ignores the House entirely",
+        "fr": "Ignore complètement la Chambre des communes"
       },
       {
         "id": "c",
-        "en": "Dissolves the Supreme Court"
+        "en": "Dissolves the Supreme Court",
+        "fr": "Dissout la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Declares ridings abolished"
+        "en": "Declares ridings abolished",
+        "fr": "Déclare les circonscriptions abolies"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Minority parliaments are common. They require negotiation. They are still legitimate governments."
+      "en": "Minority parliaments are common. They require negotiation. They are still legitimate governments.",
+      "fr": "Les parlements minoritaires sont fréquents. Ils exigent de la négociation. Ils forment néanmoins des gouvernements légitimes."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -667,21 +785,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Winning the nationwide popular vote automatically makes a party the government."
+      "en": "Winning the nationwide popular vote automatically makes a party the government.",
+      "fr": "Remporter le vote populaire à l’échelle du pays fait automatiquement d’un parti le gouvernement."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Seats matter, not the popular-vote total alone. A party can win the most votes and still lose the seat race."
+      "en": "Seats matter, not the popular-vote total alone. A party can win the most votes and still lose the seat race.",
+      "fr": "Ce sont les sièges qui comptent, et non le total du vote populaire à lui seul. Un parti peut obtenir le plus de voix et perdre quand même la course aux sièges."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -692,29 +814,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who may be a candidate for MP, in general terms?"
+      "en": "Who may be a candidate for MP, in general terms?",
+      "fr": "De façon générale, qui peut être candidat à la députation fédérale?"
     },
     "options": [
       {
         "id": "a",
-        "en": "A citizen who meets legal eligibility rules and is properly nominated"
+        "en": "A citizen who meets legal eligibility rules and is properly nominated",
+        "fr": "Un citoyen qui satisfait aux règles légales d’admissibilité et dont la candidature est dûment présentée"
       },
       {
         "id": "b",
-        "en": "Any tourist"
+        "en": "Any tourist",
+        "fr": "N’importe quel touriste"
       },
       {
         "id": "c",
-        "en": "Only people born in Ottawa"
+        "en": "Only people born in Ottawa",
+        "fr": "Seulement les personnes nées à Ottawa"
       },
       {
         "id": "d",
-        "en": "Only sitting senators"
+        "en": "Only sitting senators",
+        "fr": "Seulement les sénateurs en poste"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "There are rules on age, citizenship, deposits, and signatures. Criminal disqualifications exist. Birthplace in Ottawa is not one of them."
+      "en": "There are rules on age, citizenship, deposits, and signatures. Criminal disqualifications exist. Birthplace in Ottawa is not one of them.",
+      "fr": "Des règles portent sur l’âge, la citoyenneté, le cautionnement et les signatures. Des inadmissibilités liées à des infractions existent. Être né à Ottawa n’en fait pas partie."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -725,29 +853,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The writ of election is:"
+      "en": "The writ of election is:",
+      "fr": "Le bref d’élection est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The formal order that starts an election in a riding"
+        "en": "The formal order that starts an election in a riding",
+        "fr": "L’ordre officiel qui déclenche l’élection dans une circonscription"
       },
       {
         "id": "b",
-        "en": "A Supreme Court novel"
+        "en": "A Supreme Court novel",
+        "fr": "Un roman de la Cour suprême"
       },
       {
         "id": "c",
-        "en": "A municipal parking ticket"
+        "en": "A municipal parking ticket",
+        "fr": "Un constat d’infraction de stationnement municipal"
       },
       {
         "id": "d",
-        "en": "The Speech from the Throne"
+        "en": "The Speech from the Throne",
+        "fr": "Le discours du Trône"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "When writs are issued, the campaign clock runs. Returning officers then administer the vote locally."
+      "en": "When writs are issued, the campaign clock runs. Returning officers then administer the vote locally.",
+      "fr": "Dès l’émission des brefs, le compte à rebours de la campagne commence. Les directeurs du scrutin administrent ensuite le vote sur place."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -758,29 +892,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If you are away from home, you may still vote by:"
+      "en": "If you are away from home, you may still vote by:",
+      "fr": "Si vous êtes loin de chez vous, vous pouvez quand même voter :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Special ballot or other Elections Canada procedures"
+        "en": "Special ballot or other Elections Canada procedures",
+        "fr": "Par bulletin spécial ou par d’autres procédures d’Élections Canada"
       },
       {
         "id": "b",
-        "en": "Emailing the Prime Minister your choice"
+        "en": "Emailing the Prime Minister your choice",
+        "fr": "En envoyant votre choix par courriel au premier ministre"
       },
       {
         "id": "c",
-        "en": "Asking a neighbour to mark your ballot for you as they wish"
+        "en": "Asking a neighbour to mark your ballot for you as they wish",
+        "fr": "En demandant à un voisin de marquer votre bulletin à sa guise"
       },
       {
         "id": "d",
-        "en": "Voting in a U.S. presidential primary"
+        "en": "Voting in a U.S. presidential primary",
+        "fr": "En votant à une primaire présidentielle américaine"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "There are lawful absentee methods. Giving someone else your vote to use as they please is not one of them."
+      "en": "There are lawful absentee methods. Giving someone else your vote to use as they please is not one of them.",
+      "fr": "Des méthodes légales existent pour voter à distance. Confier votre vote à quelqu’un qui en fera ce qu’il veut n’en est pas une."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -791,21 +931,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "It is illegal to take a photo of your marked federal ballot to show others as a general practice; ballot secrecy rules apply."
+      "en": "It is illegal to take a photo of your marked federal ballot to show others as a general practice; ballot secrecy rules apply.",
+      "fr": "En règle générale, il est interdit de photographier votre bulletin fédéral marqué pour le montrer à d’autres; les règles sur le secret du vote s’appliquent."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The point of the secret ballot is that nobody can demand proof of your vote. Follow Elections Canada rules at the polling place."
+      "en": "The point of the secret ballot is that nobody can demand proof of your vote. Follow Elections Canada rules at the polling place.",
+      "fr": "Le scrutin secret fait que personne ne peut exiger une preuve de votre vote. Respectez les règles d’Élections Canada au bureau de scrutin."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -816,29 +960,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Ridings are designed, in principle, to:"
+      "en": "Ridings are designed, in principle, to:",
+      "fr": "Les circonscriptions sont conçues, en principe, pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Give each MP a roughly comparable number of people to represent, with northern and rural exceptions"
+        "en": "Give each MP a roughly comparable number of people to represent, with northern and rural exceptions",
+        "fr": "Donner à chaque député un nombre de personnes à représenter à peu près comparable, avec des exceptions dans le Nord et en milieu rural"
       },
       {
         "id": "b",
-        "en": "Match NHL team markets"
+        "en": "Match NHL team markets",
+        "fr": "Correspondre aux marchés des équipes de la LNH"
       },
       {
         "id": "c",
-        "en": "Equal the number of senators from each city"
+        "en": "Equal the number of senators from each city",
+        "fr": "Égaler le nombre de sénateurs de chaque ville"
       },
       {
         "id": "d",
-        "en": "Follow subway lines only"
+        "en": "Follow subway lines only",
+        "fr": "Suivre uniquement les lignes de métro"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Independent commissions redraw maps. Geography and communities of interest also matter, especially in the North."
+      "en": "Independent commissions redraw maps. Geography and communities of interest also matter, especially in the North.",
+      "fr": "Des commissions indépendantes redessinent la carte électorale. La géographie et les communautés d’intérêts comptent aussi, surtout dans le Nord."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -849,29 +999,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A campaign “transfer of power” after a change of government includes:"
+      "en": "A campaign “transfer of power” after a change of government includes:",
+      "fr": "Le « transfert du pouvoir » après un changement de gouvernement comprend :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Swearing in a new Prime Minister and Cabinet"
+        "en": "Swearing in a new Prime Minister and Cabinet",
+        "fr": "L’assermentation d’un nouveau premier ministre et d’un nouveau Cabinet"
       },
       {
         "id": "b",
-        "en": "Repealing the Constitution automatically"
+        "en": "Repealing the Constitution automatically",
+        "fr": "L’abrogation automatique de la Constitution"
       },
       {
         "id": "c",
-        "en": "Firing all judges"
+        "en": "Firing all judges",
+        "fr": "Le congédiement de tous les juges"
       },
       {
         "id": "d",
-        "en": "Closing Elections Canada forever"
+        "en": "Closing Elections Canada forever",
+        "fr": "La fermeture définitive d’Élections Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The public service stays. Ministers change. That is how a parliamentary system rotates power without a revolution."
+      "en": "The public service stays. Ministers change. That is how a parliamentary system rotates power without a revolution.",
+      "fr": "La fonction publique demeure en place. Les ministres changent. C’est ainsi qu’un régime parlementaire fait alterner le pouvoir sans révolution."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -882,29 +1038,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Why do some people say “vote splitting” matters in first past the post?"
+      "en": "Why do some people say “vote splitting” matters in first past the post?",
+      "fr": "Pourquoi dit-on que la « division du vote » compte dans un scrutin majoritaire à un tour?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Similar parties can divide votes and let another candidate win the riding with less than half"
+        "en": "Similar parties can divide votes and let another candidate win the riding with less than half",
+        "fr": "Des partis semblables peuvent se partager les voix et laisser un autre candidat remporter la circonscription avec moins de la moitié des voix"
       },
       {
         "id": "b",
-        "en": "Every vote is transferred until someone has 50%"
+        "en": "Every vote is transferred until someone has 50%",
+        "fr": "Chaque vote est transféré jusqu’à ce que quelqu’un atteigne 50 %"
       },
       {
         "id": "c",
-        "en": "Senators break ties in each poll"
+        "en": "Senators break ties in each poll",
+        "fr": "Les sénateurs brisent les égalités dans chaque bureau de scrutin"
       },
       {
         "id": "d",
-        "en": "The Governor General picks the local winner"
+        "en": "The Governor General picks the local winner",
+        "fr": "Le gouverneur général choisit le gagnant local"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Plurality means the top vote-getter wins. That is a feature of the system, not a glitch in the counting machines."
+      "en": "Plurality means the top vote-getter wins. That is a feature of the system, not a glitch in the counting machines.",
+      "fr": "La pluralité veut dire que celui qui récolte le plus de voix gagne. C’est une caractéristique du système, non un défaut du dépouillement."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -915,21 +1077,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Federal election day voting is open to anyone who shows a hydro bill, even if they are not a citizen."
+      "en": "Federal election day voting is open to anyone who shows a hydro bill, even if they are not a citizen.",
+      "fr": "Le jour du scrutin fédéral, quiconque présente une facture d’électricité peut voter, même sans être citoyen."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "ID proves who you are and where you live. It does not replace citizenship."
+      "en": "ID proves who you are and where you live. It does not replace citizenship.",
+      "fr": "Les pièces d’identité prouvent qui vous êtes et où vous habitez. Elles ne remplacent pas la citoyenneté."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -940,29 +1106,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "To vote on election day you generally need to:"
+      "en": "To vote on election day you generally need to:",
+      "fr": "Pour voter le jour du scrutin, vous devez généralement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Prove your identity and address according to Elections Canada rules"
+        "en": "Prove your identity and address according to Elections Canada rules",
+        "fr": "Prouver votre identité et votre adresse selon les règles d’Élections Canada"
       },
       {
         "id": "b",
-        "en": "Bring a letter from your MP"
+        "en": "Bring a letter from your MP",
+        "fr": "Apporter une lettre de votre député"
       },
       {
         "id": "c",
-        "en": "Speak both official languages fluently"
+        "en": "Speak both official languages fluently",
+        "fr": "Parler couramment les deux langues officielles"
       },
       {
         "id": "d",
-        "en": "Pay a poll tax"
+        "en": "Pay a poll tax",
+        "fr": "Payer une taxe électorale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Several ID combinations are accepted. Citizenship is still required; a hydro bill alone does not make a non-citizen a voter."
+      "en": "Several ID combinations are accepted. Citizenship is still required; a hydro bill alone does not make a non-citizen a voter.",
+      "fr": "Plusieurs combinaisons de pièces d’identité sont acceptées. La citoyenneté demeure obligatoire; une facture d’électricité ne fait pas d’un non-citoyen un électeur."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -973,29 +1145,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Enumeration historically meant:"
+      "en": "Enumeration historically meant:",
+      "fr": "Historiquement, le recensement électoral consistait :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Going door to door to build the voters list"
+        "en": "Going door to door to build the voters list",
+        "fr": "À faire du porte-à-porte pour dresser la liste électorale"
       },
       {
         "id": "b",
-        "en": "Appointing senators"
+        "en": "Appointing senators",
+        "fr": "À nommer des sénateurs"
       },
       {
         "id": "c",
-        "en": "Counting Supreme Court votes"
+        "en": "Counting Supreme Court votes",
+        "fr": "À compter les votes de la Cour suprême"
       },
       {
         "id": "d",
-        "en": "A type of municipal compost program"
+        "en": "A type of municipal compost program",
+        "fr": "En un type de programme municipal de compostage"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada now relies more on a National Register of Electors. You should still check that you are on the list."
+      "en": "Canada now relies more on a National Register of Electors. You should still check that you are on the list.",
+      "fr": "Le Canada s’appuie maintenant davantage sur le Registre national des électeurs. Vérifiez quand même que vous figurez sur la liste."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1006,21 +1184,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Third-party advertising in federal campaigns is regulated so that groups besides parties cannot spend without limits or disclosure."
+      "en": "Third-party advertising in federal campaigns is regulated so that groups besides parties cannot spend without limits or disclosure.",
+      "fr": "La publicité des tiers pendant les campagnes fédérales est encadrée, de sorte que des groupes autres que les partis ne peuvent pas dépenser sans plafond ni divulgation."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The idea is a fairer fight, not a ban on all speech. Parties, candidates, and third parties all face rules."
+      "en": "The idea is a fairer fight, not a ban on all speech. Parties, candidates, and third parties all face rules.",
+      "fr": "L’idée est une lutte plus équitable, non une interdiction de toute expression. Les partis, les candidats et les tiers sont tous assujettis à des règles."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1031,29 +1213,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A returning officer is:"
+      "en": "A returning officer is:",
+      "fr": "Un directeur du scrutin est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The local Elections Canada official who runs the vote in a riding"
+        "en": "The local Elections Canada official who runs the vote in a riding",
+        "fr": "Le fonctionnaire local d’Élections Canada qui administre le vote dans une circonscription"
       },
       {
         "id": "b",
-        "en": "A Cabinet minister who counts ballots in secret"
+        "en": "A Cabinet minister who counts ballots in secret",
+        "fr": "Un ministre du Cabinet qui compte les bulletins en secret"
       },
       {
         "id": "c",
-        "en": "A senator who vetoes results"
+        "en": "A senator who vetoes results",
+        "fr": "Un sénateur qui bloque les résultats"
       },
       {
         "id": "d",
-        "en": "The Prime Minister’s campaign manager"
+        "en": "The Prime Minister’s campaign manager",
+        "fr": "Le directeur de campagne du premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Each electoral district has one. They are not the candidate."
+      "en": "Each electoral district has one. They are not the candidate.",
+      "fr": "Chaque circonscription électorale en compte un. Ce n’est pas le candidat."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1064,29 +1252,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Special (write-in or mail) ballots exist mainly so that:"
+      "en": "Special (write-in or mail) ballots exist mainly so that:",
+      "fr": "Les bulletins spéciaux (par la poste ou à inscription manuscrite) existent surtout pour que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "People who cannot get to an ordinary poll can still vote"
+        "en": "People who cannot get to an ordinary poll can still vote",
+        "fr": "Les personnes qui ne peuvent pas se rendre à un bureau de scrutin ordinaire puissent quand même voter"
       },
       {
         "id": "b",
-        "en": "Non-citizens can elect the Speaker"
+        "en": "Non-citizens can elect the Speaker",
+        "fr": "Les non-citoyens puissent élire le président de la Chambre des communes"
       },
       {
         "id": "c",
-        "en": "The Senate can vote in House races"
+        "en": "The Senate can vote in House races",
+        "fr": "Le Sénat puisse voter dans les courses aux Communes"
       },
       {
         "id": "d",
-        "en": "Tourists can pick the Prime Minister"
+        "en": "Tourists can pick the Prime Minister",
+        "fr": "Les touristes puissent choisir le premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Students, travellers, some workers, and Canadians abroad may have special-ballot options. Rules are specific; guesswork is not."
+      "en": "Students, travellers, some workers, and Canadians abroad may have special-ballot options. Rules are specific; guesswork is not.",
+      "fr": "Les étudiants, les voyageurs, certains travailleurs et les Canadiens à l’étranger peuvent avoir accès au bulletin spécial. Les règles sont précises; il ne faut pas improviser."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1097,29 +1291,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If you move to a new riding you should:"
+      "en": "If you move to a new riding you should:",
+      "fr": "Si vous déménagez dans une nouvelle circonscription, vous devriez :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Update your voter registration so you are on the correct list"
+        "en": "Update your voter registration so you are on the correct list",
+        "fr": "Mettre à jour votre inscription pour figurer sur la bonne liste électorale"
       },
       {
         "id": "b",
-        "en": "Keep voting in your old riding forever"
+        "en": "Keep voting in your old riding forever",
+        "fr": "Continuer de voter dans votre ancienne circonscription pour toujours"
       },
       {
         "id": "c",
-        "en": "Ask the Governor General to move the riding with you"
+        "en": "Ask the Governor General to move the riding with you",
+        "fr": "Demander au gouverneur général de déplacer la circonscription avec vous"
       },
       {
         "id": "d",
-        "en": "Give up the right to vote"
+        "en": "Give up the right to vote",
+        "fr": "Renoncer à votre droit de vote"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "You vote where you reside (with some special rules). Lists go stale if you do not update."
+      "en": "You vote where you reside (with some special rules). Lists go stale if you do not update.",
+      "fr": "Vous votez là où vous résidez (sous réserve de quelques règles particulières). Les listes se périment si vous ne les mettez pas à jour."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1130,21 +1330,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Federal election campaigns have a minimum length set by law once the writs are issued."
+      "en": "Federal election campaigns have a minimum length set by law once the writs are issued.",
+      "fr": "Les campagnes électorales fédérales ont une durée minimale fixée par la loi dès l’émission des brefs."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "There is also a maximum life of a House. Combined, that is why election timing is not a complete free-for-all."
+      "en": "There is also a maximum life of a House. Combined, that is why election timing is not a complete free-for-all.",
+      "fr": "Il existe aussi une durée maximale pour une législature. Ensemble, ces règles font que le choix de la date n’est pas entièrement libre."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1155,29 +1359,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "An independent candidate is someone who:"
+      "en": "An independent candidate is someone who:",
+      "fr": "Un candidat indépendant est une personne qui :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Runs without a party label"
+        "en": "Runs without a party label",
+        "fr": "Se présente sans étiquette de parti"
       },
       {
         "id": "b",
-        "en": "Is appointed by the Senate"
+        "en": "Is appointed by the Senate",
+        "fr": "Est nommée par le Sénat"
       },
       {
         "id": "c",
-        "en": "Must be a judge"
+        "en": "Must be a judge",
+        "fr": "Doit être juge"
       },
       {
         "id": "d",
-        "en": "Is chosen by the Governor General as local MP without a vote"
+        "en": "Is chosen by the Governor General as local MP without a vote",
+        "fr": "Est choisie comme députée locale par le gouverneur général, sans vote"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Independents can win. Most MPs still sit as party members."
+      "en": "Independents can win. Most MPs still sit as party members.",
+      "fr": "Des indépendants peuvent gagner. La plupart des députés siègent tout de même sous une bannière de parti."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1188,29 +1398,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Why does the citizenship guide care that you know how to vote?"
+      "en": "Why does the citizenship guide care that you know how to vote?",
+      "fr": "Pourquoi le guide de citoyenneté tient-il à ce que vous sachiez comment voter?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Voting is both a right and a listed responsibility of citizenship"
+        "en": "Voting is both a right and a listed responsibility of citizenship",
+        "fr": "Voter est à la fois un droit et une responsabilité énumérée de la citoyenneté"
       },
       {
         "id": "b",
-        "en": "Only public servants may vote"
+        "en": "Only public servants may vote",
+        "fr": "Seuls les fonctionnaires peuvent voter"
       },
       {
         "id": "c",
-        "en": "Ballots elect senators in every province"
+        "en": "Ballots elect senators in every province",
+        "fr": "Les bulletins servent à élire des sénateurs dans chaque province"
       },
       {
         "id": "d",
-        "en": "The test replaces the election"
+        "en": "The test replaces the election",
+        "fr": "L’examen remplace l’élection"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Knowing the mechanics is how you use the right. Staying home is legal; it is not the civic ideal the guide teaches."
+      "en": "Knowing the mechanics is how you use the right. Staying home is legal; it is not the civic ideal the guide teaches.",
+      "fr": "Connaître la mécanique du vote, c’est ce qui permet d’exercer le droit. Rester à la maison est légal, mais ce n’est pas l’idéal civique enseigné par le guide."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1221,29 +1437,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A coalition government, if one formed, would mean:"
+      "en": "A coalition government, if one formed, would mean:",
+      "fr": "Un gouvernement de coalition, s’il s’en formait un, voudrait dire que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Two or more parties agree to govern together"
+        "en": "Two or more parties agree to govern together",
+        "fr": "Deux partis ou plus s’entendent pour gouverner ensemble"
       },
       {
         "id": "b",
-        "en": "The Supreme Court sits in Cabinet"
+        "en": "The Supreme Court sits in Cabinet",
+        "fr": "La Cour suprême siège au Cabinet"
       },
       {
         "id": "c",
-        "en": "Municipalities run foreign policy"
+        "en": "Municipalities run foreign policy",
+        "fr": "Les municipalités dirigent la politique étrangère"
       },
       {
         "id": "d",
-        "en": "The Monarch picks every deputy minister"
+        "en": "The Monarch picks every deputy minister",
+        "fr": "Le souverain choisit chaque sous-ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada more often uses minority governments with case-by-case support. Coalition is still a parliamentary possibility."
+      "en": "Canada more often uses minority governments with case-by-case support. Coalition is still a parliamentary possibility.",
+      "fr": "Le Canada recourt plus souvent à des gouvernements minoritaires appuyés au cas par cas. La coalition demeure une possibilité parlementaire."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1254,21 +1476,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You may volunteer on a campaign even if you are not a candidate."
+      "en": "You may volunteer on a campaign even if you are not a candidate.",
+      "fr": "Vous pouvez faire du bénévolat dans une campagne même si vous n’êtes pas candidat."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Parties and candidates depend on volunteers. Foreign interference rules still apply; the civic activity itself is normal."
+      "en": "Parties and candidates depend on volunteers. Foreign interference rules still apply; the civic activity itself is normal.",
+      "fr": "Les partis et les candidats dépendent des bénévoles. Les règles sur l’ingérence étrangère s’appliquent toujours; l’activité civique elle-même est tout à fait normale."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1279,29 +1505,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Poll clerks and deputy returning officers at a polling place are there to:"
+      "en": "Poll clerks and deputy returning officers at a polling place are there to:",
+      "fr": "Les greffiers du scrutin et les scrutateurs présents à un bureau de vote sont là pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Administer the vote fairly, not to campaign"
+        "en": "Administer the vote fairly, not to campaign",
+        "fr": "Administrer le vote équitablement, et non pour faire campagne"
       },
       {
         "id": "b",
-        "en": "Tell you which party to support"
+        "en": "Tell you which party to support",
+        "fr": "Vous dire quel parti appuyer"
       },
       {
         "id": "c",
-        "en": "Open your marked ballot to the room"
+        "en": "Open your marked ballot to the room",
+        "fr": "Ouvrir votre bulletin marqué devant la salle"
       },
       {
         "id": "d",
-        "en": "Swear in the Prime Minister"
+        "en": "Swear in the Prime Minister",
+        "fr": "Assermenter le premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They are election workers. Scrutineers watch for parties; they do not run the poll."
+      "en": "They are election workers. Scrutineers watch for parties; they do not run the poll.",
+      "fr": "Ce sont des membres du personnel électoral. Les représentants des candidats surveillent pour les partis; ils n’administrent pas le bureau de scrutin."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1312,29 +1544,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Reapportionment of seats among provinces happens because:"
+      "en": "Reapportionment of seats among provinces happens because:",
+      "fr": "La redistribution des sièges entre les provinces a lieu parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Population changes, and the Constitution plus statute adjust Commons seat counts"
+        "en": "Population changes, and the Constitution plus statute adjust Commons seat counts",
+        "fr": "La population change, et la Constitution ainsi que la loi ajustent le nombre de sièges aux Communes"
       },
       {
         "id": "b",
-        "en": "The Senate demands more MPs in Ottawa’s suburbs only"
+        "en": "The Senate demands more MPs in Ottawa’s suburbs only",
+        "fr": "Le Sénat exige plus de députés uniquement dans la banlieue d’Ottawa"
       },
       {
         "id": "c",
-        "en": "The Governor General picks a lucky province each decade"
+        "en": "The Governor General picks a lucky province each decade",
+        "fr": "Le gouverneur général choisit une province chanceuse chaque décennie"
       },
       {
         "id": "d",
-        "en": "Ridings are banned in the West"
+        "en": "Ridings are banned in the West",
+        "fr": "Les circonscriptions sont interdites dans l’Ouest"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Representation by population is the principle. Senate regional seats are a different design."
+      "en": "Representation by population is the principle. Senate regional seats are a different design.",
+      "fr": "La représentation proportionnelle à la population est le principe directeur. Les sièges régionaux du Sénat suivent une autre logique."
     },
     "source": "Discover Canada — Federal Elections"
   },
@@ -1345,29 +1583,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A recount may be requested or required when:"
+      "en": "A recount may be requested or required when:",
+      "fr": "Un nouveau dépouillement peut être demandé ou obligatoire lorsque :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The margin is very close or there are serious counting concerns"
+        "en": "The margin is very close or there are serious counting concerns",
+        "fr": "L’écart est très serré ou de sérieuses préoccupations entourent le dépouillement"
       },
       {
         "id": "b",
-        "en": "A party simply dislikes the winner"
+        "en": "A party simply dislikes the winner",
+        "fr": "Un parti n’aime tout simplement pas le gagnant"
       },
       {
         "id": "c",
-        "en": "The weather is poor"
+        "en": "The weather is poor",
+        "fr": "Le temps est mauvais"
       },
       {
         "id": "d",
-        "en": "The Speaker wants a different seating plan"
+        "en": "The Speaker wants a different seating plan",
+        "fr": "Le président de la Chambre veut un autre plan de salle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Close races have legal recount rules. Losing on a clear count is not grounds to rerun the election for fun."
+      "en": "Close races have legal recount rules. Losing on a clear count is not grounds to rerun the election for fun.",
+      "fr": "Des règles légales encadrent le nouveau dépouillement dans les courses serrées. Perdre selon un décompte clair n’est pas un motif pour refaire l’élection."
     },
     "source": "Discover Canada — Federal Elections"
   }

@@ -1,0 +1,38 @@
+---
+title: Les régions du Canada
+description: Dix provinces, trois territoires et cinq récits régionaux que l'examen s'attend à vous voir raconter.
+order: 10
+chapter: canadas-regions
+---
+
+Le Canada est le deuxième pays du monde par la superficie, et la plus grande partie de sa population vit à quelques centaines de kilomètres de la frontière des États-Unis. Pour les besoins de l'étude, le guide officiel répartit le pays en cinq régions.
+
+## La carte politique
+
+On compte **dix provinces** et **trois territoires**. Les provinces détiennent des pouvoirs qui leur sont propres en vertu de la Constitution. Les territoires ont été créés par une loi fédérale et obtiennent peu à peu une autonomie gouvernementale plus large.
+
+La **capitale nationale** est **Ottawa**. Ne la confondez pas avec Toronto (capitale de l'Ontario et plus grande ville du pays) ni avec les capitales provinciales en général.
+
+## Les cinq régions
+
+| Région | Provinces et territoires |
+| --- | --- |
+| Atlantique | Terre-Neuve-et-Labrador, Île-du-Prince-Édouard, Nouvelle-Écosse, Nouveau-Brunswick |
+| Centre | Québec, Ontario |
+| Prairies | Manitoba, Saskatchewan, Alberta |
+| Côte Ouest | Colombie-Britannique |
+| Nord | Yukon, Territoires du Nord-Ouest, Nunavut |
+
+Ouvrez chaque page régionale pour y trouver les capitales, la géographie et quelques faits locaux susceptibles d'être évalués. Si vous choisissez une province ou un territoire dans l'application (phase 2), les examens simulés comprendront des questions associées à ce lieu.
+
+## La géographie physique à retenir
+
+- Le **Bouclier canadien** est une immense étendue rocheuse et riche en minéraux qui entoure la baie d'Hudson
+- Les **Grands Lacs** (Supérieur, Michigan, Huron, Érié et Ontario) se déversent vers l'Atlantique par le fleuve Saint-Laurent
+- Les **Prairies** sont des plaines agricoles
+- La **Cordillère** est le système montagneux de l'Ouest
+- L'**Arctique** est peu peuplé, stratégiquement important et habité par les Inuits et d'autres peuples du Nord
+
+## Comment étudier ce chapitre
+
+D'abord les faits nationaux (la capitale, le nombre de provinces et de territoires, le découpage en cinq régions). Mémorisez ensuite **votre** capitale, une ou deux provinces voisines et un repère économique ou historique. Les questions régionales du véritable examen portent souvent sur la province du candidat.

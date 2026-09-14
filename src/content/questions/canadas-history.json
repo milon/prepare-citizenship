@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "When did Canada become a country through Confederation?"
+      "en": "When did Canada become a country through Confederation?",
+      "fr": "À quelle date le Canada est-il devenu un pays par la Confédération ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "July 1, 1867"
+        "en": "July 1, 1867",
+        "fr": "Le 1er juillet 1867"
       },
       {
         "id": "b",
-        "en": "July 1, 1812"
+        "en": "July 1, 1812",
+        "fr": "Le 1er juillet 1812"
       },
       {
         "id": "c",
-        "en": "April 17, 1982"
+        "en": "April 17, 1982",
+        "fr": "Le 17 avril 1982"
       },
       {
         "id": "d",
-        "en": "November 11, 1918"
+        "en": "November 11, 1918",
+        "fr": "Le 11 novembre 1918"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The British North America Act created the Dominion of Canada on July 1, 1867, uniting Ontario, Quebec, Nova Scotia, and New Brunswick."
+      "en": "The British North America Act created the Dominion of Canada on July 1, 1867, uniting Ontario, Quebec, Nova Scotia, and New Brunswick.",
+      "fr": "L’Acte de l’Amérique du Nord britannique a donné naissance au Dominion du Canada le 1er juillet 1867, en réunissant l’Ontario, le Québec, la Nouvelle-Écosse et le Nouveau-Brunswick."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who was Canada’s first Prime Minister?"
+      "en": "Who was Canada’s first Prime Minister?",
+      "fr": "Qui a été le premier premier ministre du Canada ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Wilfrid Laurier"
+        "en": "Wilfrid Laurier",
+        "fr": "Wilfrid Laurier"
       },
       {
         "id": "b",
-        "en": "George-Étienne Cartier"
+        "en": "George-Étienne Cartier",
+        "fr": "George-Étienne Cartier"
       },
       {
         "id": "c",
-        "en": "Sir John A. Macdonald"
+        "en": "Sir John A. Macdonald",
+        "fr": "Sir John A. Macdonald"
       },
       {
         "id": "d",
-        "en": "Robert Borden"
+        "en": "Robert Borden",
+        "fr": "Robert Borden"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "Sir John A. Macdonald led the Conservative government after Confederation and is remembered as a principal architect of the new federation."
+      "en": "Sir John A. Macdonald led the Conservative government after Confederation and is remembered as a principal architect of the new federation.",
+      "fr": "Sir John A. Macdonald a dirigé le gouvernement conservateur après la Confédération; on se souvient de lui comme d’un artisan principal de la nouvelle fédération."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -72,29 +84,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What did the Quebec Act of 1774 do?"
+      "en": "What did the Quebec Act of 1774 do?",
+      "fr": "Qu’a fait l’Acte de Québec de 1774 ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "It banned the French language in courts"
+        "en": "It banned the French language in courts",
+        "fr": "Il a interdit l’usage du français devant les tribunaux"
       },
       {
         "id": "b",
-        "en": "It allowed French Catholics to keep their religion and civil law"
+        "en": "It allowed French Catholics to keep their religion and civil law",
+        "fr": "Il a permis aux catholiques francophones de conserver leur religion et le droit civil français"
       },
       {
         "id": "c",
-        "en": "It created the Province of Manitoba"
+        "en": "It created the Province of Manitoba",
+        "fr": "Il a créé la province du Manitoba"
       },
       {
         "id": "d",
-        "en": "It ended the fur trade"
+        "en": "It ended the fur trade",
+        "fr": "Il a mis fin à la traite des fourrures"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Quebec Act protected the French language, Catholic faith, and French civil law in Quebec—an early example of accommodation that still shapes Canada."
+      "en": "The Quebec Act protected the French language, Catholic faith, and French civil law in Quebec—an early example of accommodation that still shapes Canada.",
+      "fr": "L’Acte de Québec a protégé la langue française, la foi catholique et le droit civil français au Québec : un premier geste d’accommodement qui marque encore le pays."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -105,29 +123,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who founded Quebec City in 1608?"
+      "en": "Who founded Quebec City in 1608?",
+      "fr": "Qui a fondé la ville de Québec en 1608 ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Jacques Cartier"
+        "en": "Jacques Cartier",
+        "fr": "Jacques Cartier"
       },
       {
         "id": "b",
-        "en": "Samuel de Champlain"
+        "en": "Samuel de Champlain",
+        "fr": "Samuel de Champlain"
       },
       {
         "id": "c",
-        "en": "John Cabot"
+        "en": "John Cabot",
+        "fr": "Jean Cabot"
       },
       {
         "id": "d",
-        "en": "Lord Durham"
+        "en": "Lord Durham",
+        "fr": "Lord Durham"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Champlain established a lasting French settlement at Quebec, a foundation of New France."
+      "en": "Champlain established a lasting French settlement at Quebec, a foundation of New France.",
+      "fr": "Champlain a implanté à Québec un établissement français durable, pierre d’assise de la Nouvelle-France."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -138,29 +162,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Jacques Cartier’s voyages in the 1530s are important because he:"
+      "en": "Jacques Cartier’s voyages in the 1530s are important because he:",
+      "fr": "Les voyages de Jacques Cartier, dans les années 1530, sont importants parce qu’il a :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Explored the St. Lawrence and claimed the area for France"
+        "en": "Explored the St. Lawrence and claimed the area for France",
+        "fr": "Exploré le Saint-Laurent et revendiqué la région au nom de la France"
       },
       {
         "id": "b",
-        "en": "Built the Canadian Pacific Railway"
+        "en": "Built the Canadian Pacific Railway",
+        "fr": "Construit le chemin de fer Canadien Pacifique"
       },
       {
         "id": "c",
-        "en": "Patriated the Constitution"
+        "en": "Patriated the Constitution",
+        "fr": "Rapatrié la Constitution"
       },
       {
         "id": "d",
-        "en": "Won Vimy Ridge"
+        "en": "Won Vimy Ridge",
+        "fr": "Remporté la bataille de la crête de Vimy"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cartier’s expeditions opened the St. Lawrence to French claims. Permanent settlement came later."
+      "en": "Cartier’s expeditions opened the St. Lawrence to French claims. Permanent settlement came later.",
+      "fr": "Les expéditions de Cartier ont ouvert le Saint-Laurent aux revendications françaises. L’établissement permanent est venu plus tard."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -171,29 +201,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "John Cabot’s 1497 voyage is associated with:"
+      "en": "John Cabot’s 1497 voyage is associated with:",
+      "fr": "Le voyage de Jean Cabot, en 1497, est associé à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "An English claim and the later Atlantic fishery off Newfoundland"
+        "en": "An English claim and the later Atlantic fishery off Newfoundland",
+        "fr": "Une revendication anglaise et, plus tard, la pêche atlantique au large de Terre-Neuve"
       },
       {
         "id": "b",
-        "en": "The founding of Montreal"
+        "en": "The founding of Montreal",
+        "fr": "La fondation de Montréal"
       },
       {
         "id": "c",
-        "en": "The Persons Case"
+        "en": "The Persons Case",
+        "fr": "L’affaire des « personnes »"
       },
       {
         "id": "d",
-        "en": "D-Day"
+        "en": "D-Day",
+        "fr": "Le jour J"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cabot (Giovanni Caboto) sailed for England. The rich cod fishery drew Europeans to Newfoundland for centuries."
+      "en": "Cabot (Giovanni Caboto) sailed for England. The rich cod fishery drew Europeans to Newfoundland for centuries.",
+      "fr": "Cabot (Giovanni Caboto) naviguait pour l’Angleterre. Les riches bancs de morue ont attiré les Européens à Terre-Neuve pendant des siècles."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -204,29 +240,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Norse visitors reached the Atlantic around the year 1000. A known site is:"
+      "en": "Norse visitors reached the Atlantic around the year 1000. A known site is:",
+      "fr": "Des visiteurs scandinaves ont atteint la côte atlantique vers l’an 1000. Un site connu est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "L’Anse aux Meadows in Newfoundland"
+        "en": "L’Anse aux Meadows in Newfoundland",
+        "fr": "L’Anse aux Meadows, à Terre-Neuve"
       },
       {
         "id": "b",
-        "en": "Vimy Ridge"
+        "en": "Vimy Ridge",
+        "fr": "La crête de Vimy"
       },
       {
         "id": "c",
-        "en": "Batoche"
+        "en": "Batoche",
+        "fr": "Batoche"
       },
       {
         "id": "d",
-        "en": "Juno Beach"
+        "en": "Juno Beach",
+        "fr": "La plage Juno"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "L’Anse aux Meadows is evidence of Viking presence. It did not lead to lasting European settlement."
+      "en": "L’Anse aux Meadows is evidence of Viking presence. It did not lead to lasting European settlement.",
+      "fr": "L’Anse aux Meadows témoigne de la présence viking. Cette présence n’a pas mené à un établissement européen durable."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -237,29 +279,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Hudson’s Bay Company was founded in:"
+      "en": "The Hudson’s Bay Company was founded in:",
+      "fr": "La Compagnie de la Baie d’Hudson a été fondée en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1608"
+        "en": "1608",
+        "fr": "1608"
       },
       {
         "id": "b",
-        "en": "1670"
+        "en": "1670",
+        "fr": "1670"
       },
       {
         "id": "c",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "d",
-        "en": "1982"
+        "en": "1982",
+        "fr": "1982"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "A royal charter in 1670 created a fur-trade empire over a huge drainage basin called Rupert’s Land."
+      "en": "A royal charter in 1670 created a fur-trade empire over a huge drainage basin called Rupert’s Land.",
+      "fr": "Une charte royale accordée en 1670 a créé un empire de la fourrure sur un immense bassin hydrographique appelé la Terre de Rupert."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -270,29 +318,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Battle of the Plains of Abraham (1759) was fought at:"
+      "en": "The Battle of the Plains of Abraham (1759) was fought at:",
+      "fr": "La bataille des plaines d’Abraham (1759) s’est déroulée :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec"
+        "en": "Quebec",
+        "fr": "À Québec"
       },
       {
         "id": "b",
-        "en": "Vancouver"
+        "en": "Vancouver",
+        "fr": "À Vancouver"
       },
       {
         "id": "c",
-        "en": "Winnipeg"
+        "en": "Winnipeg",
+        "fr": "À Winnipeg"
       },
       {
         "id": "d",
-        "en": "Halifax Citadel only in 1917"
+        "en": "Halifax Citadel only in 1917",
+        "fr": "À la citadelle d’Halifax, seulement en 1917"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "British forces under Wolfe defeated the French under Montcalm. New France fell; 1763 confirmed British control."
+      "en": "British forces under Wolfe defeated the French under Montcalm. New France fell; 1763 confirmed British control.",
+      "fr": "Les troupes britanniques de Wolfe ont vaincu les forces françaises de Montcalm. La Nouvelle-France est tombée et 1763 a confirmé la domination britannique."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -303,29 +357,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Royal Proclamation of 1763 is important in Indigenous history because it:"
+      "en": "The Royal Proclamation of 1763 is important in Indigenous history because it:",
+      "fr": "La Proclamation royale de 1763 est importante dans l’histoire autochtone parce qu’elle a :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Set rules for Crown dealings with Indigenous lands"
+        "en": "Set rules for Crown dealings with Indigenous lands",
+        "fr": "Établi des règles encadrant les rapports de la Couronne avec les terres autochtones"
       },
       {
         "id": "b",
-        "en": "Created the Province of Alberta"
+        "en": "Created the Province of Alberta",
+        "fr": "Créé la province de l’Alberta"
       },
       {
         "id": "c",
-        "en": "Banned all treaties"
+        "en": "Banned all treaties",
+        "fr": "Interdit tous les traités"
       },
       {
         "id": "d",
-        "en": "Ended the fur trade"
+        "en": "Ended the fur trade",
+        "fr": "Mis fin à la traite des fourrures"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It recognized Indigenous land interests and required Crown treaties before settlement in many areas. It is still cited in law."
+      "en": "It recognized Indigenous land interests and required Crown treaties before settlement in many areas. It is still cited in law.",
+      "fr": "Elle reconnaissait les intérêts fonciers des peuples autochtones et exigeait des traités avec la Couronne avant la colonisation dans bien des régions. On l’invoque encore devant les tribunaux."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -336,29 +396,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Constitutional Act of 1791 created:"
+      "en": "The Constitutional Act of 1791 created:",
+      "fr": "L’Acte constitutionnel de 1791 a créé :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Upper Canada and Lower Canada"
+        "en": "Upper Canada and Lower Canada",
+        "fr": "Le Haut-Canada et le Bas-Canada"
       },
       {
         "id": "b",
-        "en": "Nunavut and Yukon"
+        "en": "Nunavut and Yukon",
+        "fr": "Le Nunavut et le Yukon"
       },
       {
         "id": "c",
-        "en": "NATO and NORAD"
+        "en": "NATO and NORAD",
+        "fr": "L’OTAN et NORAD"
       },
       {
         "id": "d",
-        "en": "The Senate and the Bank of Canada"
+        "en": "The Senate and the Bank of Canada",
+        "fr": "Le Sénat et la Banque du Canada"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Upper Canada (Ontario) was mainly English and Protestant; Lower Canada (Quebec) remained mainly French and Catholic."
+      "en": "Upper Canada (Ontario) was mainly English and Protestant; Lower Canada (Quebec) remained mainly French and Catholic.",
+      "fr": "Le Haut-Canada (l’Ontario) était surtout anglophone et protestant; le Bas-Canada (le Québec) est demeuré surtout francophone et catholique."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -369,29 +435,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A result of the War of 1812 in British North America was that:"
+      "en": "A result of the War of 1812 in British North America was that:",
+      "fr": "Une conséquence de la guerre de 1812 en Amérique du Nord britannique est que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The colonies remained British rather than being absorbed by the United States"
+        "en": "The colonies remained British rather than being absorbed by the United States",
+        "fr": "Les colonies sont restées britanniques au lieu d’être absorbées par les États-Unis"
       },
       {
         "id": "b",
-        "en": "Canada joined the United States"
+        "en": "Canada joined the United States",
+        "fr": "Le Canada s’est joint aux États-Unis"
       },
       {
         "id": "c",
-        "en": "Confederation happened immediately"
+        "en": "Confederation happened immediately",
+        "fr": "La Confédération a eu lieu immédiatement"
       },
       {
         "id": "d",
-        "en": "The French language was banned"
+        "en": "The French language was banned",
+        "fr": "La langue française a été interdite"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "American invasions failed to take the colonies. The war became part of English-Canadian founding mythology, alongside Indigenous and Québécois stories."
+      "en": "American invasions failed to take the colonies. The war became part of English-Canadian founding mythology, alongside Indigenous and Québécois stories.",
+      "fr": "Les invasions américaines n’ont pas réussi à prendre les colonies. Cette guerre est devenue un récit fondateur du Canada anglais, aux côtés des récits autochtones et québécois."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -402,29 +474,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Laura Secord is remembered for:"
+      "en": "Laura Secord is remembered for:",
+      "fr": "On se souvient de Laura Secord pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Warning British forces of an American attack during the War of 1812"
+        "en": "Warning British forces of an American attack during the War of 1812",
+        "fr": "Avoir prévenu les troupes britanniques d’une attaque américaine pendant la guerre de 1812"
       },
       {
         "id": "b",
-        "en": "Founding the RCMP"
+        "en": "Founding the RCMP",
+        "fr": "Avoir fondé la GRC"
       },
       {
         "id": "c",
-        "en": "Writing O Canada"
+        "en": "Writing O Canada",
+        "fr": "Avoir écrit l’hymne Ô Canada"
       },
       {
         "id": "d",
-        "en": "Discovering gold in the Yukon"
+        "en": "Discovering gold in the Yukon",
+        "fr": "Avoir découvert de l’or au Yukon"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Her walk to warn of a planned attack is a classic War of 1812 story taught in the guide."
+      "en": "Her walk to warn of a planned attack is a classic War of 1812 story taught in the guide.",
+      "fr": "Sa longue marche pour annoncer une attaque prévue est un récit classique de la guerre de 1812 présenté dans le guide."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -435,29 +513,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Sir Isaac Brock is associated with:"
+      "en": "Sir Isaac Brock is associated with:",
+      "fr": "Sir Isaac Brock est associé à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Defending Upper Canada in the War of 1812"
+        "en": "Defending Upper Canada in the War of 1812",
+        "fr": "La défense du Haut-Canada pendant la guerre de 1812"
       },
       {
         "id": "b",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "La Révolution tranquille"
       },
       {
         "id": "c",
-        "en": "The Charter of 1982"
+        "en": "The Charter of 1982",
+        "fr": "La Charte de 1982"
       },
       {
         "id": "d",
-        "en": "D-Day planning"
+        "en": "D-Day planning",
+        "fr": "La planification du jour J"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Brock, with Indigenous allies including Tecumseh’s confederacy, was a key commander. He was killed at Queenston Heights."
+      "en": "Brock, with Indigenous allies including Tecumseh’s confederacy, was a key commander. He was killed at Queenston Heights.",
+      "fr": "Brock, appuyé par des alliés autochtones dont la confédération de Tecumseh, était un commandant clé. Il est mort à Queenston Heights."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -468,29 +552,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Underground Railroad refers to:"
+      "en": "The Underground Railroad refers to:",
+      "fr": "Le chemin de fer clandestin désigne :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A network that helped enslaved people reach freedom in Canada"
+        "en": "A network that helped enslaved people reach freedom in Canada",
+        "fr": "Un réseau qui aidait les personnes réduites en esclavage à gagner la liberté au Canada"
       },
       {
         "id": "b",
-        "en": "The first subway in Toronto"
+        "en": "The first subway in Toronto",
+        "fr": "Le premier métro de Toronto"
       },
       {
         "id": "c",
-        "en": "A CPR tunnel in the Rockies only"
+        "en": "A CPR tunnel in the Rockies only",
+        "fr": "Uniquement un tunnel du Canadien Pacifique dans les Rocheuses"
       },
       {
         "id": "d",
-        "en": "A World War II spy ring in Ottawa"
+        "en": "A World War II spy ring in Ottawa",
+        "fr": "Un réseau d’espionnage à Ottawa pendant la Seconde Guerre mondiale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "British North America, especially Canada West, became a destination after slavery was abolished in the British Empire."
+      "en": "British North America, especially Canada West, became a destination after slavery was abolished in the British Empire.",
+      "fr": "L’Amérique du Nord britannique, surtout le Canada-Ouest, est devenue une terre d’accueil après l’abolition de l’esclavage dans l’Empire britannique."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -501,29 +591,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Responsible government means that:"
+      "en": "Responsible government means that:",
+      "fr": "Le gouvernement responsable signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Cabinet must keep the confidence of the elected assembly"
+        "en": "Cabinet must keep the confidence of the elected assembly",
+        "fr": "Le Cabinet doit conserver la confiance de l’assemblée élue"
       },
       {
         "id": "b",
-        "en": "The Monarch writes all laws alone"
+        "en": "The Monarch writes all laws alone",
+        "fr": "Le monarque rédige seul toutes les lois"
       },
       {
         "id": "c",
-        "en": "Judges run elections"
+        "en": "Judges run elections",
+        "fr": "Les juges organisent les élections"
       },
       {
         "id": "d",
-        "en": "Municipalities control the army"
+        "en": "Municipalities control the army",
+        "fr": "Les municipalités dirigent l’armée"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Nova Scotia achieved it first (1847–48). The Province of Canada followed. It is still the core convention of Canadian democracy."
+      "en": "Nova Scotia achieved it first (1847–48). The Province of Canada followed. It is still the core convention of Canadian democracy.",
+      "fr": "La Nouvelle-Écosse l’a obtenu la première (1847-1848), puis la Province du Canada a suivi. C’est toujours la convention centrale de la démocratie canadienne."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -534,29 +630,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Reformers Robert Baldwin and Sir Louis-Hippolyte La Fontaine are associated with:"
+      "en": "Reformers Robert Baldwin and Sir Louis-Hippolyte La Fontaine are associated with:",
+      "fr": "Les réformistes Robert Baldwin et sir Louis-Hippolyte La Fontaine sont associés à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Responsible government and French–English political partnership"
+        "en": "Responsible government and French–English political partnership",
+        "fr": "Le gouvernement responsable et le partenariat politique entre francophones et anglophones"
       },
       {
         "id": "b",
-        "en": "Building NATO"
+        "en": "Building NATO",
+        "fr": "La création de l’OTAN"
       },
       {
         "id": "c",
-        "en": "The Persons Case"
+        "en": "The Persons Case",
+        "fr": "L’affaire des « personnes »"
       },
       {
         "id": "d",
-        "en": "Creating Nunavut"
+        "en": "Creating Nunavut",
+        "fr": "La création du Nunavut"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "They showed that French- and English-speaking reformers could govern together in the 1840s."
+      "en": "They showed that French- and English-speaking reformers could govern together in the 1840s.",
+      "fr": "Ils ont démontré, dans les années 1840, que des réformistes francophones et anglophones pouvaient gouverner ensemble."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -567,29 +669,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which four provinces joined Confederation in 1867?"
+      "en": "Which four provinces joined Confederation in 1867?",
+      "fr": "Quelles quatre provinces se sont unies lors de la Confédération de 1867 ?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ontario, Quebec, Nova Scotia, and New Brunswick"
+        "en": "Ontario, Quebec, Nova Scotia, and New Brunswick",
+        "fr": "L’Ontario, le Québec, la Nouvelle-Écosse et le Nouveau-Brunswick"
       },
       {
         "id": "b",
-        "en": "Ontario, Quebec, Manitoba, and British Columbia"
+        "en": "Ontario, Quebec, Manitoba, and British Columbia",
+        "fr": "L’Ontario, le Québec, le Manitoba et la Colombie-Britannique"
       },
       {
         "id": "c",
-        "en": "Nova Scotia, PEI, Newfoundland, and New Brunswick"
+        "en": "Nova Scotia, PEI, Newfoundland, and New Brunswick",
+        "fr": "La Nouvelle-Écosse, l’Île-du-Prince-Édouard, Terre-Neuve et le Nouveau-Brunswick"
       },
       {
         "id": "d",
-        "en": "Alberta, Saskatchewan, Manitoba, and Ontario"
+        "en": "Alberta, Saskatchewan, Manitoba, and Ontario",
+        "fr": "L’Alberta, la Saskatchewan, le Manitoba et l’Ontario"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Those four formed the Dominion. Other provinces joined later."
+      "en": "Those four formed the Dominion. Other provinces joined later.",
+      "fr": "Ces quatre provinces ont formé le Dominion. Les autres se sont joints plus tard."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -600,29 +708,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Sir George-Étienne Cartier is best known as:"
+      "en": "Sir George-Étienne Cartier is best known as:",
+      "fr": "Sir George-Étienne Cartier est surtout connu comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A leading Quebec Father of Confederation"
+        "en": "A leading Quebec Father of Confederation",
+        "fr": "Un grand Père de la Confédération venu du Québec"
       },
       {
         "id": "b",
-        "en": "Canada’s first woman MP"
+        "en": "Canada’s first woman MP",
+        "fr": "La première députée du Canada"
       },
       {
         "id": "c",
-        "en": "The designer of the maple leaf flag"
+        "en": "The designer of the maple leaf flag",
+        "fr": "Le concepteur du drapeau à la feuille d’érable"
       },
       {
         "id": "d",
-        "en": "Governor General in 1982"
+        "en": "Governor General in 1982",
+        "fr": "Le gouverneur général en 1982"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cartier helped bring Canada East (Quebec) into Confederation and was Macdonald’s key partner."
+      "en": "Cartier helped bring Canada East (Quebec) into Confederation and was Macdonald’s key partner.",
+      "fr": "Cartier a contribué à faire entrer le Canada-Est (le Québec) dans la Confédération et il était le principal allié de Macdonald."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -633,29 +747,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Charlottetown Conference of 1864 is important because:"
+      "en": "The Charlottetown Conference of 1864 is important because:",
+      "fr": "La Conférence de Charlottetown de 1864 est importante parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "It began the talks that led to Confederation"
+        "en": "It began the talks that led to Confederation",
+        "fr": "Elle a lancé les pourparlers qui ont mené à la Confédération"
       },
       {
         "id": "b",
-        "en": "It created the Charter"
+        "en": "It created the Charter",
+        "fr": "Elle a créé la Charte"
       },
       {
         "id": "c",
-        "en": "It ended World War I"
+        "en": "It ended World War I",
+        "fr": "Elle a mis fin à la Première Guerre mondiale"
       },
       {
         "id": "d",
-        "en": "It founded the Hudson’s Bay Company"
+        "en": "It founded the Hudson’s Bay Company",
+        "fr": "Elle a fondé la Compagnie de la Baie d’Hudson"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Maritime union talks widened into a federal project. Quebec and London conferences followed."
+      "en": "Maritime union talks widened into a federal project. Quebec and London conferences followed.",
+      "fr": "Des discussions sur une union des Maritimes se sont élargies en projet fédéral. Les conférences de Québec et de Londres ont suivi."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -666,29 +786,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Manitoba entered Confederation in:"
+      "en": "Manitoba entered Confederation in:",
+      "fr": "Le Manitoba est entré dans la Confédération en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1870"
+        "en": "1870",
+        "fr": "1870"
       },
       {
         "id": "c",
-        "en": "1905"
+        "en": "1905",
+        "fr": "1905"
       },
       {
         "id": "d",
-        "en": "1949"
+        "en": "1949",
+        "fr": "1949"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "After the Red River Resistance, the Manitoba Act created a new province in 1870."
+      "en": "After the Red River Resistance, the Manitoba Act created a new province in 1870.",
+      "fr": "Après la résistance de la rivière Rouge, la Loi sur le Manitoba a créé une nouvelle province en 1870."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -699,29 +825,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Louis Riel is a central figure in:"
+      "en": "Louis Riel is a central figure in:",
+      "fr": "Louis Riel est une figure centrale de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Red River Resistance and the later North-West Resistance"
+        "en": "The Red River Resistance and the later North-West Resistance",
+        "fr": "La résistance de la rivière Rouge et, plus tard, de la résistance du Nord-Ouest"
       },
       {
         "id": "b",
-        "en": "The Dieppe raid"
+        "en": "The Dieppe raid",
+        "fr": "Le raid de Dieppe"
       },
       {
         "id": "c",
-        "en": "The Official Languages Act"
+        "en": "The Official Languages Act",
+        "fr": "La Loi sur les langues officielles"
       },
       {
         "id": "d",
-        "en": "The founding of Halifax"
+        "en": "The founding of Halifax",
+        "fr": "La fondation d’Halifax"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Riel led Métis at Red River (1869–70) and in 1885. He remains a contested founder of Manitoba and a Métis hero."
+      "en": "Riel led Métis at Red River (1869–70) and in 1885. He remains a contested founder of Manitoba and a Métis hero.",
+      "fr": "Riel a dirigé les Métis à la rivière Rouge (1869-1870) et en 1885. Il demeure un fondateur contesté du Manitoba et un héros métis."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -732,29 +864,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "British Columbia joined Canada in 1871 after Ottawa promised:"
+      "en": "British Columbia joined Canada in 1871 after Ottawa promised:",
+      "fr": "La Colombie-Britannique s’est jointe au Canada en 1871 après qu’Ottawa a promis :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A transcontinental railway"
+        "en": "A transcontinental railway",
+        "fr": "Un chemin de fer transcontinental"
       },
       {
         "id": "b",
-        "en": "Immediate Senate abolition"
+        "en": "Immediate Senate abolition",
+        "fr": "L’abolition immédiate du Sénat"
       },
       {
         "id": "c",
-        "en": "Free oil"
+        "en": "Free oil",
+        "fr": "Du pétrole gratuit"
       },
       {
         "id": "d",
-        "en": "A new official language: Spanish"
+        "en": "A new official language: Spanish",
+        "fr": "Une nouvelle langue officielle : l’espagnol"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The railway promise bound B.C. to the Dominion. The CPR was completed in 1885."
+      "en": "The railway promise bound B.C. to the Dominion. The CPR was completed in 1885.",
+      "fr": "La promesse ferroviaire a lié la Colombie-Britannique au Dominion. Le Canadien Pacifique a été achevé en 1885."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -765,29 +903,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Prince Edward Island joined Confederation in:"
+      "en": "Prince Edward Island joined Confederation in:",
+      "fr": "L’Île-du-Prince-Édouard est entrée dans la Confédération en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1873"
+        "en": "1873",
+        "fr": "1873"
       },
       {
         "id": "c",
-        "en": "1949"
+        "en": "1949",
+        "fr": "1949"
       },
       {
         "id": "d",
-        "en": "1999"
+        "en": "1999",
+        "fr": "1999"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "PEI hosted the 1864 talks but joined later, in 1873, after financial and railway pressures."
+      "en": "PEI hosted the 1864 talks but joined later, in 1873, after financial and railway pressures.",
+      "fr": "L’Île a accueilli les pourparlers de 1864, mais elle n’a adhéré qu’en 1873, sous la pression des finances et du chemin de fer."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -798,29 +942,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The North-West Mounted Police (forerunner of the RCMP) were created in the 1870s to:"
+      "en": "The North-West Mounted Police (forerunner of the RCMP) were created in the 1870s to:",
+      "fr": "La Police à cheval du Nord-Ouest (ancêtre de la GRC) a été créée dans les années 1870 pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Bring Canadian authority to the Plains and the North-West"
+        "en": "Bring Canadian authority to the Plains and the North-West",
+        "fr": "Étendre l’autorité canadienne aux Prairies et au Nord-Ouest"
       },
       {
         "id": "b",
-        "en": "Command NATO"
+        "en": "Command NATO",
+        "fr": "Commander l’OTAN"
       },
       {
         "id": "c",
-        "en": "Replace the Supreme Court"
+        "en": "Replace the Supreme Court",
+        "fr": "Remplacer la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Run federal elections"
+        "en": "Run federal elections",
+        "fr": "Organiser les élections fédérales"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Ottawa wanted order, Canadian sovereignty, and a presence as settlement and treaties expanded westward."
+      "en": "Ottawa wanted order, Canadian sovereignty, and a presence as settlement and treaties expanded westward.",
+      "fr": "Ottawa voulait de l’ordre, une souveraineté canadienne affirmée et une présence sur le terrain à mesure que la colonisation et les traités progressaient vers l’ouest."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -831,29 +981,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The last spike of the Canadian Pacific Railway was driven in:"
+      "en": "The last spike of the Canadian Pacific Railway was driven in:",
+      "fr": "Le dernier crampon du chemin de fer Canadien Pacifique a été posé en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1885"
+        "en": "1885",
+        "fr": "1885"
       },
       {
         "id": "c",
-        "en": "1917"
+        "en": "1917",
+        "fr": "1917"
       },
       {
         "id": "d",
-        "en": "1945"
+        "en": "1945",
+        "fr": "1945"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Completion in 1885 linked British Columbia to the east by rail and is a standard test date."
+      "en": "Completion in 1885 linked British Columbia to the east by rail and is a standard test date.",
+      "fr": "L’achèvement du chemin de fer en 1885 a relié la Colombie-Britannique à l’est du pays; c’est une date d’examen courante."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -864,29 +1020,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The North-West Resistance of 1885 ended with:"
+      "en": "The North-West Resistance of 1885 ended with:",
+      "fr": "La résistance du Nord-Ouest de 1885 s’est terminée par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Defeat of the Métis and First Nations forces and the hanging of Louis Riel"
+        "en": "Defeat of the Métis and First Nations forces and the hanging of Louis Riel",
+        "fr": "La défaite des forces métisses et des Premières Nations et la pendaison de Louis Riel"
       },
       {
         "id": "b",
-        "en": "Quebec independence"
+        "en": "Quebec independence",
+        "fr": "L’indépendance du Québec"
       },
       {
         "id": "c",
-        "en": "The Statute of Westminster"
+        "en": "The Statute of Westminster",
+        "fr": "Le Statut de Westminster"
       },
       {
         "id": "d",
-        "en": "Victory at Vimy"
+        "en": "Victory at Vimy",
+        "fr": "La victoire de Vimy"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The 1885 conflict and Riel’s execution deepened divides, especially in Quebec, and remain historically charged."
+      "en": "The 1885 conflict and Riel’s execution deepened divides, especially in Quebec, and remain historically charged.",
+      "fr": "Le conflit de 1885 et l’exécution de Riel ont creusé les divisions, surtout au Québec, et restent une question historique très sensible."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -897,29 +1059,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Klondike Gold Rush of the late 1890s took place mainly in:"
+      "en": "The Klondike Gold Rush of the late 1890s took place mainly in:",
+      "fr": "La ruée vers l’or du Klondike, à la fin des années 1890, s’est déroulée principalement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Yukon"
+        "en": "Yukon",
+        "fr": "Au Yukon"
       },
       {
         "id": "b",
-        "en": "Prince Edward Island"
+        "en": "Prince Edward Island",
+        "fr": "À l’Île-du-Prince-Édouard"
       },
       {
         "id": "c",
-        "en": "Nova Scotia’s Annapolis Valley"
+        "en": "Nova Scotia’s Annapolis Valley",
+        "fr": "Dans la vallée de l’Annapolis, en Nouvelle-Écosse"
       },
       {
         "id": "d",
-        "en": "Downtown Ottawa"
+        "en": "Downtown Ottawa",
+        "fr": "Au centre-ville d’Ottawa"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Dawson and the Yukon River basin drew tens of thousands. The rush is Yukon’s classic historic hook."
+      "en": "Dawson and the Yukon River basin drew tens of thousands. The rush is Yukon’s classic historic hook.",
+      "fr": "Dawson et le bassin du fleuve Yukon ont attiré des dizaines de milliers de personnes. Cette ruée est le grand repère historique du Yukon."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -930,29 +1098,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Newfoundland and Labrador joined Canada in:"
+      "en": "Newfoundland and Labrador joined Canada in:",
+      "fr": "Terre-Neuve-et-Labrador est entrée dans la Confédération en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1871"
+        "en": "1871",
+        "fr": "1871"
       },
       {
         "id": "c",
-        "en": "1905"
+        "en": "1905",
+        "fr": "1905"
       },
       {
         "id": "d",
-        "en": "1949"
+        "en": "1949",
+        "fr": "1949"
       }
     ],
     "correctOptionId": "d",
     "explanation": {
-      "en": "After referendums, Newfoundland became the tenth province in 1949."
+      "en": "After referendums, Newfoundland became the tenth province in 1949.",
+      "fr": "Après des référendums, Terre-Neuve est devenue la dixième province en 1949."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -963,29 +1137,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada entered the First World War in 1914 because:"
+      "en": "Canada entered the First World War in 1914 because:",
+      "fr": "Le Canada est entré dans la Première Guerre mondiale en 1914 parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "It was part of the British Empire, which was at war"
+        "en": "It was part of the British Empire, which was at war",
+        "fr": "Il faisait partie de l’Empire britannique, qui était en guerre"
       },
       {
         "id": "b",
-        "en": "NATO required it"
+        "en": "NATO required it",
+        "fr": "L’OTAN l’exigeait"
       },
       {
         "id": "c",
-        "en": "The United Nations voted for it"
+        "en": "The United Nations voted for it",
+        "fr": "Les Nations Unies l’avaient voté"
       },
       {
         "id": "d",
-        "en": "Nunavut asked for it"
+        "en": "Nunavut asked for it",
+        "fr": "Le Nunavut l’avait demandé"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "In 1914 Canada did not make a separate declaration. Military contribution still became a national coming-of-age story."
+      "en": "In 1914 Canada did not make a separate declaration. Military contribution still became a national coming-of-age story.",
+      "fr": "En 1914, le Canada n’a pas fait de déclaration distincte. Sa contribution militaire est tout de même devenue un récit d’affirmation nationale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -996,29 +1176,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Canadian Corps’ capture of Vimy Ridge happened in:"
+      "en": "The Canadian Corps’ capture of Vimy Ridge happened in:",
+      "fr": "La prise de la crête de Vimy par le Corps canadien a eu lieu en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1917"
+        "en": "1917",
+        "fr": "1917"
       },
       {
         "id": "c",
-        "en": "1944"
+        "en": "1944",
+        "fr": "1944"
       },
       {
         "id": "d",
-        "en": "1982"
+        "en": "1982",
+        "fr": "1982"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "April 1917 at Vimy became a symbol of Canadian skill and sacrifice in the First World War."
+      "en": "April 1917 at Vimy became a symbol of Canadian skill and sacrifice in the First World War.",
+      "fr": "Avril 1917, à Vimy, est devenu un symbole du savoir-faire et du sacrifice des Canadiens pendant la Première Guerre mondiale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1029,29 +1215,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Most women gained the right to vote in federal elections in:"
+      "en": "Most women gained the right to vote in federal elections in:",
+      "fr": "La plupart des femmes ont obtenu le droit de vote aux élections fédérales en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1918"
+        "en": "1918",
+        "fr": "1918"
       },
       {
         "id": "c",
-        "en": "1982"
+        "en": "1982",
+        "fr": "1982"
       },
       {
         "id": "d",
-        "en": "1999"
+        "en": "1999",
+        "fr": "1999"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Wartime measures in 1917 and a 1918 law extended the federal vote to many women. Status Indian women and some others waited longer."
+      "en": "Wartime measures in 1917 and a 1918 law extended the federal vote to many women. Status Indian women and some others waited longer.",
+      "fr": "Des mesures de guerre en 1917, puis une loi de 1918, ont accordé le vote fédéral à de nombreuses femmes. Les femmes ayant le statut d’Indienne et certaines autres ont dû attendre bien plus longtemps."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1062,29 +1254,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Agnes Macphail is remembered as:"
+      "en": "Agnes Macphail is remembered as:",
+      "fr": "On se souvient d’Agnes Macphail comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The first woman elected to the House of Commons (1921)"
+        "en": "The first woman elected to the House of Commons (1921)",
+        "fr": "La première femme élue à la Chambre des communes (1921)"
       },
       {
         "id": "b",
-        "en": "Canada’s first Prime Minister"
+        "en": "Canada’s first Prime Minister",
+        "fr": "La première personne à occuper le poste de premier ministre du Canada"
       },
       {
         "id": "c",
-        "en": "The designer of the beaver emblem"
+        "en": "The designer of the beaver emblem",
+        "fr": "La conceptrice de l’emblème du castor"
       },
       {
         "id": "d",
-        "en": "The founder of New France"
+        "en": "The founder of New France",
+        "fr": "La fondatrice de la Nouvelle-France"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "She entered Parliament after women won the federal vote. She is a standard name on women’s political history."
+      "en": "She entered Parliament after women won the federal vote. She is a standard name on women’s political history.",
+      "fr": "Elle est entrée au Parlement après l’obtention du droit de vote fédéral par les femmes. Son nom revient toujours dans l’histoire politique des femmes."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1095,29 +1293,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Persons Case (1929) decided that:"
+      "en": "The Persons Case (1929) decided that:",
+      "fr": "L’affaire des « personnes » (1929) a établi que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Women are “persons” who can be appointed to the Senate"
+        "en": "Women are “persons” who can be appointed to the Senate",
+        "fr": "Les femmes sont des « personnes » pouvant être nommées au Sénat"
       },
       {
         "id": "b",
-        "en": "Only men can be judges"
+        "en": "Only men can be judges",
+        "fr": "Seuls les hommes peuvent être juges"
       },
       {
         "id": "c",
-        "en": "Quebec is not a province"
+        "en": "Quebec is not a province",
+        "fr": "Le Québec n’est pas une province"
       },
       {
         "id": "d",
-        "en": "The Charter has no equality rights"
+        "en": "The Charter has no equality rights",
+        "fr": "La Charte ne contient aucun droit à l’égalité"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Famous Five took the case to the Judicial Committee of the Privy Council, which reversed a narrower Canadian ruling."
+      "en": "The Famous Five took the case to the Judicial Committee of the Privy Council, which reversed a narrower Canadian ruling.",
+      "fr": "Les Célèbres cinq ont porté la cause devant le Comité judiciaire du Conseil privé, qui a renversé une décision canadienne plus restrictive."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1128,29 +1332,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Statute of Westminster (1931) is important because it:"
+      "en": "The Statute of Westminster (1931) is important because it:",
+      "fr": "Le Statut de Westminster (1931) est important parce qu’il a :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Recognized Canada’s autonomy in making its own laws and treaties"
+        "en": "Recognized Canada’s autonomy in making its own laws and treaties",
+        "fr": "Reconnu l’autonomie du Canada pour adopter ses propres lois et conclure ses traités"
       },
       {
         "id": "b",
-        "en": "Created Confederation"
+        "en": "Created Confederation",
+        "fr": "Créé la Confédération"
       },
       {
         "id": "c",
-        "en": "Adopted the maple leaf flag"
+        "en": "Adopted the maple leaf flag",
+        "fr": "Adopté le drapeau à la feuille d’érable"
       },
       {
         "id": "d",
-        "en": "Founded the RCMP"
+        "en": "Founded the RCMP",
+        "fr": "Fondé la GRC"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a key step from Dominion status toward full sovereignty. Patriation in 1982 completed the constitutional story."
+      "en": "It is a key step from Dominion status toward full sovereignty. Patriation in 1982 completed the constitutional story.",
+      "fr": "C’est une étape clé entre le statut de dominion et la pleine souveraineté. Le rapatriement de 1982 a complété ce parcours constitutionnel."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1161,29 +1371,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada entered the Second World War in 1939 by:"
+      "en": "Canada entered the Second World War in 1939 by:",
+      "fr": "Le Canada est entré dans la Seconde Guerre mondiale en 1939 :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A Canadian declaration of war, a week after Britain"
+        "en": "A Canadian declaration of war, a week after Britain",
+        "fr": "Par une déclaration de guerre canadienne, une semaine après la Grande-Bretagne"
       },
       {
         "id": "b",
-        "en": "Automatic imperial entry with no Canadian decision"
+        "en": "Automatic imperial entry with no Canadian decision",
+        "fr": "Automatiquement, par l’Empire, sans décision canadienne"
       },
       {
         "id": "c",
-        "en": "A United Nations command"
+        "en": "A United Nations command",
+        "fr": "Par un commandement des Nations Unies"
       },
       {
         "id": "d",
-        "en": "Joining the United States in 1941 only"
+        "en": "Joining the United States in 1941 only",
+        "fr": "En se joignant aux États-Unis, seulement en 1941"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Unlike 1914, Canada’s Parliament made its own declaration (10 September 1939). That showed growing independence."
+      "en": "Unlike 1914, Canada’s Parliament made its own declaration (10 September 1939). That showed growing independence.",
+      "fr": "Contrairement à 1914, le Parlement du Canada a fait sa propre déclaration, le 10 septembre 1939. Cela montrait une indépendance grandissante."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1194,29 +1410,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Dieppe raid of 1942 was:"
+      "en": "The Dieppe raid of 1942 was:",
+      "fr": "Le raid de Dieppe, en 1942, a été :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A costly Allied attack on the French coast with heavy Canadian losses"
+        "en": "A costly Allied attack on the French coast with heavy Canadian losses",
+        "fr": "Une attaque alliée très coûteuse sur la côte française, avec de lourdes pertes canadiennes"
       },
       {
         "id": "b",
-        "en": "The liberation of the Netherlands"
+        "en": "The liberation of the Netherlands",
+        "fr": "La libération des Pays-Bas"
       },
       {
         "id": "c",
-        "en": "The capture of Vimy Ridge"
+        "en": "The capture of Vimy Ridge",
+        "fr": "La prise de la crête de Vimy"
       },
       {
         "id": "d",
-        "en": "A gold rush"
+        "en": "A gold rush",
+        "fr": "Une ruée vers l’or"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Dieppe failed with terrible casualties. It is still taught as a hard lesson before later invasions."
+      "en": "Dieppe failed with terrible casualties. It is still taught as a hard lesson before later invasions.",
+      "fr": "Dieppe s’est soldé par un échec et des pertes terribles. On l’enseigne encore comme une dure leçon avant les débarquements ultérieurs."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1227,29 +1449,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "On D-Day, 6 June 1944, Canadian forces landed at:"
+      "en": "On D-Day, 6 June 1944, Canadian forces landed at:",
+      "fr": "Le jour J, le 6 juin 1944, les forces canadiennes ont débarqué :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Juno Beach in Normandy"
+        "en": "Juno Beach in Normandy",
+        "fr": "À la plage Juno, en Normandie"
       },
       {
         "id": "b",
-        "en": "Pearl Harbor"
+        "en": "Pearl Harbor",
+        "fr": "À Pearl Harbor"
       },
       {
         "id": "c",
-        "en": "Vimy Ridge"
+        "en": "Vimy Ridge",
+        "fr": "À la crête de Vimy"
       },
       {
         "id": "d",
-        "en": "Dieppe only"
+        "en": "Dieppe only",
+        "fr": "À Dieppe seulement"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Juno was the Canadian beach in the Normandy invasion, a turning point in the war in Europe."
+      "en": "Juno was the Canadian beach in the Normandy invasion, a turning point in the war in Europe.",
+      "fr": "Juno était la plage canadienne du débarquement de Normandie, un tournant de la guerre en Europe."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1260,29 +1488,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canadian troops are especially remembered in 1944–45 for helping to liberate:"
+      "en": "Canadian troops are especially remembered in 1944–45 for helping to liberate:",
+      "fr": "En 1944-1945, on se souvient particulièrement des troupes canadiennes pour avoir aidé à libérer :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Netherlands"
+        "en": "The Netherlands",
+        "fr": "Les Pays-Bas"
       },
       {
         "id": "b",
-        "en": "Mexico"
+        "en": "Mexico",
+        "fr": "Le Mexique"
       },
       {
         "id": "c",
-        "en": "Australia"
+        "en": "Australia",
+        "fr": "L’Australie"
       },
       {
         "id": "d",
-        "en": "Ethiopia in 1867"
+        "en": "Ethiopia in 1867",
+        "fr": "L’Éthiopie en 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Dutch–Canadian wartime bond, including the Hongerwinter relief, is a standard Second World War fact."
+      "en": "The Dutch–Canadian wartime bond, including the Hongerwinter relief, is a standard Second World War fact.",
+      "fr": "Le lien néerlando-canadien né de la guerre, y compris l’aide apportée pendant l’hiver de la faim, est un fait classique de la Seconde Guerre mondiale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1293,29 +1527,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "During the Second World War, Japanese Canadians were:"
+      "en": "During the Second World War, Japanese Canadians were:",
+      "fr": "Pendant la Seconde Guerre mondiale, les Canadiens d’origine japonaise ont été :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Interned, dispossessed, and uprooted from the Pacific coast"
+        "en": "Interned, dispossessed, and uprooted from the Pacific coast",
+        "fr": "Internés, dépossédés et déracinés de la côte du Pacifique"
       },
       {
         "id": "b",
-        "en": "Appointed to Cabinet as a group"
+        "en": "Appointed to Cabinet as a group",
+        "fr": "Nommés en bloc au Cabinet"
       },
       {
         "id": "c",
-        "en": "Exempt from all wartime rules"
+        "en": "Exempt from all wartime rules",
+        "fr": "Exemptés de toutes les règles du temps de guerre"
       },
       {
         "id": "d",
-        "en": "Sent as ambassadors to Tokyo"
+        "en": "Sent as ambassadors to Tokyo",
+        "fr": "Envoyés comme ambassadeurs à Tokyo"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Internment was a grave injustice. Redress came much later. The test still expects you to know it happened."
+      "en": "Internment was a grave injustice. Redress came much later. The test still expects you to know it happened.",
+      "fr": "L’internement a été une grave injustice. Les réparations sont venues bien plus tard. L’examen s’attend à ce que vous sachiez que cela a eu lieu."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1326,29 +1566,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s Constitution was patriated, with the Charter, in:"
+      "en": "Canada’s Constitution was patriated, with the Charter, in:",
+      "fr": "La Constitution du Canada a été rapatriée, avec la Charte, en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1931"
+        "en": "1931",
+        "fr": "1931"
       },
       {
         "id": "c",
-        "en": "1982"
+        "en": "1982",
+        "fr": "1982"
       },
       {
         "id": "d",
-        "en": "1999"
+        "en": "1999",
+        "fr": "1999"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "17 April 1982 in Ottawa, with Queen Elizabeth II and Prime Minister Pierre Trudeau. Quebec did not sign the package."
+      "en": "17 April 1982 in Ottawa, with Queen Elizabeth II and Prime Minister Pierre Trudeau. Quebec did not sign the package.",
+      "fr": "Le 17 avril 1982, à Ottawa, en présence de la reine Elizabeth II et du premier ministre Pierre Trudeau. Le Québec n’a pas signé l’entente."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1359,29 +1605,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Lord Durham’s report after the 1837–38 rebellions recommended:"
+      "en": "Lord Durham’s report after the 1837–38 rebellions recommended:",
+      "fr": "Après les rébellions de 1837-1838, le rapport de lord Durham recommandait :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Responsible government and a union of Upper and Lower Canada"
+        "en": "Responsible government and a union of Upper and Lower Canada",
+        "fr": "Le gouvernement responsable et l’union du Haut-Canada et du Bas-Canada"
       },
       {
         "id": "b",
-        "en": "Immediate independence as a republic"
+        "en": "Immediate independence as a republic",
+        "fr": "L’indépendance immédiate sous forme de république"
       },
       {
         "id": "c",
-        "en": "Joining the United States"
+        "en": "Joining the United States",
+        "fr": "L’annexion aux États-Unis"
       },
       {
         "id": "d",
-        "en": "Abolishing French immediately with no assembly"
+        "en": "Abolishing French immediately with no assembly",
+        "fr": "L’abolition immédiate du français, sans assemblée élue"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Durham also hoped French Canadians would assimilate—a goal that failed. The union and responsible government still reshaped politics."
+      "en": "Durham also hoped French Canadians would assimilate—a goal that failed. The union and responsible government still reshaped politics.",
+      "fr": "Durham espérait aussi l’assimilation des Canadiens français, un objectif qui a échoué. L’union et le gouvernement responsable ont tout de même transformé la vie politique."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1392,21 +1644,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The British North America Act of 1867 is now known as the Constitution Act, 1867."
+      "en": "The British North America Act of 1867 is now known as the Constitution Act, 1867.",
+      "fr": "L’Acte de l’Amérique du Nord britannique de 1867 porte aujourd’hui le nom de Loi constitutionnelle de 1867."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The 1982 patriation renamed it. It still divides federal and provincial powers."
+      "en": "The 1982 patriation renamed it. It still divides federal and provincial powers.",
+      "fr": "Le rapatriement de 1982 l’a renommé. Il partage toujours les compétences entre le fédéral et les provinces."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1417,29 +1673,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Sir Wilfrid Laurier, Prime Minister from 1896, is associated with:"
+      "en": "Sir Wilfrid Laurier, Prime Minister from 1896, is associated with:",
+      "fr": "Sir Wilfrid Laurier, premier ministre à partir de 1896, est associé à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Immigration and western settlement at the turn of the 20th century"
+        "en": "Immigration and western settlement at the turn of the 20th century",
+        "fr": "L’immigration et la colonisation de l’Ouest au tournant du XXe siècle"
       },
       {
         "id": "b",
-        "en": "D-Day"
+        "en": "D-Day",
+        "fr": "Le jour J"
       },
       {
         "id": "c",
-        "en": "The first transatlantic cable in 1608"
+        "en": "The first transatlantic cable in 1608",
+        "fr": "Le premier câble transatlantique en 1608"
       },
       {
         "id": "d",
-        "en": "Creating the Charter"
+        "en": "Creating the Charter",
+        "fr": "La création de la Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Laurier’s era saw a wheat boom and a surge of settlers onto the Prairies."
+      "en": "Laurier’s era saw a wheat boom and a surge of settlers onto the Prairies.",
+      "fr": "L’époque de Laurier a connu un boom du blé et une vague de colons dans les Prairies."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1450,29 +1712,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Alberta and Saskatchewan became provinces in:"
+      "en": "Alberta and Saskatchewan became provinces in:",
+      "fr": "L’Alberta et la Saskatchewan sont devenues des provinces en :"
     },
     "options": [
       {
         "id": "a",
-        "en": "1867"
+        "en": "1867",
+        "fr": "1867"
       },
       {
         "id": "b",
-        "en": "1870"
+        "en": "1870",
+        "fr": "1870"
       },
       {
         "id": "c",
-        "en": "1905"
+        "en": "1905",
+        "fr": "1905"
       },
       {
         "id": "d",
-        "en": "1949"
+        "en": "1949",
+        "fr": "1949"
       }
     ],
     "correctOptionId": "c",
     "explanation": {
-      "en": "They were carved from the North-West Territories in 1905."
+      "en": "They were carved from the North-West Territories in 1905.",
+      "fr": "Elles ont été détachées des Territoires du Nord-Ouest en 1905."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1483,29 +1751,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Conscription crises in 1917 and 1944 were especially bitter in:"
+      "en": "Conscription crises in 1917 and 1944 were especially bitter in:",
+      "fr": "Les crises de la conscription de 1917 et de 1944 ont été particulièrement vives :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Quebec, where many opposed compulsory overseas service"
+        "en": "Quebec, where many opposed compulsory overseas service",
+        "fr": "Au Québec, où beaucoup s’opposaient au service militaire obligatoire outre-mer"
       },
       {
         "id": "b",
-        "en": "Nunavut only"
+        "en": "Nunavut only",
+        "fr": "Au Nunavut seulement"
       },
       {
         "id": "c",
-        "en": "Prince Edward Island potato farms only"
+        "en": "Prince Edward Island potato farms only",
+        "fr": "Seulement dans les fermes de pommes de terre de l’Île-du-Prince-Édouard"
       },
       {
         "id": "d",
-        "en": "The Senate of 1867"
+        "en": "The Senate of 1867",
+        "fr": "Au Sénat de 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "English Canada and French Canada split over forcing men to fight overseas. It is a classic national-unity fact."
+      "en": "English Canada and French Canada split over forcing men to fight overseas. It is a classic national-unity fact.",
+      "fr": "Le Canada anglais et le Canada français se sont divisés sur l’obligation d’aller combattre outre-mer. C’est un fait classique en matière d’unité nationale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1516,21 +1790,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Indigenous nations had trade, diplomacy, and conflict among themselves long before Europeans arrived."
+      "en": "Indigenous nations had trade, diplomacy, and conflict among themselves long before Europeans arrived.",
+      "fr": "Les nations autochtones entretenaient entre elles des échanges commerciaux, des relations diplomatiques et des conflits bien avant l’arrivée des Européens."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "The history chapter does not begin with Cabot. The land was already a political world."
+      "en": "The history chapter does not begin with Cabot. The land was already a political world.",
+      "fr": "Le chapitre d’histoire ne commence pas avec Cabot. Le territoire formait déjà un monde politique."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1541,29 +1819,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Thayendanegea (Joseph Brant) is remembered as:"
+      "en": "Thayendanegea (Joseph Brant) is remembered as:",
+      "fr": "On se souvient de Thayendanegea (Joseph Brant) comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A Mohawk leader who allied with the British and later settled in what became Ontario"
+        "en": "A Mohawk leader who allied with the British and later settled in what became Ontario",
+        "fr": "Un chef mohawk allié des Britanniques, établi plus tard dans ce qui est devenu l’Ontario"
       },
       {
         "id": "b",
-        "en": "Canada’s first Prime Minister"
+        "en": "Canada’s first Prime Minister",
+        "fr": "Le premier premier ministre du Canada"
       },
       {
         "id": "c",
-        "en": "The founder of the Hudson’s Bay Company"
+        "en": "The founder of the Hudson’s Bay Company",
+        "fr": "Le fondateur de la Compagnie de la Baie d’Hudson"
       },
       {
         "id": "d",
-        "en": "A French governor at Louisbourg only"
+        "en": "A French governor at Louisbourg only",
+        "fr": "Uniquement un gouverneur français à Louisbourg"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Brant and Loyalist Haudenosaunee communities are part of the post-Revolution story in Canada."
+      "en": "Brant and Loyalist Haudenosaunee communities are part of the post-Revolution story in Canada.",
+      "fr": "Brant et les communautés haudenosaunee loyalistes font partie de l’histoire canadienne qui suit la Révolution américaine."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1574,29 +1858,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Halifax Explosion of 1917 was:"
+      "en": "The Halifax Explosion of 1917 was:",
+      "fr": "L’explosion d’Halifax, en 1917, a été :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A wartime harbour disaster that devastated the city"
+        "en": "A wartime harbour disaster that devastated the city",
+        "fr": "Une catastrophe portuaire, en temps de guerre, qui a dévasté la ville"
       },
       {
         "id": "b",
-        "en": "A Quiet Revolution protest"
+        "en": "A Quiet Revolution protest",
+        "fr": "Une manifestation de la Révolution tranquille"
       },
       {
         "id": "c",
-        "en": "The last spike ceremony"
+        "en": "The last spike ceremony",
+        "fr": "La cérémonie du dernier crampon"
       },
       {
         "id": "d",
-        "en": "A gold-rush stampede"
+        "en": "A gold-rush stampede",
+        "fr": "Une ruée vers l’or"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Two ships collided, one carrying explosives. It is one of the worst disasters in Canadian history."
+      "en": "Two ships collided, one carrying explosives. It is one of the worst disasters in Canadian history.",
+      "fr": "Deux navires sont entrés en collision, dont un chargé d’explosifs. C’est l’une des pires catastrophes de l’histoire du Canada."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1607,29 +1897,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canada’s soldiers in the First World War included a famous all-Black unit known as:"
+      "en": "Canada’s soldiers in the First World War included a famous all-Black unit known as:",
+      "fr": "Pendant la Première Guerre mondiale, une célèbre unité canadienne entièrement composée de soldats noirs portait le nom de :"
     },
     "options": [
       {
         "id": "a",
-        "en": "No. 2 Construction Battalion"
+        "en": "No. 2 Construction Battalion",
+        "fr": "Bataillon de construction no 2"
       },
       {
         "id": "b",
-        "en": "The Famous Five"
+        "en": "The Famous Five",
+        "fr": "Les Célèbres cinq"
       },
       {
         "id": "c",
-        "en": "The North-West Mounted Police cavalry only"
+        "en": "The North-West Mounted Police cavalry only",
+        "fr": "Uniquement la cavalerie de la Police à cheval du Nord-Ouest"
       },
       {
         "id": "d",
-        "en": "The Senate Guard"
+        "en": "The Senate Guard",
+        "fr": "La garde du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Black volunteers were long kept out of combat roles; this construction battalion is the unit the guide-era story highlights."
+      "en": "Black volunteers were long kept out of combat roles; this construction battalion is the unit the guide-era story highlights.",
+      "fr": "Les volontaires noirs ont longtemps été écartés des rôles de combat; ce bataillon de construction est l’unité que met en lumière le récit de l’époque du guide."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1640,21 +1936,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Women were legally “persons” for Senate appointments before the Persons Case."
+      "en": "Women were legally “persons” for Senate appointments before the Persons Case.",
+      "fr": "Avant l’affaire des « personnes », les femmes étaient juridiquement des « personnes » aux fins des nominations au Sénat."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The Canadian courts had said no. The 1929 decision reversed that and opened the Senate to women."
+      "en": "The Canadian courts had said no. The 1929 decision reversed that and opened the Senate to women.",
+      "fr": "Les tribunaux canadiens avaient dit non. La décision de 1929 a renversé cette position et ouvert le Sénat aux femmes."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1665,29 +1965,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Responsible government in the 1840s meant that:"
+      "en": "Responsible government in the 1840s meant that:",
+      "fr": "Dans les années 1840, le gouvernement responsable signifiait que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Colonial cabinets had to keep the confidence of an elected assembly"
+        "en": "Colonial cabinets had to keep the confidence of an elected assembly",
+        "fr": "Les cabinets coloniaux devaient conserver la confiance d’une assemblée élue"
       },
       {
         "id": "b",
-        "en": "The Monarch moved to Ottawa permanently"
+        "en": "The Monarch moved to Ottawa permanently",
+        "fr": "Le monarque déménageait à Ottawa de façon permanente"
       },
       {
         "id": "c",
-        "en": "Canada joined NATO"
+        "en": "Canada joined NATO",
+        "fr": "Le Canada se joignait à l’OTAN"
       },
       {
         "id": "d",
-        "en": "The Senate elected the Prime Minister"
+        "en": "The Senate elected the Prime Minister",
+        "fr": "Le Sénat élisait le premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Nova Scotia (1848) and the Province of Canada soon after are the usual examples. It is the root of today’s confidence convention."
+      "en": "Nova Scotia (1848) and the Province of Canada soon after are the usual examples. It is the root of today’s confidence convention.",
+      "fr": "La Nouvelle-Écosse (1848), puis peu après la Province du Canada, en sont les exemples habituels. C’est la source de l’actuelle convention de confiance."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1698,29 +2004,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Fenian raids of the 1860s are part of Confederation’s context because they:"
+      "en": "The Fenian raids of the 1860s are part of Confederation’s context because they:",
+      "fr": "Les raids des Fenians, dans les années 1860, font partie du contexte de la Confédération parce qu’ils ont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Showed British North America needed better defence and political union"
+        "en": "Showed British North America needed better defence and political union",
+        "fr": "Montré que l’Amérique du Nord britannique avait besoin d’une meilleure défense et d’une union politique"
       },
       {
         "id": "b",
-        "en": "Created Nunavut"
+        "en": "Created Nunavut",
+        "fr": "Créé le Nunavut"
       },
       {
         "id": "c",
-        "en": "Ended the fur trade"
+        "en": "Ended the fur trade",
+        "fr": "Mis fin à la traite des fourrures"
       },
       {
         "id": "d",
-        "en": "Wrote the Charter of Rights"
+        "en": "Wrote the Charter of Rights",
+        "fr": "Rédigé la Charte des droits"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Irish-American veterans attacked from the United States. The threat helped sell a stronger union."
+      "en": "Irish-American veterans attacked from the United States. The threat helped sell a stronger union.",
+      "fr": "Des vétérans irlando-américains ont attaqué depuis les États-Unis. Cette menace a aidé à faire accepter l’idée d’une union plus solide."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1731,29 +2043,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canadian troops served in South Africa around 1900 in:"
+      "en": "Canadian troops served in South Africa around 1900 in:",
+      "fr": "Vers 1900, des soldats canadiens ont servi en Afrique du Sud dans :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The South African (Boer) War"
+        "en": "The South African (Boer) War",
+        "fr": "La guerre d’Afrique du Sud (guerre des Boers)"
       },
       {
         "id": "b",
-        "en": "The Korean War"
+        "en": "The Korean War",
+        "fr": "La guerre de Corée"
       },
       {
         "id": "c",
-        "en": "The Quiet Revolution"
+        "en": "The Quiet Revolution",
+        "fr": "La Révolution tranquille"
       },
       {
         "id": "d",
-        "en": "The War of 1812"
+        "en": "The War of 1812",
+        "fr": "La guerre de 1812"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It was an early overseas expedition of the new Dominion and a preview of later imperial wars."
+      "en": "It was an early overseas expedition of the new Dominion and a preview of later imperial wars.",
+      "fr": "C’était l’une des premières expéditions outre-mer du nouveau Dominion et un avant-goût des guerres impériales à venir."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1764,21 +2082,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canadian soldiers were captured at Hong Kong after Japan attacked in December 1941."
+      "en": "Canadian soldiers were captured at Hong Kong after Japan attacked in December 1941.",
+      "fr": "Des soldats canadiens ont été faits prisonniers à Hong Kong après l’attaque japonaise de décembre 1941."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Two battalions sent to Hong Kong suffered terrible losses and long imprisonment. It is an early Second World War Canadian story."
+      "en": "Two battalions sent to Hong Kong suffered terrible losses and long imprisonment. It is an early Second World War Canadian story.",
+      "fr": "Deux bataillons envoyés à Hong Kong ont subi des pertes terribles et une longue captivité. C’est un épisode canadien du début de la Seconde Guerre mondiale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1789,29 +2111,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Battle of the Atlantic was important to Canada because:"
+      "en": "The Battle of the Atlantic was important to Canada because:",
+      "fr": "La bataille de l’Atlantique a été importante pour le Canada parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Royal Canadian Navy and merchant sailors fought to keep supply convoys moving"
+        "en": "The Royal Canadian Navy and merchant sailors fought to keep supply convoys moving",
+        "fr": "La Marine royale canadienne et les marins marchands se sont battus pour maintenir la circulation des convois de ravitaillement"
       },
       {
         "id": "b",
-        "en": "It was a prairie land battle in 1885"
+        "en": "It was a prairie land battle in 1885",
+        "fr": "C’était une bataille terrestre dans les Prairies en 1885"
       },
       {
         "id": "c",
-        "en": "It decided the Persons Case"
+        "en": "It decided the Persons Case",
+        "fr": "Elle a tranché l’affaire des « personnes »"
       },
       {
         "id": "d",
-        "en": "It was a municipal election in Halifax"
+        "en": "It was a municipal election in Halifax",
+        "fr": "C’était une élection municipale à Halifax"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "U-boats hunted ships in the North Atlantic. Canada’s navy grew from a tiny force into a major convoy escort."
+      "en": "U-boats hunted ships in the North Atlantic. Canada’s navy grew from a tiny force into a major convoy escort.",
+      "fr": "Les sous-marins allemands traquaient les navires dans l’Atlantique Nord. La marine canadienne est passée d’une force minuscule à une grande flotte d’escorte."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1822,29 +2150,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Canadian soldiers in Italy in 1943–44 are especially associated with hard fighting at places such as:"
+      "en": "Canadian soldiers in Italy in 1943–44 are especially associated with hard fighting at places such as:",
+      "fr": "En Italie, en 1943-1944, les soldats canadiens sont surtout associés à de durs combats dans des lieux comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ortona"
+        "en": "Ortona",
+        "fr": "Ortona"
       },
       {
         "id": "b",
-        "en": "Vimy Ridge in 1917 only"
+        "en": "Vimy Ridge in 1917 only",
+        "fr": "La crête de Vimy, en 1917 seulement"
       },
       {
         "id": "c",
-        "en": "Batoche"
+        "en": "Batoche",
+        "fr": "Batoche"
       },
       {
         "id": "d",
-        "en": "Charlottetown in 1864"
+        "en": "Charlottetown in 1864",
+        "fr": "Charlottetown en 1864"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Italian campaign is a Second World War chapter distinct from Normandy. Ortona became a symbol of that fighting."
+      "en": "The Italian campaign is a Second World War chapter distinct from Normandy. Ortona became a symbol of that fighting.",
+      "fr": "La campagne d’Italie est un chapitre de la Seconde Guerre mondiale distinct de la Normandie. Ortona est devenue le symbole de ces combats."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1855,29 +2189,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The British Commonwealth Air Training Plan in Canada:"
+      "en": "The British Commonwealth Air Training Plan in Canada:",
+      "fr": "Le Programme d’entraînement aérien du Commonwealth britannique, au Canada :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Trained Allied aircrew on Canadian airfields during the Second World War"
+        "en": "Trained Allied aircrew on Canadian airfields during the Second World War",
+        "fr": "A formé des équipages alliés sur des aérodromes canadiens pendant la Seconde Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Built the CPR"
+        "en": "Built the CPR",
+        "fr": "A construit le Canadien Pacifique"
       },
       {
         "id": "c",
-        "en": "Created the Senate"
+        "en": "Created the Senate",
+        "fr": "A créé le Sénat"
       },
       {
         "id": "d",
-        "en": "Was a 19th-century fur-trade school"
+        "en": "Was a 19th-century fur-trade school",
+        "fr": "Était une école de la traite des fourrures au XIXe siècle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada’s skies and space made it a training ground. It is a home-front contribution as well as a military one."
+      "en": "Canada’s skies and space made it a training ground. It is a home-front contribution as well as a military one.",
+      "fr": "Le ciel et les grands espaces du Canada en faisaient un terrain d’entraînement idéal. C’est une contribution du front intérieur autant qu’une contribution militaire."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1888,29 +2228,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The seigneurial system in New France was:"
+      "en": "The seigneurial system in New France was:",
+      "fr": "Le régime seigneurial en Nouvelle-France était :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A way of granting land along the St. Lawrence to seigneurs and tenant farmers"
+        "en": "A way of granting land along the St. Lawrence to seigneurs and tenant farmers",
+        "fr": "Une façon de concéder des terres le long du Saint-Laurent à des seigneurs et à des censitaires"
       },
       {
         "id": "b",
-        "en": "A type of Senate committee"
+        "en": "A type of Senate committee",
+        "fr": "Un type de comité du Sénat"
       },
       {
         "id": "c",
-        "en": "The first past the post voting rule"
+        "en": "The first past the post voting rule",
+        "fr": "La règle du scrutin uninominal majoritaire à un tour"
       },
       {
         "id": "d",
-        "en": "A 1982 constitutional amendment"
+        "en": "A 1982 constitutional amendment",
+        "fr": "Une modification constitutionnelle de 1982"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Long, narrow river lots are still visible from the air. British rule later phased the system out."
+      "en": "Long, narrow river lots are still visible from the air. British rule later phased the system out.",
+      "fr": "Les terres longues et étroites perpendiculaires au fleuve sont encore visibles du haut des airs. Le régime britannique a plus tard aboli progressivement ce système."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1921,21 +2267,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Slavery was abolished throughout the British Empire in the 1830s, including in what is now Canada."
+      "en": "Slavery was abolished throughout the British Empire in the 1830s, including in what is now Canada.",
+      "fr": "L’esclavage a été aboli dans tout l’Empire britannique dans les années 1830, y compris sur le territoire de l’actuel Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Enslavement had existed in New France and British colonies. Imperial abolition, plus later Underground Railroad arrivals, is the testable arc."
+      "en": "Enslavement had existed in New France and British colonies. Imperial abolition, plus later Underground Railroad arrivals, is the testable arc.",
+      "fr": "L’esclavage avait existé en Nouvelle-France et dans les colonies britanniques. L’abolition impériale, puis l’arrivée de personnes par le chemin de fer clandestin, forment la trame à retenir."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1946,29 +2296,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The conscription crisis of 1917 strained unity because:"
+      "en": "The conscription crisis of 1917 strained unity because:",
+      "fr": "La crise de la conscription de 1917 a mis l’unité à l’épreuve parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Many in Quebec opposed compulsory overseas service while English Canada largely supported it"
+        "en": "Many in Quebec opposed compulsory overseas service while English Canada largely supported it",
+        "fr": "Beaucoup de Québécois s’opposaient au service obligatoire outre-mer, alors que le Canada anglais l’appuyait largement"
       },
       {
         "id": "b",
-        "en": "Nunavut refused to join NATO"
+        "en": "Nunavut refused to join NATO",
+        "fr": "Le Nunavut refusait de se joindre à l’OTAN"
       },
       {
         "id": "c",
-        "en": "The Senate banned wheat exports"
+        "en": "The Senate banned wheat exports",
+        "fr": "Le Sénat avait interdit l’exportation du blé"
       },
       {
         "id": "d",
-        "en": "Women were forbidden from factory work"
+        "en": "Women were forbidden from factory work",
+        "fr": "Il était interdit aux femmes de travailler en usine"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Borden’s Union government and the wartime election left scars. A similar fight returned in the Second World War."
+      "en": "Borden’s Union government and the wartime election left scars. A similar fight returned in the Second World War.",
+      "fr": "Le gouvernement d’union de Borden et l’élection en temps de guerre ont laissé des cicatrices. Le même affrontement est revenu pendant la Seconde Guerre mondiale."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -1979,29 +2335,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Sir Robert Borden led Canada during:"
+      "en": "Sir Robert Borden led Canada during:",
+      "fr": "Sir Robert Borden a dirigé le Canada pendant :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The First World War"
+        "en": "The First World War",
+        "fr": "La Première Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Confederation in 1867"
+        "en": "Confederation in 1867",
+        "fr": "La Confédération de 1867"
       },
       {
         "id": "c",
-        "en": "The Quiet Revolution only"
+        "en": "The Quiet Revolution only",
+        "fr": "La Révolution tranquille seulement"
       },
       {
         "id": "d",
-        "en": "The Korean War as Prime Minister"
+        "en": "The Korean War as Prime Minister",
+        "fr": "La guerre de Corée, à titre de premier ministre"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Borden’s wartime government also pushed for a stronger Canadian voice at the peace table."
+      "en": "Borden’s wartime government also pushed for a stronger Canadian voice at the peace table.",
+      "fr": "Le gouvernement de guerre de Borden a aussi réclamé une voix canadienne plus forte à la table des négociations de paix."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -2012,29 +2374,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Representation by population was a Confederation bargaining issue because:"
+      "en": "Representation by population was a Confederation bargaining issue because:",
+      "fr": "La représentation proportionnelle à la population a été un enjeu de négociation à la Confédération parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Canada West wanted seats by population while Canada East feared being outvoted"
+        "en": "Canada West wanted seats by population while Canada East feared being outvoted",
+        "fr": "Le Canada-Ouest voulait des sièges répartis selon la population, alors que le Canada-Est craignait d’être mis en minorité"
       },
       {
         "id": "b",
-        "en": "Only the territories had people"
+        "en": "Only the territories had people",
+        "fr": "Seuls les territoires étaient peuplés"
       },
       {
         "id": "c",
-        "en": "Senators are elected by riding"
+        "en": "Senators are elected by riding",
+        "fr": "Les sénateurs sont élus par circonscription"
       },
       {
         "id": "d",
-        "en": "Municipalities write the Constitution"
+        "en": "Municipalities write the Constitution",
+        "fr": "Les municipalités rédigent la Constitution"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The compromise was an elected Commons by population and a Senate with regional balance."
+      "en": "The compromise was an elected Commons by population and a Senate with regional balance.",
+      "fr": "Le compromis a été une Chambre des communes élue selon la population et un Sénat assurant un équilibre régional."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -2045,29 +2413,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "William Lyon Mackenzie King is associated with:"
+      "en": "William Lyon Mackenzie King is associated with:",
+      "fr": "William Lyon Mackenzie King est associé à :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Leading Canada through most of the Second World War as Prime Minister"
+        "en": "Leading Canada through most of the Second World War as Prime Minister",
+        "fr": "La direction du Canada, comme premier ministre, pendant la majeure partie de la Seconde Guerre mondiale"
       },
       {
         "id": "b",
-        "en": "Founding Quebec City in 1608"
+        "en": "Founding Quebec City in 1608",
+        "fr": "La fondation de la ville de Québec en 1608"
       },
       {
         "id": "c",
-        "en": "Driving the last CPR spike himself"
+        "en": "Driving the last CPR spike himself",
+        "fr": "La pose, de ses propres mains, du dernier crampon du Canadien Pacifique"
       },
       {
         "id": "d",
-        "en": "Writing Magna Carta"
+        "en": "Writing Magna Carta",
+        "fr": "La rédaction de la Grande Charte"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "King is Canada’s longest-serving Prime Minister. The wartime home front and later social programs sit in his era."
+      "en": "King is Canada’s longest-serving Prime Minister. The wartime home front and later social programs sit in his era.",
+      "fr": "King est le premier ministre canadien ayant servi le plus longtemps. Le front intérieur en temps de guerre et les programmes sociaux qui ont suivi appartiennent à son époque."
     },
     "source": "Discover Canada — Canada's History"
   },
@@ -2078,21 +2452,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Fathers of Confederation included leaders from several colonies, not only Sir John A. Macdonald."
+      "en": "The Fathers of Confederation included leaders from several colonies, not only Sir John A. Macdonald.",
+      "fr": "Les Pères de la Confédération comptaient des dirigeants de plusieurs colonies, et non seulement sir John A. Macdonald."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Cartier, Brown, Tupper, Tilley, and others were essential. Macdonald is first among them, not the only one."
+      "en": "Cartier, Brown, Tupper, Tilley, and others were essential. Macdonald is first among them, not the only one.",
+      "fr": "Cartier, Brown, Tupper, Tilley et d’autres ont été essentiels. Macdonald est le premier d’entre eux, mais pas le seul."
     },
     "source": "Discover Canada — Canada's History"
   }

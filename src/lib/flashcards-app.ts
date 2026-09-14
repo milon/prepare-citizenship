@@ -1,6 +1,7 @@
 import type { ChapterId } from '../content/schema';
 import type { ChapterOption, ClientCard } from './client-types';
-import { boxLabel, defaultCardState, isCardDue, markCorrect, markKnown, markLearning } from './leitner';
+import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
+import { defaultCardState, isCardDue, markCorrect, markKnown, markLearning } from './leitner';
 import {
   loadProgress,
   saveProgress,
@@ -29,6 +30,18 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     saveFailed: false,
     storageAvailable: true,
     status: '',
+
+    tx(key: string, vars?: Record<string, string | number>) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return t(key, locale, vars);
+    },
+
+    pick(value: LocalizedText | string) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      return pickLocalized(value, locale);
+    },
 
     init() {
       const params = new URLSearchParams(window.location.search);
@@ -80,35 +93,39 @@ export function flashcardsApp(payload: FlashcardsPayload) {
       this.status = '';
     },
 
+    get printCards(): ClientCard[] {
+      return this.filtered();
+    },
+
     get current(): ClientCard | null {
       return this.deck[this.index] ?? null;
     },
 
     get boxText(): string {
       if (!this.current || !this.progress) {
-        return 'Learning';
+        return this.tx('cards.box1');
       }
       const state = this.progress.flashcardState[this.current.id] ?? defaultCardState();
-      return boxLabel(state.box);
+      return this.tx(`cards.box${state.box}` as 'cards.box1' | 'cards.box2' | 'cards.box3');
     },
 
     get position(): string {
       if (this.deck.length === 0) {
-        return 'No cards';
+        return this.tx('cards.noCards');
       }
-      return `${this.index + 1} of ${this.deck.length}`;
+      return this.tx('cards.of', { n: this.index + 1, total: this.deck.length });
     },
 
     flip() {
       this.flipped = !this.flipped;
-      this.status = this.flipped ? 'Answer showing' : 'Prompt showing';
+      this.status = this.flipped ? this.tx('cards.statusAnswer') : this.tx('cards.statusPrompt');
     },
 
     next() {
       if (this.index < this.deck.length - 1) {
         this.index += 1;
         this.flipped = false;
-        this.status = 'Prompt showing';
+        this.status = this.tx('cards.statusPrompt');
         return;
       }
       this.rebuild();
@@ -125,7 +142,7 @@ export function flashcardsApp(payload: FlashcardsPayload) {
       if (this.index >= this.deck.length) {
         this.index = Math.max(0, this.deck.length - 1);
       }
-      this.status = this.deck.length === 0 ? 'Deck complete' : 'Prompt showing';
+      this.status = this.deck.length === 0 ? this.tx('cards.statusDone') : this.tx('cards.statusPrompt');
     },
 
     gotIt() {

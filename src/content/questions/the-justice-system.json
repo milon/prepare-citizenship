@@ -6,29 +6,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is Canada’s highest court?"
+      "en": "What is Canada’s highest court?",
+      "fr": "Quel est le tribunal le plus élevé au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "The Federal Court of Appeal"
+        "en": "The Federal Court of Appeal",
+        "fr": "La Cour d’appel fédérale"
       },
       {
         "id": "b",
-        "en": "The Supreme Court of Canada"
+        "en": "The Supreme Court of Canada",
+        "fr": "La Cour suprême du Canada"
       },
       {
         "id": "c",
-        "en": "The Provincial Court of Ontario"
+        "en": "The Provincial Court of Ontario",
+        "fr": "La Cour provinciale de l’Ontario"
       },
       {
         "id": "d",
-        "en": "The Senate"
+        "en": "The Senate",
+        "fr": "Le Sénat"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The Supreme Court of Canada is the final court of appeal. It includes a Chief Justice and eight other judges."
+      "en": "The Supreme Court of Canada is the final court of appeal. It includes a Chief Justice and eight other judges.",
+      "fr": "La Cour suprême du Canada est le dernier tribunal d’appel. Elle compte un juge en chef et huit autres juges."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -39,29 +45,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "In Canadian criminal law, a person accused of a crime is:"
+      "en": "In Canadian criminal law, a person accused of a crime is:",
+      "fr": "En droit criminel canadien, la personne accusée d’un crime est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Assumed guilty until a lawyer is hired"
+        "en": "Assumed guilty until a lawyer is hired",
+        "fr": "Présumée coupable jusqu’à ce qu’elle engage un avocat"
       },
       {
         "id": "b",
-        "en": "Presumed innocent until proven guilty"
+        "en": "Presumed innocent until proven guilty",
+        "fr": "Présumée innocente jusqu’à preuve de culpabilité"
       },
       {
         "id": "c",
-        "en": "Tried by the Prime Minister"
+        "en": "Tried by the Prime Minister",
+        "fr": "Jugée par le premier ministre"
       },
       {
         "id": "d",
-        "en": "Unable to remain silent"
+        "en": "Unable to remain silent",
+        "fr": "Incapable de garder le silence"
       }
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The presumption of innocence is a core legal right. The Crown must prove guilt beyond a reasonable doubt."
+      "en": "The presumption of innocence is a core legal right. The Crown must prove guilt beyond a reasonable doubt.",
+      "fr": "La présomption d’innocence est un droit juridique fondamental. La Couronne doit prouver la culpabilité hors de tout doute raisonnable."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -72,21 +84,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Police in Canada always have the right to search a home without a warrant."
+      "en": "Police in Canada always have the right to search a home without a warrant.",
+      "fr": "Au Canada, les policiers ont toujours le droit de perquisitionner une maison sans mandat."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Legal rights include protection against unreasonable search and seizure. In most cases police need lawful authority, often a warrant, before searching a home."
+      "en": "Legal rights include protection against unreasonable search and seizure. In most cases police need lawful authority, often a warrant, before searching a home.",
+      "fr": "Les droits juridiques comprennent la protection contre les fouilles, les perquisitions et les saisies abusives. Dans la plupart des cas, les policiers doivent détenir une autorisation légale, souvent un mandat, avant de perquisitionner une maison."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -97,29 +113,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The rule of law means that:"
+      "en": "The rule of law means that:",
+      "fr": "La primauté du droit signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Everyone, including government, is subject to the law"
+        "en": "Everyone, including government, is subject to the law",
+        "fr": "Tout le monde, y compris le gouvernement, est assujetti à la loi"
       },
       {
         "id": "b",
-        "en": "The Prime Minister is above the Criminal Code"
+        "en": "The Prime Minister is above the Criminal Code",
+        "fr": "Le premier ministre est au-dessus du Code criminel"
       },
       {
         "id": "c",
-        "en": "Police make the law as they go"
+        "en": "Police make the law as they go",
+        "fr": "Les policiers créent la loi au fur et à mesure"
       },
       {
         "id": "d",
-        "en": "Only citizens have to obey statutes"
+        "en": "Only citizens have to obey statutes",
+        "fr": "Seuls les citoyens doivent respecter les lois"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "No one is officially above the law. That is a foundation of Canadian justice."
+      "en": "No one is officially above the law. That is a foundation of Canadian justice.",
+      "fr": "Personne n’est officiellement au-dessus de la loi. C’est un fondement de la justice canadienne."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -130,29 +152,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Criminal law in Canada is mainly made by:"
+      "en": "Criminal law in Canada is mainly made by:",
+      "fr": "Au Canada, le droit criminel est principalement établi par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Parliament (federal)"
+        "en": "Parliament (federal)",
+        "fr": "Le Parlement (fédéral)"
       },
       {
         "id": "b",
-        "en": "City councils"
+        "en": "City councils",
+        "fr": "Les conseils municipaux"
       },
       {
         "id": "c",
-        "en": "School boards"
+        "en": "School boards",
+        "fr": "Les conseils scolaires"
       },
       {
         "id": "d",
-        "en": "The official opposition research office"
+        "en": "The official opposition research office",
+        "fr": "Le bureau de recherche de l’opposition officielle"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Criminal Code is federal. Provinces run many of the courts and some prosecutions, but the offences are national."
+      "en": "The Criminal Code is federal. Provinces run many of the courts and some prosecutions, but the offences are national.",
+      "fr": "Le Code criminel relève du fédéral. Les provinces administrent bon nombre de tribunaux et certaines poursuites, mais les infractions sont les mêmes partout au pays."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -163,29 +191,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Civil law (in the sense of private disputes) covers things like:"
+      "en": "Civil law (in the sense of private disputes) covers things like:",
+      "fr": "Le droit civil, au sens des litiges privés, porte sur des questions comme :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Contracts, family property, and personal injuries"
+        "en": "Contracts, family property, and personal injuries",
+        "fr": "Les contrats, les biens familiaux et les blessures corporelles"
       },
       {
         "id": "b",
-        "en": "Treason and murder only"
+        "en": "Treason and murder only",
+        "fr": "La trahison et le meurtre seulement"
       },
       {
         "id": "c",
-        "en": "Declaring war"
+        "en": "Declaring war",
+        "fr": "La déclaration de guerre"
       },
       {
         "id": "d",
-        "en": "Issuing passports"
+        "en": "Issuing passports",
+        "fr": "La délivrance des passeports"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Crown is not always a party. The standard of proof is the balance of probabilities, not reasonable doubt."
+      "en": "The Crown is not always a party. The standard of proof is the balance of probabilities, not reasonable doubt.",
+      "fr": "La Couronne n’est pas toujours partie au litige. La norme de preuve est la prépondérance des probabilités, et non le doute raisonnable."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -196,29 +230,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Quebec’s private law tradition is:"
+      "en": "Quebec’s private law tradition is:",
+      "fr": "La tradition de droit privé du Québec est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Civil law inherited from France"
+        "en": "Civil law inherited from France",
+        "fr": "Le droit civil hérité de la France"
       },
       {
         "id": "b",
-        "en": "Identical to Yukon custom only"
+        "en": "Identical to Yukon custom only",
+        "fr": "Identique à la seule coutume du Yukon"
       },
       {
         "id": "c",
-        "en": "Sharia as provincial statute"
+        "en": "Sharia as provincial statute",
+        "fr": "La charia comme loi provinciale"
       },
       {
         "id": "d",
-        "en": "U.S. Supreme Court precedent as binding"
+        "en": "U.S. Supreme Court precedent as binding",
+        "fr": "La jurisprudence de la Cour suprême des États-Unis, avec force obligatoire"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Quebec uses a civil code for private law. Other provinces use English-derived common law. Criminal law is statutory and common-law-based nationwide."
+      "en": "Quebec uses a civil code for private law. Other provinces use English-derived common law. Criminal law is statutory and common-law-based nationwide.",
+      "fr": "Le Québec applique un code civil en droit privé. Les autres provinces suivent la common law d’origine anglaise. Le droit criminel, lui, est législatif et s’appuie sur la common law dans tout le pays."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -229,21 +269,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Canadian courts are independent of Cabinet."
+      "en": "Canadian courts are independent of Cabinet.",
+      "fr": "Les tribunaux canadiens sont indépendants du Cabinet."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Judges are not the government’s lawyers. They can rule against the government. That independence is the point."
+      "en": "Judges are not the government’s lawyers. They can rule against the government. That independence is the point.",
+      "fr": "Les juges ne sont pas les avocats du gouvernement. Ils peuvent trancher contre lui. C’est tout l’intérêt de leur indépendance."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -254,29 +298,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "How many judges sit on the Supreme Court of Canada?"
+      "en": "How many judges sit on the Supreme Court of Canada?",
+      "fr": "Combien de juges siègent à la Cour suprême du Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Nine, including the Chief Justice"
+        "en": "Nine, including the Chief Justice",
+        "fr": "Neuf, y compris le juge en chef"
       },
       {
         "id": "b",
-        "en": "One"
+        "en": "One",
+        "fr": "Un"
       },
       {
         "id": "c",
-        "en": "One hundred"
+        "en": "One hundred",
+        "fr": "Cent"
       },
       {
         "id": "d",
-        "en": "Three, all from Ontario"
+        "en": "Three, all from Ontario",
+        "fr": "Trois, tous originaires de l’Ontario"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Nine is the number to remember. By statute, a set number come from Quebec because of its civil-law system."
+      "en": "Nine is the number to remember. By statute, a set number come from Quebec because of its civil-law system.",
+      "fr": "Retenez le chiffre neuf. La loi exige qu’un nombre déterminé d’entre eux viennent du Québec, en raison de son système de droit civil."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -287,29 +337,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The RCMP is:"
+      "en": "The RCMP is:",
+      "fr": "La Gendarmerie royale du Canada est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The federal police force, which also contracts as provincial police in much of Canada"
+        "en": "The federal police force, which also contracts as provincial police in much of Canada",
+        "fr": "Le corps policier fédéral, qui agit aussi comme police provinciale par contrat dans une grande partie du Canada"
       },
       {
         "id": "b",
-        "en": "The Supreme Court’s security contractor only in 1867"
+        "en": "The Supreme Court’s security contractor only in 1867",
+        "fr": "Le fournisseur de sécurité de la Cour suprême, uniquement en 1867"
       },
       {
         "id": "c",
-        "en": "A municipal parking authority"
+        "en": "A municipal parking authority",
+        "fr": "Une autorité municipale du stationnement"
       },
       {
         "id": "d",
-        "en": "The Senate fire brigade"
+        "en": "The Senate fire brigade",
+        "fr": "Le service d’incendie du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Ontario and Quebec have their own provincial police. Elsewhere the RCMP often fills that role by contract."
+      "en": "Ontario and Quebec have their own provincial police. Elsewhere the RCMP often fills that role by contract.",
+      "fr": "L’Ontario et le Québec ont leur propre police provinciale. Ailleurs, la Gendarmerie royale du Canada remplit souvent ce rôle par contrat."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -320,29 +376,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If you are arrested, you should:"
+      "en": "If you are arrested, you should:",
+      "fr": "Si vous êtes arrêté, vous devriez :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ask to speak to a lawyer and not guess your way through questioning"
+        "en": "Ask to speak to a lawyer and not guess your way through questioning",
+        "fr": "Demander à parler à un avocat plutôt que de répondre à l’aveuglette à l’interrogatoire"
       },
       {
         "id": "b",
-        "en": "Invent a story to please the officer"
+        "en": "Invent a story to please the officer",
+        "fr": "Inventer une histoire pour plaire au policier"
       },
       {
         "id": "c",
-        "en": "Name the Prime Minister as your surety automatically"
+        "en": "Name the Prime Minister as your surety automatically",
+        "fr": "Désigner automatiquement le premier ministre comme caution"
       },
       {
         "id": "d",
-        "en": "Refuse to give your name in every circumstance, even when legally required"
+        "en": "Refuse to give your name in every circumstance, even when legally required",
+        "fr": "Refuser de donner votre nom en toute circonstance, même lorsque la loi l’exige"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The right to counsel is practical, not theoretical. Use it."
+      "en": "The right to counsel is practical, not theoretical. Use it.",
+      "fr": "Le droit à l’assistance d’un avocat est concret, et non théorique. Exercez-le."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -353,29 +415,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A jury in a serious criminal trial is meant to be:"
+      "en": "A jury in a serious criminal trial is meant to be:",
+      "fr": "Dans un procès criminel grave, le jury doit être composé :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Impartial members of the public who hear the evidence"
+        "en": "Impartial members of the public who hear the evidence",
+        "fr": "De membres impartiaux du public qui entendent la preuve"
       },
       {
         "id": "b",
-        "en": "The accused’s relatives"
+        "en": "The accused’s relatives",
+        "fr": "Des proches de l’accusé"
       },
       {
         "id": "c",
-        "en": "Cabinet ministers"
+        "en": "Cabinet ministers",
+        "fr": "Des ministres du Cabinet"
       },
       {
         "id": "d",
-        "en": "The arresting officers"
+        "en": "The arresting officers",
+        "fr": "Des policiers qui ont procédé à l’arrestation"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Jury service is a citizenship duty. Jurors decide facts; the judge explains the law."
+      "en": "Jury service is a citizenship duty. Jurors decide facts; the judge explains the law.",
+      "fr": "Faire partie d’un jury est un devoir de citoyenneté. Les jurés tranchent les faits; le juge explique le droit."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -386,21 +454,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You can be forced to testify against yourself in a criminal trial as the accused."
+      "en": "You can be forced to testify against yourself in a criminal trial as the accused.",
+      "fr": "À titre d’accusé dans un procès criminel, on peut vous obliger à témoigner contre vous-même."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The right against self-incrimination and the right to silence are legal rights. The Crown must make its own case."
+      "en": "The right against self-incrimination and the right to silence are legal rights. The Crown must make its own case.",
+      "fr": "La protection contre l’auto-incrimination et le droit au silence font partie des droits juridiques. La Couronne doit monter sa propre preuve."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -411,29 +483,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "“Beyond a reasonable doubt” is the standard of proof in:"
+      "en": "“Beyond a reasonable doubt” is the standard of proof in:",
+      "fr": "La norme de preuve « hors de tout doute raisonnable » s’applique :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Criminal cases"
+        "en": "Criminal cases",
+        "fr": "Aux affaires criminelles"
       },
       {
         "id": "b",
-        "en": "Small-claims fights over a fence"
+        "en": "Small-claims fights over a fence",
+        "fr": "Aux petites créances au sujet d’une clôture"
       },
       {
         "id": "c",
-        "en": "Municipal dog-licence hearings only"
+        "en": "Municipal dog-licence hearings only",
+        "fr": "Aux seules audiences municipales sur les permis pour chiens"
       },
       {
         "id": "d",
-        "en": "Senate seating disputes"
+        "en": "Senate seating disputes",
+        "fr": "Aux différends sur les sièges au Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a high standard because a conviction can take away liberty."
+      "en": "It is a high standard because a conviction can take away liberty.",
+      "fr": "La norme est exigeante parce qu’une condamnation peut priver une personne de sa liberté."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -444,29 +522,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Provincial and territorial courts typically handle:"
+      "en": "Provincial and territorial courts typically handle:",
+      "fr": "Les cours provinciales et territoriales traitent généralement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Most everyday criminal charges and many family or youth matters"
+        "en": "Most everyday criminal charges and many family or youth matters",
+        "fr": "La plupart des accusations criminelles courantes ainsi que de nombreuses affaires familiales ou de justice pour les adolescents"
       },
       {
         "id": "b",
-        "en": "Only constitutional cases about the Monarch"
+        "en": "Only constitutional cases about the Monarch",
+        "fr": "Seulement les causes constitutionnelles portant sur le monarque"
       },
       {
         "id": "c",
-        "en": "NATO disputes"
+        "en": "NATO disputes",
+        "fr": "Les différends de l’OTAN"
       },
       {
         "id": "d",
-        "en": "Federal elections recounts exclusively"
+        "en": "Federal elections recounts exclusively",
+        "fr": "Exclusivement les recomptages des élections fédérales"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Superior courts take the most serious trials and large civil cases. Appeals go further up."
+      "en": "Superior courts take the most serious trials and large civil cases. Appeals go further up.",
+      "fr": "Les cours supérieures entendent les procès les plus graves et les grands litiges civils. Les appels montent encore plus haut."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -477,29 +561,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Judges in Canada are:"
+      "en": "Judges in Canada are:",
+      "fr": "Au Canada, les juges sont :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Appointed, not elected"
+        "en": "Appointed, not elected",
+        "fr": "Nommés, et non élus"
       },
       {
         "id": "b",
-        "en": "Elected on party slogans"
+        "en": "Elected on party slogans",
+        "fr": "Élus au moyen de slogans de parti"
       },
       {
         "id": "c",
-        "en": "Chosen by televised talent shows"
+        "en": "Chosen by televised talent shows",
+        "fr": "Choisis dans des concours télévisés"
       },
       {
         "id": "d",
-        "en": "Always sitting MPs"
+        "en": "Always sitting MPs",
+        "fr": "Toujours des députés en poste"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Appointment plus security of tenure is how Canada tries to keep judging off the campaign trail."
+      "en": "Appointment plus security of tenure is how Canada tries to keep judging off the campaign trail.",
+      "fr": "La nomination jointe à l’inamovibilité est le moyen par lequel le Canada tient la fonction de juger à l’écart des campagnes électorales."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -510,29 +600,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Legal aid exists because:"
+      "en": "Legal aid exists because:",
+      "fr": "L’aide juridique existe parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Rights mean little if you cannot afford a lawyer in serious matters"
+        "en": "Rights mean little if you cannot afford a lawyer in serious matters",
+        "fr": "Les droits valent peu si vous n’avez pas les moyens de payer un avocat dans une affaire grave"
       },
       {
         "id": "b",
-        "en": "Only corporations may have counsel"
+        "en": "Only corporations may have counsel",
+        "fr": "Seules les sociétés peuvent être représentées par un avocat"
       },
       {
         "id": "c",
-        "en": "The Charter bans lawyers"
+        "en": "The Charter bans lawyers",
+        "fr": "La Charte interdit les avocats"
       },
       {
         "id": "d",
-        "en": "Police must defend the accused"
+        "en": "Police must defend the accused",
+        "fr": "Les policiers doivent défendre l’accusé"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Eligibility is limited, but the principle is access to justice, not justice only for the rich."
+      "en": "Eligibility is limited, but the principle is access to justice, not justice only for the rich.",
+      "fr": "L’admissibilité est limitée, mais le principe demeure l’accès à la justice, et non une justice réservée aux riches."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -543,21 +639,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Police decide guilt or innocence."
+      "en": "Police decide guilt or innocence.",
+      "fr": "Ce sont les policiers qui décident de la culpabilité ou de l’innocence."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Police investigate and may charge. Courts decide. That separation is basic."
+      "en": "Police investigate and may charge. Courts decide. That separation is basic.",
+      "fr": "Les policiers enquêtent et peuvent porter des accusations. Les tribunaux tranchent. Cette séparation est fondamentale."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -568,29 +668,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Habeas corpus lets a detained person:"
+      "en": "Habeas corpus lets a detained person:",
+      "fr": "L’habeas corpus permet à une personne détenue :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Ask a court whether the detention is lawful"
+        "en": "Ask a court whether the detention is lawful",
+        "fr": "De demander à un tribunal si sa détention est légale"
       },
       {
         "id": "b",
-        "en": "Rewrite the Criminal Code"
+        "en": "Rewrite the Criminal Code",
+        "fr": "De réécrire le Code criminel"
       },
       {
         "id": "c",
-        "en": "Elect a new Chief Justice"
+        "en": "Elect a new Chief Justice",
+        "fr": "D’élire un nouveau juge en chef"
       },
       {
         "id": "d",
-        "en": "Cancel a federal election"
+        "en": "Cancel a federal election",
+        "fr": "D’annuler une élection fédérale"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is an old writ and a living Charter-era protection against arbitrary holding."
+      "en": "It is an old writ and a living Charter-era protection against arbitrary holding.",
+      "fr": "C’est un recours ancien qui demeure, à l’ère de la Charte, une protection bien vivante contre la détention arbitraire."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -601,29 +707,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A “Crown attorney” or Crown prosecutor represents:"
+      "en": "A “Crown attorney” or Crown prosecutor represents:",
+      "fr": "Le procureur de la Couronne représente :"
     },
     "options": [
       {
         "id": "a",
-        "en": "The state in a criminal case"
+        "en": "The state in a criminal case",
+        "fr": "L’État dans une affaire criminelle"
       },
       {
         "id": "b",
-        "en": "The accused as a public defender always"
+        "en": "The accused as a public defender always",
+        "fr": "L’accusé, toujours à titre d’avocat de la défense"
       },
       {
         "id": "c",
-        "en": "The municipal parks board"
+        "en": "The municipal parks board",
+        "fr": "La commission municipale des parcs"
       },
       {
         "id": "d",
-        "en": "NATO"
+        "en": "NATO",
+        "fr": "L’OTAN"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Crown is the state’s lawyer. Defence counsel represents the accused. They are not the same job."
+      "en": "The Crown is the state’s lawyer. Defence counsel represents the accused. They are not the same job.",
+      "fr": "Le procureur de la Couronne est l’avocat de l’État. L’avocat de la défense représente l’accusé. Ce ne sont pas les mêmes fonctions."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -634,29 +746,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Youth criminal justice in Canada is:"
+      "en": "Youth criminal justice in Canada is:",
+      "fr": "Au Canada, la justice pénale pour les adolescents est :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A separate system with extra emphasis on rehabilitation, still with real consequences"
+        "en": "A separate system with extra emphasis on rehabilitation, still with real consequences",
+        "fr": "Un système distinct qui met davantage l’accent sur la réadaptation, tout en imposant de véritables conséquences"
       },
       {
         "id": "b",
-        "en": "Identical to adult court in every respect, including naming children in the media as a rule"
+        "en": "Identical to adult court in every respect, including naming children in the media as a rule",
+        "fr": "Identique en tout point au tribunal pour adultes, y compris la règle de nommer les enfants dans les médias"
       },
       {
         "id": "c",
-        "en": "Handled only by school principals"
+        "en": "Handled only by school principals",
+        "fr": "Confiée uniquement aux directions d’école"
       },
       {
         "id": "d",
-        "en": "Abolished in 1867"
+        "en": "Abolished in 1867",
+        "fr": "Abolie en 1867"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Young people have a distinct statute. It is not a free pass."
+      "en": "Young people have a distinct statute. It is not a free pass.",
+      "fr": "Les adolescents sont visés par une loi distincte. Ce n’est pas pour autant une impunité."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -667,21 +785,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You have the right to a fair and public hearing before an independent court in criminal matters."
+      "en": "You have the right to a fair and public hearing before an independent court in criminal matters.",
+      "fr": "En matière criminelle, vous avez droit à une audience publique et équitable devant un tribunal indépendant."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Open courts and impartial judges are legal rights. Some limits exist (youth, publication bans), but secrecy is the exception."
+      "en": "Open courts and impartial judges are legal rights. Some limits exist (youth, publication bans), but secrecy is the exception.",
+      "fr": "La publicité des débats et l’impartialité des juges font partie des droits juridiques. Certaines limites existent (adolescents, interdictions de publication), mais le secret reste l’exception."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -692,29 +814,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Common law, in the provinces that use it, develops through:"
+      "en": "Common law, in the provinces that use it, develops through:",
+      "fr": "Dans les provinces qui l’appliquent, la common law évolue :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Court decisions as well as statutes"
+        "en": "Court decisions as well as statutes",
+        "fr": "Par les décisions des tribunaux autant que par les lois"
       },
       {
         "id": "b",
-        "en": "Only United Nations resolutions"
+        "en": "Only United Nations resolutions",
+        "fr": "Uniquement par les résolutions des Nations Unies"
       },
       {
         "id": "c",
-        "en": "Mayoral decrees"
+        "en": "Mayoral decrees",
+        "fr": "Par les décrets des maires"
       },
       {
         "id": "d",
-        "en": "Hockey rulebooks"
+        "en": "Hockey rulebooks",
+        "fr": "Par les règlements du hockey"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Judges follow precedent. Legislatures can still change the law by statute."
+      "en": "Judges follow precedent. Legislatures can still change the law by statute.",
+      "fr": "Les juges suivent les précédents. Les législatures peuvent tout de même modifier le droit par une loi."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -725,29 +853,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a typical police service level in Canada?"
+      "en": "Which of these is a typical police service level in Canada?",
+      "fr": "Lequel de ces paliers de services policiers est courant au Canada?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Municipal, provincial, and federal"
+        "en": "Municipal, provincial, and federal",
+        "fr": "Municipal, provincial et fédéral"
       },
       {
         "id": "b",
-        "en": "Only a single continental force run by Washington"
+        "en": "Only a single continental force run by Washington",
+        "fr": "Une seule force continentale dirigée depuis Washington"
       },
       {
         "id": "c",
-        "en": "Only railway police from 1670"
+        "en": "Only railway police from 1670",
+        "fr": "Uniquement la police des chemins de fer depuis 1670"
       },
       {
         "id": "d",
-        "en": "Only Senate security"
+        "en": "Only Senate security",
+        "fr": "Uniquement la sécurité du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Cities often have their own services. Provinces may have provincial police. The RCMP is federal."
+      "en": "Cities often have their own services. Provinces may have provincial police. The RCMP is federal.",
+      "fr": "Les villes ont souvent leur propre service. Les provinces peuvent avoir une police provinciale. La Gendarmerie royale du Canada est fédérale."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -758,29 +892,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A warrant is commonly required because the Charter protects you against:"
+      "en": "A warrant is commonly required because the Charter protects you against:",
+      "fr": "Un mandat est habituellement exigé parce que la Charte vous protège contre :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Unreasonable search and seizure"
+        "en": "Unreasonable search and seizure",
+        "fr": "Les fouilles, les perquisitions et les saisies abusives"
       },
       {
         "id": "b",
-        "en": "Paying taxes"
+        "en": "Paying taxes",
+        "fr": "Le paiement des impôts"
       },
       {
         "id": "c",
-        "en": "Jury duty"
+        "en": "Jury duty",
+        "fr": "Le devoir de juré"
       },
       {
         "id": "d",
-        "en": "Being called as a witness in a civil trial ever"
+        "en": "Being called as a witness in a civil trial ever",
+        "fr": "Toute assignation comme témoin dans un procès civil"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Urgent exceptions exist. The default for a home search is prior judicial authorization."
+      "en": "Urgent exceptions exist. The default for a home search is prior judicial authorization.",
+      "fr": "Des exceptions existent en cas d’urgence. Pour perquisitionner une maison, la règle demeure l’autorisation judiciaire préalable."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -791,21 +931,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prime Minister can overturn a Supreme Court decision by memo."
+      "en": "The Prime Minister can overturn a Supreme Court decision by memo.",
+      "fr": "Le premier ministre peut renverser une décision de la Cour suprême par une simple note de service."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Parliament can try to pass a new law, sometimes using the notwithstanding clause in limited areas. It cannot quietly ignore a ruling by memo."
+      "en": "Parliament can try to pass a new law, sometimes using the notwithstanding clause in limited areas. It cannot quietly ignore a ruling by memo.",
+      "fr": "Le Parlement peut tenter d’adopter une nouvelle loi, parfois en invoquant la clause dérogatoire dans certains domaines limités. Il ne peut pas écarter discrètement un jugement par une note de service."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -816,29 +960,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Restitution and sentencing circles are examples of:"
+      "en": "Restitution and sentencing circles are examples of:",
+      "fr": "Le dédommagement et les cercles de détermination de la peine sont des exemples :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Efforts, in some cases, to include repairing harm—not a replacement for the whole criminal law"
+        "en": "Efforts, in some cases, to include repairing harm—not a replacement for the whole criminal law",
+        "fr": "D’efforts qui visent, dans certains cas, à réparer le tort causé, sans remplacer l’ensemble du droit criminel"
       },
       {
         "id": "b",
-        "en": "Abolishing courts"
+        "en": "Abolishing courts",
+        "fr": "De l’abolition des tribunaux"
       },
       {
         "id": "c",
-        "en": "Senate procedure"
+        "en": "Senate procedure",
+        "fr": "De la procédure du Sénat"
       },
       {
         "id": "d",
-        "en": "Municipal compost rules"
+        "en": "Municipal compost rules",
+        "fr": "Des règles municipales sur le compostage"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide stresses fairness and the rule of law. Community processes can sit beside, not instead of, core rights."
+      "en": "The guide stresses fairness and the rule of law. Community processes can sit beside, not instead of, core rights.",
+      "fr": "Le guide insiste sur l’équité et la primauté du droit. Les processus communautaires peuvent s’ajouter aux droits fondamentaux, sans les remplacer."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -849,29 +999,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Appeals exist so that:"
+      "en": "Appeals exist so that:",
+      "fr": "Les appels existent afin :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A higher court can review alleged legal errors"
+        "en": "A higher court can review alleged legal errors",
+        "fr": "Qu’un tribunal supérieur puisse examiner les erreurs de droit alléguées"
       },
       {
         "id": "b",
-        "en": "The accused can keep retrying until a friend is on the jury"
+        "en": "The accused can keep retrying until a friend is on the jury",
+        "fr": "Que l’accusé puisse recommencer jusqu’à ce qu’un ami siège au jury"
       },
       {
         "id": "c",
-        "en": "Cabinet can pick a winner"
+        "en": "Cabinet can pick a winner",
+        "fr": "Que le Cabinet puisse désigner un gagnant"
       },
       {
         "id": "d",
-        "en": "Newspapers can veto verdicts"
+        "en": "Newspapers can veto verdicts",
+        "fr": "Que les journaux puissent bloquer les verdicts"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "You do not get unlimited new trials for fun. You get review of law and, in some cases, of unreasonable verdicts."
+      "en": "You do not get unlimited new trials for fun. You get review of law and, in some cases, of unreasonable verdicts.",
+      "fr": "On n’obtient pas de nouveaux procès à l’infini. On obtient un examen du droit et, dans certains cas, des verdicts déraisonnables."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -882,29 +1038,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement is correct?"
+      "en": "Which statement is correct?",
+      "fr": "Quel énoncé est exact?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Getting a lawyer is a right on arrest or detention; remaining silent is usually wise until you have advice"
+        "en": "Getting a lawyer is a right on arrest or detention; remaining silent is usually wise until you have advice",
+        "fr": "Le droit à un avocat s’applique dès l’arrestation ou la détention; il est généralement prudent de garder le silence jusqu’à ce que vous ayez obtenu des conseils"
       },
       {
         "id": "b",
-        "en": "You must answer every police question or you automatically go to prison"
+        "en": "You must answer every police question or you automatically go to prison",
+        "fr": "Vous devez répondre à toutes les questions des policiers, sinon vous allez automatiquement en prison"
       },
       {
         "id": "c",
-        "en": "Only citizens may call a lawyer"
+        "en": "Only citizens may call a lawyer",
+        "fr": "Seuls les citoyens peuvent appeler un avocat"
       },
       {
         "id": "d",
-        "en": "Judges must also be your defence counsel"
+        "en": "Judges must also be your defence counsel",
+        "fr": "Les juges doivent aussi agir comme votre avocat de la défense"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizenship is not required for basic legal rights on arrest in Canada."
+      "en": "Citizenship is not required for basic legal rights on arrest in Canada.",
+      "fr": "La citoyenneté n’est pas nécessaire pour bénéficier des droits juridiques de base lors d’une arrestation au Canada."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -915,21 +1077,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "All Canadian private law is identical in every province, including Quebec."
+      "en": "All Canadian private law is identical in every province, including Quebec.",
+      "fr": "Au Canada, le droit privé est identique dans toutes les provinces, y compris au Québec."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Quebec’s civil-law tradition is a testable difference. Criminal law is the part that is mainly unified."
+      "en": "Quebec’s civil-law tradition is a testable difference. Criminal law is the part that is mainly unified.",
+      "fr": "La tradition civiliste du Québec est une différence susceptible d’être évaluée à l’examen. C’est le droit criminel qui est essentiellement uniforme."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -940,29 +1106,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Federal Court of Canada mainly hears:"
+      "en": "The Federal Court of Canada mainly hears:",
+      "fr": "La Cour fédérale du Canada entend principalement :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Certain federal-law disputes, such as immigration and some government decisions—not the same caseload as the Supreme Court"
+        "en": "Certain federal-law disputes, such as immigration and some government decisions—not the same caseload as the Supreme Court",
+        "fr": "Certains litiges de compétence fédérale, comme l’immigration et certaines décisions gouvernementales, ce qui n’est pas la charge de travail de la Cour suprême"
       },
       {
         "id": "b",
-        "en": "Every murder trial in Canada"
+        "en": "Every murder trial in Canada",
+        "fr": "Tous les procès pour meurtre au Canada"
       },
       {
         "id": "c",
-        "en": "Only municipal parking tickets in Ottawa"
+        "en": "Only municipal parking tickets in Ottawa",
+        "fr": "Uniquement les contraventions de stationnement à Ottawa"
       },
       {
         "id": "d",
-        "en": "Senate privilege fights exclusively"
+        "en": "Senate privilege fights exclusively",
+        "fr": "Exclusivement les conflits sur les privilèges du Sénat"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Supreme Court is the final appeal court. Trial and specialist federal work sits lower."
+      "en": "The Supreme Court is the final appeal court. Trial and specialist federal work sits lower.",
+      "fr": "La Cour suprême est le tribunal d’appel de dernière instance. Les procès et le travail fédéral spécialisé se déroulent à des paliers inférieurs."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -973,29 +1145,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Solicitor-client privilege means that:"
+      "en": "Solicitor-client privilege means that:",
+      "fr": "Le secret professionnel de l’avocat signifie que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Confidential legal advice to a client is generally protected"
+        "en": "Confidential legal advice to a client is generally protected",
+        "fr": "Les conseils juridiques confidentiels donnés à un client sont généralement protégés"
       },
       {
         "id": "b",
-        "en": "Lawyers must report every conversation to Cabinet"
+        "en": "Lawyers must report every conversation to Cabinet",
+        "fr": "Les avocats doivent rapporter chaque conversation au Cabinet"
       },
       {
         "id": "c",
-        "en": "Only senators may hire lawyers"
+        "en": "Only senators may hire lawyers",
+        "fr": "Seuls les sénateurs peuvent retenir les services d’un avocat"
       },
       {
         "id": "d",
-        "en": "Police may sit in on all defence meetings"
+        "en": "Police may sit in on all defence meetings",
+        "fr": "Les policiers peuvent assister à toutes les rencontres avec la défense"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a pillar of a fair legal system. It is not a licence to commit new crimes."
+      "en": "It is a pillar of a fair legal system. It is not a licence to commit new crimes.",
+      "fr": "C’est un pilier d’un système juridique équitable. Ce n’est pas un permis de commettre de nouveaux crimes."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1006,21 +1184,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "Ontario and Quebec maintain provincial police services (the OPP and the Sûreté du Québec) in addition to municipal forces and the RCMP."
+      "en": "Ontario and Quebec maintain provincial police services (the OPP and the Sûreté du Québec) in addition to municipal forces and the RCMP.",
+      "fr": "L’Ontario et le Québec maintiennent des services de police provinciaux (la Police provinciale de l’Ontario et la Sûreté du Québec), en plus des corps municipaux et de la Gendarmerie royale du Canada."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Policing is layered. The RCMP also contracts to serve as the provincial police in several other provinces."
+      "en": "Policing is layered. The RCMP also contracts to serve as the provincial police in several other provinces.",
+      "fr": "Les services policiers sont organisés en paliers. La Gendarmerie royale du Canada agit aussi comme police provinciale par contrat dans plusieurs autres provinces."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1031,29 +1213,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The Charter’s “notwithstanding clause” (section 33) allows:"
+      "en": "The Charter’s “notwithstanding clause” (section 33) allows:",
+      "fr": "La « clause dérogatoire » de la Charte (article 33) permet :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Parliament or a legislature to temporarily override certain Charter rights in a statute"
+        "en": "Parliament or a legislature to temporarily override certain Charter rights in a statute",
+        "fr": "Au Parlement ou à une législature de suspendre temporairement certains droits garantis par la Charte au moyen d’une loi"
       },
       {
         "id": "b",
-        "en": "The Prime Minister to jail opponents without a law"
+        "en": "The Prime Minister to jail opponents without a law",
+        "fr": "Au premier ministre d’emprisonner ses adversaires sans loi"
       },
       {
         "id": "c",
-        "en": "Cities to ban the Supreme Court"
+        "en": "Cities to ban the Supreme Court",
+        "fr": "Aux villes d’interdire la Cour suprême"
       },
       {
         "id": "d",
-        "en": "Juries to ignore all evidence"
+        "en": "Juries to ignore all evidence",
+        "fr": "Aux jurys d’ignorer toute la preuve"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is a controversial safety valve in the 1982 deal. It does not cover every right, and it must be written into a law."
+      "en": "It is a controversial safety valve in the 1982 deal. It does not cover every right, and it must be written into a law.",
+      "fr": "C’est une soupape controversée de l’entente de 1982. Elle ne vise pas tous les droits et doit être inscrite dans une loi."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1064,29 +1252,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Small-claims court is designed for:"
+      "en": "Small-claims court is designed for:",
+      "fr": "La cour des petites créances est conçue pour :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Lower-value private disputes without the full cost of a superior-court trial"
+        "en": "Lower-value private disputes without the full cost of a superior-court trial",
+        "fr": "Les litiges privés de moindre valeur, sans le coût complet d’un procès en cour supérieure"
       },
       {
         "id": "b",
-        "en": "Treason only"
+        "en": "Treason only",
+        "fr": "La trahison seulement"
       },
       {
         "id": "c",
-        "en": "Choosing the Governor General"
+        "en": "Choosing the Governor General",
+        "fr": "Le choix du gouverneur général"
       },
       {
         "id": "d",
-        "en": "Federal election recounts only"
+        "en": "Federal election recounts only",
+        "fr": "Uniquement les recomptages des élections fédérales"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is access to justice, not a second Supreme Court."
+      "en": "It is access to justice, not a second Supreme Court.",
+      "fr": "Il s’agit d’un moyen d’accès à la justice, et non d’une deuxième Cour suprême."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1097,29 +1291,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A justice of the peace or provincial court judge often handles:"
+      "en": "A justice of the peace or provincial court judge often handles:",
+      "fr": "Un juge de paix ou un juge de la cour provinciale s’occupe souvent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Bail hearings, warrants, and many first-instance criminal matters"
+        "en": "Bail hearings, warrants, and many first-instance criminal matters",
+        "fr": "Des enquêtes sur remise en liberté, des mandats et de nombreuses affaires criminelles de première instance"
       },
       {
         "id": "b",
-        "en": "Amending the Constitution"
+        "en": "Amending the Constitution",
+        "fr": "De la modification de la Constitution"
       },
       {
         "id": "c",
-        "en": "Appointing Cabinet"
+        "en": "Appointing Cabinet",
+        "fr": "De la nomination du Cabinet"
       },
       {
         "id": "d",
-        "en": "Command of NORAD"
+        "en": "Command of NORAD",
+        "fr": "Du commandement du NORAD"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Most people’s contact with criminal court is not at the Supreme Court. It starts locally."
+      "en": "Most people’s contact with criminal court is not at the Supreme Court. It starts locally.",
+      "fr": "Pour la plupart des gens, le contact avec la justice criminelle ne commence pas à la Cour suprême. Il commence à l’échelle locale."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1130,21 +1330,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "You may sue the government in Canada; the Crown is not above all private-law duties."
+      "en": "You may sue the government in Canada; the Crown is not above all private-law duties.",
+      "fr": "Au Canada, on peut poursuivre le gouvernement; la Couronne n’est pas dispensée de toute obligation de droit privé."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Crown liability is limited and technical, but the rule of law means officials are not personally a law unto themselves."
+      "en": "Crown liability is limited and technical, but the rule of law means officials are not personally a law unto themselves.",
+      "fr": "La responsabilité de l’État est limitée et technique, mais la primauté du droit veut que les représentants de l’État ne soient pas une loi à eux seuls."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1155,29 +1359,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Perjury is a crime because:"
+      "en": "Perjury is a crime because:",
+      "fr": "Le parjure est un crime parce que :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Courts depend on truthful evidence under oath"
+        "en": "Courts depend on truthful evidence under oath",
+        "fr": "Les tribunaux dépendent d’une preuve véridique donnée sous serment"
       },
       {
         "id": "b",
-        "en": "Newspapers dislike long trials"
+        "en": "Newspapers dislike long trials",
+        "fr": "Les journaux n’aiment pas les longs procès"
       },
       {
         "id": "c",
-        "en": "Senators prefer short speeches"
+        "en": "Senators prefer short speeches",
+        "fr": "Les sénateurs préfèrent les discours courts"
       },
       {
         "id": "d",
-        "en": "It is a municipal zoning offence only"
+        "en": "It is a municipal zoning offence only",
+        "fr": "Il s’agit uniquement d’une infraction municipale de zonage"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Lying in court attacks the trial itself. It is not a minor manners issue."
+      "en": "Lying in court attacks the trial itself. It is not a minor manners issue.",
+      "fr": "Mentir devant le tribunal attaque le procès lui-même. Ce n’est pas une simple question de savoir-vivre."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1188,29 +1398,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Legal rights such as the right to counsel apply:"
+      "en": "Legal rights such as the right to counsel apply:",
+      "fr": "Les droits juridiques comme le droit à un avocat s’appliquent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "To everyone in Canada, not only citizens"
+        "en": "To everyone in Canada, not only citizens",
+        "fr": "À toute personne au Canada, et non seulement aux citoyens"
       },
       {
         "id": "b",
-        "en": "Only to people born in Ottawa"
+        "en": "Only to people born in Ottawa",
+        "fr": "Seulement aux personnes nées à Ottawa"
       },
       {
         "id": "c",
-        "en": "Only to MPs"
+        "en": "Only to MPs",
+        "fr": "Seulement aux députés"
       },
       {
         "id": "d",
-        "en": "Only after a conviction"
+        "en": "Only after a conviction",
+        "fr": "Seulement après une condamnation"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Citizenship matters for voting and mobility. Fair-trial rights are broader."
+      "en": "Citizenship matters for voting and mobility. Fair-trial rights are broader.",
+      "fr": "La citoyenneté compte pour le droit de vote et la liberté de circulation. Les droits à un procès équitable sont plus larges."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1221,29 +1437,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Family law (divorce, parenting) is an example of:"
+      "en": "Family law (divorce, parenting) is an example of:",
+      "fr": "Le droit de la famille (divorce, rôle parental) est un exemple :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Law that mixes federal and provincial rules and is handled in courts, not by a Cabinet vote on your case"
+        "en": "Law that mixes federal and provincial rules and is handled in courts, not by a Cabinet vote on your case",
+        "fr": "D’un domaine qui mêle règles fédérales et provinciales et qui se règle devant les tribunaux, non par un vote du Cabinet sur votre dossier"
       },
       {
         "id": "b",
-        "en": "A Senate sports league"
+        "en": "A Senate sports league",
+        "fr": "D’une ligue sportive du Sénat"
       },
       {
         "id": "c",
-        "en": "Military conscription"
+        "en": "Military conscription",
+        "fr": "De la conscription militaire"
       },
       {
         "id": "d",
-        "en": "The royal anthem"
+        "en": "The royal anthem",
+        "fr": "De l’hymne royal"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Divorce is federal; many related matters are provincial. Politicians do not sit as your trial judges."
+      "en": "Divorce is federal; many related matters are provincial. Politicians do not sit as your trial judges.",
+      "fr": "Le divorce relève du fédéral; beaucoup de questions connexes sont provinciales. Les politiciens ne siègent pas comme juges de votre procès."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1254,21 +1476,25 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "An independent judiciary includes security of tenure: judges are not fired because the government dislikes a ruling."
+      "en": "An independent judiciary includes security of tenure: judges are not fired because the government dislikes a ruling.",
+      "fr": "L’indépendance de la magistrature comprend l’inamovibilité : on ne congédie pas un juge parce que le gouvernement n’aime pas une décision."
     },
     "options": [
       {
         "id": "true",
-        "en": "True"
+        "en": "True",
+        "fr": "Vrai"
       },
       {
         "id": "false",
-        "en": "False"
+        "en": "False",
+        "fr": "Faux"
       }
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Removal is a rare, formal process. That independence is how the Constitution stays more than a pamphlet."
+      "en": "Removal is a rare, formal process. That independence is how the Constitution stays more than a pamphlet.",
+      "fr": "La révocation est un processus rare et formel. C’est grâce à cette indépendance que la Constitution reste plus qu’un dépliant."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1279,29 +1505,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Alternative dispute resolution (mediation, arbitration) exists to:"
+      "en": "Alternative dispute resolution (mediation, arbitration) exists to:",
+      "fr": "Les modes alternatifs de règlement des différends (médiation, arbitrage) servent :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Settle some civil disputes without a full trial"
+        "en": "Settle some civil disputes without a full trial",
+        "fr": "À régler certains litiges civils sans procès complet"
       },
       {
         "id": "b",
-        "en": "Replace the Criminal Code for murder"
+        "en": "Replace the Criminal Code for murder",
+        "fr": "À remplacer le Code criminel en matière de meurtre"
       },
       {
         "id": "c",
-        "en": "Elect the Prime Minister"
+        "en": "Elect the Prime Minister",
+        "fr": "À élire le premier ministre"
       },
       {
         "id": "d",
-        "en": "Issue passports"
+        "en": "Issue passports",
+        "fr": "À délivrer les passeports"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "It is common in private disputes. Serious crime still goes through the criminal courts."
+      "en": "It is common in private disputes. Serious crime still goes through the criminal courts.",
+      "fr": "Ils sont courants dans les litiges privés. Les crimes graves passent toujours par les tribunaux criminels."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1312,29 +1544,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Search warrants are issued by:"
+      "en": "Search warrants are issued by:",
+      "fr": "Les mandats de perquisition sont délivrés par :"
     },
     "options": [
       {
         "id": "a",
-        "en": "A judge or justice of the peace, not by the investigating officer acting alone as a rule"
+        "en": "A judge or justice of the peace, not by the investigating officer acting alone as a rule",
+        "fr": "Un juge ou un juge de paix, et non, en règle générale, par l’enquêteur agissant seul"
       },
       {
         "id": "b",
-        "en": "The local MP"
+        "en": "The local MP",
+        "fr": "Le député local"
       },
       {
         "id": "c",
-        "en": "A newspaper editor"
+        "en": "A newspaper editor",
+        "fr": "Un rédacteur en chef de journal"
       },
       {
         "id": "d",
-        "en": "The Leader of the Opposition"
+        "en": "The Leader of the Opposition",
+        "fr": "Le chef de l’opposition"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Prior authorization is the Charter’s usual bargain: police investigate; an independent official checks the grounds."
+      "en": "Prior authorization is the Charter’s usual bargain: police investigate; an independent official checks the grounds.",
+      "fr": "L’autorisation préalable est le compromis habituel de la Charte : les policiers enquêtent, et un officier de justice indépendant vérifie les motifs."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1345,29 +1583,35 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Correctional services (prisons) after a sentence are mainly about:"
+      "en": "Correctional services (prisons) after a sentence are mainly about:",
+      "fr": "Après la peine, les services correctionnels (les prisons) visent surtout :"
     },
     "options": [
       {
         "id": "a",
-        "en": "Carrying out the sentence imposed by the court, not retrying the trial"
+        "en": "Carrying out the sentence imposed by the court, not retrying the trial",
+        "fr": "À exécuter la peine imposée par le tribunal, et non à refaire le procès"
       },
       {
         "id": "b",
-        "en": "Letting Cabinet rewrite the verdict each month"
+        "en": "Letting Cabinet rewrite the verdict each month",
+        "fr": "À laisser le Cabinet réécrire le verdict chaque mois"
       },
       {
         "id": "c",
-        "en": "Municipal snow clearing"
+        "en": "Municipal snow clearing",
+        "fr": "Le déneigement municipal"
       },
       {
         "id": "d",
-        "en": "Choosing senators"
+        "en": "Choosing senators",
+        "fr": "Le choix des sénateurs"
       }
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Parole boards and prison rules are later stages. Guilt was supposed to be decided in court."
+      "en": "Parole boards and prison rules are later stages. Guilt was supposed to be decided in court.",
+      "fr": "Les commissions des libérations conditionnelles et les règles carcérales viennent plus tard. La culpabilité devait être tranchée devant le tribunal."
     },
     "source": "Discover Canada — The Justice System"
   }

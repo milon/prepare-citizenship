@@ -57,6 +57,29 @@ function fill(picked: ClientQuestion[], pool: ClientQuestion[], needed: number):
   return [...picked, ...extras.slice(0, Math.max(0, needed - picked.length))];
 }
 
+function ensureProvinceItem(
+  picked: ClientQuestion[],
+  pool: ClientQuestion[],
+  province: RegionCode,
+): ClientQuestion[] {
+  if (picked.some((question) => question.region === province)) {
+    return picked;
+  }
+  const regional = pool.filter((question) => question.region === province);
+  if (regional.length === 0) {
+    return picked;
+  }
+  const used = new Set(picked.map((question) => question.id));
+  const incoming = regional.find((question) => !used.has(question.id)) ?? regional[0];
+  const replaceAt = picked.findIndex(
+    (question) => question.chapter === 'canadas-regions' && question.region !== province,
+  );
+  const index = replaceAt >= 0 ? replaceAt : Math.max(0, picked.length - 1);
+  const next = [...picked];
+  next[index] = incoming;
+  return next;
+}
+
 export function drawMockQuestions(
   questions: ClientQuestion[],
   province: RegionCode,
@@ -75,6 +98,7 @@ export function drawMockQuestions(
       ];
     }
     picked = fill(picked, pool, MOCK_SIZE);
+    picked = ensureProvinceItem(picked, pool, province);
     if (picked.length >= MOCK_SIZE) {
       return shuffle(picked.slice(0, MOCK_SIZE)).map((question) => ({
         ...question,
