@@ -26,6 +26,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="verified" x-show="saved" x-cloak>Saved.</p>
     </form>
 
+    <section class="data-tools" aria-labelledby="display-heading">
+      <h2 id="display-heading">Display</h2>
+      <p class="lede">Theme and text size stay on this device with your other progress.</p>
+      <div class="toolbar">
+        <label class="field">
+          <span>Theme</span>
+          <select x-model="theme" @change="persistSettings">
+            <option value="system">Match device</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Text size</span>
+          <select x-model="fontSize" @change="persistSettings">
+            <option value="md">Default</option>
+            <option value="lg">Large</option>
+            <option value="xl">Extra large</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
     <section class="data-tools" aria-labelledby="data-heading">
       <h2 id="data-heading">Your data</h2>
       <p class="lede">

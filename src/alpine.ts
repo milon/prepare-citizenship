@@ -1,4 +1,5 @@
 import type { Alpine } from 'alpinejs';
+import { applyAppearance } from './lib/appearance';
 import { dashboardApp } from './lib/dashboard-app';
 import { flashcardsApp, type FlashcardsPayload } from './lib/flashcards-app';
 import { mockApp, type MockPayload } from './lib/mock-app';
@@ -36,6 +37,12 @@ export default (Alpine: Alpine) => {
   const store = Alpine.store('storage') as StorageStore;
   store.available = loaded.storageAvailable;
   store.saveFailed = loaded.saveFailed;
+
+  applyAppearance(loaded.progress.settings.theme, loaded.progress.settings.fontSize);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const current = loadProgress().progress.settings;
+    applyAppearance(current.theme, current.fontSize);
+  });
 
   watchForInstallAndPersist();
 

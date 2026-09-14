@@ -57,6 +57,7 @@ const payload = {
             type="button"
             @click="flip"
             :aria-pressed="flipped.toString()"
+            :aria-label="flipped ? 'Flip card. Answer is showing.' : 'Flip card. Prompt is showing.'"
           >
             <span class="flip-label" x-text="flipped ? 'Answer' : 'Prompt'"></span>
             <span class="flip-body" x-text="flipped ? current.back : current.front"></span>

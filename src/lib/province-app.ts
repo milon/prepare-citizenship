@@ -1,3 +1,4 @@
+import { applyAppearance, type FontSizePreference, type ThemePreference } from './appearance';
 import { REGION_CODES, type RegionCode } from '../content/schema';
 import { REGION_LABELS } from './chapters';
 import { todayStamp } from './dates';
@@ -56,11 +57,23 @@ export function settingsApp() {
     saveFailed: false,
     message: '',
     error: '',
+    theme: 'system' as ThemePreference,
+    fontSize: 'md' as FontSizePreference,
 
     init() {
       const loaded = loadProgress();
       this.selected = loaded.progress.province ?? '';
       this.saveFailed = !loaded.storageAvailable;
+      this.theme = loaded.progress.settings.theme;
+      this.fontSize = loaded.progress.settings.fontSize;
+    },
+
+    persistSettings() {
+      const loaded = loadProgress();
+      loaded.progress.settings.theme = this.theme;
+      loaded.progress.settings.fontSize = this.fontSize;
+      applyAppearance(this.theme, this.fontSize);
+      this.saveFailed = !saveProgress(loaded.progress);
     },
 
     save() {
@@ -118,6 +131,9 @@ export function settingsApp() {
           return;
         }
         this.selected = parsed.progress.province ?? '';
+        this.theme = parsed.progress.settings.theme;
+        this.fontSize = parsed.progress.settings.fontSize;
+        applyAppearance(this.theme, this.fontSize);
         this.message = 'Progress imported.';
         this.error = '';
         this.saved = false;
@@ -130,13 +146,16 @@ export function settingsApp() {
     reset() {
       if (
         !window.confirm(
-          'Reset quiz history, flashcards, and missed questions? Your province will be kept.',
+          'Reset quiz history, flashcards, and missed questions? Your province and display settings will be kept.',
         )
       ) {
         return;
       }
       const next = resetProgress(true);
       this.selected = next.province ?? '';
+      this.theme = next.settings.theme;
+      this.fontSize = next.settings.fontSize;
+      applyAppearance(this.theme, this.fontSize);
       this.message = 'Progress reset.';
       this.error = '';
       this.saved = false;

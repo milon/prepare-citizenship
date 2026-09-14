@@ -21,7 +21,7 @@ const payload = {
 >
   <script is:inline type="application/json" id="practice-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/practice/')}>
-    <article class="panel" x-data="practicePage">
+    <article class="panel" x-data="practicePage" @keydown.window="onKey($event)">
       <p class="eyebrow">Practice</p>
       <h1>Chapter quiz</h1>
       <p class="lede">
@@ -45,9 +45,10 @@ const payload = {
       <template x-if="!finished && current">
         <div>
           <p class="verified" x-text="position"></p>
+          <p class="sr-only">Number keys 1 to 4 select an answer.</p>
           <h2 class="prompt" x-text="current.prompt"></h2>
           <div class="options" role="group" :aria-label="current.prompt">
-            <template x-for="option in current.options" :key="option.id">
+            <template x-for="(option, optionIndex) in current.options" :key="option.id">
               <button
                 class="option"
                 type="button"
@@ -55,7 +56,10 @@ const payload = {
                 @click="choose(option.id)"
                 :aria-pressed="selected === option.id"
               >
-                <span x-text="option.text"></span>
+                <span>
+                  <span class="option-index" x-text="optionIndex + 1"></span>
+                  <span x-text="option.text"></span>
+                </span>
                 <span class="option-mark" x-show="optionState(option.id) === 'correct'">Correct</span>
                 <span class="option-mark" x-show="optionState(option.id) === 'incorrect'">Incorrect</span>
               </button>

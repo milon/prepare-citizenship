@@ -90,6 +90,37 @@ export function mockApp(payload: MockPayload) {
       this.selected[this.current.id] = optionId;
     },
 
+    onKey(event: KeyboardEvent) {
+      const target = event.target;
+      if (target instanceof HTMLElement && target.closest('select, input, textarea, summary')) {
+        return;
+      }
+      if (this.phase !== 'exam') {
+        return;
+      }
+      if (event.key >= '1' && event.key <= '4') {
+        event.preventDefault();
+        const option = this.current?.options[Number(event.key) - 1];
+        if (option) {
+          this.choose(option.id);
+        }
+      }
+    },
+
+    jumpLabel(question: ClientQuestion, itemIndex: number): string {
+      const parts = [`Question ${itemIndex + 1}`];
+      if (this.selected[question.id]) {
+        parts.push('answered');
+      }
+      if (this.flagged[question.id]) {
+        parts.push('flagged');
+      }
+      if (itemIndex === this.index) {
+        parts.push('current');
+      }
+      return parts.join(', ');
+    },
+
     toggleFlag() {
       if (!this.current) {
         return;

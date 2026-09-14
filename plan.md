@@ -96,14 +96,14 @@ loaded.
       clear “progress won’t save” banner — do not fail silently
 
 ### 2.6 Accessibility & UX
-- [ ] Mobile-first; large tap targets (~44px)
-- [ ] Dark mode; adjustable font size; `prefers-reduced-motion` on card flip
-- [ ] Keyboard-navigable quiz/flashcard controls
-- [ ] Do not rely on colour alone for correct/incorrect
-- [ ] First-run: choose province/territory before study tools (can change later
+- [x] Mobile-first; large tap targets (~44px)
+- [x] Dark mode; adjustable font size; `prefers-reduced-motion` on card flip
+- [x] Keyboard-navigable quiz/flashcard controls
+- [x] Do not rely on colour alone for correct/incorrect
+- [x] First-run: choose province/territory before study tools (can change later
       in settings)
-- [ ] Home study path: chapter summary → flashcards → chapter quiz → mock
-- [ ] Screen-reader-friendly flip cards (state announced)
+- [x] Home study path: chapter summary → flashcards → chapter quiz → mock
+- [x] Screen-reader-friendly flip cards (state announced)
 
 ### 2.7 Offline / PWA
 - [ ] Web app manifest (installable on mobile home screen), including
@@ -286,10 +286,11 @@ if stored, it must be rebuilt after import.
 - [x] `navigator.storage.persist()` after home-screen install
 
 ### Phase 4 — Polish
-- [ ] Responsive/mobile pass
-- [ ] Dark mode + font size + reduced motion
-- [ ] Accessibility pass (keyboard, contrast, ARIA, no colour-only feedback)
-- [ ] Disclaimer + official guide link on home
+- [x] Use a theme that resembles Canadian Flag
+- [x] Responsive/mobile pass
+- [x] Dark mode + font size + reduced motion
+- [x] Accessibility pass (keyboard, contrast, ARIA, no colour-only feedback)
+- [x] Disclaimer + official guide link on home
 
 ### Phase 5 — Offline / PWA
 - [ ] Manifest + icons (including Apple touch icon)

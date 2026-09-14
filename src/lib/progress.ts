@@ -31,6 +31,8 @@ export type FlashcardRecord = {
 
 export type ProgressSettings = {
   persistAsked: boolean;
+  theme: 'system' | 'light' | 'dark';
+  fontSize: 'md' | 'lg' | 'xl';
 };
 
 export type Progress = {
@@ -48,7 +50,7 @@ export const emptyProgress = (): Progress => ({
   quizAttempts: [],
   flashcardState: {},
   missedQuestionIds: [],
-  settings: { persistAsked: false },
+  settings: { persistAsked: false, theme: 'system', fontSize: 'md' },
 });
 
 type StorageNotice = {
@@ -109,6 +111,14 @@ export function parseProgress(raw: unknown): Progress {
     missedQuestionIds: Array.isArray(data.missedQuestionIds) ? data.missedQuestionIds : [],
     settings: {
       persistAsked: Boolean(data.settings?.persistAsked),
+      theme:
+        data.settings?.theme === 'light' || data.settings?.theme === 'dark'
+          ? data.settings.theme
+          : 'system',
+      fontSize:
+        data.settings?.fontSize === 'lg' || data.settings?.fontSize === 'xl'
+          ? data.settings.fontSize
+          : 'md',
     },
   };
 }
@@ -191,6 +201,7 @@ export function resetProgress(keepProvince: boolean): Progress {
   if (keepProvince) {
     next.province = current.province;
   }
+  next.settings = { ...current.settings };
   saveProgress(next);
   return next;
 }

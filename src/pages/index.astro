@@ -9,6 +9,10 @@ const chapters = (await getCollection('chapters'))
 
 const current = (await getCollection('current'))[0]?.data;
 const questions = await getCollection('questions');
+const officialGuideUrl =
+  'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
+const officialPdfUrl =
+  'https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf';
 ---
 
 <BaseLayout
@@ -30,64 +34,65 @@ const questions = await getCollection('questions');
     }
   </article>
 
-  {
-    current ? (
-      <div style="margin-top: 1.25rem;">
-        <DashboardPanel lastVerified={current.lastVerified} compact />
-      </div>
-    ) : (
-      <div style="margin-top: 1.25rem;">
-        <DashboardPanel lastVerified="unknown" compact />
-      </div>
-    )
-  }
+  <div class="stack">
+    <section class="panel disclaimer" aria-labelledby="disclaimer-heading">
+      <p class="eyebrow">Please note</p>
+      <h2 id="disclaimer-heading" class="section-title">Independent practice, not the official test</h2>
+      <p class="lede">
+        This site is not affiliated with Immigration, Refugees and Citizenship Canada.
+        Questions here are original paraphrases for study, not the real citizenship test
+        bank. For the authoritative material, read the
+        <a href={officialGuideUrl}>official study guide</a>
+        or the
+        <a href={officialPdfUrl}>Discover Canada PDF</a>.
+      </p>
+    </section>
 
-  <section class="panel" style="margin-top: 1.25rem;" aria-labelledby="tools-heading">
-    <p class="eyebrow">Study tools</p>
-    <h2 id="tools-heading" style="margin: 0; font-family: Georgia, serif; font-weight: 500;">
-      Flashcards, practice, mock
-    </h2>
-    <ul class="chapter-grid">
-      <li>
-        <a class="chapter-card" href={`${import.meta.env.BASE_URL}flashcards/`}>
-          <strong>Flashcards</strong>
-          <span>Flip cards with a three-box review schedule.</span>
-        </a>
-      </li>
-      <li>
-        <a class="chapter-card" href={`${import.meta.env.BASE_URL}practice/`}>
-          <strong>Practice quiz</strong>
-          <span>Untimed questions with instant explanations.</span>
-        </a>
-      </li>
-      <li>
-        <a class="chapter-card" href={`${import.meta.env.BASE_URL}mock/`}>
-          <strong>Mock exam</strong>
-          <span>20 questions, 45 minutes, 15 to pass.</span>
-        </a>
-      </li>
-    </ul>
-  </section>
+    <DashboardPanel lastVerified={current?.lastVerified ?? 'unknown'} compact />
 
-  <section class="panel" style="margin-top: 1.25rem;" aria-labelledby="chapters-heading">
-    <p class="eyebrow">Study path</p>
-    <h2 id="chapters-heading" style="margin: 0; font-family: Georgia, serif; font-weight: 500;">
-      Start with a chapter
-    </h2>
-    <p class="lede">
-      Read a short original summary, then return later for flashcards and a chapter quiz.
-    </p>
-    <ul class="chapter-grid">
-      {
-        chapters.map((chapter) => (
-          <li>
-            <a class="chapter-card" href={`${import.meta.env.BASE_URL}chapters/${chapter.id}/`}>
-              <strong>{chapter.data.title}</strong>
-              <span>{chapter.data.description}</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+    <section class="panel" aria-labelledby="tools-heading">
+      <p class="eyebrow">Study tools</p>
+      <h2 id="tools-heading" class="section-title">Flashcards, practice, mock</h2>
+      <ul class="chapter-grid">
+        <li>
+          <a class="chapter-card" href={`${import.meta.env.BASE_URL}flashcards/`}>
+            <strong>Flashcards</strong>
+            <span>Flip cards with a three-box review schedule.</span>
+          </a>
+        </li>
+        <li>
+          <a class="chapter-card" href={`${import.meta.env.BASE_URL}practice/`}>
+            <strong>Practice quiz</strong>
+            <span>Untimed questions with instant explanations.</span>
+          </a>
+        </li>
+        <li>
+          <a class="chapter-card" href={`${import.meta.env.BASE_URL}mock/`}>
+            <strong>Mock exam</strong>
+            <span>20 questions, 45 minutes, 15 to pass.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel" aria-labelledby="chapters-heading">
+      <p class="eyebrow">Study path</p>
+      <h2 id="chapters-heading" class="section-title">Start with a chapter</h2>
+      <p class="lede">
+        Read a short original summary, then return later for flashcards and a chapter quiz.
+      </p>
+      <ul class="chapter-grid">
+        {
+          chapters.map((chapter) => (
+            <li>
+              <a class="chapter-card" href={`${import.meta.env.BASE_URL}chapters/${chapter.id}/`}>
+                <strong>{chapter.data.title}</strong>
+                <span>{chapter.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
 </BaseLayout>

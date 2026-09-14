@@ -98,6 +98,23 @@ export function practiceApp(payload: PracticePayload) {
       }
     },
 
+    onKey(event: KeyboardEvent) {
+      const target = event.target;
+      if (target instanceof HTMLElement && target.closest('select, input, textarea, summary')) {
+        return;
+      }
+      if (this.finished || this.revealed) {
+        return;
+      }
+      if (event.key >= '1' && event.key <= '4') {
+        event.preventDefault();
+        const option = this.current?.options[Number(event.key) - 1];
+        if (option) {
+          this.choose(option.id);
+        }
+      }
+    },
+
     next() {
       if (!this.revealed) {
         return;

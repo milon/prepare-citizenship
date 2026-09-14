@@ -14,7 +14,7 @@ const payload = { questions, chapters };
 >
   <script is:inline type="application/json" id="mock-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/mock/')}>
-    <article class="panel" x-data="mockPage">
+    <article class="panel" x-data="mockPage" @keydown.window="onKey($event)">
       <p class="eyebrow">Mock exam</p>
       <h1>20 questions, 45 minutes</h1>
 
@@ -32,21 +32,26 @@ const payload = { questions, chapters };
       <template x-if="phase === 'exam' && current">
         <div>
           <div class="exam-bar">
-            <p class="clock" :data-warning="warningShown" x-text="clock" aria-live="polite"></p>
+            <p class="clock" :data-warning="warningShown" x-text="clock" aria-live="polite" :aria-label="`Time remaining ${clock}`"></p>
             <p x-text="`Question ${index + 1} of ${queue.length}`"></p>
           </div>
           <p class="banner" x-show="warningShown" x-cloak>Five minutes remaining.</p>
           <h2 class="prompt" x-text="current.prompt"></h2>
           <div class="options" role="radiogroup">
-            <template x-for="option in current.options" :key="option.id">
+            <template x-for="(option, optionIndex) in current.options" :key="option.id">
               <button
                 class="option"
                 type="button"
                 :class="selected[current.id] === option.id ? 'chosen' : ''"
                 @click="choose(option.id)"
                 :aria-pressed="selected[current.id] === option.id"
+                role="radio"
+                :aria-checked="selected[current.id] === option.id"
               >
-                <span x-text="option.text"></span>
+                <span>
+                  <span class="option-index" x-text="optionIndex + 1"></span>
+                  <span x-text="option.text"></span>
+                </span>
               </button>
             </template>
           </div>
@@ -66,6 +71,7 @@ const payload = { questions, chapters };
                   @click="goTo(itemIndex)"
                   x-text="itemIndex + 1"
                   :aria-current="itemIndex === index ? 'step' : false"
+                  :aria-label="jumpLabel(question, itemIndex)"
                 ></button>
               </li>
             </template>
