@@ -308,6 +308,10 @@ const en: Dict = {
   'chapter.pm': 'Prime Minister',
   'chapter.party': 'Party in power',
   'chapter.regions': 'Region subpages',
+  'chapters.jump': 'Jump to a chapter',
+  'chapters.all': 'All chapter summaries',
+  'chapters.prev': 'Previous chapter',
+  'chapters.next': 'Next chapter',
   'chapters.eyebrow': 'Discover Canada',
   'chapters.title': 'Chapter summaries',
   'chapters.lede':
@@ -611,6 +615,10 @@ const fr: Dict = {
   'chapter.pm': 'Premier ministre',
   'chapter.party': 'Parti au pouvoir',
   'chapter.regions': 'Sous-pages régionales',
+  'chapters.jump': 'Aller à un chapitre',
+  'chapters.all': 'Tous les résumés',
+  'chapters.prev': 'Chapitre précédent',
+  'chapters.next': 'Chapitre suivant',
   'chapters.eyebrow': 'Découvrir le Canada',
   'chapters.title': 'Résumés de chapitres',
   'chapters.lede':

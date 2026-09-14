@@ -1322,6 +1322,287 @@ h3 {
   margin-top: 2rem;
 }
 
+.chapter-layout {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.chapter-side {
+  min-width: 0;
+}
+
+.chapter-jump {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.chapter-jump-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chapter-jump-summary::-webkit-details-marker {
+  display: none;
+}
+
+.chapter-jump-summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--r-lg);
+}
+
+.chapter-jump-text {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.chapter-jump-label {
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chapter-jump-current {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  min-width: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.chapter-jump-current .lang-en,
+.chapter-jump-current .lang-fr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chapter-jump-current .num {
+  flex: none;
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.chapter-jump-chevron {
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  color: var(--muted);
+  transform: rotate(90deg);
+  transition: transform 0.15s ease;
+}
+
+.chapter-jump[open] .chapter-jump-summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.chapter-jump[open] .chapter-jump-chevron {
+  transform: rotate(-90deg);
+}
+
+.chapter-jump-body {
+  max-height: 60vh;
+  overflow: auto;
+  padding: 0.35rem 0.55rem 0.65rem;
+  scrollbar-width: thin;
+}
+
+/* Desktop title stays hidden on the phone; the summary already names the control. */
+.chapter-side-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.chapter-side-list,
+.chapter-side-sub {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chapter-side-list {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.chapter-side-sub {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0.15rem 0 0.25rem 1.7rem;
+}
+
+.chapter-side a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  column-gap: 0.45rem;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--r-sm);
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.chapter-side a .num {
+  color: var(--brand);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.chapter-side a:hover,
+.chapter-side a.active {
+  background: var(--brand-soft);
+  color: var(--brand-ink);
+}
+
+.chapter-side a[aria-current='page'] {
+  background: var(--brand-soft);
+  box-shadow: inset 0 0 0 1px var(--brand-line);
+  color: var(--brand-ink);
+}
+
+.chapter-side-sub a {
+  min-height: 2.1rem;
+  padding: 0.3rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.chapter-side-index {
+  margin: 0.6rem 0.1rem 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.chapter-side-index a {
+  display: inline;
+  padding: 0;
+  color: var(--brand-ink);
+  font-size: 0.82rem;
+}
+
+.chapter-article {
+  min-width: 0;
+}
+
+.chapter-pager {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+
+.chapter-pager-link {
+  display: grid;
+  gap: 0.15rem;
+  min-height: 2.75rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  color: inherit;
+  text-decoration: none;
+}
+
+.chapter-pager-link:hover {
+  border-color: var(--brand-line);
+  background: var(--brand-soft);
+}
+
+.chapter-pager-link span {
+  color: var(--faint);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chapter-pager > span:empty {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .chapter-pager {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .chapter-layout {
+    grid-template-columns: 16.75rem minmax(0, 1fr);
+  }
+
+  .chapter-side {
+    position: sticky;
+    top: 4.6rem;
+    max-height: calc(100vh - 5.4rem);
+  }
+
+  .chapter-jump {
+    height: 100%;
+    max-height: inherit;
+    overflow: auto;
+  }
+
+  /* Keep the list visible as a sidebar; the disclosure chrome is phone-only. */
+  .chapter-jump-summary {
+    display: none;
+  }
+
+  .chapter-jump-body {
+    display: block !important;
+    max-height: none;
+    overflow: visible;
+    padding: 0.9rem 0.85rem;
+  }
+
+  .chapter-side-title {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 0 0.65rem;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .chapter-side-list {
+    gap: 0.15rem;
+  }
+
+  .chapter-side-index {
+    margin: 0.7rem 0 0;
+    padding-top: 0.7rem;
+  }
+}
+
 /* ==========================================================================
    Prose
    ========================================================================== */
@@ -2055,7 +2336,9 @@ html:not([data-locale='fr']) .lang-fr {
   .toolbar,
   .button-row,
   .flip-card,
-  .study-gate > .panel:first-child {
+  .study-gate > .panel:first-child,
+  .chapter-side,
+  .chapter-pager {
     display: none !important;
   }
 

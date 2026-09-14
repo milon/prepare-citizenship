@@ -1,0 +1,147 @@
+---
+import Icon from './Icon.astro';
+import { withBase } from '../lib/paths';
+
+type ChapterEntry = {
+  id: string;
+  data: {
+    title: string;
+    order: number;
+    chapter: string;
+    regionGroup?: string;
+  };
+};
+
+interface Props {
+  chapters: ChapterEntry[];
+  frenchById: Map<string, { data: { title: string } }>;
+  currentId: string;
+}
+
+const { chapters, frenchById, currentId } = Astro.props;
+const mains = chapters
+  .filter((entry) => !entry.data.regionGroup)
+  .sort((a, b) => a.data.order - b.data.order);
+const regions = chapters
+  .filter((entry) => entry.data.regionGroup)
+  .sort((a, b) => a.data.order - b.data.order);
+const current = chapters.find((entry) => entry.id === currentId);
+const parentId = current?.data.regionGroup ? current.data.chapter : currentId;
+const parent = mains.find((entry) => entry.id === parentId);
+const parentIndex = mains.findIndex((entry) => entry.id === parentId);
+const currentNum = String(Math.max(parentIndex, 0) + 1).padStart(2, '0');
+const showRegions = parentId === 'canadas-regions' && regions.length > 0;
+const isRegionPage = Boolean(current?.data.regionGroup);
+const parentFr = parent ? frenchById.get(parent.id) : undefined;
+const currentFr = current ? frenchById.get(current.id) : undefined;
+const summaryEn = isRegionPage
+  ? `${parent?.data.title ?? ''} · ${current?.data.title ?? ''}`
+  : (current?.data.title ?? parent?.data.title ?? '');
+const summaryFr = isRegionPage
+  ? `${parentFr?.data.title ?? parent?.data.title ?? ''} · ${currentFr?.data.title ?? current?.data.title ?? ''}`
+  : (currentFr?.data.title ?? current?.data.title ?? parentFr?.data.title ?? parent?.data.title ?? '');
+---
+
+<nav class="chapter-side">
+  <details class="chapter-jump">
+    <summary class="chapter-jump-summary">
+      <span class="chapter-jump-text">
+        <span class="chapter-jump-label" data-i18n="chapters.jump">Jump to a chapter</span>
+        <span class="chapter-jump-current">
+          <span class="num">{currentNum}</span>
+          <span class="lang-en">{summaryEn}</span>
+          <span class="lang-fr">{summaryFr}</span>
+        </span>
+      </span>
+      <Icon name="chevron" class="chapter-jump-chevron" />
+    </summary>
+
+    <div class="chapter-jump-body">
+      <p class="eyebrow chapter-side-title" id="chapter-side-heading" data-i18n="chapters.jump">
+        Jump to a chapter
+      </p>
+      <ol class="chapter-side-list" aria-labelledby="chapter-side-heading">
+        {
+          mains.map((chapter, index) => {
+            const french = frenchById.get(chapter.id);
+            const currentPage = chapter.id === currentId;
+            const currentSection = chapter.id === parentId;
+            return (
+              <li>
+                <a
+                  href={`${withBase('/chapters/')}${chapter.id}/`}
+                  aria-current={currentPage ? 'page' : undefined}
+                  class:list={[{ active: currentSection }]}
+                >
+                  <span class="num">{String(index + 1).padStart(2, '0')}</span>
+                  <span class="lang-en">{chapter.data.title}</span>
+                  <span class="lang-fr">{french?.data.title ?? chapter.data.title}</span>
+                </a>
+                {
+                  showRegions && chapter.id === 'canadas-regions' && (
+                    <ol class="chapter-side-sub">
+                      {regions.map((region) => {
+                        const regionFr = frenchById.get(region.id);
+                        return (
+                          <li>
+                            <a
+                              href={`${withBase('/chapters/')}${region.id}/`}
+                              aria-current={region.id === currentId ? 'page' : undefined}
+                              class:list={[{ active: region.id === currentId }]}
+                            >
+                              <span class="lang-en">{region.data.title}</span>
+                              <span class="lang-fr">{regionFr?.data.title ?? region.data.title}</span>
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  )
+                }
+              </li>
+            );
+          })
+        }
+      </ol>
+      <p class="chapter-side-index">
+        <a href={withBase('/chapters/')} data-i18n="chapters.all">All chapter summaries</a>
+      </p>
+    </div>
+  </details>
+</nav>
+
+<script is:inline>
+  (function () {
+    var jump = document.querySelector('.chapter-jump');
+    if (!jump) return;
+    var body = jump.querySelector('.chapter-jump-body');
+    var list = jump.querySelector('.chapter-side-list');
+    if (!body || !list) return;
+
+    function scrollActiveIntoView() {
+      var active = list.querySelector('[aria-current="page"]');
+      if (!active) return;
+      if (body.scrollHeight <= body.clientHeight + 1) return;
+      var bodyBox = body.getBoundingClientRect();
+      var activeBox = active.getBoundingClientRect();
+      body.scrollTop += activeBox.top - bodyBox.top - (bodyBox.height - activeBox.height) / 2;
+    }
+
+    function syncDesktopOpen() {
+      if (window.matchMedia('(min-width: 64rem)').matches) {
+        jump.setAttribute('open', '');
+      }
+    }
+
+    jump.addEventListener('toggle', function () {
+      if (jump.open) scrollActiveIntoView();
+      // Desktop must stay open; the summary is hidden there.
+      if (!jump.open && window.matchMedia('(min-width: 64rem)').matches) {
+        jump.setAttribute('open', '');
+      }
+    });
+
+    syncDesktopOpen();
+    window.matchMedia('(min-width: 64rem)').addEventListener('change', syncDesktopOpen);
+  })();
+</script>

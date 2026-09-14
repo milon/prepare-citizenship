@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import AnthemPanel from '../../components/AnthemPanel.astro';
+import ChapterNav from '../../components/ChapterNav.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { withBase } from '../../lib/paths';
 
@@ -13,8 +14,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const allChapters = await getCollection('chapters');
 const frenchChapters = await getCollection('chaptersFr');
-const frenchEntry = frenchChapters.find((chapter) => chapter.id === entry.id);
+const frenchById = new Map(frenchChapters.map((chapter) => [chapter.id, chapter]));
+const frenchEntry = frenchById.get(entry.id);
 if (!frenchEntry) {
   throw new Error(`Missing French chapter summary for ${entry.id}`);
 }
@@ -22,7 +25,7 @@ if (!frenchEntry) {
 const { Content } = await render(entry);
 const { Content: ContentFr } = await render(frenchEntry);
 const current = (await getCollection('current'))[0]?.data;
-const relatedRegions = (await getCollection('chapters'))
+const relatedRegions = allChapters
   .filter(
     (chapter) =>
       entry.data.chapter === 'canadas-regions' &&
@@ -31,7 +34,15 @@ const relatedRegions = (await getCollection('chapters'))
   )
   .sort((a, b) => a.data.order - b.data.order);
 
-const relatedRegionsFr = new Map(frenchChapters.map((chapter) => [chapter.id, chapter]));
+const siblings = allChapters
+  .filter((chapter) => Boolean(chapter.data.regionGroup) === Boolean(entry.data.regionGroup))
+  .filter((chapter) => !entry.data.regionGroup || chapter.data.chapter === entry.data.chapter)
+  .sort((a, b) => a.data.order - b.data.order);
+const siblingIndex = siblings.findIndex((chapter) => chapter.id === entry.id);
+const previous = siblingIndex > 0 ? siblings[siblingIndex - 1] : null;
+const next = siblingIndex >= 0 ? siblings[siblingIndex + 1] : null;
+const previousFr = previous ? frenchById.get(previous.id) : null;
+const nextFr = next ? frenchById.get(next.id) : null;
 
 const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
 ---
@@ -43,84 +54,111 @@ const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
   descriptionFr={frenchEntry.data.description}
   contextFr={frenchEntry.data.title}
 >
-  <article class="panel prose-shell">
-    <p class="eyebrow" data-i18n="chapter.eyebrow">Chapter summary</p>
-    <h1 class="lang-en">{entry.data.title}</h1>
-    <h1 class="lang-fr">{frenchEntry.data.title}</h1>
-    <p class="lede lang-en">{entry.data.description}</p>
-    <p class="lede lang-fr">{frenchEntry.data.description}</p>
+  <div class="chapter-layout">
+    <ChapterNav chapters={allChapters} frenchById={frenchById} currentId={entry.id} />
 
-    {
-      showOfficials && current && (
-        <>
-          <dl class="officials">
-            <dt data-i18n="chapter.headOfState">Head of State</dt>
-            <dd class="lang-en">{current.headOfState}</dd>
-            <dd class="lang-fr">{current.headOfState.replace('King ', 'roi ')}</dd>
-            <dt data-i18n="chapter.gg">Governor General</dt>
-            <dd>{current.governorGeneral}</dd>
-            <dt data-i18n="chapter.pm">Prime Minister</dt>
-            <dd>{current.primeMinister}</dd>
-            <dt data-i18n="chapter.party">Party in power</dt>
-            <dd class="lang-en">{current.partyInPower}</dd>
-            <dd class="lang-fr">
-              {current.partyInPower === 'Liberal Party of Canada'
-                ? 'Parti libéral du Canada'
-                : current.partyInPower}
-            </dd>
-          </dl>
-          <p class="verified lang-en">Officials last checked {current.lastVerified}.</p>
-          <p class="verified lang-fr">Dirigeants vérifiés le {current.lastVerified}.</p>
-        </>
-      )
-    }
+    <article class="panel chapter-article">
+      <p class="eyebrow" data-i18n="chapter.eyebrow">Chapter summary</p>
+      <h1 class="lang-en">{entry.data.title}</h1>
+      <h1 class="lang-fr">{frenchEntry.data.title}</h1>
+      <p class="lede lang-en">{entry.data.description}</p>
+      <p class="lede lang-fr">{frenchEntry.data.description}</p>
 
-    <div class="prose lang-en">
-      <Content />
-    </div>
-    <div class="prose lang-fr">
-      <ContentFr />
-    </div>
+      {
+        showOfficials && current && (
+          <>
+            <dl class="officials">
+              <dt data-i18n="chapter.headOfState">Head of State</dt>
+              <dd class="lang-en">{current.headOfState}</dd>
+              <dd class="lang-fr">{current.headOfState.replace('King ', 'roi ')}</dd>
+              <dt data-i18n="chapter.gg">Governor General</dt>
+              <dd>{current.governorGeneral}</dd>
+              <dt data-i18n="chapter.pm">Prime Minister</dt>
+              <dd>{current.primeMinister}</dd>
+              <dt data-i18n="chapter.party">Party in power</dt>
+              <dd class="lang-en">{current.partyInPower}</dd>
+              <dd class="lang-fr">
+                {current.partyInPower === 'Liberal Party of Canada'
+                  ? 'Parti libéral du Canada'
+                  : current.partyInPower}
+              </dd>
+            </dl>
+            <p class="verified lang-en">Officials last checked {current.lastVerified}.</p>
+            <p class="verified lang-fr">Dirigeants vérifiés le {current.lastVerified}.</p>
+          </>
+        )
+      }
 
-    {entry.data.chapter === 'canadian-symbols' && !entry.data.regionGroup && <AnthemPanel />}
+      <div class="prose lang-en">
+        <Content />
+      </div>
+      <div class="prose lang-fr">
+        <ContentFr />
+      </div>
 
-    {
-      !entry.data.regionGroup && (
-        <p class="button-row">
-          <a class="button" href={`${withBase('/flashcards/')}?chapter=${entry.data.chapter}`} data-i18n="nav.flashcards">
-            Flashcards
-          </a>
-          <a class="button" href={`${withBase('/practice/')}?chapter=${entry.data.chapter}`} data-i18n="practice.title">
-            Chapter quiz
-          </a>
-          <a class="button button-primary" href={withBase('/mock/')} data-i18n="nav.mock">
-            Mock exam
-          </a>
-        </p>
-      )
-    }
+      {entry.data.chapter === 'canadian-symbols' && !entry.data.regionGroup && <AnthemPanel />}
 
-    {
-      relatedRegions.length > 0 && (
-        <section aria-labelledby="region-pages">
-          <h2 id="region-pages" data-i18n="chapter.regions">Region subpages</h2>
-          <ul class="region-grid">
-            {relatedRegions.map((region) => {
-              const french = relatedRegionsFr.get(region.id);
-              return (
-                <li>
-                  <a class="region-card" href={`${import.meta.env.BASE_URL}chapters/${region.id}/`}>
-                    <strong class="lang-en">{region.data.title}</strong>
-                    <strong class="lang-fr">{french?.data.title ?? region.data.title}</strong>
-                    <span class="lang-en">{region.data.description}</span>
-                    <span class="lang-fr">{french?.data.description ?? region.data.description}</span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      )
-    }
-  </article>
+      {
+        !entry.data.regionGroup && (
+          <p class="button-row">
+            <a class="button" href={`${withBase('/flashcards/')}?chapter=${entry.data.chapter}`} data-i18n="nav.flashcards">
+              Flashcards
+            </a>
+            <a class="button" href={`${withBase('/practice/')}?chapter=${entry.data.chapter}`} data-i18n="practice.title">
+              Chapter quiz
+            </a>
+            <a class="button button-primary" href={withBase('/mock/')} data-i18n="nav.mock">
+              Mock exam
+            </a>
+          </p>
+        )
+      }
+
+      {
+        relatedRegions.length > 0 && (
+          <section aria-labelledby="region-pages">
+            <h2 id="region-pages" data-i18n="chapter.regions">Region subpages</h2>
+            <ul class="region-grid">
+              {relatedRegions.map((region) => {
+                const french = frenchById.get(region.id);
+                return (
+                  <li>
+                    <a class="region-card" href={`${withBase('/chapters/')}${region.id}/`}>
+                      <strong class="lang-en">{region.data.title}</strong>
+                      <strong class="lang-fr">{french?.data.title ?? region.data.title}</strong>
+                      <span class="lang-en">{region.data.description}</span>
+                      <span class="lang-fr">{french?.data.description ?? region.data.description}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        )
+      }
+
+      <nav class="chapter-pager" aria-label="Chapter">
+        {
+          previous ? (
+            <a class="chapter-pager-link" href={`${withBase('/chapters/')}${previous.id}/`}>
+              <span data-i18n="chapters.prev">Previous chapter</span>
+              <strong class="lang-en">{previous.data.title}</strong>
+              <strong class="lang-fr">{previousFr?.data.title ?? previous.data.title}</strong>
+            </a>
+          ) : (
+            <span></span>
+          )
+        }
+        {
+          next && (
+            <a class="chapter-pager-link next" href={`${withBase('/chapters/')}${next.id}/`}>
+              <span data-i18n="chapters.next">Next chapter</span>
+              <strong class="lang-en">{next.data.title}</strong>
+              <strong class="lang-fr">{nextFr?.data.title ?? next.data.title}</strong>
+            </a>
+          )
+        }
+      </nav>
+    </article>
+  </div>
 </BaseLayout>
