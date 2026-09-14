@@ -16,8 +16,6 @@ const { title, description, context } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const homeHref = base.endsWith('/') ? base : `${base}/`;
 const path = Astro.url.pathname;
-const officialGuideUrl =
-  'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
 
 const isHome = path === homeHref || path === base;
 
@@ -139,10 +137,14 @@ const railOnly = nav.filter((item) => !('tab' in item && item.tab));
             </div>
           </template>
         </div>
-        <div class="rail-user" x-data>
+        <a class="rail-user" href={`${homeHref}settings/`} x-data>
           <span class="avatar" aria-hidden="true" x-text="$store.learner.name ? $store.learner.name.slice(0, 1).toUpperCase() : '🍁'">🍁</span>
-          <span x-text="$store.learner.name || 'Studying on this device'">Studying on this device</span>
-        </div>
+          <span class="rail-user-text">
+            <strong x-text="$store.learner.name || 'Add your name'">Add your name</strong>
+            <span>Settings</span>
+          </span>
+          <Icon name="chevron" />
+        </a>
       </aside>
 
       <div class="content">
@@ -187,15 +189,6 @@ const railOnly = nav.filter((item) => !('tab' in item && item.tab));
         <main id="main" class="site-main" tabindex="-1">
           <slot />
         </main>
-
-        <footer class="site-footer">
-          <p>
-            Independent study tool—not affiliated with Immigration, Refugees and
-            Citizenship Canada. For authoritative material, use the{' '}
-            <a href={officialGuideUrl}>official study guide</a>. Practice questions here
-            are original paraphrases, not the real test bank.
-          </p>
-        </footer>
       </div>
     </div>
 

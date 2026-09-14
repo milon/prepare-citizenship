@@ -274,13 +274,52 @@ a {
 }
 
 .rail-user {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--rail-line);
+  margin-top: 0.95rem;
+  padding: 0.5rem;
+  border-radius: var(--r-sm);
   color: var(--rail-muted);
   font-size: 0.86rem;
+  text-decoration: none;
+}
+
+.rail-user::before {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.35rem;
+  left: 0.35rem;
+  border-top: 1px solid var(--rail-line);
+  content: '';
+}
+
+.rail-user:hover {
+  background: var(--rail-hover);
+}
+
+.rail-user-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.rail-user-text strong {
+  display: block;
+  overflow: hidden;
+  color: var(--rail-ink);
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rail-user-text span {
+  font-size: 0.78rem;
+}
+
+.rail-user .icon {
+  width: 0.95rem;
+  height: 0.95rem;
 }
 
 .avatar {
@@ -432,21 +471,6 @@ a {
 @media (min-width: 64rem) {
   .site-main {
     padding: 1.6rem 1.75rem 4rem;
-  }
-}
-
-.site-footer {
-  width: min(76rem, 100%);
-  margin: 0 auto;
-  padding: 1.25rem 1rem 6.5rem;
-  color: var(--faint);
-  font-size: 0.82rem;
-  line-height: 1.6;
-}
-
-@media (min-width: 64rem) {
-  .site-footer {
-    padding: 0 1.75rem 2.5rem;
   }
 }
 
@@ -1609,13 +1633,34 @@ h3 {
 }
 
 .disclaimer {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  margin-top: 1rem;
   border-color: var(--line);
   background: var(--surface-2);
   box-shadow: none;
 }
 
-.disclaimer .lede {
-  font-size: 0.88rem;
+.disclaimer-icon {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.1rem;
+  color: var(--brand);
+}
+
+.disclaimer h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.disclaimer p {
+  margin: 0.35rem 0 0;
+  max-width: 46rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 .data-tools {
