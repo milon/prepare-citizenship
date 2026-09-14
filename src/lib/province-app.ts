@@ -156,7 +156,9 @@ export function settingsApp() {
       try {
         const parsed = parseImportedProgress(JSON.parse(await file.text()));
         if (!parsed.ok) {
-          this.error = parsed.message;
+          this.error = this.tx(
+            parsed.code === 'version' ? 'settings.importVersion' : 'settings.importInvalid',
+          );
           this.message = '';
           return;
         }
@@ -174,6 +176,12 @@ export function settingsApp() {
         this.options = regionOptionsFor(this.locale);
         this.learnerStore().name = this.displayName;
         applyAppearance(this.theme, this.fontSize);
+        const i18n = (this as unknown as { $store: { i18n: { locale: Locale } } }).$store.i18n;
+        if (i18n.locale !== this.locale) {
+          i18n.locale = this.locale;
+          window.location.reload();
+          return;
+        }
         this.message = this.tx('settings.imported');
         this.error = '';
         this.saved = false;

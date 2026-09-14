@@ -10,9 +10,12 @@ interface Props {
   title: string;
   description: string;
   context?: string;
+  titleFr?: string;
+  descriptionFr?: string;
+  contextFr?: string;
 }
 
-const { title, description, context } = Astro.props;
+const { title, description, context, titleFr = title, descriptionFr = description, contextFr = context ?? titleFr } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const homeHref = base.endsWith('/') ? base : `${base}/`;
 const path = Astro.url.pathname;
@@ -22,6 +25,7 @@ const ogImage = new URL(withBase('/og.png'), Astro.site).href;
 
 const isHome = path === homeHref || path === base;
 const ogTitle = isHome ? title : `${title} · Prepare Citizenship`;
+const ogTitleFr = isHome ? titleFr : `${titleFr} · Prepare Citizenship`;
 
 const nav = [
   { href: homeHref, label: 'Today', i18n: 'nav.today', icon: 'today', current: isHome, tab: true },
@@ -91,7 +95,18 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
 ---
 
 <!doctype html>
-<html lang="en" data-theme="system" data-resolved="light" data-font="md">
+<html
+  lang="en"
+  data-theme="system"
+  data-resolved="light"
+  data-font="md"
+  data-title-en={title}
+  data-title-fr={titleFr}
+  data-description-en={description}
+  data-description-fr={descriptionFr}
+  data-og-title-en={ogTitle}
+  data-og-title-fr={ogTitleFr}
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -139,6 +154,31 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
             (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
           document.documentElement.lang = locale;
           document.documentElement.dataset.locale = locale;
+          var localizedTitle = document.documentElement.dataset[locale === 'fr' ? 'titleFr' : 'titleEn'];
+          var localizedDescription =
+            document.documentElement.dataset[locale === 'fr' ? 'descriptionFr' : 'descriptionEn'];
+          var localizedOgTitle =
+            document.documentElement.dataset[locale === 'fr' ? 'ogTitleFr' : 'ogTitleEn'];
+          document.title = localizedTitle || document.title;
+          var descriptionMeta = document.querySelector('meta[name="description"]');
+          var ogDescription = document.querySelector('meta[property="og:description"]');
+          var twitterDescription = document.querySelector('meta[name="twitter:description"]');
+          var ogTitleMeta = document.querySelector('meta[property="og:title"]');
+          var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          var ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+          var appTitle = document.querySelector('meta[name="apple-mobile-web-app-title"]');
+          var manifest = document.querySelector('link[rel="manifest"]');
+          if (descriptionMeta) descriptionMeta.content = localizedDescription;
+          if (ogDescription) ogDescription.content = localizedDescription;
+          if (twitterDescription) twitterDescription.content = localizedDescription;
+          if (ogTitleMeta) ogTitleMeta.content = localizedOgTitle;
+          if (twitterTitle) twitterTitle.content = localizedOgTitle;
+          if (locale === 'fr' && ogImageAlt) {
+            ogImageAlt.content =
+              'Prepare Citizenship — préparation à l’examen de citoyenneté. Gratuit, sans compte et accessible hors ligne.';
+          }
+          if (locale === 'fr' && appTitle) appTitle.content = 'Citoyenneté';
+          if (locale === 'fr' && manifest) manifest.href = '/manifest-fr.webmanifest';
           document.documentElement.dataset.theme = theme;
           document.documentElement.dataset.resolved = dark ? 'dark' : 'light';
           document.documentElement.dataset.font = font;
@@ -169,9 +209,9 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
         <div class="rail-widget" x-data="dashboardPage">
           <template x-if="stats">
             <div>
-              <p class="k" data-i18n="rail.streak">Study streak</p>
+              <p class="k" x-text="$store.i18n.t('rail.streak')">Study streak</p>
               <p class="v" x-text="$store.i18n.t(stats.streak === 1 ? 'rail.day' : 'rail.days', { n: stats.streak })"></p>
-              <p class="k" style="margin-top:0.8rem" data-i18n="rail.accuracy">Accuracy</p>
+              <p class="k" style="margin-top:0.8rem" x-text="$store.i18n.t('rail.accuracy')">Accuracy</p>
               <p
                 class="v"
                 x-text="stats.overallTotal ? $store.i18n.t('rail.of', { pct: Math.round(stats.overallRate * 100), total: stats.overallTotal }) : $store.i18n.t('rail.noAnswers')"
@@ -202,9 +242,13 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
           <a class="topbar-brand" href={homeHref}>
             <MapleLeaf />
             <span class="brand-full">Prepare Citizenship</span>
-            <span class="brand-short">Citizenship</span>
+            <span class="brand-short lang-en">Citizenship</span>
+            <span class="brand-short lang-fr">Citoyenneté</span>
           </a>
-          <p class="topbar-context">{context ?? title}</p>
+          <p class="topbar-context">
+            <span class="lang-en">{context ?? title}</span>
+            <span class="lang-fr">{contextFr}</span>
+          </p>
           <div class="topbar-actions">
             {
               topbarLinks.map((item) => (

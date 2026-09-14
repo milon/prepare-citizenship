@@ -137,13 +137,23 @@ export function parseProgress(raw: unknown): Progress {
 
 export function parseImportedProgress(
   raw: unknown,
-): { ok: true; progress: Progress } | { ok: false; message: string } {
+):
+  | { ok: true; progress: Progress }
+  | { ok: false; code: 'invalid' | 'version'; message: string } {
   if (raw === null || typeof raw !== 'object') {
-    return { ok: false, message: 'That file is not a progress export from this app.' };
+    return {
+      ok: false,
+      code: 'invalid',
+      message: 'That file is not a progress export from this app.',
+    };
   }
   const data = raw as { schemaVersion?: unknown };
   if (data.schemaVersion !== 1) {
-    return { ok: false, message: 'This app can only import schemaVersion 1 progress files.' };
+    return {
+      ok: false,
+      code: 'version',
+      message: 'This app can only import schemaVersion 1 progress files.',
+    };
   }
   return { ok: true, progress: parseProgress(raw) };
 }

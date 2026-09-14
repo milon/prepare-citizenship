@@ -6,9 +6,17 @@ import type { LocalizedText } from './i18n';
 import { localizedSource } from './i18n';
 
 function loc(en: string, fr: string | null | undefined, current: CurrentFacts): LocalizedText {
+  const currentFr: CurrentFacts = {
+    ...current,
+    headOfState: current.headOfState.replace(/^King /, 'roi '),
+    partyInPower:
+      current.partyInPower === 'Liberal Party of Canada'
+        ? 'Parti libéral du Canada'
+        : current.partyInPower,
+  };
   return {
     en: interpolateCurrent(en, current),
-    fr: fr ? interpolateCurrent(fr, current) : null,
+    fr: fr ? interpolateCurrent(fr, currentFr) : null,
   };
 }
 

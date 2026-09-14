@@ -1,0 +1,29 @@
+{
+  "name": "Prepare Citizenship",
+  "short_name": "Citoyenneté",
+  "description": "Préparez l’examen de citoyenneté canadienne avec des chapitres originaux, des cartes-éclair et une banque de questions.",
+  "theme_color": "#c8102e",
+  "background_color": "#c8102e",
+  "display": "standalone",
+  "lang": "fr-CA",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

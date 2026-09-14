@@ -131,6 +131,7 @@ const en: Dict = {
   'practice.incorrect': 'Incorrect',
   'practice.next': 'Next question',
   'practice.results': 'See results',
+  'practice.resultsTitle': 'Results',
   'practice.score': 'You scored {score} / {total}.',
   'practice.again': 'Practice again',
   'practice.weakWarn':
@@ -159,6 +160,11 @@ const en: Dict = {
   'mock.yourAnswer': 'Your answer',
   'mock.correctAnswer': 'Correct answer:',
   'mock.unanswered': 'Unanswered',
+  'mock.review': 'Review',
+  'mock.passNamed': 'Pass, {name}: {score}/20.',
+  'mock.pass': 'Pass: {score}/20.',
+  'mock.failNamed': 'Not a pass, {name}: {score}/20. You need 15.',
+  'mock.fail': 'Not a pass: {score}/20. You need 15.',
   'settings.eyebrow': 'Settings',
   'settings.title': 'Your study place',
   'settings.lede':
@@ -174,6 +180,9 @@ const en: Dict = {
   'settings.lang.en': 'English',
   'settings.lang.fr': 'Français',
   'settings.theme': 'Theme',
+  'settings.theme.system': 'Match device',
+  'settings.theme.light': 'Light',
+  'settings.theme.dark': 'Dark',
   'settings.font': 'Text size',
   'settings.font.md': 'Default',
   'settings.font.lg': 'Large',
@@ -196,17 +205,22 @@ const en: Dict = {
     'Reset quiz history, flashcards, and missed questions? Your name, province, language, and display settings will be kept.',
   'settings.importFail': 'Could not save imported progress in this browser.',
   'settings.importJson': 'That file could not be read as JSON.',
+  'settings.importInvalid': 'That file is not a progress export from this app.',
+  'settings.importVersion': 'This app can only import schemaVersion 1 progress files.',
   'dash.progress': 'Progress',
   'dash.readinessHeading': 'Readiness dashboard',
-  'dash.possessive': '{name} readiness',
+  'dash.possessive': '{name}’s readiness',
   'dash.officials': 'Officials last checked {date}.',
   'dash.next': 'Recommended next',
   'dash.readiness': 'Readiness',
   'dash.seen': 'Questions seen',
   'dash.accuracy': 'Accuracy',
   'dash.streak': 'Study streak',
+  'dash.streakDay': 'day in a row',
+  'dash.streakDays': 'days in a row',
   'dash.due': 'Cards due',
   'dash.mocks': 'Mocks passed',
+  'dash.mockAttempts': 'of {n} attempted',
   'dash.answers': '{correct} of {total} answers',
   'dash.noQuiz': 'No quiz answers yet',
   'dash.ofQuestions': 'of {total}',
@@ -221,6 +235,39 @@ const en: Dict = {
   'dash.fixOne': '1 thing to fix before the test.',
   'dash.fixMany': '{n} things to fix before the test.',
   'dash.keep': 'Keep studying',
+  'dash.summary': 'Progress summary',
+  'dash.ready':
+    'Ready — last three mocks passed, and practiced chapters are at 70% or better.',
+  'dash.readyNamed':
+    '{name}, you are ready — last three mocks passed, and practiced chapters are at 70% or better.',
+  'dash.notReadyNamed': '{name}, not ready yet.',
+  'dash.keepPracticing': 'Keep practicing:',
+  'dash.byChapter': 'Accuracy by chapter',
+  'dash.everyChapter': 'Every chapter',
+  'dash.belowTarget': 'Red bars are below the 70% you want before the test.',
+  'dash.noneAnswered':
+    'Nothing answered yet. Take a practice quiz and every chapter gets a bar here.',
+  'dash.noAnswers': 'No answers yet',
+  'dash.needsWork': 'Needs work',
+  'dash.onTrack': 'On track',
+  'dash.keepStatus': 'Keep practicing',
+  'dash.openFull': 'Open the full dashboard',
+  'dash.jumpBack': 'Jump back in',
+  'dash.threeWays': 'Three ways to study.',
+  'dash.flashcards': 'Flashcards',
+  'dash.freshDeck': 'Flip a fresh deck, three boxes',
+  'dash.cardDue': '1 card due today',
+  'dash.cardsDueToday': '{n} cards due today',
+  'dash.practiceQuiz': 'Practice quiz',
+  'dash.practiceBlurb': 'Ten questions, answers as you go',
+  'dash.mockExam': 'Mock exam',
+  'dash.mockBlurb': '20 questions · 45:00 · pass at 15',
+  'dash.mockScores': 'Mock scores',
+  'dash.recentMocks': 'Most recent attempts, newest last.',
+  'dash.noMocks': 'No mocks yet. Sit one to start a readiness trend.',
+  'dash.pass': 'Pass',
+  'dash.below15': 'Below 15',
+  'dash.startMock': 'Start a mock exam',
   'rec.read.title': 'Start with chapter one',
   'rec.read.blurb':
     'Read Rights and Responsibilities, then drill the same material as flashcards. Ten minutes is enough for a first session.',
@@ -263,6 +310,24 @@ const en: Dict = {
   'chapters.tenBlurb': 'Each one ends with links to its flashcards and chapter quiz.',
   'chapters.regionsBlurb': 'Mock exams include questions about the province or territory you choose.',
   'home.chaptersBlurb': 'Original study notes, then flashcards and a quiz for each one.',
+  'home.dashboard': 'Your study dashboard',
+  'home.welcome': 'Welcome back, {name}',
+  'home.lede':
+    'Read a chapter, drill the flashcards, then sit a timed mock exam. Progress stays on this device.',
+  'home.questions': '{n} questions',
+  'home.verified': 'Verified {date}',
+  'faq.title': 'Frequently asked questions',
+  'faq.lede':
+    'Independent practice for the Canadian citizenship test — not the test itself, and not affiliated with IRCC.',
+  'faq.footBefore': 'Still stuck? Read a',
+  'faq.chapter': 'chapter',
+  'faq.try': 'try a',
+  'faq.practice': 'practice quiz',
+  'faq.orAdjust': 'or adjust',
+  'notFound.title': 'Page not found',
+  'notFound.lede':
+    'That address is not a study page. Head back to the dashboard and pick a chapter from there.',
+  'notFound.back': 'Back to today',
   'anthem.title': 'O Canada',
   'anthem.lede':
     'The national anthem is on the test and at the citizenship ceremony. Lyrics below are the official English and French versions. Recordings live on Canada.ca (Toronto Symphony Orchestra — credit the artists if you reuse them).',
@@ -352,6 +417,7 @@ const fr: Dict = {
   'practice.incorrect': 'Mauvaise réponse',
   'practice.next': 'Question suivante',
   'practice.results': 'Voir les résultats',
+  'practice.resultsTitle': 'Résultats',
   'practice.score': 'Résultat : {score} / {total}.',
   'practice.again': 'Recommencer',
   'practice.weakWarn':
@@ -380,6 +446,11 @@ const fr: Dict = {
   'mock.yourAnswer': 'Votre réponse',
   'mock.correctAnswer': 'Bonne réponse :',
   'mock.unanswered': 'Sans réponse',
+  'mock.review': 'Révision',
+  'mock.passNamed': 'Réussi, {name} : {score}/20.',
+  'mock.pass': 'Réussi : {score}/20.',
+  'mock.failNamed': 'Échec, {name} : {score}/20. Il faut 15.',
+  'mock.fail': 'Échec : {score}/20. Il faut 15.',
   'settings.eyebrow': 'Réglages',
   'settings.title': 'Votre espace d’étude',
   'settings.lede':
@@ -395,6 +466,9 @@ const fr: Dict = {
   'settings.lang.en': 'English',
   'settings.lang.fr': 'Français',
   'settings.theme': 'Thème',
+  'settings.theme.system': 'Selon l’appareil',
+  'settings.theme.light': 'Clair',
+  'settings.theme.dark': 'Sombre',
   'settings.font': 'Taille du texte',
   'settings.font.md': 'Par défaut',
   'settings.font.lg': 'Grande',
@@ -417,6 +491,9 @@ const fr: Dict = {
     'Réinitialiser l’historique, les cartes et les erreurs? Votre nom, province, langue et affichage seront conservés.',
   'settings.importFail': 'Impossible d’enregistrer le progrès importé dans ce navigateur.',
   'settings.importJson': 'Ce fichier n’a pas pu être lu comme JSON.',
+  'settings.importInvalid': 'Ce fichier n’est pas une exportation de progrès de cette application.',
+  'settings.importVersion':
+    'Cette application peut seulement importer les fichiers de progrès schemaVersion 1.',
   'dash.progress': 'Progrès',
   'dash.readinessHeading': 'Tableau de préparation',
   'dash.possessive': 'Préparation de {name}',
@@ -426,8 +503,11 @@ const fr: Dict = {
   'dash.seen': 'Questions vues',
   'dash.accuracy': 'Précision',
   'dash.streak': 'Série d’étude',
+  'dash.streakDay': 'jour de suite',
+  'dash.streakDays': 'jours de suite',
   'dash.due': 'Cartes à revoir',
   'dash.mocks': 'Examens réussis',
+  'dash.mockAttempts': 'sur {n} tentés',
   'dash.answers': '{correct} sur {total} réponses',
   'dash.noQuiz': 'Pas encore de quiz',
   'dash.ofQuestions': 'sur {total}',
@@ -443,6 +523,39 @@ const fr: Dict = {
   'dash.fixOne': '1 point à corriger avant l’examen.',
   'dash.fixMany': '{n} points à corriger avant l’examen.',
   'dash.keep': 'Continuer',
+  'dash.summary': 'Résumé du progrès',
+  'dash.ready':
+    'Prêt — les trois derniers examens blancs sont réussis et les chapitres pratiqués sont à 70 % ou plus.',
+  'dash.readyNamed':
+    '{name}, vous êtes prêt — les trois derniers examens blancs sont réussis et les chapitres pratiqués sont à 70 % ou plus.',
+  'dash.notReadyNamed': '{name}, vous n’êtes pas encore prêt.',
+  'dash.keepPracticing': 'À poursuivre :',
+  'dash.byChapter': 'Précision par chapitre',
+  'dash.everyChapter': 'Tous les chapitres',
+  'dash.belowTarget': 'Les barres rouges sont sous l’objectif de 70 % avant l’examen.',
+  'dash.noneAnswered':
+    'Aucune réponse pour l’instant. Faites un quiz pour afficher une barre pour chaque chapitre.',
+  'dash.noAnswers': 'Pas encore de réponses',
+  'dash.needsWork': 'À travailler',
+  'dash.onTrack': 'En bonne voie',
+  'dash.keepStatus': 'À poursuivre',
+  'dash.openFull': 'Ouvrir le tableau de bord complet',
+  'dash.jumpBack': 'Reprendre l’étude',
+  'dash.threeWays': 'Trois façons d’étudier.',
+  'dash.flashcards': 'Cartes-éclair',
+  'dash.freshDeck': 'Commencez un nouveau paquet de trois boîtes',
+  'dash.cardDue': '1 carte à revoir aujourd’hui',
+  'dash.cardsDueToday': '{n} cartes à revoir aujourd’hui',
+  'dash.practiceQuiz': 'Quiz d’exercice',
+  'dash.practiceBlurb': 'Dix questions avec réponses au fur et à mesure',
+  'dash.mockExam': 'Examen blanc',
+  'dash.mockBlurb': '20 questions · 45:00 · réussite à 15',
+  'dash.mockScores': 'Résultats des examens blancs',
+  'dash.recentMocks': 'Tentatives récentes, de la plus ancienne à la plus récente.',
+  'dash.noMocks': 'Aucun examen blanc. Faites-en un pour commencer à suivre votre préparation.',
+  'dash.pass': 'Réussi',
+  'dash.below15': 'Sous 15',
+  'dash.startMock': 'Commencer un examen blanc',
   'rec.read.title': 'Commencez par le premier chapitre',
   'rec.read.blurb':
     'Lisez Droits et responsabilités, puis les mêmes faits en cartes-éclair. Dix minutes suffisent pour une première séance.',
@@ -486,6 +599,24 @@ const fr: Dict = {
   'chapters.regionsBlurb':
     'Les examens blancs comprennent des questions sur la province ou le territoire que vous choisissez.',
   'home.chaptersBlurb': 'Notes d’étude originales, puis cartes et quiz pour chacun.',
+  'home.dashboard': 'Votre tableau de bord',
+  'home.welcome': 'Bon retour, {name}',
+  'home.lede':
+    'Lisez un chapitre, révisez avec les cartes-éclair, puis passez un examen blanc chronométré. Votre progrès reste sur cet appareil.',
+  'home.questions': '{n} questions',
+  'home.verified': 'Vérifié le {date}',
+  'faq.title': 'Foire aux questions',
+  'faq.lede':
+    'Exercices indépendants pour l’examen de citoyenneté canadienne — ce n’est pas l’examen officiel et le site n’est pas affilié à IRCC.',
+  'faq.footBefore': 'Encore une question? Lisez un',
+  'faq.chapter': 'chapitre',
+  'faq.try': 'faites un',
+  'faq.practice': 'quiz d’exercice',
+  'faq.orAdjust': 'ou modifiez les',
+  'notFound.title': 'Page introuvable',
+  'notFound.lede':
+    'Cette adresse ne correspond pas à une page d’étude. Revenez au tableau de bord et choisissez un chapitre.',
+  'notFound.back': 'Retour à aujourd’hui',
   'anthem.title': 'Ô Canada',
   'anthem.lede':
     'L’hymne national est à l’examen et à la cérémonie de citoyenneté. Les paroles ci-dessous sont les versions officielles. Les enregistrements sont sur Canada.ca (Orchestre symphonique de Toronto — créditez les artistes si vous les réutilisez).',
@@ -549,6 +680,30 @@ export function applyDocumentLocale(locale: Locale) {
   }
   document.documentElement.lang = locale;
   document.documentElement.dataset.locale = locale;
+  const root = document.documentElement;
+  const title = locale === 'fr' ? root.dataset.titleFr : root.dataset.titleEn;
+  const description =
+    locale === 'fr' ? root.dataset.descriptionFr : root.dataset.descriptionEn;
+  const ogTitle = locale === 'fr' ? root.dataset.ogTitleFr : root.dataset.ogTitleEn;
+  if (title) {
+    document.title = title;
+  }
+  const setMeta = (selector: string, value?: string) => {
+    if (value) {
+      document.querySelector<HTMLMetaElement>(selector)?.setAttribute('content', value);
+    }
+  };
+  setMeta('meta[name="description"]', description);
+  setMeta('meta[property="og:description"]', description);
+  setMeta('meta[name="twitter:description"]', description);
+  setMeta('meta[property="og:title"]', ogTitle);
+  setMeta('meta[name="twitter:title"]', ogTitle);
+  setMeta(
+    'meta[property="og:image:alt"]',
+    locale === 'fr'
+      ? 'Prepare Citizenship — préparation à l’examen de citoyenneté. Gratuit, sans compte et accessible hors ligne.'
+      : 'Prepare Citizenship — practice for the citizenship test. Free, no account, works offline.',
+  );
   document.querySelectorAll<HTMLElement>('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n;
     if (key) {
@@ -565,6 +720,12 @@ export function applyDocumentLocale(locale: Locale) {
     const key = el.dataset.i18nTitle;
     if (key) {
       el.setAttribute('title', t(key, locale));
+    }
+  });
+  document.querySelectorAll<HTMLInputElement>('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    if (key) {
+      el.setAttribute('placeholder', t(key, locale));
     }
   });
 }

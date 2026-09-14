@@ -16,8 +16,91 @@ export type FaqItem = {
   html: string;
 };
 
-export function faqItems(opts: { questionCount: number; lastVerified: string }): FaqItem[] {
+export function faqItems(
+  opts: { questionCount: number; lastVerified: string },
+  locale: 'en' | 'fr' = 'en',
+): FaqItem[] {
   const { questionCount, lastVerified } = opts;
+  if (locale === 'fr') {
+    return [
+      {
+        id: 'official',
+        question: 'Est-ce l’examen officiel de citoyenneté?',
+        html: `<p>Non. Prepare Citizenship est un outil d’étude indépendant. Il n’est pas affilié à Immigration, Réfugiés et Citoyenneté Canada, et les questions présentées ici ne sont pas celles de l’examen réel.</p>
+<p>Utilisez ce site pour apprendre la matière et vérifier vos connaissances dans les conditions de l’examen. Pour la matière officielle, consultez le <a href="${OFFICIAL_GUIDE_URL_FR}">guide d’étude officiel</a> ou le <a href="${OFFICIAL_PDF_URL_FR}">PDF Découvrir le Canada</a>.</p>`,
+      },
+      {
+        id: 'how-to-study',
+        question: 'Comment utiliser ce site?',
+        html: `<p>Lisez un chapitre, révisez la même matière avec les cartes-éclair, puis faites un quiz. Lorsque vous réussissez plusieurs examens blancs de suite, vous êtes plus près d’être prêt qu’après une seule tentative chanceuse.</p>
+<p>Le tableau de bord Aujourd’hui recommande une prochaine étape à partir du progrès enregistré sur cet appareil : commencer le premier chapitre, revoir les cartes dues, travailler un chapitre faible ou passer un examen blanc.</p>`,
+      },
+      {
+        id: 'question-bank',
+        question: 'S’agit-il des vraies questions d’IRCC?',
+        html: `<p>Non. Les ${questionCount} questions sont des reformulations originales de faits tirés de <cite>Découvrir le Canada</cite>. Le libellé, les choix et les explications ne seront pas identiques à ceux de l’examen d’IRCC.</p>
+<p>Si un fait présenté ici contredit le guide officiel, fiez-vous au guide.</p>`,
+      },
+      {
+        id: 'mock',
+        question: 'Comment fonctionne l’examen blanc?',
+        html: `<p>Chaque examen blanc compte 20 questions et dure 45 minutes; il faut 15 bonnes réponses pour réussir. La durée et la note de passage ne sont pas modifiables : elles correspondent au format de l’examen auquel vous vous préparez.</p>
+<p>Les questions couvrent tous les chapitres, comprennent des éléments régionaux pour la province ou le territoire choisi dans les Réglages et, lorsque la banque le permet, évitent les questions de vos trois derniers examens blancs.</p>`,
+      },
+      {
+        id: 'province',
+        question: 'Pourquoi dois-je choisir une province ou un territoire?',
+        html: `<p>Le chapitre Les régions du Canada comprend des faits propres à votre lieu de résidence. Les examens blancs et les exercices peuvent présenter ces questions, comme l’examen réel vous demande de connaître votre région.</p>
+<p>Vous pouvez modifier ce choix plus tard dans les Réglages. Le progrès déjà enregistré sera conservé.</p>`,
+      },
+      {
+        id: 'progress',
+        question: 'Où mon progrès est-il enregistré?',
+        html: `<p>Uniquement sur cet appareil, dans le navigateur. Il n’y a aucun compte et rien n’est envoyé à un serveur. Effacer les données du site, changer de navigateur ou utiliser la navigation privée peut supprimer votre progrès.</p>
+<p>Exportez une copie JSON depuis les Réglages avant de réinitialiser un téléphone ou d’effacer les données du navigateur. L’importation restaure cette copie. Ajouter le site à l’écran d’accueil réduit le risque qu’iOS supprime les données enregistrées.</p>`,
+      },
+      {
+        id: 'offline',
+        question: 'Le site fonctionne-t-il hors ligne?',
+        html: `<p>Oui, après un premier chargement réussi. Un service worker conserve les pages d’étude, les questions et les ressources afin que vous puissiez lire les chapitres, utiliser les cartes et faire des quiz sans connexion.</p>
+<p>Le progrès demeure dans ce navigateur. Il ne se synchronise pas avec un autre téléphone, sauf si vous exportez puis importez le fichier de sauvegarde.</p>`,
+      },
+      {
+        id: 'flashcards',
+        question: 'Comment fonctionnent les cartes-éclair?',
+        html: `<p>La plupart des cartes proviennent de la banque de questions. Vous indiquez si chaque carte est encore à apprendre ou si vous la connaissez. Les cartes passent par trois boîtes : apprentissage (à revoir aujourd’hui), révision (dans trois jours) et connue (dans sept jours). Une erreur renvoie la carte à l’apprentissage et la rend immédiatement disponible.</p>
+<p>Vous pouvez filtrer les cartes par chapitre et ne revoir que celles manquées dans les quiz.</p>`,
+      },
+      {
+        id: 'readiness',
+        question: 'Que signifie « prêt » dans le tableau de bord?',
+        html: `<p>Le verdict de préparation reste verrouillé jusqu’à ce que vous ayez terminé trois examens blancs. Ensuite, « Prêt » signifie que vos trois derniers examens blancs ont chacun obtenu au moins 15/20 et que chaque chapitre comptant au moins dix réponses enregistrées atteint une précision d’au moins 70 %.</p>
+<p>Les chapitres comptant moins de dix réponses ne bloquent pas le verdict; ils s’affichent comme étant à poursuivre. Un seul bon examen blanc ne suffit pas, car un tirage de 20 questions peut varier.</p>`,
+      },
+      {
+        id: 'current',
+        question: 'Pourquoi certaines réponses nomment-elles des titulaires actuels?',
+        html: `<p>Des faits comme le nom du premier ministre, du gouverneur général, du chef de l’État et du parti au pouvoir peuvent changer. Ces noms sont conservés dans un seul fichier et insérés dans les questions au moment de la compilation. Dernière vérification : ${lastVerified}.</p>
+<p>Si un titulaire a changé depuis cette date, confirmez l’information dans le guide officiel et les nouvelles récentes avant l’examen.</p>`,
+      },
+      {
+        id: 'privacy',
+        question: 'Le site est-il gratuit et recueillez-vous des données?',
+        html: `<p>Le site est gratuit. Il n’y a ni compte, ni analytique, ni publicité. Votre progrès ne quitte jamais le navigateur, sauf si vous l’exportez vous-même.</p>`,
+      },
+      {
+        id: 'french',
+        question: 'Existe-t-il une version française?',
+        html: `<p>Oui. Les Réglages permettent de choisir la langue. L’interface, les chapitres, les cartes-éclair, les exercices et les examens blancs sont offerts en anglais et en français.</p>
+<p>La matière officielle est également offerte en français : le <a href="${OFFICIAL_GUIDE_URL_FR}">guide</a> et le <a href="${OFFICIAL_PDF_URL_FR}">PDF Découvrir le Canada</a>.</p>`,
+      },
+      {
+        id: 'mistake',
+        question: 'Je crois qu’une question contient une erreur. Que faire?',
+        html: `<p>Consultez d’abord le <a href="${OFFICIAL_GUIDE_URL_FR}">guide d’étude officiel</a>. Si le site semble toujours erroné, ouvrez un <a href="${GITHUB_CONTENT_ISSUE_URL}">signalement d’erreur de contenu</a> en indiquant l’identifiant de la question et la réponse attendue.</p>`,
+      },
+    ];
+  }
   return [
     {
       id: 'official',
@@ -64,7 +147,7 @@ export function faqItems(opts: { questionCount: number; lastVerified: string }):
     {
       id: 'flashcards',
       question: 'How do flashcards work?',
-      html: `<p>Most cards come from the question bank. You rate each card as still learning or known. Cards move through three boxes: learning (due the next day), reviewing (three days), and known (seven days). A miss sends the card back to learning and due immediately.</p>
+      html: `<p>Most cards come from the question bank. You rate each card as still learning or known. Cards move through three boxes: learning (due today), reviewing (three days), and known (seven days). A miss sends the card back to learning and due immediately.</p>
       <p>You can filter by chapter and review only cards you have missed in quizzes.</p>`,
     },
     {
@@ -87,7 +170,7 @@ export function faqItems(opts: { questionCount: number; lastVerified: string }):
     {
       id: 'french',
       question: 'Is there a French version?',
-      html: `<p>Yes. Settings has a language toggle. The interface, flashcards, practice, and mock follow English or French. Chapter notes are still English. If a question has no French yet, the English wording is shown.</p>
+      html: `<p>Yes. Settings has a language toggle. The interface, chapters, flashcards, practice, and mock are available in English and French.</p>
 <p>The official study material is also in French: the <a href="${OFFICIAL_GUIDE_URL_FR}">guide</a> and the <a href="${OFFICIAL_PDF_URL_FR}">Découvrir le Canada PDF</a>.</p>`,
     },
     {

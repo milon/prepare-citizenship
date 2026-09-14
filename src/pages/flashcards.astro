@@ -16,6 +16,9 @@ const payload = {
 <BaseLayout
   title="Flashcards"
   description="Study with flip cards and a three-box Leitner schedule."
+  titleFr="Cartes-éclair"
+  descriptionFr="Étudiez avec des cartes à retourner et un calendrier Leitner à trois boîtes."
+  contextFr="Cartes-éclair"
 >
   <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/flashcards/')}>
@@ -63,9 +66,9 @@ const payload = {
             <span class="flip-body" x-text="flipped ? $store.i18n.pick(current.back) : $store.i18n.pick(current.front)"></span>
           </button>
           <div class="button-row">
-            <button class="button" type="button" @click="stillLearning" data-i18n="cards.still">Still learning</button>
-            <button class="button button-primary" type="button" @click="gotIt" data-i18n="cards.gotIt">Got it</button>
-            <button class="button button-quiet" type="button" @click="markAsKnown" data-i18n="cards.known">Mark as known</button>
+            <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>
+            <button class="button button-primary" type="button" @click="gotIt" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
+            <button class="button button-quiet" type="button" @click="markAsKnown" x-text="$store.i18n.t('cards.known')">Mark as known</button>
           </div>
         </div>
       </template>

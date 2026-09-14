@@ -36,7 +36,13 @@ const relatedRegionsFr = new Map(frenchChapters.map((chapter) => [chapter.id, ch
 const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
 ---
 
-<BaseLayout title={entry.data.title} description={entry.data.description}>
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  titleFr={frenchEntry.data.title}
+  descriptionFr={frenchEntry.data.description}
+  contextFr={frenchEntry.data.title}
+>
   <article class="panel prose-shell">
     <p class="eyebrow" data-i18n="chapter.eyebrow">Chapter summary</p>
     <h1 class="lang-en">{entry.data.title}</h1>
@@ -49,13 +55,19 @@ const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
         <>
           <dl class="officials">
             <dt data-i18n="chapter.headOfState">Head of State</dt>
-            <dd>{current.headOfState}</dd>
+            <dd class="lang-en">{current.headOfState}</dd>
+            <dd class="lang-fr">{current.headOfState.replace('King ', 'roi ')}</dd>
             <dt data-i18n="chapter.gg">Governor General</dt>
             <dd>{current.governorGeneral}</dd>
             <dt data-i18n="chapter.pm">Prime Minister</dt>
             <dd>{current.primeMinister}</dd>
             <dt data-i18n="chapter.party">Party in power</dt>
-            <dd>{current.partyInPower}</dd>
+            <dd class="lang-en">{current.partyInPower}</dd>
+            <dd class="lang-fr">
+              {current.partyInPower === 'Liberal Party of Canada'
+                ? 'Parti libéral du Canada'
+                : current.partyInPower}
+            </dd>
           </dl>
           <p class="verified lang-en">Officials last checked {current.lastVerified}.</p>
           <p class="verified lang-fr">Dirigeants vérifiés le {current.lastVerified}.</p>

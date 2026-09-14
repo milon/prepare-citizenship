@@ -1,4 +1,4 @@
-import { dashboardStats, percent, type DashboardStats } from './dashboard-stats';
+import { dashboardStats, type DashboardStats } from './dashboard-stats';
 import { loadProgress } from './progress';
 import { localizedChapterTitle, t, type Locale } from './i18n';
 import type { ChapterId } from '../content/schema';
@@ -25,7 +25,12 @@ export function dashboardApp() {
     totalQuestions: 0,
     totalCards: 0,
     paths: { chapters: '/', practice: '/', flashcards: '/', mock: '/' } as Paths,
-    percent,
+    percent(value: number) {
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      const rounded = Math.round(value * 100);
+      return locale === 'fr' ? `${rounded} %` : `${rounded}%`;
+    },
 
     tx(key: string, vars?: Record<string, string | number>) {
       const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
@@ -153,7 +158,7 @@ export function dashboardApp() {
         drill: {
           title: this.tx('rec.drill.title', { chapter: chapterTitle }),
           blurb: this.tx('rec.drill.blurb', {
-            rate: percent(this.stats.chapters.find((item) => item.id === chapter)?.rate ?? 0),
+            rate: this.percent(this.stats.chapters.find((item) => item.id === chapter)?.rate ?? 0),
             total: this.stats.chapters.find((item) => item.id === chapter)?.total ?? 0,
           }),
           cta: this.tx('rec.drill.cta'),

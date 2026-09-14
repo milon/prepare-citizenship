@@ -5,7 +5,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout
   title="Page not found"
   description="That page is not in Prepare Citizenship."
+  titleFr="Page introuvable"
+  descriptionFr="Cette page n’existe pas dans Prepare Citizenship."
   context="Not found"
+  contextFr="Introuvable"
 >
   <script is:inline>
     (function () {
@@ -19,11 +22,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </script>
   <div class="page-head">
     <div>
-      <h1>Page not found</h1>
-      <p class="lede">That address is not a study page. Head back to the dashboard and pick a chapter from there.</p>
+      <h1 data-i18n="notFound.title">Page not found</h1>
+      <p class="lede" data-i18n="notFound.lede">That address is not a study page. Head back to the dashboard and pick a chapter from there.</p>
     </div>
   </div>
   <p class="button-row">
-    <a class="button" href="/">Back to today</a>
+    <a class="button" href="/" data-i18n="notFound.back">Back to today</a>
   </p>
 </BaseLayout>

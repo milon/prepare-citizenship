@@ -29,15 +29,20 @@ const progressHref = withBase('/progress/');
   data-mock-path={mockHref}
   aria-labelledby={compact ? undefined : 'dashboard-heading'}
   aria-label={compact ? 'Progress summary' : undefined}
+  data-i18n-aria={compact ? 'dash.summary' : undefined}
 >
   {
     !compact && (
       <div class="page-head">
         <div>
-          <p class="eyebrow">Progress</p>
+          <p class="eyebrow" data-i18n="dash.progress">Progress</p>
           <h1 id="dashboard-heading">
-            <span x-show="!$store.learner.name">Readiness dashboard</span>
-            <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.possessive()} readiness`" />
+            <span x-show="!$store.learner.name" data-i18n="dash.readinessHeading">Readiness dashboard</span>
+            <span
+              x-show="$store.learner.name"
+              x-cloak
+              x-text="$store.i18n.t('dash.possessive', { name: $store.learner.name })"
+            />
           </h1>
           <p class="verified lang-en">Officials last checked {lastVerified}.</p>
           <p class="verified lang-fr">Titulaires vérifiés le {lastVerified}.</p>
@@ -51,7 +56,7 @@ const progressHref = withBase('/progress/');
       <div class="dash-hero">
         <div class="hero-cta">
           <MapleLeaf class="leaf-wash" />
-          <p class="k">Recommended next</p>
+          <p class="k" x-text="$store.i18n.t('dash.next')">Recommended next</p>
           <h2 x-text="nextStep.title">Keep studying</h2>
           <p x-text="nextStep.blurb"></p>
           <div class="button-row">
@@ -65,7 +70,7 @@ const progressHref = withBase('/progress/');
             <b x-text="stats.overallTotal ? percent(stats.overallRate) : '—'">—</b>
           </div>
           <div>
-            <p class="k">Readiness</p>
+            <p class="k" x-text="$store.i18n.t('dash.readiness')">Readiness</p>
             <h3 x-text="readinessSummary.label"></h3>
             <p x-text="readinessSummary.note"></p>
           </div>
@@ -74,42 +79,57 @@ const progressHref = withBase('/progress/');
 
       <div class="stat-grid">
         <p class="stat">
-          <span class="stat-label">Questions seen</span>
+          <span class="stat-label" x-text="$store.i18n.t('dash.seen')">Questions seen</span>
           <strong x-text="stats.seenQuestions"></strong>
           <span class="stat-sub" x-text="seenLabel"></span>
         </p>
         <p class="stat">
-          <span class="stat-label">Accuracy</span>
+          <span class="stat-label" x-text="$store.i18n.t('dash.accuracy')">Accuracy</span>
           <strong x-text="stats.overallTotal ? percent(stats.overallRate) : '—'"></strong>
           <span
             class="stat-sub"
-            x-text="stats.overallTotal ? `${stats.overallCorrect} of ${stats.overallTotal} answers` : 'No quiz answers yet'"
+            x-text="stats.overallTotal
+              ? $store.i18n.t('dash.answers', { correct: stats.overallCorrect, total: stats.overallTotal })
+              : $store.i18n.t('dash.noQuiz')"
           ></span>
         </p>
         <p class="stat">
-          <span class="stat-label">Study streak</span>
+          <span class="stat-label" x-text="$store.i18n.t('dash.streak')">Study streak</span>
           <strong x-text="stats.streak"></strong>
-          <span class="stat-sub" x-text="stats.streak === 1 ? 'day in a row' : 'days in a row'"></span>
+          <span
+            class="stat-sub"
+            x-text="$store.i18n.t(stats.streak === 1 ? 'dash.streakDay' : 'dash.streakDays')"
+          ></span>
         </p>
         <p class="stat">
-          <span class="stat-label">Mocks passed</span>
+          <span class="stat-label" x-text="$store.i18n.t('dash.mocks')">Mocks passed</span>
           <strong x-text="stats.mocksPassed"></strong>
-          <span class="stat-sub" x-text="`of ${stats.mockTrend.length} attempted`"></span>
+          <span
+            class="stat-sub"
+            x-text="$store.i18n.t('dash.mockAttempts', { n: stats.mockTrend.length })"
+          ></span>
         </p>
       </div>
 
       <div class="readiness" :data-status="stats.readiness.status" x-show="stats.readiness.status !== 'not-enough-data'" x-cloak>
         <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
-          <span x-show="!$store.learner.name">Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
+          <span
+            x-show="!$store.learner.name"
+            x-text="$store.i18n.t('dash.ready')"
+          >Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
           <span
             x-show="$store.learner.name"
             x-cloak
-            x-text="`${$store.learner.name}, you are ready — last three mocks passed, and practiced chapters are at 70% or better.`"
+            x-text="$store.i18n.t('dash.readyNamed', { name: $store.learner.name })"
           ></span>
         </p>
         <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
-          <span x-show="!$store.learner.name">Not ready yet.</span>
-          <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.name}, not ready yet.`"></span>
+          <span x-show="!$store.learner.name" x-text="$store.i18n.t('dash.notReady')">Not ready yet.</span>
+          <span
+            x-show="$store.learner.name"
+            x-cloak
+            x-text="$store.i18n.t('dash.notReadyNamed', { name: $store.learner.name })"
+          ></span>
         </p>
         <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
           <template x-for="reason in (stats.readiness.reasons || [])" :key="(reason.id || '') + (reason.chapterId || '')">
@@ -117,7 +137,7 @@ const progressHref = withBase('/progress/');
           </template>
         </ul>
         <p class="stat-sub" x-show="(stats.readiness.keepPracticing || []).length">
-          Keep practicing:
+          <span x-text="$store.i18n.t('dash.keepPracticing')">Keep practicing:</span>
           <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => $store.i18n.chapter(chapter.id)).join(', ')"></span>
         </p>
       </div>
@@ -125,11 +145,17 @@ const progressHref = withBase('/progress/');
       <div class="dash-grid" style="margin-top:1rem">
         <div class="card">
           <div class="card-head">
-            <h2>{compact ? 'Accuracy by chapter' : 'Every chapter'}</h2>
-            <p>Red bars are below the 70% you want before the test.</p>
+            <h2>
+              <span x-text={`$store.i18n.t('${compact ? 'dash.byChapter' : 'dash.everyChapter'}')`}>
+              {compact ? 'Accuracy by chapter' : 'Every chapter'}
+              </span>
+            </h2>
+            <p x-text="$store.i18n.t('dash.belowTarget')">Red bars are below the 70% you want before the test.</p>
           </div>
           <p class="stat-sub" x-show="!stats.overallTotal">
-            Nothing answered yet. Take a practice quiz and every chapter gets a bar here.
+            <span x-text="$store.i18n.t('dash.noneAnswered')">
+              Nothing answered yet. Take a practice quiz and every chapter gets a bar here.
+            </span>
           </p>
           <ul class:list={[{ breakdown: true, compact }]} x-show="stats.overallTotal" x-cloak>
             <template x-for="chapter in stats.chapters" :key="chapter.id">
@@ -143,11 +169,17 @@ const progressHref = withBase('/progress/');
                   <i :style="`width:${chapter.total ? Math.max(chapter.rate * 100, 2) : 0}%`" :data-status="chapter.status"></i>
                 </span>
                 <span
-                  x-text="chapter.total ? `${chapter.correct} of ${chapter.total} answers` : 'No answers yet'"
+                  x-text="chapter.total
+                    ? $store.i18n.t('dash.answers', { correct: chapter.correct, total: chapter.total })
+                    : $store.i18n.t('dash.noAnswers')"
                 ></span>
                 <span
                   :class="chapter.status === 'on-track' ? 'pill pill-ok' : chapter.status === 'weak' ? 'pill pill-brand' : 'pill'"
-                  x-text="chapter.status === 'weak' ? 'Needs work' : chapter.status === 'on-track' ? 'On track' : 'Keep practicing'"
+                  x-text="chapter.status === 'weak'
+                    ? $store.i18n.t('dash.needsWork')
+                    : chapter.status === 'on-track'
+                      ? $store.i18n.t('dash.onTrack')
+                      : $store.i18n.t('dash.keepStatus')"
                 ></span>
               </li>
             </template>
@@ -155,9 +187,8 @@ const progressHref = withBase('/progress/');
           {
             compact && (
               <p class="button-row">
-                <a class="button button-quiet" href={progressHref}>
+                <a class="button button-quiet" href={progressHref} x-text="$store.i18n.t('dash.openFull')">
                   Open the full dashboard
-                  <Icon name="arrow" />
                 </a>
               </p>
             )
@@ -169,19 +200,19 @@ const progressHref = withBase('/progress/');
             compact ? (
               <Fragment>
                 <div class="card-head">
-                  <h2>Jump back in</h2>
-                  <p>Three ways to study.</p>
+                  <h2 x-text="$store.i18n.t('dash.jumpBack')">Jump back in</h2>
+                  <p x-text="$store.i18n.t('dash.threeWays')">Three ways to study.</p>
                 </div>
                 <ul class="tool-list">
                   <li>
                     <a class="tool" href={flashcardsHref}>
                       <span class="sq"><Icon name="cards" /></span>
                       <span>
-                        <b>Flashcards</b>
+                        <b x-text="$store.i18n.t('dash.flashcards')">Flashcards</b>
                         <small
                           x-text="stats.seenQuestions === 0
-                            ? 'Flip a fresh deck, three boxes'
-                            : `${stats.cardsDue} card${stats.cardsDue === 1 ? '' : 's'} due today`"
+                            ? $store.i18n.t('dash.freshDeck')
+                            : $store.i18n.t(stats.cardsDue === 1 ? 'dash.cardDue' : 'dash.cardsDueToday', { n: stats.cardsDue })"
                         />
                       </span>
                       <Icon name="chevron" class="go" />
@@ -191,8 +222,8 @@ const progressHref = withBase('/progress/');
                     <a class="tool" href={practiceHref}>
                       <span class="sq"><Icon name="practice" /></span>
                       <span>
-                        <b>Practice quiz</b>
-                        <small>Ten questions, answers as you go</small>
+                        <b x-text="$store.i18n.t('dash.practiceQuiz')">Practice quiz</b>
+                        <small x-text="$store.i18n.t('dash.practiceBlurb')">Ten questions, answers as you go</small>
                       </span>
                       <Icon name="chevron" class="go" />
                     </a>
@@ -201,8 +232,8 @@ const progressHref = withBase('/progress/');
                     <a class="tool" href={mockHref}>
                       <span class="sq"><Icon name="mock" /></span>
                       <span>
-                        <b>Mock exam</b>
-                        <small>20 questions · 45:00 · pass at 15</small>
+                        <b x-text="$store.i18n.t('dash.mockExam')">Mock exam</b>
+                        <small x-text="$store.i18n.t('dash.mockBlurb')">20 questions · 45:00 · pass at 15</small>
                       </span>
                       <Icon name="chevron" class="go" />
                     </a>
@@ -212,11 +243,11 @@ const progressHref = withBase('/progress/');
             ) : (
               <Fragment>
                 <div class="card-head">
-                  <h2>Mock scores</h2>
-                  <p>Most recent attempts, newest last.</p>
+                  <h2 x-text="$store.i18n.t('dash.mockScores')">Mock scores</h2>
+                  <p x-text="$store.i18n.t('dash.recentMocks')">Most recent attempts, newest last.</p>
                 </div>
                 <p class="stat-sub" x-show="!stats.mockTrend.length">
-                  No mocks yet. Sit one to start a readiness trend.
+                  <span x-text="$store.i18n.t('dash.noMocks')">No mocks yet. Sit one to start a readiness trend.</span>
                 </p>
                 <ol class="trend" x-show="stats.mockTrend.length">
                   <template x-for="(item, index) in stats.mockTrend" :key="index">
@@ -225,13 +256,13 @@ const progressHref = withBase('/progress/');
                       <span class="score" x-text="`${item.score}/${item.total}`"></span>
                       <span
                         :class="item.passed ? 'pill pill-ok' : 'pill pill-brand'"
-                        x-text="item.passed ? 'Pass' : 'Below 15'"
+                        x-text="item.passed ? $store.i18n.t('dash.pass') : $store.i18n.t('dash.below15')"
                       ></span>
                     </li>
                   </template>
                 </ol>
                 <p class="button-row">
-                  <a class="button button-primary" href={mockHref}>Start a mock exam</a>
+                  <a class="button button-primary" href={mockHref} x-text="$store.i18n.t('dash.startMock')">Start a mock exam</a>
                 </p>
               </Fragment>
             )

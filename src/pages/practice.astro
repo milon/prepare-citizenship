@@ -17,6 +17,9 @@ const payload = {
 <BaseLayout
   title="Practice quiz"
   description="Untimed practice with immediate feedback, by chapter or weakest topic."
+  titleFr="Quiz d’exercice"
+  descriptionFr="Exercices sans limite de temps avec rétroaction immédiate, par chapitre ou sujet le plus faible."
+  contextFr="Exercices"
 >
   <script is:inline type="application/json" id="practice-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/practice/')}>
@@ -52,7 +55,7 @@ const payload = {
             <span class="pill pill-brand" x-text="position"></span>
             <span class="pill" x-text="current.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
           </p>
-          <p class="sr-only" data-i18n="practice.keys">Number keys 1 to 4 select an answer.</p>
+          <p class="sr-only" x-text="$store.i18n.t('practice.keys')">Number keys 1 to 4 select an answer.</p>
           <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
           <div class="options" role="group" :aria-label="$store.i18n.pick(current.prompt)">
             <template x-for="(option, optionIndex) in current.options" :key="option.id">
@@ -85,7 +88,7 @@ const payload = {
 
       <template x-if="finished">
         <div>
-          <h2>Results</h2>
+          <h2 x-text="$store.i18n.t('practice.resultsTitle')">Results</h2>
           <p
             class="lede"
             x-text="$store.i18n.t('practice.score', { score, total: queue.length })"
@@ -99,7 +102,7 @@ const payload = {
             </template>
           </ul>
           <div class="button-row">
-            <button class="button button-primary" type="button" @click="start" data-i18n="practice.again">Practice again</button>
+            <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('practice.again')">Practice again</button>
           </div>
         </div>
       </template>

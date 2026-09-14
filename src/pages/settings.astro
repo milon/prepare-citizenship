@@ -6,6 +6,9 @@ import { withBase } from '../lib/paths';
 <BaseLayout
   title="Settings"
   description="Set your name, province, theme, and progress backup."
+  titleFr="Réglages"
+  descriptionFr="Définissez votre nom, votre province, le thème et la sauvegarde du progrès."
+  contextFr="Réglages"
 >
   <article class="panel quiz-shell" x-data="settingsPage">
     <p class="eyebrow" data-i18n="settings.eyebrow">Settings</p>
@@ -24,6 +27,7 @@ import { withBase } from '../lib/paths';
           autocomplete="nickname"
           spellcheck="false"
           placeholder="Optional"
+          data-i18n-placeholder="settings.optional"
           @blur="persistSettings"
         />
       </label>
@@ -50,24 +54,24 @@ import { withBase } from '../lib/paths';
       <label class="field">
         <span data-i18n="settings.language">Language</span>
         <select x-model="locale" @change="persistSettings">
-          <option value="en">English</option>
-          <option value="fr">Français</option>
+          <option value="en" data-i18n="settings.lang.en">English</option>
+          <option value="fr" data-i18n="settings.lang.fr">Français</option>
         </select>
       </label>
       <label class="field">
         <span data-i18n="settings.theme">Theme</span>
           <select x-model="theme" @change="persistSettings">
-            <option value="system">Match device</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="system" data-i18n="settings.theme.system">Match device</option>
+            <option value="light" data-i18n="settings.theme.light">Light</option>
+            <option value="dark" data-i18n="settings.theme.dark">Dark</option>
           </select>
         </label>
         <label class="field">
           <span data-i18n="settings.font">Text size</span>
           <select x-model="fontSize" @change="persistSettings">
-            <option value="md">Default</option>
-            <option value="lg">Large</option>
-            <option value="xl">Extra large</option>
+            <option value="md" data-i18n="settings.font.md">Default</option>
+            <option value="lg" data-i18n="settings.font.lg">Large</option>
+            <option value="xl" data-i18n="settings.font.xl">Extra large</option>
           </select>
         </label>
       </div>
@@ -96,10 +100,15 @@ import { withBase } from '../lib/paths';
 
     <section class="data-tools" aria-labelledby="about-heading">
       <h2 id="about-heading" data-i18n="settings.about">About this site</h2>
-      <p class="lede">
+      <p class="lede lang-en">
         Independent practice, not the official test. The <a href={withBase('/faq/')}>FAQ</a>{' '}
         covers the mock format, where progress is stored, and how this bank differs from
         IRCC’s questions.
+      </p>
+      <p class="lede lang-fr">
+        Exercices indépendants, pas l’examen officiel. La <a href={withBase('/faq/')}>FAQ</a>{' '}
+        explique le format de l’examen blanc, où le progrès est enregistré et en quoi cette
+        banque diffère des questions d’IRCC.
       </p>
     </section>
   </article>
