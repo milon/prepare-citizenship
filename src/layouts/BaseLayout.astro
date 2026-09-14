@@ -1,6 +1,8 @@
 ---
+import { pwaInfo } from 'virtual:pwa-info';
 import MapleLeaf from '../components/MapleLeaf.astro';
 import StorageBanner from '../components/StorageBanner.astro';
+import { withBase } from '../lib/paths';
 import '../styles/global.css';
 
 interface Props {
@@ -36,7 +38,15 @@ const nav = [
     <meta name="theme-color" content="#c8102e" />
     <meta name="color-scheme" content="light dark" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Citizenship" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <title>{title}</title>
+    <script src="../pwa.ts"></script>
     <script is:inline>
       (function () {
         try {

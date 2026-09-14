@@ -106,11 +106,11 @@ loaded.
 - [x] Screen-reader-friendly flip cards (state announced)
 
 ### 2.7 Offline / PWA
-- [ ] Web app manifest (installable on mobile home screen), including
+- [x] Web app manifest (installable on mobile home screen), including
       `apple-touch-icon`
-- [ ] Service worker caching all content/assets for full offline use
-- [ ] Works with zero network after first load
-- [ ] v1 ships as a GitHub Pages **project site** (`base` = `/prepare-citizenship/`). Design
+- [x] Service worker caching all content/assets for full offline use
+- [x] Works with zero network after first load
+- [x] v1 ships as a GitHub Pages **project site** (`base` = `/prepare-citizenship/`). Design
       so a later custom-domain move (root `base`) is a config change, not a rewrite
 - [ ] Test iOS Safari standalone / home-screen mode and `localStorage` behaviour
 
@@ -293,9 +293,10 @@ if stored, it must be rebuilt after import.
 - [x] Disclaimer + official guide link on home
 
 ### Phase 5 — Offline / PWA
-- [ ] Manifest + icons (including Apple touch icon)
-- [ ] Service worker via `vite-plugin-pwa` (correct project-site scope)
-- [ ] Test full offline after first load; iOS home-screen
+- [x] Manifest + icons (including Apple touch icon)
+- [x] Service worker via `vite-plugin-pwa` (correct project-site scope)
+- [x] Test full offline after first load
+- [ ] Confirm iOS Safari home-screen / standalone `localStorage` on a device
 
 ### Phase 6 — Launch
 - [ ] Content audit against current *Discover Canada* + `current.json`
