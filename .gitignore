@@ -20,3 +20,5 @@ pnpm-debug.log*
 # system/editor files
 .DS_Store
 .idea/
+
+plan.md
