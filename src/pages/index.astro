@@ -1,14 +1,18 @@
 ---
 import { getCollection } from 'astro:content';
 import DashboardPanel from '../components/DashboardPanel.astro';
+import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadStudyContent } from '../lib/study-content';
+import { withBase } from '../lib/paths';
 
 const chapters = (await getCollection('chapters'))
   .filter((entry) => !entry.data.regionGroup)
   .sort((a, b) => a.data.order - b.data.order);
 
-const current = (await getCollection('current'))[0]?.data;
-const questions = await getCollection('questions');
+const { questions, cards, current } = await loadStudyContent();
+const lastVerified = current?.lastVerified ?? 'unknown';
+
 const officialGuideUrl =
   'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
 const officialPdfUrl =
@@ -17,88 +21,66 @@ const officialPdfUrl =
 
 <BaseLayout
   title="Canadian Citizenship Test Prep"
-  description="Study for the Canadian citizenship test with original chapter lessons and a growing question bank."
+  description="Study for the Canadian citizenship test with original chapter lessons and a 500-question bank."
+  context="Today"
 >
-  <article class="hero">
-    <p
-      class="eyebrow"
-      x-data
-      x-text="$store.learner.name ? `Welcome back, ${$store.learner.name}` : 'Prepare with confidence'"
-    >
-      Prepare with confidence
-    </p>
-    <h1>Your Canadian citizenship study companion.</h1>
-    <p class="lede">
-      Read a chapter, drill flashcards, take a practice quiz, then sit a 20-question mock exam.
-    </p>
-    {
-      current && (
-        <p class="verified">
-          Officials last checked {current.lastVerified}. Question bank: {questions.length} items.
-        </p>
-      )
-    }
-  </article>
-
-  <div class="stack">
-    <section class="panel disclaimer" aria-labelledby="disclaimer-heading">
-      <p class="eyebrow">Please note</p>
-      <h2 id="disclaimer-heading" class="section-title">Independent practice, not the official test</h2>
+  <div class="page-head">
+    <div>
+      <h1
+        x-data
+        x-text="$store.learner.name ? `Welcome back, ${$store.learner.name}` : 'Your study dashboard'"
+      >
+        Your study dashboard
+      </h1>
       <p class="lede">
-        This site is not affiliated with Immigration, Refugees and Citizenship Canada.
-        Questions here are original paraphrases for study, not the real citizenship test
-        bank. For the authoritative material, read the
-        <a href={officialGuideUrl}>official study guide</a>
-        or the
-        <a href={officialPdfUrl}>Discover Canada PDF</a>.
+        Read a chapter, drill the flashcards, then sit a timed mock exam. Progress stays
+        on this device.
       </p>
-    </section>
-
-    <DashboardPanel lastVerified={current?.lastVerified ?? 'unknown'} compact />
-
-    <section class="panel" aria-labelledby="tools-heading">
-      <p class="eyebrow">Study tools</p>
-      <h2 id="tools-heading" class="section-title">Flashcards, practice, mock</h2>
-      <ul class="chapter-grid">
-        <li>
-          <a class="chapter-card" href={`${import.meta.env.BASE_URL}flashcards/`}>
-            <strong>Flashcards</strong>
-            <span>Flip cards with a three-box review schedule.</span>
-          </a>
-        </li>
-        <li>
-          <a class="chapter-card" href={`${import.meta.env.BASE_URL}practice/`}>
-            <strong>Practice quiz</strong>
-            <span>Untimed questions with instant explanations.</span>
-          </a>
-        </li>
-        <li>
-          <a class="chapter-card" href={`${import.meta.env.BASE_URL}mock/`}>
-            <strong>Mock exam</strong>
-            <span>20 questions, 45 minutes, 15 to pass.</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="panel" aria-labelledby="chapters-heading">
-      <p class="eyebrow">Study path</p>
-      <h2 id="chapters-heading" class="section-title">Start with a chapter</h2>
-      <p class="lede">
-        Read a short original summary, then return later for flashcards and a chapter quiz.
-      </p>
-      <ul class="chapter-grid">
-        {
-          chapters.map((chapter) => (
-            <li>
-              <a class="chapter-card" href={`${import.meta.env.BASE_URL}chapters/${chapter.id}/`}>
-                <strong>{chapter.data.title}</strong>
-                <span>{chapter.data.description}</span>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
+    </div>
+    <div class="chips">
+      <span class="chip">{questions.length} questions</span>
+      <span class="chip">Verified {lastVerified}</span>
+    </div>
   </div>
+
+  <DashboardPanel
+    lastVerified={lastVerified}
+    compact
+    totalQuestions={questions.length}
+    totalCards={cards.length}
+  />
+
+  <section class="card" style="margin-top:1rem" aria-labelledby="chapters-heading">
+    <div class="card-head">
+      <h2 id="chapters-heading">The ten chapters</h2>
+      <p>Original study notes, then flashcards and a quiz for each one.</p>
+    </div>
+    <ul class="chapter-grid">
+      {
+        chapters.map((chapter, index) => (
+          <li>
+            <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
+              <span class="num">{String(index + 1).padStart(2, '0')}</span>
+              <strong>{chapter.data.title}</strong>
+              <span>{chapter.data.description}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="panel disclaimer" style="margin-top:1rem" aria-labelledby="disclaimer-heading">
+    <h2 id="disclaimer-heading" class="section-title">
+      <Icon name="flag" /> Independent practice, not the official test
+    </h2>
+    <p class="lede">
+      This site is not affiliated with Immigration, Refugees and Citizenship Canada.
+      Questions here are original paraphrases for study, not the real citizenship test
+      bank. For the authoritative material, read the
+      <a href={officialGuideUrl}>official study guide</a>
+      or the
+      <a href={officialPdfUrl}>Discover Canada PDF</a>.
+    </p>
+  </section>
 </BaseLayout>

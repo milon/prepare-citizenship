@@ -32,9 +32,22 @@ export type DashboardStats = {
   overallTotal: number;
   overallRate: number;
   streak: number;
+  seenQuestions: number;
+  cardsDue: number;
+  mocksPassed: number;
   mockTrend: { date: string; score: number; total: number; passed: boolean }[];
   chapters: ChapterStat[];
   readiness: Readiness;
+  recommendation: Recommendation;
+};
+
+export type Recommendation = {
+  kind: 'read' | 'mock' | 'drill' | 'cards' | 'maintain';
+  title: string;
+  blurb: string;
+  cta: string;
+  altCta: string;
+  chapterId: ChapterId | null;
 };
 
 function mocks(progress: Progress): QuizAttempt[] {
@@ -113,7 +126,94 @@ export function readinessFor(progress: Progress): Readiness {
   return { status: 'not-ready', reasons, keepPracticing, weakChapters };
 }
 
-export function dashboardStats(progress: Progress, today = todayStamp()): DashboardStats {
+export function seenQuestionCount(progress: Progress): number {
+  const seen = new Set<string>();
+  for (const attempt of progress.quizAttempts) {
+    for (const answer of attempt.answers) {
+      seen.add(answer.questionId);
+    }
+  }
+  return seen.size;
+}
+
+/**
+ * A card with no saved state counts as due, matching `isCardDue`.
+ */
+export function dueCardCount(progress: Progress, totalCards: number, today = todayStamp()): number {
+  const tracked = Object.values(progress.flashcardState);
+  const dueTracked = tracked.filter((record) => record.due <= today).length;
+  const untracked = Math.max(0, totalCards - tracked.length);
+  return dueTracked + untracked;
+}
+
+export function recommendationFor(
+  stats: Omit<DashboardStats, 'recommendation'>,
+): Recommendation {
+  const weakest = [...stats.chapters]
+    .filter((chapter) => chapter.status === 'weak')
+    .sort((a, b) => a.rate - b.rate)[0];
+  const mocksCompleted = stats.mockTrend.length;
+
+  if (stats.seenQuestions === 0) {
+    return {
+      kind: 'read',
+      title: 'Start with chapter one',
+      blurb:
+        'Read Rights and Responsibilities, then drill the same material as flashcards. Ten minutes is enough for a first session.',
+      cta: 'Read the chapter',
+      altCta: 'Try a practice quiz',
+      chapterId: CHAPTERS[0].id,
+    };
+  }
+
+  if (mocksCompleted < MOCKS_FOR_READINESS) {
+    return {
+      kind: 'mock',
+      title: mocksCompleted === 0 ? 'Sit your first mock exam' : `Sit mock exam #${mocksCompleted + 1}`,
+      blurb: `20 questions, 45 minutes, ${MOCK_PASS_SCORE} to pass — the same shape as the real test. Readiness needs ${MOCKS_FOR_READINESS} passes.`,
+      cta: 'Start mock exam',
+      altCta: 'Practice 10 instead',
+      chapterId: null,
+    };
+  }
+
+  if (weakest) {
+    return {
+      kind: 'drill',
+      title: `Drill ${weakest.title}`,
+      blurb: `It is at ${percent(weakest.rate)} after ${weakest.total} answers, below the 70% you want before the test.`,
+      cta: 'Practice this chapter',
+      altCta: 'Flashcards for it',
+      chapterId: weakest.id,
+    };
+  }
+
+  if (stats.cardsDue > 0) {
+    return {
+      kind: 'cards',
+      title: `${stats.cardsDue} flashcard${stats.cardsDue === 1 ? '' : 's'} due`,
+      blurb: 'Clear today’s box to keep the spaced schedule honest, then take a quiz.',
+      cta: 'Review cards',
+      altCta: 'Practice quiz',
+      chapterId: null,
+    };
+  }
+
+  return {
+    kind: 'maintain',
+    title: 'You are tracking well',
+    blurb: 'Nothing is overdue. Keep the streak alive with a short set, or sit another mock to confirm.',
+    cta: 'Practice quiz',
+    altCta: 'Mock exam',
+    chapterId: null,
+  };
+}
+
+export function dashboardStats(
+  progress: Progress,
+  totalCards = 0,
+  today = todayStamp(),
+): DashboardStats {
   let overallCorrect = 0;
   let overallTotal = 0;
   for (const attempt of progress.quizAttempts) {
@@ -121,20 +221,27 @@ export function dashboardStats(progress: Progress, today = todayStamp()): Dashbo
     overallTotal += attempt.total;
   }
 
-  return {
+  const mockTrend = mocks(progress).map((attempt) => ({
+    date: attempt.date.slice(0, 10),
+    score: attempt.score,
+    total: attempt.total,
+    passed: attempt.score >= MOCK_PASS_SCORE,
+  }));
+
+  const base = {
     overallCorrect,
     overallTotal,
     overallRate: overallTotal === 0 ? 0 : overallCorrect / overallTotal,
     streak: currentStreak(progress, today),
-    mockTrend: mocks(progress).map((attempt) => ({
-      date: attempt.date.slice(0, 10),
-      score: attempt.score,
-      total: attempt.total,
-      passed: attempt.score >= MOCK_PASS_SCORE,
-    })),
+    seenQuestions: seenQuestionCount(progress),
+    cardsDue: dueCardCount(progress, totalCards, today),
+    mocksPassed: mockTrend.filter((attempt) => attempt.passed).length,
+    mockTrend,
     chapters: chapterStats(progress),
     readiness: readinessFor(progress),
   };
+
+  return { ...base, recommendation: recommendationFor(base) };
 }
 
 export function percent(rate: number): string {

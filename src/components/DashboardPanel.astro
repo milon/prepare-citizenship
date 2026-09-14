@@ -1,133 +1,241 @@
 ---
+import Icon from './Icon.astro';
+import MapleLeaf from './MapleLeaf.astro';
 import { withBase } from '../lib/paths';
 
 interface Props {
   lastVerified: string;
   compact?: boolean;
+  totalQuestions?: number;
+  totalCards?: number;
 }
 
-const { lastVerified, compact = false } = Astro.props;
+const { lastVerified, compact = false, totalQuestions = 0, totalCards = 0 } = Astro.props;
+
+const chaptersHref = withBase('/chapters/');
+const practiceHref = withBase('/practice/');
+const flashcardsHref = withBase('/flashcards/');
+const mockHref = withBase('/mock/');
 const progressHref = withBase('/progress/');
 ---
 
-<section class="panel dashboard" x-data="dashboardPage" aria-labelledby="dashboard-heading">
-  <p class="eyebrow">Progress</p>
-  <h2 id="dashboard-heading" class="dashboard-title">
-    <span x-show="!$store.learner.name">{compact ? 'How you are doing' : 'Readiness dashboard'}</span>
-    {
-      compact ? (
-        <span
-          x-show="$store.learner.name"
-          x-cloak
-          x-text="`How ${$store.learner.name} is doing`"
-        ></span>
-      ) : (
-        <span
-          x-show="$store.learner.name"
-          x-cloak
-          x-text="`${$store.learner.possessive()} readiness`"
-        ></span>
-      )
-    }
-  </h2>
-  <p class="verified">Officials last checked {lastVerified}.</p>
+<section
+  x-data="dashboardPage"
+  data-total-questions={totalQuestions}
+  data-total-cards={totalCards}
+  data-chapters-path={chaptersHref}
+  data-practice-path={practiceHref}
+  data-flashcards-path={flashcardsHref}
+  data-mock-path={mockHref}
+  aria-labelledby={compact ? undefined : 'dashboard-heading'}
+  aria-label={compact ? 'Progress summary' : undefined}
+>
   {
-    compact && (
-      <p class="lede">
-        <a href={progressHref}>Open the full dashboard</a>
-      </p>
+    !compact && (
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Progress</p>
+          <h1 id="dashboard-heading">
+            <span x-show="!$store.learner.name">Readiness dashboard</span>
+            <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.possessive()} readiness`" />
+          </h1>
+          <p class="verified">Officials last checked {lastVerified}.</p>
+        </div>
+      </div>
     )
   }
 
   <template x-if="stats">
     <div>
+      <div class="dash-hero">
+        <div class="hero-cta">
+          <MapleLeaf class="leaf-wash" />
+          <p class="k">Recommended next</p>
+          <h2 x-text="nextStep.title">Keep studying</h2>
+          <p x-text="nextStep.blurb"></p>
+          <div class="button-row">
+            <a class="button button-on-brand" :href="nextStep.href" x-text="nextStep.cta"></a>
+            <a class="button button-ghost-brand" :href="nextStep.altHref" x-text="nextStep.altCta"></a>
+          </div>
+        </div>
+
+        <div class="readiness-card">
+          <div class="dial" :style="`--value:${dialValue}`" :data-status="stats.readiness.status">
+            <b x-text="stats.overallTotal ? percent(stats.overallRate) : '—'">—</b>
+          </div>
+          <div>
+            <p class="k">Readiness</p>
+            <h3 x-text="readinessSummary.label"></h3>
+            <p x-text="readinessSummary.note"></p>
+          </div>
+        </div>
+      </div>
+
       <div class="stat-grid">
         <p class="stat">
+          <span class="stat-label">Questions seen</span>
+          <strong x-text="stats.seenQuestions"></strong>
+          <span class="stat-sub" x-text="seenLabel"></span>
+        </p>
+        <p class="stat">
+          <span class="stat-label">Accuracy</span>
           <strong x-text="stats.overallTotal ? percent(stats.overallRate) : '—'"></strong>
-          <span>Overall accuracy</span>
           <span
             class="stat-sub"
-            x-text="stats.overallTotal ? `${stats.overallCorrect} of ${stats.overallTotal}` : 'No quiz answers yet'"
+            x-text="stats.overallTotal ? `${stats.overallCorrect} of ${stats.overallTotal} answers` : 'No quiz answers yet'"
           ></span>
         </p>
         <p class="stat">
+          <span class="stat-label">Study streak</span>
           <strong x-text="stats.streak"></strong>
-          <span>Study streak</span>
-          <span class="stat-sub" x-text="stats.streak === 1 ? 'day' : 'days'"></span>
+          <span class="stat-sub" x-text="stats.streak === 1 ? 'day in a row' : 'days in a row'"></span>
         </p>
         <p class="stat">
-          <strong x-text="stats.mockTrend.length"></strong>
-          <span>Mocks completed</span>
+          <span class="stat-label">Mocks passed</span>
+          <strong x-text="stats.mocksPassed"></strong>
+          <span class="stat-sub" x-text="`of ${stats.mockTrend.length} attempted`"></span>
         </p>
       </div>
 
-      <div class="readiness" :data-status="stats.readiness.status">
-        <p class="readiness-label" x-show="stats.readiness.status === 'not-enough-data'">
-          Not enough data —
-          <span
-            x-text="`finish ${3 - stats.readiness.mocksCompleted} more mock${3 - stats.readiness.mocksCompleted === 1 ? '' : 's'} to see readiness.`"
-          ></span>
-        </p>
+      <div class="readiness" :data-status="stats.readiness.status" x-show="stats.readiness.status !== 'not-enough-data'" x-cloak>
         <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
-          <span x-show="!$store.learner.name">Ready — last 3 mocks passed, and practiced chapters are at 70% or better.</span>
+          <span x-show="!$store.learner.name">Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
           <span
             x-show="$store.learner.name"
             x-cloak
-            x-text="`${$store.learner.name}, you are ready — last 3 mocks passed, and practiced chapters are at 70% or better.`"
+            x-text="`${$store.learner.name}, you are ready — last three mocks passed, and practiced chapters are at 70% or better.`"
           ></span>
         </p>
         <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
           <span x-show="!$store.learner.name">Not ready yet.</span>
-          <span
-            x-show="$store.learner.name"
-            x-cloak
-            x-text="`${$store.learner.name}, not ready yet.`"
-          ></span>
+          <span x-show="$store.learner.name" x-cloak x-text="`${$store.learner.name}, not ready yet.`"></span>
         </p>
         <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
           <template x-for="reason in (stats.readiness.reasons || [])" :key="reason">
             <li x-text="reason"></li>
           </template>
         </ul>
-        <p
-          class="stat-sub"
-          x-show="(stats.readiness.keepPracticing || []).length"
-        >
+        <p class="stat-sub" x-show="(stats.readiness.keepPracticing || []).length">
           Keep practicing:
-          <span
-            x-text="(stats.readiness.keepPracticing || []).map((chapter) => chapter.title).join(', ')"
-          ></span>
+          <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => chapter.title).join(', ')"></span>
         </p>
       </div>
 
-      <div class:list={[{ 'dashboard-detail': true, compact }]}>
-        <h3>Mock scores</h3>
-        <p class="stat-sub" x-show="!stats.mockTrend.length">No mocks yet.</p>
-        <ol class="trend" x-show="stats.mockTrend.length">
-          <template x-for="(item, index) in stats.mockTrend" :key="index">
-            <li>
-              <span x-text="item.date"></span>
-              <span x-text="`${item.score}/${item.total}`"></span>
-              <span x-text="item.passed ? 'Pass' : 'Below 15'"></span>
-            </li>
-          </template>
-        </ol>
+      <div class="dash-grid" style="margin-top:1rem">
+        <div class="card">
+          <div class="card-head">
+            <h2>{compact ? 'Accuracy by chapter' : 'Every chapter'}</h2>
+            <p>Red bars are below the 70% you want before the test.</p>
+          </div>
+          <p class="stat-sub" x-show="!stats.overallTotal">
+            Nothing answered yet. Take a practice quiz and every chapter gets a bar here.
+          </p>
+          <ul class:list={[{ breakdown: true, compact }]} x-show="stats.overallTotal" x-cloak>
+            <template x-for="chapter in stats.chapters" :key="chapter.id">
+              <li>
+                <strong x-text="chapter.title"></strong>
+                <span
+                  class="rate"
+                  x-text="chapter.total ? percent(chapter.rate) : '—'"
+                ></span>
+                <span class="meter">
+                  <i :style="`width:${chapter.total ? Math.max(chapter.rate * 100, 2) : 0}%`" :data-status="chapter.status"></i>
+                </span>
+                <span
+                  x-text="chapter.total ? `${chapter.correct} of ${chapter.total} answers` : 'No answers yet'"
+                ></span>
+                <span
+                  :class="chapter.status === 'on-track' ? 'pill pill-ok' : chapter.status === 'weak' ? 'pill pill-brand' : 'pill'"
+                  x-text="chapter.status === 'weak' ? 'Needs work' : chapter.status === 'on-track' ? 'On track' : 'Keep practicing'"
+                ></span>
+              </li>
+            </template>
+          </ul>
+          {
+            compact && (
+              <p class="button-row">
+                <a class="button button-quiet" href={progressHref}>
+                  Open the full dashboard
+                  <Icon name="arrow" />
+                </a>
+              </p>
+            )
+          }
+        </div>
 
-        <h3>By chapter</h3>
-        <ul class="breakdown">
-          <template x-for="chapter in stats.chapters" :key="chapter.id">
-            <li>
-              <strong x-text="chapter.title"></strong>
-              <span
-                x-text="chapter.total ? `${percent(chapter.rate)} (${chapter.correct}/${chapter.total})` : 'No answers yet'"
-              ></span>
-              <span
-                class="pill"
-                x-text="chapter.status === 'weak' ? 'Needs work' : chapter.status === 'on-track' ? 'On track' : 'Keep practicing'"
-              ></span>
-            </li>
-          </template>
-        </ul>
+        <div class="card">
+          {
+            compact ? (
+              <Fragment>
+                <div class="card-head">
+                  <h2>Jump back in</h2>
+                  <p>Three ways to study.</p>
+                </div>
+                <ul class="tool-list">
+                  <li>
+                    <a class="tool" href={flashcardsHref}>
+                      <span class="sq"><Icon name="cards" /></span>
+                      <span>
+                        <b>Flashcards</b>
+                        <small
+                          x-text="stats.seenQuestions === 0
+                            ? 'Flip a fresh deck, three boxes'
+                            : `${stats.cardsDue} card${stats.cardsDue === 1 ? '' : 's'} due today`"
+                        />
+                      </span>
+                      <Icon name="chevron" class="go" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tool" href={practiceHref}>
+                      <span class="sq"><Icon name="practice" /></span>
+                      <span>
+                        <b>Practice quiz</b>
+                        <small>Ten questions, answers as you go</small>
+                      </span>
+                      <Icon name="chevron" class="go" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tool" href={mockHref}>
+                      <span class="sq"><Icon name="mock" /></span>
+                      <span>
+                        <b>Mock exam</b>
+                        <small>20 questions · 45:00 · pass at 15</small>
+                      </span>
+                      <Icon name="chevron" class="go" />
+                    </a>
+                  </li>
+                </ul>
+              </Fragment>
+            ) : (
+              <Fragment>
+                <div class="card-head">
+                  <h2>Mock scores</h2>
+                  <p>Most recent attempts, newest last.</p>
+                </div>
+                <p class="stat-sub" x-show="!stats.mockTrend.length">
+                  No mocks yet. Sit one to start a readiness trend.
+                </p>
+                <ol class="trend" x-show="stats.mockTrend.length">
+                  <template x-for="(item, index) in stats.mockTrend" :key="index">
+                    <li>
+                      <span x-text="item.date"></span>
+                      <span class="score" x-text="`${item.score}/${item.total}`"></span>
+                      <span
+                        :class="item.passed ? 'pill pill-ok' : 'pill pill-brand'"
+                        x-text="item.passed ? 'Pass' : 'Below 15'"
+                      ></span>
+                    </li>
+                  </template>
+                </ol>
+                <p class="button-row">
+                  <a class="button button-primary" href={mockHref}>Start a mock exam</a>
+                </p>
+              </Fragment>
+            )
+          }
+        </div>
       </div>
     </div>
   </template>

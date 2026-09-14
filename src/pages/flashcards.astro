@@ -19,7 +19,7 @@ const payload = {
 >
   <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/flashcards/')}>
-    <article class="panel" x-data="flashcardsPage">
+    <article class="panel quiz-shell" x-data="flashcardsPage">
       <p class="eyebrow">Recall</p>
       <h1>Flashcards</h1>
       <p class="lede">

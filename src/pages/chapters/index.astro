@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/paths';
 
 const chapters = (await getCollection('chapters'))
   .filter((entry) => !entry.data.regionGroup)
@@ -14,19 +15,34 @@ const regions = (await getCollection('chapters'))
 <BaseLayout
   title="Study chapters"
   description="Original summaries of every Discover Canada chapter, written for test prep."
+  context="Chapters"
 >
-  <article class="panel chapters-index">
-    <p class="eyebrow">Discover Canada</p>
-    <h1>Chapter summaries</h1>
-    <p class="lede">
-      These pages are original study notes. They are not a copy of the official
-      guide. Use them to learn the shape of each topic, then drill with questions.
-    </p>
+  <div class="page-head">
+    <div>
+      <p class="eyebrow">Discover Canada</p>
+      <h1>Chapter summaries</h1>
+      <p class="lede">
+        These pages are original study notes, not a copy of the official guide. Learn the
+        shape of each topic, then drill it with flashcards and a quiz.
+      </p>
+    </div>
+    <div class="chips">
+      <span class="chip">{chapters.length} chapters</span>
+      <span class="chip">{regions.length} region pages</span>
+    </div>
+  </div>
+
+  <section class="card" aria-labelledby="chapter-list">
+    <div class="card-head">
+      <h2 id="chapter-list">The ten chapters</h2>
+      <p>Each one ends with links to its flashcards and chapter quiz.</p>
+    </div>
     <ul class="chapter-grid">
       {
-        chapters.map((chapter) => (
+        chapters.map((chapter, index) => (
           <li>
-            <a class="chapter-card" href={`${import.meta.env.BASE_URL}chapters/${chapter.id}/`}>
+            <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
+              <span class="num">{String(index + 1).padStart(2, '0')}</span>
               <strong>{chapter.data.title}</strong>
               <span>{chapter.data.description}</span>
             </a>
@@ -34,15 +50,18 @@ const regions = (await getCollection('chapters'))
         ))
       }
     </ul>
+  </section>
 
-    <h2 id="regions" class="section-title">
-      Region subpages
-    </h2>
+  <section class="card" style="margin-top:1rem" aria-labelledby="regions">
+    <div class="card-head">
+      <h2 id="regions">Region subpages</h2>
+      <p>Mock exams include questions about the province or territory you choose.</p>
+    </div>
     <ul class="region-grid">
       {
         regions.map((region) => (
           <li>
-            <a class="region-card" href={`${import.meta.env.BASE_URL}chapters/${region.id}/`}>
+            <a class="region-card" href={`${withBase('/chapters/')}${region.id}/`}>
               <strong>{region.data.title}</strong>
               <span>{region.data.description}</span>
             </a>
@@ -50,5 +69,5 @@ const regions = (await getCollection('chapters'))
         ))
       }
     </ul>
-  </article>
+  </section>
 </BaseLayout>

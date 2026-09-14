@@ -1,15 +1,20 @@
 ---
-import { getCollection } from 'astro:content';
 import DashboardPanel from '../components/DashboardPanel.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadStudyContent } from '../lib/study-content';
 
-const current = (await getCollection('current'))[0]?.data;
+const { questions, cards, current } = await loadStudyContent();
 const lastVerified = current?.lastVerified ?? 'unknown';
 ---
 
 <BaseLayout
   title="Progress"
   description="See accuracy, mock trend, streak, and citizenship test readiness."
+  context="Progress"
 >
-  <DashboardPanel lastVerified={lastVerified} />
+  <DashboardPanel
+    lastVerified={lastVerified}
+    totalQuestions={questions.length}
+    totalCards={cards.length}
+  />
 </BaseLayout>

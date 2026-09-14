@@ -21,7 +21,7 @@ const payload = {
 >
   <script is:inline type="application/json" id="practice-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/practice/')}>
-    <article class="panel" x-data="practicePage" @keydown.window="onKey($event)">
+    <article class="panel quiz-shell" x-data="practicePage" @keydown.window="onKey($event)">
       <p class="eyebrow">Practice</p>
       <h1>Chapter quiz</h1>
       <p class="lede">
@@ -44,7 +44,15 @@ const payload = {
 
       <template x-if="!finished && current">
         <div>
-          <p class="verified" x-text="position"></p>
+          <div class="rail-progress" aria-hidden="true">
+            <template x-for="(question, itemIndex) in queue" :key="question.id">
+              <i :data-state="itemIndex === index ? 'current' : itemIndex < index ? 'answered' : 'todo'"></i>
+            </template>
+          </div>
+          <p class="qmeta">
+            <span class="pill pill-brand" x-text="position"></span>
+            <span class="pill" x-text="current.type === 'true_false' ? 'True or false' : 'Multiple choice'"></span>
+          </p>
           <p class="sr-only">Number keys 1 to 4 select an answer.</p>
           <h2 class="prompt" x-text="current.prompt"></h2>
           <div class="options" role="group" :aria-label="current.prompt">
@@ -68,9 +76,11 @@ const payload = {
           <div class="explain" x-show="revealed" x-cloak>
             <p x-text="current.explanation"></p>
           </div>
-          <button class="button button-primary" type="button" x-show="revealed" @click="next">
-            <span x-text="index === queue.length - 1 ? 'See results' : 'Next question'"></span>
-          </button>
+          <div class="button-row" x-show="revealed" x-cloak>
+            <button class="button button-primary" type="button" @click="next">
+              <span x-text="index === queue.length - 1 ? 'See results' : 'Next question'"></span>
+            </button>
+          </div>
         </div>
       </template>
 

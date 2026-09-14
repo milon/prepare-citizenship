@@ -11,7 +11,6 @@ const THEME_LABELS: Record<ThemePreference, string> = {
 
 export function siteHeaderApp() {
   return {
-    menuOpen: false,
     theme: 'system' as ThemePreference,
 
     init() {

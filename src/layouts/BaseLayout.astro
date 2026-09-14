@@ -1,5 +1,6 @@
 ---
 import { pwaInfo } from 'virtual:pwa-info';
+import Icon from '../components/Icon.astro';
 import MapleLeaf from '../components/MapleLeaf.astro';
 import StorageBanner from '../components/StorageBanner.astro';
 import { withBase } from '../lib/paths';
@@ -8,25 +9,66 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
+  context?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, context } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const homeHref = base.endsWith('/') ? base : `${base}/`;
-const chaptersHref = `${homeHref}chapters/`;
 const path = Astro.url.pathname;
 const officialGuideUrl =
   'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
 
+const isHome = path === homeHref || path === base;
+
 const nav = [
-  { href: homeHref, label: 'Home', current: path === homeHref || path === base },
-  { href: chaptersHref, label: 'Chapters', current: path.includes('/chapters') },
-  { href: `${homeHref}flashcards/`, label: 'Flashcards', current: path.includes('/flashcards') },
-  { href: `${homeHref}practice/`, label: 'Practice', current: path.includes('/practice') },
-  { href: `${homeHref}mock/`, label: 'Mock', current: path.includes('/mock') },
-  { href: `${homeHref}progress/`, label: 'Progress', current: path.includes('/progress') },
-  { href: `${homeHref}settings/`, label: 'Settings', current: path.includes('/settings') },
-];
+  { href: homeHref, label: 'Today', icon: 'today', current: isHome, tab: true },
+  {
+    href: `${homeHref}chapters/`,
+    label: 'Chapters',
+    icon: 'chapters',
+    current: path.includes('/chapters'),
+    tab: true,
+  },
+  {
+    href: `${homeHref}flashcards/`,
+    label: 'Flashcards',
+    icon: 'cards',
+    current: path.includes('/flashcards'),
+    tab: true,
+    tabLabel: 'Cards',
+  },
+  {
+    href: `${homeHref}practice/`,
+    label: 'Practice',
+    icon: 'practice',
+    current: path.includes('/practice'),
+    tab: true,
+  },
+  {
+    href: `${homeHref}mock/`,
+    label: 'Mock exam',
+    icon: 'mock',
+    current: path.includes('/mock'),
+    tab: true,
+    tabLabel: 'Mock',
+  },
+  {
+    href: `${homeHref}progress/`,
+    label: 'Progress',
+    icon: 'progress',
+    current: path.includes('/progress'),
+  },
+  {
+    href: `${homeHref}settings/`,
+    label: 'Settings',
+    icon: 'settings',
+    current: path.includes('/settings'),
+  },
+] as const;
+
+const tabs = nav.filter((item) => 'tab' in item && item.tab);
+const railOnly = nav.filter((item) => !('tab' in item && item.tab));
 ---
 
 <!doctype html>
@@ -35,7 +77,7 @@ const nav = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#c8102e" />
+    <meta name="theme-color" content="#131925" />
     <meta name="color-scheme" content="light dark" />
     <meta name="generator" content={Astro.generator} />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -68,66 +110,104 @@ const nav = [
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="flag-stripe" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <header
-      class="site-header"
-      x-data="siteHeader"
-      :class="menuOpen && 'menu-open'"
-      @keydown.escape="menuOpen = false"
-      @click.outside="menuOpen = false"
-    >
-      <a class="wordmark" href={homeHref}>
-        <MapleLeaf />
-        Prepare Citizenship
-      </a>
-      <div class="header-actions">
-        <button
-          class="chip theme-toggle"
-          type="button"
-          @click="cycleTheme"
-          :aria-label="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
-          :title="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
-        >
-          <span class="theme-dot" aria-hidden="true"></span>
-          <span x-text="themeLabel">Auto</span>
-        </button>
-        <button
-          class="chip nav-toggle"
-          type="button"
-          aria-controls="primary-nav"
-          :aria-expanded="menuOpen.toString()"
-          @click="menuOpen = !menuOpen"
-        >
-          <span x-text="menuOpen ? 'Close' : 'Menu'">Menu</span>
-        </button>
-      </div>
-      <nav class="nav" id="primary-nav" aria-label="Primary">
-        {
-          nav.map((item) => (
-            <a
-              href={item.href}
-              aria-current={item.current ? 'page' : undefined}
-              {...{ '@click': 'menuOpen = false' }}
+    <div class="app">
+      <aside class="rail">
+        <a class="rail-brand" href={homeHref}>
+          <MapleLeaf />
+          Prepare Citizenship
+        </a>
+        <nav class="rail-nav" aria-label="Primary">
+          {
+            nav.map((item) => (
+              <a href={item.href} aria-current={item.current ? 'page' : undefined}>
+                <Icon name={item.icon} />
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+        <div class="rail-widget" x-data="dashboardPage">
+          <template x-if="stats">
+            <div>
+              <p class="k">Study streak</p>
+              <p class="v" x-text="`${stats.streak} day${stats.streak === 1 ? '' : 's'}`"></p>
+              <p class="k" style="margin-top:0.8rem">Accuracy</p>
+              <p
+                class="v"
+                x-text="stats.overallTotal ? `${Math.round(stats.overallRate * 100)}% of ${stats.overallTotal}` : 'No answers yet'"
+              ></p>
+            </div>
+          </template>
+        </div>
+        <div class="rail-user" x-data>
+          <span class="avatar" aria-hidden="true" x-text="$store.learner.name ? $store.learner.name.slice(0, 1).toUpperCase() : '🍁'">🍁</span>
+          <span x-text="$store.learner.name || 'Studying on this device'">Studying on this device</span>
+        </div>
+      </aside>
+
+      <div class="content">
+        <header class="topbar" x-data="siteHeader">
+          <a class="topbar-brand" href={homeHref}>
+            <MapleLeaf />
+            <span class="brand-full">Prepare Citizenship</span>
+            <span class="brand-short">Citizenship</span>
+          </a>
+          <p class="topbar-context">{context ?? title}</p>
+          <div class="topbar-actions">
+            {
+              railOnly.map((item) => (
+                <a
+                  class="icon-button only-mobile"
+                  href={item.href}
+                  aria-label={item.label}
+                  title={item.label}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  <Icon name={item.icon} />
+                </a>
+              ))
+            }
+            <button
+              class="icon-button"
+              type="button"
+              @click="cycleTheme"
+              :aria-label="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
+              :title="`Theme: ${themeLabel}. Switch to ${nextThemeLabel}.`"
             >
-              {item.label}
-            </a>
-          ))
-        }
-      </nav>
-    </header>
-    <StorageBanner />
-    <main id="main" class="site-main" tabindex="-1">
-      <slot />
-    </main>
-    <footer class="site-footer">
-      Independent study tool—not affiliated with Immigration, Refugees and
-      Citizenship Canada. For authoritative material, use the
-      <a href={officialGuideUrl}>official study guide</a>. Practice questions
-      here are original paraphrases, not the real test bank.
-    </footer>
+              <span x-show="theme === 'system'"><Icon name="auto" /></span>
+              <span x-show="theme === 'light'" x-cloak><Icon name="sun" /></span>
+              <span x-show="theme === 'dark'" x-cloak><Icon name="moon" /></span>
+              <span class="theme-label" x-text="themeLabel">Auto</span>
+            </button>
+          </div>
+        </header>
+
+        <StorageBanner />
+
+        <main id="main" class="site-main" tabindex="-1">
+          <slot />
+        </main>
+
+        <footer class="site-footer">
+          <p>
+            Independent study tool—not affiliated with Immigration, Refugees and
+            Citizenship Canada. For authoritative material, use the{' '}
+            <a href={officialGuideUrl}>official study guide</a>. Practice questions here
+            are original paraphrases, not the real test bank.
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <nav class="tabbar" aria-label="Sections">
+      {
+        tabs.map((item) => (
+          <a href={item.href} aria-current={item.current ? 'page' : undefined}>
+            <Icon name={item.icon} />
+            {'tabLabel' in item ? item.tabLabel : item.label}
+          </a>
+        ))
+      }
+    </nav>
   </body>
 </html>
