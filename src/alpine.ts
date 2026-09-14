@@ -1,5 +1,6 @@
 import type { Alpine } from 'alpinejs';
 import { applyAppearance } from './lib/appearance';
+import { contactFormApp } from './lib/contact-app';
 import { parseDisplayName, possessiveName } from './lib/display-name';
 import { dashboardApp } from './lib/dashboard-app';
 import { siteHeaderApp } from './lib/header-app';
@@ -118,6 +119,8 @@ export default (Alpine: Alpine) => {
   Alpine.data('provincePicker', () => provincePickerApp());
 
   Alpine.data('settingsPage', () => settingsApp());
+
+  Alpine.data('contactForm', () => contactFormApp());
 
   Alpine.data('speech', () => ({
     speak(text: string) {

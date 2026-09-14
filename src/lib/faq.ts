@@ -86,7 +86,8 @@ export function faqItems(
       {
         id: 'privacy',
         question: 'Le site est-il gratuit et recueillez-vous des données?',
-        html: `<p>Le site est gratuit. Il n’y a ni compte, ni analytique, ni publicité. Votre progrès ne quitte jamais le navigateur, sauf si vous l’exportez vous-même.</p>`,
+        html: `<p>Le site est gratuit. Il n’y a ni compte, ni analytique, ni publicité. Votre progrès ne quitte jamais le navigateur, sauf si vous l’exportez vous-même.</p>
+<p>Si vous envoyez un message depuis le formulaire de contact, Formspree achemine ce courriel. Il n’est pas lié à votre progrès d’étude.</p>`,
       },
       {
         id: 'french',
@@ -97,7 +98,7 @@ export function faqItems(
       {
         id: 'mistake',
         question: 'Je crois qu’une question contient une erreur. Que faire?',
-        html: `<p>Consultez d’abord le <a href="${OFFICIAL_GUIDE_URL_FR}">guide d’étude officiel</a>. Si le site semble toujours erroné, ouvrez un <a href="${GITHUB_CONTENT_ISSUE_URL}">signalement d’erreur de contenu</a> en indiquant l’identifiant de la question et la réponse attendue.</p>`,
+        html: `<p>Consultez d’abord le <a href="${OFFICIAL_GUIDE_URL_FR}">guide d’étude officiel</a>. Si le site semble toujours erroné, ouvrez un <a href="${GITHUB_CONTENT_ISSUE_URL}">signalement d’erreur de contenu</a> en indiquant l’identifiant de la question et la réponse attendue, ou utilisez le <a href="#contact">formulaire de contact</a>.</p>`,
       },
     ];
   }
@@ -165,7 +166,8 @@ export function faqItems(
     {
       id: 'privacy',
       question: 'Is this free, and do you collect data?',
-      html: `<p>The site is free to use. There are no accounts, no analytics, and no ads. Progress never leaves the browser unless you export it yourself.</p>`,
+      html: `<p>The site is free to use. There are no accounts, no analytics, and no ads. Progress never leaves the browser unless you export it yourself.</p>
+<p>If you send a message from the contact form, Formspree delivers that email. It is not stored with your study progress.</p>`,
     },
     {
       id: 'french',
@@ -176,7 +178,7 @@ export function faqItems(
     {
       id: 'mistake',
       question: 'I think a question is wrong. What should I do?',
-      html: `<p>Check the <a href="${OFFICIAL_GUIDE_URL}">official study guide</a> first. If this site still looks wrong, open a <a href="${GITHUB_CONTENT_ISSUE_URL}">content mistake report</a> with the question id and what you expected.</p>`,
+      html: `<p>Check the <a href="${OFFICIAL_GUIDE_URL}">official study guide</a> first. If this site still looks wrong, open a <a href="${GITHUB_CONTENT_ISSUE_URL}">content mistake report</a> with the question id and what you expected, or use the <a href="#contact">contact form</a>.</p>`,
     },
   ];
 }

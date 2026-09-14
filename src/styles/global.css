@@ -783,7 +783,8 @@ h3 {
 }
 
 .field select,
-.field input:not([type='file']) {
+.field input:not([type='file']),
+.field textarea {
   width: 100%;
   max-width: 100%;
   min-height: 2.75rem;
@@ -798,7 +799,8 @@ h3 {
 }
 
 .field select:hover,
-.field input:not([type='file']):hover {
+.field input:not([type='file']):hover,
+.field textarea:hover {
   border-color: var(--brand-line);
 }
 
@@ -2235,7 +2237,9 @@ h3 {
   transform: rotate(-90deg);
 }
 
+/* Cards run the full content width; the prose inside keeps a readable measure. */
 .faq-a {
+  max-width: 54rem;
   padding: 0.85rem 1.1rem 1.15rem;
   color: var(--muted);
   font-size: 0.95rem;
@@ -2246,11 +2250,49 @@ h3 {
   margin-top: 0.7rem;
 }
 
-.faq-foot {
-  max-width: 40rem;
-  margin: 1.35rem 0 0;
-  color: var(--faint);
-  font-size: 0.9rem;
+.contact-card {
+  margin-top: 1.25rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 40rem) {
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-message,
+  .contact-actions {
+    grid-column: 1 / -1;
+  }
+}
+
+.field textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+}
+
+.contact-actions .banner,
+.contact-card .verified {
+  margin: 0;
+}
+
+.contact-card .verified {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem 1rem;
 }
 
 .data-tools {

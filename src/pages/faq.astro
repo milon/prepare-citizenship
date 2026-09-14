@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
 import { faqItems, faqPlainText } from '../lib/faq';
 import { loadStudyContent } from '../lib/study-content';
-import { withBase } from '../lib/paths';
 
 const { questions, current } = await loadStudyContent();
 const lastVerified = current?.lastVerified ?? 'unknown';
@@ -62,7 +61,7 @@ const faqJson = JSON.stringify({
     </div>
   </div>
 
-  <div class="faq-list quiz-shell lang-en">
+  <div class="faq-list lang-en">
     {
       items.map((item) => (
         <details class="faq-item" id={item.id}>
@@ -75,7 +74,7 @@ const faqJson = JSON.stringify({
       ))
     }
   </div>
-  <div class="faq-list quiz-shell lang-fr">
+  <div class="faq-list lang-fr">
     {
       itemsFr.map((item) => (
         <details class="faq-item" id={`${item.id}-fr`}>
@@ -89,16 +88,63 @@ const faqJson = JSON.stringify({
     }
   </div>
 
-  <p class="faq-foot lang-en">
-    Still stuck? Read a <a href={withBase('/chapters/')}>chapter</a>, try a{' '}
-    <a href={withBase('/practice/')}>practice quiz</a>, or adjust{' '}
-    <a href={withBase('/settings/')}>Settings</a>.
-  </p>
-  <p class="faq-foot lang-fr">
-    Encore une question? Lisez un <a href={withBase('/chapters/')}>chapitre</a>, faites un{' '}
-    <a href={withBase('/practice/')}>quiz d’exercice</a> ou modifiez les{' '}
-    <a href={withBase('/settings/')}>Réglages</a>.
-  </p>
+  <section class="card contact-card" id="contact" aria-labelledby="contact-heading" x-data="contactForm">
+    <div class="card-head">
+      <h2 id="contact-heading" data-i18n="contact.title">Still stuck?</h2>
+      <p data-i18n="contact.lede">
+        If the FAQ did not cover it, send a message. Study progress stays on this device;
+        only what you type here is emailed.
+      </p>
+    </div>
+
+    <p class="verified" x-show="sent" x-cloak>
+      <span data-i18n="contact.sent">Thanks. The message is on its way.</span>
+      <button class="button" type="button" @click="reset" data-i18n="contact.again">Send another</button>
+    </p>
+
+    <form class="contact-form" x-show="!sent" @submit.prevent="submit">
+      <label class="field">
+        <span data-i18n="contact.name">Your name</span>
+        <input
+          type="text"
+          name="name"
+          x-model="name"
+          autocomplete="name"
+          maxlength="120"
+        />
+      </label>
+      <label class="field">
+        <span data-i18n="contact.email">Email</span>
+        <input
+          type="email"
+          name="email"
+          x-model="email"
+          autocomplete="email"
+          required
+        />
+      </label>
+      <label class="field contact-message">
+        <span data-i18n="contact.message">Message</span>
+        <textarea
+          name="message"
+          x-model="message"
+          required
+          rows="5"
+          maxlength="4000"
+        ></textarea>
+      </label>
+      <input hidden type="text" name="_gotcha" x-model="honeypot" tabindex="-1" autocomplete="off" />
+      <div class="contact-actions">
+        <button class="button button-primary" type="submit" :disabled="sending">
+          <span x-show="!sending" data-i18n="contact.send">Send message</span>
+          <span x-show="sending" x-cloak data-i18n="contact.sending">Sending…</span>
+        </button>
+        <p class="banner" x-show="error" x-cloak data-i18n="contact.error">
+          The message could not be sent. Check your connection and try again.
+        </p>
+      </div>
+    </form>
+  </section>
   <script is:inline>
     (function () {
       var id = location.hash.replace('#', '');
