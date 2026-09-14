@@ -1,0 +1,75 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+import { loadStudyContent, parseChapterParam } from '../lib/study-content';
+
+const { cards, chapters } = await loadStudyContent();
+const initialChapter = parseChapterParam(Astro.url.searchParams.get('chapter'));
+const payload = {
+  cards,
+  chapters,
+  initialChapter: initialChapter === 'weakest' ? 'all' : initialChapter,
+};
+---
+
+<BaseLayout
+  title="Flashcards"
+  description="Study with flip cards and a three-box Leitner schedule."
+>
+  <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={withBase('/flashcards/')}>
+    <article class="panel" x-data="flashcardsPage">
+      <p class="eyebrow">Recall</p>
+      <h1>Flashcards</h1>
+      <p class="lede">
+        Flip the card, then mark whether you knew it. Due cards come back tomorrow, in three days, or in a week.
+      </p>
+
+      <div class="toolbar">
+        <label class="field">
+          <span>Chapter</span>
+          <select x-model="chapter" @change="rebuild()">
+            <option value="all">All chapters</option>
+            <template x-for="item in chapters" :key="item.id">
+              <option :value="item.id" x-text="item.title"></option>
+            </template>
+          </select>
+        </label>
+        <label class="field">
+          <span>Deck</span>
+          <select x-model="mode" @change="rebuild()">
+            <option value="due">Due now</option>
+            <option value="shuffle">Shuffle all</option>
+            <option value="mistakes">Review mistakes</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="verified" x-text="position"></p>
+      <p class="sr-only" aria-live="polite" x-text="status"></p>
+
+      <template x-if="current">
+        <div>
+          <p class="pill" x-text="boxText"></p>
+          <button
+            class="flip-card"
+            type="button"
+            @click="flip"
+            :aria-pressed="flipped.toString()"
+          >
+            <span class="flip-label" x-text="flipped ? 'Answer' : 'Prompt'"></span>
+            <span class="flip-body" x-text="flipped ? current.back : current.front"></span>
+          </button>
+          <div class="button-row">
+            <button class="button" type="button" @click="stillLearning">Still learning</button>
+            <button class="button button-primary" type="button" @click="gotIt">Got it</button>
+            <button class="button button-quiet" type="button" @click="markAsKnown">Mark as known</button>
+          </div>
+        </div>
+      </template>
+      <p class="lede" x-show="!current">No cards in this deck. Try another chapter or shuffle all.</p>
+      <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>
+    </article>
+  </StudyGate>
+</BaseLayout>

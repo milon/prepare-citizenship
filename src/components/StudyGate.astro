@@ -1,0 +1,40 @@
+---
+interface Props {
+  redirect: string;
+}
+
+const { redirect } = Astro.props;
+---
+
+<div class="study-gate" x-data="provinceGate" data-redirect={redirect}>
+  <div class="panel" x-show="needsPicker" x-cloak>
+    <p class="eyebrow">First step</p>
+    <h1>Choose your province or territory</h1>
+    <p class="lede">
+      Mock exams include questions about the place you live. You can change this later in Settings.
+    </p>
+    <form
+      class="picker"
+      x-data="provincePicker"
+      data-province-redirect={redirect}
+      @submit.prevent="save"
+    >
+      <label class="field">
+        <span>Province or territory</span>
+        <select x-model="selected" required>
+          <option value="" disabled>Select one</option>
+          <template x-for="option in options" :key="option.code">
+            <option :value="option.code" x-text="option.label"></option>
+          </template>
+        </select>
+      </label>
+      <button class="button" type="submit">Continue</button>
+      <p class="banner" x-show="saveFailed" x-cloak>
+        Progress won’t save in this browser. Check that you are not in private mode with storage blocked.
+      </p>
+    </form>
+  </div>
+  <div x-show="!needsPicker" x-cloak>
+    <slot />
+  </div>
+</div>

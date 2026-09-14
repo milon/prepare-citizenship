@@ -1,0 +1,91 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CHAPTERS } from '../lib/chapters';
+import { withBase } from '../lib/paths';
+import { loadStudyContent, parseChapterParam } from '../lib/study-content';
+
+const { questions, chapters } = await loadStudyContent();
+const initialChapter = parseChapterParam(Astro.url.searchParams.get('chapter'));
+const payload = {
+  questions,
+  chapters,
+  initialChapter,
+  size: 10,
+};
+---
+
+<BaseLayout
+  title="Practice quiz"
+  description="Untimed practice with immediate feedback, by chapter or weakest topic."
+>
+  <script is:inline type="application/json" id="practice-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={withBase('/practice/')}>
+    <article class="panel" x-data="practicePage">
+      <p class="eyebrow">Practice</p>
+      <h1>Chapter quiz</h1>
+      <p class="lede">
+        Ten questions, untimed. You’ll see the answer and a short explanation after each choice.
+      </p>
+
+      <div class="toolbar">
+        <label class="field">
+          <span>Set</span>
+          <select x-model="chapter" @change="start()">
+            <option value="all">All chapters</option>
+            <option value="weakest">My weakest chapter</option>
+            {CHAPTERS.map((chapter) => (
+              <option value={chapter.id}>{chapter.title}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <p class="verified" x-show="warning" x-text="warning"></p>
+
+      <template x-if="!finished && current">
+        <div>
+          <p class="verified" x-text="position"></p>
+          <h2 class="prompt" x-text="current.prompt"></h2>
+          <div class="options" role="group" :aria-label="current.prompt">
+            <template x-for="option in current.options" :key="option.id">
+              <button
+                class="option"
+                type="button"
+                :class="optionState(option.id)"
+                @click="choose(option.id)"
+                :aria-pressed="selected === option.id"
+              >
+                <span x-text="option.text"></span>
+                <span class="option-mark" x-show="optionState(option.id) === 'correct'">Correct</span>
+                <span class="option-mark" x-show="optionState(option.id) === 'incorrect'">Incorrect</span>
+              </button>
+            </template>
+          </div>
+          <div class="explain" x-show="revealed" x-cloak>
+            <p x-text="current.explanation"></p>
+          </div>
+          <button class="button button-primary" type="button" x-show="revealed" @click="next">
+            <span x-text="index === queue.length - 1 ? 'See results' : 'Next question'"></span>
+          </button>
+        </div>
+      </template>
+
+      <template x-if="finished">
+        <div>
+          <h2>Results</h2>
+          <p class="lede" x-text="`You scored ${score}/${queue.length}.`"></p>
+          <ul class="breakdown">
+            <template x-for="row in currentBreakdown()" :key="row.title">
+              <li>
+                <strong x-text="row.title"></strong>
+                <span x-text="row.text"></span>
+              </li>
+            </template>
+          </ul>
+          <button class="button button-primary" type="button" @click="start">Practice again</button>
+        </div>
+      </template>
+      <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>
+    </article>
+  </StudyGate>
+</BaseLayout>

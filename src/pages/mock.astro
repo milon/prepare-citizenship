@@ -1,0 +1,113 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+import { loadStudyContent } from '../lib/study-content';
+
+const { questions, chapters } = await loadStudyContent();
+const payload = { questions, chapters };
+---
+
+<BaseLayout
+  title="Mock exam"
+  description="A 20-question, 45-minute mock citizenship test. Pass is 15/20."
+>
+  <script is:inline type="application/json" id="mock-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={withBase('/mock/')}>
+    <article class="panel" x-data="mockPage">
+      <p class="eyebrow">Mock exam</p>
+      <h1>20 questions, 45 minutes</h1>
+
+      <template x-if="phase === 'intro'">
+        <div>
+          <p class="lede">
+            Pass is 15/20. Questions are balanced across chapters and include items for your
+            province. You can flag and jump around. The clock cannot be paused, and the exam
+            submits itself at 0:00. Answers stay hidden until you submit.
+          </p>
+          <button class="button button-primary" type="button" @click="start">Start exam</button>
+        </div>
+      </template>
+
+      <template x-if="phase === 'exam' && current">
+        <div>
+          <div class="exam-bar">
+            <p class="clock" :data-warning="warningShown" x-text="clock" aria-live="polite"></p>
+            <p x-text="`Question ${index + 1} of ${queue.length}`"></p>
+          </div>
+          <p class="banner" x-show="warningShown" x-cloak>Five minutes remaining.</p>
+          <h2 class="prompt" x-text="current.prompt"></h2>
+          <div class="options" role="radiogroup">
+            <template x-for="option in current.options" :key="option.id">
+              <button
+                class="option"
+                type="button"
+                :class="selected[current.id] === option.id ? 'chosen' : ''"
+                @click="choose(option.id)"
+                :aria-pressed="selected[current.id] === option.id"
+              >
+                <span x-text="option.text"></span>
+              </button>
+            </template>
+          </div>
+          <div class="button-row">
+            <button class="button" type="button" @click="toggleFlag" x-text="flagged[current.id] ? 'Flagged for review' : 'Flag for review'"></button>
+            <button class="button" type="button" @click="goTo(index - 1)" :disabled="index === 0">Previous</button>
+            <button class="button" type="button" @click="goTo(index + 1)" :disabled="index === queue.length - 1">Next</button>
+            <button class="button button-primary" type="button" @click="submit(false)">Submit exam</button>
+          </div>
+          <ol class="jump-list">
+            <template x-for="(question, itemIndex) in queue" :key="question.id">
+              <li>
+                <button
+                  class="jump"
+                  type="button"
+                  :class="{ current: itemIndex === index, marked: flagged[question.id], answered: selected[question.id] }"
+                  @click="goTo(itemIndex)"
+                  x-text="itemIndex + 1"
+                  :aria-current="itemIndex === index ? 'step' : false"
+                ></button>
+              </li>
+            </template>
+          </ol>
+        </div>
+      </template>
+
+      <template x-if="phase === 'review'">
+        <div>
+          <p class="lede" x-text="passed ? `Pass: ${score}/20.` : `Not a pass: ${score}/20. You need 15.`"></p>
+          <p class="verified" x-show="autoSubmitted">Time expired — this attempt was submitted automatically.</p>
+          <h2>Chapter breakdown</h2>
+          <ul class="breakdown">
+            <template x-for="row in chapterBreakdown()" :key="row.title">
+              <li>
+                <strong x-text="row.title"></strong>
+                <span x-text="row.text"></span>
+              </li>
+            </template>
+          </ul>
+          <h2>Review</h2>
+          <ol class="review-list">
+            <template x-for="question in queue" :key="question.id">
+              <li class="review-item">
+                <p class="pill" x-text="resultLabel(question)"></p>
+                <p class="prompt" x-text="question.prompt"></p>
+                <p>
+                  <span>Your answer: </span>
+                  <span x-text="question.options.find(option => option.id === selected[question.id])?.text || 'Unanswered'"></span>
+                </p>
+                <p>
+                  <span>Correct answer: </span>
+                  <span x-text="question.options.find(option => option.id === question.correctOptionId)?.text"></span>
+                </p>
+                <p class="explain" x-text="question.explanation"></p>
+              </li>
+            </template>
+          </ol>
+          <button class="button button-primary" type="button" @click="phase = 'intro'">New attempt</button>
+          <p class="banner" x-show="saveFailed" x-cloak>Progress won’t save in this browser.</p>
+        </div>
+      </template>
+    </article>
+  </StudyGate>
+</BaseLayout>

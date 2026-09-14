@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
   const chapters = await getCollection('chapters');
@@ -52,6 +53,22 @@ const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
     <div class="prose">
       <Content />
     </div>
+
+    {
+      !entry.data.regionGroup && (
+        <p class="button-row">
+          <a class="button" href={`${withBase('/flashcards/')}?chapter=${entry.data.chapter}`}>
+            Flashcards
+          </a>
+          <a class="button" href={`${withBase('/practice/')}?chapter=${entry.data.chapter}`}>
+            Chapter quiz
+          </a>
+          <a class="button button-primary" href={withBase('/mock/')}>
+            Mock exam
+          </a>
+        </p>
+      )
+    }
 
     {
       relatedRegions.length > 0 && (

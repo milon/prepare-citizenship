@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Settings"
+  description="Change your province or territory for regional mock questions."
+>
+  <article class="panel" x-data="settingsPage">
+    <p class="eyebrow">Settings</p>
+    <h1>Your study place</h1>
+    <p class="lede">
+      Mock exams include regional questions for the province or territory you choose.
+    </p>
+    <form class="picker" @submit.prevent="save">
+      <label class="field">
+        <span>Province or territory</span>
+        <select x-model="selected" required>
+          <option value="" disabled>Select one</option>
+          <template x-for="option in options" :key="option.code">
+            <option :value="option.code" x-text="option.label"></option>
+          </template>
+        </select>
+      </label>
+      <button class="button button-primary" type="submit">Save</button>
+      <p class="verified" x-show="saved" x-cloak>Saved.</p>
+      <p class="banner" x-show="saveFailed" x-cloak>
+        Progress won’t save in this browser. Check that storage is not blocked.
+      </p>
+    </form>
+  </article>
+</BaseLayout>

@@ -271,12 +271,12 @@ if stored, it must be rebuilt after import.
 - [x] Fill `current.json` and date-stamp it
 
 ### Phase 2 — Core features
-- [ ] Province picker (first run + settings)
-- [ ] Flashcards: flip UI, due-based Leitner, shuffle, chapter filter
-- [ ] Practice quiz: immediate feedback, weakest-chapter mode
-- [ ] Mock exam: 20 / 45:00 / 15 pass, balanced draw, last-3 anti-repeat, flag,
+- [x] Province picker (first run + settings)
+- [x] Flashcards: flip UI, due-based Leitner, shuffle, chapter filter
+- [x] Practice quiz: immediate feedback, weakest-chapter mode
+- [x] Mock exam: 20 / 45:00 / 15 pass, balanced draw, last-3 anti-repeat, flag,
       no pause, autosubmit
-- [ ] Results/review + chapter breakdown
+- [x] Results/review + chapter breakdown
 
 ### Phase 3 — Progress and persistence
 - [ ] Versioned `localStorage` layer (province, attempts, Leitner, settings)

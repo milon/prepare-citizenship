@@ -18,8 +18,7 @@ const questions = await getCollection('questions');
     <p class="eyebrow">Prepare with confidence</p>
     <h1>Your Canadian citizenship study companion.</h1>
     <p class="lede">
-          Chapter lessons, focused flashcards, and realistic 20-question mock
-          exams are on the way.
+      Read a chapter, drill flashcards, take a practice quiz, then sit a 20-question mock exam.
     </p>
     {
       current && (
@@ -29,6 +28,33 @@ const questions = await getCollection('questions');
       )
     }
   </article>
+
+  <section class="panel" style="margin-top: 1.25rem;" aria-labelledby="tools-heading">
+    <p class="eyebrow">Study tools</p>
+    <h2 id="tools-heading" style="margin: 0; font-family: Georgia, serif; font-weight: 500;">
+      Flashcards, practice, mock
+    </h2>
+    <ul class="chapter-grid">
+      <li>
+        <a class="chapter-card" href={`${import.meta.env.BASE_URL}flashcards/`}>
+          <strong>Flashcards</strong>
+          <span>Flip cards with a three-box review schedule.</span>
+        </a>
+      </li>
+      <li>
+        <a class="chapter-card" href={`${import.meta.env.BASE_URL}practice/`}>
+          <strong>Practice quiz</strong>
+          <span>Untimed questions with instant explanations.</span>
+        </a>
+      </li>
+      <li>
+        <a class="chapter-card" href={`${import.meta.env.BASE_URL}mock/`}>
+          <strong>Mock exam</strong>
+          <span>20 questions, 45 minutes, 15 to pass.</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 
   <section class="panel" style="margin-top: 1.25rem;" aria-labelledby="chapters-heading">
     <p class="eyebrow">Study path</p>

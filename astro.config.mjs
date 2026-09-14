@@ -1,4 +1,5 @@
 // @ts-check
+import alpinejs from '@astrojs/alpinejs';
 import { defineConfig } from 'astro/config';
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
@@ -8,4 +9,5 @@ export default defineConfig({
   site: 'https://milon.github.io',
   base: isGitHubPagesBuild && repositoryName ? `/${repositoryName}` : '/',
   output: 'static',
+  integrations: [alpinejs({ entrypoint: './src/alpine.ts' })],
 });
