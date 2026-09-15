@@ -133,21 +133,42 @@ const summaryFr = isRegionPage
       body.scrollTop += activeBox.top - bodyBox.top - (bodyBox.height - activeBox.height) / 2;
     }
 
-    function syncDesktopOpen() {
-      if (window.matchMedia('(min-width: 64rem)').matches) {
-        jump.setAttribute('open', '');
+    // Sidebar mode is decided in CSS by the width of the content area, so read
+    // it back off the summary rather than repeating the rule here.
+    var summary = jump.querySelector('.chapter-jump-summary');
+
+    function isSidebar() {
+      return Boolean(summary) && getComputedStyle(summary).display === 'none';
+    }
+
+    var openedForSidebar = false;
+
+    function syncSidebarOpen() {
+      if (isSidebar()) {
+        if (!jump.open) {
+          jump.setAttribute('open', '');
+          openedForSidebar = true;
+        }
+      } else if (openedForSidebar) {
+        jump.removeAttribute('open');
+        openedForSidebar = false;
       }
     }
 
     jump.addEventListener('toggle', function () {
       if (jump.open) scrollActiveIntoView();
-      // Desktop must stay open; the summary is hidden there.
-      if (!jump.open && window.matchMedia('(min-width: 64rem)').matches) {
+      // The summary is hidden in sidebar mode, so the list must stay open.
+      if (!jump.open && isSidebar()) {
         jump.setAttribute('open', '');
       }
     });
 
-    syncDesktopOpen();
-    window.matchMedia('(min-width: 64rem)').addEventListener('change', syncDesktopOpen);
+    syncSidebarOpen();
+    window.addEventListener('resize', syncSidebarOpen);
+    // The stored text-size preference is applied after this runs, and it can
+    // change which mode the CSS picks.
+    new MutationObserver(syncSidebarOpen).observe(document.documentElement, {
+      attributeFilter: ['data-font'],
+    });
   })();
 </script>

@@ -505,6 +505,9 @@ a {
 
 .site-main {
   width: min(76rem, 100%);
+  /* Lets page layouts respond to the width they actually get rather than the
+     window's, since the rail and the reader's text size both eat into it. */
+  container: content / inline-size;
   margin: 0 auto;
   padding: 1.15rem 1rem 6.5rem;
 }
@@ -1627,7 +1630,11 @@ h3 {
   }
 }
 
-@media (min-width: 64rem) {
+/* The sidebar only appears once the content area can hold it and still leave a
+   readable article. Measured in rem against the content area, so a larger text
+   setting keeps the list collapsed until there is genuinely room — a tablet in
+   portrait gets the full width for reading. */
+@container content (min-width: 45rem) {
   .chapter-layout {
     grid-template-columns: 16.75rem minmax(0, 1fr);
   }
