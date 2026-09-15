@@ -6,6 +6,9 @@ import { defineConfig } from 'astro/config';
 const site = 'https://preparecitizenship.ca';
 const base = '/';
 
+/* Stamped into the bundle so Settings can show which build is installed. */
+const buildId = `${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC`;
+
 export default defineConfig({
   site,
   base,
@@ -63,4 +66,9 @@ export default defineConfig({
       },
     }),
   ],
+  vite: {
+    define: {
+      __BUILD_ID__: JSON.stringify(buildId),
+    },
+  },
 });

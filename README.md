@@ -25,6 +25,10 @@ The live site is `https://preparecitizenship.ca`. GitHub Pages still builds from
 
 Offline copies update the next time the app is opened **while online**. The service worker checks on load, when the tab becomes visible, when the network returns, and every 30 minutes while the app stays open. In Cloudflare, bypass cache for `/sw.js`, `/workbox-*.js`, and `/manifest.webmanifest` so those checks are not served a stale worker.
 
+A downloaded update installs but waits instead of reloading the page, so a mock exam in progress survives. It takes over on the next page load (`src/pwa.ts` hands off on `pagehide`), or immediately from **Settings → App version → Check for updates**. The build stamp shown there comes from `__BUILD_ID__` in `astro.config.mjs`, which is the quickest way to confirm which build a device is actually running.
+
+A hard refresh bypasses the service worker by browser design, so with no connection it shows the browser's error page rather than the offline copy. A normal reload uses the cache and works offline.
+
 ## Content
 
 | Path                       | What it is                                                    |

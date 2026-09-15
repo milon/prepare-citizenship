@@ -2451,6 +2451,11 @@ h3 {
   margin: 0;
 }
 
+/* Keeps the build stamp off the button below it, matching the card head's rhythm. */
+.app-version {
+  margin-bottom: 0.9rem;
+}
+
 .setting-row {
   display: flex;
   flex-wrap: wrap;

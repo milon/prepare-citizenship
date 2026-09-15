@@ -12,6 +12,7 @@ import { practiceApp, type PracticePayload } from './lib/practice-app';
 import { provincePickerApp, settingsApp } from './lib/province-app';
 import { searchApp } from './lib/search-app';
 import { sessionApp, type SessionPayload } from './lib/session-app';
+import { updateApp } from './lib/update-app';
 import type { SearchDoc } from './lib/search';
 import { loadProgress, subscribeStorage } from './lib/progress';
 import {
@@ -127,6 +128,8 @@ export default (Alpine: Alpine) => {
   Alpine.data('contactForm', () => contactFormApp());
 
   Alpine.data('installApp', () => installApp());
+
+  Alpine.data('appUpdate', () => updateApp());
 
   Alpine.data('speech', () => ({
     speak(text: string) {

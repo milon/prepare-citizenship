@@ -207,6 +207,18 @@ const en: Dict = {
   'settings.export': 'Export progress',
   'settings.import': 'Import progress',
   'settings.reset': 'Reset progress',
+  'settings.updates': 'App version',
+  'settings.updatesLede':
+    'The offline copy refreshes itself the next time you open the app with a connection. Check here if you want the newest questions right away.',
+  'settings.checkUpdate': 'Check for updates',
+  'settings.checking': 'Checking…',
+  'settings.updateCurrent': 'You already have the newest version.',
+  'settings.updateReady': 'New version found. Loading it now…',
+  'settings.reloadNow': 'Reload now',
+  'settings.updateOffline': 'You are offline. Connect to check for a new version.',
+  'settings.updateError': 'Could not check just now. Try again in a moment.',
+  'settings.updateNone':
+    'This browser is not keeping an offline copy, so every visit loads the newest version.',
   'settings.about': 'About this site',
   'settings.aboutLede':
     'Independent practice, not the official test. The FAQ covers the mock format, where progress is stored, and how this bank differs from IRCC’s questions.',
@@ -597,6 +609,18 @@ const fr: Dict = {
   'settings.export': 'Exporter le progrès',
   'settings.import': 'Importer le progrès',
   'settings.reset': 'Réinitialiser le progrès',
+  'settings.updates': 'Version de l’application',
+  'settings.updatesLede':
+    'La copie hors ligne se met à jour d’elle-même à la prochaine ouverture avec une connexion. Vérifiez ici pour obtenir les nouvelles questions tout de suite.',
+  'settings.checkUpdate': 'Vérifier les mises à jour',
+  'settings.checking': 'Vérification…',
+  'settings.updateCurrent': 'Vous avez déjà la version la plus récente.',
+  'settings.updateReady': 'Nouvelle version trouvée. Chargement en cours…',
+  'settings.reloadNow': 'Recharger maintenant',
+  'settings.updateOffline': 'Vous êtes hors ligne. Connectez-vous pour vérifier.',
+  'settings.updateError': 'Vérification impossible pour le moment. Réessayez plus tard.',
+  'settings.updateNone':
+    'Ce navigateur ne conserve pas de copie hors ligne; chaque visite charge la version la plus récente.',
   'settings.about': 'À propos',
   'settings.aboutLede':
     'Exercice indépendant, pas l’examen officiel. La FAQ explique le format de l’examen blanc, le stockage du progrès, et en quoi cette banque diffère des questions d’IRCC.',

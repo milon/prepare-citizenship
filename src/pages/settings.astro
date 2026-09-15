@@ -2,6 +2,8 @@
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
+
+const buildId = __BUILD_ID__;
 ---
 
 <BaseLayout
@@ -253,6 +255,41 @@ import { withBase } from '../lib/paths';
         </div>
       </div>
     </dialog>
+
+    <section class="card" aria-labelledby="version-heading" x-data="appUpdate">
+      <div class="card-head">
+        <h2 id="version-heading" data-i18n="settings.updates">App version</h2>
+        <p data-i18n="settings.updatesLede">
+          The offline copy refreshes itself the next time you open the app with a
+          connection. Check here if you want the newest questions right away.
+        </p>
+      </div>
+      <p class="verified app-version">
+        <span class="lang-en">Installed version: {buildId}</span>
+        <span class="lang-fr">Version installée : {buildId}</span>
+      </p>
+      <div class="settings-actions">
+        <button
+          class="button button-primary"
+          type="button"
+          @click="check"
+          :disabled="state === 'checking'"
+          x-text="buttonLabel()"
+        >
+          Check for updates
+        </button>
+        <button
+          class="button"
+          type="button"
+          x-show="state === 'ready'"
+          x-cloak
+          @click="reload"
+          x-text="$store.i18n.t('settings.reloadNow')"
+        >
+        </button>
+      </div>
+      <p class="verified" x-show="message()" x-text="message()" x-cloak></p>
+    </section>
 
     <section class="card disclaimer" aria-labelledby="about-heading">
       <span class="sq"><Icon name="info" /></span>
