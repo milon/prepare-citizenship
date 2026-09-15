@@ -312,12 +312,18 @@ const en: Dict = {
     'Read Rights and Responsibilities, then drill the same material as flashcards. Ten minutes is enough for a first session.',
   'rec.read.cta': 'Read the chapter',
   'rec.read.alt': 'Try a practice quiz',
+  'rec.session.title': 'Today’s session',
+  'rec.session.blurb':
+    'Eight due cards and eight questions from your weakest chapter, then stop. Better prep than jumping into a full mock.',
+  'rec.session.cta': 'Start today’s session',
+  'rec.session.altCards': 'Review flashcards',
+  'rec.session.altPractice': 'Practice quiz',
   'rec.mock.first': 'Sit your first mock exam',
   'rec.mock.next': 'Sit mock exam #{n}',
   'rec.mock.blurb':
     '20 questions, 45 minutes, 15 to pass — the same shape as the real test. Readiness needs 3 passes.',
   'rec.mock.cta': 'Start mock exam',
-  'rec.mock.alt': 'Practice 10 instead',
+  'rec.mock.alt': 'Today’s session instead',
   'rec.drill.title': 'Drill {chapter}',
   'rec.drill.blurb':
     'It is at {rate} after {total} answers, below the 70% you want before the test.',
@@ -333,6 +339,8 @@ const en: Dict = {
     'Nothing is overdue. Keep the streak alive with a short set, or sit another mock to confirm.',
   'rec.maintain.cta': 'Practice quiz',
   'rec.maintain.alt': 'Mock exam',
+  'dash.homeDueOne': '1 card due',
+  'dash.homeDueMany': '{n} cards due',
   'reason.mock': 'A recent mock scored below 15/20.',
   'reason.chapter': '{chapter} is at {rate}% after {total} answers (need 70%).',
   'chapter.eyebrow': 'Chapter summary',
@@ -354,10 +362,10 @@ const en: Dict = {
   'chapters.tenBlurb': 'Each one ends with links to its flashcards and chapter quiz.',
   'chapters.regionsBlurb': 'Mock exams include questions about the province or territory you choose.',
   'home.chaptersBlurb': 'Original study notes, then flashcards and a quiz for each one.',
+  'home.browseChapters': 'Browse chapters',
   'home.dashboard': 'Your study dashboard',
   'home.welcome': 'Welcome back, {name}',
-  'home.lede':
-    'Read a chapter, drill the flashcards, then sit a timed mock exam. Progress stays on this device.',
+  'home.lede': 'Your next step is below. Progress stays on this device.',
   'home.questions': '{n} questions',
   'home.verified': 'Verified {date}',
   'home.mockHowTitle': 'How mock exams work',
@@ -369,6 +377,7 @@ const en: Dict = {
   'home.mockAdaptive':
     'Questions you missed get priority without replacing the balanced chapter mix. After submitting, review every answer or retry the exact same paper.',
   'home.mockCta': 'Start a mock exam',
+  'home.mockFaq': 'Mock exam FAQ',
   'home.installTitle': 'Add this app to your home screen',
   'home.installLede':
     'Study offline, and keep progress in an app icon instead of a browser tab. After the first visit it works without a network.',
@@ -734,12 +743,18 @@ const fr: Dict = {
     'Lisez Droits et responsabilités, puis les mêmes faits en cartes-éclair. Dix minutes suffisent pour une première séance.',
   'rec.read.cta': 'Lire le chapitre',
   'rec.read.alt': 'Faire un quiz',
+  'rec.session.title': 'Séance du jour',
+  'rec.session.blurb':
+    'Huit cartes dues et huit questions de votre chapitre le plus faible, puis arrêt. Mieux qu’un examen blanc trop tôt.',
+  'rec.session.cta': 'Commencer la séance du jour',
+  'rec.session.altCards': 'Revoir les cartes',
+  'rec.session.altPractice': 'Quiz',
   'rec.mock.first': 'Passez votre premier examen blanc',
   'rec.mock.next': 'Passez l’examen blanc n° {n}',
   'rec.mock.blurb':
     '20 questions, 45 minutes, 15 pour réussir — le même format que l’examen. La préparation exige 3 réussites.',
   'rec.mock.cta': 'Commencer l’examen blanc',
-  'rec.mock.alt': '10 questions d’exercice',
+  'rec.mock.alt': 'Séance du jour à la place',
   'rec.drill.title': 'Travailler {chapter}',
   'rec.drill.blurb':
     'Ce chapitre est à {rate} après {total} réponses, sous les 70 % visés avant l’examen.',
@@ -755,6 +770,8 @@ const fr: Dict = {
     'Rien n’est en retard. Gardez la série avec un court ensemble, ou confirmez avec un autre examen blanc.',
   'rec.maintain.cta': 'Quiz',
   'rec.maintain.alt': 'Examen blanc',
+  'dash.homeDueOne': '1 carte due',
+  'dash.homeDueMany': '{n} cartes dues',
   'reason.mock': 'Un examen blanc récent a moins de 15/20.',
   'reason.chapter': '{chapter} est à {rate} % après {total} réponses (il faut 70 %).',
   'chapter.eyebrow': 'Résumé de chapitre',
@@ -777,10 +794,10 @@ const fr: Dict = {
   'chapters.regionsBlurb':
     'Les examens blancs comprennent des questions sur la province ou le territoire que vous choisissez.',
   'home.chaptersBlurb': 'Notes d’étude originales, puis cartes et quiz pour chacun.',
+  'home.browseChapters': 'Parcourir les chapitres',
   'home.dashboard': 'Votre tableau de bord',
   'home.welcome': 'Bon retour, {name}',
-  'home.lede':
-    'Lisez un chapitre, révisez avec les cartes-éclair, puis passez un examen blanc chronométré. Votre progrès reste sur cet appareil.',
+  'home.lede': 'Votre prochaine étape est ci-dessous. Le progrès reste sur cet appareil.',
   'home.questions': '{n} questions',
   'home.verified': 'Vérifié le {date}',
   'home.mockHowTitle': 'Fonctionnement des examens blancs',
@@ -792,6 +809,7 @@ const fr: Dict = {
   'home.mockAdaptive':
     'Les questions manquées ont priorité sans modifier l’équilibre entre les chapitres. Après l’envoi, révisez chaque réponse ou reprenez exactement le même questionnaire.',
   'home.mockCta': 'Commencer un examen blanc',
+  'home.mockFaq': 'FAQ sur l’examen blanc',
   'home.installTitle': 'Ajouter l’application à l’écran d’accueil',
   'home.installLede':
     'Étudiez hors ligne et ouvrez le site depuis une icône plutôt que d’un onglet. Après la première visite, il fonctionne sans réseau.',

@@ -1,5 +1,4 @@
 ---
-import Icon from './Icon.astro';
 import MapleLeaf from './MapleLeaf.astro';
 import { withBase } from '../lib/paths';
 
@@ -28,6 +27,7 @@ const sessionHref = withBase('/session/');
   data-practice-path={practiceHref}
   data-flashcards-path={flashcardsHref}
   data-mock-path={mockHref}
+  data-session-path={sessionHref}
   aria-labelledby={compact ? undefined : 'dashboard-heading'}
   aria-label={compact ? 'Progress summary' : undefined}
   data-i18n-aria={compact ? 'dash.summary' : undefined}
@@ -78,181 +78,123 @@ const sessionHref = withBase('/session/');
         </div>
       </div>
 
-      <div class="stat-grid">
-        <p class="stat">
-          <span class="stat-label" x-text="$store.i18n.t('dash.seen')">Questions seen</span>
-          <strong x-text="stats.seenQuestions"></strong>
-          <span class="stat-sub" x-text="seenLabel"></span>
-        </p>
-        <p class="stat">
-          <span class="stat-label" x-text="$store.i18n.t('dash.accuracy')">Accuracy</span>
-          <strong x-text="stats.overallTotal ? percent(stats.overallRate) : '—'"></strong>
-          <span
-            class="stat-sub"
-            x-text="stats.overallTotal
-              ? $store.i18n.t('dash.answers', { correct: stats.overallCorrect, total: stats.overallTotal })
-              : $store.i18n.t('dash.noQuiz')"
-          ></span>
-        </p>
-        <p class="stat">
-          <span class="stat-label" x-text="$store.i18n.t('dash.streak')">Study streak</span>
-          <strong x-text="stats.streak"></strong>
-          <span
-            class="stat-sub"
-            x-text="$store.i18n.t(stats.streak === 1 ? 'dash.streakDay' : 'dash.streakDays')"
-          ></span>
-        </p>
-        <p class="stat">
-          <span class="stat-label" x-text="$store.i18n.t('dash.mocks')">Mocks passed</span>
-          <strong x-text="stats.mocksPassed"></strong>
-          <span
-            class="stat-sub"
-            x-text="$store.i18n.t('dash.mockAttempts', { n: stats.mockTrend.length })"
-          ></span>
-        </p>
-      </div>
-
-      <div class="readiness" :data-status="stats.readiness.status" x-show="stats.readiness.status !== 'not-enough-data'" x-cloak>
-        <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
-          <span
-            x-show="!$store.learner.name"
-            x-text="$store.i18n.t('dash.ready')"
-          >Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
-          <span
-            x-show="$store.learner.name"
-            x-cloak
-            x-text="$store.i18n.t('dash.readyNamed', { name: $store.learner.name })"
-          ></span>
-        </p>
-        <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
-          <span x-show="!$store.learner.name" x-text="$store.i18n.t('dash.notReady')">Not ready yet.</span>
-          <span
-            x-show="$store.learner.name"
-            x-cloak
-            x-text="$store.i18n.t('dash.notReadyNamed', { name: $store.learner.name })"
-          ></span>
-        </p>
-        <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
-          <template x-for="reason in (stats.readiness.reasons || [])" :key="(reason.id || '') + (reason.chapterId || '')">
-            <li x-text="reasonText(reason)"></li>
-          </template>
-        </ul>
-        <p class="stat-sub" x-show="(stats.readiness.keepPracticing || []).length">
-          <span x-text="$store.i18n.t('dash.keepPracticing')">Keep practicing:</span>
-          <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => $store.i18n.chapter(chapter.id)).join(', ')"></span>
-        </p>
-      </div>
-
-      <div class="dash-grid" style="margin-top:1rem">
-        <div class="card">
-          <div class="card-head">
-            <h2>
-              <span x-text={`$store.i18n.t('${compact ? 'dash.byChapter' : 'dash.everyChapter'}')`}>
-              {compact ? 'Accuracy by chapter' : 'Every chapter'}
-              </span>
-            </h2>
-            <p x-text="$store.i18n.t('dash.belowTarget')">Red bars are below the 70% you want before the test.</p>
-          </div>
-          <p class="stat-sub" x-show="!stats.overallTotal">
-            <span x-text="$store.i18n.t('dash.noneAnswered')">
-              Nothing answered yet. Take a practice quiz and every chapter gets a bar here.
-            </span>
+      {
+        compact ? (
+          <p class="button-row home-progress-link">
+            <a class="button" href={progressHref} x-text="$store.i18n.t('dash.openFull')">
+              Open the full dashboard
+            </a>
           </p>
-          <ul class:list={[{ breakdown: true, compact }]} x-show="stats.overallTotal" x-cloak>
-            <template x-for="chapter in stats.chapters" :key="chapter.id">
-              <li>
-                <strong x-text="$store.i18n.chapter(chapter.id)"></strong>
-                <span
-                  class="rate"
-                  x-text="chapter.total ? percent(chapter.rate) : '—'"
-                ></span>
-                <span class="meter">
-                  <i :style="`width:${chapter.total ? Math.max(chapter.rate * 100, 2) : 0}%`" :data-status="chapter.status"></i>
-                </span>
-                <span
-                  x-text="chapter.total
-                    ? $store.i18n.t('dash.answers', { correct: chapter.correct, total: chapter.total })
-                    : $store.i18n.t('dash.noAnswers')"
-                ></span>
-                <span
-                  :class="chapter.status === 'on-track' ? 'pill pill-ok' : chapter.status === 'weak' ? 'pill pill-brand' : 'pill'"
-                  x-text="chapter.status === 'weak'
-                    ? $store.i18n.t('dash.needsWork')
-                    : chapter.status === 'on-track'
-                      ? $store.i18n.t('dash.onTrack')
-                      : $store.i18n.t('dash.keepStatus')"
-                ></span>
-              </li>
-            </template>
-          </ul>
-          {
-            compact && (
-              <p class="button-row">
-                <a class="button" href={progressHref} x-text="$store.i18n.t('dash.openFull')">
-                  Open the full dashboard
-                </a>
+        ) : (
+          <Fragment>
+            <div class="stat-grid">
+              <p class="stat">
+                <span class="stat-label" x-text="$store.i18n.t('dash.seen')">Questions seen</span>
+                <strong x-text="stats.seenQuestions"></strong>
+                <span class="stat-sub" x-text="seenLabel"></span>
               </p>
-            )
-          }
-        </div>
+              <p class="stat">
+                <span class="stat-label" x-text="$store.i18n.t('dash.accuracy')">Accuracy</span>
+                <strong x-text="stats.overallTotal ? percent(stats.overallRate) : '—'"></strong>
+                <span
+                  class="stat-sub"
+                  x-text="stats.overallTotal
+                    ? $store.i18n.t('dash.answers', { correct: stats.overallCorrect, total: stats.overallTotal })
+                    : $store.i18n.t('dash.noQuiz')"
+                ></span>
+              </p>
+              <p class="stat">
+                <span class="stat-label" x-text="$store.i18n.t('dash.streak')">Study streak</span>
+                <strong x-text="stats.streak"></strong>
+                <span
+                  class="stat-sub"
+                  x-text="$store.i18n.t(stats.streak === 1 ? 'dash.streakDay' : 'dash.streakDays')"
+                ></span>
+              </p>
+              <p class="stat">
+                <span class="stat-label" x-text="$store.i18n.t('dash.mocks')">Mocks passed</span>
+                <strong x-text="stats.mocksPassed"></strong>
+                <span
+                  class="stat-sub"
+                  x-text="$store.i18n.t('dash.mockAttempts', { n: stats.mockTrend.length })"
+                ></span>
+              </p>
+            </div>
 
-        <div class="card">
-          {
-            compact ? (
-              <Fragment>
+            <div class="readiness" :data-status="stats.readiness.status" x-show="stats.readiness.status !== 'not-enough-data'" x-cloak>
+              <p class="readiness-label" x-show="stats.readiness.status === 'ready'">
+                <span
+                  x-show="!$store.learner.name"
+                  x-text="$store.i18n.t('dash.ready')"
+                >Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
+                <span
+                  x-show="$store.learner.name"
+                  x-cloak
+                  x-text="$store.i18n.t('dash.readyNamed', { name: $store.learner.name })"
+                ></span>
+              </p>
+              <p class="readiness-label" x-show="stats.readiness.status === 'not-ready'">
+                <span x-show="!$store.learner.name" x-text="$store.i18n.t('dash.notReady')">Not ready yet.</span>
+                <span
+                  x-show="$store.learner.name"
+                  x-cloak
+                  x-text="$store.i18n.t('dash.notReadyNamed', { name: $store.learner.name })"
+                ></span>
+              </p>
+              <ul class="reason-list" x-show="stats.readiness.status === 'not-ready'">
+                <template x-for="reason in (stats.readiness.reasons || [])" :key="(reason.id || '') + (reason.chapterId || '')">
+                  <li x-text="reasonText(reason)"></li>
+                </template>
+              </ul>
+              <p class="stat-sub" x-show="(stats.readiness.keepPracticing || []).length">
+                <span x-text="$store.i18n.t('dash.keepPracticing')">Keep practicing:</span>
+                <span x-text="(stats.readiness.keepPracticing || []).map((chapter) => $store.i18n.chapter(chapter.id)).join(', ')"></span>
+              </p>
+            </div>
+
+            <div class="dash-grid" style="margin-top:1rem">
+              <div class="card">
                 <div class="card-head">
-                  <h2 x-text="$store.i18n.t('dash.jumpBack')">Jump back in</h2>
-                  <p x-text="$store.i18n.t('dash.threeWays')">Three ways to study.</p>
+                  <h2>
+                    <span x-text="$store.i18n.t('dash.everyChapter')">Every chapter</span>
+                  </h2>
+                  <p x-text="$store.i18n.t('dash.belowTarget')">Red bars are below the 70% you want before the test.</p>
                 </div>
-                <ul class="tool-list">
-                  <li>
-                    <a class="tool" href={sessionHref}>
-                      <span class="sq"><Icon name="flame" /></span>
-                      <span>
-                        <b x-text="$store.i18n.t('dash.session')">Today’s session</b>
-                        <small x-text="$store.i18n.t('dash.sessionBlurb')">8 due cards, then 8 weak-chapter questions</small>
+                <p class="stat-sub" x-show="!stats.overallTotal">
+                  <span x-text="$store.i18n.t('dash.noneAnswered')">
+                    Nothing answered yet. Take a practice quiz and every chapter gets a bar here.
+                  </span>
+                </p>
+                <ul class="breakdown" x-show="stats.overallTotal" x-cloak>
+                  <template x-for="chapter in stats.chapters" :key="chapter.id">
+                    <li>
+                      <strong x-text="$store.i18n.chapter(chapter.id)"></strong>
+                      <span
+                        class="rate"
+                        x-text="chapter.total ? percent(chapter.rate) : '—'"
+                      ></span>
+                      <span class="meter">
+                        <i :style="`width:${chapter.total ? Math.max(chapter.rate * 100, 2) : 0}%`" :data-status="chapter.status"></i>
                       </span>
-                      <Icon name="chevron" class="go" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="tool" href={flashcardsHref}>
-                      <span class="sq"><Icon name="cards" /></span>
-                      <span>
-                        <b x-text="$store.i18n.t('dash.flashcards')">Flashcards</b>
-                        <small
-                          x-text="stats.seenQuestions === 0
-                            ? $store.i18n.t('dash.freshDeck')
-                            : $store.i18n.t(stats.cardsDue === 1 ? 'dash.cardDue' : 'dash.cardsDueToday', { n: stats.cardsDue })"
-                        />
-                      </span>
-                      <Icon name="chevron" class="go" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="tool" href={practiceHref}>
-                      <span class="sq"><Icon name="practice" /></span>
-                      <span>
-                        <b x-text="$store.i18n.t('dash.practiceQuiz')">Practice quiz</b>
-                        <small x-text="$store.i18n.t('dash.practiceBlurb')">Ten questions, answers as you go</small>
-                      </span>
-                      <Icon name="chevron" class="go" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="tool" href={mockHref}>
-                      <span class="sq"><Icon name="mock" /></span>
-                      <span>
-                        <b x-text="$store.i18n.t('dash.mockExam')">Mock exam</b>
-                        <small x-text="$store.i18n.t('dash.mockBlurb')">20 questions · 45:00 · pass at 15</small>
-                      </span>
-                      <Icon name="chevron" class="go" />
-                    </a>
-                  </li>
+                      <span
+                        x-text="chapter.total
+                          ? $store.i18n.t('dash.answers', { correct: chapter.correct, total: chapter.total })
+                          : $store.i18n.t('dash.noAnswers')"
+                      ></span>
+                      <span
+                        :class="chapter.status === 'on-track' ? 'pill pill-ok' : chapter.status === 'weak' ? 'pill pill-brand' : 'pill'"
+                        x-text="chapter.status === 'weak'
+                          ? $store.i18n.t('dash.needsWork')
+                          : chapter.status === 'on-track'
+                            ? $store.i18n.t('dash.onTrack')
+                            : $store.i18n.t('dash.keepStatus')"
+                      ></span>
+                    </li>
+                  </template>
                 </ul>
-              </Fragment>
-            ) : (
-              <Fragment>
+              </div>
+
+              <div class="card">
                 <div class="card-head">
                   <h2 x-text="$store.i18n.t('dash.mockScores')">Mock scores</h2>
                   <p x-text="$store.i18n.t('dash.recentMocks')">Most recent attempts, newest last.</p>
@@ -275,11 +217,11 @@ const sessionHref = withBase('/session/');
                 <p class="button-row">
                   <a class="button button-primary" href={mockHref} x-text="$store.i18n.t('dash.startMock')">Start a mock exam</a>
                 </p>
-              </Fragment>
-            )
-          }
-        </div>
-      </div>
+              </div>
+            </div>
+          </Fragment>
+        )
+      }
     </div>
   </template>
 </section>

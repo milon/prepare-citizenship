@@ -7,6 +7,10 @@ export const MOCK_PASS_SCORE = 15;
 export const MOCKS_FOR_READINESS = 3;
 export const CHAPTER_ANSWER_FLOOR = 10;
 export const CHAPTER_READY_RATE = 0.7;
+/** Seen quiz answers before we push the first mock. */
+export const MOCK_SEEN_FLOOR = 25;
+/** Distinct chapters with any answers before we push the first mock. */
+export const MOCK_CHAPTER_FLOOR = 2;
 
 export type ChapterStat = {
   id: ChapterId;
@@ -37,6 +41,7 @@ export type DashboardStats = {
   streak: number;
   seenQuestions: number;
   cardsDue: number;
+  flashcardsStarted: boolean;
   mocksPassed: number;
   mockTrend: { date: string; score: number; total: number; passed: boolean }[];
   chapters: ChapterStat[];
@@ -45,7 +50,7 @@ export type DashboardStats = {
 };
 
 export type Recommendation = {
-  kind: 'read' | 'mock' | 'drill' | 'cards' | 'maintain';
+  kind: 'read' | 'session' | 'mock' | 'drill' | 'cards' | 'maintain';
   title: string;
   blurb: string;
   cta: string;
@@ -159,8 +164,17 @@ export function recommendationFor(
     .filter((chapter) => chapter.status === 'weak')
     .sort((a, b) => a.rate - b.rate)[0];
   const mocksCompleted = stats.mockTrend.length;
+  const chaptersTouched = stats.chapters.filter((chapter) => chapter.total > 0).length;
+  const hasChapterDepth = stats.chapters.some(
+    (chapter) => chapter.total >= CHAPTER_ANSWER_FLOOR,
+  );
+  const studyReady =
+    mocksCompleted > 0 ||
+    stats.seenQuestions >= MOCK_SEEN_FLOOR ||
+    chaptersTouched >= MOCK_CHAPTER_FLOOR ||
+    hasChapterDepth;
 
-  if (stats.seenQuestions === 0) {
+  if (stats.seenQuestions === 0 && !stats.flashcardsStarted) {
     return {
       kind: 'read',
       title: 'Start with chapter one',
@@ -172,13 +186,26 @@ export function recommendationFor(
     };
   }
 
+  // Build study habits before pushing timed mocks (one daily answer used to skip here).
+  if (mocksCompleted < MOCKS_FOR_READINESS && !studyReady) {
+    return {
+      kind: 'session',
+      title: 'Today’s session',
+      blurb:
+        'Eight due cards and eight questions from your weakest chapter, then stop. Better prep than jumping into a full mock.',
+      cta: 'Start today’s session',
+      altCta: stats.cardsDue > 0 ? 'Review flashcards' : 'Practice quiz',
+      chapterId: null,
+    };
+  }
+
   if (mocksCompleted < MOCKS_FOR_READINESS) {
     return {
       kind: 'mock',
       title: mocksCompleted === 0 ? 'Sit your first mock exam' : `Sit mock exam #${mocksCompleted + 1}`,
       blurb: `20 questions, 45 minutes, ${MOCK_PASS_SCORE} to pass — the same shape as the real test. Readiness needs ${MOCKS_FOR_READINESS} passes.`,
       cta: 'Start mock exam',
-      altCta: 'Practice 10 instead',
+      altCta: 'Today’s session instead',
       chapterId: null,
     };
   }
@@ -241,6 +268,7 @@ export function dashboardStats(
     streak: currentStreak(progress, today),
     seenQuestions: seenQuestionCount(progress),
     cardsDue: dueCardCount(progress, totalCards, today),
+    flashcardsStarted: Object.keys(progress.flashcardState).length > 0,
     mocksPassed: mockTrend.filter((attempt) => attempt.passed).length,
     mockTrend,
     chapters: chapterStats(progress),

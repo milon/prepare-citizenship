@@ -8,6 +8,7 @@ type Paths = {
   practice: string;
   flashcards: string;
   mock: string;
+  session: string;
 };
 
 type NextStep = {
@@ -24,7 +25,13 @@ export function dashboardApp() {
     stats: null as DashboardStats | null,
     totalQuestions: 0,
     totalCards: 0,
-    paths: { chapters: '/', practice: '/', flashcards: '/', mock: '/' } as Paths,
+    paths: {
+      chapters: '/',
+      practice: '/',
+      flashcards: '/',
+      mock: '/',
+      session: '/',
+    } as Paths,
     percent(value: number) {
       const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
         ?.locale ?? 'en') as Locale;
@@ -53,6 +60,7 @@ export function dashboardApp() {
         practice: data.practicePath ?? '/',
         flashcards: data.flashcardsPath ?? '/',
         mock: data.mockPath ?? '/',
+        session: data.sessionPath ?? '/',
       };
       this.refresh();
     },
@@ -84,9 +92,20 @@ export function dashboardApp() {
       const readiness = this.stats.readiness;
       if (readiness.status === 'not-enough-data') {
         const left = 3 - readiness.mocksCompleted;
+        const dueNote =
+          this.stats.cardsDue > 0
+            ? this.tx(
+                this.stats.cardsDue === 1 ? 'dash.homeDueOne' : 'dash.homeDueMany',
+                { n: this.stats.cardsDue },
+              )
+            : '';
         return {
-          label: this.stats.seenQuestions === 0 ? this.tx('dash.notStarted') : this.tx('dash.gettingStarted'),
-          note: this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left }),
+          label: this.stats.seenQuestions === 0 && !this.stats.flashcardsStarted
+            ? this.tx('dash.notStarted')
+            : this.tx('dash.gettingStarted'),
+          note: dueNote
+            ? `${dueNote} · ${this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left })}`
+            : this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left }),
         };
       }
       if (readiness.status === 'ready') {
@@ -127,7 +146,11 @@ export function dashboardApp() {
           chapter ? `${this.paths.chapters}${chapter}/` : this.paths.chapters,
           this.paths.practice,
         ],
-        mock: [this.paths.mock, this.paths.practice],
+        session: [
+          this.paths.session,
+          this.stats.cardsDue > 0 ? this.paths.flashcards : this.paths.practice,
+        ],
+        mock: [this.paths.mock, this.paths.session],
         drill: [withChapter(this.paths.practice), withChapter(this.paths.flashcards)],
         cards: [this.paths.flashcards, this.paths.practice],
         maintain: [this.paths.practice, this.paths.mock],
@@ -145,6 +168,13 @@ export function dashboardApp() {
           blurb: this.tx('rec.read.blurb'),
           cta: this.tx('rec.read.cta'),
           altCta: this.tx('rec.read.alt'),
+        },
+        session: {
+          title: this.tx('rec.session.title'),
+          blurb: this.tx('rec.session.blurb'),
+          cta: this.tx('rec.session.cta'),
+          altCta:
+            this.stats.cardsDue > 0 ? this.tx('rec.session.altCards') : this.tx('rec.session.altPractice'),
         },
         mock: {
           title:

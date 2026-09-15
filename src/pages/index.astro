@@ -1,16 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import DailyQuestion from '../components/DailyQuestion.astro';
 import DashboardPanel from '../components/DashboardPanel.astro';
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { loadStudyContent } from '../lib/study-content';
 import { withBase } from '../lib/paths';
-
-const chapters = (await getCollection('chapters'))
-  .filter((entry) => !entry.data.regionGroup)
-  .sort((a, b) => a.data.order - b.data.order);
-const frenchById = new Map((await getCollection('chaptersFr')).map((entry) => [entry.id, entry]));
 
 const { questions, cards, current } = await loadStudyContent();
 const lastVerified = current?.lastVerified ?? 'unknown';
@@ -44,8 +38,7 @@ const officialPdfUrlFr =
         Your study dashboard
       </h1>
       <p class="lede" data-i18n="home.lede">
-        Read a chapter, drill the flashcards, then sit a timed mock exam. Progress stays
-        on this device.
+        Your next step is below. Progress stays on this device.
       </p>
     </div>
     <div class="chips">
@@ -115,17 +108,27 @@ const officialPdfUrlFr =
     </div>
   </section>
 
-  <section class="card mock-explainer" aria-labelledby="mock-how-heading">
-    <span class="sq"><Icon name="mock" /></span>
-    <div>
-      <div class="card-head">
-        <h2 id="mock-how-heading" data-i18n="home.mockHowTitle">How mock exams work</h2>
-        <p data-i18n="home.mockHowLede">
-          Mocks are generated when you start—not fixed papers. Each attempt draws 20
-          questions across all 10 chapters, includes your province or territory, and avoids
-          earlier mock questions while fresh ones remain.
-        </p>
-      </div>
+  <section class="card home-browse" aria-labelledby="chapters-heading">
+    <div class="card-head">
+      <h2 id="chapters-heading" data-i18n="chapters.ten">The ten chapters</h2>
+      <p data-i18n="home.chaptersBlurb">Original study notes, then flashcards and a quiz for each one.</p>
+    </div>
+    <p class="button-row">
+      <a class="button button-primary" href={withBase('/chapters/')} data-i18n="home.browseChapters">
+        Browse chapters
+      </a>
+      <a class="button" href={withBase('/mock/')} data-i18n="home.mockCta">Start a mock exam</a>
+    </p>
+  </section>
+
+  <details class="card home-more mock-explainer">
+    <summary id="mock-how-heading" data-i18n="home.mockHowTitle">How mock exams work</summary>
+    <div class="home-more-body">
+      <p data-i18n="home.mockHowLede">
+        Mocks are generated when you start—not fixed papers. Each attempt draws 20
+        questions across all 10 chapters, includes your province or territory, and avoids
+        earlier mock questions while fresh ones remain.
+      </p>
       <div class="chips">
         <span class="chip" data-i18n="home.mockTime">45 minutes</span>
         <span class="chip" data-i18n="home.mockPass">15/20 to pass</span>
@@ -136,37 +139,13 @@ const officialPdfUrlFr =
         submitting, review every answer or retry the exact same paper.
       </p>
       <p class="button-row">
-        <a class="button button-primary" href={withBase('/mock/')} data-i18n="home.mockCta">
+        <a class="button" href={withBase('/mock/')} data-i18n="home.mockCta">
           Start a mock exam
         </a>
+        <a class="button button-quiet" href={withBase('/faq/')} data-i18n="home.mockFaq">Mock exam FAQ</a>
       </p>
     </div>
-  </section>
-
-  <section class="card" style="margin-top:1rem" aria-labelledby="chapters-heading">
-    <div class="card-head">
-      <h2 id="chapters-heading" data-i18n="chapters.ten">The ten chapters</h2>
-      <p data-i18n="home.chaptersBlurb">Original study notes, then flashcards and a quiz for each one.</p>
-    </div>
-    <ul class="chapter-grid">
-      {
-        chapters.map((chapter, index) => {
-          const french = frenchById.get(chapter.id);
-          return (
-            <li>
-              <a class="chapter-card" href={`${withBase('/chapters/')}${chapter.id}/`}>
-                <span class="num">{String(index + 1).padStart(2, '0')}</span>
-                <strong class="lang-en">{chapter.data.title}</strong>
-                <strong class="lang-fr">{french?.data.title ?? chapter.data.title}</strong>
-                <span class="lang-en">{chapter.data.description}</span>
-                <span class="lang-fr">{french?.data.description ?? chapter.data.description}</span>
-              </a>
-            </li>
-          );
-        })
-      }
-    </ul>
-  </section>
+  </details>
 
   <section class="card disclaimer" aria-labelledby="disclaimer-heading">
     <span class="sq"><Icon name="info" /></span>
