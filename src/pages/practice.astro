@@ -1,5 +1,6 @@
 ---
 import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
 import { loadStudyContent, parseChapterParam } from '../lib/study-content';
@@ -54,12 +55,10 @@ const payload = {
           <p class="qmeta">
             <span class="pill pill-brand" x-text="position"></span>
             <span class="pill" x-text="current.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
+            <SpeakButton id="speakId()" labelKey="practice.hear" onClick="speakPrompt" />
           </p>
           <p class="sr-only" x-text="$store.i18n.t('practice.keys')">Number keys 1 to 4 select an answer.</p>
           <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
-          <p class="button-row" x-show="canSpeak()">
-            <button class="button" type="button" @click="speakPrompt" x-text="$store.i18n.t('practice.hear')">Hear the question</button>
-          </p>
           <div class="options" role="group" :aria-label="$store.i18n.pick(current.prompt)">
             <template x-for="(option, optionIndex) in current.options" :key="option.id">
               <button

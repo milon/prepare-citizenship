@@ -1,7 +1,7 @@
 import type { ChapterId, RegionCode } from '../content/schema';
 import type { ChapterOption, ClientQuestion } from './client-types';
 import { eligibleForProvince, shufflePractice } from './draw';
-import { pickLocalized, speakText, t, type Locale, type LocalizedText } from './i18n';
+import { pickLocalized, toggleSpeak, canUseSpeech, t, type Locale, type LocalizedText } from './i18n';
 import {
   loadProgress,
   newAttemptId,
@@ -190,7 +190,11 @@ export function practiceApp(payload: PracticePayload) {
     },
 
     canSpeak() {
-      return typeof window !== 'undefined' && 'speechSynthesis' in window;
+      return canUseSpeech();
+    },
+
+    speakId() {
+      return this.current ? `practice:${this.current.id}` : '';
     },
 
     speakPrompt() {
@@ -199,7 +203,7 @@ export function practiceApp(payload: PracticePayload) {
       }
       const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
         ?.locale ?? 'en') as Locale;
-      speakText(this.pick(this.current.prompt), locale);
+      toggleSpeak(this.pick(this.current.prompt), locale, this.speakId());
     },
   };
 }

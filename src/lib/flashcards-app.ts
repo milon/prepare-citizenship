@@ -1,7 +1,7 @@
 import type { ChapterId, RegionCode } from '../content/schema';
 import type { ChapterOption, ClientCard } from './client-types';
 import { eligibleForProvince } from './draw';
-import { pickLocalized, speakText, t, type Locale, type LocalizedText } from './i18n';
+import { pickLocalized, toggleSpeak, canUseSpeech, t, type Locale, type LocalizedText } from './i18n';
 import { defaultCardState, isCardDue, markCorrect, markKnown, markLearning } from './leitner';
 import {
   loadProgress,
@@ -207,7 +207,14 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     },
 
     canSpeak() {
-      return typeof window !== 'undefined' && 'speechSynthesis' in window;
+      return canUseSpeech();
+    },
+
+    speakId() {
+      if (!this.current) {
+        return '';
+      }
+      return `cards:${this.current.id}:${this.flipped ? 'back' : 'front'}`;
     },
 
     speakCurrent() {
@@ -217,7 +224,7 @@ export function flashcardsApp(payload: FlashcardsPayload) {
       const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
         ?.locale ?? 'en') as Locale;
       const text = this.flipped ? this.pick(this.current.back) : this.pick(this.current.front);
-      speakText(text, locale);
+      toggleSpeak(text, locale, this.speakId());
     },
   };
 }

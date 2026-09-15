@@ -1,5 +1,6 @@
 ---
 import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
 import { loadStudyContent, parseChapterParam } from '../lib/study-content';
@@ -78,7 +79,7 @@ const payload = {
             </span>
           </button>
           <div class="button-row">
-            <button class="button" type="button" x-show="canSpeak()" @click="speakCurrent" x-text="$store.i18n.t('cards.hear')">Hear this side</button>
+            <SpeakButton id="speakId()" labelKey="cards.hear" onClick="speakCurrent" />
             <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>
             <button class="button button-primary" type="button" @click="gotIt" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
             <button class="button button-quiet" type="button" @click="markAsKnown" x-text="$store.i18n.t('cards.known')">Mark as known</button>

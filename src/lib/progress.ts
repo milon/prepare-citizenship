@@ -41,12 +41,19 @@ export type ProgressSettings = {
   locale: Locale;
 };
 
+export type DailyQuestionRecord = {
+  date: string;
+  questionId: string;
+  selectedOptionId?: string | null;
+};
+
 export type Progress = {
   schemaVersion: 1;
   province: RegionCode | null;
   quizAttempts: QuizAttempt[];
   flashcardState: Record<string, FlashcardRecord>;
   missedQuestionIds: string[];
+  dailyQuestion: DailyQuestionRecord | null;
   settings: ProgressSettings;
 };
 
@@ -56,6 +63,7 @@ export const emptyProgress = (): Progress => ({
   quizAttempts: [],
   flashcardState: {},
   missedQuestionIds: [],
+  dailyQuestion: null,
   settings: {
     persistAsked: false,
     theme: 'system',
@@ -103,6 +111,30 @@ function isRegionCode(value: unknown): value is RegionCode {
   return typeof value === 'string' && (REGION_CODES as readonly string[]).includes(value);
 }
 
+function parseDailyQuestion(raw: unknown): DailyQuestionRecord | null {
+  if (raw === null || typeof raw !== 'object') {
+    return null;
+  }
+  const data = raw as Partial<DailyQuestionRecord>;
+  if (typeof data.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(data.date)) {
+    return null;
+  }
+  if (typeof data.questionId !== 'string' || data.questionId.length === 0) {
+    return null;
+  }
+  const selected =
+    data.selectedOptionId === undefined ||
+    data.selectedOptionId === null ||
+    typeof data.selectedOptionId === 'string'
+      ? data.selectedOptionId
+      : undefined;
+  return {
+    date: data.date,
+    questionId: data.questionId,
+    selectedOptionId: selected,
+  };
+}
+
 export function parseProgress(raw: unknown): Progress {
   const base = emptyProgress();
   if (raw === null || typeof raw !== 'object') {
@@ -121,6 +153,7 @@ export function parseProgress(raw: unknown): Progress {
     flashcardState:
       data.flashcardState && typeof data.flashcardState === 'object' ? data.flashcardState : {},
     missedQuestionIds: Array.isArray(data.missedQuestionIds) ? data.missedQuestionIds : [],
+    dailyQuestion: parseDailyQuestion(data.dailyQuestion),
     settings: {
       persistAsked: Boolean(data.settings?.persistAsked),
       theme:

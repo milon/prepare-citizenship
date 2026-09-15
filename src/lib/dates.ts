@@ -15,3 +15,8 @@ export function addDays(stamp: string, days: number): string {
 export function isDue(due: string, today = todayStamp()): boolean {
   return due <= today;
 }
+
+export function msUntilNextLocalMidnight(now = new Date()): number {
+  const next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  return Math.max(0, next.getTime() - now.getTime());
+}

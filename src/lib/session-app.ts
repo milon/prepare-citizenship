@@ -1,7 +1,7 @@
 import type { ChapterId } from '../content/schema';
 import type { ChapterOption, ClientCard, ClientQuestion } from './client-types';
 import { eligibleForProvince, shufflePractice } from './draw';
-import { pickLocalized, speakText, t, type Locale, type LocalizedText } from './i18n';
+import { pickLocalized, toggleSpeak, canUseSpeech, t, type Locale, type LocalizedText } from './i18n';
 import { isCardDue, markCorrect, markLearning } from './leitner';
 import {
   loadProgress,
@@ -161,19 +161,33 @@ export function sessionApp(payload: SessionPayload) {
     },
 
     canSpeak() {
-      return typeof window !== 'undefined' && 'speechSynthesis' in window;
+      return canUseSpeech();
+    },
+
+    speakId() {
+      if (this.phase === 'cards' && this.currentCard) {
+        return `session:card:${this.currentCard.id}:${this.flipped ? 'back' : 'front'}`;
+      }
+      if (this.phase === 'quiz' && this.currentQuestion) {
+        return `session:quiz:${this.currentQuestion.id}`;
+      }
+      return '';
     },
 
     speakCurrent() {
+      const id = this.speakId();
+      if (!id) {
+        return;
+      }
       if (this.phase === 'cards' && this.currentCard) {
         const text = this.flipped
           ? this.pick(this.currentCard.back)
           : this.pick(this.currentCard.front);
-        speakText(text, this.locale());
+        toggleSpeak(text, this.locale(), id);
         return;
       }
       if (this.phase === 'quiz' && this.currentQuestion) {
-        speakText(this.pick(this.currentQuestion.prompt), this.locale());
+        toggleSpeak(this.pick(this.currentQuestion.prompt), this.locale(), id);
       }
     },
 

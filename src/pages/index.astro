@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import DailyQuestion from '../components/DailyQuestion.astro';
 import DashboardPanel from '../components/DashboardPanel.astro';
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -65,6 +66,8 @@ const officialPdfUrlFr =
     totalQuestions={questions.length}
     totalCards={cards.length}
   />
+
+  <DailyQuestion questions={questions} />
 
   <section
     class="card install-card"

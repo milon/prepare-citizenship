@@ -33,7 +33,7 @@ export function faqItems(
         id: 'how-to-study',
         question: 'Comment utiliser ce site?',
         html: `<p>Lisez un chapitre, révisez la même matière avec les cartes-éclair, puis faites un quiz. Lorsque vous réussissez plusieurs examens blancs de suite, vous êtes plus près d’être prêt qu’après une seule tentative chanceuse.</p>
-<p>Le tableau de bord Aujourd’hui recommande une prochaine étape à partir du progrès enregistré sur cet appareil : commencer le premier chapitre, revoir les cartes dues, travailler un chapitre faible ou passer un examen blanc. La séance du jour enchaîne jusqu’à huit cartes dues et huit questions du chapitre le plus faible, puis s’arrête.</p>`,
+<p>Le tableau de bord Aujourd’hui recommande une prochaine étape à partir du progrès enregistré sur cet appareil : commencer le premier chapitre, revoir les cartes dues, travailler un chapitre faible ou passer un examen blanc. La question du jour est un nouvel item qui reste le même jusqu’à demain. La séance du jour enchaîne jusqu’à huit cartes dues et huit questions du chapitre le plus faible, puis s’arrête.</p>`,
       },
       {
         id: 'question-bank',
@@ -114,7 +114,7 @@ export function faqItems(
       id: 'how-to-study',
       question: 'How should I use this site?',
       html: `<p>Read a chapter, drill the same material as flashcards, then sit a practice quiz. When you can pass a few mocks in a row, you are closer to test-ready than after one lucky sitting.</p>
-<p>The dashboard on Today recommends a next step from the progress stored on this device: start chapter one, clear due cards, drill a weak chapter, or sit a mock. Today’s session runs up to eight due cards and eight weakest-chapter questions, then stops.</p>`,
+<p>The dashboard on Today recommends a next step from the progress stored on this device: start chapter one, clear due cards, drill a weak chapter, or sit a mock. Question of the day is one new item that stays the same until tomorrow. Today’s session runs up to eight due cards and eight weakest-chapter questions, then stops.</p>`,
     },
     {
       id: 'question-bank',

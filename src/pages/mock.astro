@@ -1,5 +1,6 @@
 ---
 import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
 import { loadStudyContent } from '../lib/study-content';
@@ -58,6 +59,7 @@ const payload = { questions, chapters };
             <span class="pill pill-brand" x-text="$store.i18n.t('practice.position', { n: index + 1, total: queue.length })"></span>
             <span class="pill" x-text="current.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
             <span class="pill pill-brand" x-show="flagged[current.id]" x-cloak x-text="$store.i18n.t('mock.flagged')">Flagged</span>
+            <SpeakButton id="speakId()" labelKey="practice.hear" onClick="speakPrompt" />
           </p>
           <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
           <div class="options" role="radiogroup">

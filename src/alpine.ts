@@ -12,15 +12,18 @@ import { practiceApp, type PracticePayload } from './lib/practice-app';
 import { provincePickerApp, settingsApp } from './lib/province-app';
 import { searchApp } from './lib/search-app';
 import { sessionApp, type SessionPayload } from './lib/session-app';
+import { dailyQuestionApp, type DailyPayload } from './lib/daily-app';
 import { updateApp } from './lib/update-app';
 import type { SearchDoc } from './lib/search';
 import { loadProgress, subscribeStorage } from './lib/progress';
 import {
   applyDocumentLocale,
+  canUseSpeech,
   localizedChapterTitle,
   localizedRegionLabel,
   pickLocalized,
-  speakText,
+  subscribeSpeak,
+  toggleSpeak,
   t,
   type Locale,
   type LocalizedText,
@@ -52,6 +55,16 @@ type I18nStore = {
   region(code: string): string;
 };
 
+type SpeechStore = {
+  playing: boolean;
+  loading: boolean;
+  id: string | null;
+  canSpeak(): boolean;
+  isLoading(id: string): boolean;
+  isPlaying(id: string): boolean;
+  isActive(id: string): boolean;
+};
+
 export default (Alpine: Alpine) => {
   Alpine.store('storage', {
     available: true,
@@ -80,6 +93,30 @@ export default (Alpine: Alpine) => {
       return localizedRegionLabel(code as Parameters<typeof localizedRegionLabel>[0], this.locale);
     },
   } satisfies I18nStore);
+
+  Alpine.store('speech', {
+    playing: false,
+    loading: false,
+    id: null as string | null,
+    canSpeak() {
+      return canUseSpeech();
+    },
+    isLoading(id: string) {
+      return this.loading && this.id === id;
+    },
+    isPlaying(id: string) {
+      return this.playing && this.id === id;
+    },
+    isActive(id: string) {
+      return this.id === id && (this.playing || this.loading);
+    },
+  } satisfies SpeechStore);
+  subscribeSpeak((state) => {
+    const store = Alpine.store('speech') as SpeechStore;
+    store.playing = state.playing;
+    store.loading = state.loading;
+    store.id = state.id;
+  });
 
   subscribeStorage((notice) => {
     const store = Alpine.store('storage') as StorageStore;
@@ -131,10 +168,35 @@ export default (Alpine: Alpine) => {
 
   Alpine.data('appUpdate', () => updateApp());
 
+  const daily = readJson<DailyPayload>('daily-data');
+  if (daily) {
+    Alpine.data('dailyQuestion', () => dailyQuestionApp(daily));
+  }
+
   Alpine.data('speech', () => ({
-    speak(text: string) {
+    canSpeak() {
+      return canUseSpeech();
+    },
+    speak(text: string, id: string) {
       const locale = (Alpine.store('i18n') as I18nStore).locale;
-      speakText(text, locale);
+      toggleSpeak(text, locale, id);
+    },
+    speakChapter() {
+      const root = (this as { $el: HTMLElement }).$el;
+      const locale = (Alpine.store('i18n') as I18nStore).locale;
+      const id = root.dataset.speakId || `chapter:${window.location.pathname}`;
+      const langClass = locale === 'fr' ? 'lang-fr' : 'lang-en';
+      const parts = [
+        root.querySelector(`h1.${langClass}`),
+        root.querySelector(`p.lede.${langClass}`),
+        root.querySelector(`.prose.${langClass}`),
+      ]
+        .map((node) => node?.textContent?.replace(/\s+/g, ' ').trim())
+        .filter((value): value is string => Boolean(value));
+      if (parts.length === 0) {
+        return;
+      }
+      toggleSpeak(parts.join('\n\n'), locale, id);
     },
   }));
 

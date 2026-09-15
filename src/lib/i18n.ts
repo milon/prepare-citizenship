@@ -145,6 +145,8 @@ const en: Dict = {
     'Not enough quiz data yet for a weakest-chapter set. Showing a mixed practice instead.',
   'practice.weakOk': 'Practicing your weakest chapter so far.',
   'practice.hear': 'Hear the question',
+  'speech.stop': 'Stop audio',
+  'speech.loading': 'Preparing audio',
   'mock.eyebrow': 'Mock exam',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
@@ -371,6 +373,17 @@ const en: Dict = {
   'home.installIos1': 'Tap the Share button in Safari (the square with an arrow).',
   'home.installIos2': 'Scroll and choose Add to Home Screen.',
   'home.installIos3': 'Tap Add. Open it from the icon next time you study.',
+  'daily.title': 'Question of the day',
+  'daily.lede': 'One new question each calendar day. It stays put if you come back later today.',
+  'daily.doneHours':
+    'You’ve done today’s question. Come back tomorrow (in {n} hours).',
+  'daily.doneHour': 'You’ve done today’s question. Come back tomorrow (in 1 hour).',
+  'daily.doneMinutes':
+    'You’ve done today’s question. Come back tomorrow (in {n} minutes).',
+  'daily.doneMinute': 'You’ve done today’s question. Come back tomorrow (in 1 minute).',
+  'daily.doneSoon':
+    'You’ve done today’s question. Come back tomorrow (in less than a minute).',
+  'daily.readChapter': 'Read {chapter}',
   'faq.title': 'Frequently asked questions',
   'faq.lede':
     'Independent practice for the Canadian citizenship test — not the test itself, and not affiliated with IRCC.',
@@ -408,6 +421,7 @@ const en: Dict = {
   'chapter.officialCta': 'Read this chapter on Canada.ca',
   'chapter.officialPdf': 'Discover Canada (PDF)',
   'chapter.print': 'Print this chapter',
+  'chapter.hear': 'Hear this chapter',
   'search.title': 'Search',
   'search.lede':
     'Look up a phrase in the chapter notes or in the question prompts. Nothing leaves this device.',
@@ -547,6 +561,8 @@ const fr: Dict = {
     'Pas assez de données pour un ensemble « chapitre faible ». Voici un mélange à la place.',
   'practice.weakOk': 'Vous pratiquez votre chapitre le plus faible pour l’instant.',
   'practice.hear': 'Écouter la question',
+  'speech.stop': 'Arrêter l’audio',
+  'speech.loading': 'Préparation de l’audio',
   'mock.eyebrow': 'Examen blanc',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
@@ -776,6 +792,20 @@ const fr: Dict = {
   'home.installIos1': 'Touchez Partager dans Safari (le carré avec une flèche).',
   'home.installIos2': 'Faites défiler et choisissez Sur l’écran d’accueil.',
   'home.installIos3': 'Touchez Ajouter. Ouvrez-la ensuite depuis l’icône.',
+  'daily.title': 'Question du jour',
+  'daily.lede':
+    'Une nouvelle question chaque jour. Elle reste la même si vous revenez plus tard aujourd’hui.',
+  'daily.doneHours':
+    'Vous avez répondu à la question du jour. Revenez demain (dans {n} heures).',
+  'daily.doneHour':
+    'Vous avez répondu à la question du jour. Revenez demain (dans 1 heure).',
+  'daily.doneMinutes':
+    'Vous avez répondu à la question du jour. Revenez demain (dans {n} minutes).',
+  'daily.doneMinute':
+    'Vous avez répondu à la question du jour. Revenez demain (dans 1 minute).',
+  'daily.doneSoon':
+    'Vous avez répondu à la question du jour. Revenez demain (dans moins d’une minute).',
+  'daily.readChapter': 'Lire {chapter}',
   'faq.title': 'Foire aux questions',
   'faq.lede':
     'Exercices indépendants pour l’examen de citoyenneté canadienne — ce n’est pas l’examen officiel et le site n’est pas affilié à IRCC.',
@@ -813,6 +843,7 @@ const fr: Dict = {
   'chapter.officialCta': 'Lire ce chapitre sur Canada.ca',
   'chapter.officialPdf': 'Découvrir le Canada (PDF)',
   'chapter.print': 'Imprimer ce chapitre',
+  'chapter.hear': 'Écouter ce chapitre',
   'search.title': 'Recherche',
   'search.lede':
     'Cherchez une expression dans les notes de chapitre ou dans les questions. Rien ne quitte cet appareil.',
@@ -962,12 +993,224 @@ export function applyDocumentLocale(locale: Locale) {
   });
 }
 
-export function speakText(text: string, locale: Locale) {
-  if (typeof window === 'undefined' || !window.speechSynthesis) {
+let speakKeepAlive = 0 as number | 0;
+let activeSpeakId: string | null = null;
+let speakPhase: 'idle' | 'loading' | 'playing' = 'idle';
+
+export type SpeakState = {
+  playing: boolean;
+  loading: boolean;
+  id: string | null;
+};
+
+type SpeakListener = (state: SpeakState) => void;
+const speakListeners = new Set<SpeakListener>();
+
+function clearSpeakKeepAlive() {
+  if (typeof window === 'undefined' || !speakKeepAlive) {
     return;
   }
+  window.clearInterval(speakKeepAlive);
+  speakKeepAlive = 0;
+}
+
+function notifySpeakListeners() {
+  const state = getSpeakState();
+  for (const listener of speakListeners) {
+    listener(state);
+  }
+}
+
+function setSpeakSession(id: string | null, phase: 'idle' | 'loading' | 'playing') {
+  activeSpeakId = id;
+  speakPhase = id ? phase : 'idle';
+  notifySpeakListeners();
+}
+
+/** Chromium drops or stalls long single utterances; keep chunks short. */
+function chunkSpeechText(text: string, maxLen = 180): string[] {
+  const normalized = text.replace(/\s+/g, ' ').trim();
+  if (!normalized) {
+    return [];
+  }
+  if (normalized.length <= maxLen) {
+    return [normalized];
+  }
+
+  const chunks: string[] = [];
+  let remaining = normalized;
+  while (remaining.length > maxLen) {
+    const slice = remaining.slice(0, maxLen + 1);
+    const breakAt = Math.max(
+      slice.lastIndexOf('. '),
+      slice.lastIndexOf('! '),
+      slice.lastIndexOf('? '),
+      slice.lastIndexOf('; '),
+      slice.lastIndexOf(', '),
+      slice.lastIndexOf(' '),
+    );
+    const cut = breakAt > 40 ? breakAt + 1 : maxLen;
+    chunks.push(remaining.slice(0, cut).trim());
+    remaining = remaining.slice(cut).trim();
+  }
+  if (remaining) {
+    chunks.push(remaining);
+  }
+  return chunks;
+}
+
+export function canUseSpeech() {
+  return typeof window !== 'undefined' && 'speechSynthesis' in window;
+}
+
+export function getSpeakState(): SpeakState {
+  return {
+    playing: speakPhase === 'playing',
+    loading: speakPhase === 'loading',
+    id: activeSpeakId,
+  };
+}
+
+export function subscribeSpeak(listener: SpeakListener): () => void {
+  speakListeners.add(listener);
+  listener(getSpeakState());
+  return () => {
+    speakListeners.delete(listener);
+  };
+}
+
+export function stopSpeaking() {
+  clearSpeakKeepAlive();
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  setSpeakSession(null, 'idle');
+}
+
+function startSpeaking(text: string, locale: Locale, id: string) {
+  if (!canUseSpeech()) {
+    return;
+  }
+
+  const chunks = chunkSpeechText(text);
+  if (chunks.length === 0) {
+    return;
+  }
+
+  clearSpeakKeepAlive();
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = locale === 'fr' ? 'fr-CA' : 'en-CA';
-  window.speechSynthesis.speak(utterance);
+
+  const lang = locale === 'fr' ? 'fr-CA' : 'en-CA';
+  const startedAt = Date.now();
+  const minLoadingMs = 400;
+  let index = 0;
+  let started = false;
+
+  const markPlaying = () => {
+    if (activeSpeakId !== id || started) {
+      return;
+    }
+    started = true;
+    const wait = Math.max(0, minLoadingMs - (Date.now() - startedAt));
+    window.setTimeout(() => {
+      if (activeSpeakId === id) {
+        setSpeakSession(id, 'playing');
+      }
+    }, wait);
+  };
+
+  const speakNext = () => {
+    if (activeSpeakId !== id || index >= chunks.length) {
+      if (activeSpeakId === id) {
+        clearSpeakKeepAlive();
+        setSpeakSession(null, 'idle');
+      }
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(chunks[index]);
+    utterance.lang = lang;
+    const chunkIndex = index;
+    index += 1;
+
+    if (chunkIndex === 0) {
+      utterance.onstart = () => {
+        markPlaying();
+      };
+    }
+
+    utterance.onend = () => {
+      if (activeSpeakId !== id) {
+        return;
+      }
+      if (index >= chunks.length) {
+        clearSpeakKeepAlive();
+        setSpeakSession(null, 'idle');
+        return;
+      }
+      speakNext();
+    };
+
+    utterance.onerror = (event) => {
+      // cancel() before a new speak() often reports interrupted/canceled.
+      if (event.error === 'interrupted' || event.error === 'canceled') {
+        return;
+      }
+      if (activeSpeakId === id) {
+        clearSpeakKeepAlive();
+        setSpeakSession(null, 'idle');
+      }
+    };
+
+    window.speechSynthesis.speak(utterance);
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+
+    // Some engines skip onstart for short first chunks; still leave loading visible.
+    if (chunkIndex === 0) {
+      window.setTimeout(() => {
+        if (activeSpeakId === id && window.speechSynthesis.speaking) {
+          markPlaying();
+        }
+      }, minLoadingMs + 50);
+    }
+  };
+
+  // Mark loading immediately so the spinner can paint before onstart.
+  setSpeakSession(id, 'loading');
+  // First speak() stays in the click turn so iOS keeps the user-gesture unlock.
+  speakNext();
+
+  // Chromium can silently pause mid-queue on longer readings.
+  speakKeepAlive = window.setInterval(() => {
+    if (activeSpeakId !== id) {
+      clearSpeakKeepAlive();
+      return;
+    }
+    if (!window.speechSynthesis.speaking && !window.speechSynthesis.pending) {
+      clearSpeakKeepAlive();
+      setSpeakSession(null, 'idle');
+      return;
+    }
+    window.speechSynthesis.resume();
+  }, 8000);
+}
+
+/** Start speaking, or stop if this same id is already active (loading or playing). */
+export function toggleSpeak(text: string, locale: Locale, id: string): boolean {
+  if (!canUseSpeech()) {
+    return false;
+  }
+  if (activeSpeakId === id) {
+    stopSpeaking();
+    return false;
+  }
+  startSpeaking(text, locale, id);
+  return true;
+}
+
+/** @deprecated Prefer toggleSpeak — kept for call sites that always want a fresh start. */
+export function speakText(text: string, locale: Locale, id = 'default') {
+  startSpeaking(text, locale, id);
 }

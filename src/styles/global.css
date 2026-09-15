@@ -1265,6 +1265,19 @@ h3 {
   margin-top: 1rem;
 }
 
+.daily-question {
+  margin-top: 1rem;
+}
+
+.daily-question .prompt {
+  margin-top: 0.35rem;
+}
+
+.daily-question .option:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
 .install-card > .sq {
   display: grid;
   width: 2.75rem;
@@ -1528,7 +1541,7 @@ h3 {
 .chapter-side a {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  align-items: baseline;
+  align-items: center;
   column-gap: 0.45rem;
   min-height: 2.5rem;
   padding: 0.45rem 0.65rem;
@@ -2089,6 +2102,7 @@ h3 {
 .qmeta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem;
   margin-bottom: 0.9rem;
 }
@@ -2099,6 +2113,75 @@ h3 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.35;
+}
+
+.prompt-speak {
+  border-color: var(--line);
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.qmeta .prompt-speak {
+  flex: none;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0;
+}
+
+.qmeta .prompt-speak:hover,
+.prompt-speak:hover {
+  border-color: var(--brand-line);
+  background: var(--brand-soft);
+  color: var(--brand-ink);
+}
+
+.qmeta .prompt-speak .icon,
+.prompt-speak .icon {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.icon-button.is-playing,
+.button.is-playing,
+.prompt-speak.is-playing,
+.icon-button.is-loading,
+.button.is-loading,
+.prompt-speak.is-loading {
+  border-color: var(--brand-line);
+  background: var(--brand-soft);
+  color: var(--brand-ink);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand) 22%, transparent);
+}
+
+.icon-button.is-playing,
+.button.is-playing,
+.prompt-speak.is-playing {
+  animation: speak-pulse 1.6s ease-in-out infinite;
+}
+
+.speak-spinner {
+  animation: speak-spin 0.8s linear infinite;
+}
+
+@keyframes speak-pulse {
+  50% {
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--brand) 0%, transparent);
+  }
+}
+
+@keyframes speak-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-button.is-playing,
+  .button.is-playing,
+  .prompt-speak.is-playing,
+  .speak-spinner {
+    animation: none;
+  }
 }
 
 .options {
@@ -2821,6 +2904,10 @@ html:not([data-locale='fr']) .lang-fr {
 }
 
 @media print {
+  @page {
+    margin: 0.6in;
+  }
+
   .rail,
   .topbar,
   .tabbar,
@@ -2844,8 +2931,10 @@ html:not([data-locale='fr']) .lang-fr {
   .app,
   .content,
   .site-main,
+  .chapter-layout,
   .panel {
     display: block;
+    width: auto;
     background: #fff;
     color: #000;
     box-shadow: none;
@@ -2853,6 +2942,24 @@ html:not([data-locale='fr']) .lang-fr {
     max-width: none;
     padding: 0;
     margin: 0;
+  }
+
+  /* Sidebar is hidden above; collapse its grid track so the article
+     uses the full printable width instead of the narrow first column. */
+  .chapter-layout {
+    grid-template-columns: none;
+  }
+
+  .chapter-article,
+  .lede,
+  .prose {
+    max-width: none;
+    color: #000;
+  }
+
+  .prose a {
+    color: #000;
+    text-decoration: underline;
   }
 }
 

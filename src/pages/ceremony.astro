@@ -44,7 +44,10 @@ const rightsHref = `${withBase('/chapters/')}rights-and-responsibilities/`;
             class="button"
             type="button"
             data-i18n="ceremony.swear"
-            @click="speak('I swear that I will be faithful and bear true allegiance to His Majesty King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully observe the laws of Canada, including the Constitution, which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties as a Canadian citizen.')"
+            :class="{ 'is-loading': $store.speech.isLoading('ceremony:en'), 'is-playing': $store.speech.isPlaying('ceremony:en') }"
+            :aria-pressed="$store.speech.isActive('ceremony:en').toString()"
+            :aria-busy="$store.speech.isLoading('ceremony:en').toString()"
+            @click="speak('I swear that I will be faithful and bear true allegiance to His Majesty King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully observe the laws of Canada, including the Constitution, which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties as a Canadian citizen.', 'ceremony:en')"
           >
             I swear
           </button>
@@ -63,7 +66,10 @@ const rightsHref = `${withBase('/chapters/')}rights-and-responsibilities/`;
             class="button"
             type="button"
             data-i18n="ceremony.affirm"
-            @click="speak('Je jure que je serai fidèle et porterai sincère allégeance à Sa Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits ancestraux ou issus de traités des peuples des Premières Nations, des Inuits et des Métis, et que je remplirai loyalement mes obligations de citoyen canadien.')"
+            :class="{ 'is-loading': $store.speech.isLoading('ceremony:fr'), 'is-playing': $store.speech.isPlaying('ceremony:fr') }"
+            :aria-pressed="$store.speech.isActive('ceremony:fr').toString()"
+            :aria-busy="$store.speech.isLoading('ceremony:fr').toString()"
+            @click="speak('Je jure que je serai fidèle et porterai sincère allégeance à Sa Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits ancestraux ou issus de traités des peuples des Premières Nations, des Inuits et des Métis, et que je remplirai loyalement mes obligations de citoyen canadien.', 'ceremony:fr')"
           >
             J’affirme
           </button>

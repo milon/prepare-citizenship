@@ -4,6 +4,7 @@ import AnthemPanel from '../../components/AnthemPanel.astro';
 import CanadaCapitalsMap from '../../components/CanadaCapitalsMap.astro';
 import ChapterNav from '../../components/ChapterNav.astro';
 import Icon from '../../components/Icon.astro';
+import SpeakButton from '../../components/SpeakButton.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { OFFICIAL_PDF_URL, OFFICIAL_PDF_URL_FR } from '../../lib/faq';
 import { officialChapterUrl } from '../../lib/official-sources';
@@ -64,13 +65,14 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
   <div class="chapter-layout">
     <ChapterNav chapters={allChapters} frenchById={frenchById} currentId={entry.id} />
 
-    <article class="panel chapter-article">
+    <article class="panel chapter-article" x-data="speech" data-speak-id={`chapter:${entry.id}`}>
       <p class="eyebrow" data-i18n="chapter.eyebrow">Chapter summary</p>
       <h1 class="lang-en">{entry.data.title}</h1>
       <h1 class="lang-fr">{frenchEntry.data.title}</h1>
       <p class="lede lang-en">{entry.data.description}</p>
       <p class="lede lang-fr">{frenchEntry.data.description}</p>
       <p class="button-row no-print">
+        <SpeakButton id={`'chapter:${entry.id}'`} labelKey="chapter.hear" onClick="speakChapter" />
         <button class="button" type="button" onclick="window.print()" data-i18n="chapter.print">
           Print this chapter
         </button>

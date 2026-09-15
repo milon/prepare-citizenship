@@ -1,4 +1,6 @@
 ---
+import SpeakButton from './SpeakButton.astro';
+
 const ANTHEM_PAGE =
   'https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html';
 const ANTHEM_PAGE_FR =
@@ -13,7 +15,11 @@ const ANTHEM_PAGE_FR =
   <div class="button-row">
     <a class="button button-primary lang-en" href={ANTHEM_PAGE} data-i18n="anthem.listen">Listen on Canada.ca</a>
     <a class="button button-primary lang-fr" href={ANTHEM_PAGE_FR} data-i18n="anthem.listen">Listen on Canada.ca</a>
-    <button class="button" type="button" @click="speak($store.i18n.t('anthem.title'))" data-i18n="anthem.hear">Hear the title</button>
+    <SpeakButton
+      id="'anthem:title'"
+      labelKey="anthem.hear"
+      onClick="speak($store.i18n.t('anthem.title'), 'anthem:title')"
+    />
   </div>
   <div class="anthem-lyrics">
     <div>
