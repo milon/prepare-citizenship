@@ -1,6 +1,7 @@
-import type { ChapterId } from '../content/schema';
+import type { ChapterId, RegionCode } from '../content/schema';
 import type { ChapterOption, ClientCard } from './client-types';
-import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
+import { eligibleForProvince } from './draw';
+import { pickLocalized, speakText, t, type Locale, type LocalizedText } from './i18n';
 import { defaultCardState, isCardDue, markCorrect, markKnown, markLearning } from './leitner';
 import {
   loadProgress,
@@ -68,10 +69,12 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     },
 
     filtered(): ClientCard[] {
+      const province = this.progress?.province as RegionCode | null | undefined;
+      const scoped = province ? eligibleForProvince(payload.cards, province) : payload.cards;
       const cards =
         this.chapter === 'all'
-          ? payload.cards
-          : payload.cards.filter((card) => card.chapter === this.chapter);
+          ? scoped
+          : scoped.filter((card) => card.chapter === this.chapter);
       if (!this.progress) {
         return cards;
       }
@@ -201,6 +204,20 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     setMode(mode: Mode) {
       this.mode = mode;
       this.rebuild();
+    },
+
+    canSpeak() {
+      return typeof window !== 'undefined' && 'speechSynthesis' in window;
+    },
+
+    speakCurrent() {
+      if (!this.current) {
+        return;
+      }
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      const text = this.flipped ? this.pick(this.current.back) : this.pick(this.current.front);
+      speakText(text, locale);
     },
   };
 }

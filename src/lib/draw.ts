@@ -4,8 +4,11 @@ import { seededRandom, shuffle, type RandomSource } from './shuffle';
 
 const MOCK_SIZE = 20;
 
-function eligibleForProvince(questions: ClientQuestion[], province: RegionCode): ClientQuestion[] {
-  return questions.filter((question) => question.region === null || question.region === province);
+export function eligibleForProvince<T extends { region?: RegionCode | null }>(
+  items: T[],
+  province: RegionCode,
+): T[] {
+  return items.filter((item) => item.region == null || item.region === province);
 }
 
 function preferQuestions(

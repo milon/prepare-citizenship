@@ -1799,5 +1799,200 @@
       "fr": "La rivière Rouge et les établissements ultérieurs des Prairies forment la géographie métisse classique. L’identité n’est pas une question de quantum de sang aux fins de l’examen."
     },
     "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-050",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Where does the name “Canada” come from?",
+      "fr": "D’où vient le nom « Canada »?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "From “Kanata,” a Huron-Iroquois word meaning village or settlement",
+        "fr": "De « Kanata », un mot huron-iroquois signifiant village ou établissement"
+      },
+      {
+        "id": "b",
+        "en": "From a Latin word for maple leaf",
+        "fr": "D’un mot latin désignant la feuille d’érable"
+      },
+      {
+        "id": "c",
+        "en": "From the French word for ocean",
+        "fr": "Du mot français pour océan"
+      },
+      {
+        "id": "d",
+        "en": "From an Inuit word meaning mountain",
+        "fr": "D’un mot inuit signifiant montagne"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Early explorers heard “kanata” for a village near present-day Quebec City. The name stuck for a much larger country.",
+      "fr": "Les premiers explorateurs ont entendu « kanata » pour désigner un village près de l’actuelle ville de Québec. Le nom est resté pour un pays bien plus vaste."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-051",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What does the word “Inuit” mean in Inuktitut?",
+      "fr": "Que signifie le mot « Inuit » en inuktitut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The people",
+        "fr": "Le peuple"
+      },
+      {
+        "id": "b",
+        "en": "The ice",
+        "fr": "La glace"
+      },
+      {
+        "id": "c",
+        "en": "The hunters only",
+        "fr": "Les chasseurs seulement"
+      },
+      {
+        "id": "d",
+        "en": "The southerners",
+        "fr": "Les gens du Sud"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Inuit means “the people.” Inuk is the singular. Avoid outdated terms the guide rejects.",
+      "fr": "Inuit signifie « le peuple ». Inuk est le singulier. Évitez les termes désuets que le guide rejette."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-052",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is a Francophone?",
+      "fr": "Qu’est-ce qu’un francophone?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A person whose first language is French",
+        "fr": "Une personne dont la langue maternelle est le français"
+      },
+      {
+        "id": "b",
+        "en": "Anyone who lives in Quebec City only",
+        "fr": "Toute personne qui habite uniquement la ville de Québec"
+      },
+      {
+        "id": "c",
+        "en": "A federal judge who must speak Inuktitut",
+        "fr": "Un juge fédéral qui doit parler inuktitut"
+      },
+      {
+        "id": "d",
+        "en": "A British Loyalist title",
+        "fr": "Un titre de Loyaliste britannique"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Francophone refers to French as a first language. Francophones live across Canada, not only in Quebec.",
+      "fr": "Francophone désigne quelqu’un dont le français est la langue maternelle. Des francophones vivent partout au Canada, pas seulement au Québec."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-053",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who has major responsibilities for local government on First Nations reserves?",
+      "fr": "Qui a d’importantes responsabilités de gouvernance locale dans les réserves des Premières Nations?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Band chiefs and councillors",
+        "fr": "Les chefs de bande et les conseillers"
+      },
+      {
+        "id": "b",
+        "en": "Only the provincial premier",
+        "fr": "Le premier ministre provincial seulement"
+      },
+      {
+        "id": "c",
+        "en": "Only municipal mayors outside the reserve",
+        "fr": "Les maires municipaux hors réserve seulement"
+      },
+      {
+        "id": "d",
+        "en": "Only the Senate",
+        "fr": "Le Sénat seulement"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Band councils govern many reserve matters. Federal, provincial, and treaty relationships still matter, but the guide highlights chiefs and councillors.",
+      "fr": "Les conseils de bande gèrent une grande part des affaires des réserves. Les relations fédérales, provinciales et issues des traités comptent aussi, mais le guide met l’accent sur les chefs et conseillers."
+    },
+    "source": "Discover Canada — Who We Are"
+  },
+  {
+    "id": "wwa-054",
+    "chapter": "who-we-are",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is the largest religious affiliation in Canada, historically and in census tallies the guide highlights?",
+      "fr": "Quelle est la plus grande affiliation religieuse au Canada, historiquement et dans les dénombrements que le guide met en avant?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Catholic",
+        "fr": "Catholique"
+      },
+      {
+        "id": "b",
+        "en": "Hindu",
+        "fr": "Hindoue"
+      },
+      {
+        "id": "c",
+        "en": "Jewish",
+        "fr": "Juive"
+      },
+      {
+        "id": "d",
+        "en": "Sikh",
+        "fr": "Sikhe"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Catholic communities are large, especially in Quebec and among many immigrant groups. Canada is also home to many other faiths and to people with no religion.",
+      "fr": "Les communautés catholiques sont nombreuses, surtout au Québec et parmi plusieurs groupes d’immigrants. Le Canada compte aussi de nombreuses autres confessions et des personnes sans religion."
+    },
+    "source": "Discover Canada — Who We Are"
   }
 ]

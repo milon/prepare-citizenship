@@ -821,5 +821,15 @@ export default build(
       ef: 'Les députés élisent le président pour diriger la Chambre de façon impartiale. À la dernière date de vérification dans cette application, le président est {{speakerOfTheHouse}}.',
       k: 'speakerOfTheHouse',
     },
+    {
+      id: 'gov-053',
+      p: 'What do you call a proposed law before it is passed?',
+      pf: 'Comment appelle-t-on un projet de loi avant qu’il ne soit adopté?',
+      o: ['A bill', 'A treaty', 'A regulation only', 'A confidence vote'],
+      of: ['Un projet de loi', 'Un traité', 'Un règlement seulement', 'Un vote de confiance'],
+      a: 'a',
+      e: 'A bill becomes law after it passes the required stages (for federal law, usually Commons and Senate) and receives Royal Assent.',
+      ef: 'Un projet de loi devient une loi après les étapes requises (pour une loi fédérale, habituellement les Communes et le Sénat) et la sanction royale.',
+    },
   ],
 );

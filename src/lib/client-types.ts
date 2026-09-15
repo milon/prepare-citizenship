@@ -21,6 +21,7 @@ export type ClientQuestion = {
 export type ClientCard = {
   id: string;
   chapter: ChapterId;
+  region?: RegionCode | null;
   front: LocalizedText;
   back: LocalizedText;
   source: LocalizedText;

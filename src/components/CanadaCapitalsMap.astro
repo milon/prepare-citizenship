@@ -1,0 +1,153 @@
+---
+import { withBase } from '../lib/paths';
+
+// x/y are the city's real position in the base map's coordinate system. dx/dy
+// nudge the number label off the dot where a province is too small to hold it.
+const capitals = [
+  { n: 1, x: -19596, y: -6995, en: 'Yukon — Whitehorse', fr: 'Yukon — Whitehorse' },
+  {
+    n: 2,
+    x: -9305,
+    y: -3973,
+    en: 'Northwest Territories — Yellowknife',
+    fr: 'Territoires du Nord-Ouest — Yellowknife',
+  },
+  { n: 3, x: 12707, y: -6558, en: 'Nunavut — Iqaluit', fr: 'Nunavut — Iqaluit' },
+  {
+    n: 4,
+    x: -20355,
+    y: 8088,
+    dx: -1750,
+    dy: 550,
+    en: 'British Columbia — Victoria',
+    fr: 'Colombie-Britannique — Victoria',
+  },
+  { n: 5, x: -11862, y: 5348, en: 'Alberta — Edmonton', fr: 'Alberta — Edmonton' },
+  { n: 6, x: -6811, y: 9917, en: 'Saskatchewan — Regina', fr: 'Saskatchewan — Regina' },
+  { n: 7, x: -1582, y: 10978, en: 'Manitoba — Winnipeg', fr: 'Manitoba — Winnipeg' },
+  { n: 8, x: 12635, y: 16338, en: 'Ontario — Toronto', fr: 'Ontario — Toronto' },
+  { n: 9, x: 15143, y: 13676, national: true, en: 'Canada — Ottawa', fr: 'Canada — Ottawa' },
+  { n: 10, x: 17894, y: 11005, en: 'Quebec — Quebec City', fr: 'Québec — Québec' },
+  {
+    n: 11,
+    x: 21551,
+    y: 10471,
+    en: 'New Brunswick — Fredericton',
+    fr: 'Nouveau-Brunswick — Fredericton',
+  },
+  {
+    n: 12,
+    x: 23899,
+    y: 8960,
+    dx: 500,
+    dy: -1900,
+    en: 'Prince Edward Island — Charlottetown',
+    fr: 'Île-du-Prince-Édouard — Charlottetown',
+  },
+  {
+    n: 13,
+    x: 24405,
+    y: 10686,
+    dx: 1400,
+    dy: 1000,
+    en: 'Nova Scotia — Halifax',
+    fr: 'Nouvelle-Écosse — Halifax',
+  },
+  {
+    n: 14,
+    x: 29812,
+    y: 3511,
+    dx: 550,
+    dy: -1250,
+    en: 'Newfoundland and Labrador — St. John’s',
+    fr: 'Terre-Neuve-et-Labrador — St. John’s',
+  },
+];
+---
+
+<h2 class="map-title lang-en">Canada and its capitals</h2>
+<h2 class="map-title lang-fr">Le Canada et ses capitales</h2>
+<p class="map-intro lang-en">
+  Use the numbered political map to connect each province and territory with its capital.
+</p>
+<p class="map-intro lang-fr">
+  Utilisez la carte politique numérotée pour associer chaque province et territoire à sa capitale.
+</p>
+<figure class="canada-study-map">
+  <div class="canada-study-map-frame">
+    <svg
+      viewBox="-24500 -27050 55700 47100"
+      role="img"
+      aria-labelledby="canada-map-title canada-map-desc"
+    >
+      <title id="canada-map-title">Canada’s provinces, territories, and capitals</title>
+      <desc id="canada-map-desc">
+        A political map of Canada. Numbered markers correspond to the bilingual capital list below.
+      </desc>
+      <image
+        href={withBase('/canada-capitals-map.svg')}
+        x="-24500"
+        y="-27050"
+        width="55700"
+        height="47100"
+        preserveAspectRatio="none"
+      />
+      {
+        capitals.map((capital) => (
+          <g class:list={['capital-marker', capital.national && 'capital-marker-national']}>
+            {capital.dx !== undefined && (
+              <line
+                class="capital-marker-leader"
+                x1={capital.x}
+                y1={capital.y}
+                x2={capital.x + capital.dx}
+                y2={capital.y + capital.dy}
+              />
+            )}
+            <circle class="capital-marker-dot" cx={capital.x} cy={capital.y} r="230" />
+            <g transform={`translate(${capital.x + (capital.dx ?? 0)} ${capital.y + (capital.dy ?? 0)})`}>
+              <circle class="capital-marker-pin" r="640" />
+              <text y="250" text-anchor="middle">{capital.n}</text>
+            </g>
+          </g>
+        ))
+      }
+    </svg>
+  </div>
+
+  <figcaption>
+    <p class="map-legend-note lang-en">
+      Match each number to its capital. <span class="capital-key capital-key-national"></span>
+      Ottawa is the national capital.
+    </p>
+    <p class="map-legend-note lang-fr">
+      Associez chaque numéro à sa capitale. <span class="capital-key capital-key-national"></span>
+      Ottawa est la capitale nationale.
+    </p>
+    <ol class="capital-map-list">
+      {
+        capitals.map((capital) => (
+          <li>
+            <span class:list={['capital-key', capital.national && 'capital-key-national']}>
+              {capital.n}
+            </span>
+            <span class="lang-en">{capital.en}</span>
+            <span class="lang-fr">{capital.fr}</span>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="map-credit">
+      <span class="lang-en">
+        Boundary map: public domain,
+        <a href="https://commons.wikimedia.org/wiki/File:Canada_blank_map.svg">Wikimedia Commons</a>.
+        Study labels are original.
+      </span>
+      <span class="lang-fr">
+        Fond de carte : domaine public,
+        <a href="https://commons.wikimedia.org/wiki/File:Canada_blank_map.svg">Wikimedia Commons</a>.
+        Repères d’étude originaux.
+      </span>
+    </p>
+  </figcaption>
+</figure>

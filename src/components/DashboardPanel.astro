@@ -17,6 +17,7 @@ const practiceHref = withBase('/practice/');
 const flashcardsHref = withBase('/flashcards/');
 const mockHref = withBase('/mock/');
 const progressHref = withBase('/progress/');
+const sessionHref = withBase('/session/');
 ---
 
 <section
@@ -204,6 +205,16 @@ const progressHref = withBase('/progress/');
                   <p x-text="$store.i18n.t('dash.threeWays')">Three ways to study.</p>
                 </div>
                 <ul class="tool-list">
+                  <li>
+                    <a class="tool" href={sessionHref}>
+                      <span class="sq"><Icon name="flame" /></span>
+                      <span>
+                        <b x-text="$store.i18n.t('dash.session')">Today’s session</b>
+                        <small x-text="$store.i18n.t('dash.sessionBlurb')">8 due cards, then 8 weak-chapter questions</small>
+                      </span>
+                      <Icon name="chevron" class="go" />
+                    </a>
+                  </li>
                   <li>
                     <a class="tool" href={flashcardsHref}>
                       <span class="sq"><Icon name="cards" /></span>

@@ -25,6 +25,29 @@ The **national capital** is **Ottawa**. Do not confuse it with Toronto (Ontario�
 
 Open each regional page for capitals, geography, and a handful of testable local facts. If you set a province or territory in this app (Phase 2), mock exams will include items tagged for that place.
 
+## Capitals at a glance
+
+The flashcard deck for this chapter includes list cards for the map and every capital. Drill those; the table is the answer key.
+
+| Place | Capital | Region |
+| --- | --- | --- |
+| Canada | **Ottawa** | — |
+| Newfoundland and Labrador | St. John’s | Atlantic |
+| Nova Scotia | Halifax | Atlantic |
+| Prince Edward Island | Charlottetown | Atlantic |
+| New Brunswick | Fredericton | Atlantic |
+| Quebec | Quebec City | Central |
+| Ontario | Toronto | Central |
+| Manitoba | Winnipeg | Prairie |
+| Saskatchewan | Regina | Prairie |
+| Alberta | Edmonton | Prairie |
+| British Columbia | Victoria | West Coast |
+| Yukon | Whitehorse | North |
+| Northwest Territories | Yellowknife | North |
+| Nunavut | Iqaluit | North |
+
+Classic traps: Toronto and Montreal are metropolises, not the national capital; Vancouver is not B.C.’s capital; Calgary and Saskatoon are not provincial capitals.
+
 ## Physical geography worth remembering
 
 - The **Canadian Shield** is a vast, rocky, mineral-rich expanse around Hudson Bay

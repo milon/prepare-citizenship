@@ -3,9 +3,12 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   CHAPTER_IDS,
+  CURRENT_FACT_KEYS,
   currentFactsSchema,
   extraFlashcardSchema,
   questionSchema,
+  REGION_CODES,
+  REGIONAL_FACT_KEYS,
   type ChapterId,
   type ExtraFlashcard,
   type Question,
@@ -116,8 +119,29 @@ if (!currentParsed.success) {
   }
 }
 
-if (questions.length < 450 || questions.length > 560) {
-  errors.push(`Expected about 500 unique questions (450–560), found ${questions.length}`);
+for (const question of questions) {
+  const haystack = [
+    question.prompt.en,
+    question.prompt.fr ?? '',
+    question.explanation.en,
+    question.explanation.fr ?? '',
+    ...question.options.flatMap((option) => [option.en, option.fr ?? '']),
+  ].join('\n');
+  const tokens = [...haystack.matchAll(/\{\{(\w+)\}\}/g)].map((match) => match[1]);
+  for (const token of tokens) {
+    const isFederal = (CURRENT_FACT_KEYS as readonly string[]).includes(token);
+    const isRegional = (REGIONAL_FACT_KEYS as readonly string[]).includes(token);
+    if (!isFederal && !isRegional) {
+      errors.push(`Question ${question.id} uses unknown token {{${token}}}`);
+    }
+    if (isRegional && !question.region) {
+      errors.push(`Question ${question.id} uses regional token {{${token}}} but has no region`);
+    }
+  }
+}
+
+if (questions.length < 450 || questions.length > 650) {
+  errors.push(`Expected about 500–600 unique questions (450–650), found ${questions.length}`);
 }
 
 const types = questions.reduce(
@@ -134,6 +158,13 @@ if (types.true_false < 1) {
 
 if (!questions.some((question) => question.region !== null)) {
   errors.push('Gold-standard set must include at least one regional question');
+}
+
+for (const code of REGION_CODES) {
+  const tagged = questions.filter((question) => question.region === code).length;
+  if (tagged > 0 && tagged < 3) {
+    errors.push(`Region ${code} has ${tagged} tagged question(s); need at least 3`);
+  }
 }
 
 if (errors.length > 0) {

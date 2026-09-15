@@ -81,6 +81,14 @@ const nav = [
     current: path.includes('/faq'),
   },
   {
+    href: `${homeHref}search/`,
+    label: 'Search',
+    i18n: 'nav.search',
+    icon: 'search',
+    current: path.includes('/search'),
+    topbar: true,
+  },
+  {
     href: `${homeHref}settings/`,
     label: 'Settings',
     i18n: 'nav.settings',

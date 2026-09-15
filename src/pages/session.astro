@@ -1,0 +1,121 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+import { loadStudyContent } from '../lib/study-content';
+
+const { cards, questions, chapters } = await loadStudyContent();
+const payload = { cards, questions, chapters };
+---
+
+<BaseLayout
+  title="Today’s session"
+  description="A timed study loop: due flashcards, then questions from your weakest chapter."
+  titleFr="Séance du jour"
+  descriptionFr="Une boucle d’étude chronométrée : cartes dues, puis questions de votre chapitre le plus faible."
+  contextFr="Séance du jour"
+>
+  <script is:inline type="application/json" id="session-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={withBase('/session/')}>
+    <article class="panel quiz-shell" x-data="sessionPage">
+      <p class="eyebrow" data-i18n="nav.session">Today’s session</p>
+      <h1 data-i18n="session.title">Today’s session</h1>
+      <p class="lede" data-i18n="session.lede">
+        A short timed loop: up to eight due flashcards, then eight questions from your weakest chapter. When the pile is gone, or fifteen minutes are up, we stop.
+      </p>
+      <p class="qmeta no-print" x-show="phase !== 'done'">
+        <span class="pill pill-brand" x-text="$store.i18n.t('session.time', { clock })"></span>
+        <span class="pill" x-text="phase === 'cards' ? $store.i18n.t('session.cardsPhase') : $store.i18n.t('session.quizPhase')"></span>
+      </p>
+      <p class="banner no-print" x-show="timedOut && phase !== 'done'" x-cloak data-i18n="session.timedOut">
+        Time is up — finish this item, then we stop.
+      </p>
+
+      <template x-if="phase === 'cards' && currentCard">
+        <div class="no-print">
+          <p class="verified" x-text="cardPosition"></p>
+          <button
+            class="flip-card"
+            type="button"
+            :class="flipped && 'is-flipped'"
+            @click="flip"
+            :aria-pressed="flipped.toString()"
+          >
+            <span class="flip-inner">
+              <span class="flip-face flip-front" :aria-hidden="flipped.toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.prompt')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(currentCard.front)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapHint')"></span>
+              </span>
+              <span class="flip-face flip-back" :aria-hidden="(!flipped).toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.answer')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(currentCard.back)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapBack')"></span>
+              </span>
+            </span>
+          </button>
+          <div class="button-row">
+            <button class="button" type="button" x-show="canSpeak()" @click="speakCurrent" x-text="$store.i18n.t('cards.hear')">Hear this side</button>
+            <button class="button" type="button" @click="rateCard(false)" x-text="$store.i18n.t('cards.still')">Still learning</button>
+            <button class="button button-primary" type="button" @click="rateCard(true)" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
+          </div>
+        </div>
+      </template>
+
+      <template x-if="phase === 'quiz' && currentQuestion">
+        <div>
+          <p class="verified" x-text="mixedQuiz ? $store.i18n.t('session.mixedNote') : $store.i18n.t('session.weakNote')"></p>
+          <p class="qmeta">
+            <span class="pill pill-brand" x-text="questionPosition"></span>
+            <span class="pill" x-text="currentQuestion.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
+          </p>
+          <h2 class="prompt" x-text="$store.i18n.pick(currentQuestion.prompt)"></h2>
+          <p class="button-row" x-show="canSpeak()">
+            <button class="button" type="button" @click="speakCurrent" x-text="$store.i18n.t('practice.hear')">Hear the question</button>
+          </p>
+          <div class="options" role="group" :aria-label="$store.i18n.pick(currentQuestion.prompt)">
+            <template x-for="(option, optionIndex) in currentQuestion.options" :key="option.id">
+              <button
+                class="option"
+                type="button"
+                :class="optionState(option.id)"
+                @click="choose(option.id)"
+                :aria-pressed="selected === option.id"
+              >
+                <span>
+                  <span class="option-index" x-text="optionIndex + 1"></span>
+                  <span x-text="$store.i18n.pick(option.text)"></span>
+                </span>
+              </button>
+            </template>
+          </div>
+          <div class="explain" x-show="revealed" x-cloak>
+            <p x-text="$store.i18n.pick(currentQuestion.explanation)"></p>
+          </div>
+          <div class="button-row" x-show="revealed" x-cloak>
+            <button class="button button-primary" type="button" @click="nextQuestion" x-text="$store.i18n.t('practice.next')">Next question</button>
+          </div>
+        </div>
+      </template>
+
+      <template x-if="phase === 'done'">
+        <div>
+          <h2 data-i18n="session.doneTitle">Session complete</h2>
+          <p class="lede" data-i18n="session.doneBlurb">
+            That is enough for one sitting. Come back tomorrow for whatever is due, or sit a mock if you want a longer test.
+          </p>
+          <p class="verified" x-show="cardsDone || cardsLearning" x-text="$store.i18n.t('session.cardsRated', { got: cardsDone, learning: cardsLearning })"></p>
+          <p class="verified" x-show="answers.length" x-text="$store.i18n.t('session.score', { score, total: answers.length })"></p>
+          <p class="lede" x-show="!cardsDone && !cardsLearning && !answers.length" data-i18n="session.empty">
+            Nothing is due and there are no questions to drill. Read a chapter first.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href={withBase('/')} data-i18n="nav.today">Today</a>
+            <a class="button" href={withBase('/mock/')} data-i18n="nav.mock">Mock exam</a>
+          </div>
+        </div>
+      </template>
+      <p class="banner" x-show="saveFailed" x-cloak data-i18n="cards.saveFailed">Progress won’t save in this browser.</p>
+    </article>
+  </StudyGate>
+</BaseLayout>

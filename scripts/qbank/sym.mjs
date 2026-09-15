@@ -682,4 +682,14 @@ export default build('canadian-symbols', 'Discover Canada — Canadian Symbols',
     e: 'Personal and official flags of the Crown’s representatives are a protocol symbol, not a rival national flag.',
     ef: 'Les drapeaux personnels et officiels des représentants de la Couronne sont un symbole protocolaire, et non un drapeau national concurrent.'
   },
+  {
+    id: 'sym-047',
+    p: 'What is the highest military honour a Canadian can receive?',
+    pf: 'Quelle est la plus haute distinction militaire qu’un Canadien puisse recevoir?',
+    o: ['The Victoria Cross', 'The Order of Canada only', 'A Senate appointment', 'The Speakers’ Chain of Office'],
+    of: ['La Croix de Victoria', 'L’Ordre du Canada seulement', 'Une nomination au Sénat', 'Le collier du président de la Chambre'],
+    a: 'a',
+    e: 'The Victoria Cross is the highest award for valour in the face of the enemy. The Order of Canada is a civilian honour for outstanding contribution.',
+    ef: 'La Croix de Victoria est la plus haute distinction pour bravoure face à l’ennemi. L’Ordre du Canada est une distinction civile pour une contribution exceptionnelle.',
+  },
 ]);

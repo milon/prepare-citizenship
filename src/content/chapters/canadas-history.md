@@ -19,9 +19,9 @@ The **Quebec Act (1774)** protected French civil law and Catholicism. After the 
 
 The **War of 1812** saw American invasions of British North America. The colonies remained British. The **Underground Railroad** later brought many enslaved people to freedom in Canada.
 
-## Responsible government and Confederation
+## Responsible government and [Confederation](/glossary/#confederation)
 
-Reformers fought for **responsible government**—a Cabinet that must keep the confidence of an elected assembly. It was achieved in Nova Scotia in 1847–49 and then in the Province of Canada.
+Reformers fought for **[responsible government](/glossary/#responsible-government)**—a Cabinet that must keep the confidence of an elected assembly. It was achieved in Nova Scotia in 1847–49 and then in the Province of Canada.
 
 On **July 1, 1867**, the **British North America Act** created the Dominion of Canada. The first four provinces were **Ontario, Quebec, Nova Scotia, and New Brunswick**. **Sir John A. Macdonald** became the first Prime Minister. **Sir George-Étienne Cartier** was a leading Quebec partner in the project.
 

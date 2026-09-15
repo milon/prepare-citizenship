@@ -96,5 +96,122 @@
       "fr": "Le hockey (hiver) et la crosse (été)."
     },
     "source": "Discover Canada — Canadian Symbols"
+  },
+  {
+    "id": "lst-009",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the ten provinces, roughly from east to west.",
+      "fr": "Nommez les dix provinces, à peu près d’est en ouest."
+    },
+    "back": {
+      "en": "Newfoundland and Labrador, Nova Scotia, Prince Edward Island, New Brunswick, Quebec, Ontario, Manitoba, Saskatchewan, Alberta, and British Columbia.",
+      "fr": "Terre-Neuve-et-Labrador, la Nouvelle-Écosse, l’Île-du-Prince-Édouard, le Nouveau-Brunswick, le Québec, l’Ontario, le Manitoba, la Saskatchewan, l’Alberta et la Colombie-Britannique."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-010",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name each province’s capital.",
+      "fr": "Nommez la capitale de chaque province."
+    },
+    "back": {
+      "en": "St. John’s (NL), Halifax (NS), Charlottetown (PE), Fredericton (NB), Quebec City (QC), Toronto (ON), Winnipeg (MB), Regina (SK), Edmonton (AB), Victoria (BC). Ottawa is the national capital, not a provincial one.",
+      "fr": "St. John’s (T.-N.-L.), Halifax (N.-É.), Charlottetown (Î.-P.-É.), Fredericton (N.-B.), Québec (Qc), Toronto (Ont.), Winnipeg (Man.), Regina (Sask.), Edmonton (Alb.), Victoria (C.-B.). Ottawa est la capitale nationale, pas une capitale provinciale."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-011",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name each territory’s capital.",
+      "fr": "Nommez la capitale de chaque territoire."
+    },
+    "back": {
+      "en": "Whitehorse (Yukon), Yellowknife (Northwest Territories), Iqaluit (Nunavut).",
+      "fr": "Whitehorse (Yukon), Yellowknife (Territoires du Nord-Ouest), Iqaluit (Nunavut)."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-012",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the five study-guide regions and which places they include.",
+      "fr": "Nommez les cinq régions du guide d’étude et les lieux qu’elles comprennent."
+    },
+    "back": {
+      "en": "Atlantic: NL, PE, NS, NB. Central: Quebec and Ontario. Prairie: Manitoba, Saskatchewan, Alberta. West Coast: British Columbia. North: Yukon, Northwest Territories, Nunavut.",
+      "fr": "Atlantique : T.-N.-L., Î.-P.-É., N.-É., N.-B. Centre : Québec et Ontario. Prairies : Manitoba, Saskatchewan, Alberta. Côte Ouest : Colombie-Britannique. Nord : Yukon, Territoires du Nord-Ouest, Nunavut."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-013",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the four Atlantic provinces and their capitals.",
+      "fr": "Nommez les quatre provinces atlantiques et leurs capitales."
+    },
+    "back": {
+      "en": "Newfoundland and Labrador — St. John’s; Nova Scotia — Halifax; Prince Edward Island — Charlottetown; New Brunswick — Fredericton.",
+      "fr": "Terre-Neuve-et-Labrador — St. John’s; Nouvelle-Écosse — Halifax; Île-du-Prince-Édouard — Charlottetown; Nouveau-Brunswick — Fredericton."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-014",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the three Prairie provinces and their capitals.",
+      "fr": "Nommez les trois provinces des Prairies et leurs capitales."
+    },
+    "back": {
+      "en": "Manitoba — Winnipeg; Saskatchewan — Regina; Alberta — Edmonton. Saskatoon and Calgary are the larger cities in SK and AB, not the capitals.",
+      "fr": "Manitoba — Winnipeg; Saskatchewan — Regina; Alberta — Edmonton. Saskatoon et Calgary sont les plus grandes villes de la Sask. et de l’Alb., pas les capitales."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-015",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "In Central Canada, which cities are the provincial capitals, and which is the national capital?",
+      "fr": "Au Canada central, quelles villes sont les capitales provinciales, et laquelle est la capitale nationale?"
+    },
+    "back": {
+      "en": "Quebec City is Quebec’s capital; Toronto is Ontario’s. Ottawa is the national capital (in Ontario). Montreal is Quebec’s largest city, not the capital.",
+      "fr": "Québec est la capitale du Québec; Toronto, celle de l’Ontario. Ottawa est la capitale nationale (en Ontario). Montréal est la plus grande ville du Québec, pas la capitale."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-016",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "On the West Coast, which city is the capital and which is the largest?",
+      "fr": "Sur la côte Ouest, quelle ville est la capitale et laquelle est la plus grande?"
+    },
+    "back": {
+      "en": "Victoria (on Vancouver Island) is the capital of British Columbia. Vancouver is the largest city and main Pacific port. Yukon is not in this region.",
+      "fr": "Victoria (sur l’île de Vancouver) est la capitale de la Colombie-Britannique. Vancouver est la plus grande ville et le principal port du Pacifique. Le Yukon n’est pas dans cette région."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "lst-017",
+    "chapter": "canadas-regions",
+    "front": {
+      "en": "Name the main physical regions worth locking for the map questions.",
+      "fr": "Nommez les grandes régions physiques à retenir pour les questions de carte."
+    },
+    "back": {
+      "en": "Canadian Shield around Hudson Bay; Great Lakes–St. Lawrence; Prairies; western Cordillera; Arctic North. Most people live in a thin southern belt near the U.S. border.",
+      "fr": "Le Bouclier canadien autour de la baie d’Hudson; les Grands Lacs et le Saint-Laurent; les Prairies; la Cordillère de l’Ouest; le Nord arctique. La plupart des gens vivent dans une mince bande au sud, près de la frontière américaine."
+    },
+    "source": "Discover Canada — Canada's Regions"
   }
 ]

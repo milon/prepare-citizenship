@@ -57,6 +57,9 @@ const payload = {
           </p>
           <p class="sr-only" x-text="$store.i18n.t('practice.keys')">Number keys 1 to 4 select an answer.</p>
           <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
+          <p class="button-row" x-show="canSpeak()">
+            <button class="button" type="button" @click="speakPrompt" x-text="$store.i18n.t('practice.hear')">Hear the question</button>
+          </p>
           <div class="options" role="group" :aria-label="$store.i18n.pick(current.prompt)">
             <template x-for="(option, optionIndex) in current.options" :key="option.id">
               <button

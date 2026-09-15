@@ -1682,5 +1682,83 @@
       "fr": "La citoyenneté ne crée aucune exemption personnelle au Code criminel ni aux lois fiscales. Respecter la loi est un devoir énuméré."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-047",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What are examples of taking responsibility for yourself and your family?",
+      "fr": "Quels sont des exemples de prendre ses responsabilités envers soi-même et sa famille?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Getting a job, taking care of one’s family, and working hard in keeping with one’s abilities",
+        "fr": "Trouver un emploi, prendre soin de sa famille et travailler fort selon ses capacités"
+      },
+      {
+        "id": "b",
+        "en": "Leaving all bills unpaid forever",
+        "fr": "Ne jamais payer aucune facture"
+      },
+      {
+        "id": "c",
+        "en": "Refusing to educate children as a political protest",
+        "fr": "Refuser d’éduquer ses enfants en guise de protestation politique"
+      },
+      {
+        "id": "d",
+        "en": "Asking the Senate to raise your children",
+        "fr": "Demander au Sénat d’élever vos enfants"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The guide lists self-reliance and family care as citizenship responsibilities alongside volunteering and obeying the law.",
+      "fr": "Le guide énumère l’autonomie et le soin de la famille parmi les responsabilités de la citoyenneté, avec le bénévolat et le respect de la loi."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
+  },
+  {
+    "id": "rnr-048",
+    "chapter": "rights-and-responsibilities",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is meant by the equality of women and men in Canada?",
+      "fr": "Que signifie l’égalité des femmes et des hommes au Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Women and men are equal under the law",
+        "fr": "Les femmes et les hommes sont égaux devant la loi"
+      },
+      {
+        "id": "b",
+        "en": "Only men may hold federal jobs",
+        "fr": "Seuls les hommes peuvent occuper des emplois fédéraux"
+      },
+      {
+        "id": "c",
+        "en": "Only women may serve on juries",
+        "fr": "Seules les femmes peuvent siéger à un jury"
+      },
+      {
+        "id": "d",
+        "en": "Equality applies only in Quebec",
+        "fr": "L’égalité ne s’applique qu’au Québec"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Equality of women and men is a core Canadian value and is protected by Charter equality rights. It is not limited to one province or one kind of job.",
+      "fr": "L’égalité des femmes et des hommes est une valeur canadienne fondamentale et est protégée par les droits à l’égalité de la Charte. Elle ne se limite pas à une province ni à un seul type d’emploi."
+    },
+    "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   }
 ]

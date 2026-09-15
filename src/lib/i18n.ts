@@ -63,6 +63,10 @@ const en: Dict = {
   'nav.progress': 'Progress',
   'nav.faq': 'FAQ',
   'nav.settings': 'Settings',
+  'nav.search': 'Search',
+  'nav.glossary': 'Glossary',
+  'nav.ceremony': 'Ceremony',
+  'nav.session': 'Today’s session',
   'nav.primary': 'Primary',
   'nav.sections': 'Sections',
   'skip': 'Skip to content',
@@ -91,7 +95,7 @@ const en: Dict = {
   'cards.eyebrow': 'Recall',
   'cards.title': 'Flashcards',
   'cards.lede':
-    'Flip the card, then mark whether you knew it. New cards are due today; known cards come back in three days, then a week.',
+    'Flip the card, then mark whether you knew it. New and still-learning cards are due today; after “Got it,” they return in three days, then a week.',
   'cards.chapter': 'Chapter',
   'cards.all': 'All chapters',
   'cards.deck': 'Deck',
@@ -118,6 +122,7 @@ const en: Dict = {
   'cards.flipAnswer': 'Flip card. Answer is showing.',
   'cards.tapHint': 'Tap to flip',
   'cards.tapBack': 'Tap to go back',
+  'cards.hear': 'Hear this side',
   'practice.eyebrow': 'Practice',
   'practice.title': 'Chapter quiz',
   'practice.lede':
@@ -139,6 +144,7 @@ const en: Dict = {
   'practice.weakWarn':
     'Not enough quiz data yet for a weakest-chapter set. Showing a mixed practice instead.',
   'practice.weakOk': 'Practicing your weakest chapter so far.',
+  'practice.hear': 'Hear the question',
   'mock.eyebrow': 'Mock exam',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
@@ -266,13 +272,15 @@ const en: Dict = {
   'dash.keepStatus': 'Keep practicing',
   'dash.openFull': 'Open the full dashboard',
   'dash.jumpBack': 'Jump back in',
-  'dash.threeWays': 'Three ways to study.',
+  'dash.threeWays': 'Four ways to study.',
   'dash.flashcards': 'Flashcards',
   'dash.freshDeck': 'Flip a fresh deck, three boxes',
   'dash.cardDue': '1 card due today',
   'dash.cardsDueToday': '{n} cards due today',
   'dash.practiceQuiz': 'Practice quiz',
   'dash.practiceBlurb': 'Ten questions, answers as you go',
+  'dash.session': 'Today’s session',
+  'dash.sessionBlurb': '8 due cards, then 8 weak-chapter questions',
   'dash.mockExam': 'Mock exam',
   'dash.mockBlurb': '20 questions · 45:00 · pass at 15',
   'dash.mockScores': 'Mock scores',
@@ -387,6 +395,51 @@ const en: Dict = {
     'Discover Canada, the official study guide, goes into more detail on this chapter. Open it on Canada.ca, or download the PDF.',
   'chapter.officialCta': 'Read this chapter on Canada.ca',
   'chapter.officialPdf': 'Discover Canada (PDF)',
+  'chapter.print': 'Print this chapter',
+  'search.title': 'Search',
+  'search.lede':
+    'Look up a phrase in the chapter notes or in the question prompts. Nothing leaves this device.',
+  'search.placeholder': 'Try riding, Charter, or Yellowknife',
+  'search.empty': 'Type at least two letters.',
+  'search.none': 'No matches. Try a proper name, or a shorter word.',
+  'search.chapter': 'Chapter',
+  'search.question': 'Question',
+  'search.count': '{n} matches',
+  'glossary.title': 'Glossary',
+  'glossary.lede':
+    'Short definitions of terms the test likes to name. Each one links back to the chapter notes.',
+  'glossary.also': 'Also called',
+  'glossary.seeChapter': 'Read the chapter',
+  'ceremony.title': 'Citizenship ceremony',
+  'ceremony.lede':
+    'The test is not the last step. At the ceremony you take the oath, you are already expected to know the rights and responsibilities of citizenship, and O Canada is sung.',
+  'ceremony.oathTitle': 'The oath of citizenship',
+  'ceremony.oathLede':
+    'You may swear or solemnly affirm. The wording is official; this page quotes it so you can practise saying it out loud.',
+  'ceremony.swear': 'I swear',
+  'ceremony.affirm': 'I affirm',
+  'ceremony.rightsTitle': 'Rights and responsibilities, recap',
+  'ceremony.rightsLede':
+    'The oath is a promise to observe the laws and fulfil your duties. The first chapter is the fuller list.',
+  'ceremony.source': 'Read the official ceremony page on Canada.ca',
+  'ceremony.openChapter': 'Open the chapter',
+  'session.title': 'Today’s session',
+  'session.lede':
+    'A short timed loop: up to eight due flashcards, then eight questions from your weakest chapter. When the pile is gone, or fifteen minutes are up, we stop.',
+  'session.cardsPhase': 'Due cards',
+  'session.quizPhase': 'Weak-chapter quiz',
+  'session.doneTitle': 'Session complete',
+  'session.doneBlurb':
+    'That is enough for one sitting. Come back tomorrow for whatever is due, or sit a mock if you want a longer test.',
+  'session.noCards': 'No cards due',
+  'session.timedOut': 'Time is up — finish this item, then we stop.',
+  'session.time': 'Time {clock}',
+  'session.weakNote': 'These eight come from your weakest chapter so far.',
+  'session.mixedNote':
+    'Not enough quiz history yet for a weakest chapter, so this is a mixed set.',
+  'session.cardsRated': '{got} known this round, {learning} still learning.',
+  'session.score': 'Quiz: {score} / {total}.',
+  'session.empty': 'Nothing is due and there are no questions to drill. Read a chapter first.',
 };
 
 const fr: Dict = {
@@ -400,6 +453,10 @@ const fr: Dict = {
   'nav.progress': 'Progrès',
   'nav.faq': 'FAQ',
   'nav.settings': 'Réglages',
+  'nav.search': 'Recherche',
+  'nav.glossary': 'Lexique',
+  'nav.ceremony': 'Cérémonie',
+  'nav.session': 'Séance du jour',
   'nav.primary': 'Principal',
   'nav.sections': 'Sections',
   'skip': 'Aller au contenu',
@@ -428,7 +485,7 @@ const fr: Dict = {
   'cards.eyebrow': 'Mémorisation',
   'cards.title': 'Cartes-éclair',
   'cards.lede':
-    'Retournez la carte, puis indiquez si vous saviez la réponse. Les nouvelles cartes reviennent aujourd’hui; les cartes connues, dans trois jours, puis une semaine.',
+    'Retournez la carte, puis indiquez si vous saviez la réponse. Les nouvelles cartes et celles à revoir reviennent aujourd’hui; après « Je savais », elles reviennent dans trois jours, puis une semaine.',
   'cards.chapter': 'Chapitre',
   'cards.all': 'Tous les chapitres',
   'cards.deck': 'Paquet',
@@ -455,6 +512,7 @@ const fr: Dict = {
   'cards.flipAnswer': 'Retourner la carte. La réponse est affichée.',
   'cards.tapHint': 'Touchez pour retourner',
   'cards.tapBack': 'Touchez pour revenir',
+  'cards.hear': 'Écouter ce côté',
   'practice.eyebrow': 'Exercices',
   'practice.title': 'Quiz de chapitre',
   'practice.lede':
@@ -476,6 +534,7 @@ const fr: Dict = {
   'practice.weakWarn':
     'Pas assez de données pour un ensemble « chapitre faible ». Voici un mélange à la place.',
   'practice.weakOk': 'Vous pratiquez votre chapitre le plus faible pour l’instant.',
+  'practice.hear': 'Écouter la question',
   'mock.eyebrow': 'Examen blanc',
   'mock.title': '20 questions, 45 minutes',
   'mock.lede':
@@ -605,13 +664,15 @@ const fr: Dict = {
   'dash.keepStatus': 'À poursuivre',
   'dash.openFull': 'Ouvrir le tableau de bord complet',
   'dash.jumpBack': 'Reprendre l’étude',
-  'dash.threeWays': 'Trois façons d’étudier.',
+  'dash.threeWays': 'Quatre façons d’étudier.',
   'dash.flashcards': 'Cartes-éclair',
   'dash.freshDeck': 'Commencez un nouveau paquet de trois boîtes',
   'dash.cardDue': '1 carte à revoir aujourd’hui',
   'dash.cardsDueToday': '{n} cartes à revoir aujourd’hui',
   'dash.practiceQuiz': 'Quiz d’exercice',
   'dash.practiceBlurb': 'Dix questions avec réponses au fur et à mesure',
+  'dash.session': 'Séance du jour',
+  'dash.sessionBlurb': '8 cartes dues, puis 8 questions du chapitre faible',
   'dash.mockExam': 'Examen blanc',
   'dash.mockBlurb': '20 questions · 45:00 · réussite à 15',
   'dash.mockScores': 'Résultats des examens blancs',
@@ -727,6 +788,51 @@ const fr: Dict = {
     'Découvrir le Canada, le guide d’étude officiel, va plus loin sur ce chapitre. Ouvrez-le sur Canada.ca, ou téléchargez le PDF.',
   'chapter.officialCta': 'Lire ce chapitre sur Canada.ca',
   'chapter.officialPdf': 'Découvrir le Canada (PDF)',
+  'chapter.print': 'Imprimer ce chapitre',
+  'search.title': 'Recherche',
+  'search.lede':
+    'Cherchez une expression dans les notes de chapitre ou dans les questions. Rien ne quitte cet appareil.',
+  'search.placeholder': 'Essayez circonscription, Charte ou Yellowknife',
+  'search.empty': 'Tapez au moins deux lettres.',
+  'search.none': 'Aucun résultat. Essayez un nom propre, ou un mot plus court.',
+  'search.chapter': 'Chapitre',
+  'search.question': 'Question',
+  'search.count': '{n} résultats',
+  'glossary.title': 'Lexique',
+  'glossary.lede':
+    'Courtes définitions des termes que l’examen aime nommer. Chacune renvoie aux notes du chapitre.',
+  'glossary.also': 'Aussi appelé',
+  'glossary.seeChapter': 'Lire le chapitre',
+  'ceremony.title': 'Cérémonie de citoyenneté',
+  'ceremony.lede':
+    'L’examen n’est pas la dernière étape. À la cérémonie, vous prêtez serment, on s’attend déjà à ce que vous connaissiez les droits et devoirs, et on chante Ô Canada.',
+  'ceremony.oathTitle': 'Le serment de citoyenneté',
+  'ceremony.oathLede':
+    'Vous pouvez jurer ou affirmer solennellement. Le libellé est officiel; cette page le cite pour que vous puissiez le dire à voix haute.',
+  'ceremony.swear': 'Je jure',
+  'ceremony.affirm': 'J’affirme',
+  'ceremony.rightsTitle': 'Droits et responsabilités, en bref',
+  'ceremony.rightsLede':
+    'Le serment est une promesse d’observer les lois et de remplir vos devoirs. Le premier chapitre en donne la liste complète.',
+  'ceremony.source': 'Lire la page officielle de la cérémonie sur Canada.ca',
+  'ceremony.openChapter': 'Ouvrir le chapitre',
+  'session.title': 'Séance du jour',
+  'session.lede':
+    'Une boucle courte et chronométrée : jusqu’à huit cartes dues, puis huit questions de votre chapitre le plus faible. Quand la pile est vide, ou au bout de quinze minutes, on s’arrête.',
+  'session.cardsPhase': 'Cartes dues',
+  'session.quizPhase': 'Quiz du chapitre faible',
+  'session.doneTitle': 'Séance terminée',
+  'session.doneBlurb':
+    'C’est assez pour aujourd’hui. Revenez demain pour ce qui est dû, ou passez un examen blanc pour un test plus long.',
+  'session.noCards': 'Aucune carte due',
+  'session.timedOut': 'Le temps est écoulé — terminez cet item, puis on s’arrête.',
+  'session.time': 'Temps {clock}',
+  'session.weakNote': 'Ces huit questions viennent de votre chapitre le plus faible pour l’instant.',
+  'session.mixedNote':
+    'Pas assez d’historique pour un chapitre faible, alors voici un mélange.',
+  'session.cardsRated': '{got} connues ce tour, {learning} encore à apprendre.',
+  'session.score': 'Quiz : {score} / {total}.',
+  'session.empty': 'Rien n’est dû et il n’y a pas de questions à travailler. Lisez d’abord un chapitre.',
 };
 
 const dictionaries: Record<Locale, Dict> = { en, fr };

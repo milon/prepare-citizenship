@@ -1614,5 +1614,122 @@
       "fr": "Des règles légales encadrent le nouveau dépouillement dans les courses serrées. Perdre selon un décompte clair n’est pas un motif pour refaire l’élection."
     },
     "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-045",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What is a voter information card?",
+      "fr": "Qu’est-ce qu’une carte d’information de l’électeur?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A card that tells you when and where to vote",
+        "fr": "Une carte qui indique quand et où voter"
+      },
+      {
+        "id": "b",
+        "en": "A ballot you mail to the Prime Minister",
+        "fr": "Un bulletin que vous envoyez au premier ministre"
+      },
+      {
+        "id": "c",
+        "en": "Proof that you must join a party",
+        "fr": "Une preuve que vous devez adhérer à un parti"
+      },
+      {
+        "id": "d",
+        "en": "A tax receipt from Elections Canada",
+        "fr": "Un reçu d’impôt d’Élections Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "If you are on the register of electors, Elections Canada sends a card with your polling place and voting times.",
+      "fr": "Si vous figurez au registre des électeurs, Élections Canada envoie une carte indiquant votre bureau de scrutin et les heures de vote."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-046",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What should you do if you do not receive a voter information card?",
+      "fr": "Que devez-vous faire si vous ne recevez pas de carte d’information de l’électeur?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Contact Elections Canada or visit their website to register or confirm where to vote",
+        "fr": "Communiquer avec Élections Canada ou consulter son site Web pour vous inscrire ou confirmer où voter"
+      },
+      {
+        "id": "b",
+        "en": "Assume you cannot vote and stay home",
+        "fr": "Supposer que vous ne pouvez pas voter et rester chez vous"
+      },
+      {
+        "id": "c",
+        "en": "Ask the Governor General for a special ballot by phone only",
+        "fr": "Demander au gouverneur général un bulletin spécial uniquement par téléphone"
+      },
+      {
+        "id": "d",
+        "en": "Vote at any polling station without checking the rules",
+        "fr": "Voter à n’importe quel bureau de scrutin sans vérifier les règles"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Missing mail does not cancel your right to vote. Register or update your information through Elections Canada.",
+      "fr": "Un courrier manquant n’annule pas votre droit de vote. Inscrivez-vous ou mettez vos renseignements à jour auprès d’Élections Canada."
+    },
+    "source": "Discover Canada — Federal Elections"
+  },
+  {
+    "id": "ele-047",
+    "chapter": "federal-elections",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What does the right to a secret ballot mean?",
+      "fr": "Que signifie le droit à un scrutin secret?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "No one can watch your vote, and no one should know how you voted",
+        "fr": "Personne ne peut voir votre vote, et personne ne devrait savoir pour qui vous avez voté"
+      },
+      {
+        "id": "b",
+        "en": "You must whisper your choice to a poll clerk",
+        "fr": "Vous devez chuchoter votre choix à un préposé au scrutin"
+      },
+      {
+        "id": "c",
+        "en": "Only party members may vote in private",
+        "fr": "Seuls les membres d’un parti peuvent voter en privé"
+      },
+      {
+        "id": "d",
+        "en": "Ballots are published with your name after the election",
+        "fr": "Les bulletins sont publiés avec votre nom après l’élection"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Secrecy protects you from pressure and bribery. You do not have to tell anyone how you voted.",
+      "fr": "Le secret vous protège de la pression et de la corruption. Vous n’êtes pas obligé de dire à quiconque pour qui vous avez voté."
+    },
+    "source": "Discover Canada — Federal Elections"
   }
 ]

@@ -2417,6 +2417,74 @@
     "source": "Discover Canada — Canada's Regions"
   },
   {
+    "id": "reg-065",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Great Slave Lake, beside the capital Yellowknife, is in:",
+      "fr": "Le Grand Lac des Esclaves, près de la capitale Yellowknife, se trouve :"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Northwest Territories",
+        "fr": "Dans les Territoires du Nord-Ouest"
+      },
+      {
+        "id": "b",
+        "en": "Prince Edward Island",
+        "fr": "À l’Île-du-Prince-Édouard"
+      },
+      {
+        "id": "c",
+        "en": "Nova Scotia",
+        "fr": "En Nouvelle-Écosse"
+      },
+      {
+        "id": "d",
+        "en": "Manitoba only",
+        "fr": "Au Manitoba seulement"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Yellowknife sits on Great Slave Lake. The Northwest Territories’ legislature is there.",
+      "fr": "Yellowknife est située sur le Grand Lac des Esclaves. L’assemblée législative des Territoires du Nord-Ouest s’y trouve."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-066",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "true_false",
+    "difficulty": "core",
+    "prompt": {
+      "en": "The Northwest Territories recognizes several Indigenous languages as official, alongside English and French.",
+      "fr": "Les Territoires du Nord-Ouest reconnaissent plusieurs langues autochtones comme langues officielles, en plus de l’anglais et du français."
+    },
+    "options": [
+      {
+        "id": "true",
+        "en": "True",
+        "fr": "Vrai"
+      },
+      {
+        "id": "false",
+        "en": "False",
+        "fr": "Faux"
+      }
+    ],
+    "correctOptionId": "true",
+    "explanation": {
+      "en": "It is a large territory with many Indigenous languages. Several regions also have land-claim and self-government agreements.",
+      "fr": "C’est un vaste territoire où l’on parle de nombreuses langues autochtones. Plusieurs régions ont aussi conclu des ententes sur les revendications territoriales et l’autonomie gouvernementale."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
     "id": "reg-064",
     "chapter": "canadas-regions",
     "region": null,
@@ -2444,5 +2512,2384 @@
       "fr": "C’est le cœur de la géographie du Canada central. La Voie maritime permet aux navires océaniques d’atteindre des ports intérieurs."
     },
     "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-067",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What three oceans border Canada?",
+      "fr": "Quels trois océans bordent le Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Atlantic, Pacific, and Arctic",
+        "fr": "L’Atlantique, le Pacifique et l’Arctique"
+      },
+      {
+        "id": "b",
+        "en": "Atlantic, Indian, and Pacific",
+        "fr": "L’Atlantique, l’océan Indien et le Pacifique"
+      },
+      {
+        "id": "c",
+        "en": "Pacific, Southern, and Atlantic",
+        "fr": "Le Pacifique, l’océan Austral et l’Atlantique"
+      },
+      {
+        "id": "d",
+        "en": "Arctic, Baltic, and Pacific",
+        "fr": "L’Arctique, la Baltique et le Pacifique"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada faces three oceans. Hudson Bay is a huge inland sea, but it is not counted as a fourth ocean on the test.",
+      "fr": "Le Canada donne sur trois océans. La baie d’Hudson est une immense mer intérieure, mais elle n’est pas comptée comme un quatrième océan à l’examen."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-068",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Name the five regions of Canada used in the official study guide.",
+      "fr": "Nommez les cinq régions du Canada utilisées dans le guide d’étude officiel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Atlantic, Central, Prairie, West Coast, and North",
+        "fr": "Atlantique, Centre, Prairies, côte du Pacifique et Nord"
+      },
+      {
+        "id": "b",
+        "en": "East, West, North, South, and Midwest",
+        "fr": "Est, Ouest, Nord, Sud et Midwest"
+      },
+      {
+        "id": "c",
+        "en": "Maritimes, Ontario, Quebec, Prairies, and Territories only",
+        "fr": "Maritimes, Ontario, Québec, Prairies et territoires seulement"
+      },
+      {
+        "id": "d",
+        "en": "Pacific, Atlantic, Great Lakes, Prairies, and Shield",
+        "fr": "Pacifique, Atlantique, Grands Lacs, Prairies et Bouclier"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Memorize the five-region list exactly as the guide groups them, then learn which provinces sit in each.",
+      "fr": "Mémorisez exactement la liste des cinq régions du guide, puis retenez quelles provinces s’y trouvent."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-069",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "About one third of all Canadians live in which province?",
+      "fr": "Environ le tiers de tous les Canadiens habitent quelle province?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Ontario",
+        "fr": "L’Ontario"
+      },
+      {
+        "id": "b",
+        "en": "Quebec",
+        "fr": "Le Québec"
+      },
+      {
+        "id": "c",
+        "en": "British Columbia",
+        "fr": "La Colombie-Britannique"
+      },
+      {
+        "id": "d",
+        "en": "Alberta",
+        "fr": "L’Alberta"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ontario is by far the most populous province. Quebec is second; neither is “about half” on its own.",
+      "fr": "L’Ontario est de loin la province la plus peuplée. Le Québec arrive deuxième; aucune des deux ne représente à elle seule « environ la moitié »."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-070",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "In which region do more than half the people in Canada live?",
+      "fr": "Dans quelle région habite plus de la moitié de la population du Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Central Canada",
+        "fr": "Le Canada central"
+      },
+      {
+        "id": "b",
+        "en": "Atlantic Canada",
+        "fr": "Le Canada atlantique"
+      },
+      {
+        "id": "c",
+        "en": "Prairie provinces",
+        "fr": "Les provinces des Prairies"
+      },
+      {
+        "id": "d",
+        "en": "Northern Territories",
+        "fr": "Les territoires du Nord"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Central Canada means Ontario and Quebec together. That is where most Canadians live.",
+      "fr": "Le Canada central désigne l’Ontario et le Québec ensemble. C’est là que vit la majorité des Canadiens."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-071",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which region covers more than one third of Canada’s land area?",
+      "fr": "Quelle région couvre plus du tiers de la superficie du Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Northern Territories",
+        "fr": "Les territoires du Nord"
+      },
+      {
+        "id": "b",
+        "en": "Atlantic Canada",
+        "fr": "Le Canada atlantique"
+      },
+      {
+        "id": "c",
+        "en": "Central Canada",
+        "fr": "Le Canada central"
+      },
+      {
+        "id": "d",
+        "en": "The Prairie provinces",
+        "fr": "Les provinces des Prairies"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Yukon, the Northwest Territories, and Nunavut are vast and sparsely populated. Land area is not the same as population.",
+      "fr": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut sont immenses et peu peuplés. La superficie n’équivaut pas à la population."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-072",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which region is known as the industrial and manufacturing heartland of Canada?",
+      "fr": "Quelle région est connue comme le cœur industriel et manufacturier du Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Central Canada",
+        "fr": "Le Canada central"
+      },
+      {
+        "id": "b",
+        "en": "Atlantic Canada",
+        "fr": "Le Canada atlantique"
+      },
+      {
+        "id": "c",
+        "en": "The North",
+        "fr": "Le Nord"
+      },
+      {
+        "id": "d",
+        "en": "Prince Edward Island alone",
+        "fr": "L’Île-du-Prince-Édouard seule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Ontario and Quebec together hold the largest share of manufacturing, including the auto sector in southern Ontario.",
+      "fr": "L’Ontario et le Québec concentrent ensemble la plus grande part de la fabrication, notamment l’automobile dans le sud de l’Ontario."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-073",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which province has its own time zone, half an hour ahead of Atlantic Time?",
+      "fr": "Quelle province a son propre fuseau horaire, une demi-heure en avance sur l’heure de l’Atlantique?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Newfoundland and Labrador",
+        "fr": "Terre-Neuve-et-Labrador"
+      },
+      {
+        "id": "b",
+        "en": "Nova Scotia",
+        "fr": "La Nouvelle-Écosse"
+      },
+      {
+        "id": "c",
+        "en": "New Brunswick",
+        "fr": "Le Nouveau-Brunswick"
+      },
+      {
+        "id": "d",
+        "en": "Prince Edward Island",
+        "fr": "L’Île-du-Prince-Édouard"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Newfoundland Time is a classic geography trivia item. Most of Labrador follows Atlantic Time, but the province is still the one associated with the half-hour zone.",
+      "fr": "L’heure de Terre-Neuve est un classique de géographie. La plus grande partie du Labrador suit l’heure de l’Atlantique, mais la province reste associée au fuseau décalé d’une demi-heure."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-074",
+    "chapter": "canadas-regions",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which region of Canada is known for both fertile agricultural land and valuable energy resources?",
+      "fr": "Quelle région du Canada est connue à la fois pour ses terres agricoles fertiles et ses précieuses ressources énergétiques?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Prairie provinces",
+        "fr": "Les provinces des Prairies"
+      },
+      {
+        "id": "b",
+        "en": "Atlantic Canada",
+        "fr": "Le Canada atlantique"
+      },
+      {
+        "id": "c",
+        "en": "The Northern Territories only",
+        "fr": "Les territoires du Nord seulement"
+      },
+      {
+        "id": "d",
+        "en": "Prince Edward Island alone",
+        "fr": "L’Île-du-Prince-Édouard seule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Grain and other farming sit beside oil, gas, potash, and uranium across Manitoba, Saskatchewan, and Alberta.",
+      "fr": "Les céréales et d’autres cultures côtoient le pétrole, le gaz, la potasse et l’uranium au Manitoba, en Saskatchewan et en Alberta."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-075",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which port is the largest and busiest in Canada?",
+      "fr": "Quel est le plus grand et le plus achalandé des ports du Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The Port of Vancouver",
+        "fr": "Le port de Vancouver"
+      },
+      {
+        "id": "b",
+        "en": "The Port of Charlottetown",
+        "fr": "Le port de Charlottetown"
+      },
+      {
+        "id": "c",
+        "en": "The Port of Regina",
+        "fr": "Le port de Regina"
+      },
+      {
+        "id": "d",
+        "en": "The Port of Yellowknife",
+        "fr": "Le port de Yellowknife"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Vancouver is Canada’s Pacific gateway. Huge volumes of trade goods move through it.",
+      "fr": "Vancouver est la porte d’entrée canadienne sur le Pacifique. D’énormes volumes de marchandises y transitent."
+    },
+    "source": "Discover Canada — Canada's Regions"
+  },
+  {
+    "id": "reg-076",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Alberta?",
+      "fr": "Qui est le premier ministre de l’Alberta?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "c",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      },
+      {
+        "id": "d",
+        "en": "Susan Holt",
+        "fr": "Susan Holt"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-077",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Alberta?",
+      "fr": "Qui est le lieutenant-gouverneur de l’Alberta?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "c",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      },
+      {
+        "id": "d",
+        "en": "Louise Imbeault",
+        "fr": "Louise Imbeault"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-078",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Alberta?",
+      "fr": "Qui est le chef de l’opposition en Alberta?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "c",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      },
+      {
+        "id": "d",
+        "en": "Glen Savoie",
+        "fr": "Glen Savoie"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-079",
+    "chapter": "canadas-regions",
+    "region": "ab",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Alberta?",
+      "fr": "Quel parti politique est au pouvoir en Alberta?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "c",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      },
+      {
+        "id": "d",
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Alberta.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement en Alberta."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-080",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of British Columbia?",
+      "fr": "Qui est le premier ministre de la Colombie-Britannique?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      },
+      {
+        "id": "d",
+        "en": "Susan Holt",
+        "fr": "Susan Holt"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-081",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of British Columbia?",
+      "fr": "Qui est le lieutenant-gouverneur de la Colombie-Britannique?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      },
+      {
+        "id": "d",
+        "en": "Louise Imbeault",
+        "fr": "Louise Imbeault"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-082",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in British Columbia?",
+      "fr": "Qui est le chef de l’opposition en Colombie-Britannique?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      },
+      {
+        "id": "d",
+        "en": "Glen Savoie",
+        "fr": "Glen Savoie"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-083",
+    "chapter": "canadas-regions",
+    "region": "bc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in British Columbia?",
+      "fr": "Quel parti politique est au pouvoir en Colombie-Britannique?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      },
+      {
+        "id": "d",
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in British Columbia.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement en Colombie-Britannique."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-084",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Manitoba?",
+      "fr": "Qui est le premier ministre du Manitoba?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Susan Holt",
+        "fr": "Susan Holt"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-085",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Manitoba?",
+      "fr": "Qui est le lieutenant-gouverneur du Manitoba?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Louise Imbeault",
+        "fr": "Louise Imbeault"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-086",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Manitoba?",
+      "fr": "Qui est le chef de l’opposition au Manitoba?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Glen Savoie",
+        "fr": "Glen Savoie"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-087",
+    "chapter": "canadas-regions",
+    "region": "mb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Manitoba?",
+      "fr": "Quel parti politique est au pouvoir au Manitoba?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      },
+      {
+        "id": "d",
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Manitoba.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement au Manitoba."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-088",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of New Brunswick?",
+      "fr": "Qui est le premier ministre du Nouveau-Brunswick?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-089",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of New Brunswick?",
+      "fr": "Qui est le lieutenant-gouverneur du Nouveau-Brunswick?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-090",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in New Brunswick?",
+      "fr": "Qui est le chef de l’opposition au Nouveau-Brunswick?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-091",
+    "chapter": "canadas-regions",
+    "region": "nb",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in New Brunswick?",
+      "fr": "Quel parti politique est au pouvoir au Nouveau-Brunswick?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in New Brunswick.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement au Nouveau-Brunswick."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-092",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Newfoundland and Labrador?",
+      "fr": "Qui est le premier ministre de Terre-Neuve-et-Labrador?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-093",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Newfoundland and Labrador?",
+      "fr": "Qui est le lieutenant-gouverneur de Terre-Neuve-et-Labrador?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-094",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Newfoundland and Labrador?",
+      "fr": "Qui est le chef de l’opposition à Terre-Neuve-et-Labrador?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-095",
+    "chapter": "canadas-regions",
+    "region": "nl",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Newfoundland and Labrador?",
+      "fr": "Quel parti politique est au pouvoir à Terre-Neuve-et-Labrador?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Newfoundland and Labrador.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement à Terre-Neuve-et-Labrador."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-096",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Nova Scotia?",
+      "fr": "Qui est le premier ministre de la Nouvelle-Écosse?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-097",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Nova Scotia?",
+      "fr": "Qui est le lieutenant-gouverneur de la Nouvelle-Écosse?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-098",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Nova Scotia?",
+      "fr": "Qui est le chef de l’opposition en Nouvelle-Écosse?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-099",
+    "chapter": "canadas-regions",
+    "region": "ns",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Nova Scotia?",
+      "fr": "Quel parti politique est au pouvoir en Nouvelle-Écosse?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Nova Scotia.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement en Nouvelle-Écosse."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-100",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of the Northwest Territories?",
+      "fr": "Qui est le premier ministre des Territoires du Nord-Ouest?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-101",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Commissioner of the Northwest Territories?",
+      "fr": "Qui est le commissaire des Territoires du Nord-Ouest?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Territories have a commissioner rather than a lieutenant governor. As of the last verification date, the Commissioner is {{crownRepresentative}}.",
+      "fr": "Les territoires ont un commissaire plutôt qu’un lieutenant-gouverneur. À la dernière date de vérification, le commissaire est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-102",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in the Northwest Territories?",
+      "fr": "Qui est le chef de l’opposition dans les Territoires du Nord-Ouest?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nunavut and the Northwest Territories use consensus government, so there is no party-based Official Opposition leader.",
+      "fr": "Le Nunavut et les Territoires du Nord-Ouest fonctionnent par consensus : il n’y a pas de chef de l’opposition officielle issu d’un parti."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-103",
+    "chapter": "canadas-regions",
+    "region": "nt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in the Northwest Territories?",
+      "fr": "Quel parti politique est au pouvoir dans les Territoires du Nord-Ouest?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Members are elected as independents and govern by consensus rather than by party caucus.",
+      "fr": "Les députés sont élus comme indépendants et gouvernent par consensus plutôt que par caucus de parti."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-104",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Nunavut?",
+      "fr": "Qui est le premier ministre du Nunavut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-105",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Commissioner of Nunavut?",
+      "fr": "Qui est le commissaire du Nunavut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Territories have a commissioner rather than a lieutenant governor. As of the last verification date, the Commissioner is {{crownRepresentative}}.",
+      "fr": "Les territoires ont un commissaire plutôt qu’un lieutenant-gouverneur. À la dernière date de vérification, le commissaire est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-106",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Nunavut?",
+      "fr": "Qui est le chef de l’opposition au Nunavut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Nunavut and the Northwest Territories use consensus government, so there is no party-based Official Opposition leader.",
+      "fr": "Le Nunavut et les Territoires du Nord-Ouest fonctionnent par consensus : il n’y a pas de chef de l’opposition officielle issu d’un parti."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-107",
+    "chapter": "canadas-regions",
+    "region": "nu",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Nunavut?",
+      "fr": "Quel parti politique est au pouvoir au Nunavut?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Members are elected as independents and govern by consensus rather than by party caucus.",
+      "fr": "Les députés sont élus comme indépendants et gouvernent par consensus plutôt que par caucus de parti."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-108",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Ontario?",
+      "fr": "Qui est le premier ministre de l’Ontario?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-109",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Ontario?",
+      "fr": "Qui est le lieutenant-gouverneur de l’Ontario?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-110",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Ontario?",
+      "fr": "Qui est le chef de l’opposition en Ontario?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-111",
+    "chapter": "canadas-regions",
+    "region": "on",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Ontario?",
+      "fr": "Quel parti politique est au pouvoir en Ontario?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Ontario.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement en Ontario."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-112",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Prince Edward Island?",
+      "fr": "Qui est le premier ministre de l’Île-du-Prince-Édouard?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-113",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Prince Edward Island?",
+      "fr": "Qui est le lieutenant-gouverneur de l’Île-du-Prince-Édouard?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-114",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Prince Edward Island?",
+      "fr": "Qui est le chef de l’opposition à l’Île-du-Prince-Édouard?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-115",
+    "chapter": "canadas-regions",
+    "region": "pe",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Prince Edward Island?",
+      "fr": "Quel parti politique est au pouvoir à l’Île-du-Prince-Édouard?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Prince Edward Island.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement à l’Île-du-Prince-Édouard."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-116",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Quebec?",
+      "fr": "Qui est le premier ministre du Québec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-117",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Quebec?",
+      "fr": "Qui est le lieutenant-gouverneur du Québec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-118",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Quebec?",
+      "fr": "Qui est le chef de l’opposition au Québec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-119",
+    "chapter": "canadas-regions",
+    "region": "qc",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Quebec?",
+      "fr": "Quel parti politique est au pouvoir au Québec?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Quebec.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement au Québec."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-120",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Saskatchewan?",
+      "fr": "Qui est le premier ministre de la Saskatchewan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-121",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Lieutenant Governor of Saskatchewan?",
+      "fr": "Qui est le lieutenant-gouverneur de la Saskatchewan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Each province has a Lieutenant Governor representing the Crown. As of the last verification date, it is {{crownRepresentative}}.",
+      "fr": "Chaque province a un lieutenant-gouverneur qui représente la Couronne. À la dernière date de vérification, c’est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-122",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Saskatchewan?",
+      "fr": "Qui est le chef de l’opposition en Saskatchewan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-123",
+    "chapter": "canadas-regions",
+    "region": "sk",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Saskatchewan?",
+      "fr": "Quel parti politique est au pouvoir en Saskatchewan?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Saskatchewan.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement en Saskatchewan."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-124",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Premier of Yukon?",
+      "fr": "Qui est le premier ministre du Yukon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{premier}}",
+        "fr": "{{premier}}"
+      },
+      {
+        "id": "b",
+        "en": "Danielle Smith",
+        "fr": "Danielle Smith"
+      },
+      {
+        "id": "c",
+        "en": "David Eby",
+        "fr": "David Eby"
+      },
+      {
+        "id": "d",
+        "en": "Wab Kinew",
+        "fr": "Wab Kinew"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
+      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-125",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the Commissioner of Yukon?",
+      "fr": "Qui est le commissaire du Yukon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{crownRepresentative}}",
+        "fr": "{{crownRepresentative}}"
+      },
+      {
+        "id": "b",
+        "en": "Salma Lakhani",
+        "fr": "Salma Lakhani"
+      },
+      {
+        "id": "c",
+        "en": "Wendy Cocchia",
+        "fr": "Wendy Cocchia"
+      },
+      {
+        "id": "d",
+        "en": "Anita Neville",
+        "fr": "Anita Neville"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Territories have a commissioner rather than a lieutenant governor. As of the last verification date, the Commissioner is {{crownRepresentative}}.",
+      "fr": "Les territoires ont un commissaire plutôt qu’un lieutenant-gouverneur. À la dernière date de vérification, le commissaire est {{crownRepresentative}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-126",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the leader of the Opposition in Yukon?",
+      "fr": "Qui est le chef de l’opposition au Yukon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{oppositionLeader}}",
+        "fr": "{{oppositionLeader}}"
+      },
+      {
+        "id": "b",
+        "en": "Naheed Nenshi",
+        "fr": "Naheed Nenshi"
+      },
+      {
+        "id": "c",
+        "en": "John Rustad",
+        "fr": "John Rustad"
+      },
+      {
+        "id": "d",
+        "en": "Obby Khan",
+        "fr": "Obby Khan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "The Official Opposition is led by the leader of the largest party not in government. As of the last verification date, that is {{oppositionLeader}}.",
+      "fr": "L’opposition officielle est dirigée par le chef du plus grand parti qui n’est pas au pouvoir. À la dernière date de vérification, c’est {{oppositionLeader}}."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
+  },
+  {
+    "id": "reg-127",
+    "chapter": "canadas-regions",
+    "region": "yt",
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which political party is in power in Yukon?",
+      "fr": "Quel parti politique est au pouvoir au Yukon?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{governingParty}}",
+        "fr": "{{governingParty}}"
+      },
+      {
+        "id": "b",
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      {
+        "id": "c",
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      {
+        "id": "d",
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "As of the last verification date, {{governingParty}} forms the government in Yukon.",
+      "fr": "À la dernière date de vérification, {{governingParty}} forme le gouvernement au Yukon."
+    },
+    "source": "Discover Canada — Canada’s Regions (current officials)"
   }
 ]

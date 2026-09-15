@@ -666,6 +666,7 @@ h3 {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 650;
+  text-decoration: none;
 }
 
 .chip-hot {
@@ -1686,6 +1687,127 @@ h3 {
   line-height: 1.7;
 }
 
+.map-title {
+  margin: 1.75rem 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.map-intro {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.99rem;
+  line-height: 1.6;
+}
+
+.canada-study-map {
+  margin: 0 0 1.75rem;
+}
+
+.canada-study-map-frame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: #eaf4f8;
+  box-shadow: var(--shadow-sm);
+}
+
+.canada-study-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.capital-marker-pin {
+  fill: var(--brand);
+  stroke: #fff;
+  stroke-width: 160;
+}
+
+.capital-marker-dot {
+  fill: #12365c;
+  stroke: #fff;
+  stroke-width: 90;
+}
+
+.capital-marker-leader {
+  stroke: #12365c;
+  stroke-width: 110;
+}
+
+.capital-marker text {
+  fill: #fff;
+  font-size: 760px;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.capital-marker-national .capital-marker-pin {
+  fill: #1e4775;
+}
+
+.map-legend-note {
+  margin: 0.75rem 0 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.capital-map-list {
+  display: grid;
+  gap: 0.35rem 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.capital-map-list li {
+  display: grid;
+  grid-template-columns: 1.45rem minmax(0, 1fr);
+  gap: 0.45rem;
+  align-items: baseline;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.capital-key {
+  display: inline-grid;
+  width: 1.3rem;
+  height: 1.3rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.capital-key-national {
+  background: #1e4775;
+}
+
+.map-legend-note .capital-key {
+  margin: 0 0.2rem;
+  vertical-align: -0.25rem;
+}
+
+.map-credit {
+  margin: 0.7rem 0 0;
+  color: var(--faint);
+  font-size: 0.72rem;
+}
+
+.map-credit a {
+  color: inherit;
+  text-underline-offset: 0.12em;
+}
+
+@media (min-width: 40rem) {
+  .capital-map-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .prose > :first-child {
   margin-top: 0;
 }
@@ -1731,6 +1853,78 @@ h3 {
 
 .prose strong {
   color: var(--ink);
+}
+
+.prose a {
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.glossary {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.25rem;
+}
+
+.glossary-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface-2);
+}
+
+.glossary-item dt {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.glossary-also {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.glossary-item dd {
+  margin: 0.45rem 0 0.8rem;
+  line-height: 1.6;
+}
+
+.search-hits {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.search-hit {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface-2);
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-hit strong {
+  color: var(--ink);
+}
+
+.search-hit small,
+.search-hit span:last-child {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.oath {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--brand);
+  line-height: 1.65;
 }
 
 /* confirm dialog */
@@ -2553,7 +2747,8 @@ html:not([data-locale='fr']) .lang-fr {
   .flip-card,
   .study-gate > .panel:first-child,
   .chapter-side,
-  .chapter-pager {
+  .chapter-pager,
+  .official-source {
     display: none !important;
   }
 

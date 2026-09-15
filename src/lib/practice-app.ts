@@ -1,7 +1,7 @@
-import type { ChapterId } from '../content/schema';
+import type { ChapterId, RegionCode } from '../content/schema';
 import type { ChapterOption, ClientQuestion } from './client-types';
-import { shufflePractice } from './draw';
-import { pickLocalized, t, type Locale, type LocalizedText } from './i18n';
+import { eligibleForProvince, shufflePractice } from './draw';
+import { pickLocalized, speakText, t, type Locale, type LocalizedText } from './i18n';
 import {
   loadProgress,
   newAttemptId,
@@ -66,17 +66,18 @@ export function practiceApp(payload: PracticePayload) {
       this.revealed = false;
       this.warning = '';
 
-      let pool = payload.questions;
+      const province = this.progress?.province as RegionCode | null;
+      let pool = province ? eligibleForProvince(payload.questions, province) : payload.questions;
       if (this.chapter === 'weakest') {
         const weakest = this.progress ? weakestChapter(this.progress) : null;
         if (!weakest) {
           this.warning = this.tx('practice.weakWarn');
         } else {
-          pool = payload.questions.filter((question) => question.chapter === weakest);
+          pool = pool.filter((question) => question.chapter === weakest);
           this.warning = this.tx('practice.weakOk');
         }
       } else if (this.chapter !== 'all') {
-        pool = payload.questions.filter((question) => question.chapter === this.chapter);
+        pool = pool.filter((question) => question.chapter === this.chapter);
       }
 
       this.queue = shufflePractice(pool, Math.min(payload.size, pool.length));
@@ -186,6 +187,19 @@ export function practiceApp(payload: PracticePayload) {
           const row = counts.get(chapter.id);
           return { id: chapter.id, title: this.pick(chapter.title), text: `${row?.correct ?? 0}/${row?.total ?? 0}` };
         });
+    },
+
+    canSpeak() {
+      return typeof window !== 'undefined' && 'speechSynthesis' in window;
+    },
+
+    speakPrompt() {
+      if (!this.current) {
+        return;
+      }
+      const locale = ((this as { $store?: { i18n?: { locale: Locale } } }).$store?.i18n
+        ?.locale ?? 'en') as Locale;
+      speakText(this.pick(this.current.prompt), locale);
     },
   };
 }

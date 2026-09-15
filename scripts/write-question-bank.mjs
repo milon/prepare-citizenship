@@ -8,6 +8,7 @@ import his from './qbank/his.mjs';
 import jus from './qbank/jus.mjs';
 import mod from './qbank/mod.mjs';
 import reg from './qbank/reg.mjs';
+import regOfficials from './qbank/reg-officials.mjs';
 import rnr from './qbank/rnr.mjs';
 import sym from './qbank/sym.mjs';
 import wwa from './qbank/wwa.mjs';
@@ -23,7 +24,7 @@ const files = {
   'the-justice-system': jus,
   'canadian-symbols': sym,
   'canadas-economy': eco,
-  'canadas-regions': reg,
+  'canadas-regions': [...reg, ...regOfficials],
 };
 
 let total = 0;

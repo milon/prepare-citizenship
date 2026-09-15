@@ -9,7 +9,7 @@ Canadian citizenship is more than a passport. It is a set of guarantees that lim
 
 ## The Charter
 
-The **Canadian Charter of Rights and Freedoms** is part of the Constitution. It protects:
+The **[Canadian Charter of Rights and Freedoms](/glossary/#charter)** is part of the Constitution. It protects:
 
 - **Fundamental freedoms** — conscience and religion; thought, belief, opinion, and expression; peaceful assembly; association.
 - **Democratic rights** — including the right of citizens to vote and to run for office, with limited exceptions set by law.
@@ -23,14 +23,14 @@ Courts can strike down laws that violate the Charter. Some limits on rights are 
 
 ## Habeas corpus and the common-law tradition
 
-Canada inherited **habeas corpus**: you cannot be held without a lawful reason, and you can ask a court to review detention. Together with an independent judiciary, this is a foundation of the rule of law.
+Canada inherited **[habeas corpus](/glossary/#habeas-corpus)**: you cannot be held without a lawful reason, and you can ask a court to review detention. Together with an independent judiciary, this is a foundation of the rule of law.
 
 ## Responsibilities
 
 Rights come with obligations. Citizens are expected to:
 
 - Obey the law
-- Serve on a **jury** if summoned
+- Serve on a **[jury](/glossary/#jury)** if summoned
 - Vote in elections
 - Help others in the community
 - Protect and enjoy Canada’s heritage and environment
@@ -41,3 +41,5 @@ Men who meet the legal tests may be called to serve in the armed forces in a tim
 ## Diversity and equality
 
 Canada is a parliamentary democracy that treats men and women as equals. Religious freedom is protected; there is no official state church. Hate propaganda and violent extremism are not “just another opinion”—they are limited by law because they attack other people’s rights and safety.
+
+After you pass the test you take the **[oath of citizenship](/glossary/#oath)** at a [citizenship ceremony](/ceremony/).

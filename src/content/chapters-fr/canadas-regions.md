@@ -25,6 +25,29 @@ La **capitale nationale** est **Ottawa**. Ne la confondez pas avec Toronto (capi
 
 Ouvrez chaque page régionale pour y trouver les capitales, la géographie et quelques faits locaux susceptibles d'être évalués. Si vous choisissez une province ou un territoire dans l'application (phase 2), les examens simulés comprendront des questions associées à ce lieu.
 
+## Les capitales en un coup d'œil
+
+Le paquet de cartes de ce chapitre comprend des listes pour la carte et pour chaque capitale. Travaillez-les; le tableau ci-dessous est le corrigé.
+
+| Lieu | Capitale | Région |
+| --- | --- | --- |
+| Canada | **Ottawa** | — |
+| Terre-Neuve-et-Labrador | St. John’s | Atlantique |
+| Nouvelle-Écosse | Halifax | Atlantique |
+| Île-du-Prince-Édouard | Charlottetown | Atlantique |
+| Nouveau-Brunswick | Fredericton | Atlantique |
+| Québec | Québec | Centre |
+| Ontario | Toronto | Centre |
+| Manitoba | Winnipeg | Prairies |
+| Saskatchewan | Regina | Prairies |
+| Alberta | Edmonton | Prairies |
+| Colombie-Britannique | Victoria | Côte Ouest |
+| Yukon | Whitehorse | Nord |
+| Territoires du Nord-Ouest | Yellowknife | Nord |
+| Nunavut | Iqaluit | Nord |
+
+Pièges classiques : Toronto et Montréal sont des métropoles, pas la capitale nationale; Vancouver n'est pas la capitale de la C.-B.; Calgary et Saskatoon ne sont pas des capitales provinciales.
+
 ## La géographie physique à retenir
 
 - Le **Bouclier canadien** est une immense étendue rocheuse et riche en minéraux qui entoure la baie d'Hudson

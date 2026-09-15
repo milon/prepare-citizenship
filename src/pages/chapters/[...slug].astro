@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import AnthemPanel from '../../components/AnthemPanel.astro';
+import CanadaCapitalsMap from '../../components/CanadaCapitalsMap.astro';
 import ChapterNav from '../../components/ChapterNav.astro';
 import Icon from '../../components/Icon.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -69,6 +70,11 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
       <h1 class="lang-fr">{frenchEntry.data.title}</h1>
       <p class="lede lang-en">{entry.data.description}</p>
       <p class="lede lang-fr">{frenchEntry.data.description}</p>
+      <p class="button-row no-print">
+        <button class="button" type="button" onclick="window.print()" data-i18n="chapter.print">
+          Print this chapter
+        </button>
+      </p>
 
       {
         showOfficials && current && (
@@ -97,6 +103,8 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
         )
       }
 
+      {entry.id === 'canadas-regions' && <CanadaCapitalsMap />}
+
       <div class="prose lang-en">
         <Content />
       </div>
@@ -108,7 +116,7 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
 
       {
         !entry.data.regionGroup && (
-          <p class="button-row">
+          <p class="button-row no-print">
             <a class="button" href={`${withBase('/flashcards/')}?chapter=${entry.data.chapter}`} data-i18n="nav.flashcards">
               Flashcards
             </a>
@@ -145,7 +153,7 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
         )
       }
 
-      <section class="card official-source" aria-labelledby="official-source-heading">
+      <section class="card official-source no-print" aria-labelledby="official-source-heading">
         <span class="sq"><Icon name="info" /></span>
         <div>
           <div class="card-head">

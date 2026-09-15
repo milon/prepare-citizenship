@@ -10,6 +10,9 @@ import { installApp } from './lib/install-app';
 import { watchForInstallAndPersist } from './lib/persist-storage';
 import { practiceApp, type PracticePayload } from './lib/practice-app';
 import { provincePickerApp, settingsApp } from './lib/province-app';
+import { searchApp } from './lib/search-app';
+import { sessionApp, type SessionPayload } from './lib/session-app';
+import type { SearchDoc } from './lib/search';
 import { loadProgress, subscribeStorage } from './lib/progress';
 import {
   applyDocumentLocale,
@@ -145,5 +148,15 @@ export default (Alpine: Alpine) => {
   const mock = readJson<MockPayload>('mock-data');
   if (mock) {
     Alpine.data('mockPage', () => mockApp(mock));
+  }
+
+  const session = readJson<SessionPayload>('session-data');
+  if (session) {
+    Alpine.data('sessionPage', () => sessionApp(session));
+  }
+
+  const search = readJson<SearchDoc[]>('search-data');
+  if (search) {
+    Alpine.data('searchPage', () => searchApp(search));
   }
 };

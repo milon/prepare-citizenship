@@ -37,6 +37,30 @@ export const CURRENT_FACT_KEYS = [
   'partyInPower',
 ] as const;
 
+export const REGIONAL_FACT_KEYS = [
+  'premier',
+  'crownRepresentative',
+  'oppositionLeader',
+  'governingParty',
+] as const;
+
+const localizedNameSchema = z.object({
+  en: z.string().trim().min(1),
+  fr: z.string().trim().min(1),
+});
+
+const personOrLocalizedSchema = z.union([z.string().trim().min(1), localizedNameSchema]);
+
+export const regionalCurrentSchema = z.object({
+  kind: z.enum(['province', 'territory']),
+  ofName: localizedNameSchema,
+  inName: localizedNameSchema,
+  premier: z.string().trim().min(1),
+  crownRepresentative: z.string().trim().min(1),
+  oppositionLeader: personOrLocalizedSchema,
+  governingParty: localizedNameSchema,
+});
+
 export const QUESTION_ID_PATTERN = /^[a-z]{3}-\d{3}$/;
 export const FLASHCARD_ID_PATTERN = /^[a-z]{3}-\d{3}$/;
 
@@ -130,14 +154,27 @@ export const extraFlashcardSchema = z.object({
   source: z.string().trim().min(1),
 });
 
-export const currentFactsSchema = z.object({
-  lastVerified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use ISO date YYYY-MM-DD'),
-  headOfState: z.string().trim().min(1),
-  governorGeneral: z.string().trim().min(1),
-  primeMinister: z.string().trim().min(1),
-  speakerOfTheHouse: z.string().trim().min(1),
-  partyInPower: z.string().trim().min(1),
-});
+export const currentFactsSchema = z
+  .object({
+    lastVerified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use ISO date YYYY-MM-DD'),
+    headOfState: z.string().trim().min(1),
+    governorGeneral: z.string().trim().min(1),
+    primeMinister: z.string().trim().min(1),
+    speakerOfTheHouse: z.string().trim().min(1),
+    partyInPower: z.string().trim().min(1),
+    regions: z.record(z.enum(REGION_CODES), regionalCurrentSchema),
+  })
+  .superRefine((current, ctx) => {
+    for (const code of REGION_CODES) {
+      if (!current.regions[code]) {
+        ctx.addIssue({
+          code: 'custom',
+          message: `Missing regional current facts for ${code}`,
+          path: ['regions', code],
+        });
+      }
+    }
+  });
 
 export const chapterSummarySchema = z.object({
   title: z.string().trim().min(1),
@@ -152,6 +189,8 @@ export const chapterSummarySchema = z.object({
 export type ChapterId = (typeof CHAPTER_IDS)[number];
 export type RegionCode = (typeof REGION_CODES)[number];
 export type CurrentFactKey = (typeof CURRENT_FACT_KEYS)[number];
+export type RegionalFactKey = (typeof REGIONAL_FACT_KEYS)[number];
 export type Question = z.infer<typeof questionSchema>;
 export type ExtraFlashcard = z.infer<typeof extraFlashcardSchema>;
 export type CurrentFacts = z.infer<typeof currentFactsSchema>;
+export type RegionalCurrent = z.infer<typeof regionalCurrentSchema>;

@@ -16,8 +16,9 @@ Les trois territoires occupent une part énorme du territoire canadien et n'abri
 
 ## Territoires du Nord-Ouest
 
-- Capitale : **Yellowknife**, sur le Grand lac des Esclaves
-- Un vaste territoire où l'on parle de nombreuses langues autochtones; plusieurs régions ont conclu des ententes sur les revendications territoriales et l'autonomie gouvernementale
+- Capitale : **Yellowknife**, sur le **Grand lac des Esclaves**
+- Un vaste territoire où l'on parle de nombreuses langues autochtones; plusieurs de ces langues ont un statut officiel, en plus de l'anglais et du français
+- Plusieurs régions ont conclu des ententes sur les revendications territoriales et l'autonomie gouvernementale
 - Le diamant, l'or et l'administration publique sont les piliers de l'économie
 
 ## Nunavut

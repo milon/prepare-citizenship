@@ -29,7 +29,7 @@ If you **move**, update your registration. Your vote belongs to the riding where
 
 ## Ridings and first past the post
 
-The country is divided into **electoral districts**, also called **ridings**. Each riding elects **one MP**. The candidate with the most votes in that riding wins—even without 50%. This is **single-member plurality**, often called first past the post.
+The country is divided into **electoral districts**, also called **[ridings](/glossary/#riding)**. Each riding elects **one [MP](/glossary/#mp)**. The candidate with the most votes in that riding wins—even without 50%. This is **single-member plurality**, often called [first past the post](/glossary/#fptp).
 
 The party that can command a majority of MPs usually forms the government. If no party has a majority of seats, a **minority government** may govern with support from others. If two or more parties formally agreed to govern together, that would be a **coalition**—rare in federal Canadian practice.
 
@@ -42,9 +42,9 @@ Ridings are redrawn periodically because populations shift. This **reapportionme
 
 ## How an election is called
 
-An election formally begins when **writs of election** are issued—the official orders that start the contest in each riding. A campaign has a minimum length set by law, so there is always time to nominate candidates and organize the vote.
+An election formally begins when **[writs of election](/glossary/#writ)** are issued—the official orders that start the contest in each riding. A campaign has a minimum length set by law, so there is always time to nominate candidates and organize the vote.
 
-In each riding, a **returning officer** is the local Elections Canada official responsible for running everything: hiring staff, setting up polls, and reporting results.
+In each riding, a **[returning officer](/glossary/#returning-officer)** is the local Elections Canada official responsible for running everything: hiring staff, setting up polls, and reporting results.
 
 ## Ways to vote
 

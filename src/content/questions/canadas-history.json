@@ -2473,5 +2473,278 @@
       "fr": "Cartier, Brown, Tupper, Tilley et d’autres ont été essentiels. Macdonald est le premier d’entre eux, mais pas le seul."
     },
     "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-066",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Approximately how many Canadians served in the First World War?",
+      "fr": "Environ combien de Canadiens ont servi pendant la Première Guerre mondiale?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "More than 600,000",
+        "fr": "Plus de 600 000"
+      },
+      {
+        "id": "b",
+        "en": "About 60,000",
+        "fr": "Environ 60 000"
+      },
+      {
+        "id": "c",
+        "en": "About 6,000",
+        "fr": "Environ 6 000"
+      },
+      {
+        "id": "d",
+        "en": "More than 6 million",
+        "fr": "Plus de 6 millions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "More than 600,000 served; tens of thousands were killed. Do not confuse the number who served with the number who died.",
+      "fr": "Plus de 600 000 ont servi; des dizaines de milliers ont été tués. Ne confondez pas le nombre de personnes ayant servi avec le nombre de morts."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-067",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What was the Women’s Suffrage Movement?",
+      "fr": "Qu’était le mouvement pour le suffrage des femmes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "The effort by women to achieve the right to vote",
+        "fr": "L’effort des femmes pour obtenir le droit de vote"
+      },
+      {
+        "id": "b",
+        "en": "A campaign to ban women from factories",
+        "fr": "Une campagne visant à interdire les femmes dans les usines"
+      },
+      {
+        "id": "c",
+        "en": "A plan to move the capital to Winnipeg",
+        "fr": "Un projet de déménager la capitale à Winnipeg"
+      },
+      {
+        "id": "d",
+        "en": "A wartime recruiting slogan only",
+        "fr": "Un simple slogan de recrutement en temps de guerre"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Suffrage means the right to vote. Women won provincial and federal voting rights in stages in the early twentieth century.",
+      "fr": "Le suffrage désigne le droit de vote. Les femmes ont obtenu le droit de vote provincial et fédéral par étapes au début du XXe siècle."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-068",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which province was the first to grant voting rights to women?",
+      "fr": "Quelle province a été la première à accorder le droit de vote aux femmes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Manitoba",
+        "fr": "Le Manitoba"
+      },
+      {
+        "id": "b",
+        "en": "Quebec",
+        "fr": "Le Québec"
+      },
+      {
+        "id": "c",
+        "en": "Ontario",
+        "fr": "L’Ontario"
+      },
+      {
+        "id": "d",
+        "en": "Nova Scotia",
+        "fr": "La Nouvelle-Écosse"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Manitoba led in 1916. Other provinces followed; Quebec was much later for provincial elections.",
+      "fr": "Le Manitoba a ouvert la voie en 1916. D’autres provinces ont suivi; le Québec a agi beaucoup plus tard pour les élections provinciales."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-069",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who was Sir Sam Steele?",
+      "fr": "Qui était sir Sam Steele?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "A famous frontier hero, Mounted Policeman, and soldier",
+        "fr": "Un célèbre héros de la frontière, policier monté et soldat"
+      },
+      {
+        "id": "b",
+        "en": "The first Prime Minister of Canada",
+        "fr": "Le premier premier ministre du Canada"
+      },
+      {
+        "id": "c",
+        "en": "The Métis leader at Red River",
+        "fr": "Le chef métis de la rivière Rouge"
+      },
+      {
+        "id": "d",
+        "en": "The composer of O Canada",
+        "fr": "Le compositeur de l’Ô Canada"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Steele is the guide’s classic NWMP / Yukon / war-service figure. Do not confuse him with Louis Riel or John A. Macdonald.",
+      "fr": "Steele est la figure classique du guide liée à la Police à cheval, au Yukon et au service militaire. Ne le confondez pas avec Louis Riel ou John A. Macdonald."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-070",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who was General Sir Arthur Currie?",
+      "fr": "Qui était le général sir Arthur Currie?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canada’s greatest soldier in the First World War",
+        "fr": "Le plus grand soldat du Canada pendant la Première Guerre mondiale"
+      },
+      {
+        "id": "b",
+        "en": "The father of Manitoba",
+        "fr": "Le père du Manitoba"
+      },
+      {
+        "id": "c",
+        "en": "A fur trader who founded Montreal",
+        "fr": "Un commerçant de fourrures fondateur de Montréal"
+      },
+      {
+        "id": "d",
+        "en": "The first Governor General after Confederation",
+        "fr": "Le premier gouverneur général après la Confédération"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Currie commanded the Canadian Corps, including at Vimy. He is a military leader, not a Father of Confederation.",
+      "fr": "Currie a commandé le Corps canadien, notamment à Vimy. C’est un chef militaire, et non un Père de la Confédération."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-071",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which was the last province to join Canada?",
+      "fr": "Quelle a été la dernière province à se joindre au Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Newfoundland (now Newfoundland and Labrador)",
+        "fr": "Terre-Neuve (aujourd’hui Terre-Neuve-et-Labrador)"
+      },
+      {
+        "id": "b",
+        "en": "Alberta",
+        "fr": "L’Alberta"
+      },
+      {
+        "id": "c",
+        "en": "Saskatchewan",
+        "fr": "La Saskatchewan"
+      },
+      {
+        "id": "d",
+        "en": "British Columbia",
+        "fr": "La Colombie-Britannique"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Newfoundland joined in 1949 after referendums. It is the tenth province.",
+      "fr": "Terre-Neuve s’est jointe en 1949 après des référendums. C’est la dixième province."
+    },
+    "source": "Discover Canada — Canada's History"
+  },
+  {
+    "id": "his-072",
+    "chapter": "canadas-history",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who were the Voyageurs?",
+      "fr": "Qui étaient les voyageurs?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Montreal-based traders who travelled by canoe in the fur trade",
+        "fr": "Des commerçants basés à Montréal qui voyageaient en canot dans la traite des fourrures"
+      },
+      {
+        "id": "b",
+        "en": "British generals at the Plains of Abraham",
+        "fr": "Des généraux britanniques aux plaines d’Abraham"
+      },
+      {
+        "id": "c",
+        "en": "Senators appointed in 1867",
+        "fr": "Des sénateurs nommés en 1867"
+      },
+      {
+        "id": "d",
+        "en": "Inuit hunters of the High Arctic only",
+        "fr": "Des chasseurs inuits du Haut-Arctique seulement"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Voyageurs moved goods and furs across the interior. They are a fur-trade story, not a Confederation office.",
+      "fr": "Les voyageurs transportaient marchandises et fourrures à travers l’intérieur du continent. C’est une histoire de traite des fourrures, et non une charge de la Confédération."
+    },
+    "source": "Discover Canada — Canada's History"
   }
 ]

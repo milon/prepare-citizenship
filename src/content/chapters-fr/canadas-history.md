@@ -19,9 +19,9 @@ L'**Acte de Québec (1774)** a protégé le droit civil français et la religion
 
 Pendant la **guerre de 1812**, les Américains ont envahi l'Amérique du Nord britannique. Les colonies sont demeurées britanniques. Plus tard, le **chemin de fer clandestin** a permis à de nombreuses personnes réduites en esclavage de trouver la liberté au Canada.
 
-## Le gouvernement responsable et la Confédération
+## Le gouvernement responsable et la [Confédération](/glossary/#confederation)
 
-Les réformistes ont réclamé le **gouvernement responsable** : un Cabinet qui doit conserver la confiance d'une assemblée élue. La Nouvelle-Écosse l'a obtenu en 1847-1849, suivie de la Province du Canada.
+Les réformistes ont réclamé le **[gouvernement responsable](/glossary/#responsible-government)** : un Cabinet qui doit conserver la confiance d'une assemblée élue. La Nouvelle-Écosse l'a obtenu en 1847-1849, suivie de la Province du Canada.
 
 Le **1er juillet 1867**, l'**Acte de l'Amérique du Nord britannique** a créé le Dominion du Canada. Les quatre premières provinces étaient l'**Ontario, le Québec, la Nouvelle-Écosse et le Nouveau-Brunswick**. **Sir John A. Macdonald** est devenu le premier premier ministre. **Sir George-Étienne Cartier** en a été le grand partenaire québécois.
 

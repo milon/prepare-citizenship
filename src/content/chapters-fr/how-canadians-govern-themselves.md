@@ -5,28 +5,28 @@ order: 5
 chapter: how-canadians-govern-themselves
 ---
 
-Le Canada est une **monarchie constitutionnelle** et une **démocratie parlementaire** au sein d'une **fédération**. Trois étiquettes, trois idées.
+Le Canada est une **[monarchie constitutionnelle](/glossary/#constitutional-monarchy)** et une **[démocratie parlementaire](/glossary/#parliamentary-democracy)** au sein d'une **[fédération](/glossary/#federalism)**. Trois étiquettes, trois idées.
 
 ## Chef de l'État et chef du gouvernement
 
 - Le **Souverain** est le **chef de l'État**.
-- Le **gouverneur général** représente le Souverain au Canada : il accorde la **sanction royale**, lit le **discours du Trône** et exerce des fonctions cérémonielles et constitutionnelles sur avis du gouvernement.
-- Le **premier ministre** est le **chef du gouvernement** ; c'est le chef du parti capable d'obtenir l'appui de la Chambre des communes.
+- Le **[gouverneur général](/glossary/#governor-general)** représente le Souverain au Canada : il accorde la **sanction royale**, lit le **discours du Trône** et exerce des fonctions cérémonielles et constitutionnelles sur avis du gouvernement.
+- Le **[premier ministre](/glossary/#prime-minister)** est le **chef du gouvernement** ; c'est le chef du parti capable d'obtenir l'appui de la Chambre des communes.
 - Le **parti au pouvoir** est celui qui conserve la confiance de la Chambre.
 
 Les noms des titulaires changent. Les charges, elles, demeurent. Les noms actuels sont affichés sur cette page à partir d'un fichier daté, pour que les questions ne deviennent pas périmées du jour au lendemain.
 
-Chaque province a un **lieutenant-gouverneur** qui représente la Couronne. Les territoires, eux, ont des **commissaires**.
+Chaque province a un **[lieutenant-gouverneur](/glossary/#lieutenant-governor)** qui représente la [Couronne](/glossary/#crown). Les territoires, eux, ont des **commissaires**.
 
 ## Les trois composantes du Parlement
 
 Le Parlement fédéral comprend :
 
-1. La **Couronne**
-2. Le **Sénat** — dont les membres sont nommés sur avis du premier ministre ; il révise les projets de loi
-3. La **Chambre des communes** — composée de **députés** élus
+1. La **[Couronne](/glossary/#crown)**
+2. Le **[Sénat](/glossary/#senate)** — dont les membres sont nommés sur avis du premier ministre ; il révise les projets de loi
+3. La **[Chambre des communes](/glossary/#commons)** — composée de **[députés](/glossary/#mp)** élus
 
-Un projet de loi doit normalement être adopté par la Chambre des communes et par le Sénat, puis recevoir la **sanction royale**. Les **votes de confiance** ont lieu aux Communes : si le gouvernement perd la confiance de la Chambre, il doit démissionner ou déclencher des élections.
+Un projet de loi doit normalement être adopté par la Chambre des communes et par le Sénat, puis recevoir la **[sanction royale](/glossary/#royal-assent)**. Les **votes de confiance** ont lieu aux Communes : si le gouvernement perd la confiance de la Chambre, il doit démissionner ou déclencher des élections.
 
 ## Le fédéralisme
 
@@ -41,9 +41,9 @@ Les **gouvernements autochtones** exercent eux aussi des compétences en vertu d
 
 ## Comment le gouvernement est formé
 
-Après une élection, le gouverneur général demande au chef le plus susceptible d'obtenir la confiance de la Chambre de former un gouvernement. Ce chef devient premier ministre et nomme son **Cabinet** (le conseil des ministres). Les ministres sont habituellement des députés, parfois des sénateurs. La solidarité ministérielle et le secret des délibérations sont des conventions : en public, les ministres défendent les décisions du gouvernement.
+Après une élection, le gouverneur général demande au chef le plus susceptible d'obtenir la confiance de la Chambre de former un gouvernement. Ce chef devient premier ministre et nomme son **[Cabinet](/glossary/#cabinet)** (le conseil des ministres). Les ministres sont habituellement des députés, parfois des sénateurs. La solidarité ministérielle et le secret des délibérations sont des conventions : en public, les ministres défendent les décisions du gouvernement.
 
-Les partis de l'**opposition** demandent des comptes au gouvernement. Le **chef de l'opposition** dirige le plus grand parti qui ne forme pas le gouvernement. Le **Président de la Chambre des communes** dirige les débats et doit faire preuve d'impartialité.
+Les partis de l'**opposition** demandent des comptes au gouvernement. Le **chef de l'opposition** dirige le plus grand parti qui ne forme pas le gouvernement. Le **[Président de la Chambre des communes](/glossary/#speaker)** dirige les débats et doit faire preuve d'impartialité.
 
 ## La Constitution
 

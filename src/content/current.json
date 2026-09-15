@@ -4,5 +4,247 @@
   "governorGeneral": "Louise Arbour",
   "primeMinister": "Mark Carney",
   "speakerOfTheHouse": "Francis Scarpaleggia",
-  "partyInPower": "Liberal Party of Canada"
+  "partyInPower": "Liberal Party of Canada",
+  "regions": {
+    "ab": {
+      "kind": "province",
+      "ofName": {
+        "en": "Alberta",
+        "fr": "de l’Alberta"
+      },
+      "premier": "Danielle Smith",
+      "crownRepresentative": "Salma Lakhani",
+      "oppositionLeader": "Naheed Nenshi",
+      "governingParty": {
+        "en": "United Conservative Party",
+        "fr": "Parti conservateur uni"
+      },
+      "inName": {
+        "en": "in Alberta",
+        "fr": "en Alberta"
+      }
+    },
+    "bc": {
+      "kind": "province",
+      "ofName": {
+        "en": "British Columbia",
+        "fr": "de la Colombie-Britannique"
+      },
+      "premier": "David Eby",
+      "crownRepresentative": "Wendy Cocchia",
+      "oppositionLeader": "John Rustad",
+      "governingParty": {
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      "inName": {
+        "en": "in British Columbia",
+        "fr": "en Colombie-Britannique"
+      }
+    },
+    "mb": {
+      "kind": "province",
+      "ofName": {
+        "en": "Manitoba",
+        "fr": "du Manitoba"
+      },
+      "premier": "Wab Kinew",
+      "crownRepresentative": "Anita Neville",
+      "oppositionLeader": "Obby Khan",
+      "governingParty": {
+        "en": "New Democratic Party",
+        "fr": "Nouveau Parti démocratique"
+      },
+      "inName": {
+        "en": "in Manitoba",
+        "fr": "au Manitoba"
+      }
+    },
+    "nb": {
+      "kind": "province",
+      "ofName": {
+        "en": "New Brunswick",
+        "fr": "du Nouveau-Brunswick"
+      },
+      "premier": "Susan Holt",
+      "crownRepresentative": "Louise Imbeault",
+      "oppositionLeader": "Glen Savoie",
+      "governingParty": {
+        "en": "Liberal Party",
+        "fr": "Parti libéral"
+      },
+      "inName": {
+        "en": "in New Brunswick",
+        "fr": "au Nouveau-Brunswick"
+      }
+    },
+    "nl": {
+      "kind": "province",
+      "ofName": {
+        "en": "Newfoundland and Labrador",
+        "fr": "de Terre-Neuve-et-Labrador"
+      },
+      "premier": "Tony Wakeham",
+      "crownRepresentative": "Joan Marie Aylward",
+      "oppositionLeader": "John Hogan",
+      "governingParty": {
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      },
+      "inName": {
+        "en": "in Newfoundland and Labrador",
+        "fr": "à Terre-Neuve-et-Labrador"
+      }
+    },
+    "ns": {
+      "kind": "province",
+      "ofName": {
+        "en": "Nova Scotia",
+        "fr": "de la Nouvelle-Écosse"
+      },
+      "premier": "Tim Houston",
+      "crownRepresentative": "Mike Savage",
+      "oppositionLeader": "Claudia Chender",
+      "governingParty": {
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      },
+      "inName": {
+        "en": "in Nova Scotia",
+        "fr": "en Nouvelle-Écosse"
+      }
+    },
+    "nt": {
+      "kind": "territory",
+      "ofName": {
+        "en": "the Northwest Territories",
+        "fr": "des Territoires du Nord-Ouest"
+      },
+      "premier": "R.J. Simpson",
+      "crownRepresentative": "Gerry Kisoun",
+      "oppositionLeader": {
+        "en": "None (consensus government)",
+        "fr": "Aucun (gouvernement de consensus)"
+      },
+      "governingParty": {
+        "en": "Consensus government",
+        "fr": "Gouvernement de consensus"
+      },
+      "inName": {
+        "en": "in the Northwest Territories",
+        "fr": "dans les Territoires du Nord-Ouest"
+      }
+    },
+    "nu": {
+      "kind": "territory",
+      "ofName": {
+        "en": "Nunavut",
+        "fr": "du Nunavut"
+      },
+      "premier": "John Main",
+      "crownRepresentative": "Eva Aariak",
+      "oppositionLeader": {
+        "en": "None (consensus government)",
+        "fr": "Aucun (gouvernement de consensus)"
+      },
+      "governingParty": {
+        "en": "Consensus government",
+        "fr": "Gouvernement de consensus"
+      },
+      "inName": {
+        "en": "in Nunavut",
+        "fr": "au Nunavut"
+      }
+    },
+    "on": {
+      "kind": "province",
+      "ofName": {
+        "en": "Ontario",
+        "fr": "de l’Ontario"
+      },
+      "premier": "Doug Ford",
+      "crownRepresentative": "Edith Dumont",
+      "oppositionLeader": "Marit Stiles",
+      "governingParty": {
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      },
+      "inName": {
+        "en": "in Ontario",
+        "fr": "en Ontario"
+      }
+    },
+    "pe": {
+      "kind": "province",
+      "ofName": {
+        "en": "Prince Edward Island",
+        "fr": "de l’Île-du-Prince-Édouard"
+      },
+      "premier": "Rob Lantz",
+      "crownRepresentative": "Wassim Salamoun",
+      "oppositionLeader": "Hal Perry",
+      "governingParty": {
+        "en": "Progressive Conservative Party",
+        "fr": "Parti progressiste-conservateur"
+      },
+      "inName": {
+        "en": "in Prince Edward Island",
+        "fr": "à l’Île-du-Prince-Édouard"
+      }
+    },
+    "qc": {
+      "kind": "province",
+      "ofName": {
+        "en": "Quebec",
+        "fr": "du Québec"
+      },
+      "premier": "Christine Fréchette",
+      "crownRepresentative": "Manon Jeannotte",
+      "oppositionLeader": "Marwah Rizqy",
+      "governingParty": {
+        "en": "Coalition Avenir Québec",
+        "fr": "Coalition Avenir Québec"
+      },
+      "inName": {
+        "en": "in Quebec",
+        "fr": "au Québec"
+      }
+    },
+    "sk": {
+      "kind": "province",
+      "ofName": {
+        "en": "Saskatchewan",
+        "fr": "de la Saskatchewan"
+      },
+      "premier": "Scott Moe",
+      "crownRepresentative": "M. Bernadette McIntyre",
+      "oppositionLeader": "Carla Beck",
+      "governingParty": {
+        "en": "Saskatchewan Party",
+        "fr": "Parti saskatchewanais"
+      },
+      "inName": {
+        "en": "in Saskatchewan",
+        "fr": "en Saskatchewan"
+      }
+    },
+    "yt": {
+      "kind": "territory",
+      "ofName": {
+        "en": "Yukon",
+        "fr": "du Yukon"
+      },
+      "premier": "Currie Dixon",
+      "crownRepresentative": "Adeline Webber",
+      "oppositionLeader": "Kate White",
+      "governingParty": {
+        "en": "Yukon Party",
+        "fr": "Parti du Yukon"
+      },
+      "inName": {
+        "en": "in Yukon",
+        "fr": "au Yukon"
+      }
+    }
+  }
 }

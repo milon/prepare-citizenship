@@ -16,8 +16,9 @@ The three territories cover an enormous share of Canada’s landmass and a small
 
 ## Northwest Territories
 
-- Capital: **Yellowknife**, on Great Slave Lake
-- A large territory with many Indigenous languages; several regions have land-claim and self-government agreements
+- Capital: **Yellowknife**, on **Great Slave Lake**
+- A large territory with many Indigenous languages; several of those languages have official status alongside English and French
+- Several regions have land-claim and self-government agreements
 - Diamonds, gold, and public administration are economic pillars
 
 ## Nunavut

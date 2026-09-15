@@ -1546,5 +1546,122 @@
       "fr": "Si vous ne retenez que le pétrole ou que les banques, vous raterez les questions sur le poisson, l’automobile ou le tourisme."
     },
     "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-043",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "What are the three main types of industry in Canada?",
+      "fr": "Quels sont les trois principaux types d’industrie au Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Natural resources, manufacturing, and services",
+        "fr": "Les ressources naturelles, la fabrication et les services"
+      },
+      {
+        "id": "b",
+        "en": "Tourism, filmmaking, and banking only",
+        "fr": "Le tourisme, le cinéma et les banques seulement"
+      },
+      {
+        "id": "c",
+        "en": "Fishing, hockey, and logging only",
+        "fr": "La pêche, le hockey et l’exploitation forestière seulement"
+      },
+      {
+        "id": "d",
+        "en": "Mining, railways, and the Senate",
+        "fr": "Les mines, les chemins de fer et le Sénat"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Most Canadians work in services, but resources and manufacturing remain central to the guide’s economic picture.",
+      "fr": "La plupart des Canadiens travaillent dans les services, mais les ressources et la fabrication restent centrales dans le portrait économique du guide."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-044",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Which three countries were the original partners in the NAFTA free-trade agreement (later updated as CUSMA/USMCA)?",
+      "fr": "Quels trois pays étaient les partenaires initiaux de l’Accord de libre-échange nord-américain (ALENA), plus tard mis à jour (ACEUM/USMCA)?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "Canada, the United States, and Mexico",
+        "fr": "Le Canada, les États-Unis et le Mexique"
+      },
+      {
+        "id": "b",
+        "en": "Canada, the United Kingdom, and France",
+        "fr": "Le Canada, le Royaume-Uni et la France"
+      },
+      {
+        "id": "c",
+        "en": "Canada, Japan, and China",
+        "fr": "Le Canada, le Japon et la Chine"
+      },
+      {
+        "id": "d",
+        "en": "Canada, Australia, and New Zealand",
+        "fr": "Le Canada, l’Australie et la Nouvelle-Zélande"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "North American free trade links Canada with its two continental neighbours. The agreement’s name has changed; the three-country idea has not.",
+      "fr": "Le libre-échange nord-américain lie le Canada à ses deux voisins continentaux. Le nom de l’accord a changé; l’idée des trois pays, non."
+    },
+    "source": "Discover Canada — Canada's Economy"
+  },
+  {
+    "id": "eco-045",
+    "chapter": "canadas-economy",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Why is trade with other countries important to Canada?",
+      "fr": "Pourquoi le commerce avec d’autres pays est-il important pour le Canada?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "It strengthens the economy and raises our standard of living",
+        "fr": "Il renforce l’économie et élève notre niveau de vie"
+      },
+      {
+        "id": "b",
+        "en": "It replaces the need for any domestic industry",
+        "fr": "Il remplace tout besoin d’industrie intérieure"
+      },
+      {
+        "id": "c",
+        "en": "It lets provinces leave Confederation",
+        "fr": "Il permet aux provinces de quitter la Confédération"
+      },
+      {
+        "id": "d",
+        "en": "It is required before you can vote",
+        "fr": "Il est obligatoire avant de pouvoir voter"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "Canada exports resources and manufactured goods and imports many products. Trade is taught as a path to prosperity, not as optional trivia.",
+      "fr": "Le Canada exporte des ressources et des biens manufacturés et importe de nombreux produits. Le commerce est présenté comme un levier de prospérité, et non comme une anecdote facultative."
+    },
+    "source": "Discover Canada — Canada's Economy"
   }
 ]
