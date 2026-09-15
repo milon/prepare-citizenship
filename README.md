@@ -23,6 +23,8 @@ npm run preview   # serves `dist/` (needed to try the service worker)
 
 The live site is `https://preparecitizenship.ca`. GitHub Pages still builds from `main`; `milon.github.io/prepare-citizenship/` and `milon.im/prepare-citizenship/` redirect to the custom domain.
 
+Offline copies update the next time the app is opened **while online**. The service worker checks on load, when the tab becomes visible, when the network returns, and every 30 minutes while the app stays open. In Cloudflare, bypass cache for `/sw.js`, `/workbox-*.js`, and `/manifest.webmanifest` so those checks are not served a stale worker.
+
 ## Content
 
 | Path                       | What it is                                                    |
