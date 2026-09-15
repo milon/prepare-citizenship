@@ -63,6 +63,33 @@ const capitals = [
     fr: 'Terre-Neuve-et-Labrador — St. John’s',
   },
 ];
+
+const view = { x: -24500, y: -27050, w: 55700, h: 47100 };
+
+// The hover layer sits on top of the map, so each number's position is needed
+// both in map units and as a percentage of the frame.
+const markers = capitals.map((capital) => {
+  const labelX = capital.x + (capital.dx ?? 0);
+  const labelY = capital.y + (capital.dy ?? 0);
+  const left = ((labelX - view.x) / view.w) * 100;
+  // Markers near an edge get their tooltip anchored to that side instead of
+  // centred, so it opens across the map rather than off it.
+  const edge = left > 80 ? 'end' : left < 12 ? 'start' : null;
+  // How much of the frame's width the tooltip can use before it would spill
+  // out. A centred tooltip grows both ways, so it is limited by the nearer
+  // edge; an anchored one grows one way only.
+  const room =
+    edge === 'start' ? 100 - left : edge === 'end' ? left : 2 * Math.min(left, 100 - left);
+  return {
+    ...capital,
+    labelX,
+    labelY,
+    left,
+    top: ((labelY - view.y) / view.h) * 100,
+    edge,
+    room: Math.max(room - 2, 30),
+  };
+});
 ---
 
 <h2 class="map-title lang-en">Canada and its capitals</h2>
@@ -76,7 +103,7 @@ const capitals = [
 <figure class="canada-study-map">
   <div class="canada-study-map-frame">
     <svg
-      viewBox="-24500 -27050 55700 47100"
+      viewBox={`${view.x} ${view.y} ${view.w} ${view.h}`}
       role="img"
       aria-labelledby="canada-map-title canada-map-desc"
     >
@@ -86,33 +113,51 @@ const capitals = [
       </desc>
       <image
         href={withBase('/canada-capitals-map.svg')}
-        x="-24500"
-        y="-27050"
-        width="55700"
-        height="47100"
+        x={view.x}
+        y={view.y}
+        width={view.w}
+        height={view.h}
         preserveAspectRatio="none"
       />
       {
-        capitals.map((capital) => (
-          <g class:list={['capital-marker', capital.national && 'capital-marker-national']}>
-            {capital.dx !== undefined && (
+        markers.map((marker) => (
+          <g class:list={['capital-marker', marker.national && 'capital-marker-national']}>
+            {marker.dx !== undefined && (
               <line
                 class="capital-marker-leader"
-                x1={capital.x}
-                y1={capital.y}
-                x2={capital.x + capital.dx}
-                y2={capital.y + capital.dy}
+                x1={marker.x}
+                y1={marker.y}
+                x2={marker.labelX}
+                y2={marker.labelY}
               />
             )}
-            <circle class="capital-marker-dot" cx={capital.x} cy={capital.y} r="230" />
-            <g transform={`translate(${capital.x + (capital.dx ?? 0)} ${capital.y + (capital.dy ?? 0)})`}>
+            <circle class="capital-marker-dot" cx={marker.x} cy={marker.y} r="230" />
+            <g transform={`translate(${marker.labelX} ${marker.labelY})`}>
               <circle class="capital-marker-pin" r="640" />
-              <text y="250" text-anchor="middle">{capital.n}</text>
+              <text y="250" text-anchor="middle">{marker.n}</text>
             </g>
           </g>
         ))
       }
     </svg>
+
+    {/* Hover labels. The list below the map carries the same pairings for
+    keyboard, touch, and screen reader users. */}
+    <div class="capital-hotspots" aria-hidden="true">
+      {
+        markers.map((marker) => (
+          <span
+            class:list={['capital-hotspot', marker.edge && `capital-hotspot-${marker.edge}`]}
+            style={`left:${marker.left.toFixed(2)}%;top:${marker.top.toFixed(2)}%;--tip-room:${marker.room.toFixed(1)}cqw`}
+          >
+            <span class="capital-hotspot-tip">
+              <span class="lang-en">{marker.en}</span>
+              <span class="lang-fr">{marker.fr}</span>
+            </span>
+          </span>
+        ))
+      }
+    </div>
   </div>
 
   <figcaption>

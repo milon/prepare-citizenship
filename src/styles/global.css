@@ -1704,6 +1704,8 @@ h3 {
 }
 
 .canada-study-map-frame {
+  position: relative;
+  container-type: inline-size;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
@@ -1743,6 +1745,77 @@ h3 {
 
 .capital-marker-national .capital-marker-pin {
   fill: #1e4775;
+}
+
+.capital-hotspots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.capital-hotspot {
+  position: absolute;
+  width: 2.5%;
+  min-width: 1.15rem;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+/* Caret sits on the hotspot rather than the label so it keeps pointing at the
+   marker when the label is pushed sideways at the edges of the map. */
+.capital-hotspot::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border: 0.26rem solid transparent;
+  border-top-color: var(--rail);
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.12s ease;
+}
+
+.capital-hotspot-tip {
+  position: absolute;
+  bottom: calc(100% + 0.26rem);
+  left: 50%;
+  width: max-content;
+  /* 22em clears the longest label in either language, so tooltips stay on one
+     line wherever the map is wide enough. On a narrow map they wrap instead of
+     spilling past the frame: --tip-room is how much width this marker has. */
+  max-width: min(22em, var(--tip-room, 92cqw));
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--r-xs);
+  background: var(--rail);
+  color: var(--rail-ink);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  text-wrap: balance;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.12s ease;
+}
+
+.capital-hotspot-start .capital-hotspot-tip {
+  left: 0.3rem;
+  transform: none;
+  text-align: left;
+}
+
+.capital-hotspot-end .capital-hotspot-tip {
+  left: auto;
+  right: 0.3rem;
+  transform: none;
+  text-align: right;
+}
+
+.capital-hotspot:hover::after,
+.capital-hotspot:hover .capital-hotspot-tip {
+  opacity: 1;
 }
 
 .map-legend-note {
