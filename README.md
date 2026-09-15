@@ -38,7 +38,7 @@ Questions that name current officials use `{{primeMinister}}`-style tokens and a
 
 ## Privacy
 
-No accounts, no analytics, no backend. Progress never leaves the browser unless the user exports it. The contact form on the FAQ page posts to [Formspree](https://formspree.io).
+No accounts, no ads, no backend. Study progress never leaves the browser unless the user exports it. [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) counts visits (pages and referrers), not quiz or flashcard data. The contact form on the FAQ page posts to [Formspree](https://formspree.io).
 
 ## License
 

@@ -86,7 +86,8 @@ export function faqItems(
       {
         id: 'privacy',
         question: 'Le site est-il gratuit et recueillez-vous des données?',
-        html: `<p>Le site est gratuit. Il n’y a ni compte, ni analytique, ni publicité. Votre progrès ne quitte jamais le navigateur, sauf si vous l’exportez vous-même.</p>
+        html: `<p>Le site est gratuit. Il n’y a ni compte ni publicité. Votre progrès d’étude reste dans le navigateur, sauf si vous l’exportez vous-même.</p>
+<p>Cloudflare Web Analytics recense les visites (pages vues, provenances). Il ne voit pas vos réponses, votre province ni vos cartes-éclair.</p>
 <p>Si vous envoyez un message depuis le formulaire de contact, Formspree achemine ce courriel. Il n’est pas lié à votre progrès d’étude.</p>`,
       },
       {
@@ -166,7 +167,8 @@ export function faqItems(
     {
       id: 'privacy',
       question: 'Is this free, and do you collect data?',
-      html: `<p>The site is free to use. There are no accounts, no analytics, and no ads. Progress never leaves the browser unless you export it yourself.</p>
+      html: `<p>The site is free to use. There are no accounts and no ads. Study progress never leaves the browser unless you export it yourself.</p>
+<p>Cloudflare Web Analytics counts visits (page views and referrers). It does not see your answers, province, or flashcards.</p>
 <p>If you send a message from the contact form, Formspree delivers that email. It is not stored with your study progress.</p>`,
     },
     {
