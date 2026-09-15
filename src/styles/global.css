@@ -1733,6 +1733,47 @@ h3 {
   color: var(--ink);
 }
 
+/* confirm dialog */
+
+.modal {
+  width: min(30rem, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.modal::backdrop {
+  background: rgb(9 13 20 / 55%);
+  backdrop-filter: blur(0.15rem);
+}
+
+.modal-card {
+  padding: 1.4rem 1.5rem;
+}
+
+.modal-body {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .modal[open] {
+    animation: enter 200ms ease-out;
+  }
+}
+
 .officials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));

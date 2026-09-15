@@ -209,8 +209,13 @@ const en: Dict = {
   'settings.resetOk': 'Progress reset.',
   'settings.importConfirm':
     'Importing will replace the progress saved on this device. Continue?',
+  'settings.importTitle': 'Replace saved progress?',
+  'settings.importCta': 'Import and replace',
   'settings.resetConfirm':
     'Reset quiz history, flashcards, and missed questions? Your name, province, language, and display settings will be kept.',
+  'settings.resetTitle': 'Reset progress?',
+  'settings.resetCta': 'Reset progress',
+  'settings.cancel': 'Cancel',
   'settings.importFail': 'Could not save imported progress in this browser.',
   'settings.importJson': 'That file could not be read as JSON.',
   'settings.importInvalid': 'That file is not a progress export from this app.',
@@ -541,8 +546,13 @@ const fr: Dict = {
   'settings.resetOk': 'Progrès réinitialisé.',
   'settings.importConfirm':
     'L’importation remplacera le progrès enregistré sur cet appareil. Continuer?',
+  'settings.importTitle': 'Remplacer le progrès enregistré?',
+  'settings.importCta': 'Importer et remplacer',
   'settings.resetConfirm':
     'Réinitialiser l’historique, les cartes et les erreurs? Votre nom, province, langue et affichage seront conservés.',
+  'settings.resetTitle': 'Réinitialiser le progrès?',
+  'settings.resetCta': 'Réinitialiser',
+  'settings.cancel': 'Annuler',
   'settings.importFail': 'Impossible d’enregistrer le progrès importé dans ce navigateur.',
   'settings.importJson': 'Ce fichier n’a pas pu être lu comme JSON.',
   'settings.importInvalid': 'Ce fichier n’est pas une exportation de progrès de cette application.',

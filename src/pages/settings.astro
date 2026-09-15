@@ -223,6 +223,37 @@ import { withBase } from '../lib/paths';
       <p class="banner" x-show="error" x-text="error" x-cloak></p>
     </section>
 
+    <dialog
+      class="modal"
+      x-ref="confirm"
+      aria-labelledby="confirm-title"
+      aria-describedby="confirm-body"
+      @close="settleConfirm()"
+      @click.self="closeConfirm(false)"
+    >
+      <div class="modal-card">
+        <h2 class="modal-title" id="confirm-title" x-text="prompt.title"></h2>
+        <p class="modal-body" id="confirm-body" x-text="prompt.body"></p>
+        <div class="modal-actions">
+          <button
+            class="button"
+            type="button"
+            @click="closeConfirm(false)"
+            x-text="$store.i18n.t('settings.cancel')"
+          >
+            Cancel
+          </button>
+          <button
+            class="button button-primary"
+            type="button"
+            @click="closeConfirm(true)"
+            x-text="prompt.cta"
+          >
+          </button>
+        </div>
+      </div>
+    </dialog>
+
     <section class="card disclaimer" aria-labelledby="about-heading">
       <span class="sq"><Icon name="info" /></span>
       <div>

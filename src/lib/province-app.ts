@@ -59,6 +59,12 @@ type LearnerStore = {
   name: string;
 };
 
+type ConfirmPrompt = {
+  title: string;
+  body: string;
+  cta: string;
+};
+
 export function settingsApp() {
   return {
     options: regionOptions,
@@ -72,9 +78,49 @@ export function settingsApp() {
     displayName: '',
     nameMax: DISPLAY_NAME_MAX,
     locale: 'en' as Locale,
+    prompt: { title: '', body: '', cta: '' } as ConfirmPrompt,
 
     tx(key: string, vars?: Record<string, string | number>) {
       return t(key, this.locale, vars);
+    },
+
+    dialog(): HTMLDialogElement | null {
+      const refs = (this as { $refs?: Record<string, HTMLElement | undefined> }).$refs;
+      return (refs?.confirm as HTMLDialogElement | undefined) ?? null;
+    },
+
+    /* Resolved by settleConfirm, so the caller can await the user's choice. */
+    settle: null as ((confirmed: boolean) => void) | null,
+    choice: false,
+
+    askConfirm(prompt: ConfirmPrompt): Promise<boolean> {
+      const dialog = this.dialog();
+      if (!dialog?.showModal) {
+        return Promise.resolve(window.confirm(prompt.body));
+      }
+      this.prompt = prompt;
+      this.choice = false;
+      return new Promise<boolean>((resolve) => {
+        this.settle = resolve;
+        dialog.showModal();
+      });
+    },
+
+    closeConfirm(confirmed: boolean) {
+      this.choice = confirmed;
+      const dialog = this.dialog();
+      if (dialog?.open) {
+        dialog.close();
+      } else {
+        this.settleConfirm();
+      }
+    },
+
+    /* The dialog's own close event, so Escape and the backdrop land here too. */
+    settleConfirm() {
+      const settle = this.settle;
+      this.settle = null;
+      settle?.(this.choice);
     },
 
     init() {
@@ -148,9 +194,12 @@ export function settingsApp() {
       if (!file) {
         return;
       }
-      if (
-        !window.confirm(this.tx('settings.importConfirm'))
-      ) {
+      const confirmed = await this.askConfirm({
+        title: this.tx('settings.importTitle'),
+        body: this.tx('settings.importConfirm'),
+        cta: this.tx('settings.importCta'),
+      });
+      if (!confirmed) {
         return;
       }
       try {
@@ -191,10 +240,13 @@ export function settingsApp() {
       }
     },
 
-    reset() {
-      if (
-        !window.confirm(this.tx('settings.resetConfirm'))
-      ) {
+    async reset() {
+      const confirmed = await this.askConfirm({
+        title: this.tx('settings.resetTitle'),
+        body: this.tx('settings.resetConfirm'),
+        cta: this.tx('settings.resetCta'),
+      });
+      if (!confirmed) {
         return;
       }
       const next = resetProgress(true);
