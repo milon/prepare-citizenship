@@ -6,31 +6,63 @@ interface Props {
   id: string;
   /** i18n key used while idle. */
   labelKey: string;
-  /** Alpine click handler expression. */
-  onClick: string;
+  /** Alpine click handler expression (practice, cards, etc.). */
+  onClick?: string;
+  /**
+   * Literal chapter speak id. When set, click is handled natively so Web Speech
+   * keeps the user-gesture (Alpine @click can lose it in some browsers).
+   */
+  chapterId?: string;
 }
 
-const { id, labelKey, onClick } = Astro.props;
+const { id, labelKey, onClick = '', chapterId } = Astro.props;
 ---
 
-<button
-  class="icon-button prompt-speak"
-  type="button"
-  x-show="$store.speech.canSpeak()"
-  x-cloak
-  :class={`{ 'is-loading': $store.speech.isLoading(${id}), 'is-playing': $store.speech.isPlaying(${id}) }`}
-  :aria-pressed={`$store.speech.isActive(${id}).toString()`}
-  :aria-busy={`$store.speech.isLoading(${id}).toString()`}
-  @click={onClick}
-  :aria-label={`$store.speech.isLoading(${id}) ? $store.i18n.t('speech.loading') : $store.speech.isPlaying(${id}) ? $store.i18n.t('speech.stop') : $store.i18n.t('${labelKey}')`}
->
-  <span x-show={`$store.speech.isLoading(${id})`} x-cloak>
-    <Icon name="loader" class="speak-spinner" />
-  </span>
-  <span x-show={`$store.speech.isPlaying(${id})`} x-cloak>
-    <Icon name="stop" />
-  </span>
-  <span x-show={`!$store.speech.isActive(${id})`}>
-    <Icon name="speaker" />
-  </span>
-</button>
+{
+  chapterId ? (
+    <button
+      class="icon-button prompt-speak"
+      type="button"
+      x-show="$store.speech.canSpeak()"
+      x-cloak
+      data-pc-speak="chapter"
+      data-pc-speak-id={chapterId}
+      :class={`{ 'is-loading': $store.speech.isLoading(${id}), 'is-playing': $store.speech.isPlaying(${id}) }`}
+      :aria-pressed={`$store.speech.isActive(${id}).toString()`}
+      :aria-busy={`$store.speech.isLoading(${id}).toString()`}
+      :aria-label={`$store.speech.isLoading(${id}) ? $store.i18n.t('speech.loading') : $store.speech.isPlaying(${id}) ? $store.i18n.t('speech.stop') : $store.i18n.t('${labelKey}')`}
+    >
+      <span x-show={`$store.speech.isLoading(${id})`} x-cloak>
+        <Icon name="loader" class="speak-spinner" />
+      </span>
+      <span x-show={`$store.speech.isPlaying(${id})`} x-cloak>
+        <Icon name="stop" />
+      </span>
+      <span x-show={`!$store.speech.isActive(${id})`}>
+        <Icon name="speaker" />
+      </span>
+    </button>
+  ) : (
+    <button
+      class="icon-button prompt-speak"
+      type="button"
+      x-show="$store.speech.canSpeak()"
+      x-cloak
+      :class={`{ 'is-loading': $store.speech.isLoading(${id}), 'is-playing': $store.speech.isPlaying(${id}) }`}
+      :aria-pressed={`$store.speech.isActive(${id}).toString()`}
+      :aria-busy={`$store.speech.isLoading(${id}).toString()`}
+      @click={onClick}
+      :aria-label={`$store.speech.isLoading(${id}) ? $store.i18n.t('speech.loading') : $store.speech.isPlaying(${id}) ? $store.i18n.t('speech.stop') : $store.i18n.t('${labelKey}')`}
+    >
+      <span x-show={`$store.speech.isLoading(${id})`} x-cloak>
+        <Icon name="loader" class="speak-spinner" />
+      </span>
+      <span x-show={`$store.speech.isPlaying(${id})`} x-cloak>
+        <Icon name="stop" />
+      </span>
+      <span x-show={`!$store.speech.isActive(${id})`}>
+        <Icon name="speaker" />
+      </span>
+    </button>
+  )
+}

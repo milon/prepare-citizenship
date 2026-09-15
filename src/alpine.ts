@@ -22,6 +22,7 @@ import {
   localizedChapterTitle,
   localizedRegionLabel,
   pickLocalized,
+  stopSpeaking,
   subscribeSpeak,
   toggleSpeak,
   t,
@@ -63,7 +64,21 @@ type SpeechStore = {
   isLoading(id: string): boolean;
   isPlaying(id: string): boolean;
   isActive(id: string): boolean;
+  speak(text: string, id: string): void;
+  speakChapter(root: HTMLElement, explicitId?: string): void;
 };
+
+function chapterSpeechText(root: HTMLElement, locale: Locale): string {
+  const langClass = locale === 'fr' ? 'lang-fr' : 'lang-en';
+  return [
+    root.querySelector(`h1.${langClass}`),
+    root.querySelector(`p.lede.${langClass}`),
+    root.querySelector(`.prose.${langClass}`),
+  ]
+    .map((node) => node?.textContent?.replace(/\s+/g, ' ').trim())
+    .filter((value): value is string => Boolean(value))
+    .join('\n\n');
+}
 
 export default (Alpine: Alpine) => {
   Alpine.store('storage', {
@@ -110,6 +125,22 @@ export default (Alpine: Alpine) => {
     isActive(id: string) {
       return this.id === id && (this.playing || this.loading);
     },
+    speak(text: string, id: string) {
+      const locale = (Alpine.store('i18n') as I18nStore).locale;
+      toggleSpeak(text, locale, id);
+    },
+    speakChapter(root: HTMLElement, explicitId?: string) {
+      const locale = (Alpine.store('i18n') as I18nStore).locale;
+      const id =
+        explicitId ||
+        root.dataset.speakId ||
+        `chapter:${window.location.pathname.replace(/\/+$/, '').split('/').pop()}`;
+      const text = chapterSpeechText(root, locale);
+      if (!text) {
+        return;
+      }
+      toggleSpeak(text, locale, id);
+    },
   } satisfies SpeechStore);
   subscribeSpeak((state) => {
     const store = Alpine.store('speech') as SpeechStore;
@@ -117,6 +148,64 @@ export default (Alpine: Alpine) => {
     store.loading = state.loading;
     store.id = state.id;
   });
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    window.speechSynthesis.getVoices();
+    window.speechSynthesis.addEventListener('voiceschanged', () => {
+      window.speechSynthesis.getVoices();
+    });
+    // Full page navigations and tab discard should never leave speech running.
+    window.addEventListener('pagehide', () => {
+      stopSpeaking();
+    });
+    document.addEventListener(
+      'click',
+      (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) {
+          return;
+        }
+
+        // Native chapter speak — same call stack as the user gesture (required by
+        // Web Speech in Safari/Chrome). Must run before link handling.
+        const speakBtn = target.closest('[data-pc-speak="chapter"]');
+        if (speakBtn instanceof HTMLElement) {
+          const root =
+            speakBtn.closest<HTMLElement>('[data-speak-id]') ||
+            speakBtn.closest<HTMLElement>('.chapter-article');
+          if (root) {
+            const id = speakBtn.dataset.pcSpeakId || root.dataset.speakId;
+            (Alpine.store('speech') as SpeechStore).speakChapter(root, id);
+          }
+          return;
+        }
+
+        const link = target.closest('a[href]');
+        if (!(link instanceof HTMLAnchorElement)) {
+          return;
+        }
+        if (link.target === '_blank' || link.hasAttribute('download')) {
+          return;
+        }
+        const href = link.getAttribute('href');
+        if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+          return;
+        }
+        try {
+          const url = new URL(link.href, window.location.href);
+          if (url.origin !== window.location.origin) {
+            return;
+          }
+          if (url.pathname === window.location.pathname && url.search === window.location.search) {
+            return;
+          }
+        } catch {
+          return;
+        }
+        stopSpeaking();
+      },
+      true,
+    );
+  }
 
   subscribeStorage((notice) => {
     const store = Alpine.store('storage') as StorageStore;
@@ -178,25 +267,11 @@ export default (Alpine: Alpine) => {
       return canUseSpeech();
     },
     speak(text: string, id: string) {
-      const locale = (Alpine.store('i18n') as I18nStore).locale;
-      toggleSpeak(text, locale, id);
+      (Alpine.store('speech') as SpeechStore).speak(text, id);
     },
-    speakChapter() {
+    speakChapter(explicitId?: string) {
       const root = (this as { $el: HTMLElement }).$el;
-      const locale = (Alpine.store('i18n') as I18nStore).locale;
-      const id = root.dataset.speakId || `chapter:${window.location.pathname}`;
-      const langClass = locale === 'fr' ? 'lang-fr' : 'lang-en';
-      const parts = [
-        root.querySelector(`h1.${langClass}`),
-        root.querySelector(`p.lede.${langClass}`),
-        root.querySelector(`.prose.${langClass}`),
-      ]
-        .map((node) => node?.textContent?.replace(/\s+/g, ' ').trim())
-        .filter((value): value is string => Boolean(value));
-      if (parts.length === 0) {
-        return;
-      }
-      toggleSpeak(parts.join('\n\n'), locale, id);
+      (Alpine.store('speech') as SpeechStore).speakChapter(root, explicitId);
     },
   }));
 

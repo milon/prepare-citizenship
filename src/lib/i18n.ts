@@ -994,6 +994,8 @@ export function applyDocumentLocale(locale: Locale) {
 }
 
 let speakKeepAlive = 0 as number | 0;
+let speakTimers: number[] = [];
+let speakGeneration = 0;
 let activeSpeakId: string | null = null;
 let speakPhase: 'idle' | 'loading' | 'playing' = 'idle';
 
@@ -1012,6 +1014,26 @@ function clearSpeakKeepAlive() {
   }
   window.clearInterval(speakKeepAlive);
   speakKeepAlive = 0;
+}
+
+function clearSpeakTimers() {
+  if (typeof window === 'undefined') {
+    speakTimers = [];
+    return;
+  }
+  for (const timer of speakTimers) {
+    window.clearTimeout(timer);
+  }
+  speakTimers = [];
+}
+
+function queueSpeakTimeout(callback: () => void, delay: number) {
+  const timer = window.setTimeout(() => {
+    speakTimers = speakTimers.filter((id) => id !== timer);
+    callback();
+  }, delay);
+  speakTimers.push(timer);
+  return timer;
 }
 
 function notifySpeakListeners() {
@@ -1080,11 +1102,26 @@ export function subscribeSpeak(listener: SpeakListener): () => void {
 }
 
 export function stopSpeaking() {
+  speakGeneration += 1;
   clearSpeakKeepAlive();
+  clearSpeakTimers();
   if (typeof window !== 'undefined' && window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
   setSpeakSession(null, 'idle');
+}
+
+function pickVoice(lang: string): SpeechSynthesisVoice | null {
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length === 0) {
+    return null;
+  }
+  const exact = voices.find((voice) => voice.lang === lang);
+  if (exact) {
+    return exact;
+  }
+  const prefix = lang.slice(0, 2);
+  return voices.find((voice) => voice.lang.toLowerCase().startsWith(prefix)) ?? null;
 }
 
 function startSpeaking(text: string, locale: Locale, id: string) {
@@ -1097,54 +1134,73 @@ function startSpeaking(text: string, locale: Locale, id: string) {
     return;
   }
 
+  // Invalidate any prior session callbacks before starting a new one.
+  speakGeneration += 1;
+  const generation = speakGeneration;
   clearSpeakKeepAlive();
-  window.speechSynthesis.cancel();
+  clearSpeakTimers();
+  // Only cancel when something is already queued; bare cancel()+speak races in Chromium.
+  if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+    window.speechSynthesis.cancel();
+  }
 
   const lang = locale === 'fr' ? 'fr-CA' : 'en-CA';
+  const voice = pickVoice(lang);
   const startedAt = Date.now();
   const minLoadingMs = 400;
   let index = 0;
   let started = false;
+  let retried = false;
+
+  const stillCurrent = () => generation === speakGeneration && activeSpeakId === id;
 
   const markPlaying = () => {
-    if (activeSpeakId !== id || started) {
+    if (!stillCurrent() || started) {
       return;
     }
     started = true;
     const wait = Math.max(0, minLoadingMs - (Date.now() - startedAt));
-    window.setTimeout(() => {
-      if (activeSpeakId === id) {
+    queueSpeakTimeout(() => {
+      if (stillCurrent()) {
         setSpeakSession(id, 'playing');
       }
     }, wait);
   };
 
   const speakNext = () => {
-    if (activeSpeakId !== id || index >= chunks.length) {
-      if (activeSpeakId === id) {
-        clearSpeakKeepAlive();
-        setSpeakSession(null, 'idle');
-      }
+    if (!stillCurrent()) {
+      return;
+    }
+    if (index >= chunks.length) {
+      clearSpeakKeepAlive();
+      clearSpeakTimers();
+      setSpeakSession(null, 'idle');
       return;
     }
 
     const utterance = new SpeechSynthesisUtterance(chunks[index]);
     utterance.lang = lang;
+    if (voice) {
+      utterance.voice = voice;
+    }
     const chunkIndex = index;
     index += 1;
 
     if (chunkIndex === 0) {
       utterance.onstart = () => {
-        markPlaying();
+        if (stillCurrent()) {
+          markPlaying();
+        }
       };
     }
 
     utterance.onend = () => {
-      if (activeSpeakId !== id) {
+      if (!stillCurrent()) {
         return;
       }
       if (index >= chunks.length) {
         clearSpeakKeepAlive();
+        clearSpeakTimers();
         setSpeakSession(null, 'idle');
         return;
       }
@@ -1156,45 +1212,52 @@ function startSpeaking(text: string, locale: Locale, id: string) {
       if (event.error === 'interrupted' || event.error === 'canceled') {
         return;
       }
-      if (activeSpeakId === id) {
+      if (stillCurrent()) {
         clearSpeakKeepAlive();
+        clearSpeakTimers();
         setSpeakSession(null, 'idle');
       }
     };
 
     window.speechSynthesis.speak(utterance);
-    if (window.speechSynthesis.paused) {
-      window.speechSynthesis.resume();
-    }
-
-    // Some engines skip onstart for short first chunks; still leave loading visible.
-    if (chunkIndex === 0) {
-      window.setTimeout(() => {
-        if (activeSpeakId === id && window.speechSynthesis.speaking) {
-          markPlaying();
-        }
-      }, minLoadingMs + 50);
-    }
+    window.speechSynthesis.resume();
   };
 
   // Mark loading immediately so the spinner can paint before onstart.
   setSpeakSession(id, 'loading');
+  // Kick the voice list; some engines are silent until this runs once.
+  window.speechSynthesis.getVoices();
   // First speak() stays in the click turn so iOS keeps the user-gesture unlock.
   speakNext();
 
+  // If Chromium swallowed the first utterance, retry once while still loading.
+  queueSpeakTimeout(() => {
+    if (!stillCurrent() || started || retried) {
+      return;
+    }
+    if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+      markPlaying();
+      return;
+    }
+    retried = true;
+    index = 0;
+    speakNext();
+  }, 700);
+
   // Chromium can silently pause mid-queue on longer readings.
   speakKeepAlive = window.setInterval(() => {
-    if (activeSpeakId !== id) {
+    if (!stillCurrent()) {
       clearSpeakKeepAlive();
       return;
     }
     if (!window.speechSynthesis.speaking && !window.speechSynthesis.pending) {
       clearSpeakKeepAlive();
+      clearSpeakTimers();
       setSpeakSession(null, 'idle');
       return;
     }
     window.speechSynthesis.resume();
-  }, 8000);
+  }, 5000);
 }
 
 /** Start speaking, or stop if this same id is already active (loading or playing). */

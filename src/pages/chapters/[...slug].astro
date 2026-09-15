@@ -72,7 +72,11 @@ const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
       <p class="lede lang-en">{entry.data.description}</p>
       <p class="lede lang-fr">{frenchEntry.data.description}</p>
       <p class="button-row no-print">
-        <SpeakButton id={`'chapter:${entry.id}'`} labelKey="chapter.hear" onClick="speakChapter" />
+        <SpeakButton
+          id={`'chapter:${entry.id}'`}
+          labelKey="chapter.hear"
+          chapterId={`chapter:${entry.id}`}
+        />
         <button class="button" type="button" onclick="window.print()" data-i18n="chapter.print">
           Print this chapter
         </button>
