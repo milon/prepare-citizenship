@@ -24,5 +24,5 @@ Treaties were not signed across most of B.C. in the nineteenth century the way t
 ## Test traps
 
 - Victoria is the capital; Vancouver is the largest city
-- Yukon is not “the West Coast region” in the study-guide grouping (it is Northern)
+- Yukon is not part of the West Coast region (it is Northern)
 - The railway promise is the classic reason B.C. entered Confederation

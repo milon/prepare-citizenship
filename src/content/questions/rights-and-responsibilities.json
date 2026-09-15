@@ -415,8 +415,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is one responsibility of citizenship listed in the study guide?",
-      "fr": "Quelle est une responsabilité de la citoyenneté énumérée dans le guide d’étude?"
+      "en": "What is one responsibility of Canadian citizenship?",
+      "fr": "Quelle est une responsabilité de la citoyenneté canadienne?"
     },
     "options": [
       {
@@ -471,8 +471,8 @@
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The study guide treats voting as both a democratic right and a civic responsibility of citizens.",
-      "fr": "Le guide d’étude présente le vote à la fois comme un droit démocratique et comme une responsabilité civique des citoyens."
+      "en": "Voting is both a democratic right and a civic responsibility of citizens.",
+      "fr": "Le vote est à la fois un droit démocratique et une responsabilité civique des citoyens."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -510,8 +510,8 @@
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The guide notes that men may be subject to military service in wartime. Canada has not used conscription for many decades, but the historic duty is still taught.",
-      "fr": "Le guide signale que les hommes peuvent être assujettis au service militaire en temps de guerre. Le Canada n’a pas eu recours à la conscription depuis des décennies, mais ce devoir historique est toujours enseigné."
+      "en": "Canada has not used conscription for many decades, but the historic duty is still taught.",
+      "fr": "Le Canada n’a pas eu recours à la conscription depuis des décennies, mais ce devoir historique est toujours enseigné."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -668,8 +668,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Helping others in the community is presented in the guide as:",
-      "fr": "Aider les autres dans la collectivité est présenté dans le guide comme :"
+      "en": "Helping others in the community is best described as:",
+      "fr": "Aider les autres dans la communauté se décrit surtout comme :"
     },
     "options": [
       {
@@ -919,8 +919,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide asks citizens to help care for the natural and cultural heritage of the country, not only to claim rights.",
-      "fr": "Le guide demande aux citoyens de contribuer à protéger le patrimoine naturel et culturel du pays, et pas seulement de revendiquer des droits."
+      "en": "Protecting and enjoying Canada’s heritage is a responsibility of citizenship.",
+      "fr": "Protéger et apprécier le patrimoine du Canada est une responsabilité de la citoyenneté."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1065,8 +1065,8 @@
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "The guide frames fighting discrimination as a shared civic responsibility, not a task for one office.",
-      "fr": "Le guide présente la lutte contre la discrimination comme une responsabilité civique partagée, et non comme la tâche d’une seule charge publique."
+      "en": "Respecting the rights and differences of others is a responsibility of citizenship.",
+      "fr": "Respecter les droits et les différences des autres est une responsabilité de la citoyenneté."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1357,8 +1357,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide’s list of responsibilities starts with obeying the law. Taxes fund the services the rest of the guide describes.",
-      "fr": "La liste des responsabilités du guide commence par le respect de la loi. Les impôts financent les services décrits dans le reste du guide."
+      "en": "Paying taxes is a responsibility of citizenship; taxes fund public services.",
+      "fr": "Payer ses impôts est une responsabilité de la citoyenneté; les impôts financent les services publics."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1571,8 +1571,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide pairs heritage and environment as things citizens should enjoy and protect.",
-      "fr": "Le guide associe le patrimoine et l’environnement comme des biens que les citoyens doivent apprécier et protéger."
+      "en": "Protecting the environment is a responsibility of citizenship.",
+      "fr": "Protéger l’environnement est une responsabilité de la citoyenneté."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1622,8 +1622,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Volunteering in your community is closest to which citizenship idea in the guide?",
-      "fr": "Le bénévolat dans votre collectivité correspond le mieux à quelle idée de la citoyenneté dans le guide?"
+      "en": "Volunteering in your community is an example of:",
+      "fr": "Le bénévolat dans votre communauté est un exemple de :"
     },
     "options": [
       {
@@ -1649,8 +1649,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide lists helping others as a responsibility. Formal volunteering is one way to live that idea.",
-      "fr": "Le guide énumère l’entraide comme une responsabilité. Le bénévolat encadré est une façon de vivre cette idée."
+      "en": "Formal volunteering is one way to live that idea.",
+      "fr": "Le bénévolat encadré est une façon de vivre cette idée."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },
@@ -1717,8 +1717,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide lists self-reliance and family care as citizenship responsibilities alongside volunteering and obeying the law.",
-      "fr": "Le guide énumère l’autonomie et le soin de la famille parmi les responsabilités de la citoyenneté, avec le bénévolat et le respect de la loi."
+      "en": "Taking care of yourself and your family is a responsibility of citizenship.",
+      "fr": "Prendre soin de soi et de sa famille est une responsabilité de la citoyenneté."
     },
     "source": "Discover Canada — Rights and Responsibilities of Citizenship"
   },

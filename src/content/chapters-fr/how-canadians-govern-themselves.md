@@ -14,7 +14,7 @@ Le Canada est une **[monarchie constitutionnelle](/glossary/#constitutional-mona
 - Le **[premier ministre](/glossary/#prime-minister)** est le **chef du gouvernement** ; c'est le chef du parti capable d'obtenir l'appui de la Chambre des communes.
 - Le **parti au pouvoir** est celui qui conserve la confiance de la Chambre.
 
-Les noms des titulaires changent. Les charges, elles, demeurent. Les noms actuels sont affichés sur cette page à partir d'un fichier daté, pour que les questions ne deviennent pas périmées du jour au lendemain.
+Les noms des titulaires changent. Les charges, elles, demeurent. Les noms actuels sur cette page sont tenus à jour pour que les questions d’exercice restent exactes.
 
 Chaque province a un **[lieutenant-gouverneur](/glossary/#lieutenant-governor)** qui représente la [Couronne](/glossary/#crown). Les territoires, eux, ont des **commissaires**.
 

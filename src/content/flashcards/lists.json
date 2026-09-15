@@ -15,7 +15,10 @@
   {
     "id": "lst-002",
     "chapter": "canadas-regions",
-    "front": { "en": "Name the five Great Lakes.", "fr": "Nommez les cinq Grands Lacs." },
+    "front": {
+      "en": "Name the five Great Lakes.",
+      "fr": "Nommez les cinq Grands Lacs."
+    },
     "back": {
       "en": "Superior, Michigan, Huron, Erie, and Ontario.",
       "fr": "Supérieur, Michigan, Huron, Érié et Ontario."
@@ -64,7 +67,10 @@
   {
     "id": "lst-006",
     "chapter": "canadas-regions",
-    "front": { "en": "Name the three territories.", "fr": "Nommez les trois territoires." },
+    "front": {
+      "en": "Name the three territories.",
+      "fr": "Nommez les trois territoires."
+    },
     "back": {
       "en": "Yukon, Northwest Territories, and Nunavut.",
       "fr": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut."
@@ -140,8 +146,8 @@
     "id": "lst-012",
     "chapter": "canadas-regions",
     "front": {
-      "en": "Name the five study-guide regions and which places they include.",
-      "fr": "Nommez les cinq régions du guide d’étude et les lieux qu’elles comprennent."
+      "en": "Name Canada’s five regions and which places they include.",
+      "fr": "Nommez les cinq régions du Canada et les endroits qu’elles comprennent."
     },
     "back": {
       "en": "Atlantic: NL, PE, NS, NB. Central: Quebec and Ontario. Prairie: Manitoba, Saskatchewan, Alberta. West Coast: British Columbia. North: Yukon, Northwest Territories, Nunavut.",

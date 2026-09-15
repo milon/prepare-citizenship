@@ -14,7 +14,7 @@ Canada is a **[constitutional monarchy](/glossary/#constitutional-monarchy)** an
 - The **[Prime Minister](/glossary/#prime-minister)** is **Head of Government**, leader of the party that can command the House of Commons.
 - The **party in power** is the party that can command confidence in the House.
 
-Names of office-holders change. The offices do not. Current names are listed on this page from a dated file so questions do not go stale overnight.
+Names of office-holders change. The offices do not. Current names on this page are kept up to date so practice questions stay accurate.
 
 Each province has a **[Lieutenant Governor](/glossary/#lieutenant-governor)** representing the [Crown](/glossary/#crown). Territories have commissioners.
 

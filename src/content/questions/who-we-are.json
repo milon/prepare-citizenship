@@ -403,7 +403,7 @@
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Canada spans a huge landmass. Most people live in cities in a relatively narrow band near the U.S. border.",
+      "en": "Canada spans a huge landmass. Most people live in cities in a relatively narrow band near the U.S. Border.",
       "fr": "Le Canada s’étend sur un immense territoire. La plupart des gens vivent dans des villes situées dans une bande relativement étroite près de la frontière américaine."
     },
     "source": "Discover Canada — Who We Are"
@@ -588,7 +588,7 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Punjabi Sikh immigrants arrived in B.C. more than a century ago, faced exclusion, and are now a major community in Greater Vancouver and beyond.",
+      "en": "Punjabi Sikh immigrants arrived in B.C. More than a century ago, faced exclusion, and are now a major community in Greater Vancouver and beyond.",
       "fr": "Des immigrants sikhs du Pendjab sont arrivés en Colombie-Britannique il y a plus d’un siècle, ont subi l’exclusion et forment aujourd’hui une communauté majeure dans le Grand Vancouver et ailleurs."
     },
     "source": "Discover Canada — Who We Are"
@@ -919,8 +919,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Toronto is the most populous city. Ottawa is the national capital. Do not mix the two on the test.",
-      "fr": "Toronto est la ville la plus peuplée. Ottawa est la capitale nationale. Ne confondez pas les deux à l’examen."
+      "en": "Toronto is the most populous city. Ottawa is the national capital.",
+      "fr": "Toronto est la ville la plus peuplée. Ottawa est la capitale nationale. Ne confondez pas les deux"
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -931,8 +931,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A “founding” colonial pair often named in the guide is:",
-      "fr": "Le duo colonial « fondateur » souvent nommé dans le guide est :"
+      "en": "Which two European peoples are often named among Canada’s main colonial founding groups?",
+      "fr": "Quels deux peuples européens sont souvent cités parmi les principaux groupes coloniaux fondateurs du Canada?"
     },
     "options": [
       {
@@ -987,8 +987,8 @@
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Métis are a people with a historic culture and communities, not a casual mixed-ancestry label for the test’s purposes.",
-      "fr": "Les Métis sont un peuple doté d’une culture et de communautés historiques, et non une simple étiquette d’ascendance mixte aux fins de l’examen."
+      "en": "Métis are a people with a historic culture and communities, not a casual mixed-ancestry label.",
+      "fr": "Les Métis sont un peuple doté d’une culture et de communautés historiques, et non une simple étiquette d’ascendance mixte."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1211,8 +1211,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The schools were a grave injustice. The guide is brief; an informed citizen should still know what they were.",
-      "fr": "Les pensionnats ont constitué une grave injustice. Le guide est bref; un citoyen informé devrait tout de même savoir ce qu’ils étaient."
+      "en": "The schools were a grave injustice.",
+      "fr": "Les pensionnats ont constitué une grave injustice."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1279,8 +1279,8 @@
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact for the test.",
-      "fr": "La diversité entre les Premières Nations, les Inuit et les Métis — et entre les Premières Nations elles-mêmes — est un fait de base pour l’examen."
+      "en": "Diversity among First Nations, Inuit, and Métis—and among First Nations themselves—is a basic fact.",
+      "fr": "La diversité entre les Premières Nations, les Inuit et les Métis — et entre les Premières Nations elles-mêmes — est un fait de base."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1795,8 +1795,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Red River and later Prairie settlements are the classic Métis geography. Identity is not a blood-quantum worksheet on the test.",
-      "fr": "La rivière Rouge et les établissements ultérieurs des Prairies forment la géographie métisse classique. L’identité n’est pas une question de quantum de sang aux fins de l’examen."
+      "en": "Red River and later Prairie settlements are the classic Métis geography. Identity is not a blood-quantum worksheet.",
+      "fr": "La rivière Rouge et les établissements ultérieurs des Prairies forment la géographie métisse classique. L’identité n’est pas une question de quantum de sang."
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1873,8 +1873,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Inuit means “the people.” Inuk is the singular. Avoid outdated terms the guide rejects.",
-      "fr": "Inuit signifie « le peuple ». Inuk est le singulier. Évitez les termes désuets que le guide rejette."
+      "en": "Inuit means “the people.” Inuk is the singular. Avoid outdated terms.",
+      "fr": "Inuit signifie « le peuple ». Inuk est le singulier. Évitez les termes désuets que"
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1951,8 +1951,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Band councils govern many reserve matters. Federal, provincial, and treaty relationships still matter, but the guide highlights chiefs and councillors.",
-      "fr": "Les conseils de bande gèrent une grande part des affaires des réserves. Les relations fédérales, provinciales et issues des traités comptent aussi, mais le guide met l’accent sur les chefs et conseillers."
+      "en": "Band councils govern many reserve matters. Federal, provincial, and treaty relationships still matter.",
+      "fr": "Les conseils de bande gèrent une grande part des affaires des réserves. Les relations fédérales, provinciales et issues des traités comptent aussi, mais"
     },
     "source": "Discover Canada — Who We Are"
   },
@@ -1963,8 +1963,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What is the largest religious affiliation in Canada, historically and in census tallies the guide highlights?",
-      "fr": "Quelle est la plus grande affiliation religieuse au Canada, historiquement et dans les dénombrements que le guide met en avant?"
+      "en": "Historically, what has been Canada’s largest religious affiliation?",
+      "fr": "Historiquement, quelle a été la principale appartenance religieuse au Canada?"
     },
     "options": [
       {

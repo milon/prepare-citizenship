@@ -45,8 +45,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "What major Canadian export sector does the study guide highlight?",
-      "fr": "Quel grand secteur d’exportation canadien le guide d’étude met-il en évidence?"
+      "en": "What is a major Canadian export sector?",
+      "fr": "Quel est un important secteur d’exportation canadien?"
     },
     "options": [
       {
@@ -111,7 +111,7 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Geography and supply chains make the U.S. market dominant. Mexico also matters under North American trade rules.",
+      "en": "Geography and supply chains make the U.S. Market dominant. Mexico also matters under North American trade rules.",
       "fr": "La géographie et les chaînes d’approvisionnement rendent le marché américain dominant. Le Mexique compte aussi en vertu des règles commerciales nord-américaines."
     },
     "source": "Discover Canada — Canada's Economy"
@@ -705,8 +705,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide still stresses resources and manufacturing. A serious citizen also sees the service and tech shift.",
-      "fr": "Le guide insiste toujours sur les ressources et la fabrication. Un citoyen attentif remarque aussi le virage vers les services et la technologie."
+      "en": "Canada’s economy mixes natural resources with manufacturing and a large, growing services sector, including information technology.",
+      "fr": "L’économie canadienne combine les ressources naturelles, la fabrication et un vaste secteur des services en croissance, y compris les technologies de l’information."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -734,8 +734,8 @@
     ],
     "correctOptionId": "false",
     "explanation": {
-      "en": "The study guide itself describes different regional economies and different challenges. That unevenness is a testable idea.",
-      "fr": "Le guide d’étude décrit lui-même des économies régionales différentes et des défis différents. Cette inégalité peut faire l’objet d’une question à l’examen."
+      "en": "Canada has different regional economies and different challenges.",
+      "fr": "Cette inégalité peut faire l’objet d’une question"
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -958,8 +958,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Landscapes, cities, and cultural attractions are part of the service economy the guide groups with other industries.",
-      "fr": "Les paysages, les villes et les attractions culturelles font partie de l’économie de services que le guide regroupe avec les autres industries."
+      "en": "Landscapes, cities, and cultural attractions support tourism, which is part of Canada’s service economy.",
+      "fr": "Les paysages, les villes et les attractions culturelles font partie de l’économie de services que"
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -998,7 +998,7 @@
     "correctOptionId": "a",
     "explanation": {
       "en": "The legal title of the agreement has changed. The citizenship-test idea is close economic integration in North America.",
-      "fr": "Le titre officiel de l’accord a changé. Ce qu’il faut retenir pour l’examen, c’est l’étroite intégration économique en Amérique du Nord."
+      "fr": "Le titre officiel de l’accord a changé. Ce qu’il faut retenir c’est l’étroite intégration économique en Amérique du Nord."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1026,7 +1026,7 @@
     ],
     "correctOptionId": "true",
     "explanation": {
-      "en": "Do not mix the Bank of Canada with the Royal Bank or other commercial banks. They play different roles.",
+      "en": "They play different roles.",
       "fr": "Ne confondez pas la Banque du Canada avec la Banque Royale ou les autres banques commerciales : leurs rôles diffèrent."
     },
     "source": "Discover Canada — Canada's Economy"
@@ -1038,7 +1038,7 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Softwood lumber is a recurring Canada–U.S. trade issue because:",
+      "en": "Softwood lumber is a recurring Canada–U.S. Trade issue because:",
       "fr": "Le bois d’œuvre revient constamment dans les différends commerciaux entre le Canada et les États-Unis parce que :"
     },
     "options": [
@@ -1464,8 +1464,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The citizenship guide still walks through those classic exports before services took over employment.",
-      "fr": "Le guide de citoyenneté passe encore en revue ces exportations classiques, antérieures à la domination des services dans l’emploi."
+      "en": "The staples idea describes how Canada’s early economy relied on exporting raw products such as fur, timber, wheat, and minerals.",
+      "fr": "L’idée des « staples » décrit comment l’économie canadienne a longtemps reposé sur l’exportation de produits bruts comme la fourrure, le bois, le blé et les minéraux."
     },
     "source": "Discover Canada — Canada's Economy"
   },
@@ -1515,8 +1515,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "A balanced view of Canada’s economy for the test includes:",
-      "fr": "Pour l’examen, une vision équilibrée de l’économie canadienne comprend :"
+      "en": "Canada’s economy is best described as including:",
+      "fr": "L’économie du Canada comprend surtout :"
     },
     "options": [
       {
@@ -1581,7 +1581,7 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Most Canadians work in services, but resources and manufacturing remain central to the guide’s economic picture.",
+      "en": "Most Canadians work in services, but resources and manufacturing remain central to the official study material’s economic picture.",
       "fr": "La plupart des Canadiens travaillent dans les services, mais les ressources et la fabrication restent centrales dans le portrait économique du guide."
     },
     "source": "Discover Canada — Canada's Economy"

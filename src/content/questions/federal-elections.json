@@ -1398,8 +1398,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Why does the citizenship guide care that you know how to vote?",
-      "fr": "Pourquoi le guide de citoyenneté tient-il à ce que vous sachiez comment voter?"
+      "en": "Why is knowing how to vote important for Canadian citizens?",
+      "fr": "Pourquoi est-il important pour les citoyens canadiens de savoir comment voter?"
     },
     "options": [
       {
@@ -1425,8 +1425,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Knowing the mechanics is how you use the right. Staying home is legal; it is not the civic ideal the guide teaches.",
-      "fr": "Connaître la mécanique du vote, c’est ce qui permet d’exercer le droit. Rester à la maison est légal, mais ce n’est pas l’idéal civique enseigné par le guide."
+      "en": "Knowing how elections work is how you use the right to vote. Staying home is legal, but it is not the civic ideal expected of citizens.",
+      "fr": "Connaître la mécanique du vote permet d’exercer ce droit. Rester à la maison est légal, mais ce n’est pas l’idéal civique attendu des citoyens."
     },
     "source": "Discover Canada — Federal Elections"
   },

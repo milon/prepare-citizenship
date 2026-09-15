@@ -162,8 +162,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "In the study guide’s grouping, Atlantic Canada includes:",
-      "fr": "Selon le regroupement du guide d’étude, le Canada atlantique comprend :"
+      "en": "Which provinces make up Atlantic Canada?",
+      "fr": "Quelles provinces forment le Canada atlantique?"
     },
     "options": [
       {
@@ -189,8 +189,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Those four provinces face the Atlantic. Quebec is Central Canada in the guide, not Atlantic.",
-      "fr": "Ces quatre provinces bordent l’Atlantique. Dans le guide, le Québec fait partie du Canada central et non de la région atlantique."
+      "en": "Those four provinces face the Atlantic. Quebec is Central Canada in the official study material, not Atlantic.",
+      "fr": "Ces quatre provinces bordent l’Atlantique. Le Québec fait partie du Canada central, non de la région atlantique."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -201,8 +201,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Central Canada, in the official study-guide regions, means:",
-      "fr": "Dans les régions du guide d’étude officiel, le Canada central désigne :"
+      "en": "Central Canada includes which provinces?",
+      "fr": "Le Canada central comprend quelles provinces?"
     },
     "options": [
       {
@@ -279,8 +279,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "The West Coast region in the guide is:",
-      "fr": "Dans le guide, la région de la côte du Pacifique correspond :"
+      "en": "Which province is Canada’s West Coast region?",
+      "fr": "Quelle province forme la région de la côte Ouest du Canada?"
     },
     "options": [
       {
@@ -531,7 +531,7 @@
     "correctOptionId": "b",
     "explanation": {
       "en": "Quebec City is the capital. Montreal is the largest city. Mixing them is a classic test trap.",
-      "fr": "La ville de Québec est la capitale; Montréal est la plus grande ville. Les confondre est un piège classique à l’examen."
+      "fr": "La ville de Québec est la capitale; Montréal est la plus grande ville. Les confondre est un piège classique"
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -725,7 +725,7 @@
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Calgary is larger; Edmonton is the seat of government. The Rockies lie on the B.C. boundary.",
+      "en": "Calgary is larger; Edmonton is the seat of government. The Rockies lie on the B.C. Boundary.",
       "fr": "Calgary est plus grande, tandis qu’Edmonton est le siège du gouvernement. Les Rocheuses longent la frontière avec la Colombie-Britannique."
     },
     "source": "Discover Canada — Canada's Regions"
@@ -764,7 +764,7 @@
     ],
     "correctOptionId": "b",
     "explanation": {
-      "en": "Regina is the capital. Saskatoon is the largest city. Wheat and potash are classic study-guide hooks.",
+      "en": "Regina is the capital. Saskatoon is the largest city. Wheat and potash are well-known regional facts.",
       "fr": "Regina est la capitale; Saskatoon est la plus grande ville. Le blé et la potasse sont les repères classiques du guide d’étude."
     },
     "source": "Discover Canada — Canada's Regions"
@@ -1166,8 +1166,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Yukon’s classic historic event in the study guide is:",
-      "fr": "Dans le guide d’étude, l’événement historique classique du Yukon est :"
+      "en": "Which historic event is Yukon especially known for?",
+      "fr": "Quel événement historique le Yukon est-il surtout connu pour?"
     },
     "options": [
       {
@@ -1877,14 +1877,14 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "If a citizenship question asks about “your region,” it often wants:",
-      "fr": "Si une question de l’examen porte sur « votre région », on attend souvent :"
+      "en": "Besides national facts, what should you know about your own province or territory?",
+      "fr": "Outre les faits nationaux, que devez-vous connaître au sujet de votre propre province ou territoire?"
     },
     "options": [
       {
         "id": "a",
-        "en": "Your province or territory’s capital and a local geographic or historic hook",
-        "fr": "La capitale de votre province ou territoire et un repère géographique ou historique local"
+        "en": "Your capital and a distinctive geographic or historic fact",
+        "fr": "Votre capitale et un fait géographique ou historique distinctif"
       },
       {
         "id": "b",
@@ -1904,8 +1904,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "National facts first, then lock in your capital city and one distinctive fact. This app tags such items by province code.",
-      "fr": "Retenez d’abord les faits nationaux, puis mémorisez votre capitale et un fait distinctif. L’application classe ces questions selon le code de la province."
+      "en": "You should know your capital and at least one distinctive geographic or historic fact about where you live, in addition to national facts.",
+      "fr": "Vous devez connaître votre capitale et au moins un fait géographique ou historique distinctif sur l’endroit où vous vivez, en plus des faits nationaux."
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -2547,8 +2547,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Canada faces three oceans. Hudson Bay is a huge inland sea, but it is not counted as a fourth ocean on the test.",
-      "fr": "Le Canada donne sur trois océans. La baie d’Hudson est une immense mer intérieure, mais elle n’est pas comptée comme un quatrième océan à l’examen."
+      "en": "Canada faces three oceans. Hudson Bay is a huge inland sea, but it is not counted as a fourth ocean.",
+      "fr": "Le Canada donne sur trois océans. La baie d’Hudson est une immense mer intérieure, mais elle n’est pas comptée comme un quatrième océan"
     },
     "source": "Discover Canada — Canada's Regions"
   },
@@ -2559,8 +2559,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Name the five regions of Canada used in the official study guide.",
-      "fr": "Nommez les cinq régions du Canada utilisées dans le guide d’étude officiel."
+      "en": "What are the five regions of Canada?",
+      "fr": "Quelles sont les cinq régions du Canada?"
     },
     "options": [
       {
@@ -2586,7 +2586,7 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Memorize the five-region list exactly as the guide groups them, then learn which provinces sit in each.",
+      "en": "Canada is grouped into five regions: Atlantic, Central, Prairie, West Coast, and North. Learn which provinces and territories sit in each.",
       "fr": "Mémorisez exactement la liste des cinq régions du guide, puis retenez quelles provinces s’y trouvent."
     },
     "source": "Discover Canada — Canada's Regions"
@@ -2898,8 +2898,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3054,8 +3054,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3210,8 +3210,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3366,8 +3366,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3522,8 +3522,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3678,8 +3678,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3834,8 +3834,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -3885,29 +3885,29 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is the leader of the Opposition in the Northwest Territories?",
-      "fr": "Qui est le chef de l’opposition dans les Territoires du Nord-Ouest?"
+      "en": "Do the Northwest Territories have a party-based Official Opposition?",
+      "fr": "Les Territoires du Nord-Ouest ont-ils une opposition officielle fondée sur les partis?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{oppositionLeader}}",
-        "fr": "{{oppositionLeader}}"
+        "en": "No — members sit as independents under consensus government",
+        "fr": "Non — les députés siègent comme indépendants dans un gouvernement de consensus"
       },
       {
         "id": "b",
-        "en": "Naheed Nenshi",
-        "fr": "Naheed Nenshi"
+        "en": "Yes — the same party system as Alberta",
+        "fr": "Oui — le même système de partis que l’Alberta"
       },
       {
         "id": "c",
-        "en": "John Rustad",
-        "fr": "John Rustad"
+        "en": "Yes — Liberals versus Conservatives only",
+        "fr": "Oui — seulement libéraux contre conservateurs"
       },
       {
         "id": "d",
-        "en": "Obby Khan",
-        "fr": "Obby Khan"
+        "en": "Yes — with senators chosen by parties",
+        "fr": "Oui — avec des sénateurs choisis par les partis"
       }
     ],
     "correctOptionId": "a",
@@ -3924,29 +3924,29 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which political party is in power in the Northwest Territories?",
-      "fr": "Quel parti politique est au pouvoir dans les Territoires du Nord-Ouest?"
+      "en": "How is the Northwest Territories legislature organized?",
+      "fr": "Comment l’assemblée législative des Territoires du Nord-Ouest est-elle organisée?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{governingParty}}",
-        "fr": "{{governingParty}}"
+        "en": "Consensus government — members elected as independents",
+        "fr": "Gouvernement de consensus — députés élus comme indépendants"
       },
       {
         "id": "b",
-        "en": "United Conservative Party",
-        "fr": "Parti conservateur uni"
+        "en": "United Conservative Party majority",
+        "fr": "Majorité du Parti conservateur uni"
       },
       {
         "id": "c",
-        "en": "New Democratic Party",
-        "fr": "Nouveau Parti démocratique"
+        "en": "New Democratic Party majority",
+        "fr": "Majorité du Nouveau Parti démocratique"
       },
       {
         "id": "d",
-        "en": "Liberal Party",
-        "fr": "Parti libéral"
+        "en": "Liberal Party majority",
+        "fr": "Majorité du Parti libéral"
       }
     ],
     "correctOptionId": "a",
@@ -3990,8 +3990,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -4041,29 +4041,29 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Who is the leader of the Opposition in Nunavut?",
-      "fr": "Qui est le chef de l’opposition au Nunavut?"
+      "en": "Do Nunavut’s MLAs sit in party caucuses with an Official Opposition?",
+      "fr": "Les députés du Nunavut siègent-ils en caucus de partis avec une opposition officielle?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{oppositionLeader}}",
-        "fr": "{{oppositionLeader}}"
+        "en": "No — Nunavut uses consensus government without party caucuses",
+        "fr": "Non — le Nunavut fonctionne par consensus, sans caucus de partis"
       },
       {
         "id": "b",
-        "en": "Naheed Nenshi",
-        "fr": "Naheed Nenshi"
+        "en": "Yes — the same party system as Ontario",
+        "fr": "Oui — le même système de partis que l’Ontario"
       },
       {
         "id": "c",
-        "en": "John Rustad",
-        "fr": "John Rustad"
+        "en": "Yes — Liberals versus Conservatives only",
+        "fr": "Oui — seulement libéraux contre conservateurs"
       },
       {
         "id": "d",
-        "en": "Obby Khan",
-        "fr": "Obby Khan"
+        "en": "Yes — with an Official Opposition named by Ottawa",
+        "fr": "Oui — avec une opposition officielle nommée par Ottawa"
       }
     ],
     "correctOptionId": "a",
@@ -4080,29 +4080,29 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which political party is in power in Nunavut?",
-      "fr": "Quel parti politique est au pouvoir au Nunavut?"
+      "en": "How is Nunavut’s legislature organized?",
+      "fr": "Comment l’assemblée législative du Nunavut est-elle organisée?"
     },
     "options": [
       {
         "id": "a",
-        "en": "{{governingParty}}",
-        "fr": "{{governingParty}}"
+        "en": "Consensus government — members elected as independents",
+        "fr": "Gouvernement de consensus — députés élus comme indépendants"
       },
       {
         "id": "b",
-        "en": "United Conservative Party",
-        "fr": "Parti conservateur uni"
+        "en": "United Conservative Party majority",
+        "fr": "Majorité du Parti conservateur uni"
       },
       {
         "id": "c",
-        "en": "New Democratic Party",
-        "fr": "Nouveau Parti démocratique"
+        "en": "New Democratic Party majority",
+        "fr": "Majorité du Nouveau Parti démocratique"
       },
       {
         "id": "d",
-        "en": "Liberal Party",
-        "fr": "Parti libéral"
+        "en": "Liberal Party majority",
+        "fr": "Majorité du Parti libéral"
       }
     ],
     "correctOptionId": "a",
@@ -4146,8 +4146,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -4302,8 +4302,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -4458,8 +4458,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -4614,8 +4614,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },
@@ -4770,8 +4770,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Sitting officials change. As of the last verification date in this app, the Premier is {{premier}}.",
-      "fr": "Les titulaires changent. À la dernière date de vérification dans cette application, le premier ministre est {{premier}}."
+      "en": "Sitting officials change. The Premier is {{premier}}.",
+      "fr": "Les titulaires changent. Le premier ministre est {{premier}}."
     },
     "source": "Discover Canada — Canada’s Regions (current officials)"
   },

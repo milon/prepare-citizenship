@@ -23,7 +23,7 @@ La **capitale nationale** est **Ottawa**. Ne la confondez pas avec Toronto (capi
 | Côte Ouest | Colombie-Britannique |
 | Nord | Yukon, Territoires du Nord-Ouest, Nunavut |
 
-Ouvrez chaque page régionale pour y trouver les capitales, la géographie et quelques faits locaux susceptibles d'être évalués. Si vous choisissez une province ou un territoire dans l'application (phase 2), les examens simulés comprendront des questions associées à ce lieu.
+Ouvrez chaque page régionale pour y trouver les capitales, la géographie et quelques faits locaux utiles. Lorsque vous choisissez une province ou un territoire dans les Réglages, les examens blancs comprennent des questions associées à ce lieu.
 
 ## Les capitales en un coup d'œil
 

@@ -987,8 +987,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The guide stresses fairness and the rule of law. Community processes can sit beside, not instead of, core rights.",
-      "fr": "Le guide insiste sur l’équité et la primauté du droit. Les processus communautaires peuvent s’ajouter aux droits fondamentaux, sans les remplacer."
+      "en": "Community processes can sit beside, not instead of, core rights.",
+      "fr": "Les processus communautaires peuvent s’ajouter aux droits fondamentaux, sans les remplacer."
     },
     "source": "Discover Canada — The Justice System"
   },
@@ -1095,7 +1095,7 @@
     "correctOptionId": "false",
     "explanation": {
       "en": "Quebec’s civil-law tradition is a testable difference. Criminal law is the part that is mainly unified.",
-      "fr": "La tradition civiliste du Québec est une différence susceptible d’être évaluée à l’examen. C’est le droit criminel qui est essentiellement uniforme."
+      "fr": "La tradition civiliste du Québec est une différence susceptible d’être évaluée C’est le droit criminel qui est essentiellement uniforme."
     },
     "source": "Discover Canada — The Justice System"
   },

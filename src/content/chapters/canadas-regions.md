@@ -23,7 +23,7 @@ The **national capital** is **Ottawa**. Do not confuse it with Toronto (Ontarioâ
 | West Coast | British Columbia |
 | North | Yukon, Northwest Territories, Nunavut |
 
-Open each regional page for capitals, geography, and a handful of testable local facts. If you set a province or territory in this app (Phase 2), mock exams will include items tagged for that place.
+Open each regional page for capitals, geography, and a handful of local facts worth knowing. When you choose a province or territory in Settings, mock exams include questions tagged for that place.
 
 ## Capitals at a glance
 

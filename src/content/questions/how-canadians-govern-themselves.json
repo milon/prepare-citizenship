@@ -150,8 +150,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Office-holders change. As of the last verification date in this app, the Prime Minister is {{primeMinister}}.",
-      "fr": "Les titulaires de charge changent. À la dernière date de vérification dans cette application, le premier ministre est {{primeMinister}}."
+      "en": "Office-holders change. The Prime Minister is {{primeMinister}}.",
+      "fr": "Les titulaires de charge changent. Le premier ministre est {{primeMinister}}."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "primeMinister"
@@ -190,8 +190,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The Governor General is {{governorGeneral}}, last verified with the other current office-holders in this app.",
-      "fr": "Le gouverneur général est {{governorGeneral}}, selon la dernière vérification des titulaires de charge dans cette application."
+      "en": "The Governor General is {{governorGeneral}},.",
+      "fr": "Le gouverneur général est {{governorGeneral}},."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "governorGeneral"
@@ -230,8 +230,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "The office is the Monarch. The current person, last verified here, is {{headOfState}}.",
-      "fr": "La charge est celle de souverain. La personne en poste, selon la dernière vérification ici, est {{headOfState}}."
+      "en": "The office is the Monarch. The current person, is {{headOfState}}.",
+      "fr": "La charge est celle de souverain. La personne en poste, est {{headOfState}}."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "headOfState"
@@ -243,8 +243,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which party is currently in power federally, according to this app’s dated file?",
-      "fr": "Quel parti est actuellement au pouvoir au fédéral, selon le fichier daté de cette application?"
+      "en": "Which party currently forms the federal government?",
+      "fr": "Quel parti forme actuellement le gouvernement fédéral?"
     },
     "options": [
       {
@@ -1167,7 +1167,7 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Provincial legislators have other titles (MPP, MLA, MNA, MHA). Do not mix them with MP.",
+      "en": "Provincial legislators have other titles (MPP, MLA, MNA, MHA).",
       "fr": "Les élus provinciaux portent d’autres titres (député provincial, député de l’Assemblée nationale au Québec). Ne les confondez pas avec un député fédéral."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
@@ -1257,7 +1257,7 @@
     "type": "true_false",
     "difficulty": "core",
     "prompt": {
-      "en": "The Prime Minister is chosen by a direct nationwide popular vote for that office, like a U.S. president.",
+      "en": "The Prime Minister is chosen by a direct nationwide popular vote for that office, like a U.S. President.",
       "fr": "Le premier ministre est choisi par un vote populaire direct à l’échelle du pays pour cette charge, comme un président américain."
     },
     "options": [
@@ -1469,8 +1469,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "Appointed until 75 (unless they resign). They are not elected in the federal model taught on the test.",
-      "fr": "Ils sont nommés jusqu’à 75 ans (sauf s’ils démissionnent). Ils ne sont pas élus dans le modèle fédéral enseigné pour l’examen."
+      "en": "Appointed until 75 (unless they resign). They are not elected in the federal model taught.",
+      "fr": "Ils sont nommés jusqu’à 75 ans (sauf s’ils démissionnent). Ils ne sont pas élus dans le modèle fédéral enseigné."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1762,7 +1762,7 @@
     "correctOptionId": "a",
     "explanation": {
       "en": "They are not courts, but they can shape later laws. The test cares that government can study a problem in public.",
-      "fr": "Ce ne sont pas des tribunaux, mais elles peuvent façonner des lois futures. Ce qui compte pour l’examen, c’est que l’État puisse étudier un problème publiquement."
+      "fr": "Ce ne sont pas des tribunaux, mais elles peuvent façonner des lois futures. Ce qui compte c’est que l’État puisse étudier un problème publiquement."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
   },
@@ -1946,8 +1946,8 @@
     ],
     "correctOptionId": "a",
     "explanation": {
-      "en": "MPs elect the Speaker to chair the Commons impartially. As of the last verification date in this app, the Speaker is {{speakerOfTheHouse}}.",
-      "fr": "Les députés élisent le président pour diriger la Chambre de façon impartiale. À la dernière date de vérification dans cette application, le président est {{speakerOfTheHouse}}."
+      "en": "MPs elect the Speaker to chair the Commons impartially. The Speaker is {{speakerOfTheHouse}}.",
+      "fr": "Les députés élisent le président pour diriger la Chambre de façon impartiale. Le président est {{speakerOfTheHouse}}."
     },
     "source": "Discover Canada — How Canadians Govern Themselves",
     "currentFactKey": "speakerOfTheHouse"
