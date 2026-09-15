@@ -810,5 +810,16 @@ export default build(
       e: 'Those are Crown powers. Convention says they follow ministerial advice except in rare controversies.',
       ef: 'Ce sont des pouvoirs de la Couronne. La convention veut qu’ils suivent l’avis ministériel, sauf dans de rares controverses.',
     },
+    {
+      id: 'gov-052',
+      p: 'Who is the current Speaker of the House of Commons?',
+      pf: 'Qui est l’actuel président de la Chambre des communes?',
+      o: ['{{speakerOfTheHouse}}', '{{primeMinister}}', '{{governorGeneral}}', '{{headOfState}}'],
+      of: ['{{speakerOfTheHouse}}', '{{primeMinister}}', '{{governorGeneral}}', '{{headOfState}}'],
+      a: 'a',
+      e: 'MPs elect the Speaker to chair the Commons impartially. As of the last verification date in this app, the Speaker is {{speakerOfTheHouse}}.',
+      ef: 'Les députés élisent le président pour diriger la Chambre de façon impartiale. À la dernière date de vérification dans cette application, le président est {{speakerOfTheHouse}}.',
+      k: 'speakerOfTheHouse',
+    },
   ],
 );

@@ -1911,5 +1911,45 @@
       "fr": "Ce sont des pouvoirs de la Couronne. La convention veut qu’ils suivent l’avis ministériel, sauf dans de rares controverses."
     },
     "source": "Discover Canada — How Canadians Govern Themselves"
+  },
+  {
+    "id": "gov-052",
+    "chapter": "how-canadians-govern-themselves",
+    "region": null,
+    "type": "mcq",
+    "difficulty": "core",
+    "prompt": {
+      "en": "Who is the current Speaker of the House of Commons?",
+      "fr": "Qui est l’actuel président de la Chambre des communes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "en": "{{speakerOfTheHouse}}",
+        "fr": "{{speakerOfTheHouse}}"
+      },
+      {
+        "id": "b",
+        "en": "{{primeMinister}}",
+        "fr": "{{primeMinister}}"
+      },
+      {
+        "id": "c",
+        "en": "{{governorGeneral}}",
+        "fr": "{{governorGeneral}}"
+      },
+      {
+        "id": "d",
+        "en": "{{headOfState}}",
+        "fr": "{{headOfState}}"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": {
+      "en": "MPs elect the Speaker to chair the Commons impartially. As of the last verification date in this app, the Speaker is {{speakerOfTheHouse}}.",
+      "fr": "Les députés élisent le président pour diriger la Chambre de façon impartiale. À la dernière date de vérification dans cette application, le président est {{speakerOfTheHouse}}."
+    },
+    "source": "Discover Canada — How Canadians Govern Themselves",
+    "currentFactKey": "speakerOfTheHouse"
   }
 ]

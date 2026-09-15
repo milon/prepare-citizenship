@@ -29,7 +29,7 @@ The live site is `https://preparecitizenship.ca`. GitHub Pages still builds from
 |----------------------------|---------------------------------------------------------------|
 | `src/content/questions/`   | One JSON file per chapter                                     |
 | `src/content/chapters/`    | Original summaries (Markdown)                                 |
-| `src/content/current.json` | Office-holders (`lastVerified`, PM, GG, Head of State, party) |
+| `src/content/current.json` | Office-holders (`lastVerified`, PM, GG, Speaker, Head of State, party) |
 | `src/content/flashcards/`  | Extra recall cards that are a poor fit as MCQs                |
 
 Questions that name current officials use `{{primeMinister}}`-style tokens and a `currentFactKey` instead of hard-coding names. Update `current.json` when those offices change, then bump `lastVerified`.

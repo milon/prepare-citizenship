@@ -33,6 +33,7 @@ export const CURRENT_FACT_KEYS = [
   'headOfState',
   'governorGeneral',
   'primeMinister',
+  'speakerOfTheHouse',
   'partyInPower',
 ] as const;
 
@@ -134,6 +135,7 @@ export const currentFactsSchema = z.object({
   headOfState: z.string().trim().min(1),
   governorGeneral: z.string().trim().min(1),
   primeMinister: z.string().trim().min(1),
+  speakerOfTheHouse: z.string().trim().min(1),
   partyInPower: z.string().trim().min(1),
 });
 
