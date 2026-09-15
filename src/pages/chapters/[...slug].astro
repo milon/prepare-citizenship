@@ -2,7 +2,10 @@
 import { getCollection, render } from 'astro:content';
 import AnthemPanel from '../../components/AnthemPanel.astro';
 import ChapterNav from '../../components/ChapterNav.astro';
+import Icon from '../../components/Icon.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { OFFICIAL_PDF_URL, OFFICIAL_PDF_URL_FR } from '../../lib/faq';
+import { officialChapterUrl } from '../../lib/official-sources';
 import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
@@ -45,6 +48,9 @@ const previousFr = previous ? frenchById.get(previous.id) : null;
 const nextFr = next ? frenchById.get(next.id) : null;
 
 const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
+
+const officialUrl = officialChapterUrl(entry.data.chapter, 'en');
+const officialUrlFr = officialChapterUrl(entry.data.chapter, 'fr');
 ---
 
 <BaseLayout
@@ -136,6 +142,35 @@ const showOfficials = entry.id === 'how-canadians-govern-themselves' && current;
           </section>
         )
       }
+
+      <section class="card official-source" aria-labelledby="official-source-heading">
+        <span class="sq"><Icon name="info" /></span>
+        <div>
+          <div class="card-head">
+            <h2 id="official-source-heading" data-i18n="chapter.officialTitle">
+              Read more
+            </h2>
+            <p data-i18n="chapter.officialLede">
+              Discover Canada, the official study guide, goes into more detail on this
+              chapter. Open it on Canada.ca, or download the PDF.
+            </p>
+          </div>
+          <p class="button-row">
+            <a class="button lang-en" href={officialUrl} data-i18n="chapter.officialCta">
+              Read this chapter on Canada.ca
+            </a>
+            <a class="button lang-fr" href={officialUrlFr} data-i18n="chapter.officialCta">
+              Lire ce chapitre sur Canada.ca
+            </a>
+            <a class="button lang-en" href={OFFICIAL_PDF_URL} data-i18n="chapter.officialPdf">
+              Discover Canada (PDF)
+            </a>
+            <a class="button lang-fr" href={OFFICIAL_PDF_URL_FR} data-i18n="chapter.officialPdf">
+              Découvrir le Canada (PDF)
+            </a>
+          </p>
+        </div>
+      </section>
 
       <nav class="chapter-pager" aria-label="Chapter">
         {

@@ -376,6 +376,11 @@ const en: Dict = {
   'anthem.english': 'English lyrics',
   'anthem.french': 'French lyrics',
   'home.disclaimer': 'Independent practice, not the official test',
+  'chapter.officialTitle': 'Read more',
+  'chapter.officialLede':
+    'Discover Canada, the official study guide, goes into more detail on this chapter. Open it on Canada.ca, or download the PDF.',
+  'chapter.officialCta': 'Read this chapter on Canada.ca',
+  'chapter.officialPdf': 'Discover Canada (PDF)',
 };
 
 const fr: Dict = {
@@ -705,6 +710,11 @@ const fr: Dict = {
   'anthem.english': 'Paroles anglaises',
   'anthem.french': 'Paroles françaises',
   'home.disclaimer': 'Exercice indépendant, pas l’examen officiel',
+  'chapter.officialTitle': 'En lire plus',
+  'chapter.officialLede':
+    'Découvrir le Canada, le guide d’étude officiel, va plus loin sur ce chapitre. Ouvrez-le sur Canada.ca, ou téléchargez le PDF.',
+  'chapter.officialCta': 'Lire ce chapitre sur Canada.ca',
+  'chapter.officialPdf': 'Découvrir le Canada (PDF)',
 };
 
 const dictionaries: Record<Locale, Dict> = { en, fr };
