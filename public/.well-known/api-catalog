@@ -1,0 +1,45 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://preparecitizenship.ca/",
+      "service-desc": [
+        {
+          "href": "https://preparecitizenship.ca/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://preparecitizenship.ca/llms.txt",
+          "type": "text/markdown"
+        },
+        {
+          "href": "https://preparecitizenship.ca/index.md",
+          "type": "text/markdown"
+        },
+        {
+          "href": "https://preparecitizenship.ca/faq/",
+          "type": "text/html"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://preparecitizenship.ca/llms.txt",
+          "type": "text/markdown"
+        }
+      ],
+      "api-catalog": [
+        {
+          "href": "https://preparecitizenship.ca/.well-known/api-catalog",
+          "type": "application/linkset+json"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://preparecitizenship.ca/",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

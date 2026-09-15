@@ -1,0 +1,29 @@
+# Prepare Citizenship
+
+> Free, offline-capable Canadian citizenship test study site (English and French). Original chapter notes, practice questions, flashcards, and timed mock exams. Not affiliated with IRCC; practice paraphrases only — always use Discover Canada as the official source.
+
+This is a static site with no accounts and no authenticated API. Progress stays in the browser. Prefer the Markdown overview and HTML chapter pages below; mock/practice UIs need a browser.
+
+## Primary
+
+- [Site overview (Markdown)](https://preparecitizenship.ca/index.md): Agent-friendly summary of purpose, features, and key URLs
+- [Home](https://preparecitizenship.ca/): Study dashboard and next recommended step
+- [FAQ](https://preparecitizenship.ca/faq/): Independence from IRCC, mock rules, privacy, offline use
+- [OpenAPI description](https://preparecitizenship.ca/openapi.json): Machine-readable map of public discovery resources
+- [API catalog](https://preparecitizenship.ca/.well-known/api-catalog): RFC 9727 linkset of published services
+
+## Study
+
+- [Chapters](https://preparecitizenship.ca/chapters/): Ten original Discover Canada study summaries plus region pages
+- [Glossary](https://preparecitizenship.ca/glossary/): Key terms for the test
+- [Ceremony](https://preparecitizenship.ca/ceremony/): Citizenship ceremony overview
+- [Flashcards](https://preparecitizenship.ca/flashcards/): Leitner-style recall practice
+- [Practice](https://preparecitizenship.ca/practice/): Chapter quizzes and mixed practice
+- [Mock exam](https://preparecitizenship.ca/mock/): Timed 20-question exam (45 minutes, 15/20 to pass)
+
+## Optional
+
+- [Official study guide (IRCC)](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html): Authoritative Discover Canada material
+- [Discover Canada PDF](https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf): Official PDF
+- [Sitemap](https://preparecitizenship.ca/sitemap-index.xml): All public HTML URLs
+- [robots.txt](https://preparecitizenship.ca/robots.txt): Crawler rules including AI bots

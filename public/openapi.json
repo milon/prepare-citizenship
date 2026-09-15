@@ -1,0 +1,239 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Prepare Citizenship",
+    "description": "Static Canadian citizenship test study site. There is no authenticated HTTP API; this document catalogs public HTML pages and agent-discovery resources. Not affiliated with IRCC.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Prepare Citizenship",
+      "url": "https://preparecitizenship.ca/faq/"
+    },
+    "license": {
+      "name": "Site code — see repository; Discover Canada remains Crown copyright"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://preparecitizenship.ca",
+      "description": "Production static site (GitHub Pages)"
+    }
+  ],
+  "tags": [
+    { "name": "pages", "description": "Human study UI (HTML)" },
+    { "name": "discovery", "description": "Agent and crawler discovery documents" }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "Study dashboard (Today)",
+        "operationId": "getHome",
+        "responses": {
+          "200": {
+            "description": "HTML dashboard",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/index.md": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "Markdown overview of the site",
+        "operationId": "getIndexMarkdown",
+        "responses": {
+          "200": {
+            "description": "Markdown site summary",
+            "content": {
+              "text/markdown": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "llms.txt per llmstxt.org",
+        "operationId": "getLlmsTxt",
+        "responses": {
+          "200": {
+            "description": "Markdown link catalog for agents",
+            "content": {
+              "text/plain": { "schema": { "type": "string" } },
+              "text/markdown": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "This OpenAPI document",
+        "operationId": "getOpenApi",
+        "responses": {
+          "200": {
+            "description": "OpenAPI 3.1 JSON",
+            "content": {
+              "application/json": { "schema": { "type": "object" } },
+              "application/openapi+json": { "schema": { "type": "object" } }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/api-catalog": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "RFC 9727 API catalog (linkset)",
+        "operationId": "getApiCatalog",
+        "responses": {
+          "200": {
+            "description": "Linkset JSON",
+            "content": {
+              "application/linkset+json": { "schema": { "type": "object" } }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/oauth-protected-resource": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "RFC 9728 protected-resource metadata (public site, no auth)",
+        "operationId": "getOauthProtectedResource",
+        "responses": {
+          "200": {
+            "description": "OAuth protected resource metadata",
+            "content": {
+              "application/json": { "schema": { "type": "object" } }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/oauth-authorization-server": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "RFC 8414 authorization-server metadata (no OAuth issued)",
+        "operationId": "getOauthAuthorizationServer",
+        "responses": {
+          "200": {
+            "description": "OAuth authorization server metadata stub",
+            "content": {
+              "application/json": { "schema": { "type": "object" } }
+            }
+          }
+        }
+      }
+    },
+    "/sitemap-index.xml": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "XML sitemap index",
+        "operationId": "getSitemapIndex",
+        "responses": {
+          "200": {
+            "description": "Sitemap index",
+            "content": {
+              "application/xml": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/robots.txt": {
+      "get": {
+        "tags": ["discovery"],
+        "summary": "Robots exclusion with AI bot rules",
+        "operationId": "getRobotsTxt",
+        "responses": {
+          "200": {
+            "description": "robots.txt",
+            "content": {
+              "text/plain": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/chapters/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "Chapter list",
+        "operationId": "getChapters",
+        "responses": {
+          "200": {
+            "description": "HTML chapter index",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/faq/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "FAQ",
+        "operationId": "getFaq",
+        "responses": {
+          "200": {
+            "description": "HTML FAQ with JSON-LD",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/mock/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "Timed mock exam UI",
+        "operationId": "getMock",
+        "responses": {
+          "200": {
+            "description": "HTML mock exam app shell",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/flashcards/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "Flashcards UI",
+        "operationId": "getFlashcards",
+        "responses": {
+          "200": {
+            "description": "HTML flashcards app shell",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "/practice/": {
+      "get": {
+        "tags": ["pages"],
+        "summary": "Practice quizzes UI",
+        "operationId": "getPractice",
+        "responses": {
+          "200": {
+            "description": "HTML practice app shell",
+            "content": {
+              "text/html": { "schema": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

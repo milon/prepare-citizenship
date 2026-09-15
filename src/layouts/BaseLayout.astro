@@ -13,19 +13,54 @@ interface Props {
   titleFr?: string;
   descriptionFr?: string;
   contextFr?: string;
+  /** Extra JSON-LD graph nodes merged with the default WebSite / WebPage. */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, context, titleFr = title, descriptionFr = description, contextFr = context ?? titleFr } = Astro.props;
+const { title, description, context, titleFr = title, descriptionFr = description, contextFr = context ?? titleFr, jsonLd } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const homeHref = base.endsWith('/') ? base : `${base}/`;
 const path = Astro.url.pathname;
+const siteOrigin = Astro.site?.origin ?? 'https://preparecitizenship.ca';
 
 const canonical = new URL(path, Astro.site).href;
 const ogImage = new URL(withBase('/og.png'), Astro.site).href;
+const llmsUrl = new URL(withBase('/llms.txt'), Astro.site).href;
+const indexMdUrl = new URL(withBase('/index.md'), Astro.site).href;
+const apiCatalogUrl = new URL(withBase('/.well-known/api-catalog'), Astro.site).href;
+const openApiUrl = new URL(withBase('/openapi.json'), Astro.site).href;
+const sitemapUrl = new URL(withBase('/sitemap-index.xml'), Astro.site).href;
 
 const isHome = path === homeHref || path === base;
 const ogTitle = isHome ? title : `${title} · Prepare Citizenship`;
 const ogTitleFr = isHome ? titleFr : `${titleFr} · Prepare Citizenship`;
+
+const extraLd = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+const siteJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteOrigin}/#website`,
+      name: 'Prepare Citizenship',
+      url: `${siteOrigin}/`,
+      description:
+        'Study for the Canadian citizenship test with original chapter lessons and a growing question bank.',
+      inLanguage: ['en-CA', 'fr-CA'],
+      isAccessibleForFree: true,
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${canonical}#webpage`,
+      url: canonical,
+      name: title,
+      description,
+      isPartOf: { '@id': `${siteOrigin}/#website` },
+      inLanguage: ['en-CA', 'fr-CA'],
+    },
+    ...extraLd,
+  ],
+});
 
 const nav = [
   { href: homeHref, label: 'Today', i18n: 'nav.today', icon: 'today', current: isHome, tab: true },
@@ -127,6 +162,16 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
     <meta name="apple-mobile-web-app-title" content="Citizenship" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <link rel="canonical" href={canonical} />
+    <link rel="describedby" href={llmsUrl} type="text/markdown" title="llms.txt" />
+    <link rel="alternate" type="text/markdown" href={indexMdUrl} title="Markdown overview" />
+    <link
+      rel="api-catalog"
+      href={apiCatalogUrl}
+      type="application/linkset+json"
+      title="API catalog"
+    />
+    <link rel="service-desc" href={openApiUrl} type="application/openapi+json" title="OpenAPI" />
+    <link rel="sitemap" type="application/xml" href={sitemapUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Prepare Citizenship" />
     <meta property="og:title" content={ogTitle} />
@@ -148,6 +193,7 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
     <link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <title>{title}</title>
+    <script is:inline type="application/ld+json" set:html={siteJsonLd} />
     <script src="../pwa.ts"></script>
     <script is:inline>
       (function () {

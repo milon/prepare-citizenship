@@ -16,6 +16,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
     "alpinejs": "^3.17.2",
     "astro": "^7.3.2",
     "zod": "^4.6.5"

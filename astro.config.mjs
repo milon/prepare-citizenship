@@ -1,5 +1,6 @@
 // @ts-check
 import alpinejs from '@astrojs/alpinejs';
+import sitemap from '@astrojs/sitemap';
 import AstroPWA from '@vite-pwa/astro';
 import { defineConfig } from 'astro/config';
 
@@ -15,6 +16,9 @@ export default defineConfig({
   output: 'static',
   integrations: [
     alpinejs({ entrypoint: './src/alpine.ts' }),
+    sitemap({
+      filter: (page) => !page.endsWith('/404/'),
+    }),
     AstroPWA({
       registerType: 'autoUpdate',
       injectRegister: false,

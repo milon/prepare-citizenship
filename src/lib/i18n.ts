@@ -375,6 +375,7 @@ const en: Dict = {
   'home.mockHowTitle': 'How mock exams work',
   'home.mockHowLede':
     'Mocks are generated when you start—not fixed papers. Each attempt draws 20 questions across all 10 chapters, includes your province or territory, and avoids earlier mock questions while fresh ones remain.',
+  'home.mockRules': 'Mock exam rules',
   'home.mockTime': '45 minutes',
   'home.mockPass': '15/20 to pass',
   'home.mockUnlimited': 'Unlimited fresh attempts',
@@ -811,6 +812,7 @@ const fr: Dict = {
   'home.mockHowTitle': 'Fonctionnement des examens blancs',
   'home.mockHowLede':
     'Les examens sont générés au démarrage : ce ne sont pas des questionnaires fixes. Chaque tentative tire 20 questions des 10 chapitres, inclut votre province ou territoire et évite les questions déjà vues tant qu’il en reste de nouvelles.',
+  'home.mockRules': 'Règles de l’examen blanc',
   'home.mockTime': '45 minutes',
   'home.mockPass': '15/20 pour réussir',
   'home.mockUnlimited': 'Nouvelles tentatives illimitées',

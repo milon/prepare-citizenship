@@ -53,14 +53,16 @@ const officialPdfUrlFr =
     </div>
   </div>
 
-  <DashboardPanel
-    lastVerified={lastVerified}
-    compact
-    totalQuestions={questions.length}
-    totalCards={cards.length}
-  />
-
-  <DailyQuestion questions={questions} />
+  <section aria-labelledby="today-heading">
+    <h2 id="today-heading" class="sr-only" data-i18n="nav.today">Today</h2>
+    <DashboardPanel
+      lastVerified={lastVerified}
+      compact
+      totalQuestions={questions.length}
+      totalCards={cards.length}
+    />
+    <DailyQuestion questions={questions} />
+  </section>
 
   <section
     class="card install-card"
@@ -121,14 +123,17 @@ const officialPdfUrlFr =
     </p>
   </section>
 
-  <details class="card home-more mock-explainer">
-    <summary id="mock-how-heading" data-i18n="home.mockHowTitle">How mock exams work</summary>
-    <div class="home-more-body">
+  <section class="card home-more mock-explainer" aria-labelledby="mock-how-heading">
+    <div class="card-head">
+      <h2 id="mock-how-heading" data-i18n="home.mockHowTitle">How mock exams work</h2>
       <p data-i18n="home.mockHowLede">
         Mocks are generated when you start—not fixed papers. Each attempt draws 20
         questions across all 10 chapters, includes your province or territory, and avoids
         earlier mock questions while fresh ones remain.
       </p>
+    </div>
+    <div class="home-more-body">
+      <h3 class="sr-only" data-i18n="home.mockRules">Mock exam rules</h3>
       <div class="chips">
         <span class="chip" data-i18n="home.mockTime">45 minutes</span>
         <span class="chip" data-i18n="home.mockPass">15/20 to pass</span>
@@ -145,7 +150,7 @@ const officialPdfUrlFr =
         <a class="button button-quiet" href={withBase('/faq/')} data-i18n="home.mockFaq">Mock exam FAQ</a>
       </p>
     </div>
-  </details>
+  </section>
 
   <section class="card disclaimer" aria-labelledby="disclaimer-heading">
     <span class="sq"><Icon name="info" /></span>
