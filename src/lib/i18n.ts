@@ -228,6 +228,10 @@ const en: Dict = {
   'settings.about': 'About this site',
   'settings.aboutLede':
     'Independent practice, not the official test. The FAQ covers the mock format, where progress is stored, and how this bank differs from IRCC’s questions.',
+  'settings.support': 'Help keep this site alive',
+  'settings.supportLede':
+    'The site stays free, with no account and no ads. An optional contribution helps cover hosting and upkeep — thank you.',
+  'settings.supportCta': 'Support this site',
   'settings.exported': 'Progress file downloaded.',
   'settings.imported': 'Progress imported.',
   'settings.resetOk': 'Progress reset.',
@@ -657,6 +661,10 @@ const fr: Dict = {
   'settings.about': 'À propos',
   'settings.aboutLede':
     'Exercice indépendant, pas l’examen officiel. La FAQ explique le format de l’examen blanc, le stockage du progrès, et en quoi cette banque diffère des questions d’IRCC.',
+  'settings.support': 'Aidez à garder ce site en vie',
+  'settings.supportLede':
+    'Le site reste gratuit, sans compte et sans publicité. Une contribution facultative aide à couvrir l’hébergement et l’entretien — merci.',
+  'settings.supportCta': 'Soutenir le site',
   'settings.exported': 'Fichier de progrès téléchargé.',
   'settings.imported': 'Progrès importé.',
   'settings.resetOk': 'Progrès réinitialisé.',

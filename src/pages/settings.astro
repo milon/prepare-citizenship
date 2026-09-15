@@ -1,6 +1,7 @@
 ---
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { SUPPORT_URL } from '../lib/faq';
 import { withBase } from '../lib/paths';
 
 const buildId = __BUILD_ID__;
@@ -289,6 +290,27 @@ const buildId = __BUILD_ID__;
         </button>
       </div>
       <p class="verified" x-show="message()" x-text="message()" x-cloak></p>
+    </section>
+
+    <section class="card" aria-labelledby="support-heading">
+      <div class="card-head">
+        <h2 id="support-heading" data-i18n="settings.support">Help keep this site alive</h2>
+        <p data-i18n="settings.supportLede">
+          The site stays free, with no account and no ads. An optional contribution helps cover
+          hosting and upkeep — thank you.
+        </p>
+      </div>
+      <div class="settings-actions">
+        <a
+          class="button button-primary"
+          href={SUPPORT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="settings.supportCta"
+        >
+          Support this site
+        </a>
+      </div>
     </section>
 
     <section class="card disclaimer" aria-labelledby="about-heading">

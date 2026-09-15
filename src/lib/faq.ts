@@ -9,6 +9,8 @@ export const OFFICIAL_GUIDE_URL_FR =
   'https://www.canada.ca/fr/immigration-refugies-citoyennete/services/citoyennete-canadienne/examen/etudier.html';
 export const OFFICIAL_PDF_URL_FR =
   'https://www.canada.ca/content/dam/ircc/migration/ircc/francais/pdf/pub/decouvrir.pdf';
+/** Optional tip — Stripe Payment Link. Site stays free either way. */
+export const SUPPORT_URL = 'https://buy.stripe.com/5kQ9AT1xSe3y54E5aZ3Je00';
 
 export type FaqItem = {
   id: string;
@@ -88,7 +90,8 @@ export function faqItems(
         question: 'Le site est-il gratuit et recueillez-vous des données?',
         html: `<p>Le site est gratuit. Il n’y a ni compte ni publicité. Votre progrès d’étude reste dans le navigateur, sauf si vous l’exportez vous-même.</p>
 <p>Cloudflare Web Analytics recense les visites (pages vues, provenances). Il ne voit pas vos réponses, votre province ni vos cartes-éclair.</p>
-<p>Si vous envoyez un message depuis le formulaire de contact, Formspree achemine ce courriel. Il n’est pas lié à votre progrès d’étude.</p>`,
+<p>Si vous envoyez un message depuis le formulaire de contact, Formspree achemine ce courriel. Il n’est pas lié à votre progrès d’étude.</p>
+<p>Une contribution facultative aide à garder le site en ligne — <a href="${SUPPORT_URL}" target="_blank" rel="noopener noreferrer">soutenir le site</a> (aussi dans Réglages).</p>`,
       },
       {
         id: 'french',
@@ -169,7 +172,8 @@ export function faqItems(
       question: 'Is this free, and do you collect data?',
       html: `<p>The site is free to use. There are no accounts and no ads. Study progress never leaves the browser unless you export it yourself.</p>
 <p>Cloudflare Web Analytics counts visits (page views and referrers). It does not see your answers, province, or flashcards.</p>
-<p>If you send a message from the contact form, Formspree delivers that email. It is not stored with your study progress.</p>`,
+<p>If you send a message from the contact form, Formspree delivers that email. It is not stored with your study progress.</p>
+<p>An optional contribution helps keep the site online — <a href="${SUPPORT_URL}" target="_blank" rel="noopener noreferrer">support this site</a> (also in Settings).</p>`,
     },
     {
       id: 'french',

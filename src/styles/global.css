@@ -2925,9 +2925,8 @@ h3 {
   transform: rotate(-90deg);
 }
 
-/* Cards run the full content width; the prose inside keeps a readable measure. */
+/* Match the full-width summary row; don’t pinch the answer text. */
 .faq-a {
-  max-width: 54rem;
   padding: 0.85rem 1.1rem 1.15rem;
   color: var(--muted);
   font-size: 0.95rem;
