@@ -94,8 +94,10 @@ const en: Dict = {
   'field.select': 'Select one',
   'cards.eyebrow': 'Recall',
   'cards.title': 'Flashcards',
-  'cards.lede':
-    'Flip the card, then mark whether you knew it. New and still-learning cards are due today; after “Got it,” they return in three days, then a week.',
+  'cards.lede': 'Flip the card, then mark whether you knew it.',
+  'cards.howTitle': 'How scheduling works',
+  'cards.howBody':
+    'New and still-learning cards are due today. After “Got it,” they return in three days, then a week. “Mark as known” parks a card in the known box.',
   'cards.chapter': 'Chapter',
   'cards.all': 'All chapters',
   'cards.deck': 'Deck',
@@ -115,6 +117,8 @@ const en: Dict = {
   'cards.box3': 'Known',
   'cards.noCards': 'No cards',
   'cards.of': '{n} of {total}',
+  'cards.left': '{n} left',
+  'cards.progressLabel': 'Deck progress',
   'cards.statusPrompt': 'Prompt showing',
   'cards.statusAnswer': 'Answer showing',
   'cards.statusDone': 'Deck complete',
@@ -510,8 +514,10 @@ const fr: Dict = {
   'field.select': 'Choisissez',
   'cards.eyebrow': 'Mémorisation',
   'cards.title': 'Cartes-éclair',
-  'cards.lede':
-    'Retournez la carte, puis indiquez si vous saviez la réponse. Les nouvelles cartes et celles à revoir reviennent aujourd’hui; après « Je savais », elles reviennent dans trois jours, puis une semaine.',
+  'cards.lede': 'Retournez la carte, puis indiquez si vous saviez la réponse.',
+  'cards.howTitle': 'Comment fonctionne le calendrier',
+  'cards.howBody':
+    'Les nouvelles cartes et celles à revoir reviennent aujourd’hui. Après « Je savais », elles reviennent dans trois jours, puis une semaine. « Marquer comme connue » place la carte dans la boîte des cartes connues.',
   'cards.chapter': 'Chapitre',
   'cards.all': 'Tous les chapitres',
   'cards.deck': 'Paquet',
@@ -531,6 +537,8 @@ const fr: Dict = {
   'cards.box3': 'Connue',
   'cards.noCards': 'Aucune carte',
   'cards.of': '{n} sur {total}',
+  'cards.left': 'Reste {n}',
+  'cards.progressLabel': 'Progrès du paquet',
   'cards.statusPrompt': 'Question affichée',
   'cards.statusAnswer': 'Réponse affichée',
   'cards.statusDone': 'Paquet terminé',

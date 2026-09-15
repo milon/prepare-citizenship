@@ -768,6 +768,11 @@ h3 {
   margin: 1.1rem 0;
 }
 
+.toolbar-compact {
+  gap: 0.65rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
 @media (min-width: 40rem) {
   .toolbar {
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
@@ -2403,10 +2408,105 @@ h3 {
 
 /* flashcards */
 
+.cards-shell > .lede.cards-lede {
+  margin-bottom: 0.35rem;
+}
+
+.cards-how {
+  margin: 0 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cards-how summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--muted);
+  list-style: none;
+}
+
+.cards-how summary::-webkit-details-marker {
+  display: none;
+}
+
+.cards-how summary::before {
+  content: '+';
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2rem;
+  color: var(--faint);
+  font-weight: 700;
+}
+
+.cards-how[open] summary::before {
+  content: '–';
+}
+
+.cards-how summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 0.2rem;
+}
+
+.cards-how p {
+  margin: 0.55rem 0 0;
+  max-width: 40rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.cards-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.45rem 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.cards-meta .pill {
+  margin: 0;
+}
+
+.cards-left {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.deck-progress {
+  grid-column: 1 / -1;
+  height: 0.35rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--track);
+}
+
+.deck-progress i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--brand);
+  transition: width 0.25s ease;
+}
+
+.cards-actions {
+  align-items: center;
+}
+
+.cards-grade {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
 .flip-card {
   display: grid;
   width: 100%;
-  min-height: 14rem;
+  min-height: 16rem;
   margin-top: 0.85rem;
   padding: 0;
   border: 0;

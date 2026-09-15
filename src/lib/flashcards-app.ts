@@ -27,6 +27,7 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     index: 0,
     flipped: false,
     deck: [] as ClientCard[],
+    sessionTotal: 0,
     progress: null as Progress | null,
     saveFailed: false,
     storageAvailable: true,
@@ -91,6 +92,7 @@ export function flashcardsApp(payload: FlashcardsPayload) {
     rebuild() {
       const list = this.filtered();
       this.deck = this.mode === 'due' ? list : shuffle(list);
+      this.sessionTotal = this.deck.length;
       this.index = 0;
       this.flipped = false;
       this.status = '';
@@ -112,11 +114,23 @@ export function flashcardsApp(payload: FlashcardsPayload) {
       return this.tx(`cards.box${state.box}` as 'cards.box1' | 'cards.box2' | 'cards.box3');
     },
 
-    get position(): string {
+    get remainingText(): string {
       if (this.deck.length === 0) {
         return this.tx('cards.noCards');
       }
-      return this.tx('cards.of', { n: this.index + 1, total: this.deck.length });
+      return this.tx('cards.left', { n: this.deck.length });
+    },
+
+    get progressPercent(): number {
+      if (this.sessionTotal <= 0) {
+        return 0;
+      }
+      const done = this.sessionTotal - this.deck.length;
+      if (done <= 0) {
+        return 0;
+      }
+      // Keep the first card visible on the bar; Math.round alone stays 0 for ages.
+      return Math.min(100, Math.max(1, Math.round((done / this.sessionTotal) * 100)));
     },
 
     flip() {

@@ -23,14 +23,18 @@ const payload = {
 >
   <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
   <StudyGate redirect={withBase('/flashcards/')}>
-    <article class="panel quiz-shell" x-data="flashcardsPage">
+    <article class="panel quiz-shell cards-shell" x-data="flashcardsPage">
       <p class="eyebrow" data-i18n="cards.eyebrow">Recall</p>
       <h1 data-i18n="cards.title">Flashcards</h1>
-      <p class="lede" data-i18n="cards.lede">
-        Flip the card, then mark whether you knew it. New cards are due today; known cards come back in three days, then a week.
-      </p>
+      <p class="lede cards-lede" data-i18n="cards.lede">Flip the card, then mark whether you knew it.</p>
+      <details class="cards-how no-print">
+        <summary data-i18n="cards.howTitle">How scheduling works</summary>
+        <p data-i18n="cards.howBody">
+          New and still-learning cards are due today. After “Got it,” they return in three days, then a week. “Mark as known” parks a card in the known box.
+        </p>
+      </details>
 
-      <div class="toolbar no-print">
+      <div class="toolbar toolbar-compact no-print">
         <label class="field">
           <span data-i18n="cards.chapter">Chapter</span>
           <select x-model="chapter" @change="rebuild()">
@@ -50,12 +54,24 @@ const payload = {
         </label>
       </div>
 
-      <p class="verified no-print" x-text="position"></p>
       <p class="sr-only" aria-live="polite" x-text="status"></p>
 
       <template x-if="current">
         <div class="no-print">
-          <p class="pill" x-text="boxText"></p>
+          <div class="cards-meta">
+            <p class="pill" x-text="boxText"></p>
+            <p class="cards-left" x-text="remainingText"></p>
+            <div
+              class="deck-progress"
+              role="progressbar"
+              :aria-valuenow="progressPercent"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              :aria-label="$store.i18n.t('cards.progressLabel')"
+            >
+              <i :style="`width: ${progressPercent}%`"></i>
+            </div>
+          </div>
           <button
             class="flip-card"
             type="button"
@@ -78,11 +94,13 @@ const payload = {
               </span>
             </span>
           </button>
-          <div class="button-row">
+          <div class="button-row cards-actions">
             <SpeakButton id="speakId()" labelKey="cards.hear" onClick="speakCurrent" />
-            <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>
-            <button class="button button-primary" type="button" @click="gotIt" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
-            <button class="button button-quiet" type="button" @click="markAsKnown" x-text="$store.i18n.t('cards.known')">Mark as known</button>
+            <span class="cards-grade" x-show="flipped" x-cloak>
+              <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>
+              <button class="button button-primary" type="button" @click="gotIt" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
+              <button class="button button-quiet" type="button" @click="markAsKnown" x-text="$store.i18n.t('cards.known')">Mark as known</button>
+            </span>
           </div>
         </div>
       </template>
