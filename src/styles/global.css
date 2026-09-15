@@ -478,6 +478,12 @@ a {
   cursor: pointer;
 }
 
+/* The theme icons sit in plain spans, where baseline alignment leaves a
+   descender gap below the glyph and pushes it above the button's centre. */
+.icon-button .icon {
+  display: block;
+}
+
 .icon-button:hover {
   border-color: var(--brand-line);
   color: var(--brand-ink);
@@ -2119,6 +2125,11 @@ h3 {
 
 .setting-row:last-child {
   padding-bottom: 0;
+}
+
+/* Narrow screens wrap the control below its label; keep it on the right edge. */
+.setting-row > .segmented {
+  margin-left: auto;
 }
 
 .setting-label {
