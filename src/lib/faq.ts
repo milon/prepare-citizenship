@@ -63,7 +63,7 @@ export function faqItems(
         id: 'offline',
         question: 'Le site fonctionne-t-il hors ligne?',
         html: `<p>Oui, après un premier chargement réussi. Un service worker conserve les pages d’étude, les questions et les ressources afin que vous puissiez lire les chapitres, utiliser les cartes et faire des quiz sans connexion.</p>
-<p>Le progrès demeure dans ce navigateur. Il ne se synchronise pas avec un autre téléphone, sauf si vous exportez puis importez le fichier de sauvegarde.</p>`,
+<p>Sur Android et Chrome, le tableau de bord propose d’installer l’application. Sur iPhone, ouvrez le site dans Safari, puis Partager → Sur l’écran d’accueil. Le progrès demeure dans ce navigateur; il ne se synchronise pas avec un autre téléphone, sauf si vous exportez puis importez le fichier de sauvegarde.</p>`,
       },
       {
         id: 'flashcards',
@@ -143,7 +143,7 @@ export function faqItems(
       id: 'offline',
       question: 'Does it work offline?',
       html: `<p>Yes, after the first successful load. A service worker keeps the study pages, questions, and assets so you can read chapters, flip cards, and sit quizzes without a network.</p>
-<p>Progress still lives in this browser. It does not sync to another phone unless you export and import the backup file.</p>`,
+<p>On Android and Chrome, Today offers an install button. On iPhone, open the site in Safari, then Share → Add to Home Screen. Progress still lives in this browser. It does not sync to another phone unless you export and import the backup file.</p>`,
     },
     {
       id: 'flashcards',

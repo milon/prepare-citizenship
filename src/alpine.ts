@@ -6,6 +6,7 @@ import { dashboardApp } from './lib/dashboard-app';
 import { siteHeaderApp } from './lib/header-app';
 import { flashcardsApp, type FlashcardsPayload } from './lib/flashcards-app';
 import { mockApp, type MockPayload } from './lib/mock-app';
+import { installApp } from './lib/install-app';
 import { watchForInstallAndPersist } from './lib/persist-storage';
 import { practiceApp, type PracticePayload } from './lib/practice-app';
 import { provincePickerApp, settingsApp } from './lib/province-app';
@@ -121,6 +122,8 @@ export default (Alpine: Alpine) => {
   Alpine.data('settingsPage', () => settingsApp());
 
   Alpine.data('contactForm', () => contactFormApp());
+
+  Alpine.data('installApp', () => installApp());
 
   Alpine.data('speech', () => ({
     speak(text: string) {

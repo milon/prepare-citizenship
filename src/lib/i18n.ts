@@ -337,6 +337,14 @@ const en: Dict = {
   'home.mockAdaptive':
     'Questions you missed get priority without replacing the balanced chapter mix. After submitting, review every answer or retry the exact same paper.',
   'home.mockCta': 'Start a mock exam',
+  'home.installTitle': 'Add this app to your home screen',
+  'home.installLede':
+    'Study offline, and keep progress in an app icon instead of a browser tab. After the first visit it works without a network.',
+  'home.installCta': 'Install app',
+  'home.installIosCta': 'How to add it',
+  'home.installIos1': 'Tap the Share button in Safari (the square with an arrow).',
+  'home.installIos2': 'Scroll and choose Add to Home Screen.',
+  'home.installIos3': 'Tap Add. Open it from the icon next time you study.',
   'faq.title': 'Frequently asked questions',
   'faq.lede':
     'Independent practice for the Canadian citizenship test — not the test itself, and not affiliated with IRCC.',
@@ -658,6 +666,14 @@ const fr: Dict = {
   'home.mockAdaptive':
     'Les questions manquées ont priorité sans modifier l’équilibre entre les chapitres. Après l’envoi, révisez chaque réponse ou reprenez exactement le même questionnaire.',
   'home.mockCta': 'Commencer un examen blanc',
+  'home.installTitle': 'Ajouter l’application à l’écran d’accueil',
+  'home.installLede':
+    'Étudiez hors ligne et ouvrez le site depuis une icône plutôt que d’un onglet. Après la première visite, il fonctionne sans réseau.',
+  'home.installCta': 'Installer l’application',
+  'home.installIosCta': 'Comment l’ajouter',
+  'home.installIos1': 'Touchez Partager dans Safari (le carré avec une flèche).',
+  'home.installIos2': 'Faites défiler et choisissez Sur l’écran d’accueil.',
+  'home.installIos3': 'Touchez Ajouter. Ouvrez-la ensuite depuis l’icône.',
   'faq.title': 'Foire aux questions',
   'faq.lede':
     'Exercices indépendants pour l’examen de citoyenneté canadienne — ce n’est pas l’examen officiel et le site n’est pas affilié à IRCC.',

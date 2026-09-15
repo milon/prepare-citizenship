@@ -1248,8 +1248,44 @@ h3 {
   line-height: 1.6;
 }
 
+.install-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.install-card > .sq {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border-radius: var(--r-md);
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.install-card > .sq .icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.install-steps {
+  max-width: 40rem;
+  margin: 0.85rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.install-steps li + li {
+  margin-top: 0.35rem;
+}
+
 @media (max-width: 32rem) {
-  .mock-explainer {
+  .mock-explainer,
+  .install-card {
     grid-template-columns: 1fr;
   }
 }

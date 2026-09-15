@@ -66,6 +66,52 @@ const officialPdfUrlFr =
     totalCards={cards.length}
   />
 
+  <section
+    class="card install-card"
+    x-data="installApp"
+    x-show="visible"
+    x-cloak
+    aria-labelledby="install-heading"
+  >
+    <span class="sq"><Icon name="install" /></span>
+    <div>
+      <div class="card-head">
+        <h2 id="install-heading" data-i18n="home.installTitle">Add this app to your home screen</h2>
+        <p data-i18n="home.installLede">
+          Study offline, and keep progress in an app icon instead of a browser tab. After the
+          first visit it works without a network.
+        </p>
+      </div>
+      <p class="button-row">
+        <button
+          class="button button-primary"
+          type="button"
+          x-show="canInstall"
+          @click="install"
+          data-i18n="home.installCta"
+        >
+          Install app
+        </button>
+        <button
+          class="button"
+          type="button"
+          x-show="ios"
+          :aria-expanded="showHow.toString()"
+          aria-controls="install-ios-steps"
+          @click="showHow = !showHow"
+          data-i18n="home.installIosCta"
+        >
+          How to add it
+        </button>
+      </p>
+      <ol id="install-ios-steps" class="install-steps" x-show="ios && showHow" x-cloak>
+        <li data-i18n="home.installIos1">Tap the Share button in Safari (the square with an arrow).</li>
+        <li data-i18n="home.installIos2">Scroll and choose Add to Home Screen.</li>
+        <li data-i18n="home.installIos3">Tap Add. Open it from the icon next time you study.</li>
+      </ol>
+    </div>
+  </section>
+
   <section class="card mock-explainer" aria-labelledby="mock-how-heading">
     <span class="sq"><Icon name="mock" /></span>
     <div>
