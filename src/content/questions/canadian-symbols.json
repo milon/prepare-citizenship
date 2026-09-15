@@ -1019,8 +1019,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about the national flag is correct?",
-      "fr": "Quel énoncé au sujet du drapeau national est exact?"
+      "en": "How should Canada’s national flag be treated?",
+      "fr": "Comment doit-on traiter le drapeau national du Canada?"
     },
     "options": [
       {

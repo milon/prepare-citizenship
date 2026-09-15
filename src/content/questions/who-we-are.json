@@ -853,8 +853,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which phrase best matches federal multiculturalism as taught for the test?",
-      "fr": "Quel énoncé correspond le mieux au multiculturalisme fédéral tel qu’il est enseigné pour l’examen?"
+      "en": "How does federal multiculturalism balance cultural traditions with shared civic values?",
+      "fr": "Comment le multiculturalisme fédéral concilie-t-il les traditions culturelles et les valeurs civiques communes?"
     },
     "options": [
       {
@@ -1729,8 +1729,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about official languages is most accurate for everyday life?",
-      "fr": "Quel énoncé sur les langues officielles est le plus exact dans la vie de tous les jours?"
+      "en": "What do Canada’s official-language rules mean in everyday life?",
+      "fr": "Que signifient les règles sur les langues officielles du Canada dans la vie de tous les jours?"
     },
     "options": [
       {

@@ -44,6 +44,11 @@ function reportZodError(label: string, issuePath: PropertyKey[], message: string
   errors.push(`${label} ${path}: ${message}`);
 }
 
+// Every question also becomes a flashcard, where the answer choices are hidden.
+// Reject prompts that only make sense while those choices are visible.
+const optionDependentFront =
+  /\b(?:which (?:of (?:these|the following)|statement|phrase)|select|choose)\b/i;
+
 const questionBundles = await readJsonArray('src/content/questions');
 const questions: Question[] = [];
 const questionIds = new Map<string, string>();
@@ -120,6 +125,12 @@ if (!currentParsed.success) {
 }
 
 for (const question of questions) {
+  if (question.type === 'mcq' && optionDependentFront.test(question.prompt.en)) {
+    errors.push(
+      `Question ${question.id} has an option-dependent prompt that will not work as a flashcard`,
+    );
+  }
+
   const haystack = [
     question.prompt.en,
     question.prompt.fr ?? '',
@@ -137,6 +148,12 @@ for (const question of questions) {
     if (isRegional && !question.region) {
       errors.push(`Question ${question.id} uses regional token {{${token}}} but has no region`);
     }
+  }
+}
+
+for (const card of flashcards) {
+  if (optionDependentFront.test(card.front.en)) {
+    errors.push(`Flashcard ${card.id} has an option-dependent front`);
   }
 }
 

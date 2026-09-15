@@ -6,8 +6,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a mobility right of Canadian citizens?",
-      "fr": "Lequel de ces éléments est un droit de circulation et d’établissement des citoyens canadiens?"
+      "en": "What is one mobility right of Canadian citizens?",
+      "fr": "Quel est un droit à la mobilité des citoyens canadiens?"
     },
     "options": [
       {
@@ -152,8 +152,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a fundamental freedom in the Charter?",
-      "fr": "Laquelle de ces libertés est une liberté fondamentale garantie par la Charte?"
+      "en": "What is one fundamental freedom protected by the Charter?",
+      "fr": "Quelle est une liberté fondamentale protégée par la Charte?"
     },
     "options": [
       {
@@ -298,8 +298,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement about religion in Canada is correct?",
-      "fr": "Quel énoncé au sujet de la religion au Canada est exact?"
+      "en": "What does freedom of religion mean in Canada?",
+      "fr": "Que signifie la liberté de religion au Canada?"
     },
     "options": [
       {
@@ -415,8 +415,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of the following is a responsibility of citizenship listed in the study guide?",
-      "fr": "Laquelle des options suivantes est une responsabilité de la citoyenneté énumérée dans le guide d’étude?"
+      "en": "What is one responsibility of citizenship listed in the study guide?",
+      "fr": "Quelle est une responsabilité de la citoyenneté énumérée dans le guide d’étude?"
     },
     "options": [
       {
@@ -707,8 +707,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is not a Charter “fundamental freedom”?",
-      "fr": "Laquelle de ces libertés n’est pas une « liberté fondamentale » de la Charte?"
+      "en": "What does the Charter not guarantee as a “fundamental freedom”?",
+      "fr": "Qu’est-ce que la Charte ne garantit pas à titre de « liberté fondamentale »?"
     },
     "options": [
       {
@@ -1398,8 +1398,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a democratic right of citizens?",
-      "fr": "Lequel de ces éléments est un droit démocratique des citoyens?"
+      "en": "What is one democratic right of Canadian citizens?",
+      "fr": "Quel est un droit démocratique des citoyens canadiens?"
     },
     "options": [
       {

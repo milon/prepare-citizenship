@@ -853,8 +853,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a typical police service level in Canada?",
-      "fr": "Lequel de ces paliers de services policiers est courant au Canada?"
+      "en": "At what levels do police services operate in Canada?",
+      "fr": "À quels paliers les services policiers exercent-ils leurs activités au Canada?"
     },
     "options": [
       {
@@ -1038,8 +1038,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which statement is correct?",
-      "fr": "Quel énoncé est exact?"
+      "en": "What legal rights and precautions should you remember if you are arrested or detained?",
+      "fr": "Quels droits et quelles précautions faut-il retenir en cas d’arrestation ou de détention?"
     },
     "options": [
       {

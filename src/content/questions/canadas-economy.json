@@ -45,8 +45,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a major Canadian export sector highlighted in the study guide?",
-      "fr": "Lequel de ces secteurs d’exportation canadiens est mis en évidence dans le guide d’étude?"
+      "en": "What major Canadian export sector does the study guide highlight?",
+      "fr": "Quel grand secteur d’exportation canadien le guide d’étude met-il en évidence?"
     },
     "options": [
       {

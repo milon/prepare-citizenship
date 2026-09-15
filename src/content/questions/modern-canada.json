@@ -1194,8 +1194,8 @@
     "type": "mcq",
     "difficulty": "core",
     "prompt": {
-      "en": "Which of these is a social program created or expanded in modern Canada?",
-      "fr": "Lequel des éléments suivants est un programme social créé ou élargi dans le Canada moderne ?"
+      "en": "What is one social program created or expanded in modern Canada?",
+      "fr": "Quel est un programme social créé ou élargi dans le Canada moderne?"
     },
     "options": [
       {
