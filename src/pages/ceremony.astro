@@ -1,6 +1,7 @@
 ---
 import AnthemPanel from '../components/AnthemPanel.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SpeakButton from '../components/SpeakButton.astro';
 import { withBase } from '../lib/paths';
 
 const CEREMONY_URL =
@@ -8,6 +9,12 @@ const CEREMONY_URL =
 const CEREMONY_URL_FR =
   'https://www.canada.ca/fr/immigration-refugies-citoyennete/services/citoyennete-canadienne/devenir-citoyen-canadien/ceremonie-citoyennete.html';
 const rightsHref = `${withBase('/chapters/')}rights-and-responsibilities/`;
+
+const OATH_EN =
+  'I swear that I will be faithful and bear true allegiance to His Majesty King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully observe the laws of Canada, including the Constitution, which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties as a Canadian citizen.';
+
+const OATH_FR =
+  'Je jure que je serai fidèle et porterai sincère allégeance à Sa Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits ancestraux ou issus de traités des peuples des Premières Nations, des Inuits et des Métis, et que je remplirai loyalement mes obligations de citoyen canadien.';
 ---
 
 <BaseLayout
@@ -32,48 +39,36 @@ const rightsHref = `${withBase('/chapters/')}rights-and-responsibilities/`;
         </p>
       </div>
       <div class="oath lang-en" x-data="speech">
-        <p>
-          I swear (or solemnly affirm) that I will be faithful and bear true allegiance to His Majesty
-          King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully
-          observe the laws of Canada, including the Constitution, which recognizes and affirms the
-          Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties
-          as a Canadian citizen.
-        </p>
-        <p class="button-row">
-          <button
-            class="button"
-            type="button"
-            data-i18n="ceremony.swear"
-            :class="{ 'is-loading': $store.speech.isLoading('ceremony:en'), 'is-playing': $store.speech.isPlaying('ceremony:en') }"
-            :aria-pressed="$store.speech.isActive('ceremony:en').toString()"
-            :aria-busy="$store.speech.isLoading('ceremony:en').toString()"
-            @click="speak('I swear that I will be faithful and bear true allegiance to His Majesty King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully observe the laws of Canada, including the Constitution, which recognizes and affirms the Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties as a Canadian citizen.', 'ceremony:en')"
-          >
-            I swear
-          </button>
-        </p>
+        <div class="oath-row">
+          <p>
+            I swear (or solemnly affirm) that I will be faithful and bear true allegiance to His Majesty
+            King Charles the Third, King of Canada, His Heirs and Successors, and that I will faithfully
+            observe the laws of Canada, including the Constitution, which recognizes and affirms the
+            Aboriginal and treaty rights of First Nations, Inuit and Métis peoples, and fulfil my duties
+            as a Canadian citizen.
+          </p>
+          <SpeakButton
+            id="'ceremony:en'"
+            labelKey="ceremony.hear"
+            onClick={`speak(${JSON.stringify(OATH_EN)}, 'ceremony:en')`}
+          />
+        </div>
       </div>
       <div class="oath lang-fr" x-data="speech">
-        <p>
-          Je jure (ou j’affirme solennellement) que je serai fidèle et porterai sincère allégeance à Sa
-          Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai
-          fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits
-          — ancestraux ou issus de traités — des peuples des Premières Nations, des Inuits et des Métis,
-          et que je remplirai loyalement mes obligations de citoyen canadien.
-        </p>
-        <p class="button-row">
-          <button
-            class="button"
-            type="button"
-            data-i18n="ceremony.affirm"
-            :class="{ 'is-loading': $store.speech.isLoading('ceremony:fr'), 'is-playing': $store.speech.isPlaying('ceremony:fr') }"
-            :aria-pressed="$store.speech.isActive('ceremony:fr').toString()"
-            :aria-busy="$store.speech.isLoading('ceremony:fr').toString()"
-            @click="speak('Je jure que je serai fidèle et porterai sincère allégeance à Sa Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits ancestraux ou issus de traités des peuples des Premières Nations, des Inuits et des Métis, et que je remplirai loyalement mes obligations de citoyen canadien.', 'ceremony:fr')"
-          >
-            J’affirme
-          </button>
-        </p>
+        <div class="oath-row">
+          <p>
+            Je jure (ou j’affirme solennellement) que je serai fidèle et porterai sincère allégeance à Sa
+            Majesté le roi Charles Trois, Roi du Canada, à ses héritiers et successeurs, que j’observerai
+            fidèlement les lois du Canada, y compris la Constitution, qui reconnaît et confirme les droits
+            — ancestraux ou issus de traités — des peuples des Premières Nations, des Inuits et des Métis,
+            et que je remplirai loyalement mes obligations de citoyen canadien.
+          </p>
+          <SpeakButton
+            id="'ceremony:fr'"
+            labelKey="ceremony.hear"
+            onClick={`speak(${JSON.stringify(OATH_FR)}, 'ceremony:fr')`}
+          />
+        </div>
       </div>
       <p class="button-row">
         <a class="button lang-en" href={CEREMONY_URL} data-i18n="ceremony.source">

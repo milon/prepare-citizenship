@@ -423,13 +423,15 @@ const en: Dict = {
   'faq.orAdjust': 'or adjust',
   'notFound.title': 'Page not found',
   'notFound.lede':
-    'That address is not a study page. Head back to the dashboard and pick a chapter from there.',
+    'That address is not a study page. Head back to Today, or jump to a section below.',
   'notFound.back': 'Back to today',
+  'notFound.linksTitle': 'Useful places',
+  'notFound.linksLede': 'Pick up studying from one of these pages.',
   'anthem.title': 'O Canada',
   'anthem.lede':
     'The national anthem is on the test and at the citizenship ceremony. Lyrics below are the official English and French versions. Recordings live on Canada.ca (Toronto Symphony Orchestra — credit the artists if you reuse them).',
   'anthem.listen': 'Listen on Canada.ca',
-  'anthem.hear': 'Hear the title',
+  'anthem.hear': 'Hear the anthem',
   'anthem.english': 'English lyrics',
   'anthem.french': 'French lyrics',
   'home.disclaimer': 'Independent practice, not the official test',
@@ -460,8 +462,7 @@ const en: Dict = {
   'ceremony.oathTitle': 'The oath of citizenship',
   'ceremony.oathLede':
     'You may swear or solemnly affirm. The wording is official; this page quotes it so you can practise saying it out loud.',
-  'ceremony.swear': 'I swear',
-  'ceremony.affirm': 'I affirm',
+  'ceremony.hear': 'Hear the oath',
   'ceremony.rightsTitle': 'Rights and responsibilities, recap',
   'ceremony.rightsLede':
     'The oath is a promise to observe the laws and fulfil your duties. The first chapter is the fuller list.',
@@ -863,13 +864,15 @@ const fr: Dict = {
   'faq.orAdjust': 'ou modifiez les',
   'notFound.title': 'Page introuvable',
   'notFound.lede':
-    'Cette adresse ne correspond pas à une page d’étude. Revenez au tableau de bord et choisissez un chapitre.',
+    'Cette adresse ne correspond pas à une page d’étude. Revenez à Aujourd’hui, ou allez directement à une section ci-dessous.',
   'notFound.back': 'Retour à aujourd’hui',
+  'notFound.linksTitle': 'Pages utiles',
+  'notFound.linksLede': 'Reprenez l’étude à partir de l’une de ces pages.',
   'anthem.title': 'Ô Canada',
   'anthem.lede':
     'L’hymne national est à l’examen et à la cérémonie de citoyenneté. Les paroles ci-dessous sont les versions officielles. Les enregistrements sont sur Canada.ca (Orchestre symphonique de Toronto — créditez les artistes si vous les réutilisez).',
   'anthem.listen': 'Écouter sur Canada.ca',
-  'anthem.hear': 'Entendre le titre',
+  'anthem.hear': 'Écouter l’hymne',
   'anthem.english': 'Paroles anglaises',
   'anthem.french': 'Paroles françaises',
   'home.disclaimer': 'Exercice indépendant, pas l’examen officiel',
@@ -900,8 +903,7 @@ const fr: Dict = {
   'ceremony.oathTitle': 'Le serment de citoyenneté',
   'ceremony.oathLede':
     'Vous pouvez jurer ou affirmer solennellement. Le libellé est officiel; cette page le cite pour que vous puissiez le dire à voix haute.',
-  'ceremony.swear': 'Je jure',
-  'ceremony.affirm': 'J’affirme',
+  'ceremony.hear': 'Écouter le serment',
   'ceremony.rightsTitle': 'Droits et responsabilités, en bref',
   'ceremony.rightsLede':
     'Le serment est une promesse d’observer les lois et de remplir vos devoirs. Le premier chapitre en donne la liste complète.',
