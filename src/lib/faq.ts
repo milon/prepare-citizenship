@@ -76,8 +76,8 @@ export function faqItems(
       {
         id: 'readiness',
         question: 'Que signifie « prêt » dans le tableau de bord?',
-        html: `<p>Le verdict de préparation reste verrouillé jusqu’à ce que vous ayez terminé trois examens blancs. Ensuite, « Prêt » signifie que vos trois derniers examens blancs ont chacun obtenu au moins 15/20 et que chaque chapitre comptant au moins dix réponses enregistrées atteint une précision d’au moins 70 %.</p>
-<p>Les chapitres comptant moins de dix réponses ne bloquent pas le verdict; ils s’affichent comme étant à poursuivre. Un seul bon examen blanc ne suffit pas, car un tirage de 20 questions peut varier.</p>`,
+        html: `<p>Le pourcentage de préparation mesure le chemin vers l’examen : la pratique de chaque chapitre (au moins dix réponses à 70 % ou plus) et trois examens blancs réussis d’affilée (15/20). Il n’atteint 100 % que lorsque ces conditions sont toutes remplies — une seule bonne réponse du jour ne suffit pas.</p>
+<p>Le verdict « Prêt » apparaît seulement à 100 %. Les chapitres peu pratiqués bloquent le verdict jusqu’à ce qu’ils atteignent le seuil. Un seul bon examen blanc ne suffit pas, car un tirage de 20 questions peut varier.</p>`,
       },
       {
         id: 'current',
@@ -158,8 +158,8 @@ export function faqItems(
     {
       id: 'readiness',
       question: 'What does “ready” mean on the dashboard?',
-      html: `<p>Readiness stays locked until you have finished three mocks. After that, Ready means your last three mocks each scored at least 15/20, and every chapter where you have at least ten recorded answers is at 70% accuracy or better.</p>
-<p>Chapters with fewer than ten answers do not block Ready; they show as keep practicing. One good mock is not enough — a 20-question draw is noisy.</p>`,
+      html: `<p>The readiness percentage tracks progress toward the test: practice in every chapter (at least ten answers at 70% or better) plus three passed mock exams in a row (15/20). It only reaches 100% when all of that is true — one correct daily question does not count as ready.</p>
+<p>The Ready verdict appears only at 100%. Thin chapters block Ready until they hit the answer floor. One good mock is not enough — a 20-question draw is noisy.</p>`,
     },
     {
       id: 'current',

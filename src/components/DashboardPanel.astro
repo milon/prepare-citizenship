@@ -68,7 +68,7 @@ const sessionHref = withBase('/session/');
 
         <div class="readiness-card">
           <div class="dial" :style="`--value:${dialValue}`" :data-status="stats.readiness.status">
-            <b x-text="stats.overallTotal ? percent(stats.overallRate) : '—'">—</b>
+            <b x-text="dialLabel">—</b>
           </div>
           <div>
             <p class="k" x-text="$store.i18n.t('dash.readiness')">Readiness</p>
@@ -126,7 +126,7 @@ const sessionHref = withBase('/session/');
                 <span
                   x-show="!$store.learner.name"
                   x-text="$store.i18n.t('dash.ready')"
-                >Ready — last three mocks passed, and practiced chapters are at 70% or better.</span>
+                  >Ready — last three mocks passed, and every chapter has at least 10 answers at 70% or better.</span>
                 <span
                   x-show="$store.learner.name"
                   x-cloak

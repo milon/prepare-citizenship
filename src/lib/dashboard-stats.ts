@@ -7,6 +7,8 @@ export const MOCK_PASS_SCORE = 15;
 export const MOCKS_FOR_READINESS = 3;
 export const CHAPTER_ANSWER_FLOOR = 10;
 export const CHAPTER_READY_RATE = 0.7;
+/** Share of readiness score from chapter practice (rest is mocks). */
+export const READINESS_CHAPTER_WEIGHT = 0.6;
 /** Seen quiz answers before we push the first mock. */
 export const MOCK_SEEN_FLOOR = 25;
 /** Distinct chapters with any answers before we push the first mock. */
@@ -21,17 +23,20 @@ export type ChapterStat = {
   status: 'keep-practicing' | 'on-track' | 'weak';
 };
 
+export type ReadinessReason =
+  | { id: 'mock' }
+  | { id: 'chapter'; chapterId: ChapterId; rate: number; total: number }
+  | { id: 'chapter-thin'; chapterId: ChapterId; total: number; need: number };
+
 export type Readiness =
-  | { status: 'not-enough-data'; mocksCompleted: number }
-  | { status: 'ready'; keepPracticing: ChapterStat[] }
+  | { status: 'not-enough-data'; mocksCompleted: number; percent: number }
+  | { status: 'ready'; keepPracticing: ChapterStat[]; percent: 100 }
   | {
       status: 'not-ready';
-      reasons: Array<
-        | { id: 'mock' }
-        | { id: 'chapter'; chapterId: ChapterId; rate: number; total: number }
-      >;
+      reasons: ReadinessReason[];
       keepPracticing: ChapterStat[];
       weakChapters: ChapterStat[];
+      percent: number;
     };
 
 export type DashboardStats = {
@@ -106,35 +111,113 @@ function chapterStats(progress: Progress): ChapterStat[] {
   });
 }
 
+/**
+ * Per-chapter progress toward on-track (0–1). Never reaches 1 unless the chapter
+ * has the answer floor and ≥70% accuracy.
+ */
+export function chapterReadinessProgress(chapter: ChapterStat): number {
+  if (chapter.status === 'on-track') {
+    return 1;
+  }
+  if (chapter.total <= 0) {
+    return 0;
+  }
+  const rateFactor = Math.min(chapter.rate / CHAPTER_READY_RATE, 1);
+  if (chapter.total < CHAPTER_ANSWER_FLOOR) {
+    return (chapter.total / CHAPTER_ANSWER_FLOOR) * rateFactor * 0.85;
+  }
+  // Floor met but still weak — approach the bar without crossing it.
+  return rateFactor * 0.9;
+}
+
+/**
+ * Mock half of readiness (0–1): sitting three exams, then passing the last three.
+ */
+export function mockReadinessProgress(completed: QuizAttempt[]): number {
+  const sitFraction = Math.min(completed.length, MOCKS_FOR_READINESS) / MOCKS_FOR_READINESS;
+  if (completed.length < MOCKS_FOR_READINESS) {
+    return sitFraction * 0.45;
+  }
+  const recent = completed.slice(-MOCKS_FOR_READINESS);
+  const passFraction =
+    recent.filter((attempt) => attempt.score >= MOCK_PASS_SCORE).length / MOCKS_FOR_READINESS;
+  return sitFraction * 0.45 + passFraction * 0.55;
+}
+
+/**
+ * Continuous readiness 0–100. Hits 100 only when every chapter is on-track and the
+ * last three mocks all passed. Otherwise capped at 99 so the dial never lies.
+ */
+export function readinessPercentFor(
+  chapters: ChapterStat[],
+  completedMocks: QuizAttempt[],
+  isReady: boolean,
+): number {
+  if (isReady) {
+    return 100;
+  }
+  const chapterAvg =
+    chapters.length === 0
+      ? 0
+      : chapters.reduce((sum, chapter) => sum + chapterReadinessProgress(chapter), 0) /
+        chapters.length;
+  const mockProgress = mockReadinessProgress(completedMocks);
+  const raw =
+    chapterAvg * READINESS_CHAPTER_WEIGHT + mockProgress * (1 - READINESS_CHAPTER_WEIGHT);
+  return Math.min(99, Math.round(raw * 100));
+}
+
 export function readinessFor(progress: Progress): Readiness {
   const completed = mocks(progress);
-  const keepPracticing = chapterStats(progress).filter(
+  const chapters = chapterStats(progress);
+  const keepPracticing = chapters.filter(
     (chapter) => chapter.status === 'keep-practicing' && chapter.total > 0,
   );
+  const incompleteChapters = chapters.filter((chapter) => chapter.status !== 'on-track');
+  const weakChapters = chapters.filter((chapter) => chapter.status === 'weak');
+  const recent =
+    completed.length >= MOCKS_FOR_READINESS ? completed.slice(-MOCKS_FOR_READINESS) : [];
+  const failedRecent =
+    recent.length === MOCKS_FOR_READINESS &&
+    recent.some((attempt) => attempt.score < MOCK_PASS_SCORE);
+  const mocksOk =
+    completed.length >= MOCKS_FOR_READINESS &&
+    recent.every((attempt) => attempt.score >= MOCK_PASS_SCORE);
+  const chaptersOk = incompleteChapters.length === 0;
+  const isReady = mocksOk && chaptersOk;
+  const percent = readinessPercentFor(chapters, completed, isReady);
+
   if (completed.length < MOCKS_FOR_READINESS) {
-    return { status: 'not-enough-data', mocksCompleted: completed.length };
+    return { status: 'not-enough-data', mocksCompleted: completed.length, percent };
   }
 
-  const recent = completed.slice(-MOCKS_FOR_READINESS);
-  const weakChapters = chapterStats(progress).filter((chapter) => chapter.status === 'weak');
-  const failedRecent = recent.some((attempt) => attempt.score < MOCK_PASS_SCORE);
-  const reasons: Extract<Readiness, { status: 'not-ready' }>['reasons'] = [];
+  if (isReady) {
+    return { status: 'ready', keepPracticing: [], percent: 100 };
+  }
+
+  const reasons: ReadinessReason[] = [];
   if (failedRecent) {
     reasons.push({ id: 'mock' });
   }
-  for (const chapter of weakChapters) {
-    reasons.push({
-      id: 'chapter',
-      chapterId: chapter.id,
-      rate: Math.round(chapter.rate * 100),
-      total: chapter.total,
-    });
+  for (const chapter of incompleteChapters) {
+    if (chapter.total < CHAPTER_ANSWER_FLOOR) {
+      reasons.push({
+        id: 'chapter-thin',
+        chapterId: chapter.id,
+        total: chapter.total,
+        need: CHAPTER_ANSWER_FLOOR,
+      });
+    } else {
+      reasons.push({
+        id: 'chapter',
+        chapterId: chapter.id,
+        rate: Math.round(chapter.rate * 100),
+        total: chapter.total,
+      });
+    }
   }
 
-  if (!failedRecent && weakChapters.length === 0) {
-    return { status: 'ready', keepPracticing };
-  }
-  return { status: 'not-ready', reasons, keepPracticing, weakChapters };
+  return { status: 'not-ready', reasons, keepPracticing, weakChapters, percent };
 }
 
 export function seenQuestionCount(progress: Progress): number {
@@ -203,7 +286,7 @@ export function recommendationFor(
     return {
       kind: 'mock',
       title: mocksCompleted === 0 ? 'Sit your first mock exam' : `Sit mock exam #${mocksCompleted + 1}`,
-      blurb: `20 questions, 45 minutes, ${MOCK_PASS_SCORE} to pass — the same shape as the real test. Readiness needs ${MOCKS_FOR_READINESS} passes.`,
+      blurb: `20 questions, 45 minutes, ${MOCK_PASS_SCORE} to pass — the same shape as the real test. Readiness needs ${MOCKS_FOR_READINESS} passed mocks and strong chapter scores.`,
       cta: 'Start mock exam',
       altCta: 'Today’s session instead',
       chapterId: null,

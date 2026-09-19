@@ -79,10 +79,18 @@ export function dashboardApp() {
     },
 
     get dialValue(): number {
-      if (!this.stats || this.stats.overallTotal === 0) {
-        return 0;
+      return this.stats?.readiness.percent ?? 0;
+    },
+
+    get dialLabel(): string {
+      if (!this.stats) {
+        return '—';
       }
-      return Math.round(this.stats.overallRate * 100);
+      const { readiness, seenQuestions, flashcardsStarted } = this.stats;
+      if (readiness.percent === 0 && seenQuestions === 0 && !flashcardsStarted) {
+        return '—';
+      }
+      return this.percent(readiness.percent / 100);
     },
 
     get readinessSummary(): { label: string; note: string } {
@@ -99,13 +107,12 @@ export function dashboardApp() {
                 { n: this.stats.cardsDue },
               )
             : '';
+        const mockNote = this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left });
         return {
           label: this.stats.seenQuestions === 0 && !this.stats.flashcardsStarted
             ? this.tx('dash.notStarted')
             : this.tx('dash.gettingStarted'),
-          note: dueNote
-            ? `${dueNote} · ${this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left })}`
-            : this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left }),
+          note: dueNote ? `${dueNote} · ${mockNote}` : mockNote,
         };
       }
       if (readiness.status === 'ready') {
@@ -121,9 +128,22 @@ export function dashboardApp() {
       };
     },
 
-    reasonText(reason: { id: string; chapterId?: ChapterId; rate?: number; total?: number }) {
+    reasonText(reason: {
+      id: string;
+      chapterId?: ChapterId;
+      rate?: number;
+      total?: number;
+      need?: number;
+    }) {
       if (reason.id === 'mock') {
         return this.tx('reason.mock');
+      }
+      if (reason.id === 'chapter-thin') {
+        return this.tx('reason.chapterThin', {
+          chapter: this.chapterName(reason.chapterId as ChapterId),
+          total: reason.total ?? 0,
+          need: reason.need ?? 10,
+        });
       }
       return this.tx('reason.chapter', {
         chapter: this.chapterName(reason.chapterId as ChapterId),
