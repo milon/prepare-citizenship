@@ -9,7 +9,7 @@ La citoyenneté canadienne ne se résume pas à un passeport. C'est un ensemble 
 
 ## La Charte
 
-La **[Charte canadienne des droits et libertés](/glossary/#charter)** fait partie de la Constitution. Elle protège :
+La **[Charte canadienne des droits et libertés](/fr/glossary/#charter)** fait partie de la Constitution. Elle protège :
 
 - **Les libertés fondamentales** — la conscience et la religion; la pensée, la croyance, l'opinion et l'expression; la réunion pacifique; l'association.
 - **Les droits démocratiques** — notamment le droit des citoyens de voter et de se porter candidat, sous réserve des rares exceptions prévues par la loi.
@@ -23,14 +23,14 @@ Les tribunaux peuvent invalider une loi qui viole la Charte. Certaines limites a
 
 ## L'habeas corpus et la tradition de common law
 
-Le Canada a hérité de l'**[habeas corpus](/glossary/#habeas-corpus)** : personne ne peut être détenu sans motif légal, et toute personne peut demander à un tribunal d'examiner sa détention. Avec une magistrature indépendante, c'est l'un des fondements de la primauté du droit.
+Le Canada a hérité de l'**[habeas corpus](/fr/glossary/#habeas-corpus)** : personne ne peut être détenu sans motif légal, et toute personne peut demander à un tribunal d'examiner sa détention. Avec une magistrature indépendante, c'est l'un des fondements de la primauté du droit.
 
 ## Les responsabilités
 
 Les droits vont de pair avec des obligations. On attend des citoyens qu'ils :
 
 - Respectent la loi
-- Fassent partie d'un **[jury](/glossary/#jury)** lorsqu'ils sont convoqués
+- Fassent partie d'un **[jury](/fr/glossary/#jury)** lorsqu'ils sont convoqués
 - Votent aux élections
 - Aident les autres dans leur collectivité
 - Protègent le patrimoine et l'environnement du Canada, et en profitent
@@ -42,4 +42,4 @@ Les hommes qui remplissent les conditions prévues par la loi peuvent être appe
 
 Le Canada est une démocratie parlementaire où les femmes et les hommes sont égaux. La liberté de religion est protégée et il n'existe aucune église d'État. La propagande haineuse et l'extrémisme violent ne sont pas « une opinion comme une autre » : la loi les restreint parce qu'ils s'attaquent aux droits et à la sécurité d'autrui.
 
-Après l'examen, on prête le **[serment de citoyenneté](/glossary/#oath)** à une [cérémonie de citoyenneté](/ceremony/).
+Après l'examen, on prête le **[serment de citoyenneté](/fr/glossary/#oath)** à une [cérémonie de citoyenneté](/fr/ceremony/).

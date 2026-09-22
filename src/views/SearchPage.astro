@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localeFromPathname, localeHref } from '../lib/paths';
+import { plainFromMarkdown, type SearchDoc } from '../lib/search';
+import { loadStudyContent } from '../lib/study-content';
+
+const locale = localeFromPathname(Astro.url.pathname);
+const { questions } = await loadStudyContent();
+const notes = await getCollection('chapters');
+const notesFr = new Map((await getCollection('chaptersFr')).map((entry) => [entry.id, entry]));
+
+const docs: SearchDoc[] = [
+  ...notes.map((entry) => {
+      const french = notesFr.get(entry.id);
+      return {
+        kind: 'chapter' as const,
+        id: entry.id,
+        href: `${localeHref('/chapters/', locale)}${entry.id}/`,
+        chapter: entry.data.chapter,
+        title: {
+          en: entry.data.title,
+          fr: french?.data.title ?? entry.data.title,
+        },
+        body: {
+          en: `${entry.data.description} ${plainFromMarkdown(entry.body ?? '')}`,
+          fr: french
+            ? `${french.data.description} ${plainFromMarkdown(french.body ?? '')}`
+            : null,
+        },
+      };
+    }),
+  ...questions.map((question) => ({
+    kind: 'question' as const,
+    id: question.id,
+    href: `${localeHref('/practice/', locale)}?chapter=${question.chapter}`,
+    chapter: question.chapter,
+    title: question.prompt,
+    body: {
+      en: question.explanation.en,
+      fr: question.explanation.fr,
+    },
+  })),
+];
+---
+
+<BaseLayout
+  title="Search"
+  description="Search chapter notes and practice-question prompts on this device."
+  titleFr="Recherche"
+  descriptionFr="Cherchez dans les notes de chapitre et les questions, sur cet appareil."
+  contextFr="Recherche"
+>
+  <script is:inline type="application/json" id="search-data" set:html={JSON.stringify(docs).replace(/</g, '\\u003c')} />
+  <article class="panel" x-data="searchPage">
+    <p class="eyebrow" data-i18n="nav.search">Search</p>
+    <h1 data-i18n="search.title">Search</h1>
+    <p class="lede" data-i18n="search.lede">
+      Look up a phrase in the chapter notes or in the question prompts. Nothing leaves this device.
+    </p>
+    <label class="field">
+      <span class="sr-only" data-i18n="search.title">Search</span>
+      <input
+        type="search"
+        x-model="query"
+        data-i18n-placeholder="search.placeholder"
+        placeholder="Try riding, Charter, or Yellowknife"
+        autocomplete="off"
+      />
+    </label>
+    <p class="verified" x-show="query.trim().length < 2" data-i18n="search.empty">Type at least two letters.</p>
+    <p
+      class="verified"
+      x-show="query.trim().length >= 2"
+      x-text="hits.length ? $store.i18n.t('search.count', { n: hits.length }) : $store.i18n.t('search.none')"
+    ></p>
+    <ul class="search-hits" x-show="hits.length">
+      <template x-for="hit in hits" :key="hit.kind + hit.id">
+        <li>
+          <a class="search-hit" :href="hit.href">
+            <span class="pill" x-text="hit.kind === 'chapter' ? $store.i18n.t('search.chapter') : $store.i18n.t('search.question')"></span>
+            <strong x-text="pick(hit.title)"></strong>
+            <small x-text="$store.i18n.chapter(hit.chapter)"></small>
+            <span x-text="hit.snippet"></span>
+          </a>
+        </li>
+      </template>
+    </ul>
+  </article>
+</BaseLayout>

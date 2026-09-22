@@ -3,6 +3,7 @@ import { REGION_CODES, type RegionCode } from '../content/schema';
 import { localizedRegionLabel, t, type Locale } from './i18n';
 import { todayStamp } from './dates';
 import { DISPLAY_NAME_MAX, nameFileSlug, parseDisplayName } from './display-name';
+import { swapLocalePath } from './paths';
 import {
   loadProgress,
   parseImportedProgress,
@@ -151,7 +152,11 @@ export function settingsApp() {
       const i18n = (this as unknown as { $store: { i18n: { locale: Locale } } }).$store.i18n;
       if (i18n.locale !== this.locale) {
         i18n.locale = this.locale;
-        window.location.reload();
+        const next = swapLocalePath(
+          `${window.location.pathname}${window.location.search}${window.location.hash}`,
+          this.locale,
+        );
+        window.location.assign(next);
       }
     },
 
@@ -228,7 +233,11 @@ export function settingsApp() {
         const i18n = (this as unknown as { $store: { i18n: { locale: Locale } } }).$store.i18n;
         if (i18n.locale !== this.locale) {
           i18n.locale = this.locale;
-          window.location.reload();
+          const next = swapLocalePath(
+            `${window.location.pathname}${window.location.search}${window.location.hash}`,
+            this.locale,
+          );
+          window.location.assign(next);
           return;
         }
         this.message = this.tx('settings.imported');

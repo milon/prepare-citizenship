@@ -1,6 +1,6 @@
 ---
 import SpeakButton from './SpeakButton.astro';
-import { withBase } from '../lib/paths';
+import { localeFromPathname, localeHref } from '../lib/paths';
 import type { ClientQuestion } from '../lib/client-types';
 
 interface Props {
@@ -9,7 +9,8 @@ interface Props {
 
 const { questions } = Astro.props;
 const payload = { questions };
-const chaptersBase = withBase('/chapters/');
+const locale = localeFromPathname(Astro.url.pathname);
+const chaptersBase = localeHref('/chapters/', locale);
 ---
 
 <script is:inline type="application/json" id="daily-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />

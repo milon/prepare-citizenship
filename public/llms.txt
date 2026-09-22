@@ -9,12 +9,14 @@ This is a static site with no accounts and no authenticated API. Progress stays 
 - [Site overview (Markdown)](https://preparecitizenship.ca/index.md): Agent-friendly summary of purpose, features, and key URLs
 - [Home](https://preparecitizenship.ca/): Study dashboard and next recommended step
 - [FAQ](https://preparecitizenship.ca/faq/): Independence from IRCC, mock rules, privacy, offline use
+- [French home](https://preparecitizenship.ca/fr/): Same app under `/fr/…` URLs (hreflang en-CA / fr-CA)
 - [OpenAPI description](https://preparecitizenship.ca/openapi.json): Machine-readable map of public discovery resources
 - [API catalog](https://preparecitizenship.ca/.well-known/api-catalog): RFC 9727 linkset of published services
 
 ## Study
 
 - [Chapters](https://preparecitizenship.ca/chapters/): Ten original Discover Canada study summaries plus region pages
+- [Chapters (FR)](https://preparecitizenship.ca/fr/chapters/): French chapter summaries at the same English slugs under `/fr/`
 - [Glossary](https://preparecitizenship.ca/glossary/): Key terms for the test
 - [Ceremony](https://preparecitizenship.ca/ceremony/): Citizenship ceremony overview
 - [Flashcards](https://preparecitizenship.ca/flashcards/): Leitner-style recall practice

@@ -1,6 +1,6 @@
 ---
 import MapleLeaf from './MapleLeaf.astro';
-import { withBase } from '../lib/paths';
+import { localeFromPathname, localeHref } from '../lib/paths';
 
 interface Props {
   lastVerified: string;
@@ -10,13 +10,14 @@ interface Props {
 }
 
 const { lastVerified, compact = false, totalQuestions = 0, totalCards = 0 } = Astro.props;
+const locale = localeFromPathname(Astro.url.pathname);
 
-const chaptersHref = withBase('/chapters/');
-const practiceHref = withBase('/practice/');
-const flashcardsHref = withBase('/flashcards/');
-const mockHref = withBase('/mock/');
-const progressHref = withBase('/progress/');
-const sessionHref = withBase('/session/');
+const chaptersHref = localeHref('/chapters/', locale);
+const practiceHref = localeHref('/practice/', locale);
+const flashcardsHref = localeHref('/flashcards/', locale);
+const mockHref = localeHref('/mock/', locale);
+const progressHref = localeHref('/progress/', locale);
+const sessionHref = localeHref('/session/', locale);
 ---
 
 <section

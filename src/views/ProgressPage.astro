@@ -1,0 +1,24 @@
+---
+import DashboardPanel from '../components/DashboardPanel.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { loadStudyContent } from '../lib/study-content';
+
+const { questions, cards, current } = await loadStudyContent();
+const lastVerified = current?.lastVerified ?? 'unknown';
+---
+
+
+<BaseLayout
+  title="Progress"
+  description="See accuracy, mock trend, streak, and citizenship test readiness."
+  titleFr="Progrès"
+  descriptionFr="Consultez votre précision, vos examens blancs, votre série d’étude et votre préparation à l’examen de citoyenneté."
+  context="Progress"
+  contextFr="Progrès"
+>
+  <DashboardPanel
+    lastVerified={lastVerified}
+    totalQuestions={questions.length}
+    totalCards={cards.length}
+  />
+</BaseLayout>

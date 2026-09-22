@@ -2,12 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
 import MapleLeaf from '../components/MapleLeaf.astro';
-import { withBase } from '../lib/paths';
+import { localeFromPathname, localeHref } from '../lib/paths';
 
-const homeHref = withBase('/');
+const locale = localeFromPathname(Astro.url.pathname);
+const homeHref = localeHref('/', locale);
 const links = [
   {
-    href: withBase('/chapters/'),
+    href: localeHref('/chapters/', locale),
     icon: 'chapters' as const,
     label: 'Chapters',
     i18n: 'nav.chapters',
@@ -15,7 +16,7 @@ const links = [
     blurbFr: 'Notes d’étude originales pour chaque chapitre de Découvrir le Canada.',
   },
   {
-    href: withBase('/search/'),
+    href: localeHref('/search/', locale),
     icon: 'search' as const,
     label: 'Search',
     i18n: 'nav.search',
@@ -23,7 +24,7 @@ const links = [
     blurbFr: 'Trouvez une note de chapitre ou une question sur cet appareil.',
   },
   {
-    href: withBase('/practice/'),
+    href: localeHref('/practice/', locale),
     icon: 'practice' as const,
     label: 'Practice',
     i18n: 'nav.practice',
@@ -31,7 +32,7 @@ const links = [
     blurbFr: 'Faites des quiz par chapitre ou en mode mixte.',
   },
   {
-    href: withBase('/faq/'),
+    href: localeHref('/faq/', locale),
     icon: 'help' as const,
     label: 'FAQ',
     i18n: 'nav.faq',
@@ -80,7 +81,7 @@ const links = [
       <a class="button button-primary" href={homeHref} data-i18n="notFound.back">
         Back to today
       </a>
-      <a class="button" href={withBase('/chapters/')} data-i18n="home.browseChapters">
+      <a class="button" href={localeHref('/chapters/', locale)} data-i18n="home.browseChapters">
         Browse chapters
       </a>
     </p>

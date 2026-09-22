@@ -1,0 +1,7 @@
+---
+export { getStaticPaths } from '../../../views/chapter-static-paths';
+import ChapterPage from '../../../views/ChapterPage.astro';
+
+const { entry } = Astro.props;
+---
+<ChapterPage entry={entry} />

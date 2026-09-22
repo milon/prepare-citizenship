@@ -1,0 +1,116 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localeFromPathname, localeHref } from '../lib/paths';
+import { loadStudyContent, parseChapterParam } from '../lib/study-content';
+
+const { questions, chapters } = await loadStudyContent();
+const initialChapter = parseChapterParam(Astro.url.searchParams.get('chapter'));
+const payload = {
+  questions,
+  chapters,
+  initialChapter,
+  size: 10,
+};
+
+const locale = localeFromPathname(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="Practice quiz"
+  description="Untimed practice with immediate feedback, by chapter or weakest topic."
+  titleFr="Quiz d’exercice"
+  descriptionFr="Exercices sans limite de temps avec rétroaction immédiate, par chapitre ou sujet le plus faible."
+  contextFr="Exercices"
+>
+  <script is:inline type="application/json" id="practice-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={localeHref('/practice/', locale)}>
+    <article class="panel quiz-shell" x-data="practicePage" @keydown.window="onKey($event)">
+      <p class="eyebrow" data-i18n="practice.eyebrow">Practice</p>
+      <h1 data-i18n="practice.title">Chapter quiz</h1>
+      <p class="lede" data-i18n="practice.lede">
+        Ten questions, untimed. You’ll see the answer and a short explanation after each choice.
+      </p>
+
+      <div class="toolbar">
+        <label class="field">
+          <span data-i18n="practice.set">Set</span>
+          <select x-model="chapter" @change="start()">
+            <option value="all" data-i18n="cards.all">All chapters</option>
+            <option value="weakest" data-i18n="practice.weakest">My weakest chapter</option>
+            <template x-for="item in chapters" :key="item.id">
+              <option :value="item.id" x-text="$store.i18n.pick(item.title)"></option>
+            </template>
+          </select>
+        </label>
+      </div>
+      <p class="verified" x-show="warning" x-text="warning"></p>
+
+      <template x-if="!finished && current">
+        <div>
+          <div class="rail-progress" aria-hidden="true">
+            <template x-for="(question, itemIndex) in queue" :key="question.id">
+              <i :data-state="itemIndex === index ? 'current' : itemIndex < index ? 'answered' : 'todo'"></i>
+            </template>
+          </div>
+          <p class="qmeta">
+            <span class="pill pill-brand" x-text="position"></span>
+            <span class="pill" x-text="current.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
+            <SpeakButton id="speakId()" labelKey="practice.hear" onClick="speakPrompt" />
+          </p>
+          <p class="sr-only" x-text="$store.i18n.t('practice.keys')">Number keys 1 to 4 select an answer.</p>
+          <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
+          <div class="options" role="group" :aria-label="$store.i18n.pick(current.prompt)">
+            <template x-for="(option, optionIndex) in current.options" :key="option.id">
+              <button
+                class="option"
+                type="button"
+                :class="optionState(option.id)"
+                @click="choose(option.id)"
+                :aria-pressed="selected === option.id"
+              >
+                <span>
+                  <span class="option-index" x-text="optionIndex + 1"></span>
+                  <span x-text="$store.i18n.pick(option.text)"></span>
+                </span>
+                <span class="option-mark" x-show="optionState(option.id) === 'correct'" x-text="$store.i18n.t('practice.correct')">Correct</span>
+                <span class="option-mark" x-show="optionState(option.id) === 'incorrect'" x-text="$store.i18n.t('practice.incorrect')">Incorrect</span>
+              </button>
+            </template>
+          </div>
+          <div class="explain" x-show="revealed" x-cloak>
+            <p x-text="$store.i18n.pick(current.explanation)"></p>
+          </div>
+          <div class="button-row" x-show="revealed" x-cloak>
+            <button class="button button-primary" type="button" @click="next">
+              <span x-text="index === queue.length - 1 ? $store.i18n.t('practice.results') : $store.i18n.t('practice.next')"></span>
+            </button>
+          </div>
+        </div>
+      </template>
+
+      <template x-if="finished">
+        <div>
+          <h2 x-text="$store.i18n.t('practice.resultsTitle')">Results</h2>
+          <p
+            class="lede"
+            x-text="$store.i18n.t('practice.score', { score, total: queue.length })"
+          ></p>
+          <ul class="breakdown">
+            <template x-for="row in currentBreakdown()" :key="row.id">
+              <li>
+                <strong x-text="row.title"></strong>
+                <span x-text="row.text"></span>
+              </li>
+            </template>
+          </ul>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('practice.again')">Practice again</button>
+          </div>
+        </div>
+      </template>
+      <p class="banner" x-show="saveFailed" x-cloak data-i18n="cards.saveFailed">Progress won’t save in this browser.</p>
+    </article>
+  </StudyGate>
+</BaseLayout>

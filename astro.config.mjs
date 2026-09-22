@@ -14,10 +14,24 @@ export default defineConfig({
   site,
   base,
   output: 'static',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   integrations: [
     alpinejs({ entrypoint: './src/alpine.ts' }),
     sitemap({
       filter: (page) => !page.endsWith('/404/'),
+      i18n: {
+        defaultLocale: 'en',
+        locales: {
+          en: 'en-CA',
+          fr: 'fr-CA',
+        },
+      },
     }),
     AstroPWA({
       registerType: 'autoUpdate',

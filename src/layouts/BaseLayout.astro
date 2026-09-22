@@ -3,7 +3,14 @@ import { pwaInfo } from 'virtual:pwa-info';
 import Icon from '../components/Icon.astro';
 import MapleLeaf from '../components/MapleLeaf.astro';
 import StorageBanner from '../components/StorageBanner.astro';
-import { withBase } from '../lib/paths';
+import {
+  isHomePath,
+  localeFromPathname,
+  localeHref,
+  stripLocalePrefix,
+  withBase,
+  type AppLocale,
+} from '../lib/paths';
 import '../styles/global.css';
 
 interface Props {
@@ -17,13 +24,26 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, context, titleFr = title, descriptionFr = description, contextFr = context ?? titleFr, jsonLd } = Astro.props;
-const base = import.meta.env.BASE_URL;
-const homeHref = base.endsWith('/') ? base : `${base}/`;
+const {
+  title,
+  description,
+  context,
+  titleFr = title,
+  descriptionFr = description,
+  contextFr = context ?? titleFr,
+  jsonLd,
+} = Astro.props;
+
 const path = Astro.url.pathname;
+const locale: AppLocale = localeFromPathname(path);
+const isFr = locale === 'fr';
+const homeHref = localeHref('/', locale);
+const pathBare = stripLocalePrefix(path);
 const siteOrigin = Astro.site?.origin ?? 'https://preparecitizenship.ca';
 
 const canonical = new URL(path, Astro.site).href;
+const enUrl = new URL(localeHref(pathBare, 'en'), Astro.site).href;
+const frUrl = new URL(localeHref(pathBare, 'fr'), Astro.site).href;
 const ogImage = new URL(withBase('/og.png'), Astro.site).href;
 const llmsUrl = new URL(withBase('/llms.txt'), Astro.site).href;
 const indexMdUrl = new URL(withBase('/index.md'), Astro.site).href;
@@ -31,9 +51,20 @@ const apiCatalogUrl = new URL(withBase('/.well-known/api-catalog'), Astro.site).
 const openApiUrl = new URL(withBase('/openapi.json'), Astro.site).href;
 const sitemapUrl = new URL(withBase('/sitemap-index.xml'), Astro.site).href;
 
-const isHome = path === homeHref || path === base;
-const ogTitle = isHome ? title : `${title} · Prepare Citizenship`;
+const isHome = isHomePath(path);
+const pageTitle = isFr ? titleFr : title;
+const pageDescription = isFr ? descriptionFr : description;
+const ogTitleEn = isHome ? title : `${title} · Prepare Citizenship`;
 const ogTitleFr = isHome ? titleFr : `${titleFr} · Prepare Citizenship`;
+const pageOgTitle = isFr ? ogTitleFr : ogTitleEn;
+const htmlLang = isFr ? 'fr-CA' : 'en-CA';
+const pageInLanguage = isFr ? 'fr-CA' : 'en-CA';
+const ogLocale = isFr ? 'fr_CA' : 'en_CA';
+const ogLocaleAlt = isFr ? 'en_CA' : 'fr_CA';
+const ogImageAlt = isFr
+  ? 'Prepare Citizenship — préparation à l’examen de citoyenneté. Gratuit, sans compte et accessible hors ligne.'
+  : 'Prepare Citizenship — practice for the citizenship test. Free, no account, works offline.';
+const appleTitle = isFr ? 'Citoyenneté' : 'Citizenship';
 
 const extraLd = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const siteJsonLd = JSON.stringify({
@@ -44,8 +75,9 @@ const siteJsonLd = JSON.stringify({
       '@id': `${siteOrigin}/#website`,
       name: 'Prepare Citizenship',
       url: `${siteOrigin}/`,
-      description:
-        'Study for the Canadian citizenship test with original chapter lessons and a growing question bank.',
+      description: isFr
+        ? 'Préparez l’examen de citoyenneté canadienne avec des chapitres originaux et une banque de questions en expansion.'
+        : 'Study for the Canadian citizenship test with original chapter lessons and a growing question bank.',
       inLanguage: ['en-CA', 'fr-CA'],
       isAccessibleForFree: true,
     },
@@ -53,10 +85,10 @@ const siteJsonLd = JSON.stringify({
       '@type': 'WebPage',
       '@id': `${canonical}#webpage`,
       url: canonical,
-      name: title,
-      description,
+      name: pageTitle,
+      description: pageDescription,
       isPartOf: { '@id': `${siteOrigin}/#website` },
-      inLanguage: ['en-CA', 'fr-CA'],
+      inLanguage: pageInLanguage,
     },
     ...extraLd,
   ],
@@ -65,81 +97,84 @@ const siteJsonLd = JSON.stringify({
 const nav = [
   { href: homeHref, label: 'Today', i18n: 'nav.today', icon: 'today', current: isHome, tab: true },
   {
-    href: `${homeHref}chapters/`,
+    href: localeHref('/chapters/', locale),
     label: 'Chapters',
     i18n: 'nav.chapters',
     icon: 'chapters',
-    current: path.includes('/chapters'),
+    current: pathBare.includes('/chapters'),
     tab: true,
   },
   {
-    href: `${homeHref}flashcards/`,
+    href: localeHref('/flashcards/', locale),
     label: 'Flashcards',
     i18n: 'nav.flashcards',
     tabI18n: 'nav.cards',
     icon: 'cards',
-    current: path.includes('/flashcards'),
+    current: pathBare.includes('/flashcards'),
     tab: true,
     tabLabel: 'Cards',
   },
   {
-    href: `${homeHref}practice/`,
+    href: localeHref('/practice/', locale),
     label: 'Practice',
     i18n: 'nav.practice',
     icon: 'practice',
-    current: path.includes('/practice'),
+    current: pathBare.includes('/practice'),
     tab: true,
   },
   {
-    href: `${homeHref}mock/`,
+    href: localeHref('/mock/', locale),
     label: 'Mock exam',
     i18n: 'nav.mock',
     tabI18n: 'nav.mockShort',
     icon: 'mock',
-    current: path.includes('/mock'),
+    current: pathBare.includes('/mock'),
     tab: true,
     tabLabel: 'Mock',
   },
   {
-    href: `${homeHref}progress/`,
+    href: localeHref('/progress/', locale),
     label: 'Progress',
     i18n: 'nav.progress',
     icon: 'progress',
-    current: path.includes('/progress'),
+    current: pathBare.includes('/progress'),
     topbar: true,
   },
   {
-    href: `${homeHref}faq/`,
+    href: localeHref('/faq/', locale),
     label: 'FAQ',
     i18n: 'nav.faq',
     icon: 'help',
-    current: path.includes('/faq'),
+    current: pathBare.includes('/faq'),
   },
   {
-    href: `${homeHref}search/`,
+    href: localeHref('/search/', locale),
     label: 'Search',
     i18n: 'nav.search',
     icon: 'search',
-    current: path.includes('/search'),
+    current: pathBare.includes('/search'),
     topbar: true,
   },
   {
-    href: `${homeHref}settings/`,
+    href: localeHref('/settings/', locale),
     label: 'Settings',
     i18n: 'nav.settings',
     icon: 'settings',
-    current: path.includes('/settings'),
+    current: pathBare.includes('/settings'),
     topbar: true,
   },
 ] as const;
 
 const tabs = nav.filter((item) => 'tab' in item && item.tab);
 const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
+const settingsHref = localeHref('/settings/', locale);
+const frManifestHref = withBase('/manifest-fr.webmanifest');
 ---
 
 <!doctype html>
 <html
-  lang="en"
+  lang={htmlLang}
+  data-locale={locale}
   data-theme="system"
   data-resolved="light"
   data-font="md"
@@ -147,21 +182,24 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
   data-title-fr={titleFr}
   data-description-en={description}
   data-description-fr={descriptionFr}
-  data-og-title-en={ogTitle}
+  data-og-title-en={ogTitleEn}
   data-og-title-fr={ogTitleFr}
 >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
+    <meta name="description" content={pageDescription} />
     <meta name="theme-color" content="#131925" />
     <meta name="color-scheme" content="light dark" />
     <meta name="generator" content={Astro.generator} />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Citizenship" />
+    <meta name="apple-mobile-web-app-title" content={appleTitle} />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en-CA" href={enUrl} />
+    <link rel="alternate" hreflang="fr-CA" href={frUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
     <link rel="describedby" href={llmsUrl} type="text/markdown" title="llms.txt" />
     <link rel="alternate" type="text/markdown" href={indexMdUrl} title="Markdown overview" />
     <link
@@ -174,70 +212,60 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
     <link rel="sitemap" type="application/xml" href={sitemapUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Prepare Citizenship" />
-    <meta property="og:title" content={ogTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlt} />
+    <meta property="og:title" content={pageOgTitle} />
+    <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Prepare Citizenship — practice for the citizenship test. Free, no account, works offline."
-    />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={ogTitle} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={pageOgTitle} />
+    <meta name="twitter:description" content={pageDescription} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
-    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-    <title>{title}</title>
+    {
+      isFr ? (
+        <link rel="manifest" href={frManifestHref} />
+      ) : (
+        pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />
+      )
+    }
+    <title>{pageTitle}</title>
     <script is:inline type="application/ld+json" set:html={siteJsonLd} />
     <script src="../pwa.ts"></script>
     <script is:inline>
       (function () {
         try {
+          var pathLocale =
+            document.documentElement.getAttribute('data-locale') === 'fr' ? 'fr' : 'en';
           var raw = localStorage.getItem('prepare-citizenship.progress.v1');
-          var settings = raw ? JSON.parse(raw).settings || {} : {};
-          var locale = settings.locale === 'fr' ? 'fr' : 'en';
-          var theme = settings.theme === 'light' || settings.theme === 'dark' ? settings.theme : 'system';
+          var progress = raw ? JSON.parse(raw) : null;
+          var settings = (progress && progress.settings) || {};
+          // URL wins: keep storage in sync with the language of this page.
+          if (progress && progress.settings && settings.locale !== pathLocale) {
+            progress.settings.locale = pathLocale;
+            localStorage.setItem('prepare-citizenship.progress.v1', JSON.stringify(progress));
+            settings = progress.settings;
+          }
+          var locale = pathLocale;
+          var theme =
+            settings.theme === 'light' || settings.theme === 'dark' ? settings.theme : 'system';
           var font = settings.fontSize === 'lg' || settings.fontSize === 'xl' ? settings.fontSize : 'md';
           var dark =
             theme === 'dark' ||
             (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-          document.documentElement.lang = locale;
+          document.documentElement.lang = locale === 'fr' ? 'fr-CA' : 'en-CA';
           document.documentElement.dataset.locale = locale;
-          var localizedTitle = document.documentElement.dataset[locale === 'fr' ? 'titleFr' : 'titleEn'];
-          var localizedDescription =
-            document.documentElement.dataset[locale === 'fr' ? 'descriptionFr' : 'descriptionEn'];
-          var localizedOgTitle =
-            document.documentElement.dataset[locale === 'fr' ? 'ogTitleFr' : 'ogTitleEn'];
-          document.title = localizedTitle || document.title;
-          var descriptionMeta = document.querySelector('meta[name="description"]');
-          var ogDescription = document.querySelector('meta[property="og:description"]');
-          var twitterDescription = document.querySelector('meta[name="twitter:description"]');
-          var ogTitleMeta = document.querySelector('meta[property="og:title"]');
-          var twitterTitle = document.querySelector('meta[name="twitter:title"]');
-          var ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
-          var appTitle = document.querySelector('meta[name="apple-mobile-web-app-title"]');
-          var manifest = document.querySelector('link[rel="manifest"]');
-          if (descriptionMeta) descriptionMeta.content = localizedDescription;
-          if (ogDescription) ogDescription.content = localizedDescription;
-          if (twitterDescription) twitterDescription.content = localizedDescription;
-          if (ogTitleMeta) ogTitleMeta.content = localizedOgTitle;
-          if (twitterTitle) twitterTitle.content = localizedOgTitle;
-          if (locale === 'fr' && ogImageAlt) {
-            ogImageAlt.content =
-              'Prepare Citizenship — préparation à l’examen de citoyenneté. Gratuit, sans compte et accessible hors ligne.';
-          }
-          if (locale === 'fr' && appTitle) appTitle.content = 'Citoyenneté';
-          if (locale === 'fr' && manifest) manifest.href = '/manifest-fr.webmanifest';
           document.documentElement.dataset.theme = theme;
           document.documentElement.dataset.resolved = dark ? 'dark' : 'light';
           document.documentElement.dataset.font = font;
         } catch (error) {
-          /* keep defaults */
+          /* keep SSR defaults */
         }
       })();
     </script>
@@ -273,7 +301,7 @@ const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
             </div>
           </template>
         </div>
-        <a class="rail-user" href={`${homeHref}settings/`} x-data>
+        <a class="rail-user" href={settingsHref} x-data>
           <span class="avatar" aria-hidden="true">
             <span class="avatar-leaf" x-show="!$store.learner.name">
               <MapleLeaf class="avatar-glyph" />

@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { GLOSSARY } from '../lib/glossary';
+import { localeFromPathname, localeHref } from '../lib/paths';
+
+const locale = localeFromPathname(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="Glossary"
+  description="Short definitions of terms that show up on the Canadian citizenship test."
+  titleFr="Lexique"
+  descriptionFr="Courtes définitions des termes qui reviennent à l’examen de citoyenneté canadienne."
+  contextFr="Lexique"
+>
+  <article class="panel">
+    <p class="eyebrow" data-i18n="nav.glossary">Glossary</p>
+    <h1 data-i18n="glossary.title">Glossary</h1>
+    <p class="lede" data-i18n="glossary.lede">
+      Short definitions of terms the test likes to name. Each one links back to the chapter notes.
+    </p>
+    <dl class="glossary">
+      {
+        GLOSSARY.map((item) => (
+          <div class="glossary-item" id={item.id}>
+            <dt>
+              <span class="lang-en">{item.term.en}</span>
+              <span class="lang-fr">{item.term.fr}</span>
+            </dt>
+            {
+              item.also && (
+                <p class="glossary-also">
+                  <span data-i18n="glossary.also">Also called</span>
+                  {': '}
+                  <span class="lang-en">{item.also.en}</span>
+                  <span class="lang-fr">{item.also.fr}</span>
+                </p>
+              )
+            }
+            <dd class="lang-en">{item.definition.en}</dd>
+            <dd class="lang-fr">{item.definition.fr}</dd>
+            <p>
+              <a class="button" href={`${localeHref('/chapters/', locale)}${item.chapter}/`}>
+                <span data-i18n="glossary.seeChapter">Read the chapter</span>
+              </a>
+            </p>
+          </div>
+        ))
+      }
+    </dl>
+  </article>
+</BaseLayout>

@@ -29,7 +29,7 @@ Si vous **déménagez**, mettez votre inscription à jour. Votre vote appartient
 
 ## Circonscriptions et scrutin majoritaire à un tour
 
-Le pays est divisé en **[circonscriptions électorales](/glossary/#riding)**, aussi appelées « comtés ». Chaque circonscription élit **un seul [député](/glossary/#mp)**. Le candidat qui obtient le plus de voix dans sa circonscription l'emporte, même sans atteindre 50 %. C'est le **[scrutin uninominal majoritaire à un tour](/glossary/#fptp)**, souvent appelé système de la pluralité.
+Le pays est divisé en **[circonscriptions électorales](/fr/glossary/#riding)**, aussi appelées « comtés ». Chaque circonscription élit **un seul [député](/fr/glossary/#mp)**. Le candidat qui obtient le plus de voix dans sa circonscription l'emporte, même sans atteindre 50 %. C'est le **[scrutin uninominal majoritaire à un tour](/fr/glossary/#fptp)**, souvent appelé système de la pluralité.
 
 Le parti qui peut compter sur la majorité des députés forme habituellement le gouvernement. Si aucun parti n'obtient la majorité des sièges, un **gouvernement minoritaire** peut gouverner avec l'appui d'autres partis. Si deux partis ou plus s'entendaient formellement pour gouverner ensemble, il s'agirait d'un **gouvernement de coalition**, chose rare dans la pratique fédérale canadienne.
 
@@ -42,9 +42,9 @@ Les circonscriptions sont redécoupées périodiquement, parce que la population
 
 ## Comment une élection est déclenchée
 
-Une élection commence officiellement avec l'émission des **[brefs d'élection](/glossary/#writ)**, les ordres officiels qui lancent la course dans chaque circonscription. La loi fixe une durée minimale de campagne, ce qui laisse toujours le temps de présenter des candidats et d'organiser le vote.
+Une élection commence officiellement avec l'émission des **[brefs d'élection](/fr/glossary/#writ)**, les ordres officiels qui lancent la course dans chaque circonscription. La loi fixe une durée minimale de campagne, ce qui laisse toujours le temps de présenter des candidats et d'organiser le vote.
 
-Dans chaque circonscription, un **[directeur du scrutin](/glossary/#returning-officer)** est le fonctionnaire local d'Élections Canada chargé de tout organiser : embaucher le personnel, installer les bureaux de vote et transmettre les résultats.
+Dans chaque circonscription, un **[directeur du scrutin](/fr/glossary/#returning-officer)** est le fonctionnaire local d'Élections Canada chargé de tout organiser : embaucher le personnel, installer les bureaux de vote et transmettre les résultats.
 
 ## Les façons de voter
 

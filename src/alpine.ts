@@ -15,7 +15,7 @@ import { sessionApp, type SessionPayload } from './lib/session-app';
 import { dailyQuestionApp, type DailyPayload } from './lib/daily-app';
 import { updateApp } from './lib/update-app';
 import type { SearchDoc } from './lib/search';
-import { loadProgress, subscribeStorage } from './lib/progress';
+import { loadProgress, saveProgress, subscribeStorage } from './lib/progress';
 import {
   applyDocumentLocale,
   canUseSpeech,
@@ -221,7 +221,14 @@ export default (Alpine: Alpine) => {
     loaded.progress.settings.displayName,
   );
   const i18n = Alpine.store('i18n') as I18nStore;
-  i18n.locale = loaded.progress.settings.locale;
+  const pathLocale: Locale =
+    document.documentElement.getAttribute('data-locale') === 'fr' ? 'fr' : 'en';
+  // URL is the source of truth for language; persist it into progress.
+  i18n.locale = pathLocale;
+  if (loaded.progress.settings.locale !== pathLocale) {
+    loaded.progress.settings.locale = pathLocale;
+    saveProgress(loaded.progress);
+  }
   applyDocumentLocale(i18n.locale);
 
   applyAppearance(loaded.progress.settings.theme, loaded.progress.settings.fontSize);

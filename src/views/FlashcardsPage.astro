@@ -1,0 +1,126 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localeFromPathname, localeHref } from '../lib/paths';
+import { loadStudyContent, parseChapterParam } from '../lib/study-content';
+
+const { cards, chapters } = await loadStudyContent();
+const initialChapter = parseChapterParam(Astro.url.searchParams.get('chapter'));
+const payload = {
+  cards,
+  chapters,
+  initialChapter: initialChapter === 'weakest' ? 'all' : initialChapter,
+};
+
+const locale = localeFromPathname(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="Flashcards"
+  description="Study with flip cards and a three-box Leitner schedule."
+  titleFr="Cartes-éclair"
+  descriptionFr="Étudiez avec des cartes à retourner et un calendrier Leitner à trois boîtes."
+  contextFr="Cartes-éclair"
+>
+  <script is:inline type="application/json" id="flashcards-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={localeHref('/flashcards/', locale)}>
+    <article class="panel quiz-shell cards-shell" x-data="flashcardsPage">
+      <p class="eyebrow" data-i18n="cards.eyebrow">Recall</p>
+      <h1 data-i18n="cards.title">Flashcards</h1>
+      <p class="lede cards-lede" data-i18n="cards.lede">Flip the card, then mark whether you knew it.</p>
+      <details class="cards-how no-print">
+        <summary data-i18n="cards.howTitle">How scheduling works</summary>
+        <p data-i18n="cards.howBody">
+          New and still-learning cards are due today. After “Got it,” they return in three days, then a week. “Mark as known” parks a card in the known box.
+        </p>
+      </details>
+
+      <div class="toolbar toolbar-compact no-print">
+        <label class="field">
+          <span data-i18n="cards.chapter">Chapter</span>
+          <select x-model="chapter" @change="rebuild()">
+            <option value="all" data-i18n="cards.all">All chapters</option>
+            <template x-for="item in chapters" :key="item.id">
+              <option :value="item.id" x-text="$store.i18n.pick(item.title)"></option>
+            </template>
+          </select>
+        </label>
+        <label class="field">
+          <span data-i18n="cards.deck">Deck</span>
+          <select x-model="mode" @change="rebuild()">
+            <option value="due" data-i18n="cards.due">Due now</option>
+            <option value="shuffle" data-i18n="cards.shuffle">Shuffle all</option>
+            <option value="mistakes" data-i18n="cards.mistakes">Review mistakes</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="sr-only" aria-live="polite" x-text="status"></p>
+
+      <template x-if="current">
+        <div class="no-print">
+          <div class="cards-meta">
+            <p class="pill" x-text="boxText"></p>
+            <p class="cards-left" x-text="remainingText"></p>
+            <div
+              class="deck-progress"
+              role="progressbar"
+              :aria-valuenow="progressPercent"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              :aria-label="$store.i18n.t('cards.progressLabel')"
+            >
+              <i :style="`width: ${progressPercent}%`"></i>
+            </div>
+          </div>
+          <button
+            class="flip-card"
+            type="button"
+            x-ref="card"
+            :class="flipped && 'is-flipped'"
+            @click="flip"
+            :aria-pressed="flipped.toString()"
+            :aria-label="flipped ? $store.i18n.t('cards.flipAnswer') : $store.i18n.t('cards.flipPrompt')"
+          >
+            <span class="flip-inner">
+              <span class="flip-face flip-front" :aria-hidden="flipped.toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.prompt')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(current.front)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapHint')"></span>
+              </span>
+              <span class="flip-face flip-back" :aria-hidden="(!flipped).toString()">
+                <span class="flip-label" x-text="$store.i18n.t('cards.answer')"></span>
+                <span class="flip-body" x-text="$store.i18n.pick(current.back)"></span>
+                <span class="flip-hint" x-text="$store.i18n.t('cards.tapBack')"></span>
+              </span>
+            </span>
+          </button>
+          <div class="button-row cards-actions">
+            <SpeakButton id="speakId()" labelKey="cards.hear" onClick="speakCurrent" />
+            <span class="cards-grade" x-show="flipped" x-cloak>
+              <button class="button" type="button" @click="stillLearning" x-text="$store.i18n.t('cards.still')">Still learning</button>
+              <button class="button button-primary" type="button" @click="gotIt" x-text="$store.i18n.t('cards.gotIt')">Got it</button>
+              <button class="button button-quiet" type="button" @click="markAsKnown" x-text="$store.i18n.t('cards.known')">Mark as known</button>
+            </span>
+          </div>
+        </div>
+      </template>
+      <p class="lede no-print" x-show="!current" data-i18n="cards.none">No cards in this deck. Try another chapter or shuffle all.</p>
+      <p class="banner no-print" x-show="saveFailed" x-cloak data-i18n="cards.saveFailed">Progress won’t save in this browser.</p>
+      <div class="button-row no-print">
+        <button class="button" type="button" @click="window.print()" data-i18n="cards.print">Print this deck</button>
+      </div>
+      <div class="print-deck" aria-hidden="true">
+        <h1 data-i18n="cards.title">Flashcards</h1>
+        <template x-for="card in printCards" :key="card.id">
+          <article class="print-card">
+            <p class="print-front" x-text="$store.i18n.pick(card.front)"></p>
+            <p class="print-back" x-text="$store.i18n.pick(card.back)"></p>
+            <p class="print-source" x-text="$store.i18n.pick(card.source)"></p>
+          </article>
+        </template>
+      </div>
+    </article>
+  </StudyGate>
+</BaseLayout>

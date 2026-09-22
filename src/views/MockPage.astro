@@ -1,0 +1,158 @@
+---
+import StudyGate from '../components/StudyGate.astro';
+import SpeakButton from '../components/SpeakButton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localeFromPathname, localeHref } from '../lib/paths';
+import { loadStudyContent } from '../lib/study-content';
+
+const { questions, chapters } = await loadStudyContent();
+const payload = { questions, chapters };
+
+const locale = localeFromPathname(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="Mock exam"
+  description="A 20-question, 45-minute mock citizenship test. Pass is 15/20."
+  titleFr="Examen blanc"
+  descriptionFr="Un examen blanc de citoyenneté de 20 questions en 45 minutes. La note de passage est 15/20."
+  contextFr="Examen blanc"
+>
+  <script is:inline type="application/json" id="mock-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+  <StudyGate redirect={localeHref('/mock/', locale)}>
+    <article class="panel quiz-shell" x-data="mockPage" @keydown.window="onKey($event)">
+      <p class="eyebrow" data-i18n="mock.eyebrow">Mock exam</p>
+      <h1 data-i18n="mock.title">20 questions, 45 minutes</h1>
+
+      <template x-if="phase === 'intro'">
+        <div>
+          <p class="lede" x-text="$store.i18n.t('mock.lede')">
+            Pass is 15/20. Questions are balanced across chapters and include items for your
+            province. You can flag and jump around. The clock cannot be paused, and the exam
+            submits itself at 0:00. Answers stay hidden until you submit.
+          </p>
+          <p class="verified" x-show="$store.learner.name" x-cloak x-text="$store.i18n.t('mock.luck', { name: $store.learner.name })"></p>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('mock.start')">Start exam</button>
+            <button
+              class="button"
+              type="button"
+              x-show="lastMockQueue.length === 20"
+              x-cloak
+              @click="replayLast"
+              x-text="$store.i18n.t('mock.replay')"
+            >Retry the same questions</button>
+          </div>
+        </div>
+      </template>
+
+      <template x-if="phase === 'exam' && current">
+        <div>
+          <div class="exam-bar">
+            <div class="rail-progress" aria-hidden="true">
+              <template x-for="(question, itemIndex) in queue" :key="question.id">
+                <i :data-state="itemIndex === index ? 'current' : selected[question.id] ? 'answered' : 'todo'"></i>
+              </template>
+            </div>
+            <p class="clock" :data-warning="warningShown" x-text="clock" aria-live="polite" :aria-label="$store.i18n.t('mock.time', { clock })"></p>
+          </div>
+          <p class="banner" x-show="warningShown" x-cloak x-text="$store.i18n.t('mock.warning')">Five minutes remaining.</p>
+          <p class="qmeta">
+            <span class="pill pill-brand" x-text="$store.i18n.t('practice.position', { n: index + 1, total: queue.length })"></span>
+            <span class="pill" x-text="current.type === 'true_false' ? $store.i18n.t('practice.tf') : $store.i18n.t('practice.mcq')"></span>
+            <span class="pill pill-brand" x-show="flagged[current.id]" x-cloak x-text="$store.i18n.t('mock.flagged')">Flagged</span>
+            <SpeakButton id="speakId()" labelKey="practice.hear" onClick="speakPrompt" />
+          </p>
+          <h2 class="prompt" x-text="$store.i18n.pick(current.prompt)"></h2>
+          <div class="options" role="radiogroup">
+            <template x-for="(option, optionIndex) in current.options" :key="option.id">
+              <button
+                class="option"
+                type="button"
+                :class="selected[current.id] === option.id ? 'chosen' : ''"
+                @click="choose(option.id)"
+                :aria-pressed="selected[current.id] === option.id"
+                role="radio"
+                :aria-checked="selected[current.id] === option.id"
+              >
+                <span>
+                  <span class="option-index" x-text="optionIndex + 1"></span>
+                  <span x-text="$store.i18n.pick(option.text)"></span>
+                </span>
+              </button>
+            </template>
+          </div>
+          <div class="button-row">
+            <button class="button" type="button" @click="toggleFlag" x-text="flagged[current.id] ? $store.i18n.t('mock.unflag') : $store.i18n.t('mock.flag')"></button>
+            <button class="button" type="button" @click="goTo(index - 1)" :disabled="index === 0" x-text="$store.i18n.t('mock.prev')">Previous</button>
+            <button class="button" type="button" @click="goTo(index + 1)" :disabled="index === queue.length - 1" x-text="$store.i18n.t('mock.next')">Next</button>
+            <button class="button button-primary" type="button" @click="submit(false)" x-text="$store.i18n.t('mock.submit')">Submit exam</button>
+          </div>
+          <ol class="jump-list">
+            <template x-for="(question, itemIndex) in queue" :key="question.id">
+              <li>
+                <button
+                  class="jump"
+                  type="button"
+                  :class="{ current: itemIndex === index, marked: flagged[question.id], answered: selected[question.id] }"
+                  @click="goTo(itemIndex)"
+                  x-text="itemIndex + 1"
+                  :aria-current="itemIndex === index ? 'step' : false"
+                  :aria-label="jumpLabel(question, itemIndex)"
+                ></button>
+              </li>
+            </template>
+          </ol>
+        </div>
+      </template>
+
+      <template x-if="phase === 'review'">
+        <div>
+          <p
+            class="lede"
+            x-text="passed
+              ? ($store.learner.name
+                  ? $store.i18n.t('mock.passNamed', { name: $store.learner.name, score })
+                  : $store.i18n.t('mock.pass', { score }))
+              : ($store.learner.name
+                  ? $store.i18n.t('mock.failNamed', { name: $store.learner.name, score })
+                  : $store.i18n.t('mock.fail', { score }))"
+          ></p>
+          <p class="verified" x-show="autoSubmitted" x-text="$store.i18n.t('mock.autosubmit')">Time expired — this attempt was submitted automatically.</p>
+          <h2 x-text="$store.i18n.t('mock.breakdown')">Chapter breakdown</h2>
+          <ul class="breakdown">
+            <template x-for="row in chapterBreakdown()" :key="row.title">
+              <li>
+                <strong x-text="row.title"></strong>
+                <span x-text="row.text"></span>
+              </li>
+            </template>
+          </ul>
+          <h2 x-text="$store.i18n.t('mock.review')">Review</h2>
+          <ol class="review-list">
+            <template x-for="question in queue" :key="question.id">
+              <li class="review-item">
+                <p class="pill" x-text="resultLabel(question)"></p>
+                <p class="prompt" x-text="$store.i18n.pick(question.prompt)"></p>
+                <p>
+                  <span x-text="$store.i18n.t('mock.yourAnswer')">Your answer</span>
+                  <span x-text="selected[question.id] ? $store.i18n.pick(question.options.find(option => option.id === selected[question.id]).text) : $store.i18n.t('mock.unanswered')"></span>
+                </p>
+                <p>
+                  <span x-text="$store.i18n.t('mock.correctAnswer')">Correct answer:</span>
+                  <span x-text="$store.i18n.pick(question.options.find(option => option.id === question.correctOptionId).text)"></span>
+                </p>
+                <p class="explain" x-text="$store.i18n.pick(question.explanation)"></p>
+              </li>
+            </template>
+          </ol>
+          <div class="button-row">
+            <button class="button button-primary" type="button" @click="start" x-text="$store.i18n.t('mock.fresh')">Start a fresh mock</button>
+            <button class="button" type="button" @click="replayLast" x-text="$store.i18n.t('mock.replay')">Retry the same questions</button>
+          </div>
+          <p class="banner" x-show="saveFailed" x-cloak x-text="$store.i18n.t('cards.saveFailed')">Progress won’t save in this browser.</p>
+        </div>
+      </template>
+    </article>
+  </StudyGate>
+</BaseLayout>

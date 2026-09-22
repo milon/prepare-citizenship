@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { withBase } from '../lib/paths';
+import { localeFromPathname, localeHref } from '../lib/paths';
 
 type ChapterEntry = {
   id: string;
@@ -19,6 +19,10 @@ interface Props {
 }
 
 const { chapters, frenchById, currentId } = Astro.props;
+const locale = localeFromPathname(Astro.url.pathname);
+const chaptersBase = localeHref('/chapters/', locale);
+const glossaryHref = localeHref('/glossary/', locale);
+const ceremonyHref = localeHref('/ceremony/', locale);
 const mains = chapters
   .filter((entry) => !entry.data.regionGroup)
   .sort((a, b) => a.data.order - b.data.order);
@@ -69,7 +73,7 @@ const summaryFr = isRegionPage
             return (
               <li>
                 <a
-                  href={`${withBase('/chapters/')}${chapter.id}/`}
+                  href={`${chaptersBase}${chapter.id}/`}
                   aria-current={currentPage ? 'page' : undefined}
                   class:list={[{ active: currentSection }]}
                 >
@@ -85,7 +89,7 @@ const summaryFr = isRegionPage
                         return (
                           <li>
                             <a
-                              href={`${withBase('/chapters/')}${region.id}/`}
+                              href={`${chaptersBase}${region.id}/`}
                               aria-current={region.id === currentId ? 'page' : undefined}
                               class:list={[{ active: region.id === currentId }]}
                             >
@@ -104,13 +108,13 @@ const summaryFr = isRegionPage
         }
       </ol>
       <p class="chapter-side-index">
-        <a href={withBase('/chapters/')} data-i18n="chapters.all">All chapter summaries</a>
+        <a href={chaptersBase} data-i18n="chapters.all">All chapter summaries</a>
       </p>
       <p class="chapter-side-index">
-        <a href={withBase('/glossary/')} data-i18n="nav.glossary">Glossary</a>
+        <a href={glossaryHref} data-i18n="nav.glossary">Glossary</a>
       </p>
       <p class="chapter-side-index">
-        <a href={withBase('/ceremony/')} data-i18n="nav.ceremony">Ceremony</a>
+        <a href={ceremonyHref} data-i18n="nav.ceremony">Ceremony</a>
       </p>
     </div>
   </details>
