@@ -267,9 +267,11 @@ const en: Dict = {
   'dash.ofQuestions': 'of {total}',
   'dash.unique': 'unique questions answered',
   'dash.notStarted': 'Not started',
+  'dash.notStartedNote':
+    'Start a chapter or flashcards — readiness unlocks after three passed mocks.',
   'dash.gettingStarted': 'Getting started',
-  'dash.unlock': 'Sit {n} more mock — readiness needs three passed exams.',
-  'dash.unlocks': 'Sit {n} more mocks — readiness needs three passed exams.',
+  'dash.unlock': 'Pass {n} more mock to unlock readiness (need three).',
+  'dash.unlocks': 'Pass {n} more mocks to unlock readiness (need three).',
   'dash.testReady': 'Test ready',
   'dash.readyNote':
     'Last three mocks passed, and every chapter has at least 10 answers at 70% or better.',
@@ -706,9 +708,11 @@ const fr: Dict = {
   'dash.ofQuestions': 'sur {total}',
   'dash.unique': 'questions uniques répondues',
   'dash.notStarted': 'Pas commencé',
+  'dash.notStartedNote':
+    'Commencez un chapitre ou des flashcards — la préparation se débloque après trois examens réussis.',
   'dash.gettingStarted': 'En cours',
-  'dash.unlock': 'Passez encore {n} examen blanc — il en faut trois réussis.',
-  'dash.unlocks': 'Passez encore {n} examens blancs — il en faut trois réussis.',
+  'dash.unlock': 'Passez encore {n} examen blanc pour débloquer la préparation (il en faut trois).',
+  'dash.unlocks': 'Passez encore {n} examens blancs pour débloquer la préparation (il en faut trois).',
   'dash.testReady': 'Prêt pour l’examen',
   'dash.readyNote':
     'Les trois derniers examens blancs sont réussis, et chaque chapitre a au moins 10 réponses à 70 % ou plus.',

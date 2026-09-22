@@ -99,6 +99,14 @@ export function dashboardApp() {
       }
       const readiness = this.stats.readiness;
       if (readiness.status === 'not-enough-data') {
+        const notStarted =
+          this.stats.seenQuestions === 0 && !this.stats.flashcardsStarted;
+        if (notStarted) {
+          return {
+            label: this.tx('dash.notStarted'),
+            note: this.tx('dash.notStartedNote'),
+          };
+        }
         const left = 3 - readiness.mocksCompleted;
         const dueNote =
           this.stats.cardsDue > 0
@@ -109,9 +117,7 @@ export function dashboardApp() {
             : '';
         const mockNote = this.tx(left === 1 ? 'dash.unlock' : 'dash.unlocks', { n: left });
         return {
-          label: this.stats.seenQuestions === 0 && !this.stats.flashcardsStarted
-            ? this.tx('dash.notStarted')
-            : this.tx('dash.gettingStarted'),
+          label: this.tx('dash.gettingStarted'),
           note: dueNote ? `${dueNote} · ${mockNote}` : mockNote,
         };
       }

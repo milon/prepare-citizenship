@@ -36,7 +36,6 @@ const sessionHref = withBase('/session/');
     !compact && (
       <div class="page-head">
         <div>
-          <p class="eyebrow" data-i18n="dash.progress">Progress</p>
           <h1 id="dashboard-heading">
             <span x-show="!$store.learner.name" data-i18n="dash.readinessHeading">Readiness dashboard</span>
             <span
@@ -57,7 +56,6 @@ const sessionHref = withBase('/session/');
       <div class="dash-hero">
         <div class="hero-cta">
           <MapleLeaf class="leaf-wash" />
-          <p class="k" x-text="$store.i18n.t('dash.next')">Recommended next</p>
           <h2 x-text="nextStep.title">Keep studying</h2>
           <p x-text="nextStep.blurb"></p>
           <div class="button-row">
@@ -71,7 +69,6 @@ const sessionHref = withBase('/session/');
             <b x-text="dialLabel">—</b>
           </div>
           <div>
-            <p class="k" x-text="$store.i18n.t('dash.readiness')">Readiness</p>
             <h3 x-text="readinessSummary.label"></h3>
             <p x-text="readinessSummary.note"></p>
           </div>
