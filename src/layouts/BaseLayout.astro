@@ -155,19 +155,26 @@ const nav = [
     current: pathBare.includes('/search'),
     topbar: true,
   },
-  {
-    href: localeHref('/settings/', locale),
-    label: 'Settings',
-    i18n: 'nav.settings',
-    icon: 'settings',
-    current: pathBare.includes('/settings'),
-    topbar: true,
-  },
 ] as const;
 
-const tabs = nav.filter((item) => 'tab' in item && item.tab);
-const topbarLinks = nav.filter((item) => 'topbar' in item && item.topbar);
 const settingsHref = localeHref('/settings/', locale);
+const settingsCurrent = pathBare.includes('/settings');
+/** Mobile topbar only — desktop uses the rail profile link for Settings. */
+const topbarExtras = [
+  {
+    href: settingsHref,
+    label: 'Settings',
+    i18n: 'nav.settings',
+    icon: 'settings' as const,
+    current: settingsCurrent,
+  },
+];
+
+const tabs = nav.filter((item) => 'tab' in item && item.tab);
+const topbarLinks = [
+  ...nav.filter((item) => 'topbar' in item && item.topbar),
+  ...topbarExtras,
+];
 const frManifestHref = withBase('/manifest-fr.webmanifest');
 ---
 
@@ -301,7 +308,12 @@ const frManifestHref = withBase('/manifest-fr.webmanifest');
             </div>
           </template>
         </div>
-        <a class="rail-user" href={settingsHref} x-data>
+        <a
+          class="rail-user"
+          href={settingsHref}
+          aria-current={settingsCurrent ? 'page' : undefined}
+          x-data
+        >
           <span class="avatar" aria-hidden="true">
             <span class="avatar-leaf" x-show="!$store.learner.name">
               <MapleLeaf class="avatar-glyph" />

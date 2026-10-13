@@ -327,6 +327,11 @@ a {
   background: var(--rail-hover);
 }
 
+.rail-user[aria-current='page'] {
+  background: var(--rail-active);
+  color: var(--rail-ink);
+}
+
 .rail-user-text {
   min-width: 0;
   flex: 1;
