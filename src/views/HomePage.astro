@@ -3,20 +3,23 @@ import DailyQuestion from '../components/DailyQuestion.astro';
 import DashboardPanel from '../components/DashboardPanel.astro';
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  OFFICIAL_GUIDE_URL,
+  OFFICIAL_GUIDE_URL_FR,
+  OFFICIAL_PDF_URL,
+  OFFICIAL_PDF_URL_FR,
+  SUPPORT_URL,
+} from '../lib/faq';
 import { loadStudyContent } from '../lib/study-content';
 import { localeFromPathname, localeHref } from '../lib/paths';
 
 const { questions, cards, current } = await loadStudyContent();
 const lastVerified = current?.lastVerified ?? 'unknown';
 
-const officialGuideUrl =
-  'https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html';
-const officialPdfUrl =
-  'https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/pub/discover.pdf';
-const officialGuideUrlFr =
-  'https://www.canada.ca/fr/immigration-refugies-citoyennete/services/citoyennete-canadienne/examen/etudier.html';
-const officialPdfUrlFr =
-  'https://www.canada.ca/content/dam/ircc/migration/ircc/francais/pdf/pub/decouvrir.pdf';
+const officialGuideUrl = OFFICIAL_GUIDE_URL;
+const officialPdfUrl = OFFICIAL_PDF_URL;
+const officialGuideUrlFr = OFFICIAL_GUIDE_URL_FR;
+const officialPdfUrlFr = OFFICIAL_PDF_URL_FR;
 
 const locale = localeFromPathname(Astro.url.pathname);
 ---
@@ -29,6 +32,7 @@ const locale = localeFromPathname(Astro.url.pathname);
   context="Today"
   contextFr="Aujourd’hui"
 >
+  <div class="home-page">
   <div class="page-head">
     <div>
       <h1
@@ -166,6 +170,12 @@ const locale = localeFromPathname(Astro.url.pathname);
         <a href={officialPdfUrl}>Discover Canada PDF</a>.{' '}
         <a href={localeHref('/faq/', locale)}>Read the FAQ</a>.
       </p>
+      <p class="lang-en home-support">
+        Free, no ads, no account — an optional tip helps keep it online:{' '}
+        <a class="support-link" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer">
+          support this site
+        </a>.
+      </p>
       <p class="lang-fr">
         Ce site n’est pas affilié à Immigration, Réfugiés et Citoyenneté Canada.
         Les questions sont des reformulations originales conçues pour l’étude, et non
@@ -174,6 +184,13 @@ const locale = localeFromPathname(Astro.url.pathname);
         <a href={officialPdfUrlFr}>PDF Découvrir le Canada</a>.{' '}
         <a href={localeHref('/faq/', locale)}>Lire la FAQ</a>.
       </p>
+      <p class="lang-fr home-support">
+        Gratuit, sans pubs ni compte — un pourboire facultatif aide à le garder en ligne :{' '}
+        <a class="support-link" href={SUPPORT_URL} target="_blank" rel="noopener noreferrer">
+          soutenir le site
+        </a>.
+      </p>
     </div>
   </section>
+  </div>
 </BaseLayout>

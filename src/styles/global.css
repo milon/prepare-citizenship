@@ -1229,6 +1229,26 @@ h3 {
   line-height: 1.6;
 }
 
+.home-page {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+
+.home-page > .card,
+.home-page > section {
+  width: 100%;
+}
+
+.home-page .lede,
+.home-page .card-head p,
+.home-page .mock-explainer-note,
+.home-page .disclaimer p,
+.home-page .install-steps,
+.home-page .readiness-card p {
+  max-width: none;
+}
+
 .home-progress-link {
   margin-top: 0.85rem;
 }
@@ -2952,6 +2972,28 @@ h3 {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.65;
+}
+
+.disclaimer .home-support {
+  margin-top: 0.65rem;
+}
+
+.support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--brand-line);
+  border-radius: var(--r-xs);
+  background: var(--brand-soft);
+  color: var(--brand-ink);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.support-link:hover {
+  border-color: var(--brand);
+  color: var(--brand);
 }
 
 @media (max-width: 32rem) {
